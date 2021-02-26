@@ -49,6 +49,7 @@ h4 {font-size: 1.25rem;}
 p {margin-bottom: 1.5em;}
 .lead {font-size: 1.5rem; font-weight: 300;}
 .preheader {text-transform: uppercase; color: var(--dark); font-weight: 700; margin: 0 0 10px 0;}
+.preheader + h2 {margin-top: -5px;}
 img {max-width: 100%; height: auto;}
 hr {margin: 3rem 0; border: none; border-bottom: 3px dotted #ccc;}
 .no-mar {margin: 15px 0;}
@@ -157,7 +158,7 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .feature-card .btn-theme {margin: 0;}
 .feature-card .btn-theme a {font-size: .7rem;}
 
-.bkg-grass {background: url(../img/bkg-grass.jpg) left bottom no-repeat; background-size: cover; padding-bottom: 50px;}
+.bkg-grass {background: url(../img/bkg-grass.jpg) left bottom no-repeat; background-size: 100% auto; padding-bottom: 50px;}
 
 /* Footer */
 .footer .ftr-cta {display: grid; grid-template-columns: auto auto; padding: 50px var(--side-width); background: var(--primary); margin: 0 0 50px 0;}
@@ -212,9 +213,10 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .full-feature figure {margin: -75px 0 0 0;}
 .full-feature figure img {border-radius: 15px;}
 
-.product-feature {display: grid; grid-template-columns: auto auto; gap: 25px;}
+.product-feature {display: grid; grid-template-columns: auto auto; gap: 35px; font-size: .85rem;}
 
-#simple-header .text {padding: 125px 25px 50px 25px;}
+#simple-header .text {padding: 125px 25px 50px 25px; text-align: center;}
+.simple-content {padding: 15px 0;}
 .container-small {max-width: 750px; margin: 50px auto; padding: 0;}
 .container-small .lead {text-align: center;}
 .container-small p + .lead {border-top: 3px dotted #ccc; border-bottom: 3px dotted #ccc; text-align: center; padding: 40px 0; margin: 0 0 2rem 0;}
@@ -256,8 +258,8 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .feature-card-horz {display: grid; grid-template-columns: 1.25fr 2fr;}
 .feature-card-horz .text {padding: 30px;}
 
-#simple-header .text {padding: 175px 0 100px 0;}
-#simple-header .text h1 {max-width: 900px; margin: 0 auto; text-align: center;}
+#simple-header .text {padding: 150px 0 60px 0;}
+#simple-header .text h1 {max-width: 900px; margin: 0 auto 10px auto; text-align: center;}
 }
 
 /* Medium devices (desktops, 992px and up) */
