@@ -88,7 +88,7 @@
   </div>
 </header>
 <section id="hero-cta">
-  <img src="img/product-combo.png" />
+  <img src="img/product-hero-new.png" />
   <div class="text">
     <h2>A Complete Lawn Care System</h2>
     <p><em>A solution for every season to strenghten your lawn all year round</em>.</p>
@@ -140,66 +140,113 @@
     <h2>A Complete Lawn Care System</h2>
     <p>Get your lawn off to a great start with our full line of Estate lawn and garden fertilizers for complete and easy maintenance.</p>
     <img src="img/hero-2.jpg" />
+    <ul role="tablist" id="product-tabs">
+      <li role="presentation" class="active"><a href="#fertilizer" aria-controls="fertilizer" role="tab" data-toggle="tab">Fertilizer</a></li>
+      <li role="presentation"><a href="#seed" aria-controls="seed" role="tab" data-toggle="tab">Grass Seed</a></li>
+    </ul>
   </header>
-  <div class="full-width-content grid">
-    <div class="col">
-      <div class="system-item product-spring">
-        <img src="img/ico-spring.png" class="ico" />
-        <h3>Early Spring</h3>
-        <p>Apply as the weed is germinating and soil temp reaches 55°</p>
-        <figure>
-          <img src="img/package-spring.jpg" />
-        </figure>
-        <p class="btn-theme"><a href="instructions.html">Learn More</a></p>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="fertilizer">
+      <div class="full-width-content grid">
+        <div class="col">
+          <div class="system-item product-spring">
+            <img src="img/ico-spring.png" class="ico" />
+            <h3>Early Spring</h3>
+            <p>Apply as the weed is germinating and soil temp reaches 55°</p>
+            <figure>
+              <img src="img/package-spring.jpg" />
+            </figure>
+            <p class="btn-theme"><a href="instructions.html">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="system-item product-springfall">
+            <img src="img/ico-springfall.png" class="ico" />
+            <h3>Spring/Fall</h3>
+            <p>Contact killer: Apply when weeds are up and growing</p>
+            <figure>
+              <img src="img/package-springfall.jpg" />
+            </figure>
+            <p class="btn-theme"><a href="#.html">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="system-item product-summer">
+            <img src="img/ico-summer.png" class="ico" />
+            <h3>Summer</h3>
+            <p>Apply every 6-8 weeks throughout the growing season</p>
+            <figure>
+              <img src="img/package-summer.jpg" />
+            </figure>
+            <p class="btn-theme"><a href="#.html">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="system-item product-latefall">
+            <img src="img/ico-latefall.png" class="ico" />
+            <h3>Late Fall</h3>
+            <p>Apply approximately one month before grass stops growing</p>
+            <figure>
+              <img src="img/package-winter.jpg" />
+            </figure>
+            <p class="btn-theme"><a href="#.html">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="system-item product-anytime-natural">
+            <img src="img/ico-anytime.png" class="ico" />
+            <h3>Anytime</h3>
+            <p>Apply anytime during growing season, as directed</p>
+            <figure>
+              <img src="img/package-anytime-allnatural.jpg" />
+            </figure>
+            <p class="btn-theme"><a href="#.html">Learn More</a></p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col">
-      <div class="system-item product-springfall">
-        <img src="img/ico-springfall.png" class="ico" />
-        <h3>Spring/Fall</h3>
-        <p>Contact killer: Apply when weeds are up and growing</p>
-        <figure>
-          <img src="img/package-springfall.jpg" />
-        </figure>
-        <p class="btn-theme"><a href="#.html">Learn More</a></p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="system-item product-summer">
-        <img src="img/ico-summer.png" class="ico" />
-        <h3>Summer</h3>
-        <p>Apply every 6-8 weeks throughout the growing season</p>
-        <figure>
-          <img src="img/package-summer.jpg" />
-        </figure>
-        <p class="btn-theme"><a href="#.html">Learn More</a></p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="system-item product-latefall">
-        <img src="img/ico-latefall.png" class="ico" />
-        <h3>Late Fall</h3>
-        <p>Apply approximately one month before grass stops growing</p>
-        <figure>
-          <img src="img/package-winter.jpg" />
-        </figure>
-        <p class="btn-theme"><a href="#.html">Learn More</a></p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="system-item product-anytime-natural">
-        <img src="img/ico-anytime.png" class="ico" />
-        <h3>Anytime</h3>
-        <p>Apply anytime during growing season, as directed</p>
-        <figure>
-          <img src="img/package-anytime-allnatural.jpg" />
-        </figure>
-        <p class="btn-theme"><a href="#.html">Learn More</a></p>
+    <div role="tabpanel" class="tab-pane fade" id="seed">
+      <div class="full-width-content grid">
+        <div class="col">
+          <div class="system-item product-grass-sun">
+            <img src="img/ico-sun.png" class="ico" />
+            <h3>Sunny</h3>
+            <p>Short blurb goes here about the product.</p>
+            <figure class="package grass-package">
+              <img src="img/package-grass-sunny.jpg" />
+            </figure>
+            <p class="btn-theme"><a href="instructions.html">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="system-item product-grass-shady">
+            <img src="img/ico-shade.png" class="ico" />
+            <h3>Shady</h3>
+            <p>Short blurb goes here about the product.</p>
+            <figure class="package grass-package">
+              <img src="img/package-grass-shadylawn.jpg" />
+            </figure>
+            <p class="btn-theme"><a href="#.html">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="system-item product-grass-sunshade">
+            <img src="img/ico-sunshade.png" class="ico" />
+            <h3>Sun to Shade</h3>
+            <p>Short blurb goes here about the product.</p>
+            <figure class="package grass-package">
+              <img src="img/package-grass-suntoshade.jpg" />
+            </figure>
+            <p class="btn-theme"><a href="#.html">Learn More</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!--
 <section>
   <div class="container">
     <hr />
@@ -219,6 +266,7 @@
   </div>
 </div>
 </section>
+-->
 
 <section class="full-width-header compare-to-national">
   <header>
