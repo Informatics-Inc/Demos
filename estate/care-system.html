@@ -18,55 +18,63 @@
 <body>
 <div class="ccm-page">
 
-<nav role="navigation" id="header">
-  <div class="mobile-header">
-    <a href="index.html" class="logo"><img src="img/logo.png" /></a>
-    <button id="menu-toggle">
-      <div class="menu-toggle-icons">
-        <i class="fa fa-bars"></i>
-        <i class="fa fa-close"></i>
-      </div>
-    </button>
-  </div>
-  
-  <div id="menu">
-    <ul class="main-nav">
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <button type="button" data-toggle="collapse" data-target="#main-menu-2" aria-expanded="false" aria-controls="main-menu-2" class="collapsed">Fertilizer <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <ul class="collapse" id="main-menu-2">
-          <li><a href="product.html">Early Spring</a></li>
-          <li><a href="product.html">Spring/Fall</a></li>
-          <li><a href="product.html">Summer</a></li>
-          <li><a href="product.html">Late Fall</a></li>
-          <li><a href="product.html">Starter Fertilizer</a></li>
-          <li><a href="product.html">All Natural Fertilizer</a></li>
-          <li><a href="product.html">Garden Fertilizer</a></li>
-        </ul>
-      </li>
-      <li>
-        <button type="button" data-toggle="collapse" data-target="#main-menu-3" aria-expanded="false" aria-controls="main-menu-3" class="collapsed">Grass Seed <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <ul class="collapse" id="main-menu-3">
-          <li><a href="product.html">Shady Lawn</a></li>
-          <li><a href="product.html">Sun to Shade</a></li>
-          <li><a href="product.html">Sunny Lawn</a></li>
-        </ul>
-      </li>
-      <li class="nav-path-selected"><a href="care-system.html">Our Lawn Care System</a></li>
-      <li><a href="where-to-buy.html">Where to Buy</a></li>
-      <li>
-        <button type="button" data-toggle="collapse" data-target="#main-menu-4" aria-expanded="false" aria-controls="main-menu-4" class="collapsed">Lawn Care Tips <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <ul class="collapse" id="main-menu-4">
-            <li><a href="article.html">When to Plant Seeds</a></li>
-            <li><a href="article.html">How to tell you soil tempature</a></li>
-            <li><a href="article.html">How to Measure Soil Temperature for Planting</a></li>
-            <li><a href="article.html">Additional articles goes here</a></li>
+  <nav role="navigation" id="header">
+    <div class="mobile-header">
+      <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+      <button id="menu-toggle">
+        <div class="menu-toggle-icons">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-close"></i>
+        </div>
+      </button>
+    </div>
+    
+    <div id="menu">
+      <ul class="main-nav">
+        <li>
+          <button type="button" data-toggle="collapse" data-target="#main-menu-2" aria-expanded="false" aria-controls="main-menu-2" class="collapsed">Fertilizer <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <ul class="collapse" id="main-menu-2">
+            <li><a href="product.html">Early Spring</a></li>
+            <li><a href="product.html">Spring/Fall</a></li>
+            <li><a href="product.html">Summer</a></li>
+            <li><a href="product.html">Late Fall</a></li>
+            <li><a href="product.html">Starter Fertilizer</a></li>
+            <li><a href="product.html">All Natural Fertilizer</a></li>
+            <li><a href="product.html">Garden Fertilizer</a></li>
           </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+        </li>
+        <li>
+          <button type="button" data-toggle="collapse" data-target="#main-menu-3" aria-expanded="false" aria-controls="main-menu-3" class="collapsed">Grass Seed <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <ul class="collapse" id="main-menu-3">
+            <li><a href="product.html">Shady Lawn</a></li>
+            <li><a href="product.html">Sun to Shade</a></li>
+            <li><a href="product.html">Sunny Lawn</a></li>
+          </ul>
+        </li>
+        <li class="nav-path-selected"><a href="care-system.html">Our Lawn Care System</a></li>
+        <li><a href="where-to-buy.html">Where to Buy</a></li>
+        <li>
+          <button type="button" data-toggle="collapse" data-target="#main-menu-4" aria-expanded="false" aria-controls="main-menu-4" class="collapsed">Lawn Care Tips <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <ul class="collapse" id="main-menu-4">
+            <li><a href="article.html">Lawn Care Basics</a></li>
+            <li><a href="article.html">Application Information</a></li>
+            <li><a href="article.html">Weed & Disease Control</a></li>
+            <li><a href="article.html">Other Lawn Problems</a></li>
+            <li><a href="article.html">Better Lawn Tricks</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button id="search-toggle"><i class="fa fa-search"></i></button>
+      <div id="hdr-search">
+        <form class="form" method="get" action="/search/">
+            <input type="text" name="query" size="25" placeholder="Site Search" title="Search this site">
+            <button type="submit" name="Site Search" value="Search"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
 <main class="content">
 <header class="header">
   <figure>
@@ -307,9 +315,9 @@
   <div class="container">
     <div class="ftr-cols">
       <div class="col">
-        <h3>Why Choose Estate</h3>
-        <p class="lead">Formulated for the Midwest, Estate Premium Lawn Care products are made with quality ingredients for growth, strength and long-lasting protection.Developing, advancing and promoting women and organizations to impact the economy &amp; future workforce
-        </p>
+        <h3>Estate Premium Lawn Care</h3>
+        <p class="lead">Formulated for the Midwest, Estate Premium Lawn Care products are made with quality ingredients for growth, strength and long-lasting protection.</p>
+        <p class="lead">Estate products are sold exclusively at <strong>Blain's Farm & Fleet</strong> stores. <a href="https://www.farmandfleet.com/stores/">Find a store near you</a>.</p>
       </div>
       <div class="col">
         <h3>Connect</h3>
