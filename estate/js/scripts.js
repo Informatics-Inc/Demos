@@ -14,11 +14,11 @@ $(document).ready(function(){
       $("#menu").toggleClass('active');
       $(this).toggleClass('active');
     });
-
-    $("#contact-close" ).click(function(){
-      $("#contact").toggleClass("active");
+    
+    $("#search-toggle").click(function () {
+      $("#hdr-search").toggleClass("active");
+      $(this).toggleClass("active");
     });
-  
 });
 
 

@@ -18,55 +18,63 @@
 <body>
 <div class="ccm-page">
 
-<nav role="navigation" id="header">
-  <div class="mobile-header">
-    <a href="index.html" class="logo"><img src="img/logo.png" /></a>
-    <button id="menu-toggle">
-      <div class="menu-toggle-icons">
-        <i class="fa fa-bars"></i>
-        <i class="fa fa-close"></i>
+  <nav role="navigation" id="header">
+    <div class="mobile-header">
+      <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+      <button id="menu-toggle">
+        <div class="menu-toggle-icons">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-close"></i>
+        </div>
+      </button>
+    </div>
+    
+    <div id="menu">
+      <ul class="main-nav">
+        <li class="nav-path-selected">
+          <button type="button" data-toggle="collapse" data-target="#main-menu-2" aria-expanded="false" aria-controls="main-menu-2" class="collapsed">Fertilizer <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <ul class="collapse" id="main-menu-2">
+            <li><a href="product.html">Early Spring</a></li>
+            <li><a href="product.html">Spring/Fall</a></li>
+            <li><a href="product.html">Summer</a></li>
+            <li><a href="product.html">Late Fall</a></li>
+            <li><a href="product.html">Starter Fertilizer</a></li>
+            <li><a href="product.html">All Natural Fertilizer</a></li>
+            <li><a href="product.html">Garden Fertilizer</a></li>
+          </ul>
+        </li>
+        <li>
+          <button type="button" data-toggle="collapse" data-target="#main-menu-3" aria-expanded="false" aria-controls="main-menu-3" class="collapsed">Grass Seed <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <ul class="collapse" id="main-menu-3">
+            <li><a href="product.html">Shady Lawn</a></li>
+            <li><a href="product.html">Sun to Shade</a></li>
+            <li><a href="product.html">Sunny Lawn</a></li>
+          </ul>
+        </li>
+        <li><a href="care-system.html">Our Lawn Care System</a></li>
+        <li><a href="where-to-buy.html">Where to Buy</a></li>
+        <li>
+          <button type="button" data-toggle="collapse" data-target="#main-menu-4" aria-expanded="false" aria-controls="main-menu-4" class="collapsed">Lawn Care Tips <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <ul class="collapse" id="main-menu-4">
+            <li><a href="article.html">Lawn Care Basics</a></li>
+            <li><a href="article.html">Application Information</a></li>
+            <li><a href="article.html">Weed & Disease Control</a></li>
+            <li><a href="article.html">Other Lawn Problems</a></li>
+            <li><a href="article.html">Better Lawn Tricks</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html">Contact Us</a></li>
+      </ul>
+      <button id="search-toggle"><i class="fa fa-search"></i></button>
+      <div id="hdr-search">
+        <form class="form" method="get" action="/search/">
+            <input type="text" name="query" size="25" placeholder="Site Search" title="Search this site">
+            <button type="submit" name="Site Search" value="Search"><i class="fa fa-search"></i></button>
+        </form>
       </div>
-    </button>
-  </div>
+    </div>
+  </nav>
   
-  <div id="menu">
-    <ul class="main-nav">
-      <li><a href="index.html">Home</a></li>
-      <li class="nav-path-selected">
-        <button type="button" data-toggle="collapse" data-target="#main-menu-2" aria-expanded="false" aria-controls="main-menu-2" class="collapsed">Fertilizer <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <ul class="collapse" id="main-menu-2">
-          <li><a href="product.html">Early Spring</a></li>
-          <li><a href="product.html">Spring/Fall</a></li>
-          <li><a href="product.html">Summer</a></li>
-          <li><a href="product.html">Late Fall</a></li>
-          <li><a href="product.html">Starter Fertilizer</a></li>
-          <li><a href="product.html">All Natural Fertilizer</a></li>
-          <li><a href="product.html">Garden Fertilizer</a></li>
-        </ul>
-      </li>
-      <li>
-        <button type="button" data-toggle="collapse" data-target="#main-menu-3" aria-expanded="false" aria-controls="main-menu-3" class="collapsed">Grass Seed <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <ul class="collapse" id="main-menu-3">
-          <li><a href="product.html">Shady Lawn</a></li>
-          <li><a href="product.html">Sun to Shade</a></li>
-          <li><a href="product.html">Sunny Lawn</a></li>
-        </ul>
-      </li>
-      <li><a href="care-system.html">Our Lawn Care System</a></li>
-      <li><a href="where-to-buy.html">Where to Buy</a></li>
-      <li>
-        <button type="button" data-toggle="collapse" data-target="#main-menu-4" aria-expanded="false" aria-controls="main-menu-4" class="collapsed">Lawn Care Tips <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <ul class="collapse" id="main-menu-4">
-          <li><a href="article.html">When to Plant Seeds</a></li>
-          <li><a href="article.html">How to Measure Soil Temperature for Planting</a></li>
-          <li><a href="article.html">A seed for every season</a></li>
-          <li><a href="article.html">Additional articles goes here</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-
 <main class="content">
 <header id="product-hero" class="header">
   <figure>
@@ -83,9 +91,8 @@
     </figure>
     <div class="product-info">
       <h3>Crabgrass Preventer with Lawn Fertilizer</h3>
-      <img style="margin: 0 auto 15px auto; max-width: 150px; mix-blend-mode: multiply;" src="img/rating.png" />
       <p>This product is available at the Blain's Farm and Fleet online ecommerce store.</p>
-      
+      <p>Blain # 1295790 | Mfr # 24-0-12</p>
       <p class="btn-theme"><a href="https://www.farmandfleet.com/products/1295790-estate-10000-sq-ft-36-lb-crabgrass-preventer-with-lawn-fertilizer.html" target="_blank">Buy Now</a></p>
     </div>
   </div>
@@ -112,25 +119,34 @@
         <figure>
           <img src="img/feature-1.jpg" />
         </figure>
-        <p>Gives grass a quick green and helps build a strong, healthy lawn</p>
+        <div class="text">
+          <p>Gives grass a quick green and helps build a strong, healthy lawn</p>
+        </div>
       </div>
+
       <div class="callout">
         <figure>
           <img src="img/feature-2.jpg" />
         </figure>
-        <p>36 lb bag covers 10,000 square feet of lawn</p>
+        <div class="text">
+          <p>36 lb bag covers 10,000 square feet of lawn</p>
+        </div>
       </div>
       <div class="callout">
         <figure>
           <img src="img/feature-3.jpg" />
         </figure>
+        <div class="text">
         <p>Eliminates weeds</p>
+      </div>
       </div>
       <div class="callout">
         <figure>
           <img src="img/feature-5.jpg" />
         </figure>
-        <p>Easy to spread and apply to your lawn</p>
+        <div class="text">
+        <p>Easy to spread and apply to your lawn. <a href="instructions.html"><i class="fa fa-question"></i> Learn How </a></p>
+      </div>
       </div>
     </div>
   </div>

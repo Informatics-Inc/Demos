@@ -12,6 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
 	  <link rel="stylesheet" href="https://use.typekit.net/kmq2nni.css">
+    <link href="css/lity.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
   </head>
 
@@ -31,7 +32,6 @@
   
   <div id="menu">
     <ul class="main-nav">
-      <li class="nav-path-selected"><a href="index.html">Home</a></li>
       <li>
         <button type="button" data-toggle="collapse" data-target="#main-menu-2" aria-expanded="false" aria-controls="main-menu-2" class="collapsed">Fertilizer <i class="fa fa-caret-down" aria-hidden="true"></i></button>
         <ul class="collapse" id="main-menu-2">
@@ -57,13 +57,22 @@
       <li>
         <button type="button" data-toggle="collapse" data-target="#main-menu-4" aria-expanded="false" aria-controls="main-menu-4" class="collapsed">Lawn Care Tips <i class="fa fa-caret-down" aria-hidden="true"></i></button>
         <ul class="collapse" id="main-menu-4">
-          <li><a href="article.html">When to Plant Seeds</a></li>
-          <li><a href="article.html">How to Measure Soil Temperature for Planting</a></li>
-          <li><a href="article.html">A seed for every season</a></li>
-          <li><a href="article.html">Additional articles goes here</a></li>
+          <li><a href="article.html">Lawn Care Basics</a></li>
+          <li><a href="article.html">Application Information</a></li>
+          <li><a href="article.html">Weed & Disease Control</a></li>
+          <li><a href="article.html">Other Lawn Problems</a></li>
+          <li><a href="article.html">Better Lawn Tricks</a></li>
         </ul>
       </li>
+      <li><a href="index.html">Contact Us</a></li>
     </ul>
+    <button id="search-toggle"><i class="fa fa-search"></i></button>
+    <div id="hdr-search">
+      <form class="form" method="get" action="/search/">
+          <input type="text" name="query" size="25" placeholder="Site Search" title="Search this site">
+          <button type="submit" name="Site Search" value="Search"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
   </div>
 </nav>
 
@@ -116,9 +125,11 @@
     </div>
   </div>
   <div class="col-sm-6">
-    <figure class="img-combo padding-right">
+    <figure class="video-link">
+      <a href="https://www.youtube.com/watch?v=BaMntSdVesQ" data-lity=""><i class="fa fa-play" aria-hidden="true"></i>
+      </a>
+      <p>This is the video caption and explains what the video will show.</p>
       <img src="img/feature-4.jpg">
-      <img src="img/feature-5.jpg">
     </figure>
   </div>
   </div>
@@ -139,7 +150,7 @@
         <figure>
           <img src="img/package-spring.jpg" />
         </figure>
-        <p class="btn-theme"><a href="#.html">Learn More</a></p>
+        <p class="btn-theme"><a href="instructions.html">Learn More</a></p>
       </div>
     </div>
     <div class="col">
@@ -189,6 +200,26 @@
   </div>
 </section>
 
+<section>
+  <div class="container">
+    <hr />
+    <div class="row">
+    <div class="col-sm-5">
+      <img src="img/pacakage-grass-combo.png" />
+    </div>
+    <div class="col-sm-7">
+      <div class="text">
+        <p class="preheader">Grass Seed</p>
+        <h2>Header About Grass Seed Here</h2>
+        <p>Laudem explicari ad per. Pro semper adipisci an, eum mollis offendit oportere et. Definitiones mediocritatem sea in, no discere delenit placerat per. Ne per meis explicari, usu ea delenit corpora. Ei probatus quaestio accusamus eum, pri ut alii decore, ubique dolorem assentior quo ea.</p>
+        <p>Susu ea delenit corpora. Ei probatus quaestio accusamus eum, pri ut alii decore, ubique dolorem assentior quo ea</p>
+        <p class="btn-text"><a href="care-system.html">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
 <section class="full-width-header compare-to-national">
   <header>
     <h2>Compare to National Brands</h2>
@@ -225,7 +256,7 @@
     <div class="text-center">
       <p class="preheader">Tips & Tricks</p>
       <h2>Need Help? Try our Lawn Care Tips.</h2>
-      <p class="btn-text"><a href="#.html">View All Tips</a></p>
+      <p class="btn-text"><a href="lawn-care-tips.html">View All Tips</a></p>
     </div>
     <div class="page-list">
       <div class="feature-card">
@@ -261,6 +292,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer class="footer">
   <div class="ftr-cta">
@@ -270,9 +302,9 @@
   <div class="container">
     <div class="ftr-cols">
       <div class="col">
-        <h3>Why Choose Estate</h3>
-        <p class="lead">Formulated for the Midwest, Estate Premium Lawn Care products are made with quality ingredients for growth, strength and long-lasting protection.Developing, advancing and promoting women and organizations to impact the economy &amp; future workforce
-        </p>
+        <img src="img/blains-logo.png" />
+        <br />
+        <p class="lead">Estate products are sold exclusively at Blain's Farm & Fleet stores. <a href="https://www.farmandfleet.com/stores/">Find a store near you</a>.</p>
       </div>
       <div class="col">
         <h3>Connect</h3>
@@ -310,12 +342,13 @@
     Copyright © 2021 Estate Premium Lawn Care. All Rights Reserved. Web Application by Informatics, Inc
   </p>
 </footer>
-</main>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lity.js"></script>
     <script src="js/scripts.js"></script>
 
   </div>
