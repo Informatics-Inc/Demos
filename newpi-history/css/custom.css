@@ -133,7 +133,7 @@ main section {padding: var(--spacer);}
 #prev-next-hdr a i {color: var(--leaf); border: 5px solid #fff; border-radius: 50%; background: #fff; position: relative; z-index: 5;}
 #prev-next-hdr a.next {grid-column: 3;}
 #prev-next-hdr a:hover {background: rgba(0,0,0,.5); width: 12%; text-decoration: none;}
-#prev-next a {padding: 55px 25px;}
+#prev-next a {padding: 55px 50px;}
 #prev-next a:hover {padding: 55px 50px 55px 75px;}
 #prev-next a:nth-of-type(1):hover {text-decoration: none; padding: 55px 75px 55px 50px;}
 
