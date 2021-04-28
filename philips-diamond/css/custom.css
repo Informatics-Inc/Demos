@@ -126,8 +126,8 @@ figure.bkg-dgn img {box-shadow: 15px 15px 25px rgba(0,0,0,.2);}
 .swiper-pagination-bullet-active {background: var(--primary); opacity: 1;}
 
 /* Header VARIATIONS */
-#home-hero .preheader {font-family: var(--body); font-weight: 700; font-size: .9rem; color: var(--primary); padding: 0; margin: 0 0 2.5rem 0;}
-#home-hero .preheader:before {display: none;}
+.page-header .text p.preheader {font-family: var(--body); font-weight: 700; font-size: .8rem !important; color: var(--primary); padding: 0; margin: 0 0 2.5rem 0;}
+.page-header .text p.preheader:before {display: none;}
 #simple {padding: 100px var(--side-width) 50px var(--side-width);}
 #simple:after {height: 100%; min-height: auto; clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);}
 #simple:before {display: none;}
@@ -232,12 +232,13 @@ h3 {font-size: 1.5rem;}
 .grid-4 {grid-template-columns: 1fr 1fr;}
 
 /* HEADER */
-.page-header {display: grid; grid-template-columns: 1fr 1fr; padding-top: 200px;}
-.page-header .text {display: flex; justify-content: center; flex-direction: column; text-align: left; padding: 0 0 150px 0;}
+.page-header {display: grid; grid-template-columns: 1fr .9fr; padding-top: 200px; gap: 50px; height: 92vh;}
+.page-header:after {height: 92vh;}
+.page-header .text {display: flex; justify-content: center; flex-direction: column; text-align: left; padding: 0 0 75px 0; position: relative;}
 .page-header .text p {padding: 0 50px 0 75px; font-size: 1.25rem; font-weight: 300; font-family: var(--light);}
 .page-header .text p:before {left: 0; top: 13px;}
 
-#simple {padding: 200px var(--side-width) 50px var(--side-width); text-align: center; display: block;}
+#simple {padding: 200px var(--side-width) 50px var(--side-width); text-align: center; display: block; height: auto;}
 #simple .text {text-align: center; padding-bottom: 25px;}
 #simple h1 {font-size: 4rem; margin: 0 0 0 0;}
 #simple p {padding: 30px 0 0 0;}
@@ -249,12 +250,9 @@ h3 {font-size: 1.5rem;}
 #home-hero:after {height: 92vh;}
 #home-hero p {font-size: 1.45rem;}
 #home-hero .cta-flex {justify-content: flex-start; padding-left: 70px;}
-#home-hero .explore {writing-mode: vertical-rl;text-orientation: upright; text-transform: uppercase; position: absolute; right: -25px; bottom: -5px ;font-size: .7rem; letter-spacing: 1px; color: #999;}
-#home-hero .explore:after {content: "\f063";font-family: FontAwesome; margin: 5px 0 0 0;}
-#home-hero .explore:before {width: 1px; background: #ccc; height: 100px; position: absolute; bottom: 110%; left: 7px; content: ""; mix-blend-mode: multiply; opacity: .5;}
-/* #home-hero .text {padding-bottom: 150px;} */
-#home-hero .bonus-img {display: flex; position: absolute; left: 0; bottom: 0; display: none;}
-#home-hero .bonus-img img {width: 135px; margin: 0 25px 0 0 ; border-radius: 25px 0 25px 0;}
+.page-header .explore {writing-mode: vertical-rl;text-orientation: upright; text-transform: uppercase; position: absolute; right: -25px; bottom: -5px ;font-size: .7rem; letter-spacing: 1px; color: #999; z-index: 1;}
+.page-header .explore:after {content: "\f063";font-family: FontAwesome; margin: 5px 0 0 0;}
+.page-header .explore:before {width: 1px; background: #ccc; height: 100px; position: absolute; bottom: 110%; left: 7px; content: ""; mix-blend-mode: multiply; opacity: .5;}
 
 .footer-cols {grid-template-columns: 1.5fr 1fr 1fr 1fr;}
 .footer-cols .col:first-of-type {padding-right: 50px;}
@@ -268,8 +266,8 @@ h3 {font-size: 1.5rem;}
 /* -------------------*/
 /*  BIG OLE' DESKTOP  */ @media (min-width: 1300px) {
 /* -------------------*/
-:root {--spacer: 50px; --max-width: 1250px; --side-width: calc( (100vw - var(--max-width))/2 );}
-h1 {font-size: 6rem;}
+:root {--spacer: 75px; --max-width: 1250px; --side-width: calc( (100vw - var(--max-width))/2 );}
+h1 {font-size: 7rem;}
 }
 
 /* -----------------*/
