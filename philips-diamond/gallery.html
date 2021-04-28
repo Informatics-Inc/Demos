@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Informatics Inc, Cedar Rapids IA">
+  <title>Philip's Diamond Shop</title>
+
+  <!-- CSS -->
+  <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/dau4ckq.css">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/slider.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/glightbox.css" rel="stylesheet">
+  <link href="css/animations.css" rel="stylesheet">
+</head>
+
+<body class="ccm-page no-js">
+  <div id="load-header"></div>
+
+  <main class="content">
+    <header class="page-header" id="simple">
+      <div class="text animate fadeinup">
+        <h1>Gallery</h1>
+        <p>Take a look at our vast collection of custom jewelry and engraving items</p>
+      </div>
+    </header>
+    
+    <section id="gallery">
+        <div class="col fadeinup delay-2">
+            <nav class="gallery-nav">
+                <button class="active" id="all" onclick="call(this.id)">Show All</button>
+                <button id="rings" onclick="call(this.id)">Rings</button>
+                <button id="necklaces" onclick="call(this.id)">Necklaces</button>
+                <button id="earrings" onclick="call(this.id)">Ear Rings</button>
+                <button id="knives" onclick="call(this.id)">Knives</button>
+                <button id="watches" onclick="call(this.id)">Watches</button>
+                <button id="bracelets" onclick="call(this.id)">Bracelets</button>
+                <button id="pins" onclick="call(this.id)">Pins, Broaches, & More</button>
+                <button id="engravings" onclick="call(this.id)">Engravings</button>
+            </nav>
+            <div class="box-feature short">
+                <img src="img/feature-tall-3.jpg" />
+                <div class="text">
+                    <p class="preheader">Our Work</p>
+                    <h2>We Create Custom Jewelry</h2>
+                    <p>We create custom work based on your specific needs. See how right now.</p>
+                    <p class="btn-text"><a href="custom-jewelry.html">Custom Jewelry</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-items fadeinup delay-3">
+            <a href="img/hero-1.jpg" class="gallery-item glightbox filter rings"><figure><img loading="lazy" src="img/hero-1.jpg" /></figure></a>
+            <a href="img/hero-2.jpg" class="gallery-item glightbox filter rings"><figure><img loading="lazy" src="img/hero-2.jpg" /></figure></a>
+            <a href="img/hero-3.jpg" class="gallery-item glightbox filter rings"><figure><img loading="lazy" src="img/hero-3.jpg" /></figure></a>
+            <a href="img/necklace-1.jpg" class="gallery-item glightbox filter necklaces"><figure><img loading="lazy" src="img/necklace-1.jpg" /></figure></a>
+            <a href="img/necklace-2.jpg" class="gallery-item glightbox filter necklaces"><figure><img loading="lazy" src="img/necklace-2.jpg" /></figure></a>
+            <a href="img/necklace-3.jpg" class="gallery-item glightbox filter necklaces"><figure><img loading="lazy" src="img/necklace-3.jpg" /></figure></a>
+            <a href="img/feature-bracelet.jpg" class="gallery-item glightbox filter bracelets"><figure><img loading="lazy" src="img/feature-bracelet.jpg" /></figure></a>
+            <a href="img/earrings-1.jpg" class="gallery-item glightbox filter earrings"><figure><img loading="lazy" src="img/earrings-1.jpg" /></figure></a>
+            <a href="img/earrings-2.jpg" class="gallery-item glightbox filter earrings"><figure><img loading="lazy" src="img/earrings-2.jpg" /></figure></a>
+            <a href="img/earrings-3.jpg" class="gallery-item glightbox filter earrings"><figure><img loading="lazy" src="img/earrings-3.jpg" /></figure></a>
+            <a href="img/knives-1.jpg" class="gallery-item glightbox filter knives"><figure><img loading="lazy" src="img/knives-1.jpg" /></figure></a>
+            <a href="img/knives-2.jpg" class="gallery-item glightbox filter knives"><figure><img loading="lazy" src="img/knives-2.jpg" /></figure></a>
+            <a href="img/knives-3.jpg" class="gallery-item glightbox filter knives"><figure><img loading="lazy" src="img/knives-3.jpg" /></figure></a>
+            <a href="img/watches-3.jpg" class="gallery-item glightbox filter watches"><figure><img loading="lazy" src="img/watches-1.jpg" /></figure></a>
+            <a href="img/watches-3.jpg" class="gallery-item glightbox filter watches"><figure><img loading="lazy" src="img/watches-2.jpg" /></figure></a>
+            <a href="img/watches-3.jpg" class="gallery-item glightbox filter watches"><figure><img loading="lazy" src="img/watches-3.jpg" /></figure></a>
+            <a href="img/feature-3.jpg" class="gallery-item glightbox filter rings"><figure><img loading="lazy" src="img/feature-3.jpg" /></figure></a>
+            <a href="img/feature-1.jpg" class="gallery-item glightbox filter necklaces"><figure><img loading="lazy" src="img/feature-1.jpg" /></figure></a>
+        </div>
+    </section>
+   
+  </main>
+  
+  <div id="load-footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+      var lightboxDescription = GLightbox({
+  selector: 'glightbox'
+});
+
+
+function call(id) {
+  const items = Array.from(document.getElementsByClassName("filter"));
+  items.map(function (item, index) {
+    console.log(item);
+    if (id === "all") {
+      item.classList.remove('d-none');
+      item.classList.add('fadeIn','glightbox');
+      setTimeout(clean,500);
+    } else {
+      const check = items[index].classList.contains(id);
+      console.log(check);
+
+      if (check) {
+        item.classList.remove('d-none');
+        item.classList.add('fadeIn','glightbox');
+      } else {
+        item.classList.add('d-none');
+        item.classList.remove('fadeIn','glightbox');
+      }
+    }
+  })
+}
+
+function clean() {
+  const items = Array.from(document.getElementsByClassName("filter"));
+  items.map(function (item, index) {
+    item.classList.remove('fadeIn');
+  })
+}
+  </script>
+</body>
+
+</html>
