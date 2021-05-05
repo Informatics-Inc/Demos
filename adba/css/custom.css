@@ -36,7 +36,13 @@ Date: Now
 html {font-size: 100%;}
 body {margin: 0; font-size: 1rem; background: var(--bkg); font: 1.1em/1.5 var(--body), sans-serif; color: var(--text);-moz-font-feature-settings: "liga" on; overflow-x: hidden; font-feature-settings: normal;}
 .light-on-dark {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
-
+img {max-width: 100%; height: auto;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */}
+  
 h1, h2, h3, h4 { font-family: var(--header); color: var(--dark); margin: 0 0 2rem 0; line-height: 1.1; font-weight: 400;}
 h1 {font-size: 2.5rem; color: #fff; font-weight: 700; margin: 0;}
 h2 {font-size: 1.75rem; letter-spacing: -.5px; position: relative;}
