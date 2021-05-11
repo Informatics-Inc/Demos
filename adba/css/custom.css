@@ -145,7 +145,7 @@ a.btn-text, .btn-text > a, span.btn-text {color: var(--secondary); font-weight: 
 .hpg-cta.grid {gap: 25px;}
 .hpg-cta .feature-link {border-left: 5px solid var(--primary); background: var(--primary); background:#f9f9f9; box-shadow: 0 0 25px rgba(0,0,0,.25); border-radius: 0 15px 15px 0; position: relative;}
 .hpg-cta .feature-link img {opacity: .1; display: none;}
-.hpg-cta .feature-link .text {padding: 25px 50px 25px 65px; background: None; color: var(--text);}
+.hpg-cta .feature-link .text {padding: 25px 25px 25px 65px; background: None; color: var(--text);}
 .hpg-cta .feature-link .text h3 {color: var(--dark);}
 .hpg-cta .feature-link i {position: absolute; left: 18px; top: 30px;}
 .hpg-cta .feature-link i.underlay {color: #eee; left: auto; top: auto; right: 0; bottom: -1rem; font-size: 7rem; transform: rotate(-45deg);z-index: -1;}
