@@ -119,6 +119,7 @@ a.btn-text, .btn-text > a, span.btn-text {color: var(--secondary); font-weight: 
 }
 @keyframes spin { from {  transform:rotate(0deg); } to { transform:rotate(360deg);}}
 .hpg-cta {padding: 0 var(--side-width); background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,230,235,1) 100%);;}
+#hero .hero-img {opacity: .25;}
 
 /* Feature Icon */
 .feature-icon {padding: 25px 25px 25px 75px; color: var(--light-text); text-decoration: none; font-size: .9rem; position: relative; background: rgba(0,0,0,.5); border-radius: 15px; background:var(--primary);}
