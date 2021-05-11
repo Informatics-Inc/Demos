@@ -234,7 +234,7 @@ h1 {font-size: 4rem; line-height: 1;}
 /* GLOBALS */
 :root {--header-height: 130px;}
 h2 {font-size: 2.5rem;}
-h3 {font-size: 1.75rem;}
+h3 {font-size: 1.65rem;}
 .grid {gap: 50px;}
 .grid-gap-small {gap: 25px; margin-bottom: 25px;}
 .grid-1fr-1fr {grid-template-columns: 1fr 1fr;}
