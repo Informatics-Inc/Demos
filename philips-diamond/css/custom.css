@@ -217,7 +217,13 @@ figure.bkg-dgn img {box-shadow: 15px 15px 25px rgba(0,0,0,.2);}
 .box-feature:hover span:after {width: 50px;}
 
 /* Full Quote */
-.phil-quote img {}
+.img-combo.img-repair {padding: 0 0 35px 35px;}
+.img-combo.img-repair:after {content: "AFTER"; position: absolute; right: 15px; bottom: 45px; color: var(--dark); letter-spacing: 1px; font-size: .9rem;}
+.img-combo.img-repair img:nth-of-type(1) { border-radius: 0 25px 0 25px;}
+.img-combo.img-repair img:nth-of-type(2) {border: none; border-radius: 0 25px 0 25px; border: 8px solid var(--dark); border-bottom: 0; border-left: 0; width: 45%;}
+
+/* Two Col Feature */
+.two-col-feature .text {padding: 25px;}
 
 /* ---------*/
 /*  TABLET  */ @media (min-width: 768px) {
@@ -283,6 +289,10 @@ h3 {font-size: 1.5rem;}
 
 .phil-quote .text {padding: 35px 0 0 50px;}
 .grid-6-4.phil-quote .text {padding: 35px 50px 0 0;}
+
+.two-col-feature {display: grid; grid-template-columns: 1.25fr 1fr;}
+.two-col-feature figure {order: 2;}
+.two-col-feature .text {padding: 0 50px 0 0;}
 }
 
 /* -------------------*/
