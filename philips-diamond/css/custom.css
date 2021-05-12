@@ -45,7 +45,8 @@ h3 {font-size: 1.5rem; letter-spacing: -.25px;}
 h4 {Font-size: .9rem; font-family: var(--header); margin: 0 0 .75rem 0;}
 p, ul, ol {margin: 0 0 1.5rem 0;}
 .preheader {color: var(--primary); text-transform: uppercase; font-weight: 800; letter-spacing: 2px; margin: 0 0 .5rem 0;}
-.lead {font-size: 1.25rem; font-weight: 300;}
+.lead {font-size: 1.25rem; font-weight: 300; line-height: 1.6;}
+.lead strong {font-weight: 700;}
 .mar-btm {margin-bottom: 3rem !important;}
 .img-combo {position: relative; padding: 0 50px 100px 50px;}
 .img-combo img:nth-of-type(2) {position: absolute; left: 0; bottom: 0; width: 50%; border: 15px solid #fff; border-left: 0; border-bottom: 0; box-shadow: none !important;}
@@ -245,6 +246,8 @@ h3 {font-size: 1.5rem;}
 
 /* LAYOUT */
 .grid-4-6 {grid-template-columns: 4.5fr 6fr;}
+.grid-6-4 {grid-template-columns: 6fr 4.5fr;}
+.grid-6-4 .col:first-of-type {order: 2;}
 .grid-3 {grid-template-columns: 1fr 1fr 1fr; gap: 50px;}
 .grid-4 {grid-template-columns: 1fr 1fr 1fr 1fr;}
 
@@ -279,6 +282,7 @@ h3 {font-size: 1.5rem;}
 .grid-6 {grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}
 
 .phil-quote .text {padding: 35px 0 0 50px;}
+.grid-6-4.phil-quote .text {padding: 35px 50px 0 0;}
 }
 
 /* -------------------*/
