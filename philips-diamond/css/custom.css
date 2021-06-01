@@ -377,6 +377,8 @@ h1 {font-size: 7rem;}
 .menu-cta a {color: #fff; text-decoration: none; font-size: .8rem; margin: 0 10px 0 0;}
 .menu-cta a i {color: var(--primary);}
 
-.nav-main ul {position: absolute; width: 250px; padding: 25px; top: 100%; left: calc(50% - 125px);}
-
+.nav-main li {position: relative;}
+.nav-main ul {position: absolute; width: 250px; padding: 25px; top: 100%; left: calc(50% - 125px); background: #fff; list-style: none;}
+.nav-main ul a {color: var(--dark); padding: 10px;}
+.nav-main li:hover ul {display: block;}
 }
