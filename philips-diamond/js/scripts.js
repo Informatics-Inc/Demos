@@ -107,3 +107,14 @@ $('.gallery-nav').on('click', 'button', function() {
     $('.gallery-nav button.active').removeClass('active');
     $(this).addClass('active');
 });
+
+// -- Our Collection Popover -- //
+$('.ring-modal-item .page-list-ring').click(function() {
+	$('html, body').toggleClass('noscroll');
+	$(this).parent().addClass('active');
+});
+
+$('.ring-modal-item button').click(function() {
+	$('html, body').toggleClass('noscroll');
+	$('.ring-modal-item').removeClass('active');
+});
