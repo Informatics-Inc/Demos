@@ -346,8 +346,8 @@ h1 {font-size: 7rem;}
 #site-header {position: fixed; top: 0; width: 100%; z-index: 15; padding: 15px var(--side-width);}
 #logo {max-width: 150px; display: block;}
 .nav-main a {position: relative;}
-.nav-main .nav-path-selected a:after {border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid var(--primary); position: absolute; left: -25px; top: calc(50% - 3px); content: ""; transform: rotate(-90deg);}
-#menu .nav-path-selected a {font-weight: 700; opacity: 1;}
+.nav-main > .nav-path-selected > a:after {border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid var(--primary); position: absolute; left: -25px; top: calc(50% - 3px); content: ""; transform: rotate(-90deg);}
+#menu .nav-path-selected > a {font-weight: 700; opacity: 1;}
 #menu .nav-main a:hover {color: #fff; opacity: 1;}
 
 @media (max-width: 1199px) {
