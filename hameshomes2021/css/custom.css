@@ -192,6 +192,7 @@ a.btn-text, .btn-text > a, span.btn-text {color: var(--primary); font-weight: 70
 .home-list-item .btn-theme {display: block; text-align: center;}
 .home-list-item.new-home:before {position: absolute; left: -10px; top: 10px; content: "New Home"; background: var(--secondary); font-size: .75rem; text-transform: uppercase; font-weight: 700; padding: 5px 15px 5px 10px; box-shadow: 5px 5px 5px rgba(0,0,0,.1);clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0); z-index: 5;}
 .home-list-item:hover img {transform: scale(1.1);}
+.home-list-item.listing-home:before {position: absolute; left: -10px; top: 10px; content: "Listing"; background: var(--tertiary); font-size: .75rem; text-transform: uppercase; font-weight: 700; padding: 5px 15px 5px 10px; box-shadow: 5px 5px 5px rgba(0,0,0,.1);clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0); z-index: 5;}
 
 /* Testimonials */
 .testimonials {overflow: hidden;}
@@ -219,8 +220,8 @@ a.btn-text, .btn-text > a, span.btn-text {color: var(--primary); font-weight: 70
 /* Home Detail */
 .home-detail h1 {color: var(--dark); font-size: 3rem;}
 .home-detail-images {display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 15px; position: relative;}
-.home-detail-images:after {position: absolute; bottom: 10px; right: 10px; content: "View More Photos"; background: rgba(0,0,0,.5); padding: 10px 15px; border-radius: 5px; color: var(--secondary); text-transform: uppercase; letter-spacing: 1px; font-size: .8rem; font-weight: 600; transition: var(--transition);}
-.home-detail-images:hover:after {opacity: 0;}
+.home-detail-images:after {position: absolute; bottom: 10px; right: 10px; content: "View More Photos"; background: rgba(0,0,0,.5); padding: 10px 15px; border-radius: 5px; color: var(--secondary); text-transform: uppercase; letter-spacing: 1px; font-size: .8rem; font-weight: 600; transition: var(--transition); visibility: hidden;}
+.home-detail-images:hover:after {opacity: 0; visibility: hidden;}
 .home-detail-images a {width: 100%; height: 100%; object-fit: cover; border-radius: 5px; overflow: hidden; position: relative;}
 .home-detail-images a:first-of-type {grid-column: span 2;}
 .home-detail-images img {width: 100%; height: 100%; object-fit: cover;}
@@ -233,6 +234,8 @@ a.btn-text, .btn-text > a, span.btn-text {color: var(--primary); font-weight: 70
 .home-features {display: grid; grid-template-columns: auto auto; font-weight: 600; gap: 10px;}
 .home-features li:before {content: "\f058";font-family: FontAwesome; color: var(--secondary); margin: 0 5px 0 0; font-weight: 400;} 
 .home-address {font-size: 1.15rem; color: var(--dark);}
+
+.home-detail-images a:last-of-type:after {opacity: 1;}
 
 /* Person Item */
 .person-item {position: relative; width: 100%; max-width: 235px; background: #fff; box-shadow: 0 0 15px rgba(0,0,0,.1);}
@@ -340,6 +343,10 @@ h2 {font-size: 2.25rem;}
 .home-list-item figure {height: 200px;}
 
 header.blog-detail h1 {font-size: 3.5rem;}
+
+.home-detail-images:after {visibility: visible;}
+.home-detail-images a:last-of-type:after {opacity: 0;}
+.home-detail-images a:hover:last-of-type:after {opacity: 1;}
 }
 
 /* -------------------*/
@@ -430,7 +437,7 @@ body.noscroll {overflow: visible; height: 100%;}
 .mini-nav ul a {font-size: .8rem;}
 .big-button {background: var(--primary); color: #fff; padding: 15px 25px; height: 100%; text-align: center; font-weight: 700; letter-spacing: .5px; display: flex; justify-content: center; flex-direction: column; font-size: 1.2rem; text-decoration: none; position: relative; z-index: 1;}
 .big-button span {display: block; font-size: .65rem; font-weight: 400; color: var(--secondary); letter-spacing: normal;}
-.big-button:after {position: absolute; inset: 5px; border: 1px solid rgba(255,255,255,.2); content: ""; z-index: -1; transition: var(--transition);}
+.big-button:after {position: absolute; inset: 5px; border: 1px solid rgba(255,255,255,.3); content: ""; z-index: -1; transition: var(--transition);}
 .big-button:hover:after {inset: 8px; background: rgba(0,0,0,.1);}
 }
 
