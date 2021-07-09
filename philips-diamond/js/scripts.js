@@ -48,7 +48,6 @@ if (document.querySelector('.swiper-container')) {
 
 // SWIPER  //
 if (document.querySelector('.testimonials')) {
-
 var swiper2 = new Swiper('.testimonials', {
 	slidesPerView: 1,
 	autoplay: {
@@ -68,7 +67,34 @@ var swiper2 = new Swiper('.testimonials', {
       }
   });
 }
-$(".swiper-container, .testimonials").hover(function() {
+
+// SWIPER  //
+if (document.querySelector('.home-showcase')) {
+	var swiper3 = new Swiper('.home-showcase', {
+		slidesPerView: 2,
+		autoplay: {
+			delay: 3000,
+		},
+		speed: 1000,
+		loop: true,
+		pagination: {
+		  el: '.swiper-pagination-3',
+		  clickable: true,
+		},
+		breakpoints: {
+			768: {
+			  slidesPerView: 5,
+			  spaceBetween: 25,
+			},
+			1024: {
+				slidesPerView: 7,
+				spaceBetween: 25,
+			  }
+		  }
+	  });
+	}
+
+$(".swiper-container, .testimonials, .homeshowcase").hover(function() {
     (this).swiper.autoplay.stop();
   }, function() {
     (this).swiper.autoplay.start();

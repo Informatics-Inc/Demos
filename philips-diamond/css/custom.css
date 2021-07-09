@@ -58,7 +58,7 @@ body.noscroll {overflow: visible; height: 100%;}
 a {color: var(--primary);}
 a:hover {text-decoration: none;}
 p a {text-decoration: underline;}
-.btn-theme a {display: inline-block; padding: 10px 15px; border: 1px solid var(--primary); text-transform: uppercase; font-weight: 700;text-decoration: none; position: relative; z-index: 5; font-size: .9rem; letter-spacing: 1px;}
+.btn-theme a {display: inline-block; padding: 10px 15px; border: 1px solid var(--primary); text-transform: uppercase; font-weight: 700;text-decoration: none; position: relative; z-index: 5; font-size: .9rem; letter-spacing: 1px; font-family: var(--body);}
 a.btn-theme:before, .btn-theme > a:before, span.btn-theme:before {content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 100%; top: 0;left: 0; background-color: var(--secondary);transform-origin: bottom right; transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); z-index: -1; }
 a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:before {transform: scaleX(1);transform-origin: bottom left;}
 .btn-text a, .btn-text span {display: inline-block; text-decoration: none; position: relative; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; color: var(--primary);}
@@ -72,14 +72,15 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
 .grid-2 {grid-template-columns: 1fr 1fr; gap: 35px;}
 .grid-4 {grid-template-columns: 1fr; gap: 25px;}
 .grid-auto-small {display: grid; grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );}
+
 .text {height: 100%; display: flex; justify-content: center; flex-direction: column;}
 .text .grid {margin: 1rem 0;}
 .text .btn-text {padding: 15px 0;}
 .angle-top {position: relative; padding-top: 50px !important;}
 .angle-top:after {background: url(../img/bkg-angles-grey.jpg); background-size: cover; clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0% 100%); display: block; content: ""; width: 100%; height: 80%; min-height: 750px; position: absolute; left: 0; bottom: 0; z-index: -1;}
 .angle-top-2 { position: relative; padding-top: 50px !important;}
-.angle-top-2:after {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);; background-size: cover; clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0% 100%); display: block; content: ""; width: 100%; height: 100%; min-height: 750px; position: absolute; left: 0; bottom: 150px; z-index: -1;}
-.angle-top-2 .text {padding-top: 75px;}
+.angle-top-2:after {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);; background-size: cover; clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0% 100%); display: block; content: ""; width: 100%; height: 100%; min-height: 750px; position: absolute; left: 0; bottom: 175px; z-index: -1;}
+.angle-top-2 .text {padding-top: 100px;}
 
 .angle-spanrow {position: relative;}
 .angle-spanrow:after {background: #eee; background-size: cover; clip-path: polygon(0 35%, 100% 0%, 100% 65%, 0% 100%); display: block; content: ""; width: 100%; height: 100%; min-height: 750px; position: absolute; left: 0; bottom: -250px; z-index: -1;}
@@ -105,6 +106,12 @@ figure.bkg-dgn img {box-shadow: 15px 15px 25px rgba(0,0,0,.2);}
 .hgroup {text-align: center; margin: 0 0 3.5rem 0;}
 .hgroup h2 {margin: 0 0 1rem 0;}
 .hgroup p {font-size: 1.25rem; max-width: 750px; margin: 0 auto 1.5rem auto;}
+
+.home-showcase {overflow: hidden;}
+.home-showcase .page-list-ring h3::after {display: none;}
+.home-showcase-cta {text-align: center; margin: 3rem 0 0 0;}
+.home-showcase-cta p {margin: 0;}
+.home-showcase .page-list-ring figure::after {content: "Shop Now"}
 
 .feature-card {box-shadow: 10px 10px 15px rgba(0,0,0,.15); background: var(--dark); position: relative;}
 .feature-card:after {width: calc(100% - 30px); height: calc(100% - 30px); top: 15px; left: 15px; opacity: .3; position: absolute; background: #fff; content: ""; mix-blend-mode: overlay; border: 1px solid #fff;}
@@ -132,6 +139,7 @@ figure.bkg-dgn img {box-shadow: 15px 15px 25px rgba(0,0,0,.2);}
 .page-header .text {text-align: center;}
 .page-header .text p {color: #fff; position: relative; padding: 25px 0 0 0;}
 .page-header .text p:before {width: 50px; height: 3px; background: var(--primary); content: ""; position:  absolute; left: calc(50% - 25px); top: 0;}
+.page-header .text p.btn-theme:before {display: none;}
 .page-header figure {width: 100%; overflow: hidden; box-shadow: 25px 25px 40px rgba(0,0,0,.3); position: relative; background: var(--dark);}
 .page-header figure > * {width: 100%;}
 .page-header figure img {max-width: auto; width: 100%; height: 100%; object-fit: cover;}
@@ -284,7 +292,7 @@ h2 {font-size: 2.5rem;}
 h3 {font-size: 1.5rem;}
 
 /* LAYOUT */
-.grid-4-6 {grid-template-columns: 4.5fr 6fr;}
+.grid-4-6 {grid-template-columns: 4.25fr 6fr;}
 .grid-6-4 {grid-template-columns: 6fr 4.5fr;}
 .grid-6-4 .col:first-of-type {order: 2;}
 .grid-3 {grid-template-columns: 1fr 1fr 1fr; gap: 50px;}
@@ -305,7 +313,7 @@ h3 {font-size: 1.5rem;}
 
 /* Homepage Hero */
 #home-hero {gap: 50px; grid-template-columns: 1fr .9fr; height: 92vh; margin-bottom: 2rem;}
-#home-hero h1 {font-size: 6.5rem;}
+#home-hero h1 {font-size: 6rem;}
 #home-hero:after {height: 92vh;}
 #home-hero p {font-size: 1.45rem;}
 #home-hero .cta-flex {justify-content: flex-start; padding-left: 70px;}
