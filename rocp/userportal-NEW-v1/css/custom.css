@@ -259,7 +259,7 @@ a.navbar-brand:hover {color: #fff;}
 .upcoming .exam-status {color: var(--neutral);}
 
 /* NEW DASH PANEL */
-.dash-panel {display: grid; grid-template-columns: 1fr 2fr; gap: 35px;}
+.dash-panel {display: grid; gap: 35px;}
 .dash-panel .col {padding: 0;}
 .dash-panel .col:nth-of-type(2) {border-left: 1px dotted #ccc; padding-left: 35px;}
 .dash-panel h3 {margin: 10px 0 25px 0;}
@@ -471,6 +471,8 @@ td.table-centered {text-align: center;}
 /* NEW DASH PANEL */
 .dash-sidebar {max-width: 20%;}
 .dash-main {max-width: 80%; flex: 0 0 80%;}
+.dash-panel {grid-template-columns: 1fr 2fr;}
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
