@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.edit-person {display: grid; gap: 15px;}
+.edit-person .tab-base .nav {display: flex; flex-wrap: wrap;}
+.edit-person .tab-base .nav > li.active a {background: #fff; color: #444; border-bottom: none; font-weight: 700;}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 776px) {
+.edit-person {grid-template-columns: auto 200px;}
+.edit-person .tab-base {display: flex;}
+.edit-person .tab-base .nav {display: block;}
+.edit-person .tab-base .nav a {border-bottom: 1px dotted #ccc;}
+.edit-person .tab-base .nav > li.active a {background: #fff; color: #444; border-bottom: none;}
+.edit-person .tab-base .nav a:hover {background: rgba(255,255,255,.5); padding: 10px 13px 10px 17px; transition-duration: 200ms;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
