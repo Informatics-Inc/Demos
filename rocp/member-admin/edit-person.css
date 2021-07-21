@@ -2,8 +2,13 @@
 /* CSS Document */
 
 .edit-person {display: grid; gap: 15px;}
-.edit-person .tab-base .nav {display: flex; flex-wrap: wrap;}
+.edit-person .tab-base .nav {display: grid; grid-template-columns: repeat( auto-fit, minmax(125px, 1fr) ); gap: 5px; margin: 0 0 5px 0;}
+.edit-person .tab-base .nav:before {display: none;}
+.edit-person .tab-base .nav a {background: rgba(0,0,0,.05); text-align: center;}
+
 .edit-person .tab-base .nav > li.active a {background: #fff; color: #444; border-bottom: none; font-weight: 700;}
+.tab-base .tab-content {width: 100%;}
+.edit-person .tab-menu .btn-primary {display: block; margin: 0 0 5px 0; font-weight: 700; padding: 10px;}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 776px) {
@@ -13,9 +18,13 @@
 .edit-person .tab-base .nav a {border-bottom: 1px dotted #ccc;}
 .edit-person .tab-base .nav > li.active a {background: #fff; color: #444; border-bottom: none;}
 .edit-person .tab-base .nav a:hover {background: rgba(255,255,255,.5); padding: 10px 13px 10px 17px; transition-duration: 200ms;}
+
+.edit-person .tab-menu .btn-primary {display: none;}
+.edit-person .tab-menu #tab-menu-expand {display: block;}
+.edit-person .tab-base .nav a {text-align: left; background: none;}
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
+@media (min-width: 1200px) {
+    .edit-person {grid-template-columns: auto 250px;}
 }
