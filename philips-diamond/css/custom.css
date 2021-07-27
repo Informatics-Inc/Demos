@@ -58,7 +58,7 @@ body.noscroll {overflow: visible; height: 100%;}
 a {color: var(--primary);}
 a:hover {text-decoration: none;}
 p a {text-decoration: underline;}
-.btn-theme a {display: inline-block; padding: 10px 15px; border: 1px solid var(--primary); text-transform: uppercase; font-weight: 700;text-decoration: none; position: relative; z-index: 5; font-size: .9rem; letter-spacing: 1px; font-family: var(--body);}
+.btn-theme > a {display: inline-block; padding: 10px 15px; border: 1px solid var(--primary); text-transform: uppercase; font-weight: 700;text-decoration: none; position: relative; z-index: 5; font-size: .9rem; letter-spacing: 1px; font-family: var(--body);}
 a.btn-theme:before, .btn-theme > a:before, span.btn-theme:before {content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 100%; top: 0;left: 0; background-color: var(--secondary);transform-origin: bottom right; transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); z-index: -1; }
 a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:before {transform: scaleX(1);transform-origin: bottom left;}
 .btn-text a, .btn-text span {display: inline-block; text-decoration: none; position: relative; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; color: var(--primary);}
@@ -273,7 +273,7 @@ h2 {font-size: 2rem;}
 .grid-4 {grid-template-columns: 1fr 1fr;}
 .grid-6 {grid-template-columns: 1fr 1fr 1fr;}
 .grid-sidebar {grid-template-columns: 1fr 3fr;}
-.grid-auto-small {grid-template-columns: repeat( auto-fit, minmax(165px, 1fr) );}
+.grid-auto-small {grid-template-columns: repeat( auto-fill, minmax(165px, 1fr) );grid-auto-rows: minmax(min-content, max-content);}
 
 /* CONTENT */
 .footer-cta .flex .btn-theme {margin: 0 10px 1.5rem 10px;}
@@ -375,7 +375,8 @@ h1 {font-size: 7rem;}
 .nav-main li:nth-of-type(6) {transition-delay: .6s;}
 .nav-main li:nth-of-type(7) {transition-delay: .65s;}
 .nav-main a {color: #fff; display: block; padding: 10px 0; font-size: 1.5rem; position: relative; right: 0;}
-.nav-main .btn-theme a {text-transform: none; border: none; background: none; font-weight: normal;}
+.nav-main > .btn-theme > a {text-transform: none; border: none; background: none; font-weight: normal;}
+.nav-main .btn-theme:hover a:before {transform: scaleX(1);transform-origin: bottom left;}
 .nav-main ul {list-style-type: square; margin: 0 0 1rem 0;}
 .nav-main ul li::marker {color: var(--primary);}
 .nav-main ul a {font-size: 1rem; opacity: .75;}
@@ -396,7 +397,6 @@ h1 {font-size: 7rem;}
 #menu.active {transform: scale(1); opacity: 1; visibility: visible;}
 #menu.active .nav-main li {right: 0; opacity: 1;}
 #menu.active .menu-cta {top: 0; opacity: 1; transition-delay: .6s;}
-
 }
 
 @media (min-width: 800px) and (max-width: 1199px) {
@@ -418,7 +418,8 @@ h1 {font-size: 7rem;}
 .nav-main {display: flex; align-items: center; margin-left: 25px;}
 .nav-main a {padding: 35px 15px; display: block; text-decoration: none; color: #fff; opacity: .8;}
 .nav-main .nav-path-selected a:after {transform: none; left: calc(50% - 3px); top: 85%;}
-.nav-main .btn-theme a {padding: 15px 15px; margin-left: 10px; font-size: .8rem; color: var(--primary); opacity: 1;}
+.nav-main > .btn-theme > a {padding: 15px 15px; margin-left: 10px; font-size: .8rem; color: var(--primary); opacity: 1;}
+.nav-main > .btn-theme:hover > a:before {transform: scaleX(1);transform-origin: bottom left;}
 .menu-cta p, .menu-cta h4 {display: none;}
 .menu-cta {display: flex; justify-content: space-between; align-items: center; position: absolute; left: 0; top: 0; width: 100%; padding: 10px var(--side-width); box-shadow: 0 5px 15px rgba(0,0,0,.15); background: rgba(255,255,255,.05);}
 .menu-cta ul {list-style: none; padding: 0; display: flex; margin: 0;}
@@ -426,7 +427,7 @@ h1 {font-size: 7rem;}
 .menu-cta a i {color: var(--primary);}
 
 .nav-main li {position: relative;}
-.nav-main ul {position: absolute; width: 250px; padding: 25px; top: 90%; left: calc(50% - 125px); background: #fff; list-style: none; transition: var(--transition); opacity: 0; visibility: hidden; border-top: 4px solid var(--primary); box-shadow: 0 5px 20px rgba(0,0,0,.1);}
+.nav-main ul {position: absolute; width: 250px; padding: 25px; top: 90%; left: calc(50% - 125px); background: #fff; list-style: none; transition: var(--transition); opacity: 0; visibility: hidden; border-top: 4px solid var(--primary); box-shadow: 0 5px 20px rgba(0,0,0,.1); z-index: 5;}
 .nav-main ul:before {border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid var(--primary); content: ""; position: absolute; left: calc(50% - 7px); top: -11px;}
 .nav-main ul a {color: var(--dark); padding: 10px;}
 .nav-main li:hover ul {display: block; top: 100%; opacity: 1; visibility: visible;}
