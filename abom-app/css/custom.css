@@ -87,6 +87,7 @@ a:hover {text-decoration: none;}
 #app-nav ul a i {display: block; text-align: center; margin: 0 0 5px 0; font-size: 1rem;}
 #app-nav ul .active a:before {background: var(--theme-primary); width: calc(100% + 1px); height: 5px; content: ""; position: absolute; left:0; top: 0;}
 #app-nav ul .active a {color: var(--theme-primary);}
+#app-nav ul li:nth-of-type(2) a {text-transform: uppercase;}
 
 /* COMPONENTS */
 #app-head:before {background: url(../img/logo.png); position: absolute; left: 0; top: 0; content: ""; height: 110px; width: 110px; opacity: .1; left: 35px; z-index: -1; background-size: auto 100%;}
@@ -105,6 +106,7 @@ a:hover {text-decoration: none;}
 .cert-title {text-align: center;}
 .cert-title h2 {margin: 0 0 5px 0; font-size: 1.5rem;}
 .flex-around {display: flex; justify-content: space-between;}
+
 /* Current Reqs */
 .item-wrap {display: grid; grid-gap: 20px; padding-bottom: 20px;}
 .cert-item {padding: 35px 15px 15px 15px; background: #fff; position: relative; border-radius: 5px; box-shadow: 0 0 15px #dbe3ec;}
@@ -228,6 +230,12 @@ p + .rocp-table {margin-top: 1rem;}
 #page-nav ul .active a {text-decoration: none; color: #fff; font-weight: 600; position: relative; background: var(--theme-dark);}
 #page-nav ul .active a:after { border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid var(--theme-primary); position: absolute; content: ""; left: calc(50% - 8px); bottom: 2px;}
 
+.expand-nav {margin: 0;}
+.expand-menu {list-style: none; padding: 0; margin: 0; background: #fff; border-radius: 0 0 5px 5px;}
+.expand-menu a {display: block; padding: 15px; text-decoration: none; color: #444; border: 1px dotted #eee;}
+.expand-nav {margin-bottom: 1.5rem;}
+.expand-nav h4 {margin: 0; text-align: center;}
+.expand-menu .active a {opacity: .5;}
 /* -------------------*/
 /*  TABLET           */ @media (min-width: 768px) {
 /* -----------------*/
