@@ -53,7 +53,9 @@ h2 {font-size: 1.25rem; letter-spacing: -.5px; position: relative;}
 h3 {font-size: 1.1rem; letter-spacing: -.25px;}
 h4 {font-size: .8rem; font-family: var(--header); margin: 0 0 .75rem 0; text-transform: uppercase;}
 p, ul, ol {margin: 0 0 1.5rem 0;}
+ul, ol {padding: 0 0 0 2rem;}
 .preheader {color: var(--primary); text-transform: uppercase; font-weight: 800; letter-spacing: 2px; margin: 0 0 .5rem 0;}
+.lead {font-size: 1.1rem;}
 
 /* LINKS */
 a {color: var(--primary);}
@@ -70,6 +72,7 @@ a:hover {text-decoration: none;}
 .good {color: #15b136; font-weight: bold;}
 .bad {color: #c42323; font-weight: bold;}
 .soso {color: #c9a33e;  font-weight: bold;}
+.alert-warning {border-color:#c6b78c;}
 
 /* FRAME */
 .frame {width: 100vw; min-height: 100vh; display: flex; justify-content: center; flex-direction: column; align-items: center; overflow-y: scroll;}
@@ -100,7 +103,7 @@ a:hover {text-decoration: none;}
 .divider {border-top: 1px solid #ddd; padding: 10px 0; margin: 1.5rem 0 0 0; text-align: center;}
 .cert-title {text-align: center;}
 .cert-title h2 {margin: 0 0 5px 0; font-size: 1.5rem;}
-
+.flex-around {display: flex; justify-content: space-between;}
 /* Current Reqs */
 .item-wrap {display: grid; grid-gap: 20px; padding-bottom: 20px;}
 .cert-item {padding: 35px 15px 15px 15px; background: #fff; position: relative; border-radius: 5px; box-shadow: 0 0 15px #dbe3ec;}
@@ -176,14 +179,27 @@ a:hover {text-decoration: none;}
 .dash-item .expand-hdr {box-shadow: none; font-size: .75rem; text-transform: uppercase; margin: 1rem 0;}
 
 /* TABLE */
+.rocp-table thead th {font-size: .7rem; background: var(--theme-dark); color: #fff;}
 .table td {padding: 5px 10px; font-size: .65rem;}
+.rocp-table {background: #fff;}
 .rocp-table.table-striped tr:nth-of-type(2n+1) {background-color: var(--bkg);}
 p + .rocp-table {margin-top: 1rem;}
 
 /* FORMS */
+.rocp-form input {font-size: .8rem; color: #999;}
+.rocp-form input::placeholder {color: #999;}
 .rocp-form label {font-weight: 700; text-transform: uppercase; font-size: .7rem; position: relative; padding: 0 0 0 12px;}
 .rocp-form .col-sm-2 {max-width: 100%;}
 .rocp-form label:before {display: block; width: 8px; height: 8px; background: var(--theme-primary); content: ""; float: left; position: absolute; left: 0; top: 3px;}
+.rocp-form label.form-question {text-transform: none; font-weight: 400; font-size: .9rem; padding: 0;}
+.rocp-form label.form-question:before {display: none;}
+.rocp-form .custom-file label {text-transform: none;font-size: .8rem;color: #999;font-weight: 400;background: var(--bkg-light); width: 100%; line-height: 2.5; position: absolute; top: 0;}
+.rocp-form .custom-file label:before, .rocp-form .form-check label:before {display: none;}
+.form-group-lines .form-group {border-bottom: 1px solid rgba(0,0,0,.1); padding-bottom: 1rem;}
+.options {margin: 0 0 1rem 0;}
+.rocp-form .form-check label {text-transform: none;font-size: .9rem; color: #444;font-weight: 400;}
+.question-set {margin: 2rem 0;}
+.question-set .form-check {margin-bottom: .5rem;}
 
 /* SCREEN - LOGIN */
 #login {background: var(--theme-dark); display: flex; justify-content: center; flex-direction: column; padding-bottom: 100px;}
