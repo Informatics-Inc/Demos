@@ -1,0 +1,31 @@
+<!doctype html>
+
+<script>
+  $("#menu-toggle" ).click(function(){
+		$("#menu").toggleClass("active");
+		$("#menu-toggle").toggleClass("active");
+    $('html, body').toggleClass('noscroll'); // <--- Prevent Content Scroll when Menu Open
+	});
+</script>
+
+<nav id="site-header" class="light-on-dark transition-fadeup">
+    <a href="/index.html" id="logo">
+      <img src="img/logo.png" />
+    </a>
+    <button id="menu-toggle">
+      <div class="toggle-inner">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="menu-text">MENU</span>
+      </div>
+    </button>
+    <div id="menu">
+      <ul class="nav-main">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="catalog.html">Product Catalog</a></li>
+        <li><a href="sales.html">Sales Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="btn-theme"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+</nav>
