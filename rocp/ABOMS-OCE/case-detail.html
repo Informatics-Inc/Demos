@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/support.css" rel="stylesheet" />
+  <link href="css/custom_portal.css" rel="stylesheet" />
+  <style>
+     :root {
+      --theme-dark: #334357;
+      --theme-primary: #A1D403;
+    }
+  </style>
+
+  <title>ROC-P User Portal</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-xl fadein" id="header">
+    <a class="navbar-brand" href="page-index.html"><img src="img/logo.png" alt="Logo" /></a>
+    <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav" id="nav-main">
+
+        <li><a href="/ROC-P/Portal/Default.aspx">Dashboard</a></li>
+        <li class="active"><a href="#" class="disabled">Exams </a>
+          <ul class="disabled">
+            <li><a href="/ROC-P/Portal/Exams/Examiners/Default.aspx">Examiner Conflicts</a></li>
+            <li class="active"><a href="/ROC-P/Portal/Exams/OCE/Vignette/Default.aspx">Case List</a></li>
+            <li><a href="/ROC-P/Portal/Exams/OCE/Score-Exams/Default.aspx">Score Exams</a></li>
+          </ul>
+        </li>
+        <li><a href="/ROC-P/Portal/ROC/CE/CE-Certificate.aspx">CE</a></li>
+        <li><a href="#" class="disabled">LMS </a>
+          <ul class="disabled">
+            <li><a href="/ROC-P/Portal/ROC/CQI/15/Default.aspx">Clinical Case Questions</a></li>
+            <li><a href="/ROC-P/Portal/ROC/CQI/16/Default.aspx">Article Questions</a></li>
+            <li><a href="/ROC-P/Portal/ROC/Transcripts/Default.aspx">My Transcript</a></li>
+            <li><a href="/ROC-P/Portal/ROC/Admin/Default.aspx">LMS Development</a></li>
+          </ul>
+        </li>
+        <li><a href="/ROC-P/Portal/FileLibrary/Default.aspx">Resources</a></li>
+        <li><a href="#" class="disabled">History </a>
+          <ul class="disabled">
+            <li><a href="/ROC-P/Portal/Payments/Default.aspx">Past Payments</a></li>
+            <li><a href="/ROC-P/Portal/Exams/Results/Default.aspx">Exam History and Results</a></li>
+            <li><a href="/ROC-P/Portal/Applications/Default.aspx">My Application History</a></li>
+            <li><a href="/ROC-P/Portal/Log/Default.aspx">Activity Log</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" id="user-dropdown">
+          <a class="dropdown-toggle" href="#" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            <i id="ctl00_userCircle" class="fa fa-user-circle" aria-hidden="true"></i>User
+          </a>
+          <div class="dropdown-menu" aria-labelledby="user-menu">
+            <ul>
+              <li id="ctl00_liOrigAccount">
+                <a id="ctl00_btnOrginalAccount" class="word-break" href="javascript:__doPostBack('ctl00$btnOrginalAccount','')">Go to administration</a></li>
+              <li><a href="/ROC-P/Portal/MyAccount/Default.aspx">My Account</a></li>
+              <li><a href="/ROC-P/Portal/Store/Cart.aspx">Cart <span class="badge badge-secondary">
+                      0</span></a></li>
+              <li><a href="/ROC-P/Portal/Store/Default.aspx">Product Store</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li style="font-size: 10px; color: #808080; padding-bottom: 6px; text-align: center;">Last Login: Aug 12, 2021</li>
+            </ul>
+            <a href="/logout.aspx" class="btn btn-theme">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hdr fadein delay-1">
+    <div class="page-hdr-wrap">
+      <h1>Cases</h1>
+      <div id="ctl00_nav_breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/ROC-P/Portal/Default.aspx">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="/ROC-P/Portal/Exams/OCE/Vignette/Default.aspx">Case List</a></li>
+            <li class="breadcrumb-item active">Reconstruction</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+  <nav id="ctl00_cph_navTab" class="fadeinup delay-2 page-tabs">
+
+
+    <ul>
+      <li id="ctl00_cph_oceNav_litDetailTab" class="active">
+        <a id="ctl00_cph_oceNav_btnDetailTab" href="case-detail.html">Case Detail</a>
+      </li>
+      <li id="ctl00_cph_oceNav_litSkillSet">
+        <a id="ctl00_cph_oceNav_btnSkillSet" href="case-skillsets.html">Skill Sets</a>
+      </li>
+      <li id="ctl00_cph_oceNav_litVersion">
+
+      </li>
+      <li id="ctl00_cph_oceNav_litStatistics">
+
+      </li>
+      <li id="ctl00_cph_oceNav_litMapping">
+
+      </li>
+      <li id="ctl00_cph_oceNav_litLog">
+
+      </li>
+    </ul>
+
+  </nav>
+  <main class="page-content fadeinup delay-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_panVignettePart1Panel" style="display: block;">
+          <div id="ctl00_cph_panVignettePart1" class="panel">
+
+            <h2 class="panel-title">Vignette Details</h2>
+            <div class="rocp-form">
+
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Case Number<span class="req">*</span></label>
+                <div class="col-sm-9">
+
+                  879
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Case Name<span class="req">*</span></label>
+                <div class="col-sm-9">
+                  <input name="ctl00$cph$txtCaseName" type="text" value="Reconstruction" maxlength="100" id="ctl00_cph_txtCaseName" class="form-control" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAx9JREFUWAndV79LY0EQnjySSAQ1OUG4OxvxR5BALggBi0BEIYUYtLC43v8ghZVgY3V9/oUjpMovEBvRSsGAHrY2Yi7BwlgEREXNzffMLnnP91bzkiDcQNjdmdlvvt3ZnbdxEcvOzs73p6enX9xdaDab36DrlbhcripjHbjd7s2tra2/ZlxXK/gfDjxqNvZyzERumMQPMwkNK+93cCwEMVq7bFiXxqMFg6a/gzextF7nXMXfKhZ24FPl/yYwOztLqVSK0NpJX3cgFArR8PAwobWTvhLgu6/HFa0Vib4SsApo1hkIDAwM0OTkJAUCAbMfObW9ATIp3GLs9/tpY2ODhoaG6OXlhQqFAp2dnelmpzaBrWrlDszPz+vB4axpGi0uLsp5Tm0SQNGRBBQ+fTVJAsfHx9RoNPRgSMH+/r4M7NQmARQd1/b2dlPYcdDGx8epXq/T7e2tUOutymZwfGfAV7LGLoet98GVgcA7c3tqZiJ1JhGRKegp+gfA+Mv4Be+DTyPQ4hiXdeADpG1dUCei0ShNT0/TyMgI3d/fU61Wo3K5TBcXF7bzeBe+dk0gHA7TysoKeb1eGQgHFkRmZmZod3eXTk5OpM3c6ToFExMThuDPz88yBgpaIpHQy7hUmjpd70CxWCSkYHBwkEqlElUqFYrFYrS0tKSH8ng8uv36+toU+nXo5utQtXqrWXpbKFG0MpkMYeV8qnUP1JF2EQWuXSf6SMGBGDhtHx4eZHCsOB6PS6jLy0u6u7uTY3NHQ0XiXbgxG5yMkfP19XUaGxvTp2NH9vb2lFAa/qngHwuT+I10KL0VRp5La2trFAwGdS+kJp/PU7Wqhnx9MymAzab2b4ewIfjq6ipFIhFdhfOQy+Xo/PxcuNi2Xd8CICeTSRn88fGRstmssgC1s+mawPLyMs3NzUlMrB53Hz8hR0dHdHp6KoaGtmsCU1NTBkCfz0f4tQtqhJ10XAk53/ie90SA5WQHDjn6T8EgnU4TDqFKcCNs5LBjAqgbfL8T+J4DtL322wSxVDNpPEg2O04B140rnhhhgAy20BJdocQczAUGsP4BPJYni4VMj2AAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: pointer;"
+                    autocomplete="off">
+
+                </div>
+              </div>
+              <div id="ctl00_cph_panAuthor" class="form-group row">
+
+                <label class="col-sm-3 col-form-label">Author<span class="req">*</span></label>
+                <div class="col-sm-9">
+                  <input name="ctl00$cph$txtAuthor" type="text" value="Nathan Schroeder (nschroeder@aosillinois.com)" id="ctl00_cph_txtAuthor" disabled="disabled" class="form-control">
+                </div>
+
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Case Template<span class="req">*</span></label>
+                <div class="col-sm-9">
+
+                  <input name="ctl00$cph$txtVignetteTemplate" type="text" value="Single" id="ctl00_cph_txtVignetteTemplate" disabled="disabled" class="form-control">
+
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Domain<span class="req">*</span></label>
+                <div class="col-sm-9">
+                  <select class="selectpicker form-control">
+                    <option>-- Please Select --</option>
+                    <option>Trauma</option>
+                    <option>Implants</option>
+                    <option>Reconstruction</option>
+                    <option>Dentoalveolar</option>
+                  </select>
+
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Classification<span class="req">*</span></label>
+                <div class="col-sm-9">
+                  <div id="ctl00_cph_rcbClassification" class="RadComboBox RadComboBox_Bootstrap custom-combobox" style="width:100%;">
+                    <span class="rcbInner rcbReadOnly"><input name="ctl00$cph$rcbClassification" type="text" class="rcbInput radPreventDecorate" id="ctl00_cph_rcbClassification_Input" value="Previously Used, Section II" readonly="readonly" autocomplete="off"><button class="rcbActionButton" tabindex="-1" type="button"><span id="ctl00_cph_rcbClassification_Arrow" class="p-icon p-i-arrow-60-down"></span>
+                    <span
+                      class="rcbButtonText">select</span>
+                      </button>
+                      </span><input id="ctl00_cph_rcbClassification_ClientState" name="ctl00_cph_rcbClassification_ClientState" type="hidden" autocomplete="off" value="{&quot;logEntries&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;text&quot;:&quot;Previously Used, Section II&quot;,&quot;enabled&quot;:true,&quot;checkedIndices&quot;:[0,3],&quot;checkedItemsTextOverflows&quot;:false}">
+                  </div>
+
+                </div>
+              </div>
+              <div class="form-group row ddlpicker">
+                <label class="col-sm-3 col-form-label">Patient Age <span class="req">*</span></label>
+                <div class="col-sm-9">
+                  <select name="ctl00$cph$ddlAge" id="ctl00_cph_ddlAge" class="form-control">
+<option value="">-- Select --</option>
+<option selected="selected" value="Adult 18+">Adult 18+</option>
+<option value="Pediatric 0-6">Pediatric 0-6</option>
+<option value="Pediatric 6-13">Pediatric 6-13</option>
+<option value="Pediatric 13-18">Pediatric 13-18</option>
+
+</select>
+
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Roadmap Subject</label>
+                <div class="col-sm-9">
+                  <input name="ctl00$cph$txtSubject" type="text" value="ORN/Pathologic fracture" maxlength="50" id="ctl00_cph_txtSubject" class="form-control">
+
+                  <div class="small">(age/dx)</div>
+                </div>
+              </div>
+
+              <div id="ctl00_cph_panButton" class="options">
+
+                <a id="ctl00_cph_lnkCancel" class="btn btn-light" href="Default.aspx?message=cancel"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to Listing</a>
+
+                <a id="ctl00_cph_btnModify" class="btn btn-success float-right" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph$btnModify&quot;, &quot;&quot;, true, &quot;Item&quot;, &quot;&quot;, false, true))"><i class="fa fa-save" aria-hidden="true"></i> Update</a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="ctl00_cph_panSideBar" class="col-lg-4">
+
+        <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_panVignettePart2Panel" style="display: block;">
+          <div id="ctl00_cph_panVignettePart2" class="panel">
+
+            <h2 class="panel-title">Vignette Info</h2>
+
+            <div id="ctl00_cph_panlnkPreview" class="panel-section tab-flexible">
+
+              <h4>Preview</h4>
+              <a id="ctl00_cph_lnkPreview" class="btn btn-primary btn-block" href="Preview/Vignette-Preview.aspx?Vignette_GUID=137F6DF9-2BD7-4433-96A5-826CAB587A17" target="_blank">PREVIEW</a>
+
+
+            </div>
+            <div id="ctl00_cph_panInformation" class="panel-section">
+
+              <h4>Overview</h4>
+              <p>
+                Date Created: 12/11/2019 2:06 PM
+              </p>
+              <p>
+                Date Modified: 6/08/2021 12:37 PM
+              </p>
+              <p>
+                Author: Nathan Schroeder (nschroeder@aosillinois.com)
+              </p>
+              <p>
+                Version: 76
+
+              </p>
+
+            </div>
+            <div id="ctl00_cph_panReviewStatus" class="panel-section">
+
+              <h4>Review Status</h4>
+
+
+              <p>12/11/2019 2:06 PM - Vignette created by Courtney Walsh - 8014</p>
+
+              <p>5/09/2021 12:35 PM - Approved by Vincent Perciaccante - 21227</p>
+
+
+              <div class="mt-2">
+                <a onclick="return ConfirmSendBack();" id="ctl00_cph_btnSendBack" class="btn btn-link" href="javascript:__doPostBack('ctl00$cph$btnSendBack','')" style="padding: 5px 0px;">« Send Back to Board Consultant</a>
+              </div>
+              <div class="mt-2">
+                <a onclick="return ConfirmMoveForward();" id="ctl00_cph_btnMoveForward" class="btn btn-success" href="javascript:__doPostBack('ctl00$cph$btnMoveForward','')">Approve</a>
+              </div>
+
+
+            </div>
+          
+
+            <script>
+              function Comment5000() {
+                var txtBox = $('.char-5000').val();
+                if (txtBox.length > 5000) {
+                  $('.char-5000').val(txtBox.substring(0, 5000));
+                }
+              }
+            </script>
+            <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_ucC_upanPanel" style="display: block;">
+              <div id="ctl00_cph_ucC_upan" class="panel-section">
+
+
+
+
+
+
+                <h4>
+                  Comments (0)
+                </h4>
+                <div>
+
+                  <div id="ctl00_cph_ucC_panAddComment">
+
+                    <textarea name="ctl00$cph$ucC$txtComment" rows="3" cols="20" maxlength="5000" id="ctl00_cph_ucC_txtComment" class="char-5000 form-control input" onkeyup="return Comment5000();"></textarea> Maximum 5000 characters allowed<br>
+                    <br>
+
+                    <a id="ctl00_cph_ucC_btnAddComment" class="btn btn-primary" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph$ucC$btnAddComment&quot;, &quot;&quot;, true, &quot;comment1&quot;, &quot;&quot;, false, true))">
+                      <i class="fa fa-plus" aria-hidden="true"></i> Add Comment
+                    </a>
+                    <br>
+                    <br>
+
+                  </div>
+                  <div class="scroll-bar-vertical">
+
+                    <table cellspacing="0" cellpadding="0" border="0">
+
+                    </table>
+
+                    <div id="ctl00_cph_ucC_panNoRecord" class="mar-top">
+
+                      <i>
+              No comments have yet been posted.
+          </i>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <div class="modal fade rocp-modal roc-modal" id="popupVignetteFile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+          <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_panVignetteFileMCPanel" style="display: block;">
+            <div id="ctl00_cph_panVignetteFileMC" class="modal-content">
+
+              <div class="modal-header">
+                <h2 class="modal-title">
+                  Add Files
+                </h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+              </div>
+              <div class="modal-body">
+                <div id="ctl00_cph_panQuestionFile" class="rocp-form">
+
+                  <div id="vSummaryFile" class="alert alert-danger" style="color:Red;display:none;">
+
+                  </div>
+                  <span id="ctl00_cph_vFile" style="color:Red;display:none;"></span>
+                  <span id="ctl00_cph_vFileSize" style="color:Red;display:none;"></span>
+                  <span id="ctl00_cph_vFileCaption" style="color:Red;display:none;"></span>
+
+                  <div class="form-group row hide-list-item ">
+                    <label class="col-sm-12 text-left col-form-label">Files:<span class="req"> *</span>&nbsp;<a id="btnFile" href="javascript:__doPostBack('ctl00$cph$btnFile','')" style="text-decoration: underline"></a></label>
+                    <div class="col-sm-12">
+
+                      <div id="rauFile" class="RadAsyncUpload RadUpload RadUpload_Bootstrap">
+                        <input id="rauFile_ClientState" name="rauFile_ClientState" type="hidden" autocomplete="off">
+                        <ul class="ruInputs" id="rauFileListContainer">
+                          <li class="ruSelectWrap" id="rauFilerow0"><span class="ruFileWrap ruStyled"><span tabindex="-1" class="ruFakeInput"></span><span tabindex="-1" class="ruButton ruBrowse">Select</span><input type="file" tabindex="0" class="ruFileInput" name="rauFilefile0" id="rauFilefile0"
+                              size="23"><label for="rauFilefile0" style="display:none">label</label></span>
+                            <div class="ruDropZone"><span>Drop files here</span></div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div id="rauMultiFile" class="RadAsyncUpload RadUpload RadUpload_Bootstrap">
+                        <input id="rauMultiFile_ClientState" name="rauMultiFile_ClientState" type="hidden" autocomplete="off">
+                        <ul class="ruInputs" id="rauMultiFileListContainer">
+                          <li class="ruSelectWrap" id="rauMultiFilerow0"><span class="ruFileWrap ruStyled"><span tabindex="-1" class="ruFakeInput"></span><span tabindex="-1" class="ruButton ruBrowse">Select</span><input type="file" tabindex="0" class="ruFileInput" multiple="multiple" name="rauMultiFilefile0"
+                              id="rauMultiFilefile0" size="23"><label for="rauMultiFilefile0" style="display:none">label</label></span>
+                            <div class="ruDropZone"><span>Drop files here</span></div>
+                          </li>
+                        </ul>
+                      </div>
+                      <p>Only .pdf, .png, .jpeg, .jpg, .gif, .tif, .zip, .pptx, .docx, .xls, .xlsx, .txt, .csv of max size 20 Mb are allowed.</p>
+                      <div class="clr-bth"></div>
+                    </div>
+                  </div>
+                  <div id="ctl00_cph_panFileCaption" class="form-group row">
+
+                    <label class="col-sm-12 text-left col-form-label">Caption:<span class="req"> *</span></label>
+                    <div class="col-sm-12">
+                      <textarea name="ctl00$cph$txtFileCaption" rows="2" cols="20" id="txtFileCaption" class="form-control" style="width:100%;"></textarea>
+                    </div>
+
+                  </div>
+                  <div class="options">
+                    <a onclick="return updatePictureAndInfo();" id="ctl00_cph_btnAddQuestionFile" class="btn btn-success btnAddQuestionFile pull-right" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph$btnAddQuestionFile&quot;, &quot;&quot;, true, &quot;FileUpload&quot;, &quot;&quot;, false, true))">Save</a>
+                  </div>
+
+
+
+
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        function validationFailedFile(sender, eventArgs) {
+          var upload;
+          var btnFile = $(".btnAddQuestionFile");
+          var isEdit = btnFile.text() == "Update";
+          if (isEdit) {
+            upload = $find("rauFile");
+          } else {
+            upload = $find("rauMultiFile");
+          }
+          if (upload.isExtensionValid(eventArgs.get_fileName())) {
+            $("#hdnValidFile").val("Wrong file size");
+          } else {
+            $("#hdnValidFile").val("Wrong Extension");
+          }
+        }
+
+        function ConfirmMoveForward() {
+          return confirm('Are you sure you want to move forward the review status?');
+        }
+
+        function ConfirmSendBack() {
+          return confirm('Are you sure you want to send back the review status?');
+        }
+
+        function ConfirmImageDelete() {
+          if ($("#ddlAction").val() == "Delete Selected Images") {
+            return confirm('Are you sure you want to delete this item and all items associated with it? This action cannot be undone.');
+          }
+        }
+
+        function ConfirmDelete() {
+
+          return confirm('Are you sure you want to delete this item and all items associated with it? This action cannot be undone.');
+        }
+
+        function ConfirmRevert() {
+          return confirm('Are you sure you want to revert to this version? All items will be reverted to this version');
+        }
+
+        function updatePictureAndInfo() {
+          var upload = $find("rauFile");
+          var uploadMul = $find("rauMultiFile");
+
+          var fileCaption = $("#txtFileCaption");
+          // var mulitFileCaption = $("#TextBox");
+
+          var btnFile = $(".btnAddQuestionFile");
+          var validationSummery = $("#vSummaryFile")[0];
+          validationSummery.innerHTML = "";
+          $("#vSummaryFile").css('display', 'none');
+          var errors = "";
+          var isEdit = btnFile.text() == "Update";
+
+          if (!isEdit && uploadMul.getUploadedFiles().length < 1) {
+            errors += uploadMul.getInvalidFiles().length > 0 ? "<li>Please select a valid file to upload</li>" : "<li>Please select a file to upload</li>";
+          }
+
+          if (isEdit && upload.getInvalidFiles().length > 0) {
+            errors += "<li>Please select a valid file to upload</li>";
+          }
+
+          if (isEdit && !fileCaption.val().trim().length) {
+            errors += "<li>File Caption is Required</li>";
+          }
+
+          if (!isEdit && uploadMul.getUploadedFiles().length > 0) {
+            $("#rauMultiFile textarea").each(function() {
+              if (!$(this).val().trim().length) {
+                errors += "<li>File Caption is Required</li>";
+              }
+            });
+
+          }
+
+          if (errors) {
+            validationSummery.innerHTML = "Sorry, there were problems with your submission. Please review these following items:<ul>" + errors + "</ul>";
+            $("#vSummaryFile").css('display', 'block');
+            $('.modal-body').animate({
+              scrollTop: $('#vSummaryFile').position().top
+            }, 'slow');
+            return false;
+          }
+
+          return true;
+        };
+        var globalFlag = true;
+        (function() {
+          window.onClientFileUploaded = function(radAsyncUpload, args) {
+            var row = args.get_row(),
+              inputName = radAsyncUpload.getAdditionalFieldID("TextBox"),
+              inputType = "text",
+              radAsyncUploadID = radAsyncUpload._clientStateFieldID;
+            inputID = inputName,
+              input = createInput(inputType, inputID, inputName),
+              label = createLabel(inputID, radAsyncUploadID),
+              br = document.createElement("br");
+            row.appendChild(br);
+            row.appendChild(label);
+            row.appendChild(input);
+            $("#hdnValidFile").val("");
+          }
+
+          function createInput(inputType, inputID, inputName) {
+            var input = document.createElement("textarea");
+
+            input.setAttribute("type", inputType);
+            input.setAttribute("id", inputID);
+            input.setAttribute("name", inputName);
+
+
+            input.setAttribute("class", "form-control cust-height");
+            input.setAttribute("maxlength", 100);
+            return input;
+          }
+
+          function createLabel(forArrt, radAsyncUploadID) {
+            var label = document.createElement("label");
+
+            label.setAttribute("for", forArrt);
+            if (radAsyncUploadID.includes("ruImageBlob")) {
+              label.innerHTML = "Caption: ";
+            } else {
+              label.innerHTML = "Caption: <span class='req'>*</span>";
+            }
+
+            return label;
+          }
+        })();
+      </script>
+    </div>
+  </main>
+  <footer class="footer">
+    <h3>American Board of Art Directors</h3>
+    <p>123 Design Avenue<br/> Suite 456<br/> Willmingham, ZR 60611<br/> 123-456-7890
+    </p>
+    <p><a href="#.html">Privacy</a><br/><a href="#.html">Terms</a><br/><a href="#.html">Cookies</a></p>
+    <p>Powered by <br /><img src="img/ROCP-logo.png" alt="ROCP Logo" /></p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

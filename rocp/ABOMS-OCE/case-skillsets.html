@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/support.css" rel="stylesheet" />
+  <link href="css/custom_portal.css" rel="stylesheet" />
+  <style>
+     :root {
+      --theme-dark: #334357;
+      --theme-primary: #A1D403;
+    }
+  </style>
+
+  <title>ROC-P User Portal</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-xl fadein" id="header">
+    <a class="navbar-brand" href="page-index.html"><img src="img/logo.png" alt="Logo" /></a>
+    <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav" id="nav-main">
+
+        <li><a href="/ROC-P/Portal/Default.aspx">Dashboard</a></li>
+        <li class="active"><a href="#" class="disabled">Exams </a>
+          <ul class="disabled">
+            <li><a href="/ROC-P/Portal/Exams/Examiners/Default.aspx">Examiner Conflicts</a></li>
+            <li class="active"><a href="/ROC-P/Portal/Exams/OCE/Vignette/Default.aspx">Case List</a></li>
+            <li><a href="/ROC-P/Portal/Exams/OCE/Score-Exams/Default.aspx">Score Exams</a></li>
+          </ul>
+        </li>
+        <li><a href="/ROC-P/Portal/ROC/CE/CE-Certificate.aspx">CE</a></li>
+        <li><a href="#" class="disabled">LMS </a>
+          <ul class="disabled">
+            <li><a href="/ROC-P/Portal/ROC/CQI/15/Default.aspx">Clinical Case Questions</a></li>
+            <li><a href="/ROC-P/Portal/ROC/CQI/16/Default.aspx">Article Questions</a></li>
+            <li><a href="/ROC-P/Portal/ROC/Transcripts/Default.aspx">My Transcript</a></li>
+            <li><a href="/ROC-P/Portal/ROC/Admin/Default.aspx">LMS Development</a></li>
+          </ul>
+        </li>
+        <li><a href="/ROC-P/Portal/FileLibrary/Default.aspx">Resources</a></li>
+        <li><a href="#" class="disabled">History </a>
+          <ul class="disabled">
+            <li><a href="/ROC-P/Portal/Payments/Default.aspx">Past Payments</a></li>
+            <li><a href="/ROC-P/Portal/Exams/Results/Default.aspx">Exam History and Results</a></li>
+            <li><a href="/ROC-P/Portal/Applications/Default.aspx">My Application History</a></li>
+            <li><a href="/ROC-P/Portal/Log/Default.aspx">Activity Log</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" id="user-dropdown">
+          <a class="dropdown-toggle" href="#" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            <i id="ctl00_userCircle" class="fa fa-user-circle" aria-hidden="true"></i>User
+          </a>
+          <div class="dropdown-menu" aria-labelledby="user-menu">
+            <ul>
+              <li id="ctl00_liOrigAccount">
+                <a id="ctl00_btnOrginalAccount" class="word-break" href="javascript:__doPostBack('ctl00$btnOrginalAccount','')">Go to administration</a></li>
+              <li><a href="/ROC-P/Portal/MyAccount/Default.aspx">My Account</a></li>
+              <li><a href="/ROC-P/Portal/Store/Cart.aspx">Cart <span class="badge badge-secondary">
+                      0</span></a></li>
+              <li><a href="/ROC-P/Portal/Store/Default.aspx">Product Store</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li style="font-size: 10px; color: #808080; padding-bottom: 6px; text-align: center;">Last Login: Aug 12, 2021</li>
+            </ul>
+            <a href="/logout.aspx" class="btn btn-theme">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hdr fadein delay-1">
+    <div class="page-hdr-wrap">
+      <h1>Cases</h1>
+      <div id="ctl00_nav_breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/ROC-P/Portal/Default.aspx">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="/ROC-P/Portal/Exams/OCE/Vignette/Default.aspx">Case List</a></li>
+            <li class="breadcrumb-item active">Reconstruction</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+  <nav id="ctl00_cph_navTab" class="fadeinup delay-2 page-tabs">
+
+
+    <ul>
+      <li id="ctl00_cph_oceNav_litDetailTab">
+        <a id="ctl00_cph_oceNav_btnDetailTab" href="case-detail.html">Case Detail</a>
+      </li>
+      <li id="ctl00_cph_oceNav_litSkillSet" class="active">
+        <a id="ctl00_cph_oceNav_btnSkillSet" href="case-skillsets.html">Skill Sets</a>
+      </li>
+      <li id="ctl00_cph_oceNav_litVersion">
+
+      </li>
+      <li id="ctl00_cph_oceNav_litStatistics">
+
+      </li>
+      <li id="ctl00_cph_oceNav_litMapping">
+
+      </li>
+      <li id="ctl00_cph_oceNav_litLog">
+
+      </li>
+    </ul>
+
+  </nav>
+
+  <main class="page-content fadeinup delay-2">
+    <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_upPanel" style="display: block;">
+      <div id="ctl00_cph_up" class="row" style="visibility: visible;">
+
+        <div class="col-lg-3">
+          <div class="panel">
+            <h2 class="panel-title">Skill Sets</h2>
+            <nav class="secondary-nav">
+              <ul>
+                <li class="active"><a href="#.html">Data Gathering</a>
+                </li>
+                <li><a href="#.html">Management</a>
+                
+                </li>
+                <li><a href="#.html">Complications</a>
+                
+                </li>
+              </ul>
+            </nav>
+            <div id="ctl00_cph_panComments" class="panel-section">
+
+              <h4>Comments</h4>
+              <span id="ctl00_cph_v1" style="color:Red;display:none;">Please add comment</span>
+              <textarea name="ctl00$cph$txtComment" rows="2" cols="20" id="ctl00_cph_txtComment" class="char-5000 form-control" onkeyup="return MaxChar5000(this);"></textarea> Maximum 5000 characters allowed<br>
+              <br>
+              <a id="ctl00_cph_btnAddComment" class="btn btn-primary" href="javascript:__doPostBack('ctl00$cph$btnAddComment','')"><i class="fa fa-plus" aria-hidden="true"></i> Add Comment</a>
+              <div class="scroll-bar-vertical">
+
+                <br>
+                <br>
+
+
+                <p>
+                  No comments have been posted for this Skill Set
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div id="ctl00_cph_panSlideSet" class="panel">
+
+            <span id="ctl00_cph_lblError"></span>
+            <h2 class="panel-title">
+              Data Gathering</h2>
+            <div class="clr-bth"></div>
+            <div class="flex-grid">
+            
+            <div class="options no-border">
+              <div class="float-left">
+                
+              </div>
+              <p class="float-left">Please add images to enhance this slide set:
+                <div class="float-right">
+                  <a href="#.html" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Add Image</a>
+                  <a href="#.html" class="btn btn-light"><i class="fa fa-plus" aria-hidden="true"></i> Add Vingette Group</a></p>
+                </div>
+            </div>
+
+            <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_gvImagePanel" style="display: block;">
+              <div id="ctl00_cph_gvImage" class="RadGrid RadGrid_Default results-gv table-responsive" tabindex="0">
+                
+                <table class="table table-striped">
+                  <colgroup>
+                    <col style="width:10px">
+                    <col style="width: 80px">
+                    <col>
+                    <col>
+                    <col style="width: 200px;">
+                    <col style="width:100px">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="rgHeader rgDragCol">&nbsp;</th>
+                      <th scope="col" class="rgHeader" style="text-align:center;">Thumbnail</th>
+                      <th scope="col" class="rgHeader">Rank</th>
+                      <th scope="col" class="rgHeader">Caption</th>
+                      <th scope="col" class="rgHeader">Vingette Group</th>
+                      <th scope="col" class="rgHeader">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><i class="fa fa-bars"></i></td>
+                      <td><img src="img/image-thumb.jpg" /></td>
+                      <td>1</td>
+                      <td>Slide 1.1</td>
+                      <td><select class="selectpicker form-control">
+                        <option>-- Please Select --</option>
+                        <option>Item #1</option>
+                        <option>Item #2</option>
+                        <option>Item #3</option>
+                        <option>Item #4</option>
+                      </select></td>
+                      <td>
+                        <div class="table-actions">
+                        <a href="#.html" class="text-info"><i class="fa fa-pencil-square"></i> Edit</a>
+                        <a href="#.html" class="text-info"><i class="fa fa-copy"></i> Copy</a>
+                        <a href="#.html" class="text-danger"><i class="fa fa-close"></i> Delete</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-bars"></i></td>
+                      <td><img src="img/image-thumb.jpg" /></td>
+                      <td>2</td>
+                      <td>Slide 1.2</td>
+                      <td>
+                        <select class="selectpicker form-control">
+                        <option>-- Please Select --</option>
+                        <option>Item #1</option>
+                        <option>Item #2</option>
+                        <option>Item #3</option>
+                        <option>Item #4</option>
+                      </select>
+                    </td>
+                      <td>
+                        <div class="table-actions">
+                        <a href="#.html" class="text-info"><i class="fa fa-pencil-square"></i> Edit</a>
+                        <a href="#.html" class="text-info"><i class="fa fa-copy"></i> Copy</a>
+                        <a href="#.html" class="text-danger"><i class="fa fa-close"></i> Delete</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-bars"></i></td>
+                      <td><img src="img/image-thumb.jpg" /></td>
+                      <td>3</td>
+                      <td>Slide 1.3</td>
+                      <td><select class="selectpicker form-control">
+                        <option>-- Please Select --</option>
+                        <option>Item #1</option>
+                        <option>Item #2</option>
+                        <option>Item #3</option>
+                        <option>Item #4</option>
+                      </select></td>
+                      <td>
+                        <div class="table-actions">
+                        <a href="#.html" class="text-info"><i class="fa fa-pencil-square"></i> Edit</a>
+                        <a href="#.html" class="text-info"><i class="fa fa-copy"></i> Copy</a>
+                        <a href="#.html" class="text-danger"><i class="fa fa-close"></i> Delete</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-bars"></i></td>
+                      <td><img src="img/image-thumb.jpg" /></td>
+                      <td>4</td>
+                      <td>Slide 1.4</td>
+                      <td><select class="selectpicker form-control">
+                        <option>-- Please Select --</option>
+                        <option>Item #1</option>
+                        <option>Item #2</option>
+                        <option>Item #3</option>
+                        <option>Item #4</option>
+                      </select></td>
+                      <td>
+                        <div class="table-actions">
+                        <a href="#.html" class="text-info"><i class="fa fa-pencil-square"></i> Edit</a>
+                        <a href="#.html" class="text-info"><i class="fa fa-copy"></i> Copy</a>
+                        <a href="#.html" class="text-danger"><i class="fa fa-close"></i> Delete</a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <hr />
+            <h3>Questions and answers associated to this skill set</h3>
+            
+            <form class="rocp-form">
+              <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Stem</label>
+                  <div class="col-sm-9">
+                    <textarea rows="4" class="form-control" placeholder="A 58-year-old male with pain of the right mandible. History of oral cancer and wants teeth again. (clinical photos 1 & 2)"></textarea>
+                  </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Stem Group</label>
+                <div class="col-sm-9">
+                  <select class="selectpicker form-control">
+                    <option>-- Please Select --</option>
+                    <option>Trauma</option>
+                    <option>Implants</option>
+                    <option>Reconstruction</option>
+                    <option>Dentoalveolar</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Skill Set Description / Questions</label>
+                <div class="col-sm-9">
+                  <textarea rows="4" class="form-control" placeholder=""></textarea>
+                  <small>This is a paragraph that will include instructions on how to use this part of the form and process.</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Passing Points</label>
+                <div class="col-sm-9">
+                  <select class="selectpicker form-control">
+                    <option>-- Please Select --</option>
+                    <option>Item #1</option>
+                    <option>Item #2</option>
+                    <option>Item #3</option>
+                    <option>Item #4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Critical Errors</label>
+                <div class="col-sm-9">
+                  <select class="selectpicker form-control">
+                    <option>-- Please Select --</option>
+                    <option>Item #1</option>
+                    <option>Item #2</option>
+                    <option>Item #3</option>
+                    <option>Item #4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="options">
+                <button class="btn btn-success"><i class="fa fa-save" aria-hidden="true"></i> Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="modal fade rocp-modal roc-modal" id="popupMoveImage" role="dialog" data-backdrop="static" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-focus-on="input:first">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Copy Image</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span></button>
+            </div>
+            <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_panCopyImagePanel" style="display: block;">
+              <div id="ctl00_cph_panCopyImage" class="modal-body">
+
+
+                <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_moveImage_panCopyPanel" style="display: block;">
+                  <div id="ctl00_cph_moveImage_panCopy" class="rocp-form">
+
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">
+            Skill Set
+        </label>
+                      <div class="col-sm-9">
+                        <select name="ctl00$cph$moveImage$ddlSkillSet" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cph$moveImage$ddlSkillSet\',\'\')', 0)" id="ctl00_cph_moveImage_ddlSkillSet" class="form-control" style="width:225px;">
+
+				</select>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+                <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_moveImage_panSuccessPanel" style="display: block;">
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ctl00_cph_panMoveQuestionModal" class="row">
+
+      <div class="modal fade rocp-modal roc-modal" id="popupMoveQuestion" data-backdrop="static" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-focus-on="input:first">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Copy Question</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span></button>
+            </div>
+            <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_panMoveQuestionPanel" style="display: block;">
+              <div id="ctl00_cph_panMoveQuestion" class="modal-body">
+
+
+                <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_moveQuestion_panCopyPanel" style="display: block;">
+                  <div id="ctl00_cph_moveQuestion_panCopy" class="rocp-form">
+
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">
+            Skill Set
+        </label>
+                      <div class="col-sm-9">
+                        <select name="ctl00$cph$moveQuestion$ddlSkillSet" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cph$moveQuestion$ddlSkillSet\',\'\')', 0)" id="ctl00_cph_moveQuestion_ddlSkillSet" class="form-control" style="width:225px;">
+
+					</select>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+                <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_moveQuestion_panSuccessPanel" style="display: block;">
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal fade rocp-modal roc-modal" id="popupModifySkillSet" role="dialog" tabindex="-1" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true" data-focus-on="input:first">
+      <div class="modal-dialog">
+        <div class="modal-content" role="document">
+          <div class="modal-header">
+            <h2 class="modal-title">Edit Skill Set</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="RadAjaxPanel" id="ctl00_cph_ctl00_cph_uPanSkillSetPanel" style="display: block;">
+              <div id="ctl00_cph_uPanSkillSet" class="rocp-form">
+
+
+
+
+
+                <div class="form-group row">
+                  <div class="col-sm-3 col-form-label">
+                    <span>Name <span class="req">*</span>:</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <input name="ctl00$cph$txtSkillSet" type="text" maxlength="50" id="ctl00_cph_txtSkillSet" class="form-control">
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="options">
+              <a id="ctl00_cph_btnModifySkillSet" class="btn btn-success" href="javascript:__doPostBack('ctl00$cph$btnModifySkillSet','')"><i class="fa fa-save" aria-hidden="true"></i> Save</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <footer class="footer">
+    <h3>American Board of Art Directors</h3>
+    <p>123 Design Avenue<br/> Suite 456<br/> Willmingham, ZR 60611<br/> 123-456-7890
+    </p>
+    <p><a href="#.html">Privacy</a><br/><a href="#.html">Terms</a><br/><a href="#.html">Cookies</a></p>
+    <p>Powered by <br /><img src="img/ROCP-logo.png" alt="ROCP Logo" /></p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
