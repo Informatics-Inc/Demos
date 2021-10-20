@@ -1159,7 +1159,7 @@ input[type='checkbox'] ~ label::before, input[type='radio'] ~ label::before {con
 	border-radius: 0 !important;
 }
 .mar-btm-5 {margin-bottom: 5px;}
-.table-actions a {display: block; text-transform: uppercase; font-weight: 600; padding: 5px; margin: 0 0 5px 0; border-radius: 3px;}
+.table-actions a {display: block; padding: 5px; margin: 0 0 5px 0; border-radius: 3px;}
 .table-actions a:hover {background: #f4f4f4; text-decoration: none;}
 .table .form-control {background: none;}
 .no-border {border: none;}
