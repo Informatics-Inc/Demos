@@ -101,17 +101,7 @@
     <div class="row justify-content-center">
 
       <div class="col-lg-4 col-xl-3">
-        <div class="panel">
-          <h2 class="panel-title">Review Status</h2>
-          <table class="table rocp-table table-striped table-sm">
-            <tbody>
-              <tr><td>12/11/2019 2:06 PM</td><td>Vignetter created by Courtney Walsh - 8014</td></tr>
-              <tr><td>5/09/2021 12:35 PM</td><td>Approved by Vincent Perciaccante - 21227</td></tr>
-            </tbody>
-          </table>
-          <a href="#.html" class="btn btn-success btn-block"><i class="fa fa-check"></i> Approve</a>
-          <a href="#.html" class="btn btn-link btn-block"><i class="fa fa-arrow-circle-left"></i>Send Back to Board Consultant</a>
-        </div>
+        
         <div class="panel">
           <h2 class="panel-title">Case Details</h2>
           <table class="table rocp-table table-striped table-sm">
@@ -131,7 +121,17 @@
           </table>
           <a href="#.html" class="btn btn-link btn-block" data-toggle="modal" data-target="#editDetails"><i class="fa fa-edit"></i> Edit Case Details</a>
         </div>
-
+        <div class="panel">
+          <h2 class="panel-title">Review Status</h2>
+          <table class="table rocp-table table-striped table-sm">
+            <tbody>
+              <tr><td>12/11/2019 2:06 PM</td><td>Vignetter created by Courtney Walsh - 8014</td></tr>
+              <tr><td>5/09/2021 12:35 PM</td><td>Approved by Vincent Perciaccante - 21227</td></tr>
+            </tbody>
+          </table>
+          <a href="#.html" class="btn btn-success btn-block"><i class="fa fa-check"></i> Approve</a>
+          <a href="#.html" class="btn btn-link btn-block"><i class="fa fa-arrow-circle-left"></i>Send Back to Board Consultant</a>
+        </div>
         <div class="panel">
           <h2 class="panel-title">Comments (0)</h2>
           <textarea rows="2" class="form-control"></textarea><br />
@@ -160,23 +160,26 @@
                   <textarea rows="4" class="form-control" placeholder="A 58-year-old male with pain of the right mandible. History of oral cancer and wants teeth again. (clinical photos 1 & 2)"></textarea>
                 </div>
             </div>
-            <div class="form-group row">
-              <label class="col-sm-3 col-form-label">Stem Group</label>
-              <div class="col-sm-9">
-                <select class="selectpicker form-control">
-                  <option>-- Please Select --</option>
-                  <option>Trauma</option>
-                  <option>Implants</option>
-                  <option>Reconstruction</option>
-                  <option>Dentoalveolar</option>
-                </select>
-              </div>
-            </div>
+           
             <div class="form-group row">
               <label class="col-sm-3 col-form-label">Skill Set Description / Questions</label>
               <div class="col-sm-9">
-                <textarea rows="4" class="form-control" placeholder=""></textarea>
+                <img src="img/text-editor.jpg" />
                 <small>This is a paragraph that will include instructions on how to use this part of the form and process.</small>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Additional Information</label>
+              <div class="col-sm-9">
+                <div style="position: relative;">
+                <img src="img/text-editor.jpg" />
+                <p style="position: absolute; left: 0; top: 0; padding: 45px 25px; font-size: .8rem; line-height: 1.8;">4  - Acceptable -  The Candidate demonstrates full and in-depth understanding of the key concepts within the context of the case.<br />
+                  3  - Marginal Acceptable – The Candidate demonstrates understanding of the key concepts within the context of the case, but with some gaps in knowledge and skills.<br />
+                  2  - Marginal Unacceptable – The Candidate demonstrates some understanding of the key concepts within the context of the case, but with significant gaps in knowledge and skills.<br />
+                  1 - Unacceptable – The Candidates lacks understanding of the key concepts within the context of the case.<br />
+                  </p>
+                  </div>
               </div>
             </div>
             </form>
@@ -268,7 +271,6 @@
                 <col style="width: 50px">
                 <col>
                 <col>
-                <col style="width: 200px;">
                 <col style="width:100px">
               </colgroup>
               <thead>
@@ -277,7 +279,6 @@
                   <th scope="col" class="rgHeader" style="text-align:center;">Thumbnail</th>
                   <th scope="col" class="rgHeader">Rank</th>
                   <th scope="col" class="rgHeader">Caption</th>
-                  <th scope="col" class="rgHeader">Case Group</th>
                   <th scope="col" class="rgHeader">Actions</th>
                 </tr>
               </thead>
@@ -287,13 +288,7 @@
                   <td><img src="img/image-thumb.jpg" /></td>
                   <td>1</td>
                   <td>Slide 1.1</td>
-                  <td><select class="selectpicker form-control">
-                    <option>-- Please Select --</option>
-                    <option>Item #1</option>
-                    <option>Item #2</option>
-                    <option>Item #3</option>
-                    <option>Item #4</option>
-                  </select></td>
+                  
                   <td>
                     <div class="table-actions">
                     <a href="#.html" class="text-info"><i class="fa fa-pencil-square"></i> Edit</a>
@@ -307,15 +302,7 @@
                   <td><img src="img/image-thumb.jpg" /></td>
                   <td>2</td>
                   <td>Slide 1.2</td>
-                  <td>
-                    <select class="selectpicker form-control">
-                    <option>-- Please Select --</option>
-                    <option>Item #1</option>
-                    <option>Item #2</option>
-                    <option>Item #3</option>
-                    <option>Item #4</option>
-                  </select>
-                </td>
+                  
                   <td>
                     <div class="table-actions">
                     <a href="#.html" class="text-info"><i class="fa fa-pencil-square"></i> Edit</a>
@@ -329,13 +316,7 @@
                   <td><img src="img/image-thumb.jpg" /></td>
                   <td>3</td>
                   <td>Slide 1.3</td>
-                  <td><select class="selectpicker form-control">
-                    <option>-- Please Select --</option>
-                    <option>Item #1</option>
-                    <option>Item #2</option>
-                    <option>Item #3</option>
-                    <option>Item #4</option>
-                  </select></td>
+                  
                   <td>
                     <div class="table-actions">
                     <a href="#.html" class="text-info"><i class="fa fa-pencil-square"></i> Edit</a>
@@ -349,13 +330,7 @@
                   <td><img src="img/image-thumb.jpg" /></td>
                   <td>4</td>
                   <td>Slide 1.4</td>
-                  <td><select class="selectpicker form-control">
-                    <option>-- Please Select --</option>
-                    <option>Item #1</option>
-                    <option>Item #2</option>
-                    <option>Item #3</option>
-                    <option>Item #4</option>
-                  </select></td>
+                
                   <td>
                     <div class="table-actions">
                     <a href="#.html" class="text-info"><i class="fa fa-pencil-square"></i> Edit</a>
