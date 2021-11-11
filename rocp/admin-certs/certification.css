@@ -1,16 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
 :root {
-      /* Interface Colors */
-  --success: #53a041;
-  --success-bkg: #edf6eb;
-  --inprog: #6fb0ce;
-  --inprog-bkg: #e1f1f8;
-  --failed: #c12929;
-  --failed-bkg: #f7e2e2;
-  --zero: #e6ebf1;
-  --zero-bkg: #f2f5f8;  
+    /* Interface Colors */
+--success: #53a041;
+--success-bkg: #edf6eb;
+--inprog: #6fb0ce;
+--inprog-bkg: #e1f1f8;
+--failed: #c12929;
+--failed-bkg: #f7e2e2;
+--zero: #e6ebf1;
+--zero-bkg: #f2f5f8;  
 }
+
 .edit-person {display: grid; gap: 15px;}
 .edit-person .tab-base .nav {display: grid; grid-template-columns: repeat( auto-fit, minmax(125px, 1fr) ); gap: 5px; margin: 0 0 5px 0;}
 .edit-person .tab-base .nav:before {display: none;}
@@ -19,6 +20,19 @@
 .edit-person .tab-base .nav > li.active a {background: #fff; color: #444; border-bottom: none; font-weight: 700;}
 .tab-base .tab-content {width: 100%;}
 .edit-person .tab-menu .btn-primary {display: block; margin: 0 0 5px 0; font-weight: 700; padding: 10px;}
+
+/* CERTIFICATIONS */
+.cert-grid {display: grid; grid-template-columns: repeat( auto-fit, minmax(225px, 1fr)); gap: 15px;}
+.cert-card {background: #fafafa; z-index: 2; padding: 15px; position: relative; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);}
+.cert-card h3 {margin: 0 0 10px 0; font-size: 20px; font-weight: 700;}
+.cert-card p {margin: 2px 0 0 0;}
+.cert-card p {display: grid; grid-template-columns: 1fr 2.5fr; color: rgba(0,0,0,.6);}
+.cert-card:hover {transform: scale(1.02); opacity: 1;}
+
+.cert-failure {background: var(--failed-bkg);}
+.cert-failure:after {content: "\f057";font-family: FontAwesome; position: absolute; right: 15px; top: 0; font-size: 60px; color:var(--failed); opacity: .06; z-index: -1;}
+.cert-success {background: var(--success-bkg);}
+.cert-success:after {content: "\f058";font-family: FontAwesome; position: absolute; right: 15px; top: 0; font-size: 60px; color: var(--success); opacity: .1; z-index: -1;}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 776px) {
