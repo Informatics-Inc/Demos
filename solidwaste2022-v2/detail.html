@@ -17,9 +17,8 @@
   <link href="css/custom.css" rel="stylesheet">
 </head>
 
-<body class="ccm-page" id="body">
-  <a href="#content" class="skip-to-content-link">Skip To Content</a>
-  <a href="#" id="btn-top" onclick="scrollToTop()"><i class="fa fa-arrow-circle-o-up"></i></a>
+<body class="ccm-page">
+
   <nav class="navbar" role="navigation" id="header">
     <div class="hdr-cta">
       <div class="container">
@@ -87,10 +86,10 @@
                 <li><a href="detail.html">Industrial & Special Waste</a></li>
               </ul>
             </li>
-            <li><a href="recycling.html">Recycling</a>
+            <li class="nav-path-selected"><a href="recycling.html">Recycling</a>
               <ul>
                 <li><a href="detail.html">Household Recyclables</a></li>
-                <li><a href="detail.html">Electronics</a></li>
+                <li class="nav-path-selected"><a href="detail.html">Electronics</a></li>
                 <li><a href="detail.html">Appliances</a></li>
                 <li><a href="detail.html">Tires & Scrap Metal</a></li>
                 <li><a href="detail.html">Matteries, Bulbs & Sharps</a></li>
@@ -114,7 +113,6 @@
             </li>
             <li><a href="education.html">Education & Tours</a></li>
             <li><a href="trashmore.html">Mount Trashmore</a></li>
-            
           </ul>
           <div class="menu-cta">
             <ul class="hdr-links">
@@ -133,21 +131,71 @@
       <!--/.nav-collapse -->
     </div>
   </nav>
-  
-  <main class="content" id="content">
-    <header class="header" id="hero">
+
+  <main class="content">
+    <header class="header hdr-sec">
       <div class="container">
-        <p class="preheader">Visit the Solid Waste Agency</p>
-        <h1>Saturday Dropoff by Appointment Only</h1>
-        <p>Schedule your appointment online and learn the steps for a successful dropoff.</p>
-        <p class="btn-theme btn-ico"><a href="#.html"><i class="fa fa-calendar"></i>Schedule an Appointment</a></p>
+        <h1>Electronics</h1>
+        <p>Electronics recycling is only available at 1954 County Home Road, Marion, Iowa. Electronics are only accepted from Linn County residents.</p>
       </div>
       <figure>
-        <img src="img/ftr-bkg.jpg" />
+        <img src="img/hdr-electronics.jpg" />
       </figure>
     </header>
-
     <section>
+      <div class="container">
+        <div class="info-grid">
+          <div class="col">
+            <div class="cost-list">
+            <h2>Fees</h2>
+            <p>Please be aware that fees paid for landfill disposal subsidize the cost of recycling for many items. We do our best to keep prices and rates low but, generally, recycling isn’t free.</p>
+            <ul>
+              <li>Tvs & Monitors <strong>$15/unit</strong></li>
+              <li>Loads with 5 or more TVs or monitors <strong>$0.25/pound</strong></li>
+              <li>Bulk mixed electronics from residents<strong>$0.25/pound</strong></li>
+            </ul>
+            </div>
+          </div>
+          <div class="col">
+            <h2>What We Accept</h2>
+            <p>Electronics are accepted at no charge from small, residential loads. Businesses with electronics should contact an electronics processor directly.</p>
+            <div class="page-list">
+              <div class="col ico-content">
+                <img src="img/ico-cpu.png" />
+                <h3>Computer Equipment</h3>
+                <ul>
+                  <li>Towers</li>
+                  <li>Keyboards</li>
+                  <li>Laptops</li>
+                  <li>Mice</li>
+                  <li>Printers</li>
+                  <li>Scanners</li>
+                </ul>  
+              </div>
+              <div class="col ico-content">
+                <img src="img/ico-fax.png" />
+                <h3>Home Office Equipment</h3>
+                <ul>
+                  <li>Copy machines</li>
+                  <li>Cellular and land-line telephones</li>
+                  <li>Fax machines</li>
+                </ul>
+              </div>
+              <div class="col ico-content">
+                <img src="img/ico-games.png" />
+                <h3>Gaming systems</h3>
+                <ul>
+                  <li>Consoles</li>
+                  <li>Portables</li>
+                  <li>Controllers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bkg-light">
       <div class="container">
         <div class="grid-two">
           <div class="col">
@@ -157,69 +205,60 @@
             </figure>
           </div>
           <div class="col fun-list">
-            
-            <p class="preheader">How Can We Help?</p>
-            <h2>The Solid Waste Agency is Linn County's place for all your garbage needs.</h2>
-            <p>We strive to consistently exceed customer expectations and create innovative solutions to fit any need. Keeping up with new trends and market demands while combining our technical and artistic expertise</p>
-            <ul>
-              <li>Leading industrial solutions with best machinery</li>
-              <li>Environment-friendly manufacturing</li>
-              <li>We use raw materials and energy efficient equipments</li>
-            </ul>
-          </div>
-        </div>
-      </div>  
-    </section>
-    
-    <section class="bkg-tan bkg-img">
-      <img src="img/bkg-landfill.jpg" />
-      <div class="container">
-        <div class="hgroup">
-          <p class="preheader">This Month at Solid Waste Agency</p>
-          <h2>By The Numbers</h2>
-        </div>
-        <div class="auto-grid">
-          <div class="feature-number">
-            <i class="fa fa-trash-o"></i>
-            <span class="numscroller roller-title-number-6 scrollzip" data-min="1" data-max="40" data-delay="3" data-increment="1" data-slno="60">40</span>
-            <h3>Tons of Garbage Disposed Each Day</h3>
-          </div>
-          <div class="feature-number">
-            <i class="fa fa-calendar-check-o"></i>
-            <span class="numscroller roller-title-number-6 scrollzip" data-min="1" data-max="2500" data-delay="3" data-increment="10" data-slno="6">2,500</span>
-            <h3>Appointments Made and Kept</h3>
-          </div>
-          <div class="feature-number">
-            <i class="fa fa-warning"></i>
-            <span class="numscroller roller-title-number-6 scrollzip" data-min="1" data-max="15" data-delay="3" data-increment="1" data-slno="6">15</span>
-            <h3>Gallans of Hazerdous Material Safely Recycled</h3>
-          </div>
-          <div class="feature-number">
-            <i class="fa fa-drivers-license"></i>
-            <span class="numscroller roller-title-number-6 scrollzip" data-min="1" data-max="100" data-delay="3" data-increment="2" data-slno="6">100</span>
-            <h3>Number of a Thing That Happened</h3>
+            <p class="preheader">Electronic Waste Disposal</p>
+            <h2>E-Waste is a waste stream that is quickly growing.</h2>
+            <p>The outdated and obsolete electronics that you no longer want are electronic waste or “E-waste,” a waste stream that's quickly growing.</p>
+            <p>Many electronics contain toxic materials such as lead, lithium, cadmium and mercury. Reusing and recycling electronics keeps these toxic materials out of our landfills and recovers valuable resources.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="bkg-light">
       <div class="container">
         <div class="grid-two">
+          
+          <div class="col fun-list">
+            <p class="preheader">Electronic Waste Disposal</p>
+            <h2>What happens next?</h2>
+            <p>After you drop off your E-waste, it is taken to an electronics processor and dismantled or "de-manufactured" into core components that are used to manufacture new recycled goods.</p><p>These components include glass, plastic and circuit boards. The circuit boards themselves contain reusable metals such as copper, gold and silver.</p>
+          </div>
           <div class="col">
             <figure class="img-combo">
-              <img src="img/feature-10.jpg" />
-              <img src="img/forward-2044-tan.jpg" />
+              <img src="img/feature-1.jpg" />
+              <img src="img/feature-3.jpg" />
             </figure>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bkg-tan-img">
+      <div class="container">
+        <div class="info-grid">
           <div class="col">
-            <p class="preheader">Forward Waste Planning 2044</p>
-            <h2>Waste & Recycling Planning for Linn County's Future</h2>
-            <p>The Agency's original charge will end on June 30, 2044. <strong>This is the last day garbage can be accepted at 1954 County Home Road, Marion, where the landfill and Resource Recovery building are located</strong>.</p>
-            <p>What does this mean for the future of garbage in Linn County?</p>
-            <p class="btn-theme"><a href="#.html">Explore Forward 2044</a></p>
+            <h2>What Else To Know?</h2>
+            <p>Please be aware that fees paid for landfill disposal subsidize the cost of recycling for many items. We do our best to keep prices and rates low but, generally, recycling isn’t free.</p>
           </div>
-          
+          <div class="col">
+            <div class="page-list">
+              <div class="col ico-content">
+                <img src="img/ico-small-items.png" />
+                <h3>Small Items</h3>
+                <p>Smaller recyclables, including electronics, batteries and hazardous materials, are collected inside the Resource Recovery Building</p>
+              </div>
+              <div class="col ico-content">
+                <img src="img/ico-couch.png" />
+                <h3>Large Items</h3>
+                <p>Large, bulky items are generally managed outside. Trailer loads will be directed to th eworking face of the landfill.</p>
+              </div>
+              <div class="col ico-content">
+                <img src="img/ico-recycle.png" />
+                <h3>Fees</h3>
+                <p>We do our best to keep prices and rates low but, generally, recycling isn’t free.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -265,9 +304,7 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/numscroller.js"></script>
   <script src="js/scripts.js"></script>
-  <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
 </body>
 
