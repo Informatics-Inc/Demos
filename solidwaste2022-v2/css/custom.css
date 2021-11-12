@@ -24,6 +24,7 @@ Date: Nov 2021
   --serif: 'Georgia', serif;
   --transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --box-shadow: 5px 5px 15px #BFD3EF;
+  accent-color: var(--primary);
 }
 
 /* TYPOGRAPHY */
@@ -230,7 +231,7 @@ h3 {font-size: 1.65rem;}
 .info-grid .page-list {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );}
 
 /* Header */
-.header.hdr-sec {padding: 200px 25px 125px 25px; margin-top: 150px;}
+.header.hdr-sec {padding: 160px 25px 125px 25px; margin-top: 150px;}
 .header.hdr-sec .container {display: flex; justify-content: center; align-items: center; text-align: left;}
 .header.hdr-sec .container:before, .header.hdr-sec .container:after {display: none;}
 .header.hdr-sec h1 {margin: 0; padding: 0; max-width: 325px;}
@@ -279,6 +280,12 @@ h2 {Font-size: 2.75rem;}
 #hdr-info p {margin: 0; color: var(--text);}
 #hdr-info a i {font-size: 2.1rem; color: var(--secondary); transition: var(--transition);}
 #hdr-info a:hover i {color: var(--primary); transform: scale(1.05);}
+
+#navbar #hdr-search ul {border: none; padding: 0; margin: 0;}
+#navbar #hdr-search a {display: none;}
+#hdr-search form {position: relative; width: 100%;}
+#hdr-search form input {width: 100%; height: 50px; background: var(--light); border: 1px solid #ccc; padding: 5px 50px 5px 15px;}
+#hdr-search form button {position: absolute; height: 50px; background: var(--primary); color: #fff; right: 0; top: 0; border: none; padding: 15px;}
 
 /* ONLY MOBILE */
 @media (max-width: 992px) {
@@ -342,6 +349,9 @@ h2 {Font-size: 2.75rem;}
 #navbar #nav-main ul {position: absolute; left: 50%; margin-left: -112.5px; top: 105%; width: 225px; background: #fff; border-top: 5px solid var(--primary); display: block; visibility: hidden; opacity: 0; box-shadow: 5px 5px 20px rgba(0,0,0,.2); padding: 15px 10px; border: 0; border-radius: 5px;}
 #navbar #nav-main li {position: relative;}
 #navbar #nav-main li:hover ul {opacity: 1; visibility: visible; top: 100%;}
+
+#navbar #hdr-search a {display: block; border-left: 1px solid rgba(0,0,0,.1); background: rgba(0,0,0,.1);}
+#navbar #hdr-search ul {left: auto; right: 0; width: 350px; padding: 15px;}
 }
 
 @media (min-width: 1200px) {
