@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#alert-modal {padding: 25px;}
+#alert-modal .modal-content {border-radius: 0; border-top: 10px solid var(--primary); font-size: 1.1rem;}
+#alert-modal .text {padding: 25px; text-align: center; background: #f4f4f4;}
+#alert-modal .close {font-size: 4.5rem; padding: 5px 25px; opacity: .25; text-shadow: none; position: absolute; top: 0; right: 0;}
+.modal-backdrop.in {opacity: .8;}
+#alert-modal strong {color: darkred;}
+#alert-modal h2:after {left: calc(50% - 25px);}
+#alert-modal p:last-of-type {margin: 0;}
+#alert-modal figure img {height: 350px; width: 100%; object-fit: cover;}
+#alert-modal .btn-theme {font-size: 1rem; margin: 0 0 1rem 0;}
+#alert-modal .btn-text {font-size: .9rem; text-decoration: underline;}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #alert-modal .text {padding: 50px;}
+    #alert-modal p {font-size: 1.4rem;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+#alert-modal .modal-content {display: grid; grid-template-columns: 1fr 2fr;}
+#alert-modal figure img {height: 100%;}
+#alert-modal .modal-dialog {width: 750px;}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
