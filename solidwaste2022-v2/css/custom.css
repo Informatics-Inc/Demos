@@ -8,9 +8,11 @@ Date: Nov 2021
 
 /* Variables */
 :root {
-  --primary: #7B9E3E;
+  --primary-true: #7B9E3E;
+  --primary: #627D31;
   --primary-on-dark: #A9CE6A;
-  --secondary: #3DA5D9;
+  --secondary-true: #3DA5D9;
+  --secondary: #227DAA;
   --light: #f7f2eb;
   --light-2: #EBE7DF;
   --dark: #222;
@@ -238,7 +240,7 @@ h3 {font-size: 1.65rem;}
 .header.hdr-sec h1:after {display: none;}
 .header.hdr-sec p {border-left: 5px solid var(--primary); padding: 0 0 0 25px; margin: 0 0 0 25px; max-width: 600px; font-size: 1.5rem;}
 
-#hero {height: 650px; display: flex; justify-content: center; flex-direction: column; padding: 150px 0 0 0; margin-top: 75px; background: #fff;}
+#hero {height: 650px; display: flex; justify-content: center; flex-direction: column; padding: 150px 0 0 0; margin-top: 75px; background: #000;}
 #hero p {font-size: 1.5rem; font-weight: 300; max-width: 500px; margin: 0 0 1.5rem 0;}
 #hero p a {font-size: 1rem;}
 #hero img {opacity: 1; mix-blend-mode: multiply;}
@@ -403,7 +405,7 @@ h2 {Font-size: 2.75rem;}
     transform: translateY(-100%);
   }
   .skip-to-content-link {
-    background: #e77e23;
+    background: #000; color: #fff; text-decoration: underline;
     height: 30px;
     left: 50%;
     padding: 8px;

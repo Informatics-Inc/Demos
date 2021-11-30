@@ -19,7 +19,7 @@
 
 <body class="ccm-page" id="body">
   <a href="#content" class="skip-to-content-link">Skip To Content</a>
-  <a href="#" id="btn-top" onclick="scrollToTop()"><i class="fa fa-arrow-circle-o-up"></i></a>
+  <a href="#" id="btn-top" onclick="scrollToTop()" role="button" aria-hidden="true"><i class="fa fa-arrow-circle-o-up"></i></a>
   <nav class="navbar" role="navigation" id="header">
     <div class="hdr-cta">
       <div class="container">
@@ -118,7 +118,7 @@
               <ul>
                   <form class="form" method="get" action="/search/">
                     <input type="text" name="query" size="25" placeholder="Search this site" title="Search this site">
-                    <button type="submit" name="search" value="Search This Site"><span class="fa fa-search"></span></button>
+                    <button type="submit" name="search" value="Search This Site" aria-label="Seaerch This Site"><span class="fa fa-search"></span></button>
                   </form>
               </ul>
             </li>
