@@ -30,9 +30,9 @@
           <span><strong>Translate Site:</strong></span><a href="#.html"><i class="fa fa-globe"></i> En Español</a>
           <span class="divider"></span>
           <span><strong>Font Size:</strong></span>
-          <button class="increase" value="Increase Font Size"><i class="fa fa-plus-circle"></i></button>
-          <button class="decrease" value="Decrease Font Size"><i class="fa fa-minus-circle"></i></button>
-          <button class="resetMe" value="Reset Font Size"><i class="fa fa-sync"></i></button>
+          <button class="increase" aria-label="Increase Font Size" value="Increase Font Size"><i class="fa fa-plus-circle"></i></button>
+          <button class="decrease" aria-label="Decrease Font Size" value="Decrease Font Size"><i class="fa fa-minus-circle"></i></button>
+          <button class="resetMe" aria-label="Reset Font Size" value="Reset Font Size"><i class="fa fa-sync"></i></button>
         </div>
       </div>
     </div>
@@ -114,7 +114,7 @@
                 <li><a href="sec-nav.html">Forward 2044</a></li>
               </ul>
             </li>
-            <li id="hdr-search"><a href="#.html"><i class="fa fa-search"></i></a>
+            <li id="hdr-search"><a href="#.html"><i class="fa fa-search" role="button" aria-label="Search This Site"></i></a>
               <ul>
                   <form class="form" method="get" action="/search/">
                     <input type="text" name="query" size="25" placeholder="Search this site" title="Search this site">
