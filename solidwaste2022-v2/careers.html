@@ -20,7 +20,7 @@
 <body class="ccm-page">
 
   <a href="#content" class="skip-to-content-link">Skip To Content</a>
-  <a href="#" id="btn-top" onclick="scrollToTop()"><i class="fa fa-arrow-circle-o-up"></i></a>
+  <a href="#" id="btn-top" onclick="scrollToTop()" role="button" aria-hidden="true"><i class="fa fa-arrow-circle-o-up" aria-label="scroll to top"></i> Scroll to Top</a>
   <nav class="navbar" role="navigation" id="header">
     <div class="hdr-cta">
       <div class="container">
@@ -31,9 +31,9 @@
           <span><strong>Translate Site:</strong></span><a href="#.html"><i class="fa fa-globe"></i> En Español</a>
           <span class="divider"></span>
           <span><strong>Font Size:</strong></span>
-          <button class="increase"><i class="fa fa-plus-circle"></i></button>
-          <button class="decrease"><i class="fa fa-minus-circle"></i></button>
-          <button class="resetMe"><i class="fa fa-sync"></i></button>
+          <button class="increase" aria-label="Increase Font Size" value="Increase Font Size"><i class="fa fa-plus-circle"></i></button>
+          <button class="decrease" aria-label="Decrease Font Size" value="Decrease Font Size"><i class="fa fa-minus-circle"></i></button>
+          <button class="resetMe" aria-label="Reset Font Size" value="Reset Font Size"><i class="fa fa-sync"></i></button>
         </div>
       </div>
     </div>
@@ -115,11 +115,12 @@
                 <li><a href="sec-nav.html">Forward 2044</a></li>
               </ul>
             </li>
-            <li id="hdr-search"><a href="#.html"><i class="fa fa-search"></i></a>
+            <li id="hdr-search"><a href="#.html"><i class="fa fa-search" role="button" aria-label="Search This Site"></i></a>
               <ul>
                   <form class="form" method="get" action="/search/">
+                    <label>Search This Site:</label>
                     <input type="text" name="query" size="25" placeholder="Search this site" title="Search this site">
-                    <button type="submit" name="search" value="Search"><span class="fa fa-search"></span></button>
+                    <button type="submit" name="search" value="Search This Site" aria-label="Seaerch This Site"><span class="fa fa-search"></span></button>
                   </form>
               </ul>
             </li>
@@ -143,7 +144,6 @@
       <!--/.nav-collapse -->
     </div>
   </nav>
-
   <main class="content">
     <header class="header hdr-sec">
       <div class="container">
