@@ -31,9 +31,9 @@
           <span><strong>Translate Site:</strong></span><a href="#.html"><i class="fa fa-globe"></i> En Español</a>
           <span class="divider"></span>
           <span><strong>Font Size:</strong></span>
-          <button class="increase"><i class="fa fa-plus-circle"></i></button>
-          <button class="decrease"><i class="fa fa-minus-circle"></i></button>
-          <button class="resetMe"><i class="fa fa-sync"></i></button>
+          <button class="increase" aria-label="Increase Font Size" value="Increase Font Size"><i class="fa fa-plus-circle"></i></button>
+          <button class="decrease" aria-label="Decrease Font Size" value="Decrease Font Size"><i class="fa fa-minus-circle"></i></button>
+          <button class="resetMe" aria-label="Reset Font Size" value="Reset Font Size"><i class="fa fa-sync"></i></button>
         </div>
       </div>
     </div>
@@ -115,11 +115,12 @@
                 <li><a href="sec-nav.html">Forward 2044</a></li>
               </ul>
             </li>
-            <li id="hdr-search"><a href="#.html"><i class="fa fa-search"></i></a>
+            <li id="hdr-search"><a href="#.html"><i class="fa fa-search" role="button" aria-label="Search This Site"></i></a>
               <ul>
                   <form class="form" method="get" action="/search/">
+                    <label>Search This Site:</label>
                     <input type="text" name="query" size="25" placeholder="Search this site" title="Search this site">
-                    <button type="submit" name="search" value="Search"><span class="fa fa-search"></span></button>
+                    <button type="submit" name="search" value="Search This Site" aria-label="Seaerch This Site"><span class="fa fa-search"></span></button>
                   </form>
               </ul>
             </li>
@@ -177,17 +178,17 @@
             <p>At 1954 County Home Road,  Marion, Iowa visitors learn about landfilling and resource recovery.  At 2250 A Street SW, Cedar Rapids, Iowa visitors learn about composting and Mount Trashmore.</p>
             <div class="page-list">
               <div class="col ico-content">
-                <img src="img/ico-landfill.png" />
+                <img src="img/ico-landfill.png" alt="image alt tag" />
                 <h3>Former Landfill</h3>
                 <p>Mount Trashmore is a former landfill with 6 million tons of garbage. The former landfill is being transitioned into a recreational site. </p>
               </div>
               <div class="col ico-content">
-                <img src="img/ico-park.png" />
+                <img src="img/ico-park.png" alt="image alt tag" />
                 <h3>Views & Trails</h3>
                 <p>If you like to mountain bike, bring out your mountain bike and ride our unique gravity fed flow trail! It's something you won't want to miss!</p>
               </div>
               <div class="col ico-content">
-                <img src="img/ico-clipboard.png" />
+                <img src="img/ico-clipboard.png" alt="image alt tag" />
                 <h3>Please Check In</h3>
                 <p>All users must check in before using the site. Find more information below. </p>
               </div>
