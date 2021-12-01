@@ -159,22 +159,23 @@ a.card:hover span.btn-theme:before {transform: scaleX(1);transform-origin: botto
 
 .img-combo {position: relative; padding: 25px 50px 100px 50px; margin: 0 0 1.5rem 0; z-index: 2;}
 .img-combo img:nth-of-type(2) {position: absolute; left: 15px; bottom: 0; width: 55%; border: 15px solid var(--light); border-left: 0; border-bottom: 0; box-shadow: none !important;}
-.img-combo:before {width: 75px; height: 75px; content: ""; background-blend-mode: multiply; position: absolute; bottom: 65px; right: 125px; border: 7px solid var(--primary)}
-.img-combo:after {width: 85px; height: 125px; content: ""; background-blend-mode: multiply; position: absolute; top: 0px; right: 20px; border: 7px solid var(--secondary); z-index: -1;}
+.img-combo:before {width: 75px; height: 75px; content: ""; background-blend-mode: multiply; position: absolute; bottom: 65px; right: 125px; border: 7px solid var(--primary-true)}
+.img-combo:after {width: 85px; height: 125px; content: ""; background-blend-mode: multiply; position: absolute; top: 0px; right: 20px; border: 7px solid var(--secondary-true); z-index: -1;}
 
 .img-combo-2 {display: grid; grid-template-columns: 1fr 1fr; gap: 25px; position: relative; padding: 0 50px 0 0; position: relative; z-index: 2;}
 .img-combo-2 img:nth-of-type(2) {margin-top: 2rem;}
-.img-combo-2:before {width: 75px; height: 75px; content: ""; background-blend-mode: multiply; position: absolute; bottom: 75px; left: -25px; border: 7px solid var(--primary)}
-.img-combo-2:after {width: 85px; height: 125px; content: ""; background-blend-mode: multiply; position: absolute; top: 0px; right: 20px; border: 7px solid var(--secondary); z-index: -1;}
+.img-combo-2:before {width: 75px; height: 75px; content: ""; background-blend-mode: multiply; position: absolute; bottom: 75px; left: -25px; border: 7px solid var(--primary-true)}
+.img-combo-2:after {width: 85px; height: 125px; content: ""; background-blend-mode: multiply; position: absolute; top: 0px; right: 20px; border: 7px solid var(--secondary-true); z-index: -1;}
 
 .bkg-img {position: relative; z-index: 2; background: var(--darker);}
 .bkg-img > img {position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: .15;}
 .bkg-img h2, .bkg-img h3 {color: #fff;}
 .bkg-img .feature-number {color: #fff;}
+.bkg-img .preheader {color: var(--secondary-true);}
 
 .auto-grid {display: grid; grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) ); gap: 25px;}
 .feature-number {position: relative; padding: 0 15px;}
-.feature-number span {color: var(--secondary); font-size: 4rem; font-weight: 700; text-align: right; padding-left: 30px;}
+.feature-number span {color: var(--secondary-true); font-size: 4rem; font-weight: 700; text-align: right; padding-left: 30px;}
 .feature-number .fa {font-size: 3rem; padding: 1rem; position: absolute; opacity: .2; left: -2.25rem; top: .5rem; width: 105px; text-align: center;}
 .feature-number h3 {font-size: 1.5rem; padding-left: 30px; border-left: 5px solid rgba(255,255,255,.2); font-weight: 400;}
 
@@ -243,15 +244,14 @@ h3 {font-size: 1.65rem;}
 #hero {height: 650px; display: flex; justify-content: center; flex-direction: column; padding: 150px 0 0 0; margin-top: 75px; background: #000;}
 #hero p {font-size: 1.5rem; font-weight: 300; max-width: 500px; margin: 0 0 1.5rem 0;}
 #hero p a {font-size: 1rem;}
-#hero img {opacity: 1; mix-blend-mode: multiply;}
-#hero .preheader {font-size: 1rem; font-weight: 700; margin: 0; padding: 0 0 0 45px;}
+#hero img {opacity: .75; mix-blend-mode: multiply;}
+#hero .preheader {font-size: 1.25rem; font-weight: 700; margin: 0; padding: 0 0 0 45px;}
 #hero .preheader:before {left: 0; top: calc(50% - 2px);}
 
 #hero h1:after {display: none;}
 #hero .container {text-align: left; padding-right: 500px;}
-#hero figure {background: linear-gradient(90deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.25) 100%);}
-
-.cost-list {border-right: 1px dotted rgba(0,0,0,.15); padding: 0 2.5rem 0 0; height: 100%;}
+#hero figure {background: none;background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 25%, rgba(0,0,0,0.25) 100%);}
+.cost-list {border-right: 1px dotted rgba(255,255,255,.75); padding: 0 2.5rem 0 0; height: 100%;}
 }
 
 /* Large devices (large desktops, 1200px and up) */
