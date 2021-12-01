@@ -100,7 +100,7 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .bkg-light .img-combo img:nth-of-type(2) {border-color: #fff;}
 .bkg-tan {background: var(--light-2);}
 .info-grid {display: grid; gap: 25px;}
-#btn-top {display: block; opacity: 0; position: fixed; bottom: 25px; right: 25px; width: 50px; height: 50px; text-align: center; line-height: 50px; font-size: 25px; color: #fff; background: var(--primary); z-index: 5; box-shadow: 4px 4px 8px rgba(0,0,0,.2);}
+#btn-top {display: block; opacity: 0; position: fixed; bottom: 25px; right: 25px; width: 50px; height: 50px; text-align: center; line-height: 50px; font-size: 25px; color: #fff; background: var(--primary); z-index: 5; box-shadow: 4px 4px 8px rgba(0,0,0,.2); border: none; overflow: hidden;}
 #btn-top:hover {background: var(--secondary);}
 .bkg-tan-img {background: url(../img/lines.png) 0 0 repeat;}
 
