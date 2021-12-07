@@ -81,6 +81,8 @@ hr {margin: 50px 0;}
 .hgroup h2:after {left: calc(50% - 50px);}
 .hgroup p {font-size: 1.25rem; max-width: 800px; margin: 0 auto 2rem auto;}
 img + h2 {margin-top: 1.5rem;}
+.content ul {margin: 0 0 1.5rem 0;}
+img + p {margin-top: 1rem;}
 
 /* LINKS */
 a {color: var(--primary); text-decoration: underline;}
@@ -142,7 +144,13 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 #sec-nav ul {list-style: none; padding: 0; margin: 0 0 1rem 0;}
 #sec-nav ul a {display: block; padding: 15px; background: var(--light); margin: 0 0 5px 0; color: var(--dark); text-decoration: none;}
 #sec-nav ul a:hover {background: none; text-decoration: underline;}
-#sec-nav ul .nav-path-selected a {background: none; font-family: var(--header);}
+#sec-nav ul > .nav-path-selected > a {background: none; font-family: var(--header);}
+#sec-nav ul ul {border-left: 1px solid #ccc; margin-left: 1.25rem;}
+#sec-nav ul ul a {background: none; padding: 7px 10px 7px 20px;}
+#sec-nav ul ul a:hover {padding: 7px 5px 7px 25px;}
+#sec-nav ul ul ul {border: none; list-style: disc; padding: 0 0 0 20px; margin: 0 0 0 1.25rem;}
+#sec-nav ul ul ul a {font-size: .9rem; padding: 5px 0;}
+#sec-nav ul ul ul a:hover {padding: 5px 0;}
 
 /* Footer */
 .footer {padding-top: var(--spacer);  background: var(--light); font-size: .9rem; position: relative; z-index: 5;}
@@ -312,6 +320,9 @@ h2 {font-size: 2.5rem;}
 #navbar #nav-main ul {border-left: 1px solid #ccc; margin: 0 0 1rem 1rem;}
 #hdr-tools .nav-mini {display: none;}
 #navbar #nav-main ul ul {display: none;}
+.nav-mini {display: flex; justify-content: center;gap: 5px;}
+.nav-mini li {flex-grow: 1;}
+.nav-mini a {padding: 10px 10px; display: block; background: var(--dark); text-align: center;}
 }
 
 /* WIDE DESKTOP */
@@ -325,6 +336,7 @@ h2 {font-size: 2.5rem;}
 #navbar {flex-grow: 1; padding: 0;}
 #navbar #nav-main {display: flex; justify-content: flex-end; align-items: center;}
 #navbar #nav-main a {padding: 50px 15px; font-size: .9rem;}
+#navbar #nav-main #hdr-cta {margin-left: 15px;}
 #navbar #nav-main #hdr-cta .btn-theme {padding: 15px 25px; color: #fff;}
 #navbar #nav-main > li > ul {position: absolute; left: calc(50% - 125px); top: 105%; width: 250px; background: #fff; border-top: 5px solid var(--primary); display: block; visibility: hidden; opacity: 0; box-shadow: 5px 5px 20px rgba(0,0,0,.2); padding: 15px; border: 0; border-top: 5px solid var(--primary);}
 #navbar #nav-main > li > ul:before {display: block; width: 10px; height: 10px; position: absolute; left: 50%; top: -10px; margin-left: -5px; content: "";
@@ -338,13 +350,13 @@ border-left: 10px solid transparent; border-right: 10px solid transparent;border
 #hdr-tools .nav-mini a:before {width: 1px; height: 15px; background: var(--primary); content: ""; position: absolute; left: 0; top: calc(50% - 6px);}
 
 /* MEGA MENU OPTIONS */
-#navbar #nav-main.mega-menu > li > ul {width: 550px; display: flex; left: calc(50% - 275px); padding: 15px 10px 25px 5px; gap: 15px;}
-#navbar #nav-main.mega-menu > li > ul li {flex-grow: 1;}
-#navbar #nav-main.mega-menu > li > ul > li {display: block; position: relative;}
-#navbar #nav-main.mega-menu > li > ul > li > a {font-weight: 700; font-size: 1rem;}
-#navbar #nav-main.mega-menu > li > ul > li > ul {border-left: 1px solid #ccc; margin: 0 0 0 15px;}
-#navbar #nav-main.mega-menu > li > ul > li > ul > li > a {padding: 5px 10px; font-size: .85rem; color: #444;}
-#navbar #nav-main.mega-menu > li > ul > li > ul > li > a:hover {background: var(--light); padding: 5px 5px 5px 15px; color: var(--dark);}
+#navbar #nav-main .mega-menu > ul {width: 550px; display: flex; left: calc(50% - 275px); padding: 15px 10px 25px 5px; gap: 15px;}
+#navbar #nav-main .mega-menu > ul li {flex-grow: 1;}
+#navbar #nav-main .mega-menu > ul > li {display: block; position: relative;}
+#navbar #nav-main .mega-menu > ul > li > a {font-weight: 700; font-size: 1rem;}
+#navbar #nav-main .mega-menu > ul > li > ul {border-left: 1px solid #ccc; margin: 0 0 0 15px;}
+#navbar #nav-main .mega-menu > ul > li > ul > li > a {padding: 5px 10px; font-size: .85rem; color: #444;}
+#navbar #nav-main .mega-menu > ul > li > ul > li > a:hover {background: var(--light); padding: 5px 5px 5px 15px; color: var(--dark);}
 
 #header {padding: 0; position: fixed; top: 0; width: 100%; background: #fff;}
 #header.scroll {box-shadow: 0 10px 5px rgba(0,0,0,.1);}
