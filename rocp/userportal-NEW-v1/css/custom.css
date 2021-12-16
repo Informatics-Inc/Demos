@@ -569,7 +569,8 @@ animation-fill-mode: forwards;
 .vert-tabs ol {border-right: 1px solid #ccc; padding: 1rem 0; list-style: none;}
 .vert-tabs li {position: relative; margin: 2px 0; padding: 0;}
 .vert-tabs li > a {display: block; padding: 12px 12px 12px 40px; background: #f3f3f3; text-decoration: none; color: #444; position: relative;}
-.vert-tabs li > a:hover {background: #f9f9f9; padding: 12px 5px 12px 15px;}
+.vert-tabs li > a:hover {background: #f9f9f9; padding: 12px 7px 12px 45px;}
+.vert-tabs li > a:hover:before {background: rgba(0,0,0,.3);}
 .vert-tabs li.active > a {font-weight: bold; background: none; border: 1px solid #ccc; border-right: 1px solid #fff; right: -1px; /* box-shadow: 5px 5px 3px rgba(0,0,0,.04);*/}
 .vert-tabs li.active > a:after {content: ""; position: absolute; right: 0; top: calc(50% - 5px); border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid var(--theme-primary);}
 /*.vert-tabs li.active:after {position: absolute; right: -11px; top: 0; width: 10px; background: #fff; content: ""; height: 100%;}*/
