@@ -566,8 +566,4 @@ animation-fill-mode: forwards;
 .delay-9 {animation-delay: 1.5s;}
 
 /* VERT TABS */
-.vert-tabs {border-right: 1px solid #ccc; padding: 1rem 0;}
-.vert-tabs a {display: block; padding: 12px; background: #f3f3f3; margin: 0 0 3px 0; text-decoration: none; color: #444; position: relative;}
-.vert-tabs a:hover {background: #f9f9f9; padding: 12px 5px 12px 15px;}
-.vert-tabs a.active {font-weight: bold; background: none; border-right: 1px solid #fff; right: -1px;}
-.vert-tabs a.active:after {content: ""; position: absolute; right: -5px; top: calc(50% - 5px); border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid var(--theme-primary);}
+.vert-tabs a {display: block; padding: 10px; background: var(--bkg-light); margin: 0 0 5px 0;}
