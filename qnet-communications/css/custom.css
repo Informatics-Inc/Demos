@@ -75,7 +75,7 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .grid-5 {display: grid; grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );}
 
 #home {background: linear-gradient(100deg, rgba(4,48,77,1) 15%,rgba(211,26,110,1) 100%); position: relative; margin: 125px 0 0 0; overflow: hidden;}
-#home .text {padding: 50px; position: relative; z-index: 5; color: #fff;}
+#home .text {padding: 25px; position: relative; z-index: 5; color: #fff;}
 #home .text h1 {color: #fff;}
 #home .text p {border-left: 5px solid var(--primary); padding: 0 0 0 25px;}
 #home figure {position: absolute; inset: 0;}
@@ -113,7 +113,7 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .price-box:hover h3 {background: var(--primary);}
 
 #contact {background: url(../img/line-dots.png) repeat-x; background-size: auto 125px; background-position: left bottom;}
-.cta-items p {display: flex; align-items: center; margin: 0 0 .5rem 0; font-size: 1.25rem;}
+.cta-items p {display: flex; align-items: center; margin: 0 0 .5rem 0; font-size: .9rem;}
 .cta-items .fa {width: 50px; height: 50px; background: var(--gradient); color: #fff; display: flex; justify-content: center; flex-direction: column; text-align: center; margin: 0 1rem 0 0; border-radius: 0 10px 10px 10px;}
 
 /* Footer */
@@ -134,11 +134,11 @@ h2 {font-size: 2.5rem;}
 
 /* Header Wide */
 #home {margin-top: 100px; padding: 75px 0; background: linear-gradient(100deg, rgba(4,48,77,1) 15%, rgba(255,255,255,1) 66%, rgba(249,215,230,1) 78%, rgba(211,26,110,1) 100%);}
-#home .text {padding: 25px; max-width: 55%;}
+#home .text {padding: 50px; max-width: 55%;}
 #home .text h1 {font-size: 3.75rem; font-weight: 600; text-transform: uppercase;}
 #home .text p {max-width: 400px; font-size: 1.5rem;}
 #home .text span {width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: -1; opacity: .1;}
-
+.cta-items p {font-size: 1.25rem;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -167,7 +167,7 @@ h2 {font-size: 3rem;}
 #logo img {max-width: 300px;}
 #navbar ul {list-style: none; padding: 0; margin: 0;}
 #navbar #nav-main .active {color: var(--primary);}
-#navbar #nav-main a {color: var(--dark); font-weight: 600; text-decoration: none; padding: 15px; display: block; text-transform: uppercase; letter-spacing: .5px;}
+#navbar #nav-main a {color: var(--dark); font-weight: 600; text-decoration: none; padding: 15px 10px; display: block; text-transform: uppercase; letter-spacing: .5px;}
 #navbar #nav-main ul {border-left: 1px solid #ccc; margin: 0 0 1rem 1rem;}
 #navbar #nav-main ul a {font-size: .9rem; padding:10px 15px; font-weight: 400;}
 .hdr-cta {background: var(--gradient); color: #fff; text-decoration: none; padding: 10px 15px; display: flex; justify-content: center; align-items: center; text-transform: uppercase; font-size: .7rem; letter-spacing: 1px;}
@@ -180,9 +180,10 @@ h2 {font-size: 3rem;}
 #hdr-request {display: none;}
 .mobile-menu {display: flex;}
 #header .container {width: 100%; padding: 0;}
-#toggle {background: var(--dark); color: #fff; display: flex; align-items: center; margin: 0; border-radius: 0; padding: 0 10px; text-transform: uppercase; font-weight: bold; font-size: 16px; justify-content: flex-end; flex-grow: 1;}
+#toggle {background: var(--dark); color: #fff; display: flex; align-items: center; margin: 0; border-radius: 0; padding: 0 10px; text-transform: uppercase; font-weight: bold; font-size: 16px; justify-content: flex-end; flex-grow: 1; padding: 0 15px 0 0;}
 #toggle .fa {font-size: 22px; margin: 0 0 0 10px; line-height: 48px;}
 #navbar #nav-main {padding: 15px 0; display: flex; justify-content: center;}
+#navbar {padding: 0;}
 #navbar .hidden-mobile {display: none;}
 }
 
