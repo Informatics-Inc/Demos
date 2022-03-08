@@ -89,7 +89,7 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .ico-feature:hover:after {inset: 0;}
 
 /* Image Combo */
-.img-combo-tall {display: grid; grid-template-columns: 1fr 1fr; gap: 25px; position: relative; padding: 0; position: relative; z-index: 2; margin: 0 0 2rem 0;}
+.img-combo-tall {display: grid; grid-template-columns: 1fr 1fr; gap: 25px; position: relative; padding: 0; position: relative; z-index: 2; margin: 0 0 2rem 5%; width: 90%;}
 .img-combo-tall img:nth-of-type(2) {margin-top: 2rem;}
 .img-combo-tall:before {width: 75px; height: 75px; content: ""; background-blend-mode: multiply; position: absolute; bottom: 75px; left: -25px; border: 7px solid var(--primary)}
 .img-combo-tall:after {width: 85px; height: 125px; content: ""; background-blend-mode: multiply; position: absolute; top: 0px; right: -25px; border: 7px solid var(--primary); z-index: -1;}
@@ -145,9 +145,10 @@ h2 {font-size: 2.5rem;}
 @media (min-width: 992px) {
 :root { --spacer: 50px;}
 h2 {font-size: 3rem;}
-#home .text {max-width: 45%;}
+#home .text {max-width: 45%; padding: 25px;}
 
 .lead {font-size: 1.5rem;}
+.img-combo-tall {width: auto; margin: 0;}
 }
 
 /* Large devices (large desktops, 1200px and up) */
