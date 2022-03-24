@@ -1,34 +1,15 @@
 
-// For Local Dev Load Only //
-$(function(){
-	$("#load-header").load("header.html");
-	$("#load-footer").load("footer.html");
-});
-
-$("#menu-toggle" ).click(function(){
-	$("#menu").toggleClass("active");
-	$("#menu-toggle").toggleClass("active");
-});
-$('#menu li .toggle').click(function() {
-	$('#menu li.active').removeClass('active');
-	$(this).parent().addClass('active');
-});
-
-$('#menu li .toggle').click(function() {
-	$('#menu li.active').removeClass('active');
-	$(this).parent().addClass('active');
-});
-
 // -- ADD CLASS ON SCROLL --//
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
 	if (scroll > 50) {
-		$("#site-header").addClass("scroll");
+		$("#header").addClass("scroll");
 	} else {
-		$("#site-header").removeClass("scroll");
+		$("#header").removeClass("scroll");
 	}
 	var x = $(this).scrollTop();
-	   $(".header img").css("-webkit-transform","translateY(" +  (x/5)  + "px)");
+	   $(".parallax-1").css("-webkit-transform","translateY(" +  (x/12)  + "px)");
+	   $(".parallax-2").css("-webkit-transform","translateY(" +  (x/11)  + "px)");
   });
 
 // -- ANIMATE IN TO VIEW -- //
@@ -61,10 +42,10 @@ $window.trigger('scroll');
 
 // SWIPER Who We Are Values //
 if (document.querySelector('.swiper-container')) {
-	var values = ['Fudiciary Grade', 'Fee Only', 'Evidenced Based', 'Relationship Driven']
+	var values = ['Environmental Treatments', 'Animal Health & Welfare', 'Data Insights & Predictive Analytics']
 	var swiper = new Swiper('.swiper-container', {
 		slidesPerView: 'auto',
-		speed: 1050,
+		speed: 1550,
 		slidesPerView: 1,
 		centeredSlides: true,
 		loop: true,
