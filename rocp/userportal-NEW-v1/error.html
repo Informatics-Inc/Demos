@@ -10,11 +10,13 @@
 	<style>
 		#error {background: var(--dark); background: var(--theme-dark); text-align: center;}
 		#error img {width: 250px; margin: 2rem 0;}
-		#error .box {max-width: 525px; margin: 0 auto; background: #fff; padding: 50px; border-radius: 5px; box-shadow: 15px 15px 25px rgba(0,0,0,.35);}
+		#error .box {max-width: 525px; margin: 0 auto; background: #fff; padding: 25px 50px; border-radius: 5px; box-shadow: 15px 15px 25px rgba(0,0,0,.35);}
 		#error .box img {max-width: 100%; width: auto;}
 	    #error .box p {font-size: 1.15rem;}
 	    #error .box .preheader {font-size: .8rem; color: var(--primary); font-weight: 700;}
 	    #error .box h1 {font-size: 2rem; letter-spacing: -1.25px;}
+		#error .action-links {display: flex; gap: 15px; margin: 2.5rem 0 0 0;}
+		#error .action-links a {padding: 15px; background: #f4f4f4; flex: 1; border-radius: 5px; font-size: 1rem;}
 	</style>
 </head>
 <body id="error">
@@ -22,10 +24,14 @@
 		<div class="container">
 		<img src='img/RocP-Logo-Inverse.png' alt="ROC-P LLC." />
 			<div class="box">
-			<img src="img/404.jpg" alt="404 error image" />
-			<p class="preheader">Oh No! Looks like that didn't work.</p>
-			<h1>There was a problem with your submission</h1>
-			<p>Please press the back button and try again or contact the administrator to report the issue.</p>
+			<img src="img/error.jpg" alt="404 error image" />
+			<p class="preheader">Oh No! Something went wrong</p>
+			<h1>Looks like that didn't work.</h1>
+			<p>There was a problem with your submission. Please go back to the previous screen and try again or head to the dashboard.</p>
+			<div class="action-links">
+				<a href="#.html">Go Back</a>
+				<a href="#.html">Dashboard</a>
+			</div>
 		</div>
 	</div>
 	</div>
