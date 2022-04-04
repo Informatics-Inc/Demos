@@ -69,3 +69,12 @@ $(".swiper-container").hover(function() {
   }, function() {
     (this).swiper.autoplay.start();
   });
+
+// -- SEARCH TOGGLE -- //
+$("#search-toggle").click(function(){
+	$("#hdr-search").toggleClass("active");
+});
+
+$("#search-close").click(function(){
+	$("#hdr-search").toggleClass("active");
+});
