@@ -93,11 +93,16 @@ a:hover {text-decoration: none;}
 .complete {background: #4ca94c;}
 
 /* Flex Layouts */
-.flex-around {display: flex;justify-content: space-between;}
+.flex-around {display: flex; justify-content: space-between;}
 .flex-between {display: flex; justify-content: space-between;} 
+.flex-around input {width: auto;}
+.flex-form-btn {width: 100%;}
+.flex-form-btn .flex-around {gap: 15px;}
+.flex-form-btn input {width: 60%;}
+.flex-form-btn .flex-around > * {flex: 1 1 auto;}
 
 /* App Head */
-.app-head {position: fixed; top: 0; width: 100vw; background: var(--theme-dark); color: #fff; display: flex; justify-content: space-between; align-items: center; height: 50px; z-index: 15;}
+.app-head {position: fixed; top: 0; width: 100vw; background: url(../img/logo-watermark.png) 25px -25px no-repeat var(--theme-dark); color: #fff; display: flex; justify-content: space-between; align-items: center; height: 50px; z-index: 15; background-size: 150px auto;}
 .app-head h1 {margin: 0; font-size: 1rem; color: #fff;}
 .app-head .btn-ico {padding: 15px; color: #fff;}
 .app-head .btn-area {min-width: 50px;}
