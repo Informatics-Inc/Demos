@@ -19,7 +19,6 @@ Date: May 2022
 
 /* ONLY MOBILE */
 @media (max-width: 992px) {
-#header {margin: 0 0 var(--spacer) 0;}
 #header .container {width: 100%; padding: 0;}
 .mobile-menu {display: flex; justify-content: flex-end; align-items: center; gap: 15px; padding: 15px;}
 #toggle {background: none; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; border: none; border-radius: 0; font-size: .6rem;}
@@ -43,7 +42,7 @@ Date: May 2022
 
 /* DESKTOP */
 @media (min-width: 992px) {
-#header {position: fixed; width: 100%; top: 0; left: 0; z-index: 50; transition: var(--transition);}
+#header {position: fixed; width: 100%; top: 0; left: 0; z-index: 50; transition: var(--transition); background: #fff;}
 #header .container {display: flex; align-items: center; justify-content: space-between;}
 #header .container:before, #header .container:after {display: none;}
 #header .hdr-topper .container {display: block;}

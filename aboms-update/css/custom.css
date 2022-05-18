@@ -52,7 +52,6 @@ hr {margin: var(--spacer) 0; border-color: #ccc;}
 .hgroup .lead {padding: 1rem 0 0 0; max-width: 650px; margin: 0 auto 2rem auto;}
 
 .img-combo {position: relative; padding: 0 50px 50px 0;}
-.img-combo img {border-radius: 10px;}
 .img-combo img:nth-of-type(2) {position: absolute; width: 60%; bottom: 0; right: 0; border-right: none; border-bottom: 0;}
 
 /* LINKS */
@@ -71,7 +70,7 @@ a.btn-theme-alt, .btn-theme-alt a {display: block; padding: 15px 12px; border-ra
 .btn-text a:after, a.btn-text:after, .btn-text span:after {content: "\f061";font-family: FontAwesome; color: var(--primary); margin: 0 5px 0 0; transition: var(--transition); margin: 0 0 0 5px;}
 .btn-text a:hover::after, .btn-text span:hover::after {margin: 0 0 0 8px;}
 
-.box {background: var(--dark); color: rgba(255,255,255,.75); padding: 20px; border-radius: 10px; margin: 0 0 2rem 0;}
+.box {background: var(--dark); color: rgba(255,255,255,.75); padding: 20px; margin: 0 0 2rem 0;}
 .box h2, .box h3 {color: #fff;}
 .box .btn-theme a {display: block; text-align: center; background: var(--primary)}
 .box .btn-theme a:before {background: rgba(0,0,0,.1);}
@@ -86,29 +85,32 @@ a.btn-theme-alt, .btn-theme-alt a {display: block; padding: 15px 12px; border-ra
 .bkg-light {background: linear-gradient(-180deg, rgba(255,255,255,1) 35%, rgba(244,245,247,1) 100%);}
 
 /* Header */
-.hero-cta {background: #fff; border-radius: 15px; box-shadow: 0 0 15px rgba(0,0,0,.05);}
-.hero-cta a {display: block; color: var(--text); text-decoration: none; padding: 25px 50px 25px 25px; background: linear-gradient(-40deg, rgba(255,255,255,1) 35%, rgba(244,245,247,1) 100%); border: 10px solid #fff; border-radius: 15px; position: relative;}
+#hero {background-color: var(--dark); color: rgba(255,255,255,.15);}
+#hero .text {background: var(--primary); padding: 25px; box-shadow: 5px 5px 15px rgba(0,0,0,.1); margin: -25px 15px 35px 15px; color: rgba(0,0,0,.8);}
+#hero .text .lead:before {background: var(--dark);}
+
+.hero-cta {background: #fff;}
+.hero-cta a {display: block; text-decoration: none; padding: 25px 50px 25px 25px; position: relative;}
 .hero-cta h3  {margin: 0 0 .5rem 0;}
 .hero-cta p {margin: 0;}
-.hero-cta i {width: 50px; height: 50px; display: flex; justify-content: center; flex-direction: column; background: var(--tertiary); text-align: center; border-radius: 50%; position: absolute; right: 0; top: calc(50% - 25px); transition: var(--transition);}
-.hero-cta a:hover i {background: var(--primary); right: -3px;}
+.hero-cta i {width: 50px; height: 50px; display: flex; justify-content: center; flex-direction: column; background: var(--primary); text-align: center; border-radius: 50%; position: absolute; right: 0; top: calc(50% - 25px); transition: var(--transition); color: var(--dark);}
+.hero-cta a:hover i {background: var(--primary); right: -3px; color: var(--dark);}
 .hero-cta a:hover h3 {text-decoration: underline;}
 
-.header {background: var(--dark); padding: 50px 0; text-align: center;}
+.header {background-color: var(--dark); padding: 50px 0; text-align: center; color: rgba(255,255,255,.15);}
 .header .breadcrumb {background: none; padding: 0; margin: 0;}
 .header .breadcrumb li {color: rgba(255,255,255,.5);}
 .header .breadcrumb a {color: var(--primary);}
 .header h1 {color: #fff; margin: .5rem 0 0 0;}
 
 /* Page List */
-.page-list a {display: block; height: 100%; color: var(--text); text-decoration: none; background: #fff; border-radius: 10px; box-shadow: 0 0 25px rgba(0,0,0,.05); overflow: hidden;}
+.page-list a {display: block; height: 100%; color: var(--text); text-decoration: none; background: #fff; box-shadow: 0 0 25px rgba(0,0,0,.05); overflow: hidden;}
 .page-list a .text {padding: 25px; background: #fff;}
 .page-list .btn-text {margin: 0;}
 
 /* Full Featre */
-.full-feature {background: var(--dark); padding: 0 !important; position: relative;}
-.full-feature .text {padding: 25px;}
-.full-feature .text h2, .full-feature .text {color: #fff;}
+.full-feature {background-color: var(--dark); padding: 0 !important; position: relative; color: rgba(255,255,255,.15);}
+.full-feature .text {padding: 25px; background: var(--primary); box-shadow: 5px 5px 15px rgba(0,0,0,.1); margin: -25px 15px 35px 15px; color: rgba(0,0,0,.8);}
 
 /* Footer */
 .footer {padding: var(--spacer) 0 0 0; background: #fff;}
@@ -126,7 +128,7 @@ a.btn-theme-alt, .btn-theme-alt a {display: block; padding: 15px 12px; border-ra
 .ico-item .fa {font-size: 2rem; margin: 0 0 1rem 0; color: var(--primary);}
 
 /* Nav Sec */
-#nav-sec ul {list-style: none; padding: 10px; border-radius: 0 0 10px 10px; overflow: hidden; background: #fff;box-shadow: 0 0 15px rgba(0,0,0,.05);}
+#nav-sec ul {list-style: none; padding: 10px; overflow: hidden; background: #fff;box-shadow: 0 0 15px rgba(0,0,0,.05);}
 #nav-sec ul a {display: block; padding: 15px; color: var(--text); text-decoration: none; border-bottom: 1px dotted #ccc;}
 #nav-sec .nav-path-selected > a {font-weight: 700; color: var(--dark);}
 #nav-sec ul a:hover {padding: 15px 10px 15px 20px; background: rgba(0,0,0,.05);}
@@ -137,10 +139,10 @@ a.btn-theme-alt, .btn-theme-alt a {display: block; padding: 15px 12px; border-ra
 #nav-sec ul ul a:before {background: var(--dark); display: block; position: absolute; content: ""; width: 4px; height: 4px; left: 25px; top: 17px;}
 #nav-sec ul ul a {padding: 10px 25px 10px 40px; border: none; position: relative;}
 #nav-sec ul ul a:hover {padding: 10px 20px 10px 45px;}
-#nav-sec .preheader {background: var(--dark); padding: 15px; margin: 0; text-align: center; border-radius: 10px 10px 0 0;}
+#nav-sec .preheader {background: var(--dark); padding: 15px; margin: 0; text-align: center;;}
 
 /* Feature Link */
-.feature-item {position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 0 15px rgba(0,0,0,.05);}
+.feature-item {position: relative; overflow: hidden; box-shadow: 0 0 15px rgba(0,0,0,.05);}
 .feature-item figure {overflow: hidden; height: 150px;}
 .feature-item figure img {width: 100%; height: 100%; object-fit: cover; transition: var(--transition);}
 .feature-item .text {background: #fff; padding: 15px 15px 20px 15px;}
@@ -154,12 +156,15 @@ a.btn-theme-alt, .btn-theme-alt a {display: block; padding: 15px 12px; border-ra
 .img-left {max-width: 40%; float: left; margin: 0 1rem 1rem 0;}
 .grid .text {display: flex; justify-content: center; flex-direction: column;}
 .grid-2 {grid-template-columns: 1fr 1fr;}
-.hero-cta {display: grid; grid-template-columns: 1fr 1fr 1fr;}
 
-#hero figure {position: relative;}
-#hero figure:after {width: 100px; height: 100px; background: url(../img/dots.png); background-size: cover; display: block; content: ""; position: absolute; right: 0; top: 25px;}
-.hero-cta {position: relative; z-index: 5;}
-.hero-cta:after {width: 100px; height: 100px; background: url(../img/dots.png); background-size: cover; display: block; content: ""; position: absolute; left: -25px; top: -25px; z-index: -1;}
+#hero .hero-message {position: relative; overflow: hidden;}
+#hero .hero-message img {position: absolute; right: 0; height: 100%; width: calc(87% - (40vw/2)); height: 100%; object-fit: cover;}
+#hero .text {margin: 50px 0; max-width: 55%; float: left; position: relative; padding: 35px;}
+#hero .text h1 {font-size: 3rem;}
+
+.hero-cta-grid {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px;}
+.hero-cta {background: #fff;}
+.hero-cta a {padding: 35px 60px 35px 0; background: #fff; color: var(--dark);}
 
 .page-list a {display: grid; grid-template-columns: 1fr 2fr;}
 .page-list a figure {overflow: hidden;}
@@ -171,15 +176,16 @@ a.btn-theme-alt, .btn-theme-alt a {display: block; padding: 15px 12px; border-ra
 /* Footer */
 .ftr-grid {display: grid; grid-template-columns: 1fr 1fr; gap: 25px;}
 
-/* Full Feature */
-.full-feature {display: grid; grid-template-columns: 1fr 2fr;}
-.full-feature figure {height: 100%; width: 100%; position: relative;}
-.full-feature figure img {width: 100%; height: 100%; position: absolute; object-fit: cover; object-position: left center;}
-.full-feature .text {padding: 50px;}
+/* Full Featre */
+.full-feature {position: relative; overflow: hidden;}
+.full-feature img {position: absolute; left: 0; height: 100%; width: calc(80% - (40vw/2)); height: 100%; object-fit: cover;}
+.full-feature .text {margin: 50px 0; max-width: 45%; float: right; position: relative; padding: 35px;}
+#hero .text h1 {font-size: 3rem;}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+:root { --spacer: 50px;}
 /* Typography */
 h3 {font-size: 1.25rem;}
 h2 {font-size: 2.5rem;}
@@ -189,23 +195,21 @@ h2 {font-size: 2.5rem;}
 .grid-2-3 {grid-template-columns: 2fr 3fr;}
 .page-list {grid-template-columns: 1fr 1fr 1fr;}
 
-.header {margin-top: 100px;}
+.header {margin-top: 95px;}
 .header .col {display: flex; justify-content: center; flex-direction: column;}
-#hero {margin-top: 100px;}
-#hero h1 {font-size: 4rem;}
+#hero {margin-top: 95px;}
+
+#hero .text {width: 45%; margin: 75px 0;}
+#hero .text h1 {font-size: 4rem;}
+
+.hero-cta-grid {gap: 50px;}
 
 .page-list {position: relative; z-index: 5;}
 .page-list a {display: block;}
 .page-list a figure {height: 150px;}
-.page-list:after {position: absolute; width: 135px; height: 135px; background: url(../img/dots.png); background-size: cover; display: block; content: ""; position: absolute; right: -65px; top: -50px; z-index: -1;}
 
 /* Footer */
 .ftr-grid {display: grid; grid-template-columns: 1fr 1fr 1fr 1.5fr; gap: 25px;}
-
-/* Full Feature */
-.full-feature {display: grid; grid-template-columns: 2.25fr 2fr; background: #c6cbd7;}
-.full-feature .text {background: var(--dark); width: 580px; margin: 50px 0 50px -50px; z-index: 5; position: relative; border-radius: 10px; box-shadow: 5px 5px 15px rgba(0,0,0,.2);}
-.full-feature .text:after {border: 2px solid var(--primary); content: ""; position: absolute; inset: 15px;}
 
 /* Icon Items */
 .ico-item {position: relative; margin: 25px 0;}
@@ -216,16 +220,14 @@ h2 {font-size: 2.5rem;}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-:root { --spacer: 50px;}
+:root { --spacer: 75px;}
 h1 {font-size: 3rem;}
 h3 {font-size: 1.5rem;}
 .box {padding: 35px;}
 .grid {gap: 50px;}
 
 /* Header */
-#hero h1 {font-size: 5rem; padding: 0 100px 0 0; line-height: 1;}
-#hero figure:after {width: 135px; height: 135px; right: 0; top: 25px;}
-.hero-cta:after {width: 135px; height: 135px; background: url(../img/dots.png); background-size: cover; display: block; content: ""; position: absolute; left: -50px; top: -50px; z-index: -1;}
+#hero .text {margin: 80px 0; padding: 45px;}
 #hero .lead {padding: 0 0 0 65px;}
 #hero .lead:before {top: 12px;}
 }
