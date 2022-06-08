@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* CSS Document
+Client: ABOMS
+Company: Informatics, Inc
+Author: Jeff S
+Date: May 2022
+*/
+/* ----------------------*/
+/* -- MENU AND HEADER -- */
+/* ----------------------*/
+#header {border-top: 5px solid var(--dark);}
+#header.scroll {background: #fff; box-shadow: 0 10px 10px rgba(0,0,0,.025);}
+#logo {max-width: 225px; margin-right: auto;}
+#nav-main {margin: 1rem 0;}
+#nav-main a {font-size: 1.1rem; color: var(--dark); font-weight: 600; text-decoration: none; display: block;}
+#nav-main li ul {width: 100%; padding: 0;}
+#nav-main li ul li {border: 0;}
+#nav-main li ul li a {font-size: 1rem; font-weight: 400; padding: 10px 15px 10px 35px;}
+
+/* ONLY MOBILE */
+@media (max-width: 992px) {
+#header .container {width: 100%; padding: 0;}
+.mobile-menu {display: flex; justify-content: flex-end; align-items: center; gap: 15px; padding: 15px;}
+#toggle {background: none; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0; border: none; border-radius: 0; font-size: .6rem;}
+#toggle .menu-label {display: block;}
+#toggle .fa {font-size: 1.5rem;}
+#navbar {margin: 0;}
+#header .btn-theme span {letter-spacing: normal;}
+
+#nav-main button {border: none; background: none; color: var(--secondary); padding: 15px 25px; border-left: 1px dotted var(--light-border);}
+#nav-main button .fa {transform: rotate(180deg);}
+#nav-main button.collapsed .fa {transform: rotate(0deg);}
+#nav-main li {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 1px dotted var(--light-border);}
+#nav-main li ul li:last-of-type {margin: 0 0 1rem 0;}
+#nav-main .hdr-cta {display: none;}
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+#header {position: fixed; width: 100%; top: 0; left: 0; z-index: 50; transition: var(--transition); background: #fff;}
+#header .container {display: flex; align-items: center; justify-content: space-between;}
+#header .container:before, #header .container:after {display: none;}
+#header .hdr-topper .container {display: block;}
+#logo {display: block; max-width: 225px;}
+.mobile-menu .hdr-cta {display: none;}
+#navbar {padding: 0;}
+#nav-main {display: flex; align-items: center; margin: 0;}
+#nav-main li button {display: none;}
+#nav-main a {display: flex; align-items: center; font-size: .9rem; padding: 35px 10px; letter-spacing: -.5px;}
+#nav-main .hdr-cta .btn-theme {display: block; color: #fff; line-height: 1.2; letter-spacing: 1px; font-weight: 800; padding: 15px 15px; margin: 0 0 0 15px;}
+#nav-main .hdr-cta .btn-theme span {letter-spacing: normal;}
+#nav-main .hdr-cta .btn-theme:after {display: none;}
+
+#nav-main > li > a:after {width: 0; height: 3px; background: var(--primary); content: ""; position: absolute; left: 50%; bottom: 0; opacity: 0; transition: var(--transition);}
+#nav-main li:hover a:after {width: 50px; left: calc(50% - 25px); opacity: 1;}
+#nav-main a:hover {background: none; opacity: 1;}
+#nav-main .hdr-cta .btn-theme:hover {background: var(--dark);}
+#nav-main li:hover a:after {color: var(--primary);}
+#nav-main li ul {position: absolute; display: block; top: 105%; left: calc(50% - 125px); width: 250px; background: #fff; z-index: 5;list-style: none;box-shadow: 0 5px 10px rgba(0,0,0,.05); border-radius: 5px; padding: 10px; margin: 0; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 15;}
+#nav-main li:hover ul {top: 100%; opacity: 1; visibility: visible;}
+#nav-main li ul li a {padding: 10px; border-radius: 5px; border: 1px solid #fff;}
+#nav-main li ul li a:hover {padding: 10px 5px 10px 15px; background: var(--tertiary);}
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+#logo {max-width: 275px;}
+#nav-main a {padding: 35px 15px; font-size: 1rem;}
+#nav-main .hdr-cta .btn-theme {padding: 15px 20px;}
+
+}
+
+/* Bootstrap Expand Nav Tablet Too */
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display:block !important;
+    }
+}

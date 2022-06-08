@@ -70,7 +70,8 @@ img {max-width: 100%; height: auto;}
 hr {margin: 25px 0; border-color: #ccc; border-top: 1px dotted #ccc;}
 .lead {font-size: 21px; font-weight: 300;}
 .table {margin-bottom: 1rem;}
-.box {padding: 25px; background: var(--bkg); border-top: 5px solid var(--theme-primary);}
+.box {padding: 25px; background: var(--bkg); border-top: 5px solid var(--theme-primary); margin: 0 0 1.25em;}
+.box *:last-child {margin-bottom: 0;}
 .box-shadow {padding: 25px; background: #fff; box-shadow: 0 0 15px rgba(0,0,0,.1);}
 
 /* LINKS */
@@ -520,6 +521,7 @@ h3 {font-size: 20px;}
 #nav-main a {font-size: 14px; padding: 25px 15px;}
 .circle-graph h3 {width: 150px; height: 150px;}
 }
+
 .animate {
 	animation-duration: .5s;
 	-webkit-animation-duration: 0.5s;
@@ -601,3 +603,19 @@ animation-fill-mode: forwards;
 .vert-tabs ol > li:nth-of-type(20) > a:before {content: "20";}
 
 .mar-lft-auto {margin-left: auto !important;}
+
+/* Long Labels Update */
+.skinny {max-width: 1050px;}
+.long-labels h2:first-of-type {margin-top: 1rem;}
+.long-labels label::before {display: none;}
+.long-labels label {text-transform: none; font-weight: 400; font-size: .9rem; letter-spacing: normal; margin-bottom: .5rem;}
+.long-labels label:first-of-type {margin: 0 0 1rem 0;}
+.long-labels small {margin: .5rem 0; display: block;}
+.long-labels .radio label {font-weight: normal; margin: 0 0 .25rem 0;}
+.long-labels .form-group {border-bottom: 1px dotted #ccc; padding-bottom: .5rem;}
+.long-labels .form-group:last-of-type {border: 0;}
+.long-labels .options {border: none; padding-top: 0;}
+.promo {padding: 15px; background: var(--light); margin: 0 0 1rem 0; border: 1px solid #eee; border-radius: 5px;}
+.promo .form-group {display: flex; gap: 15px; margin: 0 0 .25rem 0;}
+.promo .form-group > * {flex-grow: 1;}
+.promo .form-group .form-control {width: auto; background: #fff;}
