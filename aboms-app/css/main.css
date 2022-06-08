@@ -1,0 +1,305 @@
+/* Variables */
+
+:root {
+  /* Typography */
+  --header: 'Montserrat', sans-serif;
+  --body: 'Montserrat', sans-serif;
+  --spacer: 25px;
+  --spacer-sm: 10px;
+  --spacer-lg: 75px; 
+
+  /* Colors */
+  --theme-dark: #334357;
+  --theme-med: #5d5678;
+  --theme-headers: #222;
+  --theme-primary: #A1D403;
+  --theme-secondary: #9ed8ee;
+  --theme-link: #007bff;
+  --theme-neutral: #d9d9d9;
+  --theme-muted: #99a1ab;
+  --theme-purple: #a954b4;
+  --theme-green: #13b98e;
+  --theme-yellow: #cda800; 
+
+  --success-bg: #effff4;
+  --success-text: #66d066;
+  --success-border: #bce5bd;
+}
+
+/* Simulate Mobile Phone */
+.mobile-container {
+  width: 392px;
+  height: 846px;
+  display: block;
+  margin: auto;
+  padding: 0;
+  background-color: #f0f4f8;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,.85); 
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+  background-color: #333;
+  color: #334357;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+a,
+a:hover,
+a:focus,
+a:active {
+  color: var(--theme-link);
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a, button, h1, h2, h3, h4, h5, h6, input, p, select, td, textarea,
+.brand, .h1, .h2, .h3, .h4, .h5, .h6, .navbar, .td-name  {
+  font-family: var(--body);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: var(--header);
+  color: var(--dark);
+  margin: 0 0 1rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+h1, .h1 {
+  font-size: 1.5rem;
+}
+
+h2, .h2 {
+  font-size: 1.25rem;
+  letter-spacing: -.5px;
+  position: relative;
+}
+
+h3, .h3 {
+  font-size: 1.1rem;
+  letter-spacing: -.25px;
+}
+
+h4, .h4 {
+  font-size: .8rem;
+  font-family: var(--header);
+  margin: 0 0 .75rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: var(--spacer-sm);
+}
+
+.text-muted {
+  color: var(--theme-muted) !important; 
+}
+
+.text-light {
+  color: var(--theme-neutral) !important;
+}
+
+.text-inverted * {
+  color: #fff
+}
+
+.text-inverted .text-muted {
+  color: #c2c7cd !important; 
+}
+
+.text-success {
+  color: var(--theme-green) !important;
+}
+
+.text-small {
+  font-size: 11px;
+}
+
+/* Flexbox Styles */
+.flex-container { 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-before-grow::before { content: ''; }
+.flex-before-grow::before, .flex-end {
+  flex: 1;
+}
+
+.flexbox {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.flexbox-row {
+  flex-direction: row;
+}
+
+.flexbox-column {
+  flex-direction: column;
+}
+
+/* Sizing / Spacing */
+.padding {
+  padding: 1rem;
+}
+
+.padding-x {
+  padding: 0 1rem;
+}
+
+.m-none {
+  margin: 0;
+}
+
+.mb {
+  margin-bottom: var(--spacer);
+}
+
+.mb-sm {
+  margin-bottom: var(--spacer-sm);
+}
+
+.mb-lg {
+  margin-bottom: var(--spacer-lg);
+}
+
+.ml-sm {
+  margin-left: var(--spacer-sm);
+}
+
+/* Buttons */
+.btn {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: initial;
+}
+
+.btn-secondary {
+  color: var(--theme-link);
+  box-shadow: initial;
+}
+
+/* Icons */
+.mi-icon {
+  vertical-align: middle;
+}
+
+.mi-icon-circle {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+}
+
+.mi-icon-circle:before {
+  border-radius: 100%;
+  content: "";
+  display: block;
+  background-color: var(--theme-dark);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.mi-icon-green:before {
+  background-color: var(--theme-green);
+}
+
+.mi-icon-purple:before {
+  background-color: var(--theme-purple);
+}
+
+.mi-icon-yellow:before {
+  background-color: var(--theme-yellow);
+}
+
+/* Form */
+.form-outline .form-control {
+  background-color: #fff;
+}
+
+/* Cards */
+
+.list-group-item-green {
+  background-color: var(--success-bg) !important;
+}
+
+.list-group-item-text-green {
+  color: var(--success-text) !important;
+}
+
+/* App Bar */
+.appbar {
+  width: 390px;
+  height: 54px;
+  background-color: var(--theme-dark);
+  color: #fff;
+  z-index: 1000;
+  position: fixed;
+}
+
+.appbar-title {
+  font-weight: bold;
+}
+
+.appbar .mi-icon {
+  font-size: 21px;
+}
+
+.appbar-spacer {
+  margin-top: 54px;
+}
+
+/* Dashboard */
+.dashboard-header {
+  color: #fff;
+  background-color: var(--theme-dark);
+}
+
+.dashboard-header-vr {
+  line-height: 12px;
+  height: 12px;
+  font-size: 12px;
+  margin: 0 8px 0 4px;
+  border-left: 1px dotted #fff;
+}
