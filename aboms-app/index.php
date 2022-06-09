@@ -563,7 +563,7 @@
         <div class="paragraph text-small">Small text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 
         <div class="paragraph">
-          <a herf="#" class="link">Hyper link - ipsum dolor sit amet</a>
+          <a href="#" class="link">Hyper link - ipsum dolor sit amet</a>
         </div>
 
         <div class="paragraph">
@@ -583,9 +583,9 @@
 
         <div class="paragraph">
           <span class="text-bold">Links</span><br />
-          - <a herf="https://callstack.github.io/react-native-paper/index.html" target="_blank" class="link">React Native Paper</a><br />
-          - <a herf="https://github.com/fateh999/react-native-paper-dropdown" target="_blank" class="link">React Native Paper - Dropdown</a><br />
-          - <a herf="https://fonts.google.com/icons" target="_blank" class="link">Material Symbols</a><br />
+          - <a href="https://callstack.github.io/react-native-paper/index.html" target="_blank" class="link">React Native Paper</a><br />
+          - <a href="https://github.com/fateh999/react-native-paper-dropdown" target="_blank" class="link">React Native Paper - Dropdown</a><br />
+          - <a href="https://fonts.google.com/icons" target="_blank" class="link">Material Symbols</a><br />
         </div>
       </div>
 
