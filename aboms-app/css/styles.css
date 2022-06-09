@@ -269,6 +269,10 @@ a, a:hover, a:visited {
   color: var(--text-muted);
 }
 
+.text-link {
+  color: var(--link-text-color);
+}
+
 .text-success {
   color: var(--text-success);
 }
@@ -1017,6 +1021,10 @@ a, a:hover, a:visited {
   align-items: center;
   flex-shrink: 0;
   position: relative;
+}
+
+.card-footer-btn-icn {
+  color: var(--link-text-color);
 }
 
 .textinput {
