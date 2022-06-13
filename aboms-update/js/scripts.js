@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	   $(window).scroll(function() {
 		  var x = $(this).scrollTop();
-		  $(".parallax-1").css("-webkit-transform","translateY(" +  (x/15)  + "px)");
+		  $(".parallax-1").css("-webkit-transform","translateY(" +  (x/5)  + "px)");
 		  $(".parallax-2").css("-webkit-transform","translateY(" +  (x/5)  + "px)");
 	  });
 
