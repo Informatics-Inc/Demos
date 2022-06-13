@@ -113,7 +113,7 @@ a.btn-theme-alt, .btn-theme-alt a {display: block; padding: 15px 12px; border-ra
 .hero-cta a:after {position: absolute; inset: 5px; border: 1px solid #eee; content: "";}
 .hero-cta a:hover {transform: translateY(-10px);}
 .hero-cta a:hover i {background: var(--primary); color: #fff;}
-.hero-cta a:hover span {border-color: var(--dark);}
+.hero-cta a:hover span {background: #eee;}
 .hero-cta a:hover span:hover {background: #ddd;}
 
 .header {background-color: var(--dark); padding: 50px 0; text-align: center; color: rgba(255,255,255,.15);}
