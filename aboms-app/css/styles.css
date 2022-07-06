@@ -11,6 +11,7 @@
   --body-text-small-line-height: 18px;
 
   --text-muted: #818181;
+  --text-inverted: #ffffff;
   --text-success: #39ad39;
   --text-warning: #cda800;
   --text-danger: #d12c2c;
@@ -144,6 +145,13 @@
   --appbar-icon-color: #ffffff;
   --appbar-icon-size: 24px;
 
+  --titlebar-bg-color: #334357;
+  --titlebar-padding-x: 5px;
+  --titlebar-padding-y: 5px;
+
+  --titlebar-title-text-size: 19px;
+  --titlebar-title-text-weight:  bold;
+
   --hr-width: 2px;
   --hr-color: #d7e0e9;
 
@@ -252,39 +260,6 @@ a, a:hover, a:visited {
   color: var(--link-text-color);
 }
 
-.text-small {
-  font-size: var(--body-text-small-size);
-  line-height: var(--body-text-small-line-height);
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
-.text-italic {
-  font-style: italic;
-}
-
-.text-muted {
-  color: var(--text-muted);
-}
-
-.text-link {
-  color: var(--link-text-color);
-}
-
-.text-success {
-  color: var(--text-success);
-}
-
-.text-warning {
-  color: var(--text-warning);
-}
-
-.text-danger {
-  color: var(--text-danger);
-}
-
 .appbar {
   height: 56px;
   background-color: var(--appbar-bg-color);
@@ -305,7 +280,10 @@ a, a:hover, a:visited {
   padding-right: 5px;
   padding-bottom: 0;
   padding-left: 5px;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: -46px;
   color: var(--appbar-title-color);
   font-family: var(--body-text-font);
   font-size: var(--appbar-title-size);
@@ -314,10 +292,12 @@ a, a:hover, a:visited {
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 0;
   flex: 1 1 0%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: pre;
+  text-align: center;
 }
 
 .appbar-btn {
@@ -326,6 +306,8 @@ a, a:hover, a:visited {
   width: 36px;
   height: 36px;
   overflow: hidden;
+  position: relative;
+  z-index: 5;
   border: 0 solid transparent;
   display: flex;
   flex-basis: auto;
@@ -1189,7 +1171,7 @@ a, a:hover, a:visited {
 
 .textinput-input:focus + .textinput-label .textinput-label-text,
 .textinput-input.filled + .textinput-label .textinput-label-text {
-  transform: translateX(0px) translateY(-26px) scale(.85);
+  transform: translateX(0px) translateY(-27px) scale(.85);
 }
 
 .textinput-input:focus + .textinput-label .textinput-label-text {
@@ -1203,6 +1185,13 @@ a, a:hover, a:visited {
 
 .textinput-input:focus ~ .textinput-outline {
   border-color: var(--input-active-border-color);
+}
+
+.textinput-more {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
 }
 
 .checkbox {
@@ -1486,6 +1475,68 @@ a, a:hover, a:visited {
 .radio-btn-input:checked ~ .radio-btn-outline {
   border-color: var(--input-active-border-color);
   background-color: var(--input-active-bg-color);
+}
+
+.titlebar {
+  color: #fff;
+  background-color: var(--titlebar-bg-color);
+  padding-top: var(--titlebar-padding-y);
+  padding-right: var(--titlebar-padding-x);
+  padding-bottom: var(--titlebar-padding-y);
+  padding-left: var(--titlebar-padding-x);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.titlebar-title {
+  font-size: var(--titlebar-title-text-size);
+  font-weight: var(--titlebar-title-text-weight);
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+.text-small {
+  font-size: var(--body-text-small-size);
+  line-height: var(--body-text-small-line-height);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-inverted {
+  color: var(--text-inverted);
+}
+
+.text-link {
+  color: var(--link-text-color);
+}
+
+.text-success {
+  color: var(--text-success);
+}
+
+.text-warning {
+  color: var(--text-warning);
+}
+
+.text-danger {
+  color: var(--text-danger);
 }
 
 .divider {
