@@ -41,7 +41,7 @@ Date: Jun 2022
 #nav-mini {display: grid; grid-template-columns: 1fr 1fr; list-style: none; padding: 0; margin: 0 0 1rem 0; gap: 5px;}
 #nav-mini a {padding: 10px 15px; font-size: .8rem; display: block; background: var(--light); color: var(--text); border-radius: 5px; border: 1px solid var(--light-border);}
 
-#nav-main button {border: none; background: none; color: var(--tertiary); padding: 10px 20px; border-left: 1px dotted var(--light-border);}
+#nav-main button {border: none; background: none; color: var(--secondary); padding: 10px 20px; border-left: 1px dotted var(--light-border);}
 #nav-main button .fa {transform: rotate(180deg);}
 #nav-main button.collapsed .fa {transform: rotate(0deg);}
 #nav-main li {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 1px dotted #ccc;}
@@ -64,55 +64,42 @@ Date: Jun 2022
 .hdr-tools {justify-content: flex-start;}
 .mobile-menu .hdr-cta {display: none;}
 #navbar {padding: 0;}
-#nav-main {display: flex; align-items: center;}
+#nav-main {display: flex; align-items: center; margin: 0;}
 #nav-main li button {display: none;}
-#nav-main a {display: flex; align-items: center; font-size: 1rem; padding: 20px 10px; letter-spacing: -.5px;}
+#nav-main a {display: flex; align-items: center; font-size: 1rem; padding: 42px 10px; letter-spacing: -.5px;}
 
 #nav-main .hdr-cta .btn-theme {color: #fff; font-weight: 700; font-size: 1rem; padding: 15px 15px; margin: 0 0 0 15px; letter-spacing: normal;}
 #nav-main .hdr-cta .btn-theme:after {display: none;}
 
 #nav-mini {position: absolute; top: -28px; right: 15px; display: flex; align-content: center; list-style: none; padding: 0; margin: 0;}
-.hdr-tools a, #nav-mini a {font-size: .8rem; position: relative; padding: 10px 0; color: #fff; text-decoration: none;}
+.hdr-tools a, #nav-mini a {font-size: .8rem; position: relative; padding: 10px 0; color: #fff; text-decoration: none; opacity: .8;}
 #nav-mini {top: -33px;}
 #nav-mini a {padding: 10px;}
 #nav-mini a:after {height: 15px; width: 1px; background: rgba(255,255,255,.25); content: ""; position: absolute; right: 0; top: 13px;}
+#nav-mini a:hover, .hdr-tools a:hover {text-decoration: underline; color: #fff; opacity: 1;}
 
 .hdr-search-toggle {display: block; border: none; background: none; color: #fff; margin: 0 0 0 5px;}
 #hdr-search {padding: 0;}
-#hdr-search .hdr-search-form {position: fixed; left: 0; top: 0; width: 100%; background: #fff; padding: 25px 15px;
-opacity: 0; visibility: hidden; z-index: 15;}
+#hdr-search .hdr-search-form {position: fixed; left: 0; top: 0; width: 100%; background: #fff; padding: 40px 15px;
+opacity: 0; visibility: hidden; z-index: 15; transition: var(--transition);}
 #hdr-search.active .hdr-search-form {opacity: 1; visibility: visible;}
 #hdr-search .hdr-search-form .hdr-search-toggle {padding: 10px 25px; color: var(--text);}
 
 #nav-main a:hover {background: none; opacity: 1;}
-#nav-main .hdr-cta .btn-theme:hover {background: var(--primary-dark);}
+#nav-main .hdr-cta .btn-theme:hover {background: var(--secondary);}
 #nav-main li:hover a:after {color: var(--primary);}
-#nav-main li ul {position: absolute; display: block; top: 105%; left: calc(50% - 125px); width: 250px; background: #fff; z-index: 5;list-style: none;box-shadow: 0 5px 10px rgba(0,0,0,.05); padding: 10px; margin: 0; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 15; border-top: 5px solid var(--primary);}
+#nav-main li ul {position: absolute; display: block; top: 105%; left: calc(50% - 125px); width: 250px; background: #fff; z-index: 5;list-style: none;box-shadow: 0 5px 10px rgba(0,0,0,.05); padding: 10px; margin: 0; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 15; border-top: 5px solid var(--secondary);}
 #nav-main li:hover ul {top: 100%; opacity: 1; visibility: visible;}
 #nav-main li ul li a {padding: 10px; border-radius: 5px;}
 #nav-main li ul li a:hover {padding: 10px 5px 10px 15px; background: var(--secondary-light); border: 1px solid var(--secondary-light-border);}
 
 }
 
-/* DESKTOP 
-@media (min-width: 992px) {
-#logo {max-width: 175px;}
-#nav-main a {font-size: 1rem; padding: 20px 10px;}
-#nav-main .hdr-cta .btn-theme {padding: 12px 10px;}
-#nav-main .hdr-cta .btn-theme span {letter-spacing: 1px;}
-.hdr-tools a, #nav-mini a {font-size: .8rem; position: relative; padding: 8px 5px;}
-#nav-mini {top: -30px;}
-#nav-mini a {padding: 5px 10px;}
-#nav-mini a:before {content:""; height: 15px; width: 1px; background: var(--secondary-light-border); position: absolute; left: 0; top: 7px;}
-#nav-mini li:first-of-type a:before {display: none;}
-#nav-mini a:hover {text-decoration: none; color: #000;}
-
-}
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
 #logo {max-width: 200px;}
-#nav-main a {font-size: 1.1rem; padding: 25px 15px;}
+#nav-main a {font-size: 1.1rem; padding: 45px 15px;}
 #nav-main .hdr-cta .btn-theme {padding: 15px;}
 }
 

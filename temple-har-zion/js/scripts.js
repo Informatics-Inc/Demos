@@ -20,7 +20,23 @@ $(document).ready(function(){
 			$("#hdr-search").toggleClass("active");
 		});
 
-
+		// -- SWIPER HERO -- //
+		if (document.querySelector('.swiper-hero')) {
+			var mySwiper = new Swiper('.swiper-hero', {
+			// Optional parameters
+			slidesPerView: 1,
+			loop: true,
+			speed: 750,
+			effect: 'fade',
+			autoplay: {
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination-3',
+				clickable: true,
+			}
+			})
+		}
 	  // SWIPER  //
 		if (document.querySelector('.testimonials')) {
 		var swiper2 = new Swiper('.testimonials', {
@@ -28,15 +44,71 @@ $(document).ready(function(){
 			autoplay: {
 				delay: 4000,
 			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
 			speed: 1500,
 			loop: true,
 			pagination: {
-			el: '.swiper-pagination-2',
-			clickable: true,
+				el: '.swiper-pagination',
+				clickable: true,
 			}
 		});
 		}
-	
+	    // -- SWIPER HOMEPAGE FEED -- //
+		if (document.querySelector('.swiper-content-feed')) {
+			var mySwiper = new Swiper('.swiper-content-feed', {
+			// Optional parameters
+			slidesPerView: 1,
+			loop: true,
+			speed: 750,
+			autoplay: {
+				delay: 2500,
+			},
+			breakpoints: {
+				640: {
+				slidesPerView: 2,
+				spaceBetween: 25,
+				},
+				960: {
+				slidesPerView: 3,
+				spaceBetween: 25,
+				},
+				1100: {
+				slidesPerView: 3,
+				spaceBetween: 25,
+				}
+			},
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next-2',
+				prevEl: '.swiper-button-prev-2',
+			},
+			pagination: {
+				el: '.swiper-pagination-2',
+				clickable: true,
+			}
+			})
+		}
+
+		$(".gen-1").hover(function() {
+    		$(".gen-img").toggleClass("active");
+			$(".gen-1-img").toggleClass("active");
+    	});
+		$(".gen-2").hover(function() {
+    		$(".gen-img").toggleClass("active");
+			$(".gen-2-img").toggleClass("active");
+    	});
+		$(".gen-3").hover(function() {
+    		$(".gen-img").toggleClass("active");
+			$(".gen-3-img").toggleClass("active");
+    	});
+		$(".gen-4").hover(function() {
+    		$(".gen-img").toggleClass("active");
+			$(".gen-4-img").toggleClass("active");
+    	});
+
 		// -- ANIMATE IN TO VIEW -- //
 		var $animation_elements = $('.animate-in');
 		var $window = $(window);
