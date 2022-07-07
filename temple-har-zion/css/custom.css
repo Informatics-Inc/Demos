@@ -254,7 +254,7 @@ h3 {font-size: 2rem;}
 .testimonial {padding: 0 100px;}
 
 .generations-grid {grid-template-columns: 1fr 1fr 1fr 1fr;}
-.generations-img .text {padding: 90px 75px;backdrop-filter: blur(2px);}
+.generations-img .text {padding: 90px 75px;}
 .generations-img .text h2 {font-size: 4.25rem;}
 }
 
