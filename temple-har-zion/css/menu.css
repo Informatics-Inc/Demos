@@ -54,7 +54,7 @@ Date: Jun 2022
 /* TABLET */
 @media (min-width: 992px) {
 #header {position: fixed; width: 100%; top: 0; left: 0; z-index: 50; transition: var(--transition); background: #fff;}
-#header.scroll {background: #fff; box-shadow: 0 10px 10px rgba(0,0,0,.025); top: -36px;}
+#header.scroll {background: #fff; box-shadow: 0 10px 10px rgba(0,0,0,.025);}
 .header {margin-top: 140px;}
 #header .container {display: flex; align-items: center; justify-content: space-between;}
 #header .container:before, #header .container:after {display: none;}
