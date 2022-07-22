@@ -42,13 +42,13 @@ $(document).ready(function(){
 		var swiper2 = new Swiper('.testimonials', {
 			slidesPerView: 1,
 			autoplay: {
-				delay: 4000,
+				delay: 6000,
 			},
 			navigation: {
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev",
 			},
-			speed: 1500,
+			speed: 2500,
 			loop: true,
 			pagination: {
 				el: '.swiper-pagination',
