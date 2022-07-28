@@ -4,6 +4,7 @@ $(document).ready(function(){
 		  var x = $(this).scrollTop();
 		  $("#hero figure img").css("-webkit-transform","translateY(" +  (x/10)  + "px)");
 		  $(".parallax-2").css("-webkit-transform","translateY(" +  (x/5)  + "px)");
+		  $(".sec-hdr img").css("-webkit-transform","translateY(" +  (x/5)  + "px)");
 	  });
 
 	  $(window).scroll(function() {    
