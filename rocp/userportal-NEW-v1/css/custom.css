@@ -200,7 +200,7 @@ a.navbar-brand:hover {color: #fff;}
 #cert-toggle.show button {background: rgba(255,255,255,.2)}
 
 .panel {background: #fff; box-shadow: 0 0 25px rgba(0,0,0,.025); padding: 25px; margin-bottom: 30px; border-radius: 5px;}
-.panel-title {margin: -20px 0 25px 0; padding: 20px 0 20px 20px; border-bottom: 1px dotted #ccc; position: relative;}
+.panel-title {margin: -20px 0 25px 0; padding: 20px 0 20px 20px; border-bottom: 1px dotted #ccc; position: relative; display: flex; justify-content: space-between; align-items: center;}
 .panel-title:before {width: 10px; height: 10px; background: var(--theme-primary); content: ""; display: block; position: absolute; left: 0; top: 28px;}
 .panel-title h2 {margin: 0; display: flex; justify-content: space-between;}
 .panel-title h2[data-toggle="collapse"]:hover {cursor: pointer;}
@@ -431,8 +431,8 @@ td.table-centered {text-align: center;}
 /* New Dash Like APP - 07 2022 */
 .cert-panel {background: var(--light); border-radius: 5px; border: 1px solid rgba(0,0,0,.05);}
 .cert-panel + .cert-panel {margin-top: 25px;}
-.cert-panel h3 {text-transform: uppercase; font-size: .65rem; opacity: .7; font-weight: 700; letter-spacing: 1px; padding: 10px 15px; margin: 0; background: rgba(0,0,0,.05);}
-.cert-panel h3 span {float: right; opacity: .5;}
+.cert-panel h3 {text-transform: uppercase; font-size: .65rem; opacity: .9; font-weight: 700; letter-spacing: 1px; padding: 10px 15px; margin: 0; background: rgba(0,0,0,.05);}
+.cert-panel h3 span {float: right;}
 .cert-list-item {padding: 15px; display: block; display: grid; grid-template-columns: 50px auto 25px; text-decoration: none; border-top: 1px solid rgba(0,0,0,.1); align-items: center; gap: 15px;}
 .cert-list-item h4 {margin: 0 0 .08rem 0; font-size: 1.25rem; font-weight: 400;}
 
@@ -474,6 +474,7 @@ td.table-centered {text-align: center;}
 
 /* .panel-title {display: flex; justify-content: space-between;} */
 .dash-grid-3 {display: grid; grid-template-columns: .75fr 1.5fr .75fr; gap: 25px;}
+.dash-grid-2 {display: grid; grid-template-columns: .75fr 1.75fr; gap: 25px;}
 }
 
 /* Medium devices (desktops, 992px and up) */
