@@ -25,9 +25,18 @@ orange: #ff981e
 .jb-filter label {font-size: 12px; text-transform: uppercase;}
 .jb-filter .form-group {margin: 0;}
 
-.results {display: grid; grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); gap: 15px;}
-.result-item {padding: 15px; background: var(--color-1);  box-shadow: 5px 5px 5px rgba(0,0,0,.05); position: relative; z-index: 1; transition: var(--transition);}
-.result-item:after {position: absolute; inset: 0; content: ""; background:  linear-gradient(318deg, rgba(255,255,255,0.3659663694579395) 0%, rgba(89,89,89,0) 100%); z-index: -1;}
+.results {display: grid; grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) ); gap: 15px;}
+.results a {filter: drop-shadow(2px 2px 3px rgba(50, 50, 0, 0.035));}
+.result-item {padding: 15px; background: var(--color-1); position: relative; z-index: 1; transition: var(--transition);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%); height: 100%;
+}
+.results a:before {content: ""; position: absolute; left: calc(50% - 7px); top: 10px; width: 15px; height: 15px; border-radius: 50%; background: darkred; z-index: 5; box-shadow: 5px 5px 2px rgba(0,0,0,.2);}
+.results a:nth-of-type(3n + 2):before {background: darkblue;}
+.results a:nth-of-type(3n + 1):before {background: darkgoldenrod;}
+.results a:after {content: ""; position: absolute; left: calc(50% - 10px); top: 8px; width: 15px; height: 15px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.65) 0%, rgba(89,89,89,0) 100%); z-index: 5;}
+
+.result-item:before {position: absolute; right: 0; bottom: 0; height: 10%; width: 10%; content: ""; background: rgba(0,0,0,.1);}
+.result-item:after {position: absolute; inset: 0; content: ""; background:  linear-gradient(318deg, rgba(255,255,255,0.5) 0%, rgba(89,89,89,0) 100%); z-index: -1;}
 .result-item.color-2 {background: var(--color-2);}
 .result-item.color-3 {background: var(--color-3);}
 .result-item.color-4 {background: var(--color-4);}
@@ -41,7 +50,9 @@ orange: #ff981e
 .result-item .list-name {font-size: 14px; font-style: italic; color: #333;}
 .result-item .list-details {font-size: 12px;}
 .result-item .list-more {text-decoration: underline; display: inline-block; text-transform: uppercase; font-size: 12px; margin: 15px 0 0 0;}
+
 .result-item:hover {transform: scale(1.05); text-decoration: none;}
+.results a:hover {text-decoration: none;}
 
 #job-board-detail {background: #f4f4f4; padding: 3rem 0;}
 #job-board-detail .skinny {background: #fff; max-width: 800px; padding: 25px; box-shadow: 0 0 25px rgba(0,0,0,.0.75);}
