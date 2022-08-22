@@ -24,6 +24,13 @@ Date: Jun 2022
 #hdr-search form input[type="text"] {border-radius: 0; border: 1px solid #ccc; border-right: none; padding: 20px 10px; height: auto;}
 #hdr-search form input[type="submit"] {border-radius: 0; border: none; background: var(--primary); color: #fff; padding: 10px 20px;}
 
+ul.hdr-social {list-style: none; display: flex; padding: 0; margin: 0; align-items: center; color: #fff; font-size: .8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700;}
+ul.hdr-social a {font-size: .8rem; padding: 10px 7px; letter-spacing: normal; text-transform: none; font-weight: 400;}
+ul.hdr-social a::after {height: 15px;width: 1px;background: rgba(255,255,255,.25);content: "";position: absolute;right: 0;top: 13px;}
+ul.hdr-social a .fa {color: var(--secondary); margin: 0 3px 0 0;}
+ul.hdr-social a:hover {color: var(--secondary);}
+ul.hdr-social li:last-of-type a:after {display: none;}
+
 @media (min-width: 768px) {
     #logo {max-width: 175px;}
 }
@@ -67,6 +74,7 @@ Date: Jun 2022
 #nav-main {display: flex; align-items: center; margin: 0;}
 #nav-main li button {display: none;}
 #nav-main a {display: flex; align-items: center; font-size: 1rem; padding: 42px 10px; letter-spacing: -.5px; opacity: .9;}
+#nav-main > .active > a {color: var(--primary);}
 #nav-main > .active > a::after { border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid var(--primary); position: absolute; bottom: 25px; left: calc(50% - 7px); content: "";}
 
 #nav-main .hdr-cta .btn-theme {color: #fff; font-weight: 700; font-size: 1rem; padding: 15px 15px; margin: 0 0 0 15px; letter-spacing: normal;}
@@ -74,6 +82,7 @@ Date: Jun 2022
 
 #nav-mini {position: absolute; top: -28px; right: 15px; display: flex; align-content: center; list-style: none; padding: 0; margin: 0;}
 .hdr-tools a, #nav-mini a {font-size: .8rem; position: relative; padding: 10px 0; color: #fff; text-decoration: none; opacity: .8;}
+
 #nav-mini {top: -33px;}
 #nav-mini a {padding: 10px;}
 #nav-mini a:after {height: 15px; width: 1px; background: rgba(255,255,255,.25); content: ""; position: absolute; right: 0; top: 13px;}

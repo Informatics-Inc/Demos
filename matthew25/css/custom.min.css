@@ -77,6 +77,19 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.ftr-cta a {
+  display: block;
+  padding: 15px;
+}
+
+/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+  .fta-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 /* ----------------------*/
 /* -- MENU AND HEADER -- */
 /* ----------------------*/
@@ -532,7 +545,7 @@ h1, h2, h3, h4, h5 {
   font-family: var(--header);
   font-weight: 800;
   letter-spacing: -1px;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
   line-height: 1;
 }
 
@@ -641,6 +654,13 @@ a:hover {
 
 .btn-theme:hover {
   color: #fff;
+}
+
+.btn-theme + .btn-theme {
+  margin-left: 10px;
+  color: var(--primary);
+  box-shadow: inset 0 0 0 2px var(--primary);
+  background: #fff;
 }
 
 /* Layout */
@@ -882,7 +902,7 @@ a:hover {
   padding-left: 25px;
 }
 
-/* Hgrou */
+/* Hgroup */
 .hgroup {
   text-align: center;
   margin: 0 auto 2rem auto;
@@ -949,6 +969,153 @@ a:hover {
   bottom: calc(50% - 45px);
 }
 
+.card {
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 15px 0 15px;
+  overflow: hidden;
+}
+
+.card figure {
+  height: 150px;
+  overflow: hidden;
+}
+
+.card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .text {
+  height: calc(100% - 150px);
+  padding: 15px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  align-items: flex-start;
+}
+
+/* Img Bkg Full */
+.content .img-bkg-full {
+  padding-top: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.img-bkg-full > figure {
+  width: 100%;
+  height: 300px;
+  background: var(--primary);
+  position: absolute;
+  z-index: -1;
+}
+
+.img-bkg-full > figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+.img-bkg-full .text {
+  padding: 25px;
+  background: #fff;
+  margin: 25px 0 0 0;
+  font-size: 1.1rem;
+}
+
+.img-bkg-full .text p:last-of-type {
+  margin: 0;
+}
+
+.img-bkg-full .text .btn-theme {
+  font-size: 0.9rem;
+}
+
+.img-bkg-full .grid {
+  gap: 0;
+}
+
+.img-bkg-full .grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Img Bkg Full */
+.img-bkg-full .grid {
+  margin: 75px 0 25px 0;
+}
+
+.img-bkg-full .text {
+  margin: 0;
+  padding: 50px;
+  font-size: 1.25rem;
+}
+
+/* Video LInks */
+.video-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 300px;
+  z-index: 5;
+}
+
+.video-link img {
+  margin: 50px 0 50px 0;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.video-link:before {
+  width: 80%;
+  height: 100%;
+  background: var(--primary);
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 0;
+  z-index: -1;
+  border-radius: 0 25px 0 25px;
+}
+
+.video-link a {
+  position: absolute;
+  top: calc(50% - 50px);
+  z-index: 5;
+  font-size: 2rem;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 5px solid var(--primary);
+  padding: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 0 var(--primary);
+  animation: pulseAnim 2s infinite;
+}
+
+@keyframes pulseAnim {
+  0% {
+    box-shadow: 0 0 0 0 var(--primary);
+  }
+  70% {
+    box-shadow: 0 0 0 50px rgba(210, 85, 43, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(210, 85, 43, 0);
+  }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   :root {
@@ -962,7 +1129,7 @@ a:hover {
     padding: 100px 0;
   }
 }
-/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, 992px and up) */
 @media (min-width: 992px) {
   :root {
     --spacer: 50px;
@@ -1004,6 +1171,15 @@ a:hover {
   }
   .offset-callout .ico-card:nth-of-type(2) {
     margin-top: 175px;
+  }
+  /* Img Bkg Full */
+  .img-bkg-full .grid {
+    margin: 75px 0 25px 0;
+  }
+  .img-bkg-full .text {
+    margin: 0;
+    padding: 50px;
+    font-size: 1.25rem;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

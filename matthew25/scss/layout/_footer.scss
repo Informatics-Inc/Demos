@@ -1,0 +1,12 @@
+
+.ftr-cta a {display: block; padding: 15px;}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+.fta-cta {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+}
