@@ -40,30 +40,42 @@ $.each($animation_elements, function() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
-// SWIPER Who We Are Values //
-if (document.querySelector('.swiper-container')) {
-	var values = ['Environmental Treatments', 'Animal Health & Welfare', 'Data Insights & Predictive Analytics']
-	var swiper = new Swiper('.swiper-container', {
-		slidesPerView: 'auto',
-		speed: 1550,
-		slidesPerView: 1,
-		centeredSlides: true,
-		loop: true,
-		autoplay: true,
-		spaceBetween: 50,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-			renderBullet: function (index, className) {
-			return '<li class="' + className + '">' + (values[index]) + '</li>';
-			},
+// -- SWIPER HOMEPAGE FEED -- //
+if (document.querySelector('.swiper-content-feed')) {
+	var mySwiper = new Swiper('.swiper-content-feed', {
+	// Optional parameters
+	slidesPerView: 1,
+	loop: true,
+	speed: 750,
+	autoplay: {
+		delay: 2500,
+	},
+	breakpoints: {
+		640: {
+		slidesPerView: 2,
+		spaceBetween: 25,
 		},
-		navigation: {
-			nextEl: '.swiper-next',
-			prevEl: '.swiper-prev',
+		960: {
+		slidesPerView: 2,
+		spaceBetween: 25,
 		},
-	});
+		1100: {
+		slidesPerView: 2,
+		spaceBetween: 25,
+		}
+	},
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next-2',
+		prevEl: '.swiper-button-prev-2',
+	},
+	pagination: {
+		el: '.swiper-pagination-2',
+		clickable: true,
+	}
+	})
 }
+
 $(".swiper-container").hover(function() {
     (this).swiper.autoplay.stop();
   }, function() {

@@ -32,6 +32,26 @@
 #nav-main .hdr-cta a {display: flex; gap: 5px}
 #nav-main .hdr-cta a img {max-width: 20px;}
 
+.screenreader-text {
+    position: absolute;
+    left: -999px;
+    width:1px;
+    height: 1px;
+    top: auto;
+  
+    &:focus {
+      background: var(--primary);
+     color: #fff;
+      display: block;
+      height: auto;
+      width: auto;
+      position: static;
+      margin: auto;
+      text-align: center;
+      padding: 5px;
+    }
+  }
+
 /* ONLY MOBILE */
 @media (max-width: 992px) {
 .mobile-menu {display: flex; justify-content: flex-end; align-items: center; gap: 15px; padding: 5px 15px;}
@@ -59,9 +79,10 @@
 #nav-main {grid-area: c; margin: 0; background: var(--primary); padding: 0 1rem; display: flex; align-items: center;}
 #nav-main li button {display: none;}
 #nav-main a {padding: 25px 10px; color: #fff; font-weight: 400; font-size: .9rem;}
-#nav-main > li:hover > a {background: rgba(0,0,0,.1);}
+#nav-main > li:hover > a, #nav-main > li.active > a {background: rgba(0,0,0,.15);}
 #nav-main > li > a:after {width: 0; height: 4px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--secondary); opacity: 0; transition: var(--transition);}
 #nav-main > li:hover > a:after {opacity: 1; width: 100%; left: 0;}
+#nav-main > li.active > a:after {opacity: 1; width: 100%; left: 0;}
 
 .hdr-locations {display: flex; grid-area: a; gap: 25px;}
 .hdr-locations .col {flex: 1 0 1; max-width: 250px;}
