@@ -5,14 +5,6 @@ Author: Jeff S
 Date: Aug 2022
 */
 
-@import "base/reset";
-@import "layout/footer";
-@import "layout/header";
-@import "layout/blog";
-@import "components/slider";
-@import "components/slider-custom";
-
-
 /* Variables */
 :root {
   accent-color: var(--primary);
@@ -105,8 +97,8 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 
 /* Hero */
 #hero {text-align: left;}
-#hero img {opacity: 1; width: 100%; height: 100%; object-fit: cover;}
-#hero .text {background: linear-gradient(90deg, rgba(0,0,0,.75) 20%, rgba(0,0,0,.1) 50%); padding: 50px 25px;}
+#hero img {opacity: 1; width: 100%;  height: calc(100% + 25px); top: -25px; object-fit: cover;}
+#hero .text {background: rgba(0,0,0,.65); padding: 50px 25px;}
 #hero .text-inner {max-width: 550px;}
 #hero h1 {font-size: 18px; color: var(--tertiary);}
 #hero .h1-like {font-size: 2.5rem; color: #fff; font-weight: 800; margin: 0 0 1rem 0; line-height: 1.1;}
@@ -123,6 +115,11 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 .ico-card:hover img {transform: scale(1.1);}
 .ico-callout {font-size: 1rem;}
 .ico-callout span {font-size: 1.25rem; display: block; font-size: 2rem; font-weight: 800; color: var(--primary);}
+
+/* Ico Link */
+.ico-link {display: grid; grid-template-columns: 35px auto; font-weight: 700; color: var(--text); border: 1px solid rgba(0,0,0,.85); padding: 10px; text-decoration: none; font-size: 1.15rem; border-radius: 0 15px 0 15px; box-shadow: 5px 5px 5px rgba(0,0,0,.05); gap: 10px; align-items: center; background: var(--light);}
+.ico-link img {max-height: 30px;}
+.ico-link:hover {background: #fff; color: var(--text);}
 
 /* Two Col Dark Overlap */
 .content .two-col-dark-overlap {padding: 0; color: #fff;}
@@ -210,6 +207,10 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 .person-item ul {list-style: none; padding: 0;}
 .person-item ul .fa {color: var(--primary); min-width: 20px;}
 
+/* Full Feature */
+.full-feature .text {padding: 25px; background: #fff;}
+.full-feature figure img {width: 100%; height: 100%; object-fit: cover;}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 :root {
@@ -221,10 +222,12 @@ h2 {font-size: 2.5rem;}
 .img-left {float: left; margin: 0 2rem 2rem 0; max-width: 50%;}
 
 /* Layout */
+.grid-2-md {grid-template-columns: 1fr 1fr;}
 .grid-3 {grid-template-columns: 1fr 1fr 1fr;}
+.grid-4 {grid-template-columns: 1fr 1fr;}
 .grid-page-list {grid-template-columns: 400px minmax(0, auto); overflow: hidden;}
 
-#hero .text {padding: 100px 0;}
+#hero .text {padding: 100px 0;background: linear-gradient(90deg, rgba(0,0,0,.75) 20%, rgba(0,0,0,.1) 50%);}
 
 /* Landing Hero */
 .content .landing-hero {padding-bottom: 0;}
@@ -246,6 +249,7 @@ h2 {font-size: 2.5rem;}
 .grid {grid-gap: var(--grid-gap-md);}
 .grid-2 {grid-template-columns: 1fr 1fr;}
 .grid-2-5 {grid-template-columns: 2fr 5fr;}
+.grid-4 {grid-template-columns: 1fr 1fr 1fr 1fr;}
 .grid-sidebar {grid-template-columns: 3fr 1fr; gap: 50px;}
 #hero .text {padding: 100px 0;}
 #hero .h1-like {font-size: 3.25rem;}
@@ -263,6 +267,8 @@ h2 {font-size: 2.5rem;}
 .img-bkg-full .grid {margin: 75px 0 25px 0;}
 .img-bkg-full .text {margin: 0; padding: 50px; font-size: 1.25rem;}
 
+.full-feature {display: grid; grid-template-columns: 2fr 1.25fr; gap: 0;}
+.full-feature .text {padding: 35px; margin: 2rem 0 2rem -2rem; border-radius: 0 15px 0 15px;}
 }
 
 /* Large devices (large desktops, 1200px and up) */

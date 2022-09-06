@@ -76,11 +76,36 @@ if (document.querySelector('.swiper-content-feed')) {
 	})
 }
 
-$(".swiper-container").hover(function() {
-    (this).swiper.autoplay.stop();
-  }, function() {
-    (this).swiper.autoplay.start();
-  });
+// -- SWIPER HOMEPAGE FEED -- //
+if (document.querySelector('.swiper-single')) {
+	var mySwiper = new Swiper('.swiper-single', {
+	// Optional parameters
+	slidesPerView: 1,
+	loop: true,
+	speed: 750,
+	autoplay: {
+		delay: 3500,
+	},
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next-2',
+		prevEl: '.swiper-button-prev-2',
+	},
+	pagination: {
+		el: '.swiper-pagination-2',
+		clickable: true,
+	}
+	})
+}
+
+$('.swiper-single').on('mouseenter', function(e){
+    console.log('stop autoplay');
+    mySwiper.stopAutoplay();
+  })
+  $('.swiper-single').on('mouseleave', function(e){
+    console.log('start autoplay');
+    mySwiper.startAutoplay();
+  })
 
 // -- SEARCH TOGGLE -- //
 $("#search-toggle").click(function(){
