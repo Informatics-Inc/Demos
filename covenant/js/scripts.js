@@ -40,63 +40,26 @@ $.each($animation_elements, function() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
-// -- SWIPER HOMEPAGE FEED -- //
-if (document.querySelector('.swiper-content-feed')) {
-	var mySwiper = new Swiper('.swiper-content-feed', {
-	// Optional parameters
-	slidesPerView: 1,
-	loop: true,
-	speed: 750,
-	autoplay: {
-		delay: 2500,
-	},
-	breakpoints: {
-		640: {
-		slidesPerView: 2,
-		spaceBetween: 25,
-		},
-		960: {
-		slidesPerView: 2,
-		spaceBetween: 25,
-		},
-		1100: {
-		slidesPerView: 2,
-		spaceBetween: 25,
-		}
-	},
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next-2',
-		prevEl: '.swiper-button-prev-2',
-	},
-	pagination: {
-		el: '.swiper-pagination-2',
-		clickable: true,
-	}
-	})
-}
 
-// -- SWIPER HOMEPAGE FEED -- //
-if (document.querySelector('.swiper-single')) {
-	var mySwiper = new Swiper('.swiper-single', {
-	// Optional parameters
-	slidesPerView: 1,
-	loop: true,
-	speed: 750,
-	autoplay: {
-		delay: 3500,
-	},
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next-2',
-		prevEl: '.swiper-button-prev-2',
-	},
-	pagination: {
-		el: '.swiper-pagination-2',
-		clickable: true,
+// SWIPER  //
+if (document.querySelector('.testimonials')) {
+	var swiper2 = new Swiper('.testimonials', {
+		slidesPerView: 1,
+		autoplay: {
+			delay: 6000,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		speed: 2500,
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		}
+	});
 	}
-	})
-}
 
 $('.swiper-single').on('mouseenter', function(e){
     console.log('stop autoplay');

@@ -162,7 +162,7 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 #testimonials {background: var(--dark); position: relative; overflow: hidden; z-index: 5; padding: var(--spacer-lg) 0;}
 #testimonials figure {position: absolute; inset: 0;}
 #testimonials figure img {object-fit: cover; opacity: .25; height: 100%; width: 100%; z-index: -1; }
-#testimonials .container > img {margin: 0 auto 25px auto; display: block; width: 75px;}
+#testimonials .container > img {margin: 0 auto 50px auto; display: block; width: 75px;}
 .testimonials, .content-feed {overflow: hidden; width: 100%;}
 .testimonial {text-align: center; padding: 0 50px;}
 .testimonial p {font-size: 1.75rem; font-style: italic; color: #fff; padding: 0 50px;}
