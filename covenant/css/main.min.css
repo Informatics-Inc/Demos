@@ -1630,11 +1630,11 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
 }
 
 #testimonials .swiper-button-prev {
-  left: var(--side-width);
+  left: 15px;
 }
 
 #testimonials .swiper-button-next {
-  right: var(--side-width);
+  right: 15px;
 }
 
 #testimonials .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -1655,6 +1655,7 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
 
 .countdown p strong {
   margin: 0 1rem 0 0;
+  display: block;
 }
 
 .placeholder-header {
@@ -1727,6 +1728,7 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
   position: relative;
   z-index: 5;
   color: #fff;
+  overflow: hidden;
 }
 
 .bkg-img-full > img {
@@ -1738,6 +1740,11 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
   z-index: -1;
   opacity: 0.3;
   mix-blend-mode: multiply;
+}
+
+.bkg-img-full > img.bkg-parallax {
+  height: calc(100% + 75px);
+  top: -75px;
 }
 
 .check-list {
@@ -1792,8 +1799,8 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
   /* Placeholder */
   .placeholder-header {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 50px;
+    grid-template-columns: 1.55fr 2fr;
+    gap: 25px;
     padding: 50px 0;
     text-align: center;
   }
@@ -1806,6 +1813,11 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
   .placeholder-header > img:nth-of-type(2) {
     object-position: 0 0;
     object-position: left center;
+    display: none;
+  }
+  .placeholder-header .text {
+    padding: 50px 50px 50px 0;
+    text-align: left;
   }
   .testimonial p {
     font-size: 1.25rem;
@@ -1813,6 +1825,9 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
   .zcwf_lblRight .zcwf_col_lab {
     width: 35%;
     text-align: right !important;
+  }
+  .countdown p strong {
+    display: inline;
   }
 }
 /* Small devices (tablets, 992px and up) */
@@ -1862,8 +1877,15 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
   .placeholder-header {
     grid-template-columns: 1fr 600px 1fr;
   }
+  .placeholder-header .text {
+    padding: 0;
+    text-align: center;
+  }
   .placeholder-header h1 {
     font-size: 2.5rem;
+  }
+  .placeholder-header > img:nth-of-type(2) {
+    display: inline;
   }
   .flex-2-col {
     display: grid;
@@ -1901,6 +1923,12 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
   }
   .placeholder-header p {
     font-size: 1.15rem;
+  }
+  #testimonials .swiper-button-prev {
+    left: var(--side-width);
+  }
+  #testimonials .swiper-button-next {
+    right: var(--side-width);
   }
 }
 @media (min-width: 1600px) {

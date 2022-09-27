@@ -8,7 +8,7 @@ $(window).scroll(function() {
 		$("#header").removeClass("scroll");
 	}
 	var x = $(this).scrollTop();
-	   $(".page-hdr img").css("-webkit-transform","translateY(" +  (x/12)  + "px)");
+	   $(".bkg-parallax").css("-webkit-transform","translateY(" +  (x/12)  + "px)");
 	   $(".parallax-2").css("-webkit-transform","translateY(" +  (x/11)  + "px)");
   });
 
