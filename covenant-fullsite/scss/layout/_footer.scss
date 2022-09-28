@@ -1,0 +1,29 @@
+.footer {background: var(--dark); position: relative; z-index: 5; color: #fff; padding-top: var(--spacer);}
+.footer > img {position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: .3; mix-blend-mode: multiply;}
+.footer ul {list-style: none; padding: 0; margin: 0 0 1rem 0;}
+.footer ul a {color: #fff;}
+.social a {font-size: 2rem;}
+.social a .fa {color: var(--secondary);}
+.ftr-cta {text-align: center;}
+.ftr-cta h2 {color: #fff; margin: 0 0 2rem 0;}
+.ftr-cta .btn-theme a {border: 2px solid var(--secondary); background: rgba(0,0,0,.5);}
+
+.placeholder-contact {text-align: center;}
+.placeholder-contact ul {display: flex; justify-content: center; gap: 10px;}
+
+.copy {margin: var(--spacer) 0 0 0; text-align: center; padding: 25px 10px; font-size: .8rem; background: rgba(0,0,0,.5); opacity: .8;}
+.copy a {color: #fff;}
+.copy a:hover {color: #fff; text-decoration: none;}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+.ftr-cta h2 {font-size: 2rem;}
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 1150px) {
+}
