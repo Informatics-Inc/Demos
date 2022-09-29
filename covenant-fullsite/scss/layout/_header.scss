@@ -2,7 +2,7 @@
 /* ----------------------*/
 /* -- MENU AND HEADER -- */
 /* ----------------------*/
-#header {border-top: 5px solid var(--primary); box-shadow: 0 0 10px rgba(0,0,0,.1); background: #fff;}
+#header {border-top: 5px solid var(--primary); background: #fff; position: fixed; width: 100%; z-index: 15; top: 0;}
 #logo {max-width: 225px; margin-right: auto;}
 
 #nav-main {margin: 1rem 0;}
@@ -56,13 +56,14 @@
 /* DESKTOP */
 @media (min-width: 992px) {
 #logo {display: block; max-width: none; padding: 15px 0; height: 100%; margin: auto; display: flex; justify-content: center; flex-direction: column;}
+#header.scroll {box-shadow: 0 0 10px rgba(0,0,0,.1); }
 #header .container:before, #header .container:after {display: none;}
 #header .container {display: grid; grid-template-columns: 200px auto; justify-content: space-between; align-items: center;}
 #navbar {margin: 0; padding: 0;}
 
 #nav-main {margin: 0; padding: 0; display: flex; align-items: center;}
 #nav-main li button {display: none;}
-#nav-main a {padding: 25px 12px; font-size: .9rem;}
+#nav-main a {padding: 34px 12px; font-size: .9rem;}
 #nav-main .hdr-cta a {font-size: .75rem; padding: 10px 15px; margin-left: 10px;}
 
 #nav-main ul {display: block;}
@@ -70,6 +71,8 @@
 #nav-main > li > a:after {width: 0; height: 4px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--secondary); opacity: 0; transition: var(--transition);}
 #nav-main > li:hover > a:after {opacity: 1; width: 100%; left: 0;}
 #nav-main > li.active > a:after {opacity: 1; width: 100%; left: 0;}
+#nav-main:hover > li.active > a:after {opacity: 0;}
+#nav-main:hover > li.active:hover > a:after {opacity: 1; width: 100%; left: 0;}
 
 #nav-main li ul {position: absolute; display: block; top: 105%; left: calc(50% - 125px); width: 250px; background: #fff; z-index: 5;list-style: none;box-shadow: 0 5px 10px rgba(0,0,0,.05); padding: 10px; margin: 0; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 15;}
 #nav-main li:hover ul {top: 100%; opacity: 1; visibility: visible;}
@@ -82,7 +85,7 @@
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
     #header .container {grid-template-columns: 275px auto;}
-    #nav-main a {font-size: 1rem; padding: 25px 15px;}
+    #nav-main a {padding: 45px 15px;}
 }
 /* SUPER WIDE DESKTOP */
 @media (min-width: 1400px) {

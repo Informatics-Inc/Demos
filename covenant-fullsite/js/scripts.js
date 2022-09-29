@@ -9,7 +9,7 @@ $(window).scroll(function() {
 	}
 	var x = $(this).scrollTop();
 	   $(".bkg-parallax").css("-webkit-transform","translateY(" +  (x/12)  + "px)");
-	   $(".parallax-2").css("-webkit-transform","translateY(" +  (x/11)  + "px)");
+	   $(".page-hdr figure img").css("-webkit-transform","translateY(" +  (x/5)  + "px)");
   });
 
 // -- ANIMATE IN TO VIEW -- //
