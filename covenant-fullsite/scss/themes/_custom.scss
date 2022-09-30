@@ -50,19 +50,6 @@ Date: Sep 2022
 #testimonials .swiper-button-next {right: 15px;}
 .swiper-pagination-bullet-active {background: var(--secondary) !important;}
 
-.bkg-img-full {background: var(--primary); position: relative; z-index: 5; color: #fff; overflow: hidden;}
-.bkg-img-full > img {position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: .3; mix-blend-mode: multiply;}
-.bkg-img-full > img.bkg-parallax {height: calc(100% + 75px); top: -75px;}
-.bkg-img-full h2, .bkg-img-full h2 {color: #fff;}
-.bkg-img-full .preheader {color: var(--secondary);}
-.bkg-img-full .preheader:before {background: var(--secondary);}
-.bkg-img-full .btn-text a {color: var(--secondary);}
-.bkg-img-full .col img {border-radius: 10px;}
-
-.check-list {list-style: none; padding: 0;}
-.check-list li {position: relative; padding: 5px 5px 5px 25px;}
-.check-list li:before {content: "\f00c";font-family: FontAwesome; color: var(--secondary); position: absolute; left: 0; top: 5px;}
-
 /* Page Header */
 .page-hdr {position: relative; z-index: 5; margin-top: 75px;}
 .page-hdr figure {position: absolute; inset: 0; width: 100%; z-index: -1; background: #111; overflow: hidden;}
