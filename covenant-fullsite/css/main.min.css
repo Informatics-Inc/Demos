@@ -1912,22 +1912,6 @@ a {
   top: 100%;
 }
 
-.link-list {
-  list-style: none;
-  padding: 0;
-}
-
-.link-list li a {
-  font-size: 1.25rem;
-}
-
-.link-list li::before {
-  content: "\f138";
-  font-family: FontAwesome;
-  color: var(--primary);
-  margin: 0 5px 0 0;
-}
-
 input {
   accent-color: var(--primary);
 }

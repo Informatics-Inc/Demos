@@ -61,9 +61,6 @@ a {transition: var(--transition);}
 .hgroup .preheader {padding: 0 0 .5rem 0; margin: 0 0 .5rem 0;}
 .hgroup .preheader:before {left: calc(50% - 25px); top: 100%;}
 
-.link-list {list-style: none; padding: 0;}
-.link-list li a {font-size: 1.25rem;}
-.link-list li::before {content: "\f138";font-family: FontAwesome; color: var(--primary); margin: 0 5px 0 0;}
 input {accent-color: var(--primary);}
 .box {background: var(--light); padding: 25px;}
 .lead {font-size: 1.25rem; font-weight: 400;}
