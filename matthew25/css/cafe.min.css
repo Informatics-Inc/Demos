@@ -1433,6 +1433,10 @@ a.btn-theme:hover {
   padding: var(--spacer) 0;
 }
 
+.content img {
+  margin-bottom: 2rem;
+}
+
 .grid {
   display: grid;
   gap: var(--grid-gap-md);
@@ -1712,7 +1716,7 @@ a.btn-theme:hover {
 .hgroup {
   text-align: center;
   margin: 0 auto 3rem auto;
-  max-width: 750px;
+  max-width: 800px;
 }
 
 /* Hover Card */

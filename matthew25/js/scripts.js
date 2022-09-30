@@ -45,8 +45,9 @@ if (document.querySelector('.swiper-content-feed')) {
 	var mySwiper = new Swiper('.swiper-content-feed', {
 	// Optional parameters
 	slidesPerView: 1,
-	loop: true,
+	loop: false,
 	speed: 750,
+	watchOverflow: true,
 	autoplay: {
 		delay: 2500,
 	},

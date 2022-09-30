@@ -73,6 +73,7 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 
 /* Layout */
 .content section {padding: var(--spacer) 0;}
+.content img {margin-bottom: 2rem;}
 .grid {display: grid; gap: var(--grid-gap-md);}
 .grid.grid-gap-sm {gap: var(--grid-gap-sm);}
 .grid.grid-gap-md {gap: var(--grid-gap-md);}
@@ -135,7 +136,7 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 .logo-links .col:last-of-type {padding-left: 25px;}
 
 /* Hgroup */
-.hgroup {text-align: center; margin: 0 auto 3rem auto; max-width: 750px;}
+.hgroup {text-align: center; margin: 0 auto 3rem auto; max-width: 800px;}
 
 /* Hover Card */
 .hover-card {display: block; position: relative; z-index: 5; overflow: hidden; display: flex; justify-content: center; flex-direction: column; text-align: center; background: var(--dark); text-decoration: none; border-radius: 0 15px 0 15px; min-height: 325px;}

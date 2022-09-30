@@ -1,0 +1,59 @@
+/* CSS Document
+Client: Covenant Workplace Solutions
+Company: Informatics, Inc
+Author: Jeff S
+Date: Sep 2022
+*/
+.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width:1px;
+  height: 1px;
+  top: auto;
+
+  &:focus {
+    background: var(--primary);
+   color: #fff;
+    display: block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+#login {min-height: 100vh; width: 100%; background: var(--primary); display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 25px;}
+#login img {margin: 0 0 1rem 0;}
+#login .box {max-width: 600px; border-radius: 5px; box-shadow: 10px 10px 25px rgba(0,0,0,.2); border-top: 5px solid var(--secondary);}
+#login .box label {margin: 0 0 .5rem 0; text-transform: uppercase; font-size: .9rem; letter-spacing: 1px;}
+#login .box input {height: 50px; margin: 0 0 1rem 0;}
+#login .box .btn-theme {width: 100%;}
+
+:root {
+  --spacer: 25px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+:root {
+  --spacer: 50px;
+}
+
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+:root {
+  --spacer: 50px;
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+:root {
+--spacer: 75px;
+}
+}
