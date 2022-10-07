@@ -7,9 +7,6 @@ $(window).scroll(function() {
 	} else {
 		$("#header").removeClass("scroll");
 	}
-	var x = $(this).scrollTop();
-	   $(".bkg-parallax").css("-webkit-transform","translateY(" +  (x/12)  + "px)");
-	   $(".page-hdr figure img").css("-webkit-transform","translateY(" +  (x/5)  + "px)");
   });
 
 // -- ANIMATE IN TO VIEW -- //
