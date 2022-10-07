@@ -5,7 +5,7 @@
   --primary: #264A67;
   --secondary: #B76564;
   --clr-3: #795F80;
-  --clr-4: #795F80;
+  --clr-4: #688DA0;
   --bkg: #fff;
   --light: #F2F2EF;
   --dark: #222222;
@@ -67,6 +67,9 @@ input {accent-color: var(--primary);}
 .content-cta {padding: 25px 25px 25px 35px; font-size: 1.35rem; color: var(--primary); font-style: italic; border-left: 4px solid var(--secondary); margin: 2rem 0; background: var(--light); border-radius: 0 5px 5px 0;}
 .content-cta p:last-child {margin-bottom: 0;}
 
+.content ul {font-family: var(--header); color: var(--primary); font-weight: 700; list-style: square; padding: 0 0 0 1.5rem;}
+.content ul li::marker {color: var(--secondary);}
+
 /* Buttons Links */
 a {color: var(--primary); text-decoration: underline;}
 a:hover {text-decoration: none; color: var(--primary);}
@@ -74,13 +77,13 @@ a:hover {text-decoration: none; color: var(--primary);}
 a.btn-theme:before, .btn-theme > a:before, span.btn-theme:before, button.btn-theme:before, a.btn-theme:before {content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 100%; top: 0;left: 0; background-color: var(--secondary);transform-origin: bottom right; transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); z-index: -1; }
 a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:before, button.btn-theme:hover:before {transform: scaleX(1);transform-origin: bottom left;}
 
-.btn-text a, a.btn-text {text-transform: uppercase; font-weight: bold; transition: var(--transition); text-decoration: none; background: var(--light); padding: 10px 15px; border-radius: 4px; font-size: .9rem;}
+.btn-text a, a.btn-text {color: var(--secondary); text-transform: uppercase; font-weight: bold; transition: var(--transition); text-decoration: none; background: var(--light); padding: 10px 15px; border-radius: 4px; font-size: .9rem;}
 .btn-text a:after, a.btn-text:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px;transition: var(--transition);}
-.btn-text a:hover, a.btn-text:hover {color: var(--secondary);}
+.btn-text a:hover, a.btn-text:hover {color: var(--primary);}
 .btn-text a:hover:after, a.btn-text:hover:after {margin-left: 9px;}
 
 /* Layout */
-.content section {padding: var(--spacer) 0;}
+.content section {padding: var(--spacer) 0; position: relative;}
 .grid {display: grid; gap: var(--grid-gap-md);}
 .grid.grid-gap-sm {gap: var(--grid-gap-sm);}
 .grid.grid-gap-md {gap: var(--grid-gap-md);}
@@ -112,7 +115,8 @@ a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:befo
 @media (min-width: 768px) {
 :root {
   --spacer: 50px;
-  --grid-spacer-med: 50px
+  --grid-spacer-med: 50px;
+  --max-width: 768px;
 }
 h2 {font-size: 2.5rem;}
 .img-right {float: right; margin: 0 0 2rem 2rem; max-width: 50%;}
@@ -157,7 +161,7 @@ h1 {font-size: 3.5rem;}
 --spacer: 75px;
 --max-width: 1140px;
 }
-h2 {font-size: 2.5rem;}
+h2 {font-size: 2.35rem;}
 .grid-testimonials {grid-template-columns: 675px minmax(0, auto); display: grid; gap: 25px;}
 
 }
