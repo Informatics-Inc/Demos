@@ -1,18 +1,13 @@
-/* CSS Document
-Client: Covenant Workplace Solutions
-Company: Informatics, Inc
-Author: Jeff S
-Date: Sep 2022
-*/
 
 /* Variables */
 :root {
   accent-color: var(--primary);
-  --primary: #255072;
-  --secondary: #AAD4D3;
-  --tertiary: #6D6E71;
+  --primary: #264A67;
+  --secondary: #B76564;
+  --clr-3: #795F80;
+  --clr-4: #795F80;
   --bkg: #fff;
-  --light: #EDF0F0;
+  --light: #F2F2EF;
   --dark: #222222;
   --spacer: 25px;
   
@@ -20,8 +15,8 @@ Date: Sep 2022
   --grid-spacer-med: 25px
   --text: rgba(0,0,0,.85);
   --light-text: rgba(255,255,255,.75);
-  --header: 'Montserrat', serif;
-  --body: 'Montserrat', sans-serif;
+  --header: 'Roboto Slab', serif;
+  --body: 'Roboto', sans-serif;
   --serif: 'Georgia', serif;
   --transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --shadow: 0 5px 25px rgba(255,161,0,.15);
@@ -45,21 +40,25 @@ font-feature-settings: "liga";
 text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5 {font-family: var(--header); font-weight: 700; letter-spacing: -1px; margin: 0 0 1rem 0; line-height: 1; color: var(--primary);}
-h1 {font-size: 3rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;}
-h2 {font-size: 2rem;}
-h3 {font-size: 1.5rem;}
+h1, h2, h3, h4, h5 {font-family: var(--header); font-weight: 400; letter-spacing: -1px; margin: 0 0 1rem 0; line-height: 1; color: var(--primary);}
+h1 {font-size: 2.5rem; position: relative; padding-top: 1rem;}
+h1:before {width: 100px; height: 3px; background: var(--secondary); content: ""; position: absolute; left: 0; top: 0;}
+h2 {font-size: 2rem;position: relative; padding-top: 1rem;}
+h2:before {width: 100px; height: 3px; background: var(--secondary); content: ""; position: absolute; left: 0; top: 0;}
+h3 {font-size: 1.5rem; font-weight: 700;}
 h4 {font-size: 1.25rem;}
 p, ul, ol {margin-bottom: 1.5em;}
 img {max-width: 100%; height: auto;}
 hr {margin: 25px 0;} 
 a {transition: var(--transition);}
+
 .preheader {text-transform: uppercase; color: var(--tertiary); letter-spacing: 1px; font-weight: 800; margin: 0 0 .5rem 0; position: relative; padding: 0 0 0 60px; font-size: .9rem;}
 .preheader:before {width: 50px; height: 3px; background: var(--tertiary); content: ""; position: absolute; left: 0; top: 8px;}
 
 .hgroup {text-align: center; margin: 0 auto 3rem auto; max-width: 800px;}
 .hgroup .preheader {padding: 0 0 .5rem 0; margin: 0 0 .5rem 0;}
 .hgroup .preheader:before {left: calc(50% - 25px); top: 100%;}
+.hgroup h2:before {left: calc(50% - 50px);}
 
 input {accent-color: var(--primary);}
 .box {background: var(--light); padding: 25px;}
@@ -71,14 +70,14 @@ input {accent-color: var(--primary);}
 /* Buttons Links */
 a {color: var(--primary); text-decoration: underline;}
 a:hover {text-decoration: none; color: var(--primary);}
-.btn-theme > a, button.btn-theme, a.btn-theme {border: none; display: inline-block; padding: 15px 25px; text-transform: uppercase; font-weight: 700;text-decoration: none; position: relative; z-index: 5; font-size: .9rem; letter-spacing: 1px; font-family: var(--body); position: relative; background: var(--primary); color: #fff; border-radius: 50px; overflow: hidden;}
-a.btn-theme:before, .btn-theme > a:before, span.btn-theme:before, button.btn-theme:before, a.btn-theme:before {content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 100%; top: 0;left: 0; background-color: var(--tertiary);transform-origin: bottom right; transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); z-index: -1; }
+.btn-theme > a, button.btn-theme, a.btn-theme {border: none; display: inline-block; padding: 15px 25px; text-transform: uppercase; font-weight: 700;text-decoration: none; position: relative; z-index: 5; font-size: .9rem; letter-spacing: 1px; font-family: var(--body); position: relative; background: var(--clr-3); color: #fff; border-radius: 5px; overflow: hidden; box-shadow: 4px 4px 3px rgba(0,0,0,.1);}
+a.btn-theme:before, .btn-theme > a:before, span.btn-theme:before, button.btn-theme:before, a.btn-theme:before {content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 100%; top: 0;left: 0; background-color: var(--secondary);transform-origin: bottom right; transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); z-index: -1; }
 a.btn-theme:hover:before, .btn-theme > a:hover:before, span.btn-theme:hover:before, button.btn-theme:hover:before {transform: scaleX(1);transform-origin: bottom left;}
 
-.btn-text a {text-transform: uppercase; font-weight: bold; transition: var(--transition); text-decoration: none;}
-.btn-text a:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px;transition: var(--transition);}
-.btn-text a:hover {color: var(--tertiary);}
-.btn-text a:hover:after {margin-left: 9px;}
+.btn-text a, a.btn-text {text-transform: uppercase; font-weight: bold; transition: var(--transition); text-decoration: none; background: var(--light); padding: 10px 15px; border-radius: 4px; font-size: .9rem;}
+.btn-text a:after, a.btn-text:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px;transition: var(--transition);}
+.btn-text a:hover, a.btn-text:hover {color: var(--secondary);}
+.btn-text a:hover:after, a.btn-text:hover:after {margin-left: 9px;}
 
 /* Layout */
 .content section {padding: var(--spacer) 0;}
@@ -122,7 +121,10 @@ h2 {font-size: 2.5rem;}
 .grid-4 {grid-template-columns: 1fr 1fr;}
 
 }
-
+/* Only Medium Devices */
+@media (min-width: 768px) and (max-width: 992px) {
+  .direction-row-md {display: grid; grid-template-columns: 1fr 1.5fr; gap: 25px; margin-bottom: 25px;}
+  }
 /* Small devices (tablets, 992px and up) */
 @media (min-width: 992px) {
 :root {
@@ -140,6 +142,7 @@ h1 {font-size: 3.5rem;}
 .grid-2 {grid-template-columns: 1fr 1fr;}
 .grid-2-1 {grid-template-columns: 1.5fr 1fr;}
 .grid-2-5 {grid-template-columns: 2fr 5fr;}
+.grid-3-lg {grid-template-columns: 1fr 1fr 1fr;}
 .grid-4 {grid-template-columns: 1fr 1fr 1fr 1fr;}
 .grid-sidebar {grid-template-columns: 1.25fr 3fr; gap: 50px;}
 .grid-blog {grid-template-columns: 3fr 1fr; gap: 25px;}

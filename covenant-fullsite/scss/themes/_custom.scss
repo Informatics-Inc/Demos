@@ -67,6 +67,21 @@ Date: Sep 2022
 #sec-nav ul a:hover {padding: 20px 20px 20px 30px; background: rgba(255,255,255,.5);}
 #sec-nav ul .active > a::after {content: "\f0da";font-family: FontAwesome; position: absolute; right: 15px; font-size: 1.1rem;}
 
+.high-low {display: grid; grid-template-columns: 75px auto; gap: 25px;}
+.high-low .scale {display: block; border-right: 5px solid var(--secondary); position: relative; margin: 0 0 0 10px; display: flex; justify-content: center; flex-direction: column; justify-content: space-between;}
+.high-low .scale span {text-transform: uppercase; font-size: .7rem; padding: 0 10px 0 0; text-align: center;}
+.high-low .scale:before { border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid var(--secondary); position: absolute; content: ""; right: -12px; top: -5px;}
+.high-low .scale:after { border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid var(--secondary); position: absolute; content: ""; right: -12px; bottom: -5px;}
+
+.high-low-items {display: grid; gap: 15px;}
+.high-low a {display: grid; grid-template-columns: 75px auto; align-items: center; gap: 15px; text-decoration: none; color: var(--text);}
+.high-low a figure {display: block; width: 75px; height: 75px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 0 5px transparent; background: var(--primary); position: relative; z-index: 5;transition: var(--transition);}
+.high-low a figure img {width: 100%; height: 100%; object-fit: cover; transition: var(--transition); opacity: .35; position: relative; z-index: -1;}
+.high-low a h3 {margin: 0; font-weight: 400; font-size: 1.15rem; color: var(--text);}
+.high-low a:hover figure img {transform: scale(1.1); opacity: 1;}
+.high-low a:hover figure {box-shadow: 0 0 0 5px var(--secondary);}
+.high-low a:hover h3 {text-decoration: underline;}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 /* Hero */
@@ -82,6 +97,16 @@ Date: Sep 2022
 
 .grid-3-stack-tab .card {display: grid; grid-template-columns: 1.25fr 2fr;}
 .grid-3-stack-tab .card figure {height: 100%;}
+
+.high-low .scale {border: none; border-bottom: 5px solid var(--secondary); flex-direction: row; margin: 0 0 25px 0;}
+.high-low .scale:before {transform: rotate(90deg); top: auto; bottom: -7px;}
+.high-low .scale:after {transform: rotate(90deg); right: auto; bottom: -7px; left: -10px;}
+.high-low .scale span {padding: 0 0 15px 0; font-size: .9rem;}
+
+.high-low {grid-template-columns: auto;}
+.high-low-items {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}
+.high-low a {grid-template-columns: auto; text-align: center; align-items: flex-start;}
+.high-low a figure {width: 100%; height: 125px;}
 }
 
 /* Small devices (tablets, 992px and up) */
