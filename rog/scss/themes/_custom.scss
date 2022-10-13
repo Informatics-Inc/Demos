@@ -26,6 +26,7 @@
 .content section.no-pad {padding: 0;}
 
 .quote p {font-weight: 700; color: var(--primary);}
+.content aside .quote h2:before {display: none;}
 
 .bkg-blocks-left:after {width: 100px; height: 145px; background: url(../img/blocks-2.png) 0 0 no-repeat; background-size: 100% auto; content: ""; position: absolute; left: 5%; top: 15%; z-index: -1;}
 .bkg-blocks-right:after {width: 100px; height: 145px; background: url(../img/blocks-3.png) 0 0 no-repeat; background-size: 100% auto; content: ""; position: absolute; right: 5%; top: 15%; z-index: -1;}
@@ -39,6 +40,20 @@
 .icon-stat {display: grid; grid-template-columns: 100px auto; gap: 25px;}
 .icon-stat h3 {font-size: 1.75rem;}
 .icon-stat img {width: 100px; height: 100px; object-fit: contain;}
+
+.content aside > * {margin-bottom: 2rem;}
+
+#sec-nav p {background: var(--primary); padding: 15px; font-size: 1.25rem; font-family: var(--header); text-align: center; color: #fff; border-radius: 10px 10px 0 0; margin: 0;}
+#sec-nav ul {list-style: none; padding: 15px; margin: 0; background: var(--light); border-radius: 0 0 10px 10px;}
+#sec-nav ul a {display: block; padding: 15px 25px; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.1); position: relative;}
+#sec-nav ul li:last-child a {border: none;}
+#sec-nav ul .active a {color: var(--secondary);}
+#sec-nav ul .active a:before {border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid var(--secondary); content: ""; position: absolute; left: 0; top: 25px; transform: rotate(-90deg);}
+
+#hdr-basic {background: var(--light);}
+#hdr-basic .text {max-width: none; padding: 50px 10%; text-align: center;}
+#hdr-basic .text p {max-width: none;}
+#hdr-basic .text h1:before {left: calc(50% - 50px);}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -68,6 +83,8 @@
 .stat-3-col {display: grid; grid-template-columns: 1fr 1.3fr 1fr; gap: 50px;}
 .stat-3-col .col:nth-of-type(2) {border: 1px solid #ddd; border-top: none; border-bottom: None; padding: 0 25px;}
 .stat-3-col + p {margin-top: 25px;}
+
+#hdr-basic .text {padding: 50px 15%;}
 }
 
 /* Small devices (tablets, 992px and up) */
@@ -83,6 +100,9 @@
 .full-content-img-right {grid-template-columns: 1fr 1.25fr;}
 .full-content-img-right figure {padding-right: var(--side-width);}
 .full-content-img-right figure img {border-radius: 25px;}
+
+#hdr-basic + .blog-overlap {padding-top: 0;}
+#hdr-basic + .blog-overlap:before {width: 100%; height: 100px; background: var(--light); content: ""; position: absolute; left: 0; top: 0;}
 }
 
 /* Large devices (large desktops, 1200px and up) */

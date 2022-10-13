@@ -26,7 +26,7 @@
   --grid-gap-sm: 5px;
   --grid-gap-md: 15px;
   --grid-gap-lg: 25px;
-  --skinny: 800px;
+  --skinny: 825px;
 }
 
 /* TYPOGRAPHY */
@@ -61,7 +61,7 @@ a {transition: var(--transition);}
 .hgroup h2:before {left: calc(50% - 50px);}
 
 input {accent-color: var(--primary);}
-.box {background: var(--light); padding: 25px;}
+.box {background: var(--light); padding: 25px; border-radius: 10px;}
 .lead {font-size: 1.25rem; font-weight: 400;}
 
 .content-cta {padding: 25px 25px 25px 35px; font-size: 1.35rem; color: var(--primary); font-style: italic; border-left: 4px solid var(--secondary); margin: 2rem 0; background: var(--light); border-radius: 0 5px 5px 0;}
@@ -69,6 +69,7 @@ input {accent-color: var(--primary);}
 
 .content ul {font-family: var(--header); color: var(--primary); font-weight: 700; list-style: square; padding: 0 0 0 1.5rem;}
 .content ul li::marker {color: var(--secondary);}
+.content p {margin-bottom: 2rem;}
 
 /* Buttons Links */
 a {color: var(--primary); text-decoration: underline;}
