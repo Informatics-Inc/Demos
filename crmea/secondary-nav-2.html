@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="https://use.typekit.net/kdw0rzh.css">
 
     <!-- CSS -->
-    <link href="css/wowslider.css" rel="stylesheet">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	  <script type="text/javascript" src="engine1/jquery.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
-  
   </head>
   <body>
   
@@ -41,26 +41,14 @@
   
   <div id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav" id="nav-main">
-      <!--
-        <li><a href="landing.html">Events</a>
-          <button type="button" data-toggle="collapse" data-target="#main-menu-1" aria-expanded="false" aria-controls="main-menu-1" class="collapsed"><i class="fa fa-chevron-down"></i></button>
-          <ul class="collapse" id="main-menu-1">
-            <li><a href="secondary.html">EA Annual Meetings</a></li>
-            <li><a href="secondary.html">CR Farmers' Market</a></li>
-            <li><a href="secondary.html">CR Restaurant Week</a></li>
-            <li><a href="secondary.html">Welcoming Week</a></li>
-            <li><a href="secondary.html">Market After Dark</a></li>
-          </ul>
-        </li>-->
         <li><a href="membership.html">Membership</a>
           <button type="button" data-toggle="collapse" data-target="#main-menu-3" aria-expanded="false" aria-controls="main-menu-3" class="collapsed"><i class="fa fa-chevron-down"></i></button>
           <ul class="collapse" id="main-menu-3">
             <li><a href="secondary.html">Become a Member</a></li>
-            <li><a href="secondary.html">Benefits of Membership</a></li>
-            <li><a href="secondary.html">Leadership for Five Seasons</a></li>
+            <li><a href="secondary-nav.html">Benefits of Membership</a></li>
+            <li><a href="secondary-nav-2.html">Leadership for Five Seasons</a></li>
             <li><a href="secondary.html">Boards & Councils</a></li>
             <li><a href="secondary.html">Member Directory</a></li>
-            <li><a href="secondary.html">History & Progress</a></li>
           </ul>
         </li>
         <li><a href="economic-development.html">Economic Development</a>
@@ -80,7 +68,7 @@
             <li><a href="secondary.html">Relocation Resources</a></li>
           </ul>
         </li>
-        <li><a href="live-here.html">Live Here</a>
+        <li class="active"><a href="live-here.html">Live Here</a>
           <button type="button" data-toggle="collapse" data-target="#main-menu-5" aria-expanded="false" aria-controls="main-menu-5" class="collapsed"><i class="fa fa-chevron-down"></i></button>
           <ul class="collapse" id="main-menu-5">
             <li><a href="secondary.html">Work in CR Metro</a></li>
@@ -100,7 +88,7 @@
             <li><a href="secondary.html">Action Center</a></li>
           </ul>
         </li>
-        <li class="active"><a href="news.html">News & Stories</a></li>
+        <li><a href="news.html">News & Stories</a></li>
     </ul>
     <div class="ico-links">
       <a ahref="#.html"><i class="fa fa-comment"></i><span>Contact</span></a>
@@ -114,15 +102,17 @@
 <main id="content" class="content">
 <header class="page-hdr page-hdr-blue" id="hdr-secondary">
   <figure>
-    <img src="img/hero-workforce-2.jpg" />
+    <img src="img/hero-marion.jpg" />
   </figure>
   <div class="text fadeinup delay-3">
     <ol class="breadcrumb">
       <li><a href="index.html">Home</a></li>
-      <li>News</li>
+      <li><a href="live-here.html">Live Here</a></li>
+      <li><a href="#.html">Our Communities</a></li>
+      <li>Marion</li>
     </ol>
-    <h1><span class="highlight">Coming Soon</span></h1>
-    <p class="lead">This template is not completed yet</p>
+    <h1><span class="highlight">Marion</span></h1>
+    <p class="lead">Uptown Marion is committed to driving continued revitalization, growth and preservation of historic character through appropriate design, promotion, and economic strategies that improve our community.</p>
   </div>
 </header>
 
@@ -130,90 +120,98 @@
 
 <section>
   <div class="container">
-    
-    <div class="grid grid-2">
+    <div class="grid sidebar-grid">
+      <aside>
+       <nav id="sec-nav">
+        <h3>Live Here</h3>
+        <ul>
+          <li><a href="secondary.html">Work in CR Metro</a></li>
+          <li class="active"><a href="secondary.html">Our Communities</a>
+            <ul>
+              <li><a href="#.html">The Amanas</a></li>
+              <li><a href="#.html">Cedar Rapids</a></li>
+              <li><a href="#.html">Center Point</a></li>
+              <li><a href="#.html">Fairfax</a></li>
+              <li><a href="#.html">Hiawatha</a></li>
+              <li class="active"><a href="#.html">Marion</a></li>
+              <li><a href="#.html">Mount Vernon</a></li>
+              <li><a href="#.html">Robins</a></li>
+            </ul>
+          </li>
+          <li><a href="secondary.html">Support Local</a></li>
+          <li><a href="secondary.html">Get Involved</a></li>
+          <li><a href="secondary.html">Relocation Resources</a></li>
+        </nav>
+        </ul>
+        <div class="info-card">
+          <figure>
+            <img src="img/hero-2.jpg" />
+          </figure>
+          <div class="text">
+            <p class="preheader">Success Story</p>
+            <h3>1 Million Cups Founder Fireside presented by ISAV</h3>
+            <p>Sep 21, 8:45 AM - 10:00 AM</p>
+            <a href="#.html" class="arrow-link">Read Story</a>
+          </div>
+        </div>
+      </aside>
       <div class="col">
-        <figure class="img-combo">
-          <img src="img/feature-1.jpg" />
-          <img src="img/feature-2.jpg" />
-        </figure>
-      </div>
-      <div class="col">
-        <p class="preheader">Main Content</p>
-        <h2>Page header that is engaging and interesting will go here to hook viewers</h2>
-        <p>Lorem ipsum dolor sit amet, eum cu fugit labores posidonium, ea posse ancillae deseruisse pro, mel lucilius adversarium te. Ad duo ullum iusto copiosae, eu mel nobis scripta alterum, vel solum choro ex. Vel viris.</p>
-      </div>
-    </div>
-    <!-- 
-    <hr />
-    <div class="content-cta">
-      <figure><img src="img/feature-beer.jpg" /></figure>
-      <div class="text">
-        <h2>Discover Fall in the City of 5 Seasons</h2>
-        <a href="#.html" class="arrow-link">More Info</a>
-      </div>
-    </div>-->
-  </div>
-</section>
-<section class="bkg-pattern-2">
-  <div class="container">
-    <div class="full-feature">
-      <figure><img src="img/hero-2.jpg" /></figure>
-      <div class="text">
-        <p class="preheader">Our Communities</p>
-        <h2>Hiawatha</h2>
-        <p>The Metro area offers a plethora of cultural dining experiences, from American home-style cuisine to authentic Mediterranean, with the rich spices of Mexican restaurants, and exotic aromas of Asian fare all close by.</p>
-        <a href="#.html" class="arrow-link">Learn More</a>
-      </div>
-    </div>
-    <div class="full-feature">
-      <figure><img src="img/feature-1.jpg" /></figure>
-      <div class="text">
-        <p class="preheader">Our Communities</p>
-        <h2>Cedar Rapids</h2>
-        <p>The Metro area offers a plethora of cultural dining experiences, from American home-style cuisine to authentic Mediterranean, with the rich spices of Mexican restaurants, and exotic aromas of Asian fare all close by.</p>
-        <a href="#.html" class="arrow-link">Learn More</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!--
-<section>
-  <div class="container">
-    <div class="grid grid-2">
-      <div class="col">
-        <figure class="img-combo">
-          <img src="img/feature-1.jpg" />
-          <img src="img/feature-2.jpg" />
-        </figure>
-      </div>
-      <div class="col">
-        <p class="preheader">Why Cedar Rapids?</p>
-        <h2>A thriving, growing part of beautiful middle America.</h2>
-        <p>Lorem ipsum dolor sit amet, eum cu fugit labores posidonium, ea posse ancillae deseruisse pro, mel lucilius adversarium te. Ad duo ullum iusto copiosae, eu mel nobis scripta alterum, vel solum choro ex. Vel viris complectitur ut, scripta quaeque adipisci in usu.</p>
+        <p class="preheader">Growing Fast!</p>
+        <h2>Welcome to Marion, Iowa!</h2>
+        <p class="lead">Marion is one of the Midwest’s fastest-growing cities. We pride ourselves on being the best place in Iowa to raise a family and grow a business. </p>
+        <img src="img/feature-marion.jpg" class="img-right" />
+        <p>I am proud to call Marion home and value our charm and small-town atmosphere, as well as our progressive, forward-thinking ambitions. Marion is a place where people work smarter, set lofty goals and strive to achieve the very best for their families and their community. Here we reach higher! </p>
+        <p>Whether you enjoy music in the City Square on a warm summer night, Christmas in the Park in December, the nationally-acclaimed Marion Arts Festival in the spring, or walking the trails on a crisp fall morning, it's no wonder we were named one of the 10 Best Towns for Families by Family Circle Magazine. </p>
+        <hr>
         <div class="grid grid-3">
           <div class="col"><div class="number-item">
-            <h3>276k</h3>
-            <p>Cedar Rapids Population</p>
+            <h3>20M</h3>
+            <p>Private dollars invested in district</p>
           </div></div>
           <div class="col"><div class="number-item">
-            <h3>36</h3>
-            <p>Median Age</p>
+            <h3>89</h3>
+            <p>Business starts & expansions</p>
           </div></div>
           <div class="col"><div class="number-item">
-            <h3>5</h3>
-            <p>Regional Universities</p>
+            <h3>$855k</h3>
+            <p>Dollars awarded in state grants</p>
           </div></div>
         </div>
+        <hr>
+        <h3>Our City Goals</h3>
+        <p>The goal of our city council, our city administrators, and our economic development partners is to continue to develop Marion as a business-friendly community while working with our school districts (two of the finest in the state), churches, service organizations, and citizens to ensure we continue to offer our residents the quality of life they value. </p>
+        <p class="callout">Quickly add content that will attract the eye with the callout class. You're looking at this but you are not reading the other text paragraphs. Use this power wisely!</p>
       </div>
     </div>
   </div>
 </section>
--->
-  
+
+<section class="bkg-light">
+  <div class="container">
+    <div class="full-feature">
+      <figure><img src="img/hero-2.jpg"></figure>
+      <div class="text">
+        <p class="preheader">More Content</p>
+        <h2>You can put additional content features here!</h2>
+        <p>The Metro area offers a plethora of cultural dining experiences, from American home-style cuisine to authentic Mediterranean, with the rich spices of Mexican restaurants, and exotic aromas of Asian fare all close by.</p>
+        <a href="#.html" class="arrow-link">Learn More</a>
+      </div>
+    </div>
+    <div class="full-feature">
+      <figure><img src="img/hero-1.jpg"></figure>
+      <div class="text">
+        <p class="preheader">More Content</p>
+        <h2>You can put additional content features here!</h2>
+        <p>The Metro area offers a plethora of cultural dining experiences, from American home-style cuisine to authentic Mediterranean, with the rich spices of Mexican restaurants, and exotic aromas of Asian fare all close by.</p>
+        <a href="#.html" class="arrow-link">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer">
-  <figure>
+  <figure class="animate-in">
     <img src="img/hero-3-large.jpg" />
   </figure>
   <div class="container">

@@ -41,11 +41,11 @@ grid-template-rows: 1fr 1fr 1fr;
 #wowslider-container1 .ws_bullets {bottom: 17vh;}
 .ws_controls {position: absolute; right: 0; top: calc(100% - 200px);}
 #wowslider-container1 .ws_bullets {display: flex; justify-content: center; flex-direction: column; width: 10px; height: 200px; left: auto; right: 25px;}
-
+.page-hdr figure > img {width: 100%; height: 100%; object-fit: cover;}
 .page-hdr .text {padding: 50px; text-align: center;margin-top: 150px;}
 .page-hdr .text h1 {color: #fff; text-transform: uppercase; max-width: 1150px; }
 .page-hdr .text p.lead {color: #fff; font-size: 1rem;}
-.page-hdr .text p {max-width: 725px; margin: 1rem auto;}
+.page-hdr .text p {max-width: 800px; margin: 1rem auto;}
 .page-hdr .text .highlight::after {bottom: 5px;}
 .page-hdr .text .breadcrumb {background: none; color: rgba(255,255,255,.5); font-size: .85rem;}
 .page-hdr .text .breadcrumb a {color:rgba(255,255,255,.75);}
@@ -54,17 +54,12 @@ grid-template-rows: 1fr 1fr 1fr;
 .arrow-down:after {border-color: var(--blue);}
 #scroll-down::before {background: var(--blue);}
 
-/* Change Header Colors 
-.page-hdr-purple .text .preheader {color: var(--purple);}
-.page-hdr-purple #scroll-down {color: var(--purple);}
-.page-hdr-purple .arrow-down:after {border-color: var(--purple);}
-.page-hdr-purple #scroll-down::before {background: var(--purple);}
-.page-hdr-purple .text .highlight::after {background: var(--purple);}
-*/
-
 #hdr-secondary {min-height: auto; height: 600px;}
 #hdr-secondary figure img {opacity: .45;}
 #hdr-secondary .text {margin-top: 80px;}
+
+#hdr-basic .breadcrumb {background: none; font-size: .85rem; padding: 0;}
+
   /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
@@ -75,7 +70,6 @@ grid-template-rows: 1fr 1fr 1fr;
     .page-hdr .text h1 {font-size: 4.75rem; line-height: .8;}
     .page-hdr .text .highlight::after {bottom: 20px;}
     .page-hdr .text p.lead {font-size: 1.25rem;}
-    
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -86,5 +80,4 @@ grid-template-rows: 1fr 1fr 1fr;
 
     #hdr-secondary h1 {font-size: 5rem;}
     #hdr-secondary .highlight::after {bottom: 20px;}
-  
 }

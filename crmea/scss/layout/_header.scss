@@ -70,12 +70,12 @@
 @media (min-width: 992px) {
 #logo {display: block; height: 100%; margin: auto; display: flex; justify-content: center; flex-direction: column; max-width: 210px; position: relative;}
 #header {display: flex; align-items: center; justify-content: space-between; position: fixed; padding: 20px; transition: var(--transition);}
-#header.scroll {background: #fff; padding: 5px; box-shadow: 0 15px 15px -15px rgba(0,0,0,.1);}
-#header.scroll li a {color: var(--dark);}
+#header.scroll, #header.scrolled {background: #fff; padding: 5px; box-shadow: 0 15px 15px -15px rgba(0,0,0,.1);}
+#header.scroll li a, #header.scrolled li a {color: var(--dark);}
 .logo-color {display: block;position: absolute; left: 25px; top: 0; width: 100%; visibility: hidden; opacity: 0; transition: var(--transition);}
 #header .logo {opacity: 1; left: 0; transition: var(--transition);}
-#header.scroll .logo {opacity: 0; left: -25px;}
-#header.scroll .logo-color {visibility: visible; opacity: 1; left: 0;}
+#header.scroll .logo, #header.scrolled .logo {opacity: 0; left: -25px;}
+#header.scroll .logo-color, #header.scrolled .logo-color {visibility: visible; opacity: 1; left: 0;}
 
 #navbar {margin: 0; padding: 0; display: flex !important; align-items: center; gap: 15px;}
 #navbar:before, #navbar:after {display: none;}

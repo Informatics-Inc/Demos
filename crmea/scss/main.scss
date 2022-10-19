@@ -7,9 +7,13 @@ Date: Aug 2022
 
 @import "base/reset";
 @import "base/animations";
+
+@import "components/slider";
+@import "components/event-search";
+
 @import "layout/header";
 @import "layout/footer";
 @import "layout/blog";
 @import "layout/pageheader";
-@import "components/slider";
+
 @import "themes/custom";
