@@ -3463,6 +3463,7 @@ a.btn-theme:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
+  list-style: none !important;
 }
 
 .ico-link-grid a {
