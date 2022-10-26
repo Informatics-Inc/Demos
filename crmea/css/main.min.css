@@ -3522,6 +3522,10 @@ a.btn-theme:hover {
   border: 3px solid var(--purple);
 }
 
+.ico-link-grid li {
+  margin: 0 !important;
+}
+
 #hdr-basic {
   margin-top: 125px;
 }

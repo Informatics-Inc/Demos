@@ -270,7 +270,7 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 .ico-link-grid li:nth-of-type(3n) a {background: var(--green);}
 .ico-link-grid a:hover {background: #eee !important; color: var(--purple); transform: scale(1.05);}
 .ico-link-grid a:hover:after {border-color: var(--purple); inset: 0; border: 3px solid var(--purple);}
-
+.ico-link-grid li {margin: 0 !important;}
 #hdr-basic {margin-top: 125px;}
 
 .img-bkg-full {position: relative; z-index: 5; background: #fff;}
