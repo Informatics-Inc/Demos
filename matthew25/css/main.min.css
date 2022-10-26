@@ -129,6 +129,10 @@ select {
   margin: 1rem 0;
 }
 
+.hdr-locations a {
+  text-decoration: none;
+}
+
 .hdr-locations p {
   margin: 0;
 }
@@ -146,7 +150,6 @@ select {
 .hdr-locations p.info a {
   color: var(--text);
   font-size: 0.85rem;
-  text-decoration: underline;
 }
 
 .hdr-tools {
@@ -236,7 +239,7 @@ select {
 }
 
 /* ONLY MOBILE */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .mobile-menu {
     display: flex;
     justify-content: flex-end;
@@ -365,14 +368,14 @@ select {
   .hdr-locations {
     display: flex;
     grid-area: a;
-    gap: 25px;
+    gap: 10px;
   }
   .hdr-locations .col {
     flex: 1 0 1;
     max-width: 250px;
   }
   .hdr-locations p {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     line-height: 1.5;
   }
   .hdr-tools {
@@ -386,7 +389,7 @@ select {
     justify-content: flex-end;
   }
   .hdr-tools ul a:before {
-    content: "/";
+    content: "|";
     margin: 0 0.25rem 0 0;
   }
   .hdr-tools ul li:first-of-type a:before {
@@ -452,11 +455,14 @@ select {
   #header {
     grid-template-columns: 200px auto;
   }
+  .hdr-locations {
+    gap: 25px;
+  }
   .hdr-locations p.title {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   #nav-main a {
-    padding: 30px 20px;
+    padding: 30px 15px;
     font-size: 1rem;
     font-weight: 600;
   }
@@ -471,6 +477,10 @@ select {
 @media (min-width: 1400px) {
   #header {
     grid-template-columns: 250px auto;
+  }
+  #nav-main a {
+    font-size: 1.1rem;
+    padding: 30px 20px;
   }
 }
 /* Bootstrap Expand Nav Tablet Too */

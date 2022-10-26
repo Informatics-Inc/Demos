@@ -45,6 +45,7 @@ $window.trigger('scroll');
 if (document.querySelector('.testimonials')) {
 	var swiper2 = new Swiper('.testimonials', {
 		slidesPerView: 1,
+		watchOverflow: true,
 		autoplay: {
 			delay: 6000,
 		},
@@ -53,7 +54,6 @@ if (document.querySelector('.testimonials')) {
 			prevEl: ".swiper-button-prev",
 		},
 		speed: 2500,
-		loop: true,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,

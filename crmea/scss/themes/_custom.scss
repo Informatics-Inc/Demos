@@ -66,7 +66,6 @@ a {transition: var(--transition);}
 
 img + h2, img + h3 {margin-top: 1rem;}
 .col .grid {margin-bottom: 1.75rem;}
-.grid + hr {margin-top: 1.25rem;}
 
 .preheader {text-transform: uppercase; color: var(--blue); letter-spacing: 1px; font-weight: 700; margin: 0 0 .5rem 0;}
 .text-blue {color: var(--blue);}
@@ -95,6 +94,10 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 .arrow-link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px;transition: var(--transition);}
 .arrow-link:hover {text-decoration: underline;}
 .arrow-link:hover:after {margin-left: 9px;}
+
+.content ul {padding: 0 0 0 15px; list-style: square;}
+.content ul li::marker {color: var(--orange);}
+.content ul li + li {margin-top: 5px;}
 
 /* Layout */
 .content section {padding: var(--spacer) 0;}
@@ -193,10 +196,12 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 .grid-news .list-items {background: url(../img/angle-pattern.png);padding: var(--spacer) 0; padding-top: var(--spacer-lg);}
 .grid-news .content-feed {width: calc(100% + 150px); margin: 0 -75px 0 -75px;}
 .grid-news .content-feed .info-card {margin: 0 0 0 10px;}
+.grid-news .content-feed .info-card .text {height: 100%; min-height: 245px; display: flex; flex-direction: column; justify-content: flex-start;}
+
 .info-card {font-size: .9rem; border-radius: 5px; overflow: hidden; box-shadow: 0px 0px 10px rgba(0,0,0,.1);}
 .info-card figure {height: 175px; overflow: hidden;}
 .info-card figure img {width: 100%; height: 100%; object-fit: cover;}
-.info-card .text {background: #fff; padding: 25px; background: #fff; height: 100%; min-height: 245px; display: flex; flex-direction: column; justify-content: flex-start; border-radius: 0 0 5px 5px ;}
+.info-card .text {background: #fff; padding: 25px; background: #fff;  border-radius: 0 0 5px 5px ;}
 .info-card h3 {font-size: 1.45rem; line-height: 1.1; margin: 0 0 5px 0;}
 .info-card a {margin-top: auto; padding: 7px 5px; display: block; text-align: center; font-size: .8rem;}
 .feed-pagination {padding: 50px; width: calc(100% - 200px); margin: 0 0 0 100px;}
@@ -217,13 +222,13 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 #sec-nav {z-index: 5; position: relative;}
 #sec-nav h3 {font-size: .85rem; background: var(--blue); color: #fff; margin: 0; text-transform: uppercase; padding: 15px; text-align: center; letter-spacing: 2px; border-radius: 5px 5px 0 0;}
 #sec-nav > ul {list-style: none; margin: 0; padding: 15px; background: #fff; box-shadow: 5px 5px 50px rgba(0,0,0,.1); border-radius: 0 0 5px 5px;}
-#sec-nav ul a {display: block; padding: 20px; text-decoration: none; color: var(--text); font-family: var(--header); font-weight: 700; font-size: 1rem; position: relative; border-left: 7px solid rgba(0,0,0,0);}
+#sec-nav ul a {display: block; padding: 18px 20px; text-decoration: none; color: var(--text); font-family: var(--header); font-weight: 700; font-size: 1rem; position: relative; border-left: 7px solid rgba(0,0,0,0);}
 #sec-nav ul a:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 1rem; color: rgba(0,0,0,.2); position: absolute; right: 10px; top: calc(50% - 12px); opacity: 0; transition: var(--transition);}
 #sec-nav > ul > .active > a {background: #f4f4f4; border-left: 7px solid var(--blue);}
 #sec-nav > ul > .active > a:after {opacity: 1; color: var(--blue);}
-#sec-nav > ul > li > a:hover {padding: 20px 15px 20px 25px;}
+#sec-nav > ul > li > a:hover {padding: 18px 15px 18px 25px;}
 #sec-nav > ul > li > a:hover:after {opacity: 1;}
-
+#sec-nav li {margin: 0;}
 #sec-nav ul ul {list-style: square; padding: 15px 0 15px 35px; border-bottom: 1px solid #ddd; margin: 0 0 10px 0;}
 #sec-nav ul ul li::marker {color: #ddd;}
 #sec-nav ul ul a {font-weight: 400; padding: 7px 10px 7px 0;}
@@ -258,16 +263,18 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 .bkg-pattern-2 {background: url(../img/bkg-tris.png) right top no-repeat;}
 
 .ico-link-grid {list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 15px;}
-.ico-link-grid a {padding: 25px; display: flex; flex-direction: column; justify-content: center; text-align: center; font-family: var(--header); color: var(--text); font-weight: 600; font-size: 1rem; line-height: 1.1; text-decoration: none; background: var(--purple); height: 100%; border-radius: 5px; color: #fff; position: relative; z-index: 5; box-shadow: 5px 5px 10px rgba(0,0,0,.1);}
+.ico-link-grid a {padding: 25px 15px; display: flex; flex-direction: column; justify-content: center; text-align: center; font-family: var(--header); color: var(--text); font-weight: 600; font-size: 1rem; line-height: 1.1; text-decoration: none; background: var(--purple); height: 100%; border-radius: 5px; color: #fff; position: relative; z-index: 5; box-shadow: 5px 5px 10px rgba(0,0,0,.1);}
 .ico-link-grid a:after {content: ""; display: block; border: 1px solid rgba(255,255,255,.25); inset: 6px; position: absolute; border-radius: 4px; z-index: -1;}
 .ico-link-grid a .fa {font-size: 2rem; margin: 0 0 10px 0;}
 .ico-link-grid li:nth-of-type(2n) a {background: var(--teal);}
 .ico-link-grid li:nth-of-type(3n) a {background: var(--green);}
 .ico-link-grid a:hover {background: #eee !important; color: var(--purple); transform: scale(1.05);}
 .ico-link-grid a:hover:after {border-color: var(--purple); inset: 0; border: 3px solid var(--purple);}
-.ico-link-grid a:hover .fa {font-size: 2.25rem;}
 
 #hdr-basic {margin-top: 125px;}
+
+.img-bkg-full {position: relative; z-index: 5; background: #fff;}
+.img-bkg-full > img {position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; z-index: -1; opacity: .2;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -324,10 +331,10 @@ hr {margin: 3rem 0; border-color: #ddd;}
   --max-width: 1140px;
   }
   h2 {font-size: 2.75rem;}
-  
 
   .page-list-item .text h3 {font-size: 1.75rem;}
 
   .info-card h3 {font-size: 1.65rem;}
-  .info-card .text {padding: 40px; min-height: 300px;}
+  .grid-news .content-feed .info-card .text{ padding: 35px; min-height: 310px;}
+
 }

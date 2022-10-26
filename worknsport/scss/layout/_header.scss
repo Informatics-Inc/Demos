@@ -2,19 +2,16 @@
 /* ----------------------*/
 /* -- MENU AND HEADER -- */
 /* ----------------------*/
-#header {position: fixed; width: 100%; z-index: 15; top: 0; transition: var(--transition);}
-#header.scroll {box-shadow: 0 0 10px rgba(0,0,0,.1); background: #fff;}
-
-#logo {max-width: 225px; margin-right: auto;}
+#navbar {box-shadow: none;}
+#header {font-family: var(--font-header);  padding: 10px; width: 100%; z-index: 5; background: var(--dark);}
+#logo {max-width: 125px; margin-right: auto;}
 
 #nav-main {margin: 1rem 0;}
-#nav-main a {font-size: 1rem; color: var(--primary); font-weight: 700; text-decoration: none; display: block; flex-grow: 1;}
+#nav-main a {font-size: 1.15rem; text-decoration: none; display: block; flex-grow: 1; font-weight: 400; color: #fff; text-transform: uppercase;}
 #nav-main li ul {width: 100%; padding: 0;}
 #nav-main li ul li {border: 0;}
 #nav-main li ul li a {font-size: .9rem; font-weight: 400; padding: 10px 15px 10px 25px; text-transform: none;}
 #nav-main a {padding: 15px;}
-#nav-main .hdr-cta {border: none; margin: .5rem 0;}
-#nav-main .hdr-cta a {color: #fff; font-size: .9rem; text-align: center;}
 
 .screenreader-text {
     position: absolute;
@@ -39,53 +36,48 @@
 /* ONLY MOBILE */
 @media (max-width: 992px) {
 .mobile-menu {display: flex; justify-content: flex-end; align-items: center; gap: 15px; padding: 5px 0px;}
-#toggle {color: var(--primary); text-transform: uppercase; font-weight: 700; letter-spacing: .5px; margin: 0; border: none; border-radius: 0; font-size: .6rem; border-radius: 4px;}
+#toggle {text-transform: uppercase; letter-spacing: .5px; margin: 0; border: none; border-radius: 0; font-size: .75rem; border-radius: 4px; color: #fff;}
 #toggle .menu-label {display: block;}
 #toggle .fa {font-size: 2rem;}
-
-#nav-main a {font-size: 1.1rem; padding: 15px 10px; font-weight: 800;}
-#nav-main button {border: none; background: none; color: var(--primary); padding: 10px 20px; border-left: 1px dotted var(--light-border);}
-#nav-main button .fa {transform: rotate(180deg);}
-#nav-main button.collapsed .fa {transform: rotate(0deg);}
-#nav-main li {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 1px dotted #ccc;}
-#nav-main li ul li:last-of-type {margin: 0 0 1rem 0;}
-.hdr-locations .col {padding: 10px; display: grid; grid-template-columns: 1.25fr 2fr; background: var(--light); border-radius: 5px; align-items: center;}
-
+#nav-main a {color: #fff; border-bottom: 1px solid rgba(255,255,255,.15);}
 }
 
 /* DESKTOP */
 @media (min-width: 992px) {
-#logo {display: block; max-width: none; padding: 15px 0; height: 100%; margin: auto; display: flex; justify-content: center; flex-direction: column;}
+#header {padding: 0;}
+#header.scroll {background: rgba(0,0,0,.95);}
+
+#logo {display: block; padding: 10px 0; height: 100%; max-width: 150px; margin: auto; display: flex; justify-content: center; flex-direction: column; position: absolute; top: 0; left: calc(50% - 75px);}
+#header {position: fixed; width: 100%; z-index: 15; top: 0; transition: var(--transition); background: none;}
 #header .container:before, #header .container:after {display: none;}
-#header .container {display: grid; grid-template-columns: 200px auto; justify-content: space-between; align-items: center;}
 #navbar {margin: 0; padding: 0;}
 
-#nav-main {margin: 0; padding: 0; display: flex; align-items: center;}
+#nav-main:before, #nav-main:after {display: none;}
+#nav-main {padding: 0 15px; display: flex; align-items: center; justify-content: space-between; width: 100%; border-top: 1px solid rgba(255,255,255,.25); border-bottom: 1px solid rgba(255,255,255,.25); margin: 25px 0;}
+#nav-main .nav-group {display: flex;}
 #nav-main li button {display: none;}
-#nav-main a {padding: 34px 12px; font-size: .9rem;}
+#nav-main a {padding: 30px 15px; font-size: 1rem; position: relative;}
 #nav-main .hdr-cta a {font-size: .75rem; padding: 12px 20px; margin-left: 10px;}
 
 #nav-main ul {display: block;}
-#nav-main > li:hover > a, #nav-main > li.active > a {background: none;}
-#nav-main > li > a:after {width: 0; height: 4px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--secondary); opacity: 0; transition: var(--transition);}
-#nav-main > li:hover > a:after {opacity: 1; width: 100%; left: 0;}
-#nav-main > li.active > a:after {opacity: 1; width: 100%; left: 0;}
-#nav-main:hover > li.active > a:after {opacity: 0;}
-#nav-main:hover > li.active:hover > a:after {opacity: 1; width: 100%; left: 0;}
+#nav-main li:hover > a, #nav-main li.nav-path-selected > a {background: rgba(0,0,0,.5);}
+#nav-main li a:after {width: 0; height: 4px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--primary); opacity: 0; transition: var(--transition);}
+#nav-main li:hover > a:after {opacity: 1; width: 100%; left: 0;}
+#nav-main li.nav-path-selected > a:after {opacity: 1; width: 100%; left: 0;}
+#nav-main:hover li.nav-path-selected > a:after {opacity: 0;}
+#nav-main:hover li.nav-path-selected:hover > a:after {opacity: 1; width: 100%; left: 0;}
 
 #nav-main li ul {position: absolute; display: block; top: 105%; left: calc(50% - 125px); width: 250px; background: #fff; z-index: 5;list-style: none;box-shadow: 0 5px 10px rgba(0,0,0,.05); padding: 10px; margin: 0; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 15;}
 #nav-main li:hover ul {top: 100%; opacity: 1; visibility: visible;}
 #nav-main li ul li a {padding: 10px; border-radius: 5px; color: var(--text); transition: var(--transition); font-size: .9rem;}
 #nav-main li ul li a:hover {padding: 10px 5px 10px 15px; background: var(--secondary-light); border: 1px solid var(--secondary-light-border);}
 
-#nav-main .hdr-cta a:hover {background: var(--clr-3);}
-#nav-main .hdr-cta a:after {display: none;}
 }
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
-    #header .container {grid-template-columns: 275px auto;}
-    #nav-main a {padding: 45px 15px; font-size: 1rem;}
+    #logo {max-width: 200px; left: calc(50% - 100px);}
+    #nav-main a {padding: 35px 20px; font-size: 1.1rem;}
 }
 /* SUPER WIDE DESKTOP */
 @media (min-width: 1400px) {

@@ -7,8 +7,16 @@ Date: Oct 2022
 
 @import "base/reset";
 @import "base/animations";
+
+@import "components/video-link";
+@import "components/slider";
+@import "components/testimonial-slider";
+@import "components/cards";
+
 @import "layout/header";
 @import "layout/footer";
 @import "layout/blog";
+@import "layout/hero-grid";
+
 @import "themes/global";
 @import "themes/custom";

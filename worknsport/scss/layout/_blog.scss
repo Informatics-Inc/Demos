@@ -34,6 +34,8 @@
 .blog-header .lead:before {left: calc(50% - 25px);}
 .social-share {text-align: center; margin: 1rem 0 2rem 0;}
 .social-share ul {text-align: center; font-size: 2rem; display: flex; justify-content: center; padding: 0 !important;}
+.social-share ul a {color: var(--dark);}
+.social-share ul a:hover {color: var(--primary);}
 .content .social-share li {margin: 0 5px; padding: 0;}
 .social-share li:before {display: none; padding: 0;}
 .social-share > a:last-of-type {font-size: .85rem;}
@@ -43,12 +45,14 @@
 .tag-list {list-style: none !important; padding: 0 !important;}
 .box .btn-text {background: rgba(0,0,0,.1);}
 
-.blog-feature-img {margin: 0 0 2rem 0; position: relative; z-index: 5; overflow: hidden;}
-.blog-feature-img:before {width: 100%; height: 100px; background: var(--light); content: ""; position: absolute; left: 0; top: 0; z-index: -1;}
-.blog-feature-img img {border-radius: 10px;}
+.blog-feature-img {margin: -50px 0 2rem 0; position: relative; z-index: 5; overflow: hidden;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 .blog-list-item {grid-template-columns: 1.5fr 3fr; gap: 25px;}
-.blog-header h1 {font-size: 2.75rem;}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 992px) {
+.blog-detail #simple-hdr h1 {font-size: 3.75em;}
 }
