@@ -40,6 +40,8 @@
 
 .btn-block {text-align: center; margin: 0 0 1rem 0;}
 
+.event-actions.flex {gap: 25px;}
+
 @media (min-width: 768px) {
     #directory-category a {min-height: 200px; font-size: 1.35rem;}
     .content .member-item {display: grid; grid-template-columns: 37% 21% 20% 15%; align-items: center; gap: 2%;}

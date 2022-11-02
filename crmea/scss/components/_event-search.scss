@@ -46,7 +46,8 @@ a.event-item:hover h3 {text-decoration: underline;}
 
 .event-details {display: grid; grid-template-columns: 1fr 1fr; gap: 25px;}
 .event-actions {grid-template-columns: auto auto;}
-.event-actions .col:nth-of-type(2) {border-left: 1px solid #ddd; padding: 0 0 0 25px;}
+.event-actions .col {border-right: 1px solid #ddd; padding: 0 25px 0 0;}
+.event-actions .col:last-of-type {border: none;}
 .event-actions ul .fa {font-size: 1.5rem;}
 
 .member-search form {display: grid; grid-template-columns: auto 150px;}
