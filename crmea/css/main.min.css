@@ -1423,6 +1423,14 @@ a.event-item:hover h3 {
   padding: 2px 5px 2px 0px;
 }
 
+#sec-nav.tight-list ul a:hover {
+  padding: 7px 0 7px 5px;
+}
+
+#sec-nav.tight-list ul ul a:hover {
+  padding: 2px 0 2px 3px;
+}
+
 .content section.no-pad-top {
   padding-top: 25px !important;
 }
