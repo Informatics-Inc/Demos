@@ -3,7 +3,7 @@
 .event-search form .form-group {flex-grow: 1; display: flex; margin: 0; position: relative;border: 1px solid #ccc;}
 .event-search form input {width: 100%;}
 
-.event-search form .form-group input, .event-search form .form-group select, .event-search form .form-group input, .event-search form .form-group > button {width: 100%; border: none; background: none; padding: 15px; height: 100%; background: #fff; border-right: none; position: relative;}
+.event-search form .form-group input, .event-search form .form-group select, .event-search form .form-group input, .event-search form .form-group > button, .event-search form .form-group > a {width: 100%; border: none; background: none; padding: 15px; height: 100%; background: #fff; border-right: none; position: relative; text-decoration: none;}
 
 .event-search form .search-btn button {width: 50px; border-left: none; position: absolute; right: 0; top: 0;}
 .event-search button {color: var(--purple);}
@@ -49,6 +49,8 @@ a.event-item:hover h3 {text-decoration: underline;}
 .event-actions .col:nth-of-type(2) {border-left: 1px solid #ddd; padding: 0 0 0 25px;}
 .event-actions ul .fa {font-size: 1.5rem;}
 
+.member-search form {display: grid; grid-template-columns: auto 150px;}
+.member-search form a {text-align: center;}
 }
 
 /* Medium devices (tablets, 992px and up) */
