@@ -12,18 +12,24 @@
 .ftr-cta a:hover figure:after {transform: rotate(180deg);}
 .ftr-cta a:hover {color: rgba(255,255,255,.75); background: rgba(0,0,0,.5);}
 
-.ftr-cols {position: relative; z-index: 5; background: var(--primary);color: rgba(255,255,255,.75); padding: var(--spacer) 0;}
+.ftr-cols {position: relative; z-index: 5; background: var(--primary);color: rgba(255,255,255,.75); padding: 50px 0;}
 .ftr-cols > img {width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; z-index: -1; opacity: .3; mix-blend-mode: multiply;}
 .ftr-cols h2, .ftr-cols h3 {color: #fff;}
-.ftr-cols a {color: rgba(255,255,255,.75);}
+.ftr-cols h2 {margin: 0 0 2rem 0;}
+.ftr-cols a {color: rgba(255,255,255,.75); text-decoration: none;}
 .ftr-cols p {margin: 0 0 .75rem 0; font-size: .85rem;}
 .ftr-cols ul {list-style: none; padding: 0; margin: 0;}
 .ftr-cols ul a {padding: 5px;}
+.ftr-cols ul.flex {gap: 7px;}
 .ftr-cols a:hover {color: #fff;}
-.ftr-cols .container:before {display: none;}
+.ftr-cols .container:before, .ftr-cols .container:after {display: none;}
 /*.ftr-cols p strong {width: 65px; display: inline-block;}*/
 .copy {text-align: center; background: var(--dark-green); color: #fff; padding: 15px; margin: 0; font-size: .85rem;}
 .copy a {color: #fff;}
+
+.ftr-content {border-left: 1px solid rgba(255,255,255,.25); padding-left: 15px;}
+.ftr-content p strong {min-width: 60px; display: inline-block;}
+.ftr-content a:hover {text-decoration: underline;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -34,7 +40,15 @@
 @media (min-width: 992px) {
 .ftr-cta {display: grid; grid-template-columns: 1fr 1fr 1fr;}
 .ftr-cta a {padding: 25px;}
-.ftr-cols .container {grid-template-columns: 1.45fr 1fr 1fr 1fr .75fr; gap: 25px;}
+.ftr-cols .container {grid-template-columns: 1.5fr .8fr .8fr .8fr .75fr; gap: 25px;}
+
+#subsite-footer .ftr-cols .container {grid-template-columns: 2.75fr 1fr 1fr 2fr;}
+#subsite-footer .ftr-content {border: none; padding: 0;}
+#subsite-footer .col:last-of-type ul {display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 2rem 0;}
+#subsite-footer .logos {display: grid; grid-template-columns: 1fr .65fr; align-items: center;}
+#subsite-footer .logos a:first-of-type img {border-right: 1px solid rgba(255,255,255,.5); padding-right: 25px;}
+.logo-col {border-right: 1px solid rgba(255,255,255,.5); margin-right: 2rem; padding-right: 2rem;}
+
 }
 
 /* Small devices (tablets, 992px and up) */

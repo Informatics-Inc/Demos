@@ -1,7 +1,7 @@
 /* CSS Document
 Client: M25
 Company: Informatics, Inc
-Author: Jeff S
+Author: Jeff Sa
 Date: Aug 2022
 */
 
@@ -10,7 +10,7 @@ Date: Aug 2022
   accent-color: var(--primary);
   --primary: #8B4F23;
   --secondary: #81A240;
-  --tertiary: #81A240;
+  --tertiary: #A2CB51;
   --light: #F1EDEA;
   --dark: #2C2923;
   --dark-green: #242E25;
@@ -20,11 +20,13 @@ a {color: var(--secondary);}
 .hdr-tools ul a .fa {color: var(--secondary);}
 
 #hero .text {padding-bottom: 75px;}
+#hero .text a {color: var(--tertiary);}
 .store-hours {padding: 25px; box-shadow: 5px 5px 5px rgba(0,0,0,.1); border-radius: 0 15px 0 15px; font-size: .85rem; margin: -125px 0 2rem 0; position: relative; z-index: 5; max-width: 450px; background: #fff;}
 .store-hours .flex .col:first-of-type {border-right: 1px solid #333; padding: 0 1.5rem 0 0; margin: 0 1.5rem 0 0;}
 .store-hours .flex .col {flex: 1;}
 .store-hours p {margin: 0 0 .5rem 0;}
 .store-hours p:last-of-type {margin: 0;}
+.store-hours p strong {min-width: 70px; display: inline-block;}
 
 .img-bkg-full > figure {height: 450px;}
 .img-bkg-full > figure img {opacity: .45;}
@@ -38,7 +40,7 @@ a {color: var(--secondary);}
 .ftr-cols > img {opacity: .45;}
 .copy {background: var(--secondary);}
 .logo-col img {margin: 0 0 1rem 0;}
-.logo-col p {font-size: 1rem; font-weight: 700; opacity: 1; color: #fff; font-style: italic;}
+.logo-col p {font-size: 1rem; font-weight: 700; opacity: 1; color: #fff; font-style: italic; margin-bottom: 2rem;}
 .ftr-cols ul a {padding: 5px 0;}
 
 #sec-nav ul a {color: #333;}
@@ -50,9 +52,6 @@ a {color: var(--secondary);}
 
 /* Small devices (tablets, 992px and up) */
 @media (min-width: 992px) {
-  #subsite-footer .ftr-cols .container {grid-template-columns: 2.75fr 1fr 1fr 1fr 1fr;}
-  .logo-col {border-right: 1px solid #fff; margin-right: 2rem; padding-right: 2rem;}
-  
 }
 
 /* Large devices (large desktops, 1200px and up) */
