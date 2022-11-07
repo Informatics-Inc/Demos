@@ -2053,10 +2053,14 @@ a.event-item:hover h3 {
 
 .social ul {
   display: flex;
-  list-style: none;
+  list-style: none !important;
   gap: 25px;
   margin: 0;
   padding: 0;
+}
+
+.social ul li + li {
+  margin: 0 !important;
 }
 
 .social .fa {

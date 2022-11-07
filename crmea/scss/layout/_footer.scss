@@ -10,7 +10,8 @@
 .footer-contact .col {display: grid; grid-template-columns: 50px auto; font-size: 1.2rem; align-items: center;}
 .footer-contact .col p {margin: 0;}
 .social {display: flex !important;}
-.social ul {display: flex; list-style: none; gap: 25px; margin: 0; padding: 0;}
+.social ul {display: flex; list-style: none !important; gap: 25px; margin: 0; padding: 0;}
+.social ul li + li {margin: 0 !important;}
 .social .fa {font-size: 2.5rem;}
 .footer-contact .col:nth-of-type(2) {font-size: 1rem;}
 

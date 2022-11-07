@@ -68,9 +68,9 @@ img + h2, img + h3, img + h4, img + p, img + p.preheader {margin-top: 2rem;}
 a {color: var(--primary);}
 a:hover {text-decoration: underline; color: var(--primary);}
 .btn-theme {display: inline-block; padding: 10px 15px; color: #fff; text-transform: uppercase; color: #fff; background: var(--secondary); font-weight: 800; border-radius: 0 10px 0 10px; text-decoration: none; border: 2px solid var(--secondary);}
-.btn-theme:hover {color: #fff;}
+.btn-theme:hover {color: #fff; text-decoration: none;}
 .btn-theme + .btn-theme {margin-left: 10px; color: #fff; background: var(--secondary);}
-a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25); background: #B74035;}
+a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25); background: var(--secondary);}
 
 /* Layout */
 .content section {padding: var(--spacer) 0;}
