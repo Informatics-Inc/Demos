@@ -3,10 +3,12 @@
 .blog-list-item .preheader {font-size: .8rem; font-weight: 700; color: #555;}
 .blog-list-item .preheader a {font-weight: 800;}
 .blog-list-item .text {align-content: flex-start;}
-.blog-list-item h2 {font-size: 2rem; line-height: 1.1; letter-spacing: normal;}
+.blog-list-item h2 {font-size: 2rem; line-height: 1.1; letter-spacing: -.5px;}
+.blog-list-item h2 a {color: var(--text); text-decoration: none;}
+.blog-list-item h2 a:hover {text-decoration: underline;}
 .blog-list-item .author {margin: 0 0 1rem 0; font-style: italic;}
-.tag-list {overflow: hidden; list-style: none; padding: 0;}
-.tag-list li {float: left; margin: 0 5px 10px 0;}
+.content .tag-list {overflow: hidden; list-style: none !important; padding: 0; margin: 0;}
+.tag-list li {float: left; margin: 0 5px 10px 0 !important;}
 .tag-list li a {padding: 4px 6px; background: #fff; font-size: .85rem; border-radius: 4px;}
 .tag-list li a:hover {background: none;}
 #pagination {font-size: 1rem; justify-content: center; display: flex; margin: 2rem 0 0 0;}
@@ -39,4 +41,10 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 .blog-list-item {grid-template-columns: 2fr 3fr; gap: 25px;}
+
 }
+
+.blog-detail aside {margin-top: 150px;}
+.blog-detail #hdr-basic {border-bottom: 1px solid #ccc; margin-bottom: 2rem; padding-bottom: 1rem;}
+.blog-detail #hdr-basic h1 {border: none; margin: 0 0 1rem 0; padding: 0;}
+.blog-detail img {margin: 0 0 2rem 0;}
