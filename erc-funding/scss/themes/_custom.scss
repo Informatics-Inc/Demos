@@ -1,0 +1,116 @@
+/* CSS Document
+Client: ERC Funding
+Company: Informatics, Inc
+Author: Jeff S
+Date: Sep 2022
+*/
+
+/* Vertical Spacing */
+.content > * {margin-bottom: 4rem;}
+.vert-align {display: flex; flex-direction: column; justify-content: center;}
+aside > * {margin-bottom: 2rem;}
+/* Hero */
+#hero {margin-top: 115px;}
+#hero .text p {max-width: 450px;}
+.predash + .buttons {margin-left: 60px;}
+.features {padding: 15px; background: #fff; box-shadow: var(--shadow); border-radius: 15px;}
+.icon-item {text-align: center; padding: 15px 0;}
+.icon-item .fa {color: var(--primary); font-size: 1.75rem; margin: 0 0 1rem 0;}
+
+.icon-left {position: relative; padding: 0 0 0 50px; text-align: left;}
+.icon-left .fa {position: absolute; left: 0; top: 0;}
+
+.client-slider {background: #fff; padding: var(--spacer); padding-bottom: 25px;}
+.client-slider .swiper-wrapper {padding-bottom: 75px;}
+.client-slider .swiper-slide {height: 200px;}
+.client-slider .swiper-slide img {width: 100%; height: 100%; object-fit: contain;}
+
+.text-center p {max-width: 600px; margin: 0 auto 2rem auto;}
+.steps-grid img {max-width: 200px; margin: 0 auto;}
+.steps-grid .col {text-align: center;}
+.steps-grid .col p {text-align: center; max-width: 300px; margin: 0 auto 2rem auto;}
+.text-center .buttons {justify-content: center;}
+
+.section-hdr {position: relative; z-index: 5;}
+.section-hdr .text {padding: 50px 25px 100px 25px; color: #fff; margin-bottom: -100px;}
+.section-hdr .text h2 {color: #fff;}
+.section-hdr figure {position: absolute; inset: 0; z-index: -1; background: var(--dark);}
+.section-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .2;}
+
+.link-box {padding: 35px 25px 25px 25px; text-align: center; background: #fff; box-shadow: var(--shadow); border-radius: 10px; position: relative; z-index: 10;}
+.link-box .btn-theme {display: block;}
+
+.video-list {display: grid; gap: 15px;;}
+.video-list-item {padding: 15px; background: #fff; box-shadow: var(--shadow); display: grid; grid-template-columns: 1fr 3fr; gap: 25px; border-radius: 15px; align-items: center; text-decoration: none}
+.video-list-item:hover {text-decoration: underline;}
+.video-list-item h3 {margin: 0;}
+.video-list figure {position: relative;}
+.video-list figure .fa {position: absolute; left: calc(50% - 20px); top: calc(50% - 20px); border: 2px solid var(--primary); padding: 5px; background: #fff; width: 40px; height: 40px; display: flex; justify-content: center; flex-direction: column; text-align: center; border-radius: 50%; opacity: .7;}
+
+.page-hdr {margin-top: 80px; position: relative; overflow: hidden; z-index: 5;}
+.page-hdr figure {position: absolute; inset: 0; z-index: -5; background: #222;}
+.page-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .2;}
+.page-hdr .text {text-align: center; padding: 50px 25px;}
+.page-hdr .text h1 {color: #fff; position: relative; padding: 0 0 2rem 0;}
+.page-hdr .text h1:after {content: ""; position: absolute; left: calc(50% - 25px); bottom: 0; height: 10px; width: 50px; background: var(--secondary); transform: skew(-25deg);}
+.page-hdr .breadcrumb {background: none; padding: 0; margin: 0 0 1rem 0; font-size: .9rem; color: #fff;}
+.page-hdr .breadcrumb li {opacity: .7;}
+.page-hdr .breadcrumb a {color: #fff;}
+
+.full-cta {background: #fff; position: relative; z-index: 5;}
+.full-cta .text {padding: 25px; margin-top: -75px;}
+
+.img-tall-fun {position: relative;}
+.img-tall-fun:after {position: absolute; left: -25px; bottom: -25px; height: 100px; width: 100px; border: 5px solid var(--secondary); content: ""; z-index: -1;}
+.img-tall-fun img:first-of-type {position: absolute; right: -25px; top: -25px; width: 125px;}
+.img-tall-fun img:nth-of-type(2) {width: 100%;}
+
+.faqs h2 {font-size: 1.75rem; font-weight: 400; border-top: 1px solid #ccc; padding: 2rem 50px 2rem 0; margin: 0; position: relative;}
+.faq-arrow { border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 10px solid var(--primary); position: absolute; right: 25px; top: calc(50% - 5px); transform: rotate(180deg); transition: var(--transition);}
+.faq-arrow:after {border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 10px solid var(--secondary); position: absolute; content: ""; left: -3px; top: -7px; z-index: -1;}
+.faqs h2.collapsed .faq-arrow {transform: rotate(0);}
+
+#sec-nav {background: #fff; box-shadow: var(--shadow); border-radius: 15px; overflow: hidden;}
+#sec-nav p {background: var(--primary); text-align: center; color: #fff; padding: 15px; font-family: var(--header); font-size: 1.25rem; margin: 0;}
+#sec-nav ul {list-style: none; padding: 15px; margin: 0;}
+#sec-nav ul a {display: block; padding: 15px 25px; font-family: var(--header); color: var(--text); text-decoration: none; border-bottom: 1px dotted #ccc; opacity: .8;}
+#sec-nav ul li:last-of-type a {border: none;}
+#sec-nav ul .active a {opacity: 1; font-weight: 700; position: relative;}
+#sec-nav ul .active a:after { border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 8px solid var(--secondary); content: ""; position: absolute; right: 10px; top: calc(50% - 5px); transform: rotate(-90deg);}
+#sec-nav ul a:hover {padding: 15px 20px 15px 30px; opacity: 1;}
+
+.content-cta {text-align: center; padding: 25px; font-size: 1.5rem; font-family: var(--header); border-top: 5px solid var(--primary); border-bottom: 5px solid var(--primary); margin: 0 0 2rem 0; background: #fff; letter-spacing: -.5px;}
+.content-cta p {margin: 0;}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.steps-grid {display: grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1000px; margin: 0 auto 2rem auto;}
+.steps-grid img {max-width: none; width: 100%; margin: 0 auto 2rem auto;}
+
+.full-cta img {position: absolute; width: 60%; top: 0; right: 0; height: 100%; object-fit: cover; z-index: -1;}
+.full-cta .text {padding: 50px; width: 60%; margin: 0;}
+
+.sidebar-cta {text-align: center; padding: 35px;}
+.sidebar-cta h2 {font-size: 2rem; margin: 0 0 2rem 0;}
+.sidebar-cta .buttons {flex-direction: column; text-align: center;}
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+#hero {margin-top: 125px;}
+.content > * {margin-bottom: 5rem;}
+
+.page-hdr {margin-top: 115px; padding: 30px 25px;}
+.full-cta .text {padding: 100px 0 100px var(--side-width); width: 45%;} 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+#hero h1 {font-size: 4rem;}
+.page-hdr {margin-top: 145px;}
+
+}
+
+@media (min-width: 1600px) {
+
+}

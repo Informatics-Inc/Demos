@@ -12,6 +12,11 @@ $(window).scroll(function() {
 	   $(".bkg-texture").css("-webkit-transform","translateY(" +  (x/8)  + "px)");
   });
 
+  // -- Mobile Menu Toggle -- //
+$("#toggle").click(function(){
+	$("#header").toggleClass("menu-open");
+});
+
 // -- ANIMATE IN TO VIEW -- //
 var $animation_elements = $('.animate-in, .btn-text, .fade-in');
 var $window = $(window);
