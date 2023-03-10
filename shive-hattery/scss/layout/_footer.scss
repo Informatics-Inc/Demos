@@ -1,0 +1,61 @@
+.footer-cta {background: var(--primary); padding: var(--spacer-vert) var(--spacer); text-align: center; color: #fff;}
+.footer-cta .lead {font-size: 1.15rem;}
+.footer-cta br {display: none;}
+.footer-cta figure { display: grid; grid-template-columns: 2fr 1fr; gap: 15px; align-items: flex-end; margin: 40px auto -80px auto; max-width: 400px; background: url(../img/footer-cta-sm.svg) no-repeat; background-size: 100px auto; background-position: right top;}
+.footer-cta figure img {max-width: 100%; border-radius: 5px; @include box-shadow-small;}
+.footer-cols {@include container; @include vertical-space; display: grid; grid-template-columns: 1fr 1fr; row-gap: 40px;}
+.footer-cols .col:first-of-type {padding-top: 40px; display: grid; gap: 20px; grid-column: span 2;}
+.footer-cols .col:first-of-type p, .footer-cols .col:first-of-type hr {margin: 0;}
+.footer-cols .col {padding: 0 var(--spacer); text-align: center;}
+.footer-cols h4 a {color: var(--primary); @include right-caret;}
+.footer-cols ul {margin: 0; padding: 0; list-style: none;}
+.footer-cols ul a {color: var(--text-gray); @include right-caret; display: block; padding: 5px 0; line-height: 1.2; font-size: .825rem;}
+.footer-cols ul a:hover {text-decoration: underline; color: var(--primary);}
+.footer-cols ul a:hover:after {margin-left: 7px;}
+
+.email-subscribe form div {position: relative; width: 100%;}
+.email-subscribe input[type=email] {border-radius: 5px; width: 100%; color: #000; border: 2px solid var(--light-gray); padding: 7px 50px 7px 10px; font-size: .8rem;}
+.email-subscribe input[type=submit] {position: absolute; right: 0; top: 0; height: 100%; width: 40px; background: none; text-indent: -999em; border: none;}
+.email-subscribe form div:after {width: 40px; height: 100%; content: url(../../img/email-send.svg); position: absolute; right: 0; top: 0; display: grid; place-content: center;}
+
+.footer-tools {text-align: center;}
+.footer-tools ul {list-style: none; padding: 0; margin: 0 0 1rem 0; display: flex; justify-content: center; gap: 15px;}
+.footer-tools ul a, .footer-tools p {font-size: .825rem; color: var(--text-gray); opacity: .8;}
+.social {display: flex; justify-content: center; padding: var(--spacer-vert); gap: 20px;}
+.social a {width: 40px; height: 40px; display: grid; place-content: center; border: 2px solid var(--light-gray); border-radius: 50%; color: var(--primary);}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.footer-cta > * {max-width: 500px; margin-left: auto; margin-right: auto;}
+.footer-cta figure {margin-bottom: -100px;}
+.footer-cols {grid-template-columns: 1fr 1fr 1fr 1fr;}
+.footer-cols .col {padding: 0; text-align: left;}
+.footer-cols .col:first-of-type {display: grid; grid-template-columns: 1fr 1fr; gap: 40px; grid-column: span 4;}
+.footer-cols .col:first-of-type hr {grid-column: span 2;}
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+.footer-cta {background: url(../img/footer-cta-lg.svg) top right no-repeat var(--primary);}
+.footer-cta .container {display: grid; grid-template-columns: repeat(12, 1fr); gap: 25px; align-items: center;}
+.footer-cta h2 {font-size: 1.75rem; text-align: right; grid-column: span 4; border-right: 5px solid rgba(255,255,255,.15); padding-right: 2rem; margin-right: 2rem;}
+.footer-cta .text {grid-column: span 4; text-align: left;}
+.footer-cta figure {grid-column: span 4; margin: 0; background: none;}
+.footer-cols {grid-template-columns: repeat(12, 1fr);}
+.footer-cols .col {grid-column: span 2;}
+.footer-cols .col:first-of-type {grid-column: span 4; display: flex; flex-direction: column; padding: 0 150px 0 0; text-align: center; align-items: flex-start; gap: 25px;}
+.footer-cols .col:first-of-type hr {display: block; width: 100%;}
+.email-subscribe {width: 100%;}
+.footer-cols .wp-block-button {width: 100%;}
+.footer-cols  .wp-block-button__link {font-size: .825rem; box-shadow: none; padding: 8px 12px;}
+.footer-tools {display: flex; padding: 0 var(--spacer); border-top: 1px solid #ddd; padding: 25px 0; align-items: center;}
+.footer-tools ul, .footer-tools p {margin: 0 1rem 0 0; padding: 0;}
+.footer-tools ul a {padding: 0;}
+.footer-tools .social {margin-left: auto; gap: 10px; padding: 0;}
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 1150px) {
+.footer {background: url(../img/ftr-bkg-1.svg) left bottom no-repeat, url(../img/ftr-bkg-2.svg) right 350px no-repeat;}
+.footer-cta br {display: block;}
+}

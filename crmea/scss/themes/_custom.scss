@@ -273,7 +273,7 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25);}
 
 .img-bkg-full {position: relative; z-index: 5; background: #fff;}
 .img-bkg-full > img {position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; z-index: -1; opacity: .2;}
-
+.test-class {font-size: 2rem;}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 :root {

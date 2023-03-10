@@ -85,7 +85,7 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25); background: var(
 .bkg-light {background: var(--light);}
 .bkg-dark .preheader, .bkg-dark .callout {color: var(--tertiary);}
 .grid-box-4 {display: grid; grid-template-columns: 1fr 1fr; gap: 25px;}
-.grid-pagelist {display: grid; grid-template-columns: repeat( auto-fill, minmax(225px, 1fr) );}
+.grid-page-list {grid-template-columns: repeat( auto-fill, minmax(225px, 1fr) );}
 .flex {display: flex;}
 .width-skinny {max-width: var(--skinny); margin: 0 auto;}
 
@@ -181,6 +181,7 @@ a.btn-theme:hover {box-shadow: inset 0 0 0 3px rgba(0,0,0,.25); background: var(
 .video-link img {margin: 50px 0 50px 0; box-shadow: 10px 10px 5px rgba(0,0,0,.05);}
 .video-link:before {width: 80%; height: 100%; background: var(--primary); content: ""; position: absolute; left: 10%; top: 0; z-index: -1; border-radius: 0 25px 0 25px;}
 .video-link a {position: absolute; top: calc(50% - 50px); z-index: 5; font-size: 2rem; width: 100px; height: 100px; background: #fff; display: flex; justify-content: center; flex-direction: column; align-items: center; text-decoration: none; border-radius: 50%; border: 5px solid var(--primary);padding: 16px;border-radius: 50%;background: #fff;cursor: pointer;box-shadow: 0 0 0 var(--primary);animation: pulseAnim 2s infinite;}
+
 @keyframes pulseAnim {
   0% { box-shadow: 0 0 0 0 var(--primary);}
   70% { box-shadow: 0 0 0 50px rgba(210, 85, 43, 0);}
@@ -231,7 +232,6 @@ h2 {font-size: 2.5rem;}
 .grid-2-md {grid-template-columns: 1fr 1fr;}
 .grid-3 {grid-template-columns: 1fr 1fr 1fr;}
 .grid-4 {grid-template-columns: 1fr 1fr;}
-.grid-pagelist {grid-template-columns: 1fr 1fr; overflow: hidden;}
 
 #hero .text {padding: 100px 0;background: linear-gradient(90deg, rgba(0,0,0,.75) 20%, rgba(0,0,0,.1) 50%);}
 
@@ -278,7 +278,7 @@ h2 {font-size: 2.5rem;}
 .full-feature {display: grid; grid-template-columns: 2fr 1.25fr; gap: 0;}
 .full-feature .text {padding: 35px; margin: 2rem 0 2rem -2rem; border-radius: 0 15px 0 15px;}
 
-.grid-pagelist {grid-template-columns: 1fr 1fr 1fr 1fr;}
+.grid-page-list {display: grid; grid-template-columns: 325px minmax(0, auto); gap: 75px;}
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -288,4 +288,7 @@ h2 {font-size: 2.5rem;}
   --max-width: 1140px;
   }
   h2 {font-size: 2.75rem;}
+
+  .grid-page-list {display: grid; grid-template-columns: 350px minmax(0, auto); gap: 75px;}
+
 }

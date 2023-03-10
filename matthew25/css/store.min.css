@@ -69,8 +69,8 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -1566,8 +1566,7 @@ a.btn-theme:hover {
   gap: 25px;
 }
 
-.grid-pagelist {
-  display: grid;
+.grid-page-list {
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 }
 
@@ -2191,10 +2190,6 @@ a.btn-theme:hover {
   .grid-4 {
     grid-template-columns: 1fr 1fr;
   }
-  .grid-pagelist {
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-  }
   #hero .text {
     padding: 100px 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 20%, rgba(0, 0, 0, 0.1) 50%);
@@ -2286,8 +2281,10 @@ a.btn-theme:hover {
     margin: 2rem 0 2rem -2rem;
     border-radius: 0 15px 0 15px;
   }
-  .grid-pagelist {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .grid-page-list {
+    display: grid;
+    grid-template-columns: 325px minmax(0, auto);
+    gap: 75px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
@@ -2298,6 +2295,11 @@ a.btn-theme:hover {
   }
   h2 {
     font-size: 2.75rem;
+  }
+  .grid-page-list {
+    display: grid;
+    grid-template-columns: 350px minmax(0, auto);
+    gap: 75px;
   }
 }
 /* CSS Document
