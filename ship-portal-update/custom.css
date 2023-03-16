@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif!important;font-weight:60
 hr.sidebar-divider {margin: 0 1rem 1rem;border-top: 1px solid rgba(255, 255, 255, 1);}
 
 /* Toolbar */
+
 .page-title-area {padding: 8px 30px;}
 .user-profile{background:#fff;display:block;text-align:left;transition: 0.3s;margin-left:20px;padding:0px 20px;border-left:solid 1px #ccc;}
 .user-profile h4{transition: 0.3s;}
