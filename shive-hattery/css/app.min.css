@@ -1216,7 +1216,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-h1 strong {
+h1 strong, h2 strong {
   font-weight: 500;
 }
 
@@ -1258,8 +1258,8 @@ a {
 .preheader {
   color: var(--text-gray);
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.825rem;
+  letter-spacing: 3px;
+  font-size: 0.825rem !important;
 }
 
 .box {
@@ -1327,7 +1327,7 @@ p a:hover {
     font-size: 1.25rem;
   }
   p.lead {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   .bkg-light {
     background: var(--light);
@@ -1611,6 +1611,9 @@ p a:hover {
     letter-spacing: normal;
     padding: 7px 0;
   }
+  #mega-menu {
+    display: none;
+  }
 }
 /* TABLET */
 /* DESKTOP */
@@ -1675,13 +1678,14 @@ p a:hover {
   }
   #menu-main a {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     padding: 25px 0;
     font-size: 0.825rem;
     display: block;
     margin: 0 0 0 1.5rem;
     position: relative;
+    letter-spacing: 1px;
   }
   #menu {
     display: block;
@@ -1877,6 +1881,7 @@ p a:hover {
     color: var(--text-color);
     text-transform: none;
     font-weight: 500;
+    letter-spacing: normal;
   }
   #menu-main ul a:after {
     content: "\f054";
@@ -1973,13 +1978,161 @@ p a:hover {
   #site-header.scroll #menu-main > li > a, #site-header.light #menu-main > li > a {
     color: var(--text-gray);
   }
+  .hidden-lg {
+    display: none !important;
+  }
+  #mega-menu {
+    position: fixed;
+    top: 118px;
+    width: calc(100vw - 100px);
+    left: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: auto 25%;
+    border-radius: 5px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+  #mega-menu:before {
+    position: absolute;
+    left: calc(50vw + 60px);
+    top: -5px;
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 5px solid #fff;
+  }
+  #mega-menu a {
+    padding: 0;
+    margin: 0;
+  }
+  #mega-menu a:after {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    margin-left: 0.2rem;
+    position: relative;
+    bottom: 2px;
+    font-size: 8px;
+    transition: var(--transition);
+    text-decoration: none;
+  }
+  #mega-menu .menu-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    padding: 25px;
+  }
+  #mega-menu .menu-links .col > a:first-of-type {
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 15px 0;
+    font-size: 0.9rem;
+  }
+  #mega-menu .menu-links .col > a:first-of-type:hover {
+    text-decoration: underline;
+  }
+  #mega-menu .menu-links .col > a:first-of-type:hover:after {
+    margin-left: 5px;
+  }
+  #mega-menu .menu-links .col ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    background: none;
+    opacity: 1;
+    visibility: visible;
+    columns: 1;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+  #mega-menu .menu-links .col ul:before {
+    display: none;
+  }
+  #mega-menu .menu-links .col ul a {
+    color: var(--text-color);
+    padding: 5px 5px 5px 0;
+  }
+  #mega-menu .menu-links .col p {
+    color: #75767a;
+    font-size: 0.825rem;
+  }
+  #mega-menu .menu-info {
+    background: url(../img/footer-cta-sm.svg) right bottom no-repeat var(--primary);
+    background-size: 200px auto;
+    border-radius: 0 5px 5px 0;
+  }
+  #mega-menu .menu-info a {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    padding: 25px;
+  }
+  #mega-menu .menu-info a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  }
+  #mega-menu .menu-info .title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+    display: block;
+  }
+  #mega-menu .menu-info p {
+    text-transform: none;
+    letter-spacing: normal;
+  }
+  #mega-menu .menu-info .link {
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: normal;
+    position: relative;
+    padding-left: 35px;
+  }
+  #mega-menu .menu-info .link:before {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    height: 3px;
+    background: var(--secondary);
+    content: "";
+    width: 25px;
+  }
+  #mega-menu .menu-info .link:hover {
+    text-decoration: underline;
+  }
+  #menu-main li:hover > #mega-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 108px;
+  }
 }
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
   #menu-main a {
     font-size: 0.9rem;
     padding: 30px 0;
-    margin: 0 0 0 2.25rem;
+    margin: 0 0 0 2.75rem;
+  }
+  #mega-menu {
+    top: 134px;
+  }
+  #menu-main li:hover > #mega-menu {
+    top: 124px;
+  }
+  #mega-menu {
+    grid-template-columns: auto 22%;
+  }
+  #mega-menu .menu-links .col > a:first-of-type {
+    margin: 0;
+  }
+  #mega-menu:before {
+    left: calc(50vw - 12px);
   }
 }
 /* SUPER WIDE DESKTOP */
@@ -1992,6 +2145,23 @@ p a:hover {
   }
   #search-close {
     margin-right: 50px;
+  }
+  #mega-menu {
+    width: 1400px;
+    left: var(--side-width);
+  }
+  #mega-menu .menu-links {
+    padding: 25px 25px 40px 40px;
+    gap: 40px;
+  }
+  #mega-menu .menu-info a {
+    padding: 40px;
+  }
+  #mega-menu .menu-info a:hover {
+    padding: 40px;
+  }
+  #mega-menu:before {
+    left: calc(50vw + 88px);
   }
 }
 .footer-cta {
@@ -2014,7 +2184,7 @@ p a:hover {
   grid-template-columns: 2fr 1fr;
   gap: 15px;
   align-items: flex-end;
-  margin: 40px auto -80px auto;
+  margin: 40px auto -120px auto;
   max-width: 400px;
   background: url(../img/footer-cta-sm.svg) no-repeat;
   background-size: 100px auto;
@@ -2174,6 +2344,19 @@ p a:hover {
   color: var(--primary);
 }
 
+.footer-cols .wp-block-button {
+  width: 100%;
+}
+
+.footer-cols .wp-block-button__link {
+  font-size: 0.825rem;
+  box-shadow: none;
+  padding: 10px 20px;
+  text-align: center;
+  width: 140px;
+  font-weight: 500;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .footer-cta > * {
@@ -2231,6 +2414,7 @@ p a:hover {
   }
   .footer-cols {
     grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
   }
   .footer-cols .col {
     grid-column: span 2;
@@ -2239,10 +2423,10 @@ p a:hover {
     grid-column: span 4;
     display: flex;
     flex-direction: column;
-    padding: 0 150px 0 0;
     text-align: center;
     align-items: flex-start;
     gap: 25px;
+    padding: 0 25px 0 0;
   }
   .footer-cols .col:first-of-type hr {
     display: block;
@@ -2250,14 +2434,6 @@ p a:hover {
   }
   .email-subscribe {
     width: 100%;
-  }
-  .footer-cols .wp-block-button {
-    width: 100%;
-  }
-  .footer-cols .wp-block-button__link {
-    font-size: 0.825rem;
-    box-shadow: none;
-    padding: 8px 12px;
   }
   .footer-tools {
     display: flex;
@@ -2280,12 +2456,15 @@ p a:hover {
   }
 }
 /* Small devices (tablets, 992px and up) */
-@media (min-width: 1150px) {
+@media (min-width: 1350px) {
   .footer {
     background: url(../img/ftr-bkg-1.svg) left bottom no-repeat, url(../img/ftr-bkg-2.svg) right 350px no-repeat;
   }
   .footer-cta br {
     display: block;
+  }
+  .footer-cols .col:first-of-type {
+    padding: 0 150px 0 0;
   }
 }
 .contain {
@@ -2473,6 +2652,11 @@ p a:hover {
   transition: var(--transition);
 }
 
+.btn-text:hover,
+.is-style-btn_text a:hover {
+  background: none;
+}
+
 .btn-text:hover:before, .animate-border:hover,
 .is-style-btn_text a:hover:before {
   width: 100%;
@@ -2488,6 +2672,10 @@ p a:hover {
 
 .page-header.basic-header .text h1 {
   text-transform: uppercase;
+}
+
+.page-header.basic-header .text p {
+  color: #d8d8d8;
 }
 
 .page-header .text h1 strong {
@@ -2661,6 +2849,10 @@ p a:hover {
   text-align: center;
 }
 
+.full-img-combo .text p {
+  color: #75767a;
+}
+
 .full-img-combo figure {
   display: grid;
   grid-template-columns: 2fr 1.25fr;
@@ -2804,6 +2996,9 @@ p a:hover {
   }
   .full-img-combo.swap-sides figure img:nth-of-type(3) {
     right: -100px;
+  }
+  .full-img-combo .text p {
+    font-size: 1.188rem;
   }
 }
 .stat {
@@ -3027,7 +3222,7 @@ p a:hover {
 }
 
 .hover-card .text h3 {
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 5px 0;
   position: relative;
 }
@@ -3046,6 +3241,7 @@ p a:hover {
   margin: 0;
   color: var(--text-gray);
   font-size: 0.875rem;
+  color: #d8d8d8;
 }
 
 .hover-card .text p span {
@@ -3083,8 +3279,12 @@ p a:hover {
   color: #fff;
 }
 
-.hover-card-vert .text h3, .hover-card-vert .text p {
+.hover-card-vert .text h3 {
   color: #fff;
+}
+
+.hover-card-vert .text p {
+  text-transform: uppercase;
 }
 
 .hover-card-vert figure + p {
@@ -3127,6 +3327,10 @@ p a:hover {
 .full-large-img .text {
   text-align: center;
   padding: 0 var(--spacer);
+}
+
+.full-large-img .text p {
+  color: #75767a;
 }
 
 @media (min-width: 768px) {
@@ -3186,6 +3390,9 @@ p a:hover {
   }
   .full-large-img.swap-sides figure {
     margin-left: calc((var(--side-width)) * -1);
+  }
+  .full-large-img .text p {
+    font-size: 1.188rem;
   }
 }
 /* Insights List */
@@ -3271,6 +3478,10 @@ p a:hover {
 
 #home-slider .text h1 {
   text-transform: none;
+}
+
+#home-slider .text h1 strong {
+  font-weight: 500;
 }
 
 #home-slider .swiper-button-pause {
@@ -3723,17 +3934,46 @@ p a:hover {
   background: var(--dark-blue);
 }
 
-.quote-block p.author span {
+.quote-block .author {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.quote-block .author img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  position: relative;
+  opacity: 1;
+  border-radius: 50%;
+  display: block;
+  align-self: center;
+  flex: 0 0 50px;
+}
+
+.quote-block .author p {
+  font-size: 0.875rem;
+  font-style: normal;
+  margin: 0;
+}
+
+.quote-block .author span {
   position: relative;
   margin: 0 0 10px 0;
   display: inline-block;
   font-weight: 600;
 }
 
-.quote-block p.author span:after {
+.quote-block .author p em {
+  display: block;
+}
+
+.quote-block .author span:after {
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -7px;
   width: 50px;
   height: 4px;
   background: var(--secondary);
@@ -3741,7 +3981,7 @@ p a:hover {
   transition: var(--transition);
 }
 
-.quote-block:hover p.author span:after {
+.quote-block:hover .author span:after {
   width: 100%;
 }
 
@@ -3780,6 +4020,7 @@ p a:hover {
 
 #detail-slider .swiper-button-next, #detail-slider .swiper-button-prev {
   height: 100%;
+  padding: 25px 50px;
 }
 
 .slider-header .text {
@@ -3840,6 +4081,7 @@ p a:hover {
 .contributors .person-link .title {
   font-size: 0.825rem;
   opacity: 0.7;
+  font-style: italic;
 }
 
 .related-sidebar .preheader {

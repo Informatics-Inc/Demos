@@ -24,12 +24,16 @@
 .quote-block p.author em {font-style: italic; display: block; font-size: .8em;}
 .quote-block img {position: absolute; bottom: 0; right: 0; opacity: .2;}
 .quote-block:hover {background: var(--dark-blue);}
-.quote-block p.author span {position: relative; margin: 0 0 10px 0; display: inline-block; font-weight: 600;}
-.quote-block p.author span:after {
-    position: absolute; left: 0; bottom: -5px; width: 50px; height: 4px; background: var(--secondary); content: "";
+.quote-block .author {display: flex; gap: 15px; align-items: flex-start; align-items: center;}
+.quote-block .author img {width: 50px; height: 50px; object-fit: cover; position: relative; opacity: 1; border-radius: 50%; display: block; align-self: center; flex: 0 0 50px;}
+.quote-block .author p {font-size: .875rem; font-style: normal; margin: 0;}
+.quote-block .author span {position: relative; margin: 0 0 10px 0; display: inline-block; font-weight: 600;}
+.quote-block .author p em {display: block;}
+.quote-block .author span:after {
+    position: absolute; left: 0; bottom: -7px; width: 50px; height: 4px; background: var(--secondary); content: "";
    transition: var(--transition);
    }
-.quote-block:hover p.author span:after {width: 100%;}
+.quote-block:hover .author span:after {width: 100%;}
 
 /* Detail Slider */
 #detail-slider {background: #000;}
@@ -38,7 +42,7 @@
 #detail-slider .swiper-slide img {height: 350px; width: auto;}
 #detail-slider .swiper-slide figcaption {position: absolute; right: 0; bottom: 0; padding: 15px; display: none;}
 #detail-slider .swiper-slide-active {opacity: 1;}
-#detail-slider .swiper-button-next, #detail-slider .swiper-button-prev {height: 100%;}
+#detail-slider .swiper-button-next, #detail-slider .swiper-button-prev {height: 100%; padding: 25px 50px;}
 
 .slider-header .text {background: var(--primary); color: #fff; padding: var(--spacer) 0; text-align: left;}
 .slider-header .text h1 {color: #fff; margin: 0 0 1rem 0;}
@@ -49,7 +53,7 @@
 .contributors .person-link {display: grid; grid-template-columns: 50px auto; align-items: center; gap: 15px; color: #fff; line-height: 1.2;}
 .contributors .person-link img {width: 50px; height: 50px; border-radius: 50%; object-fit: cover; display: block;}
 .contributors .person-link .name {font-size: .9rem; color: #fff; opacity: 1; display: block;}
-.contributors .person-link .title {font-size: .825rem; opacity: .7;}
+.contributors .person-link .title {font-size: .825rem; opacity: .7; font-style: italic;}
 
 .related-sidebar .preheader {border-top: 1px solid #F1F3F8; padding-top: 1.5rem;}
 .related-sidebar ul {padding: 0; list-style: none}

@@ -3,7 +3,7 @@
 .full-large-img figure {width: calc(100% + 50px); margin-left: calc(var(--spacer) * -1); aspect-ratio: 16 / 9;}
 .full-large-img figure img {@include box-shadow-small;}
 .full-large-img .text {text-align: center; padding: 0 var(--spacer);}
-
+.full-large-img .text p { color: #75767a;}
 @media (min-width: 768px) {
 .full-large-img {background-position: left 75%;}
 .full-large-img figure {width: calc(100% + 100px);}
@@ -24,4 +24,6 @@
     .full-large-img figure {margin-right: calc((var(--side-width)) * -1);}
 
     .full-large-img.swap-sides figure {margin-left: calc((var(--side-width)) * -1);}
+
+    .full-large-img .text p {font-size: 1.188rem;}
 }
