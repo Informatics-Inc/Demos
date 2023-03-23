@@ -1,0 +1,31 @@
+.footer {background: var(--dark); position: relative; z-index: 5; color: #fff; padding-top: var(--spacer); text-align: center;}
+.footer > img {position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;}
+.footer h2 {color: #fff;}
+.footer h2 + p {color: #fff; max-width: 800px; margin: 2rem auto;}
+
+.ftr-nav {list-style: none;display: flex; flex-wrap: wrap;padding: 0; margin: 0; justify-content: center;}
+.footer .nav-primary { border-top: 1px solid rgba(255,255,255,.5); border-bottom: 1px solid rgba(255,255,255,.5); max-width: 800px; margin: 0 auto 2rem auto;}
+.footer .nav-primary a {display: block; padding: 25px 15px; color: #fff; font-family: var(--font-header); text-decoration: none; font-weight: 400; text-transform: uppercase;}
+.footer .nav-primary a:hover {background: rgba(0,0,0,.5);}
+.footer .nav-secondary a {display: block; color: #fff; font-weight: 400; padding: 15px 25px;}
+
+.copy {margin: 65px 0 0 0; text-align: center; padding: 25px 10px; font-size: .8rem; background: rgba(0,0,0,.5); opacity: .8;}
+.copy a {color: #fff;}
+.copy a:hover {color: #fff; text-decoration: none;}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.ftr-cols {display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 50px;}
+.ftr-cols img {max-width: 250px;}
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+.ftr-cta h2 {font-size: 2rem;}
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 1150px) {
+}

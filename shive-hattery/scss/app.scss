@@ -1,0 +1,51 @@
+/* CSS Document
+Client: SHIVE-HATTERY
+Company: Informatics, Inc
+Author: Jeff S
+Date: Feb 2023
+*/
+
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Vendors 
+/* Bootstrap Reqs */
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/transitions";
+
+/* Bootstrap Components */
+@import "../bootstrap/scss/accordion";
+
+// Swiper
+@import "vendors/swiper/swiper";
+
+// Core
+@import "core/reset";
+@import "core/animations";
+@import "core/theme";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/wordpress";
+
+// Components
+@import "components/buttons";
+@import "components/page-headers";
+@import "components/full-img-combo";
+@import "components/stats";
+@import "components/quote_with_img";
+@import "components/hover_card";
+@import "components/full_large_img";
+@import "components/insights_listing";
+@import "components/hero-slider";
+@import "components/page_list";
+@import "components/projects-insights";
+
+

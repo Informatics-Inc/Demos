@@ -12,11 +12,13 @@
   <!-- CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
-  <link rel="stylesheet" href="https://use.typekit.net/lwy3pzc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"> 
   <link href="css/menu.css" rel="stylesheet">
   <link href="css/animations.css" rel="stylesheet">
   <link href="css/slider.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/custom-v2.css" rel="stylesheet">
 </head>
 
 <body class="ccm-page">
@@ -25,7 +27,14 @@
     <div class="hdr-topper">
       <div class="container">
       <div class="hdr-tools">
+        <ul class="hdr-social">
+          <li><a href="#.html"><i class="fa fa-facebook"></i> Facebook</a></li>
+          <li><a href="#.html"><i class="fa fa-instagram"></i> Instagram</a></li>
+          <li><a href="#.html"><i class="fa fa-youtube"></i>YouTube</a></li>
+        </ul>
+        <!--
         <a href="#.html"><strong>Next Service</strong>: Monday, Aug 23 at 6:30pm</a>
+        -->
       </div>
       </div>
     </div>
@@ -51,7 +60,6 @@
                 <li><a href="secondary.html">Alternative Services</a></li>
               </ul>
             </li>
-            <li><a href="inspiration.html">Inspiration</a></li>
             <li><a href="landing.html">Education</a>
               <button type="button" data-toggle="collapse" data-target="#main-menu-3" aria-expanded="false" aria-controls="main-menu-3" class="collapsed"><i class="fa fa-chevron-down"></i></button>
               <ul class="collapse" id="main-menu-3">
@@ -75,11 +83,11 @@
                 <li><a href="#.html">Activity Calendar</a></li>
               </ul>
             </li>
+            <li><a href="inspiration.html">Inspiration</a></li>
             <li><a href="landing.html">About Us</a>
               <button type="button" data-toggle="collapse" data-target="#main-menu-5" aria-expanded="false" aria-controls="main-menu-5" class="collapsed"><i class="fa fa-chevron-down"></i></button>
               <ul class="collapse" id="main-menu-5">
                 <li><a href="secondary.html">Who We Are</a></li>
-                <li><a href="secondary.html">Choosing Judaism</a></li>
                 <li><a href="secondary.html">About Our Members</a></li>
                 <li><a href="secondary.html">Leadership & Staff</a></li>
                 <li><a href="secondary.html">Our Location</a></li>
@@ -104,8 +112,8 @@
                 <form>
                   <input name="query" class="form-control" placeholder="Search Keyword" type="text" value="">
                   <input name="submit" type="submit" value="Search" class="btn-theme">
-                  <button class="hdr-search-toggle"><i class="fa fa-close"></i></button>
                 </form>
+                <button class="hdr-search-toggle"><i class="fa fa-close"></i></button>
               </div>
             </div>
           </li>
@@ -113,71 +121,353 @@
       </div><!--/.nav-collapse -->
     </div>
 </nav>
-  
-<!-- HEADER OLD 
-<header id="hero" class="header">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="text">
-        <div class="text-inner">
-        <img src="img/heb-shalom.png" />
-        <h1>Faith, Life, <br/>& Learning</h1>
-        <p>West Suburban Temple Har Zion is a progressive, egalitarian, Conservative community that welcomes all individuals and families to our warm, nurturing Jewish community.</p>
-        </div>
-      </div>
-      <figure class="img-combo">
-        <img src="img/hero-1.jpg" />
-        <img src="img/hero-3.jpg" />
-      </figure>
-    </div>
-  </div>
-</header>-->
 
 <header id="hero" class="header">
-    <figure>
-      <img src="img/hero-wide.jpg" />
+    <figure class="swiper-hero">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/hero-wide.jpg" /></div>
+        <div class="swiper-slide"><img src="img/hero-generations-adult2.jpg" /></div>
+        <div class="swiper-slide"><img src="img/hero-4.jpg" /></div>
+      </div>
     </figure>
     <div class="text">
       <img src="img/heb-shalom.png" />
-      <h1>Faith, Life, <br/>& Learning</h1>
-      <p>West Suburban Temple Har Zion is a progressive, egalitarian, Conservative community that welcomes all individuals and families to our warm, nurturing Jewish community.</p>
+      <h1>A Community for Faith, Life, <br/>& Learning</h1>
+      <p>West Suburban Temple Har Zion is a progressive, egalitarian, Conservative congregation that welcomes all individuals and families to our warm, nurturing Jewish community.</p>
   </div>
 </header>
 
 <main class="content" id="content">
+  <section class="bkg-gradient no-pad">
   <div class="container">
-    <div class="grid grid-2-md grid-4-lg">
-      <div class="col ico-feature">
-        <img src="img/ico-star.jpg" />
-        <h3>Happenings at Har Zion</h3>
-        <p>We invite you to participate in our diverse events, programs and services for all ages.</p>
+    <div class="grid grid-2-md grid-4-lg hero-cta">
+      <div class="col">
+        <a href="landing.html" class="ico-feature">
+          <img src="img/ico-cal.jpg" />
+          <h3>Happenings at Har Zion</h3>
+          <p>We invite you to participate in our diverse events, programs and services.</p>
+          <p class="arrow-link">View Calendar</p>
+        </a>
       </div>
-      <div class="col ico-feature">
-        <img src="img/ico-rainbow.jpg" />
-        <h3>Weekly Inspriation</h3>
+      <div class="col">
+        <a href="landing.html" class="ico-feature">
+          <img src="img/ico-rainbow.jpg" />
+        <h3>Weekly Inspiration</h3>
         <p>Follow the sermons, messages, and latest news from our spiritual leaders.</p>
+        <p class="arrow-link">Inspiration</p>
+      </a>
       </div>
-      <div class="col ico-feature">
-        <img src="img/ico-bird.jpg" />
-        <h3>News & Announcements</h3>
-        <p>Follow the sermons, messages, and latestnews from our spiritual leaders.</p>
-      </div>
-      <div class="col ico-feature">
-        <img src="img/ico-tree.jpg" />
+      <div class="col">
+        <a href="landing.html" class="ico-feature">
+          <img src="img/ico-bird.jpg" />
+        <h3>Latest News</h3>
+        <p>This is a space that can be used as a timely highlight for an event, announcement, or other news.</p>
+        <p class="arrow-link">View News</p>
+      </a></div>
+      <div class="col">
+        <a href="landing.html" class="ico-feature">
+          <img src="img/ico-tree.jpg" />
         <h3>Ways to Give</h3>
         <p>Give your time through a variety of volunteer opportunities.</p>
+        <p class="arrow-link">Learn More</p>
+      </a></div>
+    </div>
+  </div>
+</section>
+  <section>
+    <div class="container">
+  
+    <div class="grid grid-2 gap-large">
+      <div class="col">
+        <img src="img/feature-1.jpg" />
+      </div>
+      <div class="col text">
+        <!-- <img src="img/heb-ldor.png" class="heb-hdr" /> -->
+        <h2>Welcome to <br />Temple Har Zion</h2>
+        <p class="lead">We welcome individuals, families, and interfaith couples to Temple Har Zion. Showcase your culture of inclusivity here to draw them into finding out more about your temple. This can link to your About Us section or a secondary page, such as Who We Are. Links can go from these words to other pages as well</p>
       </div>
     </div>
-    <h2>This is a header</h2>
-    <p>Lorem ipsum dolor sit amet, sed libris postea vocent ad. In ullum nostro nam, usu graeci quaerendum id, eam at putent epicurei perpetua. Solet adversarium ex has. Reque nusquam consulatu eam ne, incorrupte ullamcorper eu vim. Eam elitr tollit vocibus ex, phaedrum elaboraret pri id. An nonumes imperdiet disputationi quo, quidam instructior te eam, ad integre antiopam intellegat vel.</p>
-    <p>Id sed illum pertinacia instructior, duo unum errem libris ad. In vis quot debet consequuntur. Dolor quaestio eu sit, id eros vitae postea sed, usu ei scripta reformidans intellegebat. Modus choro assentior ne sed, no quo munere iudicabit. In cum dolorem albucius perfecto, lorem verear vel at. Doctus invidunt mei ne.</p>
+
+    <div class="grid grid-3 gap-large">
+        <div class="col animate-in delay-1">
+          <div class="ico-hdr">
+            <img src="img/ico-star-small.png" />
+            <h3>Our Culture</h3>
+            <p>We value tradition with an open and modern outlook. We are dedicated to serious intellectual, personal, and spiritual growth. This is a short highlight to showcase Har Zion's pillars and culture.</p>
+            <a href="landing.html" class="arrow-link">What We Believe</a>
+          </div>
+        </div>
+        <div class="col animate-in delay-2">
+          <div class="ico-hdr">
+            <img src="img/ico-star-small.png" />
+            <h3>Our Community Life</h3>
+            <p>We are a diverse and welcoming home for sharing life moments. We believe Jewish life should be meaningful, inspiring, fun and transformative. Encourage visitors to explore community life.</p>
+            <a href="landing.html" class="arrow-link">Explore Our Community</a>
+          </div>
+        </div>
+        <div class="col animate-in delay-3">
+          <div class="ico-hdr">
+            <img src="img/ico-star-small.png" />
+            <h3>Schedule a Visit</h3>
+            <p>We understand that a personal visit helps determine if our Synagogue is a good fit for you and your family. Schedule a visit to the Har Zion and meet with our leadership in our friendly and welcoming community.</p>
+            <a href="landing.html" class="arrow-link">Join Us</a>
+          </div>
+        </div>
+    </div>
   </div>
+  </section>
+
+  <section id="testimonials">
+    <img src="img/bkg-testimonial.jpg" class="parallax-2" />
+      <div class="container">
+        <img src="img/quote.png" />
+        <div class="testimonials">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial">
+              <p>Such a great synagogue! Had my conversion here, took Intro to Judaism, and currently taking a Hebrew class. We love their Friday night service and go to the tot Shabbat programs with our toddler. Love how family friendly this place is; everyone is super kind and we feel right at home. Amazing clergy and staff.</p>
+              <p><strong>Monica G.</strong></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial">
+              <p>This is the most amazing temple! It keeps the tradition of old and brings the joy and excitement of the new. Har Zion is a place that feels like home.  Anyone who is not a member must join to understand the joy of being a member of Har Zion.</p>
+              <p><strong>JuliAnn R.</strong></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial">
+              <p>A wonderful community that embraces everyone.  Although a small congregation, Temple Har Zion has reached out to everyone from it's pre-school & religious school to active USY to concerts to adult education and many many other programs.   In addition there is an engaging Rabbi and a cantor with an award winning voice.</p>
+              <p><strong>James L.</strong></p>
+              </div>
+            </div>
+          </div>
+          <img src="img/quote.png" class="close-quote" />
+        <!-- Add Pagination -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="grid-1-3 grid-desktop">
+        <div class="col">
+          <h2>Upcoming Events</h2>
+          <p>Lorem ipsum dolor sit amet, ex summo oblique ius. No nam unum possim verterem, mucius</p>
+          <h4>Explore Our Content</h4>
+          <ul class="link-list">
+            <li><a href="#.html" class="arrow-link">View Event Calendar</a></li>
+            <li><a href="#.html" class="arrow-link">News & Announcements</a></li>
+            <li><a href="#.html" class="arrow-link">Inspiration</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="content-feed">
+            <div class="swiper-content-feed">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="info-card">
+                    <figure>
+                      <img src="img/feature-1.jpg" />
+                    </figure>
+                    <div class="text">
+                      <h3>Talmud Study with Rabbi Glick</h3>
+                      <p class="preheader">Jul 21 &#8211; 7pm</p>
+                      <p>Solum possit utroque pro ei, vel no reque corrumpit, sea dignissim neglegentur eu.</p>
+                      <a href="#.html" class="arrow-link">View Event Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info-card">
+                    <figure>
+                      <img src="img/feature-3.jpg" />
+                    </figure>
+                    <div class="text">
+                      <h3>Wednesday Night Minyan</h3>
+                      <p class="preheader">Jul 28 &#8211; 5:30pm</p>
+                      <p>Solum possit utroque pro ei, vel no reque corrumpit, sea dignissim neglegentur eu.</p>
+                      <a href="#.html" class="arrow-link">View Event Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info-card">
+                    <figure>
+                      <img src="img/feature-2.jpg" />
+                    </figure>
+                    <div class="text">
+                      <h3>Shabbot Under the Stars</h3>
+                      <p class="preheader">Aug 04 &#8211; 7:30pm</p>
+                      <p>Solum possit utroque pro ei, vel no reque corrumpit, sea dignissim neglegentur eu.</p>
+                      <a href="#.html" class="arrow-link">View Event Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="feed-pagination">
+                <div class="swiper-button-next swiper-button-next-2"></div>
+                <div class="swiper-button-prev swiper-button-prev-2"></div>
+                <div class="swiper-pagination-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="no-top-mar">
+    <div class="container">
+      <div id="generations">
+        <div class="generations-img">
+          <figure>
+            <img src="img/hero-generations.jpg" class="active gen-img" />
+            <img src="img/hero-generations-pre.jpg" class="gen-1-img" />
+            <img src="img/hero-generations-school.jpg" class="gen-2-img" />
+            <img src="img/hero-generations-fam.jpg" class="gen-3-img" />
+            <img src="img/hero-generations-adult2.jpg" class="gen-4-img" />
+          </figure>
+          <div class="text">
+            <img src="img/heb-ldor.png" class="heb-hdr" />
+            <h2>For All <br />Generations</h2>
+            <p class="lead">We have programs for every stage of your life. Join us for a great experience!</p>
+          </div>
+        </div>
+        <div class="grid generations-grid">
+          <div class="col gen-1">
+            <h3>Preschool</h3>
+            <p>Solum possit utroque pro ei, vel no reque corrumpit, sea dignissim neglegentur eu.</p>
+            <a href="#.html" class="arrow-link">Learn More</a>
+          </div>
+          <div class="col gen-2">
+            <h3>Religious School</h3>
+            <p>Solum possit utroque pro ei, vel no reque corrumpit, sea dignissim neglegentur eu.</p>
+            <a href="#.html" class="arrow-link">Learn More</a>
+          </div>
+          <div class="col gen-3">
+            <h3>Family Programs</h3>
+            <p>Solum possit utroque pro ei, vel no reque corrumpit, sea dignissim neglegentur eu.</p>
+            <a href="#.html" class="arrow-link">Learn More</a>
+          </div>
+          <div class="col gen-4">
+            <h3>Adults/Older Adults</h3>
+            <p>Solum possit utroque pro ei, vel no reque corrumpit, sea dignissim neglegentur eu.</p>
+            <a href="#.html" class="arrow-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
-  <p class="copy">Copyright © 2022 FPA Women's Health. All Rights Reserved. Web Application by <a href="#.html">Informatics, Inc</a></p>
+  <div class="container">
+    <div class="footer-cta">
+      <img src="img/ftr-logo.jpg">
+      <p>Har Zion is a warm community where you'll find spiritual support and lifelong friendships.</p>
+      <ul>
+        <li><a href="#.html">Explore a Membership</a></li>
+        <li><a href="#.html">Schedule a Visit</a></li>
+      </ul>
+    </div>
+    <div class="ftr-contact">
+      <div class="col">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <p>1040 North Harlem Avenue<br>River Forest, IL 60305</p>
+      </div>
+      <div class="col">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <p><strong>Phone:</strong> <a href="#.html">(708) 366-9000</a><br><strong>Fax:</strong> <a href="#.html">(708) 366-9006</a></p>
+      </div>
+      <div class="col">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p><a href="#.html">office@wsthz.org</a></p>
+      </div>
+      <div class="col">
+        <ul class="social">
+          <li><a href="#.html"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#.html"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#.html"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-grid">
+      <div class="col">
+        <h3><a href="#.html">Worship &amp; Prayer</a></h3>
+        <ul>
+          <li><a href="secondary.html">Daily Minyan</a></li>
+          <li><a href="secondary.html">Shabbat</a></li>
+          <li><a href="secondary.html">Holidays &amp; Festivals</a></li>
+          <li><a href="secondary.html">Youth &amp; Family Services</a></li>
+          <li><a href="secondary.html">Alternative Services</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3><a href="#.html">Education</a></h3>
+        <ul>
+          <li><a href="secondary.html">Preschool</a></li>
+          <li><a href="secondary.html">Religious School</a></li>
+          <li><a href="secondary.html">Family Programs</a></li>
+          <li><a href="secondary.html">Adult Education</a></li>
+          <li><a href="secondary.html">Speaker Series</a></li>
+          <li><a href="secondary.html">Older Adult Programs</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3><a href="#.html">Community Life</a></h3>
+        <ul>
+          <li><a href="secondary.html">Interfaith</a></li>
+          <li><a href="secondary.html">Life Cycle</a></li>
+          <li><a href="secondary.html">Virutal Community</a></li>
+          <li><a href="secondary.html">Youth Groups</a></li>
+          <li><a href="secondary.html">Men's Club</a></li>
+          <li><a href="secondary.html">Order of the Golden Kippah</a></li>
+          <li><a href="#.html">Activity Calendar</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3><a href="#.html">About Us</a></h3>
+        <ul>
+          <li><a href="secondary.html">Who We Are</a></li>
+          <li><a href="secondary.html">Choosing Judaism</a></li>
+          <li><a href="secondary.html">About Our Members</a></li>
+          <li><a href="secondary.html">Leadership &amp; Staff</a></li>
+          <li><a href="secondary.html">Our Location</a></li>
+          <li><a href="secondary.html">Our Impact</a></li>
+          <li><a href="secondary.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3><a href="#.html">Ways to Give</a></h3>
+        <ul>
+          <li><a href="secondary.html">Donate Now</a></li>
+          <li><a href="secondary.html">Planned Giving</a></li>
+          <li><a href="secondary.html">Capital Campaign</a></li>
+          <li><a href="secondary.html">Endowment</a></li>
+          <li><a href="secondary.html">Special Campaign</a></li>
+        </ul>
+        <h3><a href="#.html">Volunteer</a></h3>
+        <ul>
+          <li><a href="secondary.html">Volunteer Committees</a></li>
+          <li><a href="secondary.html">Social Action</a></li>
+        </ul>
+        <!--
+        <h3><a href="#.html">Join Us</a></h3>
+        <h3><a href="#.html">Activity Calendar</a></h3>
+        <h3><a href="#.html">News & Announcements</a></h3>-->
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
+  </div>
+  <p class="copy">Copyright © 2022 Temple Har Zion. All Rights Reserved. Web Application by <a href="#.html">Informatics, Inc</a></p>
 </footer>
-
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->

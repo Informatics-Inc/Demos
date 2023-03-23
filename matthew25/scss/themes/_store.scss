@@ -1,0 +1,60 @@
+/* CSS Document
+Client: M25
+Company: Informatics, Inc
+Author: Jeff S
+Date: Aug 2022
+*/
+
+
+/* Variables */
+:root {
+  accent-color: var(--primary);
+  --primary: #97BF46;
+  --dark-primary: #628025;
+  --secondary: #D95447;
+  --tertiary: #D2D827;
+  --light: #F1EDEA;
+  --dark: #2C2923;
+  --dark-green: #242E25;
+}
+
+#hero .text {padding-bottom: 75px;}
+.store-hours {padding: 25px; box-shadow: 5px 5px 5px rgba(0,0,0,.1); border-radius: 0 15px 0 15px; font-size: .85rem; margin: -125px 0 2rem 0; position: relative; z-index: 5; max-width: 450px; background: #fff;}
+.store-hours .flex .col:first-of-type {border-right: 1px solid #333; padding: 0 1.5rem 0 0; margin: 0 1.5rem 0 0;}
+.store-hours .flex .col {flex: 1;}
+.store-hours p {margin: 0 0 .5rem 0;}
+.store-hours p:last-of-type {margin: 0;}
+.store-hours p strong {min-width: 150px;}
+
+.img-bkg-full > figure {height: 450px;}
+.img-bkg-full > figure img {opacity: .15;}
+.img-bkg-full .hgroup {margin: 5rem auto 0 auto;}
+.img-bkg-full .hgroup h2, .img-bkg-full .hgroup p {color: #fff;}
+.img-bkg-full .grid {gap: 25px;}
+.img-bkg-full .grid-4 .text {padding: 25px; font-size: .85rem; text-align: center; align-items: center;}
+.img-bkg-full .grid .text p:last-of-type {margin: 0;}
+
+.ftr-cols {background: var(--dark-primary);}
+.ftr-cols > img {opacity: .25;}
+.copy {background: var(--primary);}
+.logo-col .grid-2 {align-items: flex-end; margin: 0 0 2rem 0; gap: 10px;}
+.logo-col .grid-2 p {font-size: 1rem; opacity: 1; color: #fff; margin: 0;}
+.ftr-cols ul a {padding: 5px 0;}
+
+#sec-nav ul a {color: #333;}
+
+a:hover {color: var(--dark-primary);}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

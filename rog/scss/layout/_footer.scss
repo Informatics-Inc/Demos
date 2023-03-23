@@ -1,0 +1,34 @@
+.footer {background: var(--primary); position: relative; z-index: 5; color: #fff; padding-top: var(--spacer);}
+.footer ul a, .footer a {color: #fff;}
+.footer a:hover {color: #fff;}
+
+.social {display: flex; justify-content: center; margin-top: 2rem; list-style: none; padding: 0;}
+.social a {font-size: 2rem; padding: 15px;}
+.social a .fa {color: #fff;}
+.social a:hover .fa {color: var(--clr-4);}
+
+.ftr-cols {display: grid; gap: 25px; justify-content: center;}
+.ftr-cols .col {display: flex; align-items: center; gap: 25px;}
+.ftr-cols .col p:last-child {margin: 0;}
+.ftr-cols .col .fa {font-size: 2.5rem;}
+
+.copy {margin: 65px 0 0 0; text-align: center; padding: 25px 10px; font-size: .8rem; background: rgba(0,0,0,.5); opacity: .8;}
+.copy a {color: #fff;}
+.copy a:hover {color: #fff; text-decoration: none;}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.ftr-cols {display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 50px;}
+.ftr-cols img {max-width: 250px;}
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 992px) {
+.ftr-cta h2 {font-size: 2rem;}
+}
+
+/* Small devices (tablets, 992px and up) */
+@media (min-width: 1150px) {
+}

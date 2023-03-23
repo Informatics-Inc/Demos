@@ -1,0 +1,14 @@
+#testimonials {background: var(--dark); position: relative; overflow: hidden;}
+#testimonials > img {position: absolute; inset: 0; object-fit: cover; opacity: .2; height: 100%; width: 100%;}
+#testimonials .container > img {margin: 0 auto 50px auto; display: block; width: 100px;}
+.testimonials, .content-feed {overflow: hidden; width: 100%;}
+.testimonial {text-align: center; padding: 0 50px;}
+.testimonial p {font-size: 1.75rem; color: #fff; max-width: 800px; margin: 0 auto 50px auto; font-family: var(--font-header); font-weight: 400;}
+
+.swiper-button-next, .swiper-button-prev, .swiper-button-next-2, .swiper-button-prev-2 {color: var(--primary) !important; right: var(--side-width);}
+.swiper-button-prev,  .swiper-button-prev-2 {right: auto; left: var(--side-width);}
+.swiper-pagination-bullet-active {background: var(--primary) !important;}
+.swiper-container-horizontal > .swiper-pagination-bullets {text-align: center;}
+.swiper-pagination-bullet {background: #fff; opacity: .7;}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {bottom: var(--spacer);}
