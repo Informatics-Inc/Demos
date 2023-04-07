@@ -129,7 +129,7 @@
 #menu-utility ul a:hover:after {margin-left: 7px;}
 #menu-utility li:hover ul {opacity: 1; top: 32px; visibility: visible;}
 
-#site-header.light {background: #fff;}
+#site-header.light {background: #fff;box-shadow: 0 15px 25px rgba(0,0,0,.05);}
 #site-header.light #logo img {opacity: 1 !important;}
 /* Dark Header */
 #site-header.scroll {background: #fff; box-shadow: 0 15px 25px rgba(0,0,0,.05);}
