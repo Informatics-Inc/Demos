@@ -10,6 +10,8 @@
 .flex-3 {flex-wrap: wrap;}
 .flex-3 > * {flex-basis: 30%;}
 
+.auto-grid {display: grid; grid-template-columns: repeat( auto-fill, minmax(275px, 1fr) ); gap: 15px;}
+
 @media (min-width: 768px) {
 .grid-md {display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px;}
 .col-4-md, .col-md-4 {grid-column: span 4;}
@@ -30,6 +32,12 @@
 .grid .col-lg-5 {grid-column: span 5;}
 .grid .col-lg-6 {grid-column: span 6;}
 .grid .col-lg-7 {grid-column: span 7;}
+.grid .col-lg-8 {grid-column: span 8;}
+.grid .col-lg-9 {grid-column: span 9;}
+.grid .col-lg-10 {grid-column: span 10;}
+.grid .col-lg-11 {grid-column: span 11;}
+.grid .col-lg-12 {grid-column: span 12;}
+
 }
 
 /* WIDE DESKTOP */

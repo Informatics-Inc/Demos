@@ -5,7 +5,8 @@
 .hover-card figure:before {width: 50px; height: 4px; background: var(--primary); content: ""; position: absolute; bottom: 0; left: 25px; transition: var(--transition); z-index: 10;}
 .hover-card .text {padding: 15px 25px 0 25px;}
 .hover-card .text h3 {font-weight: 600; margin: 0 0 5px 0; position: relative; @include right-caret;}
-.hover-card .text p {margin: 0; color: var(--text-gray); font-size: .875rem;}
+.hover-card .text p {color: var(--text-gray); font-size: .875rem;}
+.hover-card .text p:last-of-type() {margin: 0;}
 .hover-card .text p span {text-transform: uppercase;}
 .hover-card:hover figure img {transform: scale(1.1);}
 .hover-card:hover figure:before {width: calc(100% - 50px); background: var(--secondary);}
@@ -18,8 +19,15 @@
 .hover-card-vert figure + p {margin-top: 1rem; padding: 0 25px;}
 .hover-card-vert:hover .text h3 {color: var(--secondary);}
 
-.hover-card-box {background: var(--light); border-radius: 5px;}
+.hover-card-box {background: var(--light); border-radius: 5px; height: 100%;}
 .hover-card-box .text {padding: 25px;}
+.hover-card-box .text h3 {margin-bottom: 3rem; position: relative; padding: 0 0 15px 0;}
+.hover-card-box .text p:last-of-type {margin: 0;}
+.hover-card-box .text h3:after {position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; background: var(--secondary); content: "";}
+
+.hover-card-box:hover {background: var(--primary); color: #fff; height: calc(100% + 10px); margin-top: -10px;}
+.hover-card-box:hover .text h3, .hover-card-box:hover .text p {color: #fff;}
+.hover-card-box:hover .text h3:after {width: 80%;}
 
 @media (min-width: 992px) {
 .hover-card:hover figure {transform: scaleY(1.025) translateY(-7px);}

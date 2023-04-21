@@ -2,6 +2,7 @@
 
 /* Globals */
 .page-header .text {text-align: center; padding: var(--spacer) 0; grid-column: span 12;}
+.page-header .text p a {color: #fff; text-decoration: underline; text-decoration-color: var(--secondary);}
 .page-header.basic-header .text h1 {text-transform: uppercase;}
 .page-header.basic-header .text p {color: #d8d8d8;}
 .page-header .text h1 strong {font-weight: 600;}
@@ -13,6 +14,8 @@
 .bio-links-img .social a {color: #fff;}
 .bio-links-img .social a:hover {background: var(--primary);}
 
+.simple-header .text {padding: 25px 0;}
+.header-center {text-align: center;}
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
@@ -44,11 +47,12 @@
 .bio-header {overflow: visible;}
 .bio-header .text {padding: 100px 0 var(--spacer) 0;}
 .bio-header .bio-links-img {grid-column: 8 / span 4; position: relative; margin-bottom: -375px;}
-.bio-header-overlap {margin-top: 150px;}
+.bio-header-overlap {margin-top: 125px;}
 
 .basic-header .text {padding: 125px 25px 60px 25px;}
+.simple-header .text {padding: 175px 0 25px 0;}
 }
 
 @media (min-width: 1500px) {
-
+.simple-header .text {padding: 175px 0 25px 0;}
 }

@@ -55,7 +55,9 @@
 .contributors .person-link .name {font-size: .9rem; color: #fff; opacity: 1; display: block;}
 .contributors .person-link .title {font-size: .825rem; opacity: .7; font-style: italic;}
 
-.related-sidebar .preheader {border-top: 1px solid #F1F3F8; padding-top: 1.5rem;}
+.related-sidebar .preheader:first-of-type {border-top: none;}
+.related-sidebar > * {margin: 0 0 2rem 0;}
+.related-sidebar .preheader {border-top: 1px solid #F1F3F8; padding-top: 1.5rem; margin: 0 0 1rem 0;}
 .related-sidebar ul {padding: 0; list-style: none}
 .related-sidebar ul a {@include right-caret; display: block; padding: 5px 5px 5px 0;}
 .related-sidebar ul a:hover {padding: 5px 0 5px 5px;}
