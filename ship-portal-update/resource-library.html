@@ -23,6 +23,7 @@
 
     <!-- Custom css -->
     <link rel="stylesheet" href="custom.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
 
     <!-- modernizr css -->
@@ -40,8 +41,9 @@
     <!-- preloader area end -->
     <!-- page container area start -->
     <div class="page-container">
-        <!-- sidebar menu area start -->
-        <div class="sidebar-menu">
+   
+           <!-- sidebar menu area start -->
+           <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
                     <a href="index.html"><img src="custom_images/SHIP-Logo.png" alt="logo"></a>
@@ -62,17 +64,17 @@
                             </li>         
                                      
                             <!-- Mobile Items -->
-                            <hr class="mobile-nav-area sidebar-divider  my-3">
-                            <li class="mobile-nav-area">
+                            <hr class="sidebar-divider  my-3">
+                            <li class="mobile-nav-area green-bg">
                                 <a href=""> <i class="ti-tag"></i><span>Training and Certification</span></a>
                             </li>
 
-                            <li class="mobile-nav-area">
-                                <a href=""> <i class="ti-comment"></i><span>Feedback</span></a>
+                            <li class="mobile-nav-area blue-bg">
+                                <a  href=""> <i class="ti-comment"></i><span>Feedback</span></a>
                             </li>                            
+                            <hr class="mobile-nav-area sidebar-divider  my-3">
 
                             <!-- Divider -->
-                            <hr class="sidebar-divider  my-3">
                             <li>
                                 <a href=""> <i class="ti-user"></i><span>My Profile</span></a>
                             </li>
@@ -160,7 +162,6 @@
                 <div class="row align-items-center">
                     <!-- nav and search button -->
                     <div class="col clearfix">
-                        <img class="img-fluid pull-left ship-icon" src="custom_images/SHIP-icon.jpg" alt="logo">
                         <div class="nav-btn pull-left">MENU
                             <span></span>
                             <span></span>
@@ -177,7 +178,7 @@
                     <div class="col clearfix">
                         <ul class="notification-area pull-right">
                             <li>
-                                <a class="btn btn-flat btn-primary" href=""><i class="ti-tag"></i>
+                                <a class="btn btn-flat btn-green" href=""><i class="ti-tag"></i>
                                     <span>Training And Certification (OCCT)</span></a>
                             </li>
     
@@ -190,6 +191,7 @@
                 </div>
             </div>
             <!-- header area end -->
+            
             <!-- page title area start -->
             <div class="page-title-area">
                 <div class="row">
@@ -197,11 +199,11 @@
                         <div class="mr-auto">
                             <div class="breadcrumbs-area clearfix">
                             <h4 class="page-title pull-left">
-                               
-                                <span class="p2">Resource Library</span></h4>
+                               <img class="img-fluid ship-icon" src="custom_images/SHIP-icon.jpg" alt="logo">
+                                <span class="p2">Dashboard</span></h4>
                             <ul class="breadcrumbs pull-left">
                                 <li><a href="index.html">Home</a></li>
-                                <li><span>Resource Library</span></li>
+                                <li><span>Dashboard</span></li>
                             </ul>
                             </div>
                         </div>
@@ -213,23 +215,320 @@
             </div>
 
             <!-- Page Content Start-->
-            <div class="main-content-inner">
-                 <div class="mt-2 mb-2"><img class="img-fluid" src="custom_images/SearchFilter-placeholder.jpg" ></a></div>
+            <div class="main-content-inner search-forms">
+                 <div class="mt-2 mb-2">
+                    <div class="accordion accordion-flush search-area" id="accordionFlushExample">
+                        <div class="p-4 accordion-item">
+                          <h5 class="accordion-header" id="flush-headingOne">
+                            
+                            <!-- Top Search -->
+                            <div class="pb-4 mb-4 search-header d-flex flex-wrap">
+                                <div class="mr-auto pt-2 pb-2 pr-5">Search Panel</div>
+                                <div class="">
+                                    <a id="ctl00_cph_ucU_lnkUploadResource" class="btn btn-primary" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph$ucU$lnkUploadResource&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Admin/Upload-Resource/Default.aspx&quot;, false, true))">Upload Resource</a>
+                                </div>
+                              </div>
 
-                 <nav class="mt-4" aria-label="Page navigation">
-                    <ul class="pagination justify-content-left">
-                        <li class="page-item">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li><span class="ml-3 d-flex align-items-center"> Items 101 to 200 of 772</span>
-                    </ul> 
-                </nav>                            
-                
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <label style="font-weight:bold">Keyword Search</label>
+                                    <div class="form-group">
+                                        <input name="ctl00$cph$ucU$txtKeyword" type="text" maxlength="255" id="ctl00_cph_ucU_txtKeyword" class="form-control" placeholder="Enter Keyword">
+                                    </div>            
+                                </div>                      
+                                <div class="col-md-3 col-sm-6">
+                                    <label>Order By</label>
+                                    <div class="form-group">
+                                        <input name="" type=""  class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <label>From Date</label>
+                                    <div class="form-group">
+                                        <input name="" type=""  class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <label>To Date</label>
+                                    <div class="form-group">
+                                        <input name="" type=""  class="form-control">
+                                    </div>
+                                </div>
+                            </div>                                
+       
+                                <div class="d-flex flex-wrap">
+                                    <div class="mr-auto pt-2 pb-2 pr-5">
+                                        <a id="ctl00_cph_ucU_lnkFilter" class="btn btn-primary" href="javascript:__doPostBack('ctl00$cph$ucU$lnkFilter','')">Search</a>                                        
+                                        <a id="ctl00_cph_ucU_lnkBack" class="btn btn-default" href="javascript:__doPostBack('ctl00$cph$ucU$lnkBack','')">Clear Filters</a>                                        
+                                    </div>
+                                    <div class="pt-2 pb-2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            More Filters
+                                        </button>                                                  
+                                    </div>
+                                  </div> 
+
+
+                          </h5>
+
+
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
+                            <!-- Search Criteria -->
+                            <div class="accordion-body">
+                                <div class="RadAjaxPanel" id="ctl00_cph_ucU_ctl00_cph_ucU_panSearchPanel" style="display: block;">
+                                    <div id="ctl00_cph_ucU_panSearch" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_cph_ucU_lnkFilter')">
+                                        
+                                    <div class="row">
+                                        
+                                        <div class="col-md-3 col-sm-6">
+                                            <label>Subject</label>
+                                            <div class="form-group">
+                                                <select name="ctl00$cph$ucU$ddlSubject" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cph$ucU$ddlSubject\',\'\')', 0)" id="ctl00_cph_ucU_ddlSubject" class="form-control">
+                                            <option selected="selected" value="">- All Subject -</option>
+                                            <option value="21">Appeals</option>
+                                            <option value="1">Claims/Statements</option>
+                                            <option value="2">Coordination of Benefits</option>
+                                            <option value="22">Coronavirus (COVID - 19)</option>
+                                            <option value="3">Costs</option>
+                                            <option value="4">Enrollment/Eligibility</option>
+                                            <option value="20">Extra Help/LIS</option>
+                                            <option value="5">Fraud, errors, abuse</option>
+                                            <option value="6">Long-term care insurance</option>
+                                            <option value="7">Low income</option>
+                                            <option value="8">Marketplace</option>
+                                            <option value="9">Medicaid</option>
+                                            <option value="10">Medicare Advantage</option>
+                                            <option value="11">Medicare cards/numbers</option>
+                                            <option value="19">Medicare Savings Programs (MSP)</option>
+                                            <option value="18">Non-covered services</option>
+                                            <option value="12">Part A covered services</option>
+                                            <option value="13">Part B covered services</option>
+                                            <option value="14">Prescription coverage</option>
+                                            <option value="15">SHIP program</option>
+                                            <option value="16">Social Security</option>
+                                            <option value="17">Supplemental Insurance</option>
+                                
+                                        </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <label>Activity</label>
+                                            <div class="form-group">
+                                                <select name="ctl00$cph$ucU$ddlActivity" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cph$ucU$ddlActivity\',\'\')', 0)" id="ctl00_cph_ucU_ddlActivity" class="form-control">
+                                            <option selected="selected" value="">- All SHIP Activity -</option>
+                                            <option value="1">Counseling</option>
+                                            <option value="2">Outreach</option>
+                                            <option value="3">Program management</option>
+                                            <option value="4">SHIP promotion</option>
+                                            <option value="5">Training</option>
+                                            <option value="6">Volunteer Management (VRPM)</option>
+                                
+                                        </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6">
+                                            <label>Type</label>
+                                            <div class="form-group">
+                                                <select name="ctl00$cph$ucU$ddlType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cph$ucU$ddlType\',\'\')', 0)" id="ctl00_cph_ucU_ddlType" class="form-control">
+                                            <option selected="selected" value="">- All Type -</option>
+                                            <option value="1">Advertisement</option>
+                                            <option value="30">Article</option>
+                                            <option value="2">Brochure</option>
+                                            <option value="3">Checklist</option>
+                                            <option value="4">Consumer Guide</option>
+                                            <option value="5">Contract/Agreement</option>
+                                            <option value="26">Facebook/Social Media</option>
+                                            <option value="6">Fact Sheet</option>
+                                            <option value="7">Form</option>
+                                            <option value="8">Handout</option>
+                                            <option value="9">Image</option>
+                                            <option value="24">Job Aid</option>
+                                            <option value="10">Letter</option>
+                                            <option value="11">Logo</option>
+                                            <option value="12">Manual/User Guide</option>
+                                            <option value="23">Medicare Minutes</option>
+                                            <option value="31">Newsletter</option>
+                                            <option value="13">Other</option>
+                                            <option value="14">Policy/protocol</option>
+                                            <option value="15">PowerPoint</option>
+                                            <option value="27">Recording</option>
+                                            <option value="16">Report</option>
+                                            <option value="17">Script</option>
+                                            <option value="18">Spreadsheet</option>
+                                            <option value="19">Survey</option>
+                                            <option value="25">Tip Sheet</option>
+                                            <option value="28">Toolkit</option>
+                                            <option value="29">Translation</option>
+                                            <option value="20">Video</option>
+                                            <option value="21">Webinar Archive</option>
+                                            <option value="22">Website</option>
+                                
+                                        </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <label>Audience</label>
+                                            <div class="form-group">
+                                                <select name="ctl00$cph$ucU$ddlAudience" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cph$ucU$ddlAudience\',\'\')', 0)" id="ctl00_cph_ucU_ddlAudience" class="form-control">
+                                            <option selected="selected" value="">- All Audience -</option>
+                                            <option value="1">Beneficiaires</option>
+                                            <option value="2">Caregivers</option>
+                                            <option value="3">Counselors</option>
+                                            <option value="4">Directors</option>
+                                            <option value="5">Disability</option>
+                                            <option value="6">Diverse</option>
+                                            <option value="7">Duals</option>
+                                            <option value="8">Low-income</option>
+                                            <option value="9">Low-literacy</option>
+                                            <option value="10">Low-vision</option>
+                                            <option value="11">Non-english</option>
+                                            <option value="12">Partners</option>
+                                            <option value="13">Rural/frontier</option>
+                                            <option value="14">SHIPs</option>
+                                            <option value="15">Staff</option>
+                                            <option value="16">Volunteers</option>
+                                
+                                        </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6">
+                                            <label>Source</label>
+                                            <div class="form-group">
+                                                <select name="ctl00$cph$ucU$ddlSource" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cph$ucU$ddlSource\',\'\')', 0)" id="ctl00_cph_ucU_ddlSource" class="form-control">
+                                            <option selected="selected" value="">- Select Origin -</option>
+                                            <option value="AC">ACL</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CE">Center</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="DC">District of Columbia</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="GU">Guam</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PT">Partner</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="PR">Puerto Rico</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VI">Virgin Islands</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                
+                                        </select>
+                                            </div>
+                                        </div>
+                                        <div id="ctl00_cph_ucU_divStarResource" class="col-md-3 col-sm-6">
+                                            <label>STARS Resources</label>
+                                            <div class="form-group">
+                                                <select name="ctl00$cph$ucU$ddlStars" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cph$ucU$ddlStars\',\'\')', 0)" id="ctl00_cph_ucU_ddlStars" class="form-control">
+                                            <option selected="selected" value="">--Select Yes/No--</option>
+                                            <option value="1">YES</option>
+                                            <option value="0">No</option>
+                                
+                                        </select>
+                                            </div>
+                                        </div>
+                                        
+                                            <div class="col-lg-12 check-area">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="checkbox pad-btm text-left">
+                                                        <input id="chkMyResources" type="checkbox" name="ctl00$cph$ucU$chkMyResources" onclick="javascript:setTimeout('__doPostBack(\'ctl00$cph$ucU$chkMyResources\',\'\')', 0)" class="magic-checkbox">
+                                                        <label for="chkMyResources">Show Only My Resources</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="checkbox pad-btm text-left">
+                                                    <input id="chkShipTaCenterResources" type="checkbox" name="ctl00$cph$ucU$chkShipTaCenterResources" onclick="javascript:setTimeout('__doPostBack(\'ctl00$cph$ucU$chkShipTaCenterResources\',\'\')', 0)" class="magic-checkbox">
+                                                    <label for="chkShipTaCenterResources" style="text-align: center;">Exclude SHIP TA Center Resources</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                
+
+                                    <div class="clearfix"></div>
+                                    </div>
+                                </div>                                
+
+                                
+                            </div>
+                            <!-- END --- Search Criteria -->
+
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+                 
+                <nav class="mt-4 d-flex flex-wrap" aria-label="Page navigation">
+                    <div class="pt-2 pb-2 mr-3">
+                        <ul class="pagination justify-content-left">
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul> 
+                    </div>
+                        <span class="align-self-center"> Items 101 to 200 of 772</span>                        
+                </nav>
+                  
                 <div class="card-area resources">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 mt-5 d-flex align-items-stretch">
