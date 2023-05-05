@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>ITC Secondary</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/syx8mgl.css">
+
+    <!-- CSS -->
+    <link href="scss/app.css" rel="stylesheet">
+  </head> 
+  <body>
+    <header id="site-header">
+      <div class="mobile-header">
+        <a href="index.html" id="logo">
+          <img src="img/ITC-Logo.png" alt="ITC Logo" />
+        </a>
+        <button id="menu-toggle" class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+          <div class="closed">
+            Menu
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="open">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+      </div>
+    
+      <!-- MENU -->
+      <nav id="menu" class="menu collapse">
+        <div class="desktop-header">
+          <a href="index.html" id="logo">
+            <img src="img/ITC-Logo.png" alt="ITC Logo " />
+            <img src="img/ITC-Logo.png" alt="ITC Logo " />
+          </a>
+          <div id="hdr-search">
+            <div class="search-close-wrapper">
+              <button id="search-close" class="search-toggle"><img src="img/search-close.svg"/>Close</button>
+            </div>
+            <img src="img/ITC-Logo.png" class="logo" />
+            <form role="search" method="get" id="searchform" class="searchform">
+              <div>
+                <input type="text" value="" name="s" id="s" placeholder="SEARCH">
+                <input type="submit" id="searchsubmit" value="Search">
+              </div>
+            </form>
+          </div>
+    
+          <ul id="menu-main">
+            <li><a href="">Our Company</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-1" class="collapse">
+                <li><a href="">Management</a></li>
+                <li><a href="">Board of Directors</a></li>
+                <li><a href="">ITC History</a></li>
+                <li><a href="">Investor Relations</a></li>
+
+              </ul>
+            </li> 
+            <li><a href="">Community Impact</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-2" class="collapse">
+                <li><a href="">Vegetation Management</a></li>
+                <li><a href="">Environmental Stewardship</a></li>
+                <li><a href="">Community Commitment</a></li>
+                <li><a href="">Public Safety</a></li>
+                <li><a href="">Land Owners</a></li>
+                <li><a href="">Inclusion & Diversity</a></li>
+              </ul>
+            </li>
+            <li><a href="">Operating The Greater Grid</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-3" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-3" class="collapse">
+                <li><a href="">Resilience & Reliability</a></li>
+                <li><a href="">Today's Power Grid</a></li>
+                <li><a href="">Operations</a></li>
+                <li><a href="">Safety & Security</a></li>
+                <li><a href="">Case Studies</a></li>
+              </ul>
+            </li>
+            <li><a href="">Careers</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-4" class="collapse">
+                <li><a href="">Culture & Values</a></li>
+                <li><a href="">Innovation</a></li>
+                <li><a href="">Students & Graduates</a></li>
+                <li><a href="">Open Positions</a></li>
+
+              </ul>
+            </li>
+            <li><a href="">Projects</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-5" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-5" class="collapse">
+                <li><a href="">Michigan</a></li>
+                <li><a href="">Midwest</a></li>
+                <li><a href="">Great Okaubs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul id="menu-utility">
+          <li><a href="">ITC Holdings</a></li>
+          <li><a href="">Michigan</a></li>
+          <li><a href="">Midwest</a></li>
+          <li><a href="">Great Plains</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">News Room</a></li>
+          <li class="hidden-sm"><a href="#.html" class="search-toggle"><img src="img/mobile-search.svg">Site Search</a></li>
+        </ul>
+    
+        <button class="menu-close-btm" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+          <p><img src="img/close-menu.svg"> Close Menu <img src="img/close-menu.svg"> </p>
+        </button>
+      </nav>
+    </header>
+
+    
+<main id="main-content">
+
+  <section class="hero d-flex align-items-center">  
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 py-4 spacer-right100">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Operating the Greater Grid</li>
+            </ol>
+          </nav>
+          <h1 class="text-uppercase">Operating the greater grid</h1>
+          <p class="lead">Moving electricity takes a modern power grid. Here’s how we’re maintaining and improving yours.</p>
+          <div class="scroll-down">
+              <i class="fa-solid fa-arrow-down-long"></i><span>Scroll</span>
+          </div>
+        </div>
+        <div class="col-lg-6 one-col">
+            <img class="image-fluid" src="img/hero-single1.jpg">
+        </div>    
+      </div>      
+    </div>
+  </div>
+</section>   
+
+
+  <!-- Section - Who We Are -->
+      <section class="callout-info spacer100">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="large-text col text-center"> 
+              <p>We’re investing millions in transmission network updates to improve energy reliability, resilience and security—all while cutting outages. That’s building a greater grid. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Section - Explore the Grid Carousel -->
+      <div class="container spacer-bottom100">
+        <div class="row align-items-center">
+          <div class="col-lg-4 spacer-right100">
+            <h2>Explore the power grid</h2>
+            <p>Find frequently requested information about ITC’s operations and the U.S. power grid.</p>
+          </div>
+          <div class="col-lg-8">
+
+            <div id="carouselslides" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="false" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-img-top"><img src="img/carousel-1.jpg" alt="Card image cap">
+                        </div>        
+                        <div class="card-body gradient-border">
+                          <h4>Today’s power Grid</h4>
+                          <p class="card-text">Learn about the history of the power grid and the changes we’re navigating now.</p>
+                          <a href="#" class="btn-arrow">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-img-top"><img src="img/carousel-2.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body gradient-border">
+                          <h4>Our Operations</h4>
+                          <p class="card-text">How we maintain the reliability of your power.</p>
+                          <a href="#" class="btn-arrow">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="col position-relative bg-primary p-4 mt-4">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselslides" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                  </ol>
+
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselslides" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </div>
+          </div>
+        </div>
+
+                  
+        <script>
+          var myCarousel = document.querySelector('#carouselslides');
+          var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: false,
+            wrap: false,
+            touch: true
+          });
+        
+          // Move carousel one item at a time
+          document.querySelector('.carousel-control-next').addEventListener('click', () => {
+            carousel.next();
+          });
+        
+          document.querySelector('.carousel-control-prev').addEventListener('click', () => {
+            carousel.prev();
+          });
+        </script>
+
+
+<!-- Section - Partner You Can Trust -->
+<section class="bg-image-sec"><div class="corner-left"></div><div class="corner-right"></div>
+  <img src="img/picnic-bg.jpg" alt="ITC Career opportunities" class="img-fluid" >
+  <div class="container spacer100">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="callout-box bg-white gradient-border">
+          <h2>A partner you can trust</h2>
+          <p>Since acquiring our electric power systems in 2003, we’ve invested billions to improve performance and service reliability. Our networks now routinely rank among the top tier of utilities nationally, with roughly half the outages since 2009. </p>
+          <p><a href="#" class="btn-primary">See Our Resilience & Reliability<i class="fa-solid fa-chevron-right"></i></a></p>
+      </div>
+    </div>        
+  </div>
+</div>
+</section>
+
+<div class="side-angles-left"><!-- Large Side Angles -->
+
+
+  <!-- Stats -->
+  <section class="spacer-top100">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-4 p-4">
+          <div class="stat">
+            <span class="number">45%</span>
+            <span class="blurb">Outage decrease for ITC Michigan transmission</span>
+          </div>
+        </div>
+        <div class="col-md-4 p-4">
+          <div class="stat">
+            <span class="number">20%</span>
+            <span class="blurb">Outage descrease for ITC Michicagan and METC</span>
+          </div>
+        </div>
+        <div class="col-md-4 p-4">
+          <div class="stat">
+            <span class="number">65%</span>
+            <span class="blurb">Outage decrease for ITC Midwest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <!-- Section - Case Study -->
+  <section class="casestudy spacer-top100 spacer-bottom50">
+  <div class="container d-flex align-items-stretch">
+    <div class="row align-items-center">
+
+      <div class="casestudy-image col-lg-6">
+            <img class="image-fluid" src="img/casestudy-sample.jpg">
+      </div>
+
+      <div class="col-lg-6 narrow-column position-relative spacer100">
+          <div class="cs-cards-color d-flex d-block align-self-center">
+            <div class="align-self-end">
+              <img src="img/icons/ico-wind.png" alt="EV Infrastructure Icon" class="icon-small ">
+              <p>Interconnection & Network Systems Upgrades.</p>
+            </div>
+          </div>
+
+          <div class="subhead">Case study</div>
+          <h2>Gratiot County Wind Farm Interconnection</h2>
+          <p>Connecting what would become Michigan’s largest-ever wind farm became one the most complex and challenging interconnection projects in ITC’s history, requiring significant new facilities and upgrades.</p>
+          <p><a href="#" class="btn-primary">View Case Study<i class="fa-solid fa-chevron-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- END - Side Angles -->
+
+</main>
+
+<!-- Footer -->
+<footer class="footer gradient-border">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <img src="img/ITC-White-Logo-Tagline.png"/>
+          <p>ITC Holdings Corp. is the largest independent electricity transmission company in the United States.</p>
+          <ul class="d-flex flex-nowrap social">
+            <li>
+                <a target="_blank" href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true" title="Facebook"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true" title="LinkedIn"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://twitter.com/" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true" title="Twitter"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Company</h4>
+        <ul>
+        <li><a href="">Management</a></li>
+        <li><a href="">Board of Directors</a></li>
+        <li><a href="">ITC History</a></li>
+        <li><a href="">Ivestor Relations</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Community Impact</h4>
+        <ul>
+        <li><a href="">Vegetation Management</a></li>
+        <li><a href="">Environmental Stewardship</a></li>
+        <li><a href="">Community Commitment</a></li>
+        <li><a href="">Public Safety</a></li>
+        <li><a href="">Land Owners</a></li>
+        <li><a href="">Inclusion & Diversity</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Opperating The Greater Grid</h4>
+      <ul>
+      <li><a href="">Resilience & Reliability</a></li>
+      <li><a href="">Today's Power Grid</a></li>
+      <li><a href="">Operations</a></li>
+      <li><a href="">Safety & Security</a></li>
+      <li><a href="">Case Studies</a></li>
+      </ul>
+    </div>
+</div>
+  <div class="copyright">
+     © 2023 ITC. All Rights Reserved. Web Application by <a class="text-white" target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a>
+    </div>
+  </div>
+</footer>
+
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/*.contain {
+        width: 100%;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 var(--spacer);
+    }
+ .container {@include container;}
+.grid, .grid-md {display: grid; gap: 25px;}
+.flex {display: flex; justify-content: center; gap: 20px;}
+.flex-3 {flex-wrap: wrap;}
+.flex-3 > * {flex-basis: 30%;}
+
+@media (min-width: 768px) {
+.grid-md {display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px;}
+.col-4-md, .col-sm-4 {grid-column: span 4;}
+}
+  
+@media (min-width: 992px) {
+.grid {
+    @include grid-12-col
+}
+.grid > * {
+    grid-column: span 12;
+}
+.grid .span-5-lg {grid-column: span 5;}
+.grid .col-lg-1 {grid-column: span 1;}
+.grid .col-lg-2 {grid-column: span 2;}
+.grid .col-lg-3 {grid-column: span 3;}
+.grid .col-sm-4 {grid-column: span 4;}
+.grid .col-lg-5 {grid-column: span 5;}
+.grid .col-lg-6 {grid-column: span 6;}
+.grid .col-lg-7 {grid-column: span 7;}
+}
+*/
+/* WIDE DESKTOP */
+/* @media (min-width: 1200px) {
+    .flex-3 {padding: 0 var(--spacer);}
+}*/
+
+.grid {grid-column: span 12;}
+.flex {display: flex;gap: 20px;justify-content: space-between;}
+.grid .col-lg-1,.grid .col-md-1,.grid .col-sm-1 {grid-column: span 1;}
+.grid .col-lg-2,.grid .col-md-2,.grid .col-sm-2 {grid-column: span 2;}
+.grid .col-lg-3,.grid .col-md-3,.grid .col-sm-3 {grid-column: span 3;}
+.grid .col-lg-4,.grid .col-md-4,.grid .col-sm-4 {grid-column: span 4;}
+.grid .col-lg-5,.grid .col-md-5,.grid .col-sm-5 {grid-column: span 5;}
+.grid .col-lg-6,.grid .col-md-6,.grid .col-sm-6 {grid-column: span 6;}
+.grid .col-lg-7,.grid .col-md-7,.grid .col-sm-7 {grid-column: span 7;}
