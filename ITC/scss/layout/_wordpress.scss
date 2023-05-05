@@ -1,0 +1,11 @@
+/* Update With Auto WP Classes */
+.text-center {text-align: center; margin-bottom: var(--spacer);max-width: 750px; margin-left: auto; margin-right: auto; }
+.text-center p {color: var(--text-gray);}
+.text-center img {margin-left: auto; margin-right: auto;}
+.wp-vert-class {margin: var(--spacer-vert) auto;}
+.full-img-combo + .wp-vert-class {margin-top: calc(var(--spacer) * 2);}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+    .wp-vert-class + .wp-vert-class {margin: calc(var(--spacer-vert) * 2) auto;} // or 2?
+}

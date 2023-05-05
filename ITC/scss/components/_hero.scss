@@ -1,0 +1,32 @@
+.hero{min-height:550px;background: url(../img/angles-single.png) no-repeat; background-position:calc(100% + 200px) 50%}
+.hero .lead{font-size:1.3125rem;margin-bottom:30px}
+.hero h1 span{color:var(--secondary)}
+h1.home{font-size:6.25rem;line-height:5.7rem;margin-bottom:15px}
+  
+.scroll-down {position: relative;font-size:0.75rem;margin-top:50px;text-transform:uppercase;}
+.scroll-down  i {font-size:0.9rem;position: absolute;top: 0;animation: up-down 2s infinite ease-in-out;}
+.scroll-down  span{padding-left:15px;}
+@keyframes up-down {0% {top: 0;}50% {top: 8px;}100% {top: 0;}}
+
+.two-col .col img{height:100%;min-width:100%;object-fit:cover;object-position: center;}
+.two-col .col{margin:0 0 50px 0;min-height:520px;overflow:hidden;position: relative;filter:var(--shadow);}
+.two-col .col:last-child {margin:50px 0 0 0;}
+
+.one-col{overflow:hidden;position: relative;filter:var(--shadow);}
+.one-col img{min-height:400px;min-width:100%;object-fit:cover;object-position: center;}
+
+
+
+@media (min-width: 768px) {
+   
+}
+
+@media (min-width: 1500px) { 
+
+}
+
+/* ONLY MOBILE */
+@media (max-width: 991px) {
+.two-col .col{min-height:300px} 
+.one-col img{min-height:400px;}
+}

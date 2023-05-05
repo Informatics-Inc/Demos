@@ -1,0 +1,11 @@
+/* Globals */
+.page-hdr {padding:50px 0px;position: relative;overflow: hidden;z-index: 5;text-align: center;background: var(--dark);}
+.page-hdr img {position: absolute;z-index: -1;opacity: 0.6;width: 100%;height: calc(100% + 25px);top: -25px;object-fit: cover;}
+.page-hdr .text {padding: 15px 25px;}
+.page-hdr h1 {text-transform: uppercase;color: #fff;margin: 0 0 0.5rem 0;}
+.page-hdr ol li{ display: inline-block;padding:0px 9px;}
+.page-hdr .breadcrumb { display: inline-block;background: none;padding: 0;  margin: 0;color: #fff;opacity: 0.9;}
+.page-hdr .breadcrumb a {color: #fff;text-decoration: underline;}
+
+
+

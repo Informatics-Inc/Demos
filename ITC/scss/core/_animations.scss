@@ -1,0 +1,45 @@
+/* ANIMATIONS */
+@charset "UTF-8";
+
+/* FADE IN */
+/* -- Fade In Up -- */
+@keyframes fadeInUp {
+  0% {opacity: 0;transform: translate3d(0, 4%, 0) scale(1);}
+  100% {opacity: 1;transform: none;}
+}
+.fadeinup {
+opacity: 0;
+animation-name: fadeInUp;
+animation-delay: none;
+animation-timing-function: ease-in-out;
+animation-duration: .45s;
+animation-fill-mode: forwards;
+}
+
+/* ANIMATE IN CONTENT WHILE SCROLLING */
+.animate-in {opacity: 0; transform: translate(0, 50px); transition-delay: .25s;}
+.animate-in.visible {opacity: 1; transform: translate(0, 0); transition-duration: .75s; transition-timing-function: ease-out;}
+
+.fade-in {opacity: 0;transition-delay: .25s;}
+.fade-in.visible {opacity: 1; transition-timing-function: ease-out;}
+
+/* DELAY */
+.delay-1 {animation-delay: .15s; transition-delay: .15s;}
+.delay-2 {animation-delay: .3s; transition-delay: .3s;}
+.delay-3 {animation-delay: .45s; transition-delay: .45s;}
+.delay-4 {animation-delay: .6s; transition-delay: .6s;}
+.delay-5 {animation-delay: .75s; transition-delay: .75s;}
+.delay-6 {animation-delay: .90s; transition-delay: .90s;}
+.delay-7 {animation-delay: 1.05s; transition-delay: 1.05s;}
+.delay-8 {animation-delay: 1.20s; transition-delay: 1.20s;}
+.delay-9 {animation-delay: 1.35s; transition-delay: 1.35s;}
+
+.animation-delay-1 {animation-delay: .15s;}
+.animation-delay-2 {animation-delay: .3s;}
+.animation-delay-3 {animation-delay: .45s;}
+.animation-delay-4 {animation-delay: .6s;}
+.animation-delay-5 {animation-delay: .75s;}
+.animation-delay-6 {animation-delay: .90s;}
+.animation-delay-7 {animation-delay: 1.05s;}
+.animation-delay-8 {animation-delay: 1.20s;}
+.animation-delay-9 {animation-delay: 1.35s;}
