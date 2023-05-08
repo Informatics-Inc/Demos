@@ -71,6 +71,9 @@ aside h5 {font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; color
 #main-content ul {padding: 0 0 0 1.5rem; margin: 0 0 1.5rem 0;}
 #main-content ul li {margin: 3px 0;}
 
+.map-img {background: #f4f4f4; padding: 15px;}
+.map-img figcaption {font-size: .825rem; font-style: italic; text-align: center;}
+
 @media (min-width: 768px) {
   :root {--spacer: 50px;--spacer-vert: 60px;}
   h1 {font-size: 3rem;}
@@ -78,7 +81,7 @@ aside h5 {font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; color
   h3 {font-size: 1.5rem;}
   h4 {font-size: 1rem;}
 
-.map-img {max-width: 40%; float: right; margin: 0 0 1rem 1rem; gap: 25px;}
+.map-img {max-width: 45%; float: right; margin: 0 0 1rem 1rem; gap: 25px;}
 
 }
 
