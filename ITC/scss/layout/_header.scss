@@ -67,7 +67,7 @@
 /* DESKTOP */
 @media (min-width: 992px) {
 .btn-expand, .menu-close-btm, #menu-toggle,.mobile-header, .hidden-lg {display: none;}
-.desktop-header {/* @include container;*/ display: grid; grid-template-columns: 200px auto; align-items: center;}
+.desktop-header {/*@include container;*/ display: grid; grid-template-columns: 200px auto; align-items: center;}
 #logo {display: block; height: 34px;}
 #logo img {position: absolute; left: 0; top: 0;}
 #logo img:nth-last-of-type(1) {opacity: 0;}
