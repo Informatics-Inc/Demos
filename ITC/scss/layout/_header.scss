@@ -2,7 +2,7 @@
 /* ----------------------*/
 /* -- MENU AND HEADER -- */
 /* ----------------------*/
-#logo {max-width: 250px; display: block; position: relative;}
+#logo {max-width: 200px; display: block; position: relative;}
 .menu ul {font-family: var(--header);list-style: none; padding: 0; margin: 0;}
 
 #hdr-search form div {position: relative; width: 100%;}
@@ -12,7 +12,7 @@
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
-.mobile-header {padding: 20px var(--spacer); display: grid; grid-template-columns: auto 40px; gap: 50px;}
+.mobile-header {padding: 20px 0px; display: grid; grid-template-columns: auto 40px; gap: 510px;}
 .desktop-header #logo, .hidden-sm {display: none !important;}
 
 /* Menu Toggle */
@@ -133,47 +133,14 @@
 #site-header.scroll #menu-main > li > a, #site-header.light #menu-main > li > a {color: var(--dark);}
 
 .hidden-lg {display: none !important;}
-#mega-menu {position: fixed; top: 118px; width: calc(100vw - 100px); left: 50px; background: #fff; display: grid; grid-template-columns: auto 25%; border-radius: 5px; @include dark-shadow; opacity: 0; visibility: hidden; transition: var(--transition)}
-#mega-menu:before {position: absolute; left: calc(50vw + 60px); top: -5px; content: ""; border-left: 7px solid transparent;border-right: 7px solid transparent;border-bottom: 5px solid #fff;}
-#mega-menu a {@include right-caret; padding: 0; margin: 0;}
-#mega-menu .menu-links {display: grid; grid-template-columns: repeat( auto-fit, minmax(180px, 1fr) ); gap: 25px; padding: 25px;}
-#mega-menu .menu-links .col > a:first-of-type {color: var(--primary); text-transform: uppercase;  font-weight: 600; padding: 15px 0; font-size: .9rem;}
-#mega-menu .menu-links .col > a:first-of-type:hover {text-decoration: underline;}
-#mega-menu .menu-links .col > a:first-of-type:hover:after {margin-left: 5px;}
-#mega-menu .menu-links .col ul {position: relative; top: 0; left: 0; width: auto; background: none; opacity: 1; visibility: visible; columns: 1; box-shadow: none; padding: 0; margin: 0;}
-#mega-menu .menu-links .col ul:before {display: none;}
-#mega-menu .menu-links .col ul a {color: var(--text-color); padding: 5px 5px 5px 0;}
-#mega-menu .menu-links .col p {color: #75767a; font-size: .825rem;}
-
-#mega-menu .menu-info {background: url(../img/footer-cta-sm.svg) right bottom no-repeat var(--primary); background-size: 200px auto; border-radius: 0 5px 5px 0;}
-#mega-menu .menu-info a {padding: 0; margin: 0; height: 100%; padding: 25px;}
-#mega-menu .menu-info a:hover {background: rgba(0,0,0,.1); padding: 25px;}
-#mega-menu .menu-info .title {font-size: 1.25rem; text-transform: uppercase; margin: 0 0 1rem 0; display: block;}
-#mega-menu .menu-info p {text-transform: none; letter-spacing: normal;}
-#mega-menu .menu-info .link {text-transform: none; font-weight: 600; letter-spacing: normal; position: relative; padding-left: 35px;}
-#mega-menu .menu-info .link:before {position: absolute; left: 0; top: 8px; height: 3px; background: var(--secondary); content: ""; width: 25px;}
-#mega-menu .menu-info .link:hover {text-decoration: underline;}
-#menu-main li:hover > #mega-menu {opacity: 1; visibility: visible; top: 108px}
 }
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
-    #menu-main a {font-size: 1.25rem; padding: 30px 0; margin: 0 0 0 2.75rem;}
-    #mega-menu {top: 134px;}
-    #menu-main li:hover > #mega-menu {top: 124px;}
-    #mega-menu {grid-template-columns: auto 22%;}
-    #mega-menu .menu-links .col > a:first-of-type {margin: 0;}
-    #mega-menu:before {left: calc(50vw - 12px);}
 }
 /* SUPER WIDE DESKTOP */
 @media (min-width: 1500px) {
     #menu-main a {font-size:1.25rem;}
     .search-close-wrapper {left: var(--side-width);}
     #search-close { margin-right: 50px;}
-    #mega-menu {width: 1400px; left: var(--side-width);}
-    #mega-menu .menu-links {padding: 25px 25px 40px 40px; gap: 40px;}
-    #mega-menu .menu-info a {padding: 40px;}
-    #mega-menu .menu-info a:hover {padding: 40px;}
-
-    #mega-menu:before {left: calc(50vw + 88px);}
 }
