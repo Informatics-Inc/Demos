@@ -4,11 +4,11 @@
 /* ----------------------*/
 #logo {max-width: 200px; display: block; position: relative;}
 .menu ul {list-style: none; padding: 0; margin: 0;}
-
 #hdr-search form div {position: relative; width: 100%;}
 #hdr-search input[type=text] {border-radius: 5px; width: 100%; color: #000; border: 2px solid var(--light-gray); padding: 7px 50px 7px 10px; font-size: .8rem;}
 #hdr-search input[type=submit] {position: absolute; right: 0; top: 0; height: 100%; width: 40px; background: none; text-indent: -999em; border: none;}
 #hdr-search form div:after {width: 40px; height: 100%; content: url(../../img/mobile-search.svg); position: absolute; right: 0; top: 0; display: grid; place-content: center;}
+#menu-main a {font-family:var(--header);font-size:1.3125rem}
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
@@ -44,7 +44,7 @@
 /* Menu Main */
 #menu-main {background: var(--primary);}
 #menu-main li {display: block; border-bottom: 1px solid rgba(255,255,255,.15); position: relative;}
-#menu-main a {font-family:var(--header);color:var(--dark); font-size: 1.125rem; text-transform: uppercase; font-weight: 600; letter-spacing: 1px; display: block; width: 100%; padding: 15px calc(var(--spacer)); @include right-caret;}
+#menu-main a {color:var(--dark); font-size: 1.125rem; font-weight: 600; letter-spacing: 1px; display: block; width: 100%; padding: 15px calc(var(--spacer)); @include right-caret;}
 #menu-main ul li {margin: 0 0 0 calc(var(--spacer)*2);}
 #menu-main ul a {text-transform: none; letter-spacing: normal; font-size: .875rem; font-weight: 500; padding: 9px 5px 9px 0;}
 
@@ -79,7 +79,7 @@
 #site-header {width: 100%; position: fixed; left: 0; right: 0; top: 0;align-items: center; z-index: 15; transition: var(--transition);}
 #site-header:after {width: 100%; height: 40px; background: #fff; border-bottom: 1px solid rgba(0,0,0,.15); top: 0; content: ""; position: absolute; left: 0;}
 #menu-main {display: flex; justify-content: flex-end;}
-#menu-main a {text-transform: uppercase; font-weight: 400; ;color:var(--dark); padding:  25px 0; font-size: .825rem; display: block; margin: 0 0 0 1.5rem; position: relative; letter-spacing: 1px;}
+#menu-main a {font-weight: 400; color:var(--dark); padding:  25px 0; display: block; margin: 0 0 0 1.5rem; position: relative; letter-spacing: 1px;}
 
 #menu {display: block;padding: 65px 0px 20px 0px;}
 
@@ -121,7 +121,7 @@
 #menu-utility ul:before {position: absolute; left: 25px; top: -5px; content: "";    width: 0; height: 0; border-left: 7px solid transparent;border-right: 7px solid transparent;border-bottom: 5px solid var(--primary);}
 #menu-utility li ul {position: absolute; left: 0; top: 35px; width: 515px; background: var(--primary); @include dark-shadow; display: block; border-radius: 0 0 5px 5px; columns: 2; padding: 20px; z-index: 5;visibility: hidden; opacity: 0; transition: var(--transition);}
 #menu-utility ul.locations {width: 300px;}
-#menu-utility li ul a {;color:var(--dark);  text-transform: none; display: block; padding: 5px 0; min-width: 100px; @include right-caret;}
+#menu-utility li ul a {color:var(--dark);text-transform:none;display:block;padding:5px 0; min-width:100px; @include right-caret;}
 #menu-utility ul a:hover {}
 #menu-utility ul a:hover:after {margin-left: 7px;}
 #menu-utility li:hover ul {opacity: 1; top: 32px; visibility: visible;}
@@ -140,7 +140,6 @@
 }
 /* SUPER WIDE DESKTOP */
 @media (min-width: 1500px) {
-    #menu-main a {font-size: 1rem;}
     .search-close-wrapper {left: var(--side-width);}
     #search-close { margin-right: 50px;}
 }

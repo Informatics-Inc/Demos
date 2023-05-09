@@ -167,27 +167,32 @@
 
 
   <!-- Section - Carousel -->
-  <div class="container-fluid position-relative clip">
+  <div class="container-fluid clip">
       <!-- Section - Carousel -->
-      <div class="container align-items-center">
-        <div class="col-lg-4 bg-primary position-absolute">
-          <h2>Explore the power grid</h2>
+     <!--  <div class="container h-100">
+        <div class="col-lg-4 d-flex align-items-center h-100 bg-primary carousel-content ">
+          <div><h2>Explore the power grid</h2>
           <p>Find frequently requested information about ITC’s operations and the U.S. power grid.d frequently requested informd frequently requested inform</p>
         </div>
       </div>
-    <div class="row">
-      <div class="col-lg-8 offset-lg-4">
-        <div class="row mx-auto my-auto justify-content-center">
+      </div> -->
+    <div class="row spacer50">
+      <div class="col-lg-4 d-flex align-items-center spacer-lg-left">
+        <div><h2>Explore the power grid</h2>
+        <p>Find frequently requested information about ITC’s operations and the U.S. power grid.d frequently requested informd frequently requested inform</p></div>
+      </div>
+      <div class="col-lg-8">
+        <div class="row mx-auto ">
           <div id="ITCcarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="col">
                   <div class="card h-100">
-                    <div class="card-img-top"><img src="img/carousel-2.jpg" alt="Card image cap">
+                    <div class="card-img-top"><img src="img/carousel-1.jpg" alt="Card image cap">
                     </div>
                     <div class="card-body gradient-border">
-                      <h4>Our Operations</h4>
-                      <p class="card-text">How we maintain the reliability of your power.</p>
+                      <h4>Today’s power Grid</h4>
+                      <p class="card-text">Learn about the history of the power grid and the changes we’re navigating now..</p>
                       <a href="#" class="btn-arrow">Learn More<i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -199,8 +204,8 @@
                     <div class="card-img-top"><img src="img/carousel-2.jpg" alt="Card image cap">
                     </div>
                     <div class="card-body gradient-border">
-                      <h4>Our Operations</h4>
-                      <p class="card-text">How we maintain the reliability of your power.</p>
+                      <h4>Safety & Security</h4>
+                      <p class="card-text">Keeping workers, farmers and the public safe around our infrastructure.</p>
                       <a href="#" class="btn-arrow">Learn More<i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -209,7 +214,7 @@
               <div class="carousel-item">
                 <div class="col">
                   <div class="card h-100">
-                    <div class="card-img-top"><img src="img/carousel-2.jpg" alt="Card image cap">
+                    <div class="card-img-top"><img src="img/carousel-3.jpg" alt="Card image cap">
                     </div>
                     <div class="card-body gradient-border">
                       <h4>Our Operations</h4>
@@ -234,7 +239,7 @@
               </div>
             </div>
 
-            <div class="col position-relative bg-primary p-4 mt-4">
+            <div class="col position-relative p-4">
               <div class="carousel-indicators">
               <button type="button" data-bs-target="#ITCcarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#ITCcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -275,49 +280,6 @@
       }
   })
   </script>
-  
-  <style>
-  
-  .clip{background-color: aquamarine; position: relative;}
-  .carousel-inner{width:calc(100% + 170px)}
-  #ITCcarousel{overflow:hidden;width:100%;background:#333}
-  
-  @media (max-width: 767px) {
-  .carousel-inner .carousel-item > div {
-  display: none;
-  }
-  .carousel-inner .carousel-item > div:first-child {
-  display: block;
-  }
-  .carousel-inner{width:calc(100% + 0px)}
-  
-  }
-  
-  .carousel-inner .carousel-item.active,
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-      display: flex;
-  }
-  
-  /* medium and up screens */
-  @media (min-width: 768px) {
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-  transform: translateX(33.333%);
-  }
-      
-  .carousel-inner .carousel-item-start.active, 
-  .carousel-inner .carousel-item-prev {
-  transform: translateX(-33.333%);
-  }
-  }
-  
-  .carousel-inner .carousel-item-end,
-  .carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-  }
-  
-</style>
 
 
 <!-- Section - Partner You Can Trust -->
