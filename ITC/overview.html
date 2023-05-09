@@ -17,11 +17,122 @@
   </head>
   <body>
 
-<header id="site-header">
-</header>
-<main id="main-content">
 
-  <section class="hero d-flex align-items-center">  
+    <header id="site-header"> <!-- HEADER -->
+      <div class="container position-relative">
+      <div class="mobile-header">
+        <a href="index.html" id="logo">
+          <img src="img/ITC-Logo.png" alt="ITC Logo" />
+        </a>
+        <button id="menu-toggle"   class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+          <div class="closed">
+            Menu
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="open">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+      </div>
+    
+      <!-- MENU -->
+      <nav id="menu" class="menu collapse">
+        <div class="desktop-header">
+          <a href="index.html" id="logo">
+            <img src="img/ITC-Logo.png" alt="ITC Logo " />
+            <img src="img/ITC-Logo.png" alt="ITC Logo " />
+          </a>
+          <div id="hdr-search">
+            <div class="search-close-wrapper">
+              <button id="search-close" class="search-toggle"><img src="img/search-close.svg"/>Close</button>
+            </div>
+            <img src="img/ITC-Logo.png" class="logo" />
+            <form role="search" method="get" id="searchform" class="searchform">
+              <div>
+                <input type="text" value="" name="s" id="s" placeholder="SEARCH">
+                <input type="submit" id="searchsubmit" value="Search">
+              </div>
+            </form>
+          </div>
+    
+          <ul id="menu-main">
+            <li><a href="">Our Company</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-1" class="collapse">
+                <li><a href="">Management</a></li>
+                <li><a href="">Board of Directors</a></li>
+                <li><a href="">ITC History</a></li>
+                <li><a href="">Investor Relations</a></li>
+
+              </ul>
+            </li> 
+            <li><a href="">Community Impact</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-2" class="collapse">
+                <li><a href="">Vegetation Management</a></li>
+                <li><a href="">Environmental Stewardship</a></li>
+                <li><a href="">Community Commitment</a></li>
+                <li><a href="">Public Safety</a></li>
+                <li><a href="">Land Owners</a></li>
+                <li><a href="">Inclusion & Diversity</a></li>
+              </ul>
+            </li>
+            <li><a href="">Operating The Greater Grid</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-3" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-3" class="collapse">
+                <li><a href="">Resilience & Reliability</a></li>
+                <li><a href="">Today's Power Grid</a></li>
+                <li><a href="">Operations</a></li>
+                <li><a href="">Safety & Security</a></li>
+                <li><a href="">Case Studies</a></li>
+              </ul>
+            </li>
+            <li><a href="">Careers</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-4" class="collapse">
+                <li><a href="">Culture & Values</a></li>
+                <li><a href="">Innovation</a></li>
+                <li><a href="">Students & Graduates</a></li>
+                <li><a href="">Open Positions</a></li>
+
+              </ul>
+            </li>
+            <li><a href="">Projects</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-5" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-5" class="collapse">
+                <li><a href="">Michigan</a></li>
+                <li><a href="">Midwest</a></li>
+                <li><a href="">Great Okaubs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul id="menu-utility">
+          <li><a href="">ITC Holdings</a></li>
+          <li><a href="">Michigan</a></li>
+          <li><a href="">Midwest</a></li>
+          <li><a href="">Great Plains</a></li>
+          <li class="secondary-menus"><a href="">Contact Us</a></li>
+          <li class="secondary-menus"><a href="">News Room</a></li>
+          <li class="secondary-menus hidden-sm"><a href="#.html" class="search-toggle"><i class="fa-solid fa-magnifying-glass "></i> Site Search</a></li>
+        </ul>
+
+    
+        <button class="menu-close-btm" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+          <p><img src="img/close-menu.svg"> Close Menu <img src="img/close-menu.svg"> </p>
+        </button>
+      </nav>
+    </div>
+ </header>
+
+
+
+ <main id="main-content"><!-- Page Content -->
+
+  <section class="hero hero-angle d-flex align-items-center">  
   <div class="container">
     <div class="row align-items-center">
 

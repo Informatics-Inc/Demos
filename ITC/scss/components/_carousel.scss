@@ -1,9 +1,10 @@
 .clip{position: relative;}
 .carousel-inner{width:calc(100% + 170px)}
 .carousel-content {position:absolute}
-#ITCcarousel{overflow:hidden;width:100%;background:#}
-#ITCcarousel .carousel-item .col{padding:40px 15px}
+#ITCcarousel{overflow:hidden;width:100%;}
+#ITCcarousel .carousel-item .col{padding:0px 15px}
 .spacer-lg-left{padding-left:240px}
+.col-lg-8 {padding:0px}
 
 @media (max-width: 767px) {
 .carousel-inner .carousel-item > div {display: none;}
@@ -12,6 +13,11 @@
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
+.carousel-inner{padding:40px 0px}
+.col{padding:0px 20px}
+#ITCcarousel{padding:0px}
+
+
 .spacer-lg-left{padding-left:15px}
 .carousel-inner{width:100%}
 .carousel-content {position:relative}
@@ -25,6 +31,7 @@
 
 /* medium and up screens */
 @media (min-width: 768px) {
+.carousel-inner{padding:40px}
 .carousel-inner .carousel-item-end.active,
 .carousel-inner .carousel-item-next {transform: translateX(33.333%);}
 .carousel-inner .carousel-item-start.active, 

@@ -44,10 +44,11 @@
   .side-angles-left{background: url(../img/angles-texture-left.jpg) no-repeat -10% 50%;background-size:50%;}
   .angle{background: url(../img/angles-single.png) no-repeat -300px 50%}
 
+  #main-content{padding-top:30px;padding-bottom:30px;}
 
 html {font-size: 100%;}
 body {
-font-family: var(--body); font-weight: 400; font-size: 1rem; background: var(--bkg); color: var(--text-color); 
+font-family: var(--body); font-weight: 400; font-size:1rem; background: var(--bkg); color: var(--text-color); 
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 -moz-font-feature-settings: "liga" on;
@@ -70,9 +71,6 @@ img + h2, img + h3, img + h4 {margin-top: 2rem;}
 p a {color: var(--primary); font-weight: 600;}
 p a:hover {text-decoration: underline;}
 .bkg-light {background: var(--light); padding: var(--spacer) 0;}
-
-#main-content{padding-top:50px;padding-bottom:50px}
-
 
 /* Project Details*/
 .more-cta .col-lg-4{text-align:center;}
@@ -114,6 +112,8 @@ p.callout-text{font-size:1.65em;line-height:1.25em;font-weight:300;}
 
 @media (min-width: 1500px) {
   .spacer150{padding-top:150px;padding-bottom:100px;}
+  #main-content{padding-top:50px;padding-bottom:50px;}
+
   h1 {font-size: 5.375rem;line-height: 5rem;}
   h2 {font-size: 3.75rem;line-height:3.75rem;}
   h3 {font-size: 1.75rem;}
@@ -123,6 +123,8 @@ p.callout-text{font-size:1.65em;line-height:1.25em;font-weight:300;}
 /* ONLY MOBILE */
 @media (max-width: 991px) {
   .more-cta-buttons{margin:30px 0px 0px 0px}
+  .side-angles{background-size:80%;}
+  .side-angles-left{background-size:80%;}
 
 }
 
