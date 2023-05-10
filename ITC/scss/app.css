@@ -12354,6 +12354,9 @@ p.callout-text {
   .side-angles-left {
     background-size: 80%;
   }
+  .angle {
+    background-position: 50% 100%;
+  }
 }
 /* ----------------------*/
 /* -- MENU AND HEADER -- */
@@ -13789,6 +13792,11 @@ h2.accordion-header, .accordion-header.h2 {
   filter: none;
 }
 
+/* Carousel Cards */
+.carousel-item .card:hover {
+  filter: var(--shadow);
+}
+
 /* Project Listing Cards */
 .project-listing .card-footer {
   padding: 20px;
@@ -13909,7 +13917,6 @@ h2.accordion-header, .accordion-header.h2 {
 .hero-angle {
   min-height: 550px;
   background: url(../img/angles-single.png) no-repeat;
-  background-position: calc(100% + 200px) 50%;
 }
 
 .hero .lead {
@@ -14000,6 +14007,9 @@ h1.home, .home.h1 {
   .hero, .page-hdr {
     margin-top: 185px;
   }
+  .hero-angle {
+    background-position: calc(100% + 200px) 50%;
+  }
 }
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
@@ -14011,6 +14021,9 @@ h1.home, .home.h1 {
 @media (max-width: 991px) {
   .hero, .page-hdr {
     margin-top: 0px;
+  }
+  .hero-angle {
+    background-position: 50% 100%;
   }
   .two-col .col {
     min-height: 300px;
@@ -14190,7 +14203,7 @@ h1.home, .home.h1 {
   padding-left: 240px;
 }
 
-.col-lg-8 {
+.itc-carousel-slider .col-lg-8 {
   padding: 0px;
 }
 
@@ -14207,7 +14220,7 @@ h1.home, .home.h1 {
   .carousel-inner {
     padding: 40px 0px;
   }
-  .col {
+  .itc-carousel-slider .col {
     padding: 0px 20px;
   }
   #ITCcarousel {

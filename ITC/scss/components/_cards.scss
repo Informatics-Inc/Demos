@@ -32,6 +32,8 @@
 .generic .h4{text-transform:none;}
 .generic .card:hover{filter:none;}
 
+/* Carousel Cards */
+.carousel-item .card:hover{ filter:var(--shadow);}
 
 /* Project Listing Cards */
 .project-listing .card-footer{padding:20px;background:#fff;border:none;}

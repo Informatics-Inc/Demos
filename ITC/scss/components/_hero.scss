@@ -1,4 +1,4 @@
-.hero-angle{min-height:550px;background: url(../img/angles-single.png) no-repeat; background-position:calc(100% + 200px) 50%}
+.hero-angle{min-height:550px;background: url(../img/angles-single.png) no-repeat; }
 .hero .lead{font-size:1.3125rem;margin-bottom:30px}
 .hero h1 span{color:var(--secondary)}
 h1.home{font-size:6.25rem;line-height:5.7rem;margin-bottom:15px}
@@ -15,26 +15,28 @@ h1.home{font-size:6.25rem;line-height:5.7rem;margin-bottom:15px}
 .one-col{overflow:hidden;position: relative;filter:var(--shadow);}
 .one-col img{min-height:400px;min-width:100%;object-fit:cover;object-position: center;}
 
-
 .hero, .page-hdr{margin-top:0px}
-@media (min-width: 992px) {
-    .hero, .page-hdr{margin-top:185px}
 
+
+
+@media (min-width: 992px) {
+.hero, .page-hdr{margin-top:185px}
+.hero-angle{ background-position:calc(100% + 200px) 50%}
 }
 
 @media (min-width: 1500px) { 
-   
 }
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
+
 .hero, .page-hdr{margin-top:185px}
 }
 
-
 /* ONLY MOBILE */
 @media (max-width: 991px) {
-    .hero, .page-hdr{margin-top:0px}
+.hero, .page-hdr{margin-top:0px}
+.hero-angle{ background-position:50% 100%}
 .two-col .col{min-height:300px} 
 .one-col img{min-height:400px;}
 }
