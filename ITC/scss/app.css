@@ -12008,6 +12008,7 @@ select {
   --spacer-vert: 80px;
   --shadow:drop-shadow(0px 10px 18px rgba(0, 0, 0, 0.15));
   --shadow-hover: drop-shadow(0px 10px 18px rgba(0, 0, 0, 0.25));
+  --shadow-small:drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.10));
 }
 
 /* SPACERS */
@@ -13793,8 +13794,8 @@ h2.accordion-header, .accordion-header.h2 {
 }
 
 /* Carousel Cards */
-.carousel-item .card:hover {
-  filter: var(--shadow);
+.carousel-item .card:hover, .carousel-item .card {
+  filter: var(--shadow-small);
 }
 
 /* Project Listing Cards */
@@ -14245,7 +14246,7 @@ h1.home, .home.h1 {
 /* medium and up screens */
 @media (min-width: 768px) {
   .carousel-inner {
-    padding: 40px;
+    padding: 40px 0px;
   }
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {

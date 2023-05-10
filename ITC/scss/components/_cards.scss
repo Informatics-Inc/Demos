@@ -33,7 +33,7 @@
 .generic .card:hover{filter:none;}
 
 /* Carousel Cards */
-.carousel-item .card:hover{ filter:var(--shadow);}
+.carousel-item .card:hover,.carousel-item .card{ filter:var(--shadow-small);}
 
 /* Project Listing Cards */
 .project-listing .card-footer{padding:20px;background:#fff;border:none;}
