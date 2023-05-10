@@ -120,7 +120,7 @@
 .search-toggle {margin-left: auto;}
 .search-toggle a {display: flex; gap: 5px;}
 
-#hdr-search {position: fixed; inset: 0; display: grid; place-content: center; background: rgba(62,63,67,.95); z-index: 10; transition: var(--transition); visibility: hidden; opacity: 0; }
+#hdr-search {position: fixed; inset: 0; display: grid; place-content: center;background: rgba(0, 64, 128, 0.8); z-index: 10; transition: var(--transition); visibility: hidden; opacity: 0; }
 #hdr-search.open {visibility: visible; opacity: 1;}
 #hdr-search input[type=text] {border-radius: 5px; width: 100%; color: #fff; border: 2px solid #75767A; padding: 15px 65px 15px 15px; font-size: .8rem; background: var(--dark);}
 #hdr-search input[type=text]::placeholder {color: #fff; opacity: 1; letter-spacing: 2px;}
