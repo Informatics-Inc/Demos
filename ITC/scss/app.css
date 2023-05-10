@@ -12840,7 +12840,7 @@ p.callout-text {
     inset: 0;
     display: grid;
     place-content: center;
-    background: rgba(0, 37, 74, 0.9);
+    background: rgba(0, 25, 51, 0.92);
     z-index: 10;
     transition: var(--transition);
     visibility: hidden;
