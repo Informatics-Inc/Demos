@@ -1,0 +1,32 @@
+/* FOOTER */
+/* Globals */
+.footer {font-size: .825rem; background: url(../img/bkg-ftr.jpg) center bottom repeat-x var(--light); padding: var(--spacer); padding-bottom: 25px;}
+.footer img {max-width: 175px; margin: 0 0 1.5rem 0;}
+.footer h4 {font-size: 1rem; font-weight: 700;}
+.footer ul {list-style: none; padding: 0; margin: 1rem 0;}
+.footer a {font-weight: 400; text-decoration-color: var(--text); display: block; padding: 5px 5px 5px 0; font-size: .9rem; border-radius: 4px;}
+.footer a:hover {padding: 5px 0 5px 5px;}
+.footer .county-list {list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat( auto-fit, minmax(105px, 1fr) ); column-gap: 10px;}
+.footer .county-list a {font-weight: 400; text-decoration-color: var(--text); display: block; padding: 3px; font-size: .825rem; border-radius: 4px;}
+.footer .county-list a:hover {padding: 3px 0 3px 6px; background: rgba(0,0,0,.1);}
+.footer hr {margin: 2.5rem 0; border-color: rgba(0,0,0,.1);}
+
+.copy {text-align: center; font-size: .9rem;}
+.copy ul {display: flex; margin: .5rem auto; justify-content: center;}
+.copy a {display: inline-block; padding: 0;}
+.copy a:hover {padding: inherit; padding: 0; text-decoration: none;}
+.copy ul a {padding: 10px;}
+.copy ul a:hover {padding: 10px; text-decoration: none;}
+.copy p {margin: 0;}
+
+/* TABLET */
+@media (min-width: 768px) {
+.ftr-cols {display: grid; grid-template-columns: 350px 1fr 1fr 1fr auto; gap: 50px;}
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

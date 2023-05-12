@@ -1,0 +1,77 @@
+/* Variables */
+:root {
+    --primary: #E77C24;
+    --primary-light: #F4974B;
+    --secondary: #353E1F;
+    --tertiary: #D9CEB0;
+    --gray: #D1D0CF;
+    --dark: #262626;
+    --light: #EDE8DB;
+    --bkg: #FAF9F7;
+  
+    --grid-gap: 25px;
+    --grid-gap-sm: 25px;
+    --spacer: 25px;
+    --spacer-vert: 25px;
+    --max-width: 1200px;
+    --side-width: calc(((100vw - var(--max-width))/2) + var(--spacer));
+    
+    --header: 'Poppins', sans-serif; 
+    --body: 'Poppins', sans-serif;
+    --text-color: rgba(0,0,0,.85);
+
+    --transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+
+/* TYPOGRAPHY */
+html {font-size: 100%;}
+body {
+font-family: var(--body); font-weight: 400; font-size: 1rem; background: var(--bkg); background-size: 100% auto; color: var(--text-color); 
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-moz-font-feature-settings: "liga" on;
+font-feature-settings: "liga";
+text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5 {font-family: var(--header); font-weight: 700; margin: 0 0 1.25rem 0; line-height: 1.1; color: var(--dark);}
+h1 {font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1.25rem;}
+h4 {font-size: 1rem; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;}
+
+p.lead {font-size: 1.25rem;}
+p.preheader {color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-weight: 600;}
+p, ul, ol {margin-bottom: 1.25rem;}
+hr {margin: 25px 0; border: none; border-bottom: 1px solid #ddd;}
+p.preheader + h2 {margin-top: -1rem;}
+
+/* Links & Buttons */
+a {transition: var(--transition); text-decoration: underline; text-decoration-color: var(--primary); font-weight: 600; color: var(--dark);}
+.btn-theme {background: var(--primary-light); color: var(--dark); padding: 10px 15px; border-radius: 4px; text-decoration: none; display: inline-block; @include right-arrow; display: inline-block;}
+.btn-theme:hover {background: var(--primary);}
+.btn-theme:hover:after {margin-left: 10px;}
+input {accent-color: var(--primary);}
+
+@media (min-width: 768px) {
+  :root {--spacer: 50px;--spacer-vert: 50px;}
+  h1 {font-size: 3rem;}
+  h2 {font-size: 1.75rem;}
+  h3 {font-size: 1.25rem;}
+  h4 {font-size: 1rem;}
+}
+/* DESKTOP */
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+  :root {--spacer-vert: 50px;}
+  h1 {font-size: 4rem;}
+  h2 {font-size: 2.25rem;}
+  h3 {font-size: 1.5rem;}
+  h4 {font-size: 1.25rem;}
+  p.lead {font-size: 1.5rem !important;}
+
+  .bkg-light {background: var(--light); padding: calc(var(--spacer) * 2) 0;}
+
+}

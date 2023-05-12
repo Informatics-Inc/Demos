@@ -1,0 +1,25 @@
+.container {@include container;}
+.grid {display: grid; gap: var(--spacer); align-items: center;}
+.grid-gap-xm {gap: 10px;}
+.grid-gap-sm {gap: 20px;}
+.grid-gap-md {gap: 30px;}
+.grid-gap-lg {gap: 40px;}
+.content-sections > * {margin: var(--spacer-vert) auto;}
+
+.auto-grid {display: grid; grid-template-columns: repeat( auto-fill, minmax(75px, 1fr) );}
+.auto-grid-5 {display: grid; grid-template-columns: repeat( auto-fill, minmax(175px, 1fr) );}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
+.grid-2 {grid-template-columns: 1fr 1fr;}
+}
+  
+@media (min-width: 992px) {
+.grid-3 {grid-template-columns: 1fr 1fr 1fr;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+}

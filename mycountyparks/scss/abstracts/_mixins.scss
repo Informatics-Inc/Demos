@@ -1,0 +1,46 @@
+@mixin right-arrow {
+ &:after {
+    content: "\f35a";
+    font-family: 'Font Awesome 6 Free'; 
+    margin-top: 4px;
+    margin-left: .2rem;
+    font-size: 1rem;
+    transition: var(--transition);
+    text-decoration: none;
+ }
+}
+@mixin container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacer);
+}
+@mixin vertical-space {
+    padding-top: var(--spacer-vert);
+    padding-bottom: var(--spacer-vert);
+}
+@mixin dark-shadow {
+    box-shadow: 0 25px 50px rgba(0,0,0,.2);
+}
+@mixin box-shadow-small {
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+}
+@mixin grid-12-col {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+.disable-scrollbars {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  
+    &::-webkit-scrollbar {
+      background: transparent; /* Chrome/Safari/Webkit */
+      width: 0px;
+    }
+  }
+@mixin after-dots {
+    &:after {
+    width: 150px; height: 150px; position: absolute; left: -75px; bottom: -75px; background: url(../img/dots.svg); content: ""; background-size: cover;}
+
+}

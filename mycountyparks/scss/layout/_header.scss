@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* ----------------------*/
+/* -- MENU AND HEADER -- */
+/* ----------------------*/
+.hdr-top {background: url(../img/pattern-1.jpg) left top repeat-x var(--secondary); padding: 0; background-size: 100% auto;}
+.hdr-top ul {list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; align-items: center; justify-content: center; display: none;}
+.hdr-top ul li {position: relative;}
+.hdr-top ul li:after {content: ""; width: 1px; height: 12px; background: rgba(255,255,255,.5); position: absolute; right: -10px; top: calc(50% - 6px);}
+.hdr-top ul li:last-of-type:after {display: none;}
+.hdr-top ul a {font-weight: 400; font-size: .775rem; text-decoration: none; color: #fff; opacity: .75; padding: 10px 0; display: block;}
+.hdr-top ul a:hover {opacity: 1;}
+.hdr-top .menu-blurb {margin: 0; font-size: .775rem; padding: 10px; color: rgba(255,255,255,.75); text-align: center;}
+
+.menu .container {display: grid; grid-template-columns: 150px auto; grid-template-rows: auto auto; align-items: center;}
+.menu .menu-main {grid-column: span 2; display: flex; justify-content: center; align-content: center; list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--gray); border-bottom: 1px solid var(--gray);}
+.menu .menu-main a {text-decoration: none; font-size: 1rem; padding: 15px 15px; font-weight: 500; display: block; position: relative;}
+.menu .menu-main .active a {font-weight: 700;}
+.menu .menu-main .active a:after {width: 100%; height: 5px; position: absolute; bottom: -1px; left: 0; background: var(--primary); content: "";}
+.menu .menu-main a:hover {text-decoration: underline;}
+
+#logo {max-width: 125px; display: block; position: relative; padding: 10px 0;}
+
+.menu-user {position: relative;justify-self: flex-end; display: flex; gap: 10px;}
+.menu-user > a { padding: 15px; background: var(--tertiary); border-radius: 50px; text-decoration: none; display: flex; gap: 10px; justify-self: flex-end; margin: 10px 0;}
+.menu-user > a i {font-size: 1.5rem;}
+.menu-user ul {list-style: none; padding: 0; margin: 0; position: absolute; top: 105%; right: 0; background: #fff; padding: 15px; box-shadow: 5px 5px 15px rgba(0,0,0,.15); z-index: 15; width: 200px; border-radius: 15px; opacity: 0; visibility: hidden; transition: var(--transition);} 
+.menu-user ul a {font-size: .9rem; padding: 10px; font-weight: 400; text-decoration: none; display: block; border-bottom: 1px dotted var(--gray);}
+.menu-user ul li:last-of-type a {border: 0;}
+.menu-user ul a:hover {padding: 10px 5px 10px 15px; text-decoration: underline; cursor: pointer;}
+.menu-user ul.open {opacity: 1; top: 100%; visibility: visible;}
+.menu-user .menu-alert {font-size: .6rem; padding: 3px; background: var(--primary); color: #fff; position: absolute; left: 8px; top: 19px; border: 2px solid var(--tertiary); border-radius: 15px; display: flex; justify-content: center; flex-direction: column; width: 18px; height: 18px; text-align: center;}
+.menu-user ul .menu-alert {border: 0; position: relative; left: 0; top: auto; float: left; margin: 3px 5px 0 0;}
+
+.qr-scan { padding: 15px; background: var(--tertiary); border-radius: 50px; text-decoration: none; display: flex; gap: 10px; justify-self: flex-end; margin: 10px 0; line-height: 1; font-size: .825rem;}
+.qr-scan img {width: 25px; mix-blend-mode: multiply;}
+
+/*
+.county-list {padding: 25px; display: none;}
+.county-list ul {list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 5px;}
+.county-list ul a {font-size: .825rem; padding: 5px; text-decoration: none; font-weight: 400; letter-spacing: -.5px; border-radius: 4px; display: block;}
+.county-list ul a:hover {text-decoration: underline; background: var(--light);}
+*/
+/* TABLET */
+@media (min-width: 768px) {
+.menu .container {grid-template-rows: auto;}
+.menu-user, #logo, .menu-main {grid-row: 1;}
+.menu-user {order: 3;}
+.menu .menu-main {border: none; justify-self: flex-end; margin: 0 1rem 0 0;}
+.menu .menu-main a {padding: 25px 15px;}
+#logo {max-width: 150px;}
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+.hdr-top .container {display: flex; justify-content: space-between;}
+.hdr-top ul {display: flex;}
+.menu .menu-main a {font-size: 1.15rem; padding: 35px 22px;}
+
+.menu .container {display: flex;}
+.qr-scan {display: none !important;}
+#logo {width: 150px; height: 75px; margin-right: auto; display: flex; justify-content: center; flex-direction: column;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+    #logo {width: 175px;}
+}
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}

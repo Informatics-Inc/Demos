@@ -1,0 +1,46 @@
+/* SCROLL ITEMS */
+/* Globals */
+/* Full Header */
+.full-hdr {display: grid; margin: 0 0 1rem 0;}
+.full-hdr hr {display: block; width: 100%; order: 3;}
+.full-hdr h3 {margin: 0; flex-shrink: 0;}
+.full-hdr a {margin: 0; flex-shrink: 0; font-size: .9rem;}
+
+.swiper {width: 100%;height: 100%;padding-bottom: 50px;}
+.swiper-pagination {bottom: 0;}
+.swiper-pagination-bullet {opacity: 1; background: var(--tertiary);}
+.swiper-pagination-bullet-active {background: var(--primary);}
+.swiper-button-next {height: 100%; width: 150px; top: 0; right: 0; justify-content: flex-end; padding-bottom: 100px;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(250,249,247,1) 100%); transition: var(--transition);
+}
+.swiper-button-next::after, .swiper-button-prev::after {font-size: 1.2rem; width: 35px; height: 35px; background: var(--dark); color: #fff; border-radius: 50%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-weight: 700;}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {opacity: 0;}
+.scroll-item figure {height: 300px; border-radius: 15px; overflow: hidden; box-shadow: 10px 10px 15px rgba(0,0,0,.15);}
+.scroll-item figure img {width: 100%; height: 100%; object-fit: cover; transition: var(--transition);}
+.scroll-item a {text-decoration: none;}
+.scroll-item h3 {font-weight: 500; text-decoration: none; margin: 1.25rem 0 1rem 0; font-size: 1.15rem;}
+.scroll-item ul {list-style: none; padding: 0; margin: 0; font-size: .825rem;}
+.scroll-item ul a {display: block; padding: 3px 0; font-weight: 400;}
+.scroll-item ul a i {color: var(--primary); margin: 0 .25rem 0 0;}
+.scroll-item a:hover {cursor: grab;}
+.scroll-item a:hover h3:hover, .scroll-item ul a:hover {text-decoration: underline; cursor: pointer;}
+.scroll-item:hover figure img {transform: scale(1.05);}
+
+.horizontal-items .scroll-item figure {height: 125px; border-radius: 5px;}
+.load-more {display: grid; justify-items: center; border-bottom: 1px solid var(--gray); padding: 2rem 0;}
+.load-more .btn-theme:after {content: "\f110"; transition: var(--transition); transform: rotate(25deg);}
+.load-more .btn-theme:hover:after, .load-more .btn-theme:focus:after {transform: rotate(250deg);}
+
+/* TABLET */
+@media (min-width: 768px) {
+.full-hdr {display: flex; justify-content: space-between; align-items: center; gap: 15px;}
+.full-hdr hr {order: 2;}
+.full-hdr a {order: 3;}
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
