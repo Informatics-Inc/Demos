@@ -1,6 +1,6 @@
 /* FOOTER */
 /* Globals */
-.footer {font-size: .825rem; background: url(../img/bkg-ftr.jpg) center bottom repeat-x var(--light); padding: var(--spacer); padding-bottom: 25px;}
+.footer {font-size: .825rem; background: url(../img/bkg-ftr.jpg) center bottom repeat-x var(--light); padding: var(--spacer); padding-bottom: 25px; margin-top: 2rem;}
 .footer img {max-width: 175px; margin: 0 0 1.5rem 0;}
 .footer h4 {font-size: 1rem; font-weight: 700;}
 .footer ul {list-style: none; padding: 0; margin: 1rem 0;}
@@ -26,6 +26,7 @@
 
 /* DESKTOP */
 @media (min-width: 992px) {
+.footer {padding-top: 75px;}
 }
 
 @media (min-width: 1200px) {

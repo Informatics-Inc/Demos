@@ -25,11 +25,15 @@
 .scroll-item a:hover {cursor: grab;}
 .scroll-item a:hover h3:hover, .scroll-item ul a:hover {text-decoration: underline; cursor: pointer;}
 .scroll-item:hover figure img {transform: scale(1.05);}
+.scroll-item .date {font-size: .85rem; margin: 1rem 0 -1rem 0; font-weight: 400; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center;}
+.scroll-item .date i {font-size: 4px; margin: 0 5px; color: var(--tertiary);}
 
 .horizontal-items .scroll-item figure {height: 125px; border-radius: 5px;}
 .load-more {display: grid; justify-items: center; border-bottom: 1px solid var(--gray); padding: 2rem 0;}
 .load-more .btn-theme:after {content: "\f110"; transition: var(--transition); transform: rotate(25deg);}
 .load-more .btn-theme:hover:after, .load-more .btn-theme:focus:after {transform: rotate(250deg);}
+
+.auto-grid-4.horizontal-items .scroll-item figure {height: 150px;}
 
 /* TABLET */
 @media (min-width: 768px) {

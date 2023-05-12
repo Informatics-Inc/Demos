@@ -2,7 +2,7 @@
 /* ----------------------*/
 /* -- MENU AND HEADER -- */
 /* ----------------------*/
-.hdr-top {background: url(../img/pattern-1.jpg) left top repeat-x var(--secondary); padding: 0; background-size: 100% auto;}
+.hdr-top {background: url(../img/pattern-1.jpg) center center repeat-x var(--secondary); padding: 0; background-size: 75% auto;}
 .hdr-top ul {list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; align-items: center; justify-content: center; display: none;}
 .hdr-top ul li {position: relative;}
 .hdr-top ul li:after {content: ""; width: 1px; height: 12px; background: rgba(255,255,255,.5); position: absolute; right: -10px; top: calc(50% - 6px);}
@@ -34,12 +34,6 @@
 .qr-scan { padding: 15px; background: var(--tertiary); border-radius: 50px; text-decoration: none; display: flex; gap: 10px; justify-self: flex-end; margin: 10px 0; line-height: 1; font-size: .825rem;}
 .qr-scan img {width: 25px; mix-blend-mode: multiply;}
 
-/*
-.county-list {padding: 25px; display: none;}
-.county-list ul {list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 5px;}
-.county-list ul a {font-size: .825rem; padding: 5px; text-decoration: none; font-weight: 400; letter-spacing: -.5px; border-radius: 4px; display: block;}
-.county-list ul a:hover {text-decoration: underline; background: var(--light);}
-*/
 /* TABLET */
 @media (min-width: 768px) {
 .menu .container {grid-template-rows: auto;}

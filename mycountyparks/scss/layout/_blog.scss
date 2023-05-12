@@ -1,42 +1,40 @@
 /* Blog List */
 .blog-list-item {display: grid; gap: 15px; padding: 25px 0; border-bottom: 1px dotted #ccc;}
-.blog-list-item .preheader {font-size: .8rem; font-weight: 700; color: #555;}
-.blog-list-item .preheader a {font-weight: 800;}
-.blog-list-item .text {align-content: flex-start;}
-.blog-list-item h2 {font-size: 2rem; line-height: 1.1; letter-spacing: -.5px;}
+.blog-list-item .preheader {font-size: .8rem; font-weight: 700; color: #555; font-weight: 400;}
+.blog-list-item .preheader a {font-weight: 600;}
+.blog-list-item .text {align-content: flex-start; font-size: .9rem;}
+.blog-list-item h2 {font-size: 1.5rem; line-height: 1.2; letter-spacing: -.5px;}
 .blog-list-item h2 a {color: var(--text); text-decoration: none;}
 .blog-list-item h2 a:hover {text-decoration: underline;}
 .blog-list-item .author {margin: 0 0 1rem 0; font-style: italic;}
-.content .tag-list {overflow: hidden; list-style: none !important; padding: 0; margin: 0;}
+.blog-list-item img {border-radius: 10px;}
+.blog-list-item:last-of-type {border: none;}
+.grid-blog aside {background: var(--light); padding: 20px; font-size: .825rem; border-radius: 15px;}
+.grid-blog aside h4 {font-size: 1rem;}
+.grid-blog aside h4 {border-top: 1px solid var(--gray); padding-top: 1rem;}
+.grid-blog aside h4:first-of-type {border: none; padding-top: .5rem;}
+.grid-blog aside > * {margin: 0 0 1rem 0;}
+
+.pagination {display: flex; justify-content: center; gap: 10px; padding: 2rem 0; border-bottom: 1px solid var(--gray);}
+.pagination .active {border: 2px solid var(--light); background: none;}
+
+.tag-list {overflow: hidden; list-style: none !important; padding: 0; margin: 0;}
 .tag-list li {float: left; margin: 0 5px 10px 0 !important;}
-.tag-list li a {padding: 4px 6px; background: #fff; font-size: .85rem; border-radius: 4px;}
+.tag-list li a {padding: 4px 6px; background: #fff; font-size: .85rem; border-radius: 4px; font-weight: 400; font-size: .825rem;}
 .tag-list li a:hover {background: none;}
-#pagination {font-size: 1rem; justify-content: center; display: flex; margin: 2rem 0 0 0;}
-#pagination li:before {display: none;}
-#pagination a {color: var(--primary);}
-#pagination .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-}
 
 .category-list {list-style: square; padding: 0 0 0 1rem;}
 .category-list li::marker {color: var(--primary);}
-.category-list a {display: block; padding: 3px;}
+.category-list a {display: block; padding: 3px; font-size: .825rem; font-weight: 400;}
 .category-list a:hover {padding: 3px 0 3px 6px;}
 
-.blog-header {border-bottom: 1px solid #ccc; margin: 1rem 0; text-align: center;}
-.blog-header h1 {color: var(--dark); font-size: 3rem; line-height: 1.2;}
-.blog-header .lead:before {left: calc(50% - 25px);}
-.social-share {text-align: center; margin-top: 1rem;}
-.social-share ul {text-align: center; font-size: 2rem; display: flex; justify-content: center; padding: 0;}
-.content .social-share li {margin: 0 5px; padding: 0;}
-.social-share li:before {display: none; padding: 0;}
-.social-share > a:last-of-type {font-size: .85rem;}
+.news-header {border-bottom: 1px solid #ccc; margin: 1rem 0;}
+.news-header h1 {color: var(--dark); font-size: 2.5rem; line-height: 1.2; margin: 1rem 0;}
+.news-header .lead:before {left: calc(50% - 25px);}
 
-.blog-search {margin: 0 0 1.5rem 0;}
-.blog-search form {display: flex;}
-.blog-search form input[type="text"] {border: 1px solid #ccc; border-radius: 5px 0 0 5px; background: #fff; border-right: none;}
-.blog-search form .btn-theme {background: var(--primary); color: #fff; border: none; padding: 5px 10px; border-radius: 0 5px 5px 0; font-size: .8rem;}
+.social-share {text-align: center; margin-top: 1rem;}
+.social-share li {margin: 0 15px; padding: 0;}
+.social-share a {font-size: 1.5rem; color: var(--primary); margin: 0 5px;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -48,3 +46,10 @@
 .blog-detail #hdr-basic {border-bottom: 1px solid #ccc; margin-bottom: 2rem; padding-bottom: 1rem;}
 .blog-detail #hdr-basic h1 {border: none; margin: 0 0 1rem 0; padding: 0;}
 .blog-detail img {margin: 0 0 2rem 0;}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+.grid-blog {grid-template-columns: 3.5fr 1.15fr; align-items: flex-start; gap: 50px;}
+
+.grid-blog aside {position: sticky; top: 30px;}
+}

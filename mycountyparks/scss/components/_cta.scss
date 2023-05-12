@@ -7,7 +7,7 @@
     border-radius: 15px;
   }
   
-  .content-cta:after {
+  .content-cta:before {
     content: "";
     display: block;
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -72,6 +72,8 @@
 /* DESKTOP */
 @media (min-width: 992px) {
   .content-cta .text {padding: 75px 50px 50px 50px;}
+  .content-cta {@include after-dots;}
+  .content-cta:after {left: auto; bottom: auto; top: -25px; right: -25px; width: 100px; height: 100px;}
 }
 
 

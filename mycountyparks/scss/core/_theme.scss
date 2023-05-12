@@ -54,6 +54,15 @@ a {transition: var(--transition); text-decoration: underline; text-decoration-co
 .btn-theme:hover:after {margin-left: 10px;}
 input {accent-color: var(--primary);}
 
+.btn-theme.btn-alt:after {display: none;}
+.btn-theme.btn-alt {background: var(--light);}
+
+.icon-text {position: relative; padding: 0 0 0 50px;}
+.icon-text strong {display: block; font-weight: 600; font-size: 1.1rem;}
+.icon-text i {position: absolute; left: 15px; top: calc(50% - .65rem); font-size: 1.25rem;}
+/* Small Type */
+
+
 @media (min-width: 768px) {
   :root {--spacer: 50px;--spacer-vert: 50px;}
   h1 {font-size: 3rem;}
@@ -73,5 +82,9 @@ input {accent-color: var(--primary);}
   p.lead {font-size: 1.5rem !important;}
 
   .bkg-light {background: var(--light); padding: calc(var(--spacer) * 2) 0;}
-
+  
+  .small-type {font-size: .9rem;}
+  .small-type h2 {font-size: 1.5rem; letter-spacing: normal; font-weight: 500;}
+  .small-type h3 {font-size: 1.25rem; letter-spacing: normal; font-weight: 500; margin: 2rem 0 1rem 0;}
+  .small-type p.lead {font-size: 1.15rem !important;}
 }

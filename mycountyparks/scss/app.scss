@@ -18,6 +18,7 @@ Date: Feb 2023
 @import "../bootstrap/scss/root";
 @import "../bootstrap/scss/transitions";
 @import "../bootstrap/scss/forms/form-check";
+@import "../bootstrap/scss/forms/form-select";
 /* Swiper */
 @import "vendors/swiper/swiper";
 
@@ -26,6 +27,9 @@ Date: Feb 2023
 
 // Swiper
 @import "vendors/swiper/swiper";
+
+// Lightbox
+@import "vendors/glightbox";
 
 // Core
 @import "core/reset";
@@ -36,6 +40,7 @@ Date: Feb 2023
 @import "layout/header";
 @import "layout/footer";
 @import "layout/layout";
+@import "layout/blog";
 @import "layout/wordpress";
 
 // Components
@@ -47,6 +52,7 @@ Date: Feb 2023
 @import "components/cta";
 @import "components/hero";
 @import "components/img-feature";
+@import "components/facility";
 
 
 
