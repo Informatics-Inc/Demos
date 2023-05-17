@@ -21,7 +21,7 @@
       <div class="container position-relative">
       <div class="mobile-header">
         <a href="index.html" id="logo">
-          <img src="img/ITC-Logo-search.png" class="ITC logo" />
+          <img src="img/ITC-Logo.svg" alt="ITC Logo" />
         </a>
         <button id="menu-toggle"   class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
           <div class="closed">
@@ -41,14 +41,13 @@
       <nav id="menu" class="menu collapse">
         <div class="desktop-header">
           <a href="index.html" id="logo">
-            <img src="img/ITC-Logo.png" alt="ITC Logo " />
-            <img src="img/ITC-Logo.png" alt="ITC Logo " />
+            <img src="img/ITC-Logo.svg" alt="ITC Logo " />
+            <img src="img/ITC-Logo.svg" alt="ITC Logo " />
           </a>
           <div id="hdr-search">
             <div class="search-close-wrapper">
               <button id="search-close" class="search-toggle"><img src="img/search-close.svg"/>Close</button>
             </div>
-            <img src="img/ITC-Logo.png" class="logo" />
             <form role="search" method="get" id="searchform" class="searchform">
               <div>
                 <input type="text" value="" name="s" id="s" placeholder="SEARCH">
@@ -143,8 +142,10 @@
               <i class="fa-solid fa-arrow-down-long"></i><span>Scroll</span>
           </div>
         </div>
-        <div class="col-lg-6 one-col">
-            <img class="image-fluid" src="img/hero-single1.jpg">
+        <div class="col-lg-6">
+          <figure class="img-single">
+              <img class="image-fluid" src="img/hero-single1.jpg">
+            </figure>
         </div>    
       </div>      
     </div>
@@ -165,16 +166,22 @@
       </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+      
   <!-- Section - Carousel -->
   <div class="container-fluid clip">
-      <!-- Section - Carousel -->
-     <!--  <div class="container h-100">
-        <div class="col-lg-4 d-flex align-items-center h-100 bg-primary carousel-content ">
-          <div><h2>Explore the power grid</h2>
-          <p>Find frequently requested information about ITC’s operations and the U.S. power grid.d frequently requested informd frequently requested inform</p>
-        </div>
-      </div>
-      </div> -->
+
     <div class="itc-carousel-slider row spacer50">
       <div class="col-lg-4 d-flex align-items-center spacer-lg-left">
         <div><h2>Explore the power grid</h2>
@@ -264,7 +271,6 @@
 
   <script>
     let items = document.querySelectorAll('.carousel .carousel-item')
-  
   items.forEach((el) => {
       const minPerSlide = 3
       let next = el.nextElementSibling
@@ -282,17 +288,14 @@
 
 
 <!-- Section - Partner You Can Trust -->
-<section class="bg-image-sec"><div class="corner-left"></div><div class="corner-right"></div>
+<section class="bg-image-sec "><div class="corner-left"></div><div class="corner-right"></div>
   <img src="img/picnic-bg.jpg" alt="ITC Career opportunities" class="img-fluid" >
-  <div class="container spacer100">
-    <div class="row">
-      <div class="col-lg-5">
+  <div class="container">
         <div class="callout-box bg-white gradient-border">
           <h2>A partner you can trust</h2>
           <p>Since acquiring our electric power systems in 2003, we’ve invested billions to improve performance and service reliability. Our networks now routinely rank among the top tier of utilities nationally, with roughly half the outages since 2009. </p>
           <p><a href="#" class="btn-primary">See Our Resilience & Reliability<i class="fa-solid fa-chevron-right"></i></a></p>
       </div>
-    </div>        
   </div>
 </div>
 </section>
@@ -381,7 +384,7 @@
         <li><a href="">Management</a></li>
         <li><a href="">Board of Directors</a></li>
         <li><a href="">ITC History</a></li>
-        <li><a href="">Ivestor Relations</a></li>
+        <li><a href="">Investor Relations</a></li>
         </ul>
     </div>
     <div class="footer-col">
