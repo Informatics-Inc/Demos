@@ -1,11 +1,15 @@
+
+/* Carousel Cards */
+.carousel-item .card{box-shadow: 2px 3px 8px 0 rgba(22,22,26,.10);}
+
 .clip{border-top:solid var(--light-gray) 1px ;position: relative;}
 .carousel-inner{width:calc(100% + 170px)}
 .carousel-content {position:absolute}
 #ITCcarousel{overflow:hidden;width:100%;}
 #ITCcarousel .carousel-item .col{padding:0px 15px}
-.spacer-lg-left{padding-left:240px}
+.spacer-lg-left{padding-left:200px}
 .itc-carousel-slider .col-lg-8 {padding:0px}
-
+.carousel .card{height:100%}
 @media (max-width: 767px) {
 .carousel-inner .carousel-item > div {display: none;}
 .carousel-inner .carousel-item > div:first-child {display: block;}

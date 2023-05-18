@@ -13283,20 +13283,18 @@ p.callout-text {
   }
 }
 .thm-btn {
-  font-size: 1.175rem;
-  line-height: 1.3rem;
-  padding: 15px 18px;
-  font-weight: 700;
   font-family: var(--bold-condensed) !important;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .btn-primary {
+  border-radius: none;
   font-size: 1.175rem;
   line-height: 1.3rem;
+  padding: 15px 18px;
+  font-weight: 700;
   border-bottom: solid var(--secondary) 4px;
-  padding: 2px 0;
   color: var(--primary);
   font-family: var(--header) !important;
   font-weight: 700;
@@ -13320,6 +13318,11 @@ p.callout-text {
 }
 
 .btn-secondary {
+  border-radius: none;
+  font-size: 1.175rem;
+  line-height: 1.3rem;
+  padding: 15px 18px;
+  font-weight: 700;
   border: solid var(--secondary) 2px;
   color: var(--secondary);
   background: #fff;
@@ -13332,6 +13335,11 @@ p.callout-text {
 }
 
 .btn-secondary-solid {
+  border-radius: none;
+  font-size: 1.175rem;
+  line-height: 1.3rem;
+  padding: 15px 18px;
+  font-weight: 700;
   border: solid var(--secondary) 2px;
   color: #fff;
   background: var(--secondary);
@@ -13854,11 +13862,6 @@ h2.accordion-header, .accordion-header.h2 {
   text-transform: none;
 }
 
-/* Carousel Cards */
-.carousel-item .card {
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.15);
-}
-
 /* Project Listing Cards */
 .project-listing .card-footer {
   padding: 20px;
@@ -14330,6 +14333,11 @@ h1.home, .home.h1 {
     margin-bottom: 50px;
   }
 }
+/* Carousel Cards */
+.carousel-item .card {
+  box-shadow: 2px 3px 8px 0 rgba(22, 22, 26, 0.1);
+}
+
 .clip {
   border-top: solid var(--light-gray) 1px;
   position: relative;
@@ -14353,11 +14361,15 @@ h1.home, .home.h1 {
 }
 
 .spacer-lg-left {
-  padding-left: 240px;
+  padding-left: 200px;
 }
 
 .itc-carousel-slider .col-lg-8 {
   padding: 0px;
+}
+
+.carousel .card {
+  height: 100%;
 }
 
 @media (max-width: 767px) {
