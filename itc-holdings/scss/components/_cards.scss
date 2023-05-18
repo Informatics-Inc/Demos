@@ -23,9 +23,10 @@
 .info-box{font-weight:700;text-transform:uppercase;font-family:var(--bold-condensed);font-size:1.10rem;bottom:0px;left:0;padding:5px 10px;position: absolute;text-align: center;color: #fff;z-index: 1;background-color: var(--tertiary);}
 
 .cta-cards-color p{margin-bottom:1.5em}
+
 /* Generic Cards */
 .generic .card-img-top{position:relative;height:170px;overflow:hidden;border-radius: 0;}
-.generic .card-img-top img{height:100%;width:auto;object-position: bottom;object-fit:contain;}
+.generic .card-img-top img{height:100%;width:100%;object-position: bottom;object-fit:contain;}
 .generic .card-body{padding:15px 0px}
 .generic .card{border:none;padding:15px;}
 .generic .h4{text-transform:none;}
@@ -44,6 +45,7 @@
 .project-listing .card-img-top img{height:250px;}
 }
 @media (max-width: 450px) {
+.generic .card-img-top{height:120px;}
  .project-listing .card-img-top{height:250px}
  .project-listing .card-img-top img{height:250px;}
 }
