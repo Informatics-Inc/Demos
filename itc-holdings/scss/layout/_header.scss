@@ -8,7 +8,7 @@
 #hdr-search form div {position: relative; width: 100%;}
 #hdr-search input[type=text] {border-radius: 5px; width: 100%; color: #000; border: 2px solid var(--light-gray); padding: 7px 50px 7px 10px; font-size: .8rem;}
 #hdr-search input[type=submit] {position: absolute; right: 0; top: 0; height: 100%; width: 40px; background: none; text-indent: -999em; border: none;}
-#hdr-search form div:after {width: 40px; height: 100%; content: url(../../img/mobile-search.svg); position: absolute; right: 0; top: 0; display: grid; place-content: center;}
+#hdr-search form div:after {width: 40px; height: 100%; content: url(../../img/search-icon.png); position: absolute; right: 0; top: 0; display: grid; place-content: center;}
 #menu-main a {font-family:var(--header);}
 
 /* ONLY MOBILE */
