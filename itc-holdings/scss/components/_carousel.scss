@@ -9,7 +9,8 @@
 #ITCcarousel .carousel-item .col{padding:0px 15px}
 .spacer-lg-left{padding-left:200px}
 .itc-carousel-slider .col-lg-8 {padding:0px}
-.carousel .card{height:100%}
+.carousel .card-body{min-height:215px}
+
 @media (max-width: 767px) {
 .carousel-inner .carousel-item > div {display: none;}
 .carousel-inner .carousel-item > div:first-child {display: block;}
@@ -24,8 +25,8 @@
 .spacer-lg-left{padding-left:15px}
 .carousel-inner{width:100%}
 .carousel-content {position:relative}
-
 }
+
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {

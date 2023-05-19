@@ -14370,8 +14370,8 @@ h1.home, .home.h1 {
   padding: 0px;
 }
 
-.carousel .card {
-  height: 100%;
+.carousel .card-body {
+  min-height: 215px;
 }
 
 @media (max-width: 767px) {
