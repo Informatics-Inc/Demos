@@ -12412,17 +12412,6 @@ p.callout-text {
   border: none;
 }
 
-#hdr-search form div:after {
-  width: 40px;
-  height: 100%;
-  content: url(../../img/search-icon.png);
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: grid;
-  place-content: center;
-}
-
 #menu-main a {
   font-family: var(--header);
 }
@@ -12893,9 +12882,6 @@ p.callout-text {
   #hdr-search form div {
     width: 70vw;
     max-width: 800px;
-  }
-  #hdr-search form div:after {
-    content: url("img/search-icon.png");
   }
   .search-close-wrapper {
     position: absolute;
@@ -14270,6 +14256,13 @@ h1.home, .home.h1 {
   .margin-overlay {
     margin-top: 20px;
     margin-bottom: -20px;
+  }
+}
+@media (max-width: 450px) {
+  .quote-box {
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
   }
 }
 /* logos */

@@ -23,3 +23,7 @@
     .quote-box{width:100%;margin:0 auto;overflow: hidden;}
     .margin-overlay{margin-top:20px;margin-bottom:-20px;}
 }
+
+@media (max-width: 450px) {
+  .quote-box{width:98%;margin:0 auto;overflow: hidden;}
+}

@@ -8,7 +8,6 @@
 #hdr-search form div {position: relative; width: 100%;}
 #hdr-search input[type=text] {border-radius: 5px; width: 100%; color: #000; border: 2px solid var(--light-gray); padding: 7px 50px 7px 10px; font-size: .8rem;}
 #hdr-search input[type=submit] {position: absolute; right: 0; top: 0; height: 100%; width: 40px; background: none; text-indent: -999em; border: none;}
-#hdr-search form div:after {width: 40px; height: 100%; content: url(../../img/search-icon.png); position: absolute; right: 0; top: 0; display: grid; place-content: center;}
 #menu-main a {font-family:var(--header);}
 
 /* ONLY MOBILE */
@@ -130,7 +129,6 @@
 #hdr-search .logo {margin: -50px auto 2rem auto}
 
 #hdr-search form div {width: 70vw; max-width: 800px;}
-#hdr-search form div:after {content: url("img/search-icon.png")}
 .search-close-wrapper {position: absolute; top: 0; left: 0; width: 100%; @include container; display: flex; justify-content: flex-end;}
 #search-close {background: none; text-transform: uppercase; color: #fff; font-size: .825rem; border: none; padding:10px 3px 10px 0; letter-spacing: 1px; font-weight: 600; display: flex; gap: 5px; margin: 0 0;}
 #search-close:hover {cursor: pointer;}
