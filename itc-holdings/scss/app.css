@@ -14384,6 +14384,9 @@ h1.home, .home.h1 {
 }
 /* ONLY MOBILE */
 @media (max-width: 991px) {
+  .carousel .card-body {
+    min-height: 215px;
+  }
   .carousel-inner {
     padding: 40px 0px;
   }
@@ -14411,6 +14414,9 @@ h1.home, .home.h1 {
 
 /* medium and up screens */
 @media (min-width: 768px) {
+  .carousel .card-body {
+    min-height: 315px;
+  }
   .clip {
     border-top: none;
   }
@@ -14424,6 +14430,11 @@ h1.home, .home.h1 {
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-33.333%);
+  }
+}
+@media (min-width: 1200px) {
+  .carousel .card-body {
+    min-height: 215px;
   }
 }
 .carousel-inner .carousel-item-end,
