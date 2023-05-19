@@ -13480,7 +13480,7 @@ p.callout-text {
   color: var(--secondary);
 }
 
-.sidebar-image a:hover {
+.sidebar-image a:hover, .overlay a.btn-arrow:hover {
   color: #fff !important;
 }
 
