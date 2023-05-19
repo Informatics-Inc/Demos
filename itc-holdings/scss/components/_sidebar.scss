@@ -1,7 +1,7 @@
 /* Sidebar Image */
 .sidebar-image-title{font-size:1.5rem;font-weight:300;line-height:1.75rem;color:#ffffff}
 .sidebar-image a{color:var(--secondary)}
-.sidebar-image a:hover{color:#fff}
+.sidebar-image a:hover{color:#fff!important}
 .sidebar-image img{height:100%;width:100%;object-fit: cover;object-position: center;}
 .sidebar-image .text-left{padding:30px 25px}
 .sidebar-image {position: relative;min-height:480px}

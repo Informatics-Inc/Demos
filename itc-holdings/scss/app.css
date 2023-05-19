@@ -13481,7 +13481,7 @@ p.callout-text {
 }
 
 .sidebar-image a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 .sidebar-image img {
