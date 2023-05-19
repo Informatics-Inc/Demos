@@ -13289,7 +13289,7 @@ p.callout-text {
 }
 
 .btn-primary {
-  border-radius: none;
+  border-radius: 0px;
   font-size: 1.175rem;
   line-height: 1.3rem;
   padding: 15px 18px;
@@ -13318,7 +13318,7 @@ p.callout-text {
 }
 
 .btn-secondary {
-  border-radius: none;
+  border-radius: 0px;
   font-size: 1.175rem;
   line-height: 1.3rem;
   padding: 15px 18px;
@@ -13335,7 +13335,7 @@ p.callout-text {
 }
 
 .btn-secondary-solid {
-  border-radius: none;
+  border-radius: 0px;
   font-size: 1.175rem;
   line-height: 1.3rem;
   padding: 15px 18px;
@@ -14171,6 +14171,11 @@ h1.home, .home.h1 {
   .hero-angle {
     background-position: 50% 100%;
   }
+  .hero img {
+    max-height: 550px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
   .two-col .col {
     min-height: 300px;
   }
@@ -14254,8 +14259,11 @@ h1.home, .home.h1 {
 }
 /* ONLY MOBILE */
 @media (max-width: 991px) {
+  .quote-box p {
+    font-size: 1.35rem;
+  }
   .quote-box {
-    width: 92%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
   }

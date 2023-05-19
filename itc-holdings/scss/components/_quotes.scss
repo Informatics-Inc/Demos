@@ -19,7 +19,7 @@
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
-    
-    .quote-box{width:92%;margin:0 auto;overflow: hidden;}
+    .quote-box p{font-size:1.35rem;}
+    .quote-box{width:100%;margin:0 auto;overflow: hidden;}
     .margin-overlay{margin-top:20px;margin-bottom:-20px;}
 }
