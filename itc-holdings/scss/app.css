@@ -13519,7 +13519,7 @@ p.callout-text {
 
 .overlay {
   transition: var(--transition);
-  spadding: 30px 25px;
+  padding: 30px 25px;
   position: absolute;
   top: 0;
   left: 0;

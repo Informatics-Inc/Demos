@@ -8,7 +8,7 @@
 
 .image-container {position: relative;display: inline-block;}
 .image-container img {display: block;width: 100%;height: 100%;object-fit: cover;object-position: center;}
-.overlay {transition:var(--transition);spadding:30px 25px;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background:linear-gradient(to bottom, rgba(1, 67, 134, 0.4), rgba(1, 67, 134, 1));display: flex;align-items: end;justify-content: start;text-align: left;color: white;}
+.overlay {transition:var(--transition);padding:30px 25px;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background:linear-gradient(to bottom, rgba(1, 67, 134, 0.4), rgba(1, 67, 134, 1));display: flex;align-items: end;justify-content: start;text-align: left;color: white;}
 
 /* Sidebar Nav */
   .sidebar a.active{color:var(--primary)!important;font-weight:700;}
