@@ -19,7 +19,7 @@ $(window).scroll(function() {
 
 
 // -- ANIMATE IN TO VIEW -- //
-var $animation_elements = $('.animate-in, .btn-text, .fade-in');
+var $animation_elements = $('.animate-in, .btn-text');
 var $window = $(window);
 
 function check_if_in_view() {
@@ -42,6 +42,7 @@ $.each($animation_elements, function() {
 	}
 	});
 }
+
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
