@@ -1,7 +1,6 @@
 
 /* Carousel Cards */
 .carousel-item .card{box-shadow: 2px 3px 8px 0 rgba(22,22,26,.10);}
-
 .clip{border-top:solid var(--light-gray) 1px ;position: relative;}
 .carousel-inner{width:calc(100% + 170px)}
 .carousel-content {position:absolute}
@@ -43,17 +42,17 @@
 .carousel-inner .carousel-item-next {transform: translateX(33.333%);}
 .carousel-inner .carousel-item-start.active, 
 .carousel-inner .carousel-item-prev {transform: translateX(-33.333%);}
-}
-
-@media (min-width: 1200px) {
-.carousel .card-body{min-height:215px}
-}
-
-
+.spacer-lg-left{padding-left:50px}
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
 transform: translateX(0);
 }
+}
+@media (min-width: 1200px) {
+.carousel .card-body{min-height:215px}
+.spacer-lg-left{padding-left:100px}
+}
+
 .carousel-indicators [data-bs-target] {width: 6px;height: 6px;border-radius: 100%;background-color:#ccc;}
 .carousel-indicators .active[data-bs-target] {width: 6px;height: 6px;border-radius: 100%;background-color:var(--secondary)}
 .carousel-control-prev-icon {
