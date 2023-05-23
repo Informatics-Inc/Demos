@@ -13278,7 +13278,7 @@ p.callout-text {
   border-radius: 0px;
   font-size: 1.175rem;
   line-height: 1.3rem;
-  padding: 15px 18px;
+  padding: 5px 0px;
   font-weight: 700;
   border-bottom: solid var(--secondary) 4px;
   color: var(--primary);
