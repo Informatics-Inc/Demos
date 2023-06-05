@@ -12011,10 +12011,6 @@ select {
   --shadow-small:0px 7px 10px rgba(0, 0, 0, 0.10);
 }
 
-.secondary-contain.container {
-  max-width: 1200px;
-}
-
 /* SPACERS */
 .spacer50 {
   padding-top: 50px;
