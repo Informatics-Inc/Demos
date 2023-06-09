@@ -7,5 +7,5 @@
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
-    .wp-vert-class + .wp-vert-class {margin: calc(var(--spacer-vert) * 2) auto;} // or 2?
+.wp-vert-class + .wp-vert-class {margin: calc(var(--spacer-vert) * 2) auto;} // or 2?
 }

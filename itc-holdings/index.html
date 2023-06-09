@@ -13,15 +13,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/syx8mgl.css">
 
     <!-- CSS -->
-    <link href="scss/app.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
 
   </head>
   <body>
 
-  
-
-    <header id="site-header"> <!-- HEADER -->
+ <header id="site-header"> <!-- HEADER -->
       <div class="container position-relative ">
       <div class="mobile-header">
         <a href="index.html" id="logo">
@@ -46,12 +44,10 @@
         <div class="desktop-header">
           <a href="index.html" id="logo">
             <img src="img/ITC-logo.svg" alt="ITC Logo " />
-            <img src="img/ITC-logo.svg" alt="ITC Logo " />
           </a>
           <div id="hdr-search">
-            <div class="search-close-wrapper">
-              <button id="search-close" class="search-toggle"><img src="img/search-close.svg" alt="Search Close"/>Close</button>
-            </div>
+            
+            <button id="search-close" class="search-toggle"><i class="fa fa-close"></i> Close</button>
             <form role="search" method="get" id="searchform" class="searchform">
               <div>
                 <input type="text" value="" name="s" id="s" placeholder="SEARCH">
@@ -68,7 +64,6 @@
                 <li><a href="">Board of Directors</a></li>
                 <li><a href="">ITC History</a></li>
                 <li><a href="">Investor Relations</a></li>
-
               </ul>
             </li> 
             <li><a href="">Community Impact</a>
@@ -112,17 +107,19 @@
             </li>
           </ul>
         </div>
-        <ul id="menu-utility">
-          <li><a href="secondary.html">ITC Holdings</a></li>
-          <li><a href="">Michigan</a></li>
-          <li><a href="">Midwest</a></li>
-          <li><a href="">Great Plains</a></li>
-          <li class="secondary-menus"><a href="">Contact Us</a></li>
-          <li class="secondary-menus"><a href="">News Room</a></li>
-          <li class="secondary-menus hidden-sm"><a href="#.html" class="search-toggle"><i class="fa-solid fa-magnifying-glass "></i> Site Search</a></li>
-        </ul>
-
-    
+        <div id="menu-utility">
+          <ul class="opco-nav">
+            <li class="active"><a href="secondary.html">ITC Holdings</a></li>
+            <li><a href="">Michigan</a></li>
+            <li><a href="">Midwest</a></li>
+            <li><a href="">Great Plains</a></li>
+          </ul>
+          <ul class="mini-nav">
+            <li class="secondary-menus"><a href="">Contact Us</a></li>
+            <li class="secondary-menus"><a href="">News Room</a></li>
+            <li class="secondary-menus hidden-sm"><a href="#.html" class="search-toggle"><i class="fa-solid fa-magnifying-glass "></i> Site Search</a></li>
+          </ul>
+        </div>
         <button class="menu-close-btm" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
           <p><img src="img/close-menu.svg"> Close Menu <img src="img/close-menu.svg"  alt="Closed Menu"> </p>
         </button>
@@ -137,7 +134,7 @@
     <div class="row align-items-center">
 
       <div class="col-lg-6 py-4 spacer-right100 animate-in delay-2">
-        <h1 class="home text-uppercase"><span>Enablsing</span> Your Energy</h1>
+        <h1 class="home text-uppercase"><span>Enabling</span> Your Energy</h1>
         <p class="lead">At ITC, we're creating the power grid of tomorrow and delivering the energy of today.</p>
         <div class="text-center d-grid gap-2 d-md-flex justify-content-start">
           <a href="" class="thm-btn btn-secondary-solid px-4 me-md-2">Work With Us</a>

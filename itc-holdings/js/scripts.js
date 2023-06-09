@@ -43,58 +43,31 @@ $.each($animation_elements, function() {
 	});
 }
 
-
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
-//  -- SWIPER HOMEPAGE -- //
-var listArray = ["Education","Healthcare","Commercial"];
-var swiperHero = new Swiper('.swiper-hero', {
-  
-  // Optional parameters
-        loop: true,
-        autoplayDisableOnInteraction: false,
-        slidesPerView: 1,        
-        autoHeight: false,
-        autoplay: {
-            delay: 3500,
-        }, 
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
-		speed: 1250,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: 'true',
-            type: 'bullets',
-            renderBullet: function (index, className) {
-                return '<div class="' + className + '">' + '<p>'+ listArray[index]+'</p>' + '<i></i>' + '<b></b>'  + '</div>';
-              },
-        
-        },
-   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  
-})
-$(".swiper-button-pause").click(function(){
-  swiperHero.autoplay.stop();
-});
-
-// Project Detail Slider //
-var swiper = new Swiper(".detail-slider", {
-  loop: false,
-  slidesPerView: "auto",
-  centeredSlides: true,
+// Swiper Sliders //
+var swiper = new Swiper(".scroll-list", {
+  slidesPerView: 4,
+  spaceBetween: 25,
   grabCursor: true,
-  spaceBetween: 0,
-  initialSlide: 2,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1.5,
+    },
+    "@0.5": {
+      slidesPerView: 2,
+    },
+    "@.75": {
+      slidesPerView: 2.5,
+    }
+  },
 });
-

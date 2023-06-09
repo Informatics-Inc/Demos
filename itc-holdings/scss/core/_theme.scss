@@ -12,7 +12,7 @@
     --bkg: #fff;
  
     --spacer: 25px;
-    --max-width: 1500px;
+    --max-width: 1150px;
     --side-width: calc(((100vw - var(--max-width))/2) + var(--spacer));
     --header: alternate-gothic-condensed-a, sans-serif;
     --bold-condensed: trade-gothic-next-condensed, sans-serif;
@@ -90,6 +90,8 @@ p.callout-text{font-size:1.65em;line-height:1.25em;font-weight:300;}
 .page-item{border-radius:0;}
 .page-link{font-weight:700;margin:0px 10px;border-radius:0px!important;padding:10px 15x;color:var(--dark);background:var(--light)}
 .page-link.active,.page-link:hover{color:#fff;background:var(--secondary)}
+
+.container {max-width: 1175px;}
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {

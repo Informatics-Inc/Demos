@@ -13,13 +13,13 @@
     <link href='css/icons.min.css' rel='stylesheet'>
 
     <!-- CSS -->
-    <link href="scss/app.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
   </head> 
   <body>
 
-    <header id="site-header"> <!-- HEADER -->
-      <div class="container position-relative">
+  <header id="site-header"> <!-- HEADER -->
+      <div class="container position-relative ">
       <div class="mobile-header">
         <a href="index.html" id="logo">
           <img src="img/ITC-logo.svg" alt="ITC Logo " />
@@ -43,12 +43,10 @@
         <div class="desktop-header">
           <a href="index.html" id="logo">
             <img src="img/ITC-logo.svg" alt="ITC Logo " />
-            <img src="img/ITC-logo.svg" alt="ITC Logo " />
           </a>
           <div id="hdr-search">
-            <div class="search-close-wrapper">
-              <button id="search-close" class="search-toggle"><img src="img/search-close.svg"/>Close</button>
-            </div>
+            
+            <button id="search-close" class="search-toggle"><i class="fa fa-close"></i> Close</button>
             <form role="search" method="get" id="searchform" class="searchform">
               <div>
                 <input type="text" value="" name="s" id="s" placeholder="SEARCH">
@@ -65,7 +63,6 @@
                 <li><a href="">Board of Directors</a></li>
                 <li><a href="">ITC History</a></li>
                 <li><a href="">Investor Relations</a></li>
-
               </ul>
             </li> 
             <li><a href="">Community Impact</a>
@@ -79,7 +76,7 @@
                 <li><a href="">Inclusion & Diversity</a></li>
               </ul>
             </li>
-            <li><a class="active" href="secondary.html">Operating The Greater Grid</a>
+            <li><a href="secondary.html">Operating The Greater Grid</a>
               <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-3" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
               <ul id="menu-3" class="collapse">
                 <li><a href="">Resilience & Reliability</a></li>
@@ -109,20 +106,21 @@
             </li>
           </ul>
         </div>
-        
-        <ul id="menu-utility">
-          <li><a class="active" href="secondary.html">ITC Holdings</a></li>
-          <li><a href="">Michigan</a></li>
-          <li><a href="">Midwest</a></li>
-          <li><a href="">Great Plains</a></li>
-          <li class="secondary-menus"><a href="">Contact Us</a></li>
-          <li class="secondary-menus"><a href="">News Room</a></li>
-          <li class="secondary-menus hidden-sm"><a href="#.html" class="search-toggle"><i class="fa-solid fa-magnifying-glass "></i> Site Search</a></li>
-        </ul>
-
-    
+        <div id="menu-utility">
+          <ul class="opco-nav">
+            <li class="active"><a href="secondary.html">ITC Holdings</a></li>
+            <li><a href="">Michigan</a></li>
+            <li><a href="">Midwest</a></li>
+            <li><a href="">Great Plains</a></li>
+          </ul>
+          <ul class="mini-nav">
+            <li class="secondary-menus"><a href="">Contact Us</a></li>
+            <li class="secondary-menus"><a href="">News Room</a></li>
+            <li class="secondary-menus hidden-sm"><a href="#.html" class="search-toggle"><i class="fa-solid fa-magnifying-glass "></i> Site Search</a></li>
+          </ul>
+        </div>
         <button class="menu-close-btm" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
-          <p><img src="img/close-menu.svg"> Close Menu <img src="img/close-menu.svg"> </p>
+          <p><img src="img/close-menu.svg"> Close Menu <img src="img/close-menu.svg"  alt="Closed Menu"> </p>
         </button>
       </nav>
     </div>
@@ -167,7 +165,73 @@
         </div>
       </section>
 
-      
+  
+  <section class="content-with-scroll">
+    <div class="text">
+      <h2>Explore the power grid</h2>
+      <p>Find frequently requested information about ITC’s operations and the U.S. power grid.d frequently requested informd frequently requested inform</p>
+    </div>
+    <div class="scroll-cards">
+      <div class="scroll-item-wrapper">
+        <div class="swiper scroll-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-img-top"><img src="img/carousel-1.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body gradient-border">
+                  <h4>Today’s power Grid</h4>
+                  <p class="card-text">Learn about the history of the power grid and the changes we’re navigating now..</p>
+                  <a href="#" class="btn-arrow">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-img-top"><img src="img/carousel-2.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body gradient-border">
+                  <h4>Safety & Security</h4>
+                  <p class="card-text">Keeping workers, farmers and the public safe around our infrastructure.</p>
+                  <a href="#" class="btn-arrow">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-img-top"><img src="img/carousel-3.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body gradient-border">
+                  <h4>Our Operations</h4>
+                  <p class="card-text">How we maintain the reliability of your power.</p>
+                  <a href="#" class="btn-arrow">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-img-top"><img src="img/carousel-2.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body gradient-border">
+                  <h4>Our Operations</h4>
+                  <p class="card-text">How we maintain the reliability of your power.</p>
+                  <a href="#" class="btn-arrow">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Section - Carousel -->
   <div class="container-fluid clip">
 
@@ -252,7 +316,7 @@
           </div>
         </div>
 
-      </div>
+        </div>
     </div>
 
   </div>
