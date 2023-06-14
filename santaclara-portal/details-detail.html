@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Santa Clara Portal</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ccm.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<main id="main">
+  
+  <div class="tools">
+    <div class="language">
+      <button id="lang-btn" aria-controls="lang-options"><img src="img/flag-us.jpg" /><span>Language: English <i class="fa fa-caret-down"></i></span></button>
+      <ul id="lang-options">
+        <li><a href="#.html"><img src="img/flag-us.jpg" /> English</a></li>
+        <li><a href="#.html"><img src="img/flag-viet.jpg" /> Vietnamese</a></li>
+      </ul>
+    </div>
+    <div class="user-details">
+      <p>Logged in as <a href="#.html">Lisa Vazquez</a> | <a href="#.html">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a></p>
+    </div>
+  </div>
+
+  <div class="admin-wrapper">
+    <nav class="menu">
+      <div class="menu-wrapper">
+        <div class="menu-hdr">
+          <div class="brand">
+            <img src="img/logo.jpg" />
+            <p>Child Care Portal</p>
+          </div>
+          <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#menu-expand" aria-expanded="false" aria-controls="menu-expand"><i class="fa fa-bars"></i></span></button>
+        </div>
+        <div id="menu-expand" class="collapse">
+          <ul class="menu-links">
+            <li><a href="index.html"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="referrals.html"><i class="fa fa-check"></i>Approve/Deny Referrals</a>
+            </li>
+            <li class="active"><a href="details.html"><i class="fa fa-building"></i>Your Details</a>
+              <ul>
+                <li><a href="details-detail.html">Manage Admins</a></li>
+                <li><a href="details-detail.html">Referral & Vacancies</a></li>
+                <li><a href="details-detail.html">License Information</a></li>
+                <li><a href="details-detail.html">Public Information</a></li>
+                <li><a href="details-detail.html">Contact Information</a></li>
+                <li class="active"><a href="details-detail.html">Workforce Information</a></li>
+                <li><a href="details-detail.html">Transportation & Meals</a></li>
+                <li><a href="details-detail.html">Schedule Of Care</a></li>
+                <li><a href="details-detail.html">Payment & Subsidies</a></li>
+                <li><a href="details-detail.html">Qualifications</a></li>
+                <li><a href="details-detail.html">Program Information</a></li>
+              </ul>
+            </li>
+            <li><a href="family.html"><i class="fa fa-users"></i>Family Information</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="portal-content fadein">
+      <div class="portal-content-wrap">
+      <div class="portal-content-hdr">
+        <span class="hdr-wrap"><h1>Workforce Information</h1> <a href="#.html" class="btn-secondary"><i class="fa-solid fa-file-export"></i> Export Updates</a></span>
+        <p>Update your staff information here.</p>
+      </div>
+        <div class="ccm-ui">
+        <div class="panel panel-default">
+          <div class="panel-body">
+              <div class="ccm-pane-body">
+<form method="post" action="https://santaclara2.informaticsinc.com/index.php/dashboard/portal/providers/save_workforce_information">
+<div>
+<div class="row">
+  <div class="col-sm-12">
+      <div class="form-group">
+          <label for="staff_type" class="required control-label">Staff on Site by Type</label>                        <div class="checkbox row">
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_245" name="staff_type[]" class="ccm-input-checkbox" value="245">                                        Assistant Director                                    </label>
+                  </div>
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_247" name="staff_type[]" class="ccm-input-checkbox" value="247">                                        Assistant Teacher                                    </label>
+                  </div>
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_248" name="staff_type[]" class="ccm-input-checkbox" value="248">                                        Associate Teacher                                    </label>
+                  </div>
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_250" name="staff_type[]" class="ccm-input-checkbox" value="250">                                        Cook                                    </label>
+                  </div>
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_243" name="staff_type[]" class="ccm-input-checkbox" value="243">                                        Director                                    </label>
+                  </div>
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_350" name="staff_type[]" class="ccm-input-checkbox" value="350">                                        Family Childcare Home Owner                                    </label>
+                  </div>
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_249" name="staff_type[]" class="ccm-input-checkbox" value="249">                                        Floater/Sub                                    </label>
+                  </div>
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_246" name="staff_type[]" class="ccm-input-checkbox" value="246">                                        Lead Teacher                                    </label>
+                  </div>
+                                              <div class="col-sm-6">
+                      <label>
+                          <input type="checkbox" id="staff_type_244" name="staff_type[]" class="ccm-input-checkbox" value="244">                                        On Site Director                                    </label>
+                  </div>
+                                      </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+      <div class="form-group">
+          <label for="number_staff_facility" class="control-label">Number of Staff Members at Facility</label>                        <input type="number" id="number_staff_facility" name="number_staff_facility" value="" maxlength="255" min="0" placeholder="Number of Staff Members at Facility" class="form-control ccm-input-number">                    </div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+      Staff Information 1                </div>
+  <div class="panel-body">
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff1_full_name" class="control-label">Staff Full Name</label>                                <input type="text" id="staff1_full_name" name="staff1_full_name" value="" maxlength="255" placeholder="Staff Full Name" class="form-control ccm-input-text">                            </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff1_workforce" class="control-label">Workforce Registry Number</label>                                <input type="text" id="staff1_workforce" name="staff1_workforce" value="" maxlength="255" placeholder="Workforce Registry Number" class="form-control ccm-input-text">                            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff1_education" class="control-label">Education</label>                                <select id="staff1_education" name="staff1_education" class="form-control"><option value="" selected="selected">-- Select Education Level --</option><option value="258">Bachelor Degree/Child Related</option><option value="259">Bachelor Degree/Other</option><option value="255">Child Development Associate Credential</option><option value="252">High School Diploma/GED</option><option value="251">Less Than High School Diploma</option><option value="260">Master Degree or Higher</option><option value="253">One Year Vocational Degree/Child Related</option><option value="254">One Year Vocational Degree/Other</option><option value="256">Two Year Associate Degree/Child Related</option><option value="257">Two Year Associate Degree/Other</option></select>                            </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff1_trauma_info" class="control-label">Has taken Trauma Informed Training</label>				<br>
+                  <label class="radio-inline"><input type="radio" id="staff1_trauma_info1" name="staff1_trauma_info" value="1" class="ccm-input-radio">                                Yes</label>
+                  <label class="radio-inline"><input type="radio" id="staff1_trauma_info2" name="staff1_trauma_info" value="0" class="ccm-input-radio">                                No</label>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff1_work_special_need" class="control-label">Does this staff member have experience working with children with special needs?</label><br>
+                  <label class="radio-inline"><input type="radio" id="staff1_work_special_need3" name="staff1_work_special_need" value="1" class="ccm-input-radio">                                Yes</label>
+                  <label class="radio-inline"><input type="radio" id="staff1_work_special_need4" name="staff1_work_special_need" value="0" class="ccm-input-radio">                                No</label>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+      Staff Information 2                </div>
+  <div class="panel-body">
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff2_full_name" class="control-label">Staff Full Name</label>                                <input type="text" id="staff2_full_name" name="staff2_full_name" value="" maxlength="255" placeholder="Staff Full Name" class="form-control ccm-input-text">                            </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff2_workforce" class="control-label">Workforce Registry Number</label>                                <input type="text" id="staff2_workforce" name="staff2_workforce" value="" maxlength="100" placeholder="Workforce Registry Number" class="form-control ccm-input-text">                            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff2_education" class="control-label">Education</label>                                <select id="staff2_education" name="staff2_education" class="form-control"><option value="" selected="selected">-- Select Education Level --</option><option value="258">Bachelor Degree/Child Related</option><option value="259">Bachelor Degree/Other</option><option value="255">Child Development Associate Credential</option><option value="252">High School Diploma/GED</option><option value="251">Less Than High School Diploma</option><option value="260">Master Degree or Higher</option><option value="253">One Year Vocational Degree/Child Related</option><option value="254">One Year Vocational Degree/Other</option><option value="256">Two Year Associate Degree/Child Related</option><option value="257">Two Year Associate Degree/Other</option></select>                            </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff2_trauma_info" class="control-label">Has taken Trauma Informed Training</label>                                <label class="radio-inline"><input type="radio" id="staff2_trauma_info5" name="staff2_trauma_info" value="1" class="ccm-input-radio">                                Yes</label>
+                  <label class="radio-inline"><input type="radio" id="staff2_trauma_info6" name="staff2_trauma_info" value="0" class="ccm-input-radio">                                No</label>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff2_work_special_need" class="control-label">Does this staff member have experience working with children with special needs?</label><br>
+                  <label class="radio-inline"><input type="radio" id="staff2_work_special_need7" name="staff2_work_special_need" value="1" class="ccm-input-radio">                                Yes</label>
+                  <label class="radio-inline"><input type="radio" id="staff2_work_special_need8" name="staff2_work_special_need" value="0" class="ccm-input-radio">                                No</label>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+      Staff Information 3                </div>
+  <div class="panel-body">
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff3_full_name" class="control-label">Staff Full Name</label>                                <input type="text" id="staff3_full_name" name="staff3_full_name" value="" maxlength="255" placeholder="Staff Full Name" class="form-control ccm-input-text">                            </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff3_workforce" class="control-label">Workforce Registry Number</label>                                <input type="text" id="staff3_workforce" name="staff3_workforce" value="" maxlength="100" placeholder="Workforce Registry Number" class="form-control ccm-input-text">                            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff3_education" class="control-label">Education</label>                                <select id="staff3_education" name="staff3_education" class="form-control"><option value="" selected="selected">-- Select Education Level --</option><option value="258">Bachelor Degree/Child Related</option><option value="259">Bachelor Degree/Other</option><option value="255">Child Development Associate Credential</option><option value="252">High School Diploma/GED</option><option value="251">Less Than High School Diploma</option><option value="260">Master Degree or Higher</option><option value="253">One Year Vocational Degree/Child Related</option><option value="254">One Year Vocational Degree/Other</option><option value="256">Two Year Associate Degree/Child Related</option><option value="257">Two Year Associate Degree/Other</option></select>                            </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff3_trauma_info" class="control-label">Has taken Trauma Informed Training</label>                                <label class="radio-inline"><input type="radio" id="staff3_trauma_info9" name="staff3_trauma_info" value="1" class="ccm-input-radio">                                Yes</label>
+                  <label class="radio-inline"><input type="radio" id="staff3_trauma_info10" name="staff3_trauma_info" value="0" class="ccm-input-radio">                                No</label>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="staff3_work_special_need" class="control-label">Does this staff member have experience working with children with special needs?</label><br>
+                  <label class="radio-inline"><input type="radio" id="staff3_work_special_need11" name="staff3_work_special_need" value="1" class="ccm-input-radio">                                Yes</label>
+                  <label class="radio-inline"><input type="radio" id="staff3_work_special_need12" name="staff3_work_special_need" value="0" class="ccm-input-radio">                                No</label>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="form-actions">
+  <input name="provider_id" type="hidden" value="2748">
+  <button type="submit" class="btn btn-primary btn-xs-block">Save</button>
+  <a href="https://santaclara2.informaticsinc.com/index.php/dashboard/portal/providers" class="btn btn-default btn-default btn-xs-block">Back to listing</a>
+</div>
+
+</form>
+          </div>
+        </div>
+        </div>  
+        </div>
+      </div>
+      </div>
+  </div>
+</main>
+
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  </body>
+</html>

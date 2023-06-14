@@ -1,0 +1,36 @@
+/* Variables */
+html {font-size: 100%;}
+body {
+font-family: var(--body); font-weight: 400; font-size:1rem; background: var(--bkg); color: var(--text-color); 
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-moz-font-feature-settings: "liga" on;
+font-feature-settings: "liga";
+text-rendering: optimizeLegibility;
+color: var(--text);
+}
+
+h1, h2, h3, h4, h5 {font-family: var(--header); margin: 0 0 .5rem 0; line-height: 1.1; color: var(--primary); font-weight: 700;}
+h1 {font-size: 2rem;}
+h2 {font-size: 1.75rem;}
+h3 {font-size: 1.25rem;}
+h4 {font-size: 1rem;}
+p, ul, ol {margin: 0 0 1rem 0;}
+
+a {transition: var(--transition);}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+    h1 {font-size: 2.5rem; letter-spacing: -1px;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1500px) {
+}
+
+
+
