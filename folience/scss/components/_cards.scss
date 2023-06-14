@@ -1,0 +1,52 @@
+/* Generic */
+.card{border-radius:0px;}
+.card-body{padding:20px}
+.card-img-top{border-radius:0px;border:none}
+.tan-cards .card{background:#FAF9F9;border:solid 1px #E6E2E1}
+
+/* News Cards */
+.card img.card-img-top{width:100%;height:200px;object-fit:cover;}
+h5.card-title::after{content:"";display:block;width:30px;height:2px;background-color:var(--primary);margin-top:15px;margin-bottom:5px;}
+p.card-text{font-size:0.95rem;margin-top:15px}
+.category{font-size:0.85rem;text-transform:uppercase;color:#939393;margin-bottom:10px;}
+.cat-name{color:var(--primary);font-weight:700;}
+a h5{transition:var(--transition);color:#000}
+a h5:hover{color:var(--primary)}
+
+/* Companies Cards */
+.card img.fullwidth{width:100%;height:auto;object-fit:cover;}
+.image-box{width:100%;min-height:150px;}
+.image-box img{padding:35px 35px 15px 35px;width:100%;height:auto;object-fit:cover;}
+.comp .card-body{padding:0px 30px 30px 30px}
+
+/* Services Icon Cards */
+.services .card{border:none;border-left:solid 1px #E6E2E1;background:#FAF7F7;}
+.services .card-body{padding:10px}
+.services .card:first-of-type{border-left:none}
+.services .card:first-of-type{border-left:none}
+.services h5{font-size:1.20rem;line-height:1.5rem}
+
+/* Bio Cards */
+.board-members p.card-title{margin-bottom:0px;font-size:0.9rem;font-weight:700;line-height:1rem}
+.bio-pic{width:100%;min-height:220px;object-fit:cover;}
+.board-members .card-body{padding:12px}
+h6.name{margin-bottom:0.2rem;line-height:1.15rem}
+
+/* Generic Icon Cards */
+.icon-card.card{padding:20px;border-radius:0px;box-shadow:2px 2px 16px rgba(0,0,0,0.08);background:#fff;border:solid 1px #E5E5EA;transition:var(--transition);}
+.icon-box{height:45px;margin-bottom:15px}
+.icon-box img{height:100%;width:100%;}
+.icon-card.card:hover{color:#fff;box-shadow:2px 2px 33px rgba(0,0,0,0.2);background:var(--primary);border:solid 1px var(--primary)}
+.icon-card.card:hover .btn-text,.icon-card.card:hover i{color:#fff}
+.icon-card.card:hover img{filter:grayscale(100%) brightness(200%);}
+.icon-box{height:45px;margin-bottom:15px}
+.no-bg.card{padding:20px;border-radius:0px;box-shadow:none;background:none;border:none;}
+
+/* Plain Cards - Icon Left */
+.plain-cards .card-text{margin-top:0px}
+.plain-cards{border:none;}
+
+/* TABLET */
+@media (min-width:768px){.card-body{padding:30px}
+.icon-card.card{padding:30px;}
+}

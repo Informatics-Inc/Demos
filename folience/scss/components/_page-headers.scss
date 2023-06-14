@@ -1,54 +1,17 @@
-/* PAGE HEADERS */
+.subpage .hero-image{display:flex;justify-content:center;align-items:center;position:relative;}
+.subpage .hero-content h1{font-size:1.5rem;line-height:1.8rem}
+.subpage .hero-content h1::before{content:'';position:absolute;top:45px;left:50%;transform:translateX(-22px);width:45px;height:1px;background-color:var(--primary);}
+.subpage .hero-content {position:relative;padding:60px 0px 20px 0px;}
 
-/* Globals */
-.page-header .text {text-align: center; padding: var(--spacer) 0; grid-column: span 12;}
-.page-header.basic-header .text h1 {text-transform: uppercase;}
-.page-header.basic-header .text p {color: #d8d8d8;}
-.page-header .text h1 strong {font-weight: 600;}
-.page-header .is-style-btn_text a {color: #fff;}
+.breadcrumb{font-size:0.65rem;text-transform: uppercase;letter-spacing:1px}
+.breadcrumb-item.active{color:var(--primary)}
+.breadcrumb-item a{color:#fff}
+.breadcrumb-item a:hover{color:var(--primary)}
 
-.bio-links-img {position: relative; display: block; margin: 0 auto; width: 100%; max-height: 600px;}
-.bio-links-img img {border-radius: 5px; width: 100%; height: 100%; object-fit: cover;}
-.bio-links-img .social {padding: 15px; margin: 0; position: absolute; right: 0; bottom: 0;}
-.bio-links-img .social a {color: #fff;}
-.bio-links-img .social a:hover {background: var(--primary);}
-
-
-/* ONLY MOBILE */
-@media (max-width: 991px) {
-.page-header figure {height: 250px; position: relative;}
-.page-header figure img {width: 100%; height: 100%; object-fit: cover;}
-.page-header .text {background: var(--primary); color: #fff;}
-.page-header .text h1 {color: #fff;}
-.page-header .text:last-child {margin: 0;}
-
-.bio-header figure {display: none;}
-.bio-links-img {max-width: 300px;}
-}
-
-.basic-header {position: relative;}
-.basic-header .text {background: none; padding: 50px var(--spacer);}
-.basic-header .text p, .basic-header .text-center {color: #fff; margin: 0 auto;}
-.basic-header figure {width: 100%; height: 100%;position: absolute; left: 0; bottom: 0; z-index: -1; overflow: hidden;}
-.basic-header figure:after {position: absolute; inset: 0;background: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.25) 65%, rgba(0,0,0,0.65) 100%); content: "";}
-.basic-header figure img {width: 100%; height: 100%; object-fit: cover; object-position: center bottom;}
-/* DESKTOP */
-@media (min-width: 992px) {
-.page-header {margin-top: 40px; position: relative; overflow: hidden;}
-.page-header .text {text-align: left; position: relative; z-index: 5; color: #fff; padding: 300px 0 var(--spacer-vert) 0;}
-.page-header .text h1 {color: #fff;}
-.page-header figure {width: 100%; height: 100%;position: absolute; left: 0; bottom: 0; z-index: -1; overflow: hidden;}
-.page-header figure:after {position: absolute; inset: 0;background: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.25) 65%, rgba(0,0,0,0.65) 100%); content: "";}
-.page-header figure img {width: 100%; height: 100%; object-fit: cover; object-position: center bottom;}
-
-.bio-header {overflow: visible;}
-.bio-header .text {padding: 100px 0 var(--spacer) 0;}
-.bio-header .bio-links-img {grid-column: 8 / span 4; position: relative; margin-bottom: -375px;}
-.bio-header-overlap {margin-top: 150px;}
-
-.basic-header .text {padding: 125px 25px 60px 25px;}
-}
-
-@media (min-width: 1500px) {
-
+/* WIDE DESKTOP */
+@media (min-width:992px){
+.subpage .hero-content{position:relative;padding:80px 0px 50px 0px;margin-top:160px}
+.subpage .hero-content h1::before{top:65px;width:65px;}
+.subpage .hero-content h1{font-size:2.375rem;line-height:2.75rem}
+.breadcrumb{font-size:0.85rem;letter-spacing:0px}
 }

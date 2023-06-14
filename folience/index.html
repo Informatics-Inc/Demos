@@ -1,230 +1,614 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Informatics, Inc">
-    <title>Shive-Hattery</title>
 
-    <!-- FONTS -->
-    <link href='css/icons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Informatics, Inc">
+  <title>Folience</title>
 
-    <!-- CSS -->
-    <link href="css/app.min.css" rel="stylesheet">
-  </head>
-  <body>
+  <!-- FONTS -->
+  <link href='css/icons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<header id="site-header">
-  <div class="mobile-header">
-    <a href="index.html" id="logo">
-      <img src="img/logo-color.svg" alt="SHIVE-HATTERY Logo" />
-    </a>
-    <button id="menu-toggle" class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
-      <div class="closed">
-        Menu
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <div class="open">
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </button>
-  </div>
+  <!-- CSS -->
+  <link href="scss/app.css" rel="stylesheet">
+  <link href="css/animations.css" rel="stylesheet">
 
-  <!-- MENU -->
-  <nav id="menu" class="menu collapse">
-    <div class="desktop-header">
-      <a href="index.html" id="logo">
-        <img src="img/logo-inverse.svg" alt="SHIVE-HATTERY Logo" />
-        <img src="img/logo-color.svg" alt="SHIVE-HATTERY Logo" />
-      </a>
-      <div id="hdr-search">
-        <div class="search-close-wrapper">
-          <button id="search-close" class="search-toggle"><img src="img/search-close.svg"/>Close</button>
-        </div>
-        <img src="img/logo-inverse.svg" class="logo" />
-        <form role="search" method="get" id="searchform" class="searchform">
-          <div>
-            <input type="text" value="" name="s" id="s" placeholder="SEARCH">
-            <input type="submit" id="searchsubmit" value="Search">
+</head>
+
+<body>
+
+<section class="home-header">
+  <header id="site-header"> <!-- HEADER -->
+    <div class="container position-relative ">
+      <div class="mobile-header">
+        <a href="index.html" id="logo">
+          <img src="img/logo-color.svg" alt="Folience Logo "/>
+        </a>
+        <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-expanded="false" aria-controls="menu">
+          <div class="closed">
+            Menu
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-        </form>
-      </div>
-
-      <ul id="menu-main">
-        <li><a href="block-heavy.html">Approach</a></li>
-        <li><a href="portfolio.html">Work</a>
-          <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
-          <ul id="menu-1" class="collapse hidden-lg">
-            <li><a href="portfolio.html">Civic + Justice</a></li>
-            <li><a href="portfolio.html">Commercial Development</a></li>
-            <li><a href="portfolio.html">Government</a></li>
-            <li><a href="portfolio.html">Healthcare</a></li>
-            <li><a href="portfolio.html">Higher Education</a></li>
-            <li><a href="portfolio.html">Hospitality + Entertainment</a></li>
-            <li><a href="portfolio.html">Industrial</a></li>
-            <li><a href="portfolio.html">K-12</a></li>
-            <li><a href="portfolio.html">Multi-Family Housing</a></li>
-            <li><a href="portfolio.html">Senior Living</a></li>
-            <li><a href="portfolio.html">Sports</a></li>
-            <li><a href="portfolio.html">Workplace</a></li>
-          </ul>
-          <div id="mega-menu">
-            <div class="menu-links">
-              <div class="col">
-                <a href="#.html">Commercial</a>
-                <ul>
-                  <li><a href="#.html">Hospitality + Entertainment</a></li>
-                  <li><a href="#.html">Multi-Family Housing</a></li>
-                  <li><a href="#.html">Workplace</a></li>
-                </ul>
-              </div>
-              <div class="col">
-                <a href="#.html">Industrial</a>
-                <p>With no sub links this section will use a page description. Write a short descprition and our custom module will allow you to control the content.</p>
-              </div>
-              <div class="col">
-                <a href="#.html">Education</a>
-                <ul>
-                  <li><a href="#.html">Pre K-12</a></li>
-                  <li><a href="#.html">Higher Education</a></li>
-                </ul>
-              </div>
-              <div class="col">
-                <a href="#.html">Government</a>
-                <ul>
-                  <li><a href="#.html">Civic + Justice</a></li>
-                  <li><a href="#.html">Infrastructure</a></li>
-                </ul>
-              </div>
-              <div class="col">
-                <a href="#.html">Healthcare</a>
-                <p>With no sub links this section will use a page description. Write a short descprition and our custom module will allow you to control the content.</p>
-              </div>
-            </div>
-            <div class="menu-info">
-              <a href="work.html">
-                <span class="title">Work</span>
-                <p>This is the description of the main dropdown component and in this case that menu item is work. Put a description here of what you want people to see.</p>
-                <span class="link">All Work</span>
-              </a>
-            </div>
+          <div class="open">
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-        </li>
-        <!--
-        <li><a href="block-heavy.html">Services</a>
-          <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
-          <ul id="menu-2" class="collapse">
-            <li><a href="block-heavy.html">3D Visualization</a></li>
-            <li><a href="block-heavy.html">Building Information Modeling</a></li>
-            <li><a href="block-heavy.html">Branded Environments</a></li>
-            <li><a href="block-heavy.html">Building Envelope</a></li>
-            <li><a href="block-heavy.html">Civic Engineering</a></li>
-            <li><a href="block-heavy.html">Construction Services</a></li>
-            <li><a href="block-heavy.html">District Energy Systems</a></li>
-            <li><a href="block-heavy.html">Electrical Engingeering</a></li>
-            <li><a href="block-heavy.html">Environmental Services</a></li>
-            <li><a href="block-heavy.html">Interior Design</a></li>
-            <li><a href="block-heavy.html">Landscape Architecture</a></li>
-            <li><a href="block-heavy.html">Mechancial Engineering</a></li>
-            <li><a href="block-heavy.html">Interior Design</a></li>
-            <li><a href="block-heavy.html">Landscape Architecture</a></li>
-            <li><a href="block-heavy.html">Mechanical Engineering</a></li>
-            <li><a href="block-heavy.html">Land Surveying</a></li>
-            <li><a href="block-heavy.html">Water & Wastewater</a></li>
-            <li><a href="block-heavy.html">Water Resources</a></li>
+        </button>
+      </div>
+  
+      <!-- MENU -->
+      <nav id="menu" class="menu collapse">
+        <div class="desktop-header">
+          <a href="index.html" id="logo">
+            <img src="img/logo-inverse.svg" alt="Folience Logo " />
+            <img src="img/logo-color.svg" alt="Folience Logo " />
+          </a>
+  
+          <ul id="menu-main">
+            <li><a href="">Our Approach</a>
+            </li>
+            <li><a href="">Shared Services</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2"
+                aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-2" class="collapse">
+                <li><a href="">Human Resources</a></li>
+                <li><a href="">Finance & Accounting</a></li>
+                <li><a href="">Information Technology</a></li>
+                <li><a href="">Administration & Compliance</a></li>
+                <li><a href="">Facilities & Safety</a></li>
+                <li><a href="">Learning & Development
+                  </a></li>
+              </ul>
+            </li>
+            <li><a href="secondary.html">Employee Ownership</a>
+            </li>
+            <li><a href="">Our Companies</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4"
+                aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-4" class="collapse">
+                <li><a href="">The Gazette</a></li>
+                <li><a href="">Life Line Emergency Vehicles</a></li>
+                <li><a href="">Cimarron Trailers</a></li>
+              </ul>
+            </li>
+            <li><a href="">Contact Us</a>
+            </li>
           </ul>
-        </li>-->
-        <li><a href="insights.html">Insights</a></li>
-        <li><a href="block-heavy.html">Culture</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+            <ul id="menu-utility">
+          <li><a href=".html">About Us</a></li><span class="seperator">|</span>
+          <li><a href=".html">News</a></li><span class="seperator">|</span>
+          <li><a href=".html">Careers</a></li>
+        </ul>
+      </nav>
     </div>
-    <ul id="menu-utility">
-      <li><a href="block-heavy.html">Architecture</a></li>
-      <li><a href="block-heavy.html">Engineering</a></li>
-      <li><a href="block-heavy.html">Services</a>
-        <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-3" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
-        <ul id="menu-3" class="collapse">
-          <li><a href="portfolio.html">Civic + Justice</a></li>
-          <li><a href="portfolio.html">Commercial Development</a></li>
-          <li><a href="portfolio.html">Government</a></li>
-          <li><a href="portfolio.html">Healthcare</a></li>
-          <li><a href="portfolio.html">Higher Education</a></li>
-          <li><a href="portfolio.html">Hospitality + Entertainment</a></li>
-          <li><a href="portfolio.html">Industrial</a></li>
-          <li><a href="portfolio.html">K-12</a></li>
-          <li><a href="portfolio.html">Multi-Family Housing</a></li>
-          <li><a href="portfolio.html">Senior Living</a></li>
-          <li><a href="portfolio.html">Sports</a></li>
-          <li><a href="portfolio.html">Workplace</a></li>
-        </ul>
-      </li>
-      <li><a href="locations.html">Locations</a>
-        <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
-        <ul id="menu-4" class="collapse locations">
-          <li><a href="location-detail.html">Iowa (HQ)</a></li>
-          <li><a href="location-detail.html">Arizona</a></li>
-          <li><a href="location-detail.html">Illinois</a></li>
-          <li><a href="location-detail.html">Indiana</a></li>
-          <li><a href="location-detail.html">Missouri</a></li>
-          <li><a href="location-detail.html">Nebraska</a></li>
-          <li><a href="location-detail.html">Ohio</a></li>
-          <li><a href="location-detail.html">Wisconsin</a></li>
-        </ul>
-      </li>
-      <li class="hidden-lg"><a href="block-heavy.html">About</a>
-        <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-5" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
-        <ul id="menu-5" class="collapse">
-          <li><a href="block-heavy.html">Relationship Driven</a></li>
-          <li><a href="block-heavy.html">Giving Back</a></li>
-          <li><a href="leadership.html">Leadership</a></li>
-          <li><a href="leadership.html">People</a></li>
-          <li><a href="insights.html">Award</a></li>
-        </ul>
-      </li>
-      <li class="hidden-sm"><a href="#.html" class="search-toggle"><img src="img/mobile-search.svg">Search</a></li>
-    </ul>
-
-    <button class="menu-close-btm" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
-      <p><img src="img/close-menu.svg"> Close Menu <img src="img/close-menu.svg"> </p>
-    </button>
-  </nav>
-</header>
-
-<main id="main-content">
-  <header class="page-hdr page-hdr-blue">
-
-  <div class="hero-image">
-    <figure>
-      <img src="img/images/hero-home.jpg" alt="" title="hero" class="img-fluid"/>
-    </figure>
-    <div class="hero-content text-center align-items-center">
-      <h1 class="display-4">Your Title</h1>
-      <p class="lead">Your lead text goes here.</p>
-      <button class="btn btn-primary">Click Me</button>
-    </div>
-  </div>
-
   </header>
 
-</main>
-  
-<footer class="footer">
-</footer>
+    <section class="hero-image">
+      <div class="overlay-dark"></div>
+        <figure>
+          <img src="img/images/hero-home.jpg" alt="hero image" title="hero" class="img-fluid" />
+        </figure>
+        <div class="row justify-content-center">
+          <div class="hero-content  position-relative">
+            <h1 class="text-center mb-2">Invest In Different</h1>
+            <p class="col-md-7 lead text-center mb-4">Folience is an employee-owned portfolio of companies with reputations for excellence.</p>
+            <div class="text-center">
+              <button class="mt-4 btn btn-primary">Our Approach</button>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-downs">
+          <p class="text-center">SCROLL</p>
+          <div class="mousey">
+          <div class="scroller"></div>
+          </div>
+        </div>
+      </section>
+    </section>
 
-  
+    <main id="main-content">
+
+    <!-- Top Quote -->
+    <section class="topquote position-relative pad-large">
+      <div class="side-rectangle"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 pad-right">
+
+            <h2 class="eyebrow">WE INVEST IN SUCCESS</h2>
+            <h5 class="quote">"Quote from <em>Board Members</em> <br>will be placed inside this <br>text box area”</h5>
+          </div>
+          <div class="col-md-6 pad-left">
+            <p>We partner with elite companies to develop long-term, mutual growth. Because we’ve adopted an ESOP model,
+              our owned companies can trust that our team is making a personal investment in their success. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <hr class="m-0">
+    </div>
+
+    <!-- Board of Directors-->
+    <section class="board-members pad-large">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-6 text-center">
+            <h2>Board of Directors</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt abore et dolore
+              magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4">
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="img/employees/sample-employee.jpg" class="bio-pic" alt="Photo 1">
+              <div class="card-body text-white bg-main-blue">
+                <h6 class="name">Simon Andrew</h6>
+                <p class="card-title">Sales Specialist</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="img/employees/sample-employee2.jpg" class="bio-pic" alt="Photo 1">
+              <div class="card-body text-white bg-main-blue">
+                <h6 class="name">Webster Ruhbarker</h6>
+                <p class="card-title">Sales Supervisor</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="img/employees/sample-employee3.jpg" class="bio-pic" alt="Photo 1">
+              <div class="card-body text-white bg-main-blue">
+                <h6 class="name">Simon Andrews</h6>
+                <p class="card-title">Sales Specialist</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="img/employees/sample-employee.jpg" class="bio-pic" alt="Photo 1">
+              <div class="card-body text-white bg-main-blue">
+                <h6 class="name">Robert Erdal</h6>
+                <p class="card-title">Sales Specialist</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="img/employees/sample-employee4.jpg" class="bio-pic" alt="Photo 1">
+              <div class="card-body text-white bg-main-blue">
+                <h6 class="name">Sue Winston</h6>
+                <p class="card-title">Floor Supervisor</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="img/employees/sample-employee5.jpg" class="bio-pic" alt="Photo 1">
+              <div class="card-body text-white bg-main-blue">
+                <h6 class="name">Justin Turmoil</h6>
+                <p class="card-title">Office Rep</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Shared Services -->
+    <section class="services pad-large bg-cream">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-lg-0 pad-right">
+            <figure class="img-combo">
+              <img class="animate-in delay-4" src="img/stock/imagestock2.webp" alt="image2.jpg">
+              <img class="animate-in delay-5" src="img/stock/imagestock1.webp" alt="image1.jpg">
+            </figure>
+          </div>
+          <div class="col-md-6  mt-4 mt-lg-0 pad-left">
+            <h2 class="eyebrow">Shared Services</h2>
+            <p class="callout">How We Support Our Companies</p>
+            <p>Folience offers a variety of resources designed to improve efficiency and alleviate distractions, without
+              interfering with our employee-owned companies’ unique cultures. We call these shared services.</p>
+            <p>Each of these services are headed by innovative, experienced professionals who understand every brand’s
+              needs and goals.</p>
+            <button class="btn btn-primary">LEARN MORE</button>
+          </div>
+        </div>
+
+        <!-- Icons Services -->
+        <div class="card-group pad-large pb-0">
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/icons/icons-money.svg" class="mb-3" alt="Icon" width="64" height="64">
+                <h5 class="mt-auto">Finance and Accounting</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <img src="img/icons/icons-person.svg" class="mb-3" alt="Icon" width="64" height="64">
+                <h5 class="mt-auto">Human Resources</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <img src="img/icons/icons-hardhat.svg" class="mb-3" alt="Icon" width="64" height="64">
+                <h5 class="mt-auto">Facilities and Safety</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <img src="img/icons/icons-tech.svg" class="mb-3" alt="Icon" width="64" height="64">
+                <h5 class="mt-auto">Technology</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <img src="img/icons/icons-brain.svg" class="mb-3" alt="Icon" width="64" height="64">
+                <h5 class="mt-auto">Learning and Development</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <img src="img/icons/icons-gear.svg" class="mb-3" alt="Icon" width="64" height="64">
+                <h5 class="mt-auto">Administration and Compliance</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Companies -->
+    <section class="comp pad-large">
+      <div class="container tan-cards">
+        <div class="col-md-6 text-center">
+          <h2 class="eyebrow">Our Companies</h2>
+          <p class="callout">An Elite Family</p>
+          <p>Our companies have individually developed tremendous track records of success. Together, they form a strong
+            portfolio with high potential growth.</p>
+        </div>
+        <div class="mt-4 row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <figure class="image-box d-flex align-items-center">
+                <img src="img/LOGO-The-Gazette.svg" alt="Image 1">
+              </figure>
+              <div class="card-body">
+                <p class="card-text">Sed euismod, magna vulputate sollicitudco nseq uat consequat, ante lectus
+                  efficiturin congue, enim elit venenatis justo maximus. </p>
+                <a href="#" class="btn-text">Learn More<i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <figure class="image-box d-flex align-items-center">
+                <img src="img/LOGO-Lifeline.svg" alt="Image 2">
+              </figure>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn-text">Learn More<i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <figure class="image-box d-flex align-items-center">
+                <img src="img/LOGO-Cimarron-Trailers.svg" alt="Image 3">
+              </figure>
+              <div class="card-body">
+                <p class="card-text">Excepteur sint occaecat cupidatat non proident tempor incididunt ut labore et
+                  dolore magna aliqua.</p>
+                <a href="#" class="btn-text">Learn More<i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-8 offset-md-2 text-center">
+            <a href="#" class="btn btn-primary">View All</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section class="pad-large bg-cream">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6  mb-4 mb-lg-0 pad-right">
+              <h2 class="eyebrow">WE INVEST IN DIFFERENT</h2>
+              <p class="callout">How Our Approach <br>Reduces Risk</p>
+              <p>At Folience, we believe diversification means longevity. That’s why we’ve intentionally curated a diverse portfolio of brands to offset market volatility in any one industry. When you become an employee owner under Folience, you’re at a competitive advantage.</p>
+              <button class="btn btn-primary">Our Approach</button>
+            </div>          
+        
+            <div class="col-md-6 left-side mt-4 mt-lg-0 pad-left">
+              <div class="img-combo-overlap">
+              <div class="img-large">
+                <img src="img/stock/iStock-168626569.webp" alt="Photo 1">
+              </div>
+              <div class="img-small bg-secondary">
+                <img src="img/stock/iStock-938352308.webp"  alt="Photo 1">
+               </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- News Insights -->
+    <section class="blue-bg position-relative">
+      <div class="overlay-bg"></div>
+      <div class="corner-left"></div>
+      <div class="corner-right"></div>
+      <div class="container pad-large">
+        <div class="d-md-flex title-group">
+          <span class="text-white">
+            <h2 class="eyebrow">News & Insights</h2>
+            <p class="callout">The Latest from Folience</p>
+          </span>
+          <div class="mt-4 mb-2 align-self-md-end ms-md-auto"><button class="btn btn-primary">View All</button></div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="border-0 card h-100">
+              <img
+                src="img/stock/iStock-1136884240.webp"
+                class="card-img-top" alt="Skyscrapers" />
+              <div class="card-body">
+                <div class="category">APR 6 / <span class="cat-name">Industry</span></div>
+                <a href="#">
+                  <h5 class="card-title">Insights Blog Title Goes Here Lorem Ipsum Nueve</h5>
+                </a>
+                <p class="card-text">
+                  A brief description of the news story, two or three sentences will go right here.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border-0 card h-100">
+              <img
+                src="img/stock/iStock-512001930.webp"
+                class="card-img-top" alt="Los Angeles Skyscrapers" />
+              <div class="card-body">
+                <div class="category">APR 14 / <span class="cat-name">Ownership</span></div>
+                <a href="#">
+                  <h5 class="card-title">Insights Blog Title Goes Here Lorem Ipsum Nueve</h5>
+                </a>
+                <p class="card-text">
+                  A brief description of the news story, two or three sentences will go right here.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border-0 card h-100">
+              <img 
+              src="img/stock/iStock-1144304195.webp"
+              class="card-img-top" alt="Palm Springs Road" />
+              <div class="card-body">
+                <div class="category">Mar 4 / <span class="cat-name">Ownership</span></div>
+                <a href="#">
+                  <h5 class="card-title">Insights Blog Title Goes Here Lorem Ipsum Nueve</h5>
+                </a>
+                <p class="card-text">
+                  A brief description of the news story, two or three sentences will go right here.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="pad-large position-relative">
+      <div class="side-rectangle"></div>
+      <div class="container">
+        <div class="col-md-6 text-center">
+          <h2 class="eyebrow">Testimonials</h2>
+          <p class="callout">Why Folience?</p>
+        </div>
+        
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+            <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial">
+                <h5>“Being a part of an ESOP creates a very unique culture. We’re all different businesses and different
+                  industries but we’re working toward one common goal, which is our financial futures.” </h5>
+                <p class="name font-weight-bold">Mark Johnson<br>
+                  <span class="title font-weight-bold text-uppercase"> Employee Owner</span>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial">
+                <h5>“Being a part of an ESOP creates a very unique culture. We’re all different businesses and different
+                  industries but we’re working toward one common goal, which is our financial futures.” </h5>
+                <p class="name">Mark Johnson<br>
+                  <span class="title font-weight-bold text-uppercase"> Employee Owner</span>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial">
+                <h5>“Being a part of an ESOP creates a very unique culture. We’re all different businesses and different
+                  industries but we’re working toward one common goal, which is our financial futures.” </h5>
+                <p class="name font-weight-bold">Mark Johnson<br>
+                  <span class="title font-weight-bold text-uppercase"> Employee Owner</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+
+
+  <style>
+    .carousel-indicators li {
+      height: 10px;border:solid 2px var(--primary);
+  width:10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.carousel-indicators .active {
+  height: 10px;
+  width: 10px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+ .carousel-inner{max-width:800px;margin:0 auto}
+.testimonial{text-align:center;margin-bottom:50px;}
+.testimonial h3{font-size:18px;margin-bottom:10px;}
+.testimonial-title{text-align:center;margin-bottom:30px;}
+.testimonial-title h2{font-size:24px;margin-bottom:5px;}
+.testimonial-title p{font-size:16px;}
+.carousel-control-next-icon{background-image:url("/img/icons/chevron-right.svg")}
+.carousel-control-prev-icon{background-image:url("/img/icons/chevron-left.svg")}
+.testimonial h5{font-size:1.80rem;line-height:2.4rem;}
+.testimonial .name{margin-top:65px;font-size:1.375rem;letter-spacing:1px;font-weight:700;line-height:1.55rem;position:relative;display:inline-block;text-align:center;}
+.testimonial .title{font-size:0.813rem;letter-spacing:4px;font-weight:700}
+.testimonial .name::before{content:'';position:absolute;top:-40px;left:50%;transform:translateX(-40px);width:80px;height:1px;background-color:var(--primary);}
+
+  </style>
+
+    <!-- Reach Out -->
+    <section class="bg-cream pad-large">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h2 class="text-center mb-2">Reach Out</h2>
+            <h5 class="text-center mb-4">Is your company the right fit for Folience? We’d be happy to have a discussion.
+              Contact us to learn more about our company criteria and application process.</h5>
+            <div class="text-center">
+              <button class="btn btn-primary m-2">Our Approach</button>
+              <button class="btn btn-secondary m-2">Careers</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer position-relative">
+    <figure>
+      <img src="img/images/footer-bg.webp" alt="footer background" class="img-fluid" />
+    </figure>
+    <div class="container pad-large text-white">
+      <div class="row">
+        <div class="col-md-4 col-lg-5  col-xl-7">
+          <img src="img/logo-inverse.svg" class="mb-4" alt="Footer Logo" width="280">
+          <p>Growing long-term financial value through investing in human development improving the
+            skills and productivity of the workforce generating long-term financial value for individuals, companies,
+            and society as a whole. </p>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-3 mb-3 mt-3 mb-md-0 mt-md-0">
+          <h5>Quick Links</h5>
+          <div class="row">
+            <div class="col">
+              <ul class="list-unstyled">
+                <a href="#">
+                  <li>About Us</li>
+                </a>
+                <a href="#">
+                  <li>Our Approach</li>
+                </a>
+                <a href="#">
+                  <li>Shared Services</li>
+                </a>
+                <a href="#">
+                  <li>Employee Ownership</li>
+                </a>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled">
+                <a href="#">
+                  <li>News</li>
+                </a>
+                <a href="#">
+                  <li>Our Companies</li>
+                </a>
+                <a href="#">
+                  <li>Careers</li>
+                </a>
+                <a href="#">
+                  <li>Contact Us</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-2">
+          <h5>Find Us</h5>
+          <p>(319) 200-2800</p>
+          <p>230 2nd St SE #100<br>
+            Cedar Rapids, IA 52401</p>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container border-top border-light p-4" style="--bs-border-opacity:.3">
+      <div class="row text-white">
+        <div class="col-md-12 text-small">
+          <small>© 2023 ITC. All Rights Reserved. Web Application by <a class="text-white" target="_blank"
+              href="https://www.informaticsinc.com/">Informatics, Inc</a></small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
   <!-- FOOTER SCRIPTS -->
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/swiper.min.js"></script>
   <script src="js/scripts.js"></script>
-  
-  </body>
+</body>
+
 </html>

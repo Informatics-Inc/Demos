@@ -1,0 +1,12 @@
+.carousel-inner{padding-left:150px;padding-right:150px;}
+.testimonial{text-align:center;margin-bottom:50px;}
+.testimonial h3{font-size:18px;margin-bottom:10px;}
+.testimonial-title{text-align:center;margin-bottom:30px;}
+.testimonial-title h2{font-size:24px;margin-bottom:5px;}
+.testimonial-title p{font-size:16px;}
+.carousel-control-next-icon{background-image:url("/img/icons/chevron-right.svg")}
+.carousel-control-prev-icon{background-image:url("/img/icons/chevron-left.svg")}
+.testimonial h5{font-size:1.80rem;line-height:2.4rem;}
+.testimonial .name{margin-top:65px;font-size:1.375rem;letter-spacing:1px;font-weight:700;line-height:1.55rem;position:relative;display:inline-block;text-align:center;}
+.testimonial .title{font-size:0.813rem;letter-spacing:4px;font-weight:700}
+.testimonial .name::before{content:'';position:absolute;top:-40px;left:50%;transform:translateX(-40px);width:80px;height:1px;background-color:var(--primary);}

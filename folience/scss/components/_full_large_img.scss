@@ -1,29 +1,11 @@
-/* Full Large Image */
-.full-large-img {background: url(../img/bkg-plus-group.svg) left 45% no-repeat; background-size: 100% auto; padding-top: var(--spacer);}
-.full-large-img figure {width: calc(100% + 50px); margin-left: calc(var(--spacer) * -1); aspect-ratio: 16 / 9;}
-.full-large-img figure img {@include box-shadow-small;}
-.full-large-img .text {text-align: center; padding: 0 var(--spacer);}
-.full-large-img .text p { color: #75767a;}
-@media (min-width: 768px) {
-.full-large-img {background-position: left 75%;}
-.full-large-img figure {width: calc(100% + 100px);}
-}
-@media (min-width: 992px) {
-.full-large-img {background-position: left top; padding-top: 100px; background-size: auto;}
-.full-large-img figure {grid-column: 5 / -1; grid-row: 1; height: 100%; margin-left: auto; margin-right: calc(var(--spacer) * -1); width: auto; aspect-ratio: initial;}
-.full-large-img figure img {width: 100%; height: 100%; object-fit: cover; border-radius: 5px 0 0 5px;}
-.full-large-img .text {grid-column: 1 / span 3; grid-row: 1; padding: 0; text-align: left; display: grid; place-content: center;}
+/* Full Background Image Text over Top */
+.bg-image{background:rgba(29,41,68,0.8);}
+.bg-image figure{z-index:-1;position:absolute;top:0;left:0;right:0;bottom:0;margin:0;}
+.bg-image figure img{object-fit:cover;width:100%;height:100%;}
 
-.full-large-img.swap-sides figure {grid-column: 1 / span 8; margin: 0 0 0 -50px;}
-.full-large-img.swap-sides figure img {border-radius: 0 5px 5px 0;}
-.full-large-img.swap-sides .text {grid-column: 10 / span 3;}
-}
+ /* Dark Blue Background - Shapes in Corners */
+ .corner-left{z-index:-1;background:url("/img/left-angles.svg")no-repeat;position:absolute;left:0;bottom:0;width:410px;height:250px;opacity:35%;}
+ .corner-right{z-index:-1;background:url("/img/right-angles.svg")no-repeat;position:absolute;right:0;top:0;width:410px;height:315px;opacity:35%;}
+ .overlay-bg{background:var(--navy);width:100%;height:100%;position:absolute;z-index:-3;}
+ .overlay-dark{background:#000;width:100%;height:100%;position:absolute;z-index:-3;}
 
-@media (min-width: 1500px) {
-    .full-large-img {padding-top: 140px;}
-    .full-large-img figure {margin-right: calc((var(--side-width)) * -1);}
-
-    .full-large-img.swap-sides figure {margin-left: calc((var(--side-width)) * -1);}
-
-    .full-large-img .text p {font-size: 1.188rem;}
-}

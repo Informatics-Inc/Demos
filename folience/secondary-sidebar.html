@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Informatics, Inc">
+  <title>Secondary Sidebar</title>
+
+  <!-- FONTS -->
+  <link href='css/icons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="scss/app.css" rel="stylesheet">
+  <link href="css/animations.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="site-header"> <!-- HEADER -->
+    <div class="container position-relative ">
+      <div class="mobile-header">
+        <a href="index.html" id="logo">
+          <img src="img/logo-color.svg" alt="Folience Logo " />
+        </a>
+        <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-expanded="false" aria-controls="menu">
+          <div class="closed">
+            Menu
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="open">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- MENU -->
+      <nav id="menu" class="menu collapse">
+        <div class="desktop-header">
+          <a href="index.html" id="logo">
+            <img src="img/logo-color.svg" alt="Folience Logo " />
+            <img src="img/logo-color.svg" alt="Folience Logo " />
+          </a>
+
+          <ul id="menu-main">
+            <li><a href="">Our Approach</a>
+            </li>
+            <li><a href="">Shared Services</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2"
+                aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-2" class="collapse">
+                <li><a href="">Human Resources</a></li>
+                <li><a href="">Finance & Accounting</a></li>
+                <li><a href="">Information Technology</a></li>
+                <li><a href="">Administration & Compliance</a></li>
+                <li><a href="">Facilities & Safety</a></li>
+                <li><a href="">Learning & Development
+                  </a></li>
+              </ul>
+            </li>
+            <li><a href="secondary.html">Employee Ownership</a>
+            </li>
+            <li><a href="">Our Companies</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4"
+                aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-4" class="collapse">
+                <li><a href="">The Gazette</a></li>
+                <li><a href="">Life Line Emergency Vehicles</a></li>
+                <li><a href="">Cimarron Trailers</a></li>
+              </ul>
+            </li>
+            <li><a href="">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul id="menu-utility">
+            <li><a href=".html">About Us</a></li><span class="seperator">|</span>
+            <li><a href=".html">News</a></li><span class="seperator">|</span>
+            <li><a href=".html">Careers</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="subpage hero-image">
+    <div class="overlay-dark"></div>
+    <figure>
+      <img src="img/stock/iStock-938352308.webp" alt="hero image" title="hero" class="img-fluid" />
+    </figure>
+    <div class="row">
+      <div class="hero-content  position-relative">
+        <h1 class="text-center mb-2">Administration and Compliance</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Shared Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Overview</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <main id="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-lg-8 col-xl-9  pad-right">
+          <!-- Content area -->
+          <section class="pad-large">
+            <div class="container">
+              <h2>Profitability Analysis Drives Business Growth</h2>
+              <h6 class="lead">This is a great spot to provide some general secondary information</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p><br>
+
+              <h4>Bibendum at varius</h4>
+
+              <div class="row row-cols-1 row-cols-lg-2 g-4">
+                <div class="col">
+                  <div class="plain-cards card h-100">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-3">
+                          <span class="icon">
+                            <img src="img/icons/generic-1.svg" alt="Icon" width="64" height="64">
+                          </span>
+                        </div>
+                        <div class="col-9">
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                            consectetur tincidunt massa ut tempor.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="plain-cards card h-100">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-3">
+                          <span class="icon">
+                            <img src="img/icons/generic-1.svg" alt="Icon" width="64" height="64">
+                          </span>
+                        </div>
+                        <div class="col-9">
+                          <p class="card-text">Nullam eleifend varius congue. Sed auctor urna vel ante finibus, in
+                            efficitur leo malesuada.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="plain-cards card h-100">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-3">
+                          <span class="icon">
+                            <img src="img/icons/generic-1.svg" alt="Icon" width="64" height="64">
+                          </span>
+                        </div>
+                        <div class="col-9">
+                          <p class="card-text">Nullam eleifend varius congue. Sed auctor urna vel ante finibus, in
+                            efficitur leo malesuada.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="plain-cards card h-100">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-3">
+                          <span class="icon">
+                            <img src="img/icons/generic-1.svg" alt="Icon" width="64" height="64">
+                          </span>
+                        </div>
+                        <div class="col-9">
+                          <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada
+                            fames ac turpis egestas.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <hr><br>
+
+              <h2>H2 Content Goes Here</h2>
+              <p>Put additional content, a great section for services.</p>
+
+              <div class="row row-cols-1  row-cols-xl-3 g-4">
+                <div class="col">
+                  <div class="icon-card card h-100">
+                    <figure class="icon-box d-flex align-self-start">
+                      <img src="img/icons/generic-2.svg" alt="Image 1">
+                    </figure>
+                    <h5>Box Title To Go Here</h5>
+                    <p>Sed euismod, magna vulputate sollicitudco nseq uat consequat, ante lectus
+                      efficiturin congue, enim elit venenatis justo maximus. </p>
+                    <a href="#" class="btn-text">Learn More<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="icon-card card h-100">
+                    <figure class="icon-box d-flex align-self-start">
+                      <img src="img/icons/generic-2.svg" alt="Image 1">
+                    </figure>
+                    <h5>Box Title To Go Here</h5>
+                    <p>Sed euismod, magna vulputate sollicitudco nseq uat consequat, ante lectus
+                      efficiturin congue, enim elit venenatis justo maximus. </p>
+                    <a href="#" class="btn-text">Learn More<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="icon-card card h-100">
+                    <figure class="icon-box d-flex align-self-start">
+                      <img src="img/icons/generic-2.svg" alt="Image 1">
+                    </figure>
+                    <h5>Box Title To Go Here</h5>
+                    <p>Sed euismod, magna vulputate sollicitudco nseq uat consequat, ante lectus
+                      efficiturin congue, enim elit venenatis justo maximus. </p>
+                    <a href="#" class="btn-text">Learn More<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <br>
+
+              <!-- Addtional Info - Image Block with Text -->
+              <section class="mt-5">
+                <h2>Additional information can go here</h2>
+                <h6 class="lead">This is a great spot for additional questions about the clients business or
+                  organization solutions</h6>
+                <p> Donec rutrum tincidunt placerat. Mauris commodo, lacus at consequat consequat, ante lectus efficitur
+                  libero, vel placerat eros Leo ut ligula. Sed euismod, magna vulputate sollicitudin congue, enim elit
+                  venenatis justo, eu maximus nisl ex ut arcu. </p>
+                <button class="btn btn-primary">Read MORE</button>
+                <p></p> <br>
+                <img class="img-fluid" src="img/stock/iStock-1160700188.webp" alt="image2.jpg">
+              </section>
+            </div>
+          </section>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-5 col-lg-4 col-xl-3 pad-large">
+          <div class="sidebar">
+            <h5 class="sidebar-title">Shared Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Human Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Finance & Accounting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Information Technology</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link active" href="#">Administration & Compliance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Facilities & Safety</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Learning & Development</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Tags -->
+          <div class="sidebar">
+            <h5 class="sidebar-title">Tags</h5>
+            <ul class="tag-list">
+              <li><a href="#">Balance</a></li>
+              <li><a href="#">Coaching</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Strategy</a></li>
+              <li><a href="#">Businesses</a></li>
+              <li><a href="#">Acquired</a></li>
+            </ul>
+          </div>
+          <!-- Background Image -->
+          <div class="background-image">
+            <figure>
+              <img class="image-overlay" src="img/stock/iStock-532521235.webp" alt="image2.jpg">
+              <figcaption class="side-overlay ">
+              </figcaption>
+            </figure>
+            <img src="img/logo-inverse-all.svg" alt="Folience Logo" class="mb-4" />
+            <p><strong>Leading the Way</strong><br>
+              in Growing Sustainable Businesses with a Vision for Long-Term Success.</p>
+            <button class="btn btn-white">Conact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reach Out -->
+    <section class="bg-cream pad-large">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h2 class="text-center mb-2">Reach Out</h2>
+            <h5 class="text-center mb-4">Is your company the right fit for Folience? We’d be happy to have a discussion.
+              Contact us to learn more about our company criteria and application process.</h5>
+            <div class="text-center">
+              <button class="btn btn-primary m-2">Our Approach</button>
+              <button class="btn btn-secondary m-2">Careers</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer position-relative">
+    <figure>
+      <img src="img/images/footer-bg.webp" alt="footer background" class="img-fluid" />
+    </figure>
+    <div class="container pad-large text-white">
+      <div class="row">
+        <div class="col-md-4 col-lg-5  col-xl-7">
+          <img src="img/logo-inverse.svg" class="mb-4" alt="Footer Logo" width="280">
+          <p>Growing long-term financial value through investing in human development improving the
+            skills and productivity of the workforce generating long-term financial value for individuals, companies,
+            and society as a whole. </p>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-3 mb-3 mt-3 mb-md-0 mt-md-0">
+          <h5>Quick Links</h5>
+          <div class="row">
+            <div class="col">
+              <ul class="list-unstyled">
+                <a href="#">
+                  <li>About Us</li>
+                </a>
+                <a href="#">
+                  <li>Our Approach</li>
+                </a>
+                <a href="#">
+                  <li>Shared Services</li>
+                </a>
+                <a href="#">
+                  <li>Employee Ownership</li>
+                </a>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled">
+                <a href="#">
+                  <li>News</li>
+                </a>
+                <a href="#">
+                  <li>Our Companies</li>
+                </a>
+                <a href="#">
+                  <li>Careers</li>
+                </a>
+                <a href="#">
+                  <li>Contact Us</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-2">
+          <h5>Find Us</h5>
+          <p>(319) 200-2800</p>
+          <p>230 2nd St SE #100<br>
+            Cedar Rapids, IA 52401</p>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container border-top border-light p-4" style="--bs-border-opacity:.3">
+      <div class="row text-white">
+        <div class="col-md-12 text-small">
+          <small>© 2023 ITC. All Rights Reserved. Web Application by <a class="text-white" target="_blank"
+              href="https://www.informaticsinc.com/">Informatics, Inc</a></small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

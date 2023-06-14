@@ -20,6 +20,7 @@ Date: Feb 2023
 
 /* Bootstrap Components */
 @import "../bootstrap/scss/accordion";
+@import "../bootstrap/scss/bootstrap";
 
 // Swiper
 @import "vendors/swiper/swiper";
@@ -32,21 +33,21 @@ Date: Feb 2023
 // Layout
 @import "layout/header";
 @import "layout/footer";
-@import "layout/grid";
 @import "layout/wordpress";
 
 // Components
 @import "components/buttons";
 @import "components/page-headers";
-@import "components/full-img-combo";
-@import "components/stats";
-@import "components/quote_with_img";
-@import "components/hover_card";
+@import "components/image_blocks";
+@import "components/testimonials";
+@import "components/cards";
 @import "components/full_large_img";
 @import "components/insights_listing";
 @import "components/hero";
 @import "components/page_list";
-@import "components/projects-insights";
-@import "components/search";
+@import "components/top_quote";
+@import "components/sidebar";
+
+
 
 

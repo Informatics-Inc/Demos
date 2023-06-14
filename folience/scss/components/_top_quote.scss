@@ -1,0 +1,22 @@
+h5.quote{font-size:2rem;line-height:2.35rem}
+.topquote em{color:var(--primary);font-style:normal;}
+.topquote p{line-height:1.875rem;}
+.topquote p::after{content:"";display:block;width:45px;height:2px;background-color:var(--primary);margin-top:30px;}
+
+/* ONLY MOBILE */
+@media (max-width: 992px) {
+} 
+/* TABLET */
+@media (min-width: 768px) {
+h5.quote{font-size:2.375rem;line-height:2.75rem}
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
