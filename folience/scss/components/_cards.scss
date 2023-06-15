@@ -27,10 +27,12 @@ a h5:hover{color:var(--primary)}
 .services h5{font-size:1.20rem;line-height:1.5rem}
 
 /* Bio Cards */
-.board-members p.card-title{margin-bottom:0px;font-size:0.9rem;font-weight:700;line-height:1rem}
-.bio-pic{width:100%;min-height:220px;object-fit:cover;}
-.board-members .card-body{padding:12px}
-h6.name{margin-bottom:0.2rem;line-height:1.15rem}
+.board-members .bio-pic{width:100%;height:200px;object-fit:cover;border:none}
+.bio-pic{width:100%;height:350px;object-fit:cover;border:none}
+.team-photo .card-body{padding:20px}
+.team-photo p.card-title{margin-bottom:0px;font-size:0.9rem;font-weight:700;line-height:1rem}
+.team-photo h6.name{margin-bottom:0.2rem;line-height:1.15rem}
+.card.team-photo{border:none}
 
 /* Generic Icon Cards */
 .icon-card.card{padding:20px;border-radius:0px;box-shadow:2px 2px 16px rgba(0,0,0,0.08);background:#fff;border:solid 1px #E5E5EA;transition:var(--transition);}

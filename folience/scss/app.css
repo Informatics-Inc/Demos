@@ -12127,31 +12127,8 @@ hr {
   padding-left: 20px;
 }
 
-#main-content ol {
-  color: #09f;
-  margin-left: 13px;
-  padding-left: 0px;
-}
-
-#main-content li {
-  list-style: none;
-  color: #000;
-}
-
-#main-content .text-white li {
-  color: #fff;
-}
-
-#main-content li:before {
-  content: "•";
-  display: block;
-  position: relative;
-  max-width: 0px;
-  max-height: 0px;
-  left: -13px;
-  top: 0px;
+li::marker {
   color: var(--primary);
-  font-size: 0.9em;
 }
 
 .title-group .callout {
@@ -12173,19 +12150,6 @@ hr {
 .pad-large {
   padding-top: 70px;
   padding-bottom: 70px;
-}
-
-/* Shape Componants */
-.side-rectangle {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 250px;
-  background: url("../img/side-rectangle.svg") no-repeat;
-  background-size: cover;
-  opacity: 50%;
 }
 
 /* Eyebrow */
@@ -12229,8 +12193,25 @@ hr {
 
 /* ONLY MOBILE */
 /* TABLET */
+@media (min-width: 768px) {
+  /* Shape Componants */
+  .side-rectangle {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 250px;
+    background: url("../img/side-rectangle.svg") no-repeat;
+    background-size: cover;
+    opacity: 50%;
+  }
+}
 /* WIDE DESKTOP */
 @media (min-width: 992px) {
+  .side-rectangle {
+    width: 25px;
+  }
   .pad-right {
     padding-right: 40px;
   }
@@ -12240,6 +12221,11 @@ hr {
   .pad-large {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .side-rectangle {
+    width: 50px;
   }
 }
 #logo {
@@ -12485,6 +12471,7 @@ hr {
   }
   #site-header {
     background: #fff;
+    border-bottom: solid #dfdfdf 1px;
     border-top: solid 8px var(--primary);
     width: 100%;
     position: fixed;
@@ -12498,6 +12485,7 @@ hr {
   }
   .home-header #site-header {
     background: none;
+    border-bottom: none;
   }
   #site-header:after {
     width: 100%;
@@ -12695,9 +12683,7 @@ hr {
     z-index: 99999;
     background: #fff;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
-  }
-  #site-header #menu-main > li:hover > a {
-    color: #fff;
+    border-bottom: solid #dfdfdf 1px;
   }
   #site-header.scroll .seperator {
     color: #000;
@@ -12900,7 +12886,7 @@ hr {
 
 .thumbnail {
   padding: 70px 15px;
-  max-width: 85%;
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -13084,8 +13070,8 @@ hr {
   }
 }
 .carousel-inner {
-  padding-left: 150px;
-  padding-right: 150px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .testimonial {
@@ -13113,11 +13099,11 @@ hr {
 }
 
 .carousel-control-next-icon {
-  background-image: url("/img/icons/chevron-right.svg");
+  background-image: url("../img/icons/chevron-right.svg");
 }
 
 .carousel-control-prev-icon {
-  background-image: url("/img/icons/chevron-left.svg");
+  background-image: url("../img/icons/chevron-left.svg");
 }
 
 .testimonial h5, .testimonial .h5 {
@@ -13153,6 +13139,29 @@ hr {
   background-color: var(--primary);
 }
 
+.carousel-indicators li {
+  height: 10px;
+  border: solid 2px var(--primary);
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.carousel-indicators .active {
+  height: 10px;
+  width: 10px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ONLY MOBILE */
+@media (max-width: 992px) {
+  .carousel-control-prev, .carousel-control-next {
+    align-items: end;
+  }
+}
 /* Generic */
 .card {
   border-radius: 0px;
@@ -13266,27 +13275,40 @@ a h5:hover, a .h5:hover {
 }
 
 /* Bio Cards */
-.board-members p.card-title {
+.board-members .bio-pic {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: none;
+}
+
+.bio-pic {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: none;
+}
+
+.team-photo .card-body {
+  padding: 20px;
+}
+
+.team-photo p.card-title {
   margin-bottom: 0px;
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 1rem;
 }
 
-.bio-pic {
-  width: 100%;
-  min-height: 220px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.board-members .card-body {
-  padding: 12px;
-}
-
-h6.name, .name.h6 {
+.team-photo h6.name, .team-photo .name.h6 {
   margin-bottom: 0.2rem;
   line-height: 1.15rem;
+}
+
+.card.team-photo {
+  border: none;
 }
 
 /* Generic Icon Cards */
@@ -13380,7 +13402,7 @@ h6.name, .name.h6 {
 /* Dark Blue Background - Shapes in Corners */
 .corner-left {
   z-index: -1;
-  background: url("/img/left-angles.svg") no-repeat;
+  background: url("../img/left-angles.svg") no-repeat;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -13391,7 +13413,7 @@ h6.name, .name.h6 {
 
 .corner-right {
   z-index: -1;
-  background: url("/img/right-angles.svg") no-repeat;
+  background: url("../img/right-angles.svg") no-repeat;
   position: absolute;
   right: 0;
   top: 0;
@@ -13416,6 +13438,16 @@ h6.name, .name.h6 {
   z-index: -3;
 }
 
+.listings {
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+.listings:last-child {
+  border-bottom: none;
+}
+
 .news-detail img {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -13430,6 +13462,12 @@ h6.name, .name.h6 {
   color: #000;
 }
 
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+  .p-top {
+    padding-top: 120px;
+  }
+}
 .hero-image {
   display: flex;
   justify-content: center;
@@ -13464,8 +13502,8 @@ h6.name, .name.h6 {
 }
 
 .hero-content h1, .hero-content .h1 {
-  font-size: 5.563rem;
-  line-height: 6.3rem;
+  font-size: 5rem;
+  line-height: 5.35rem;
 }
 
 .hero-content h1::before, .hero-content .h1::before {
@@ -13529,6 +13567,13 @@ h6.name, .name.h6 {
     opacity: 0;
   }
 }
+/* TABLET */
+@media (min-width: 768px) {
+  .hero-content h1, .hero-content .h1 {
+    font-size: 5.5rem;
+    line-height: 6.5rem;
+  }
+}
 /* WIDE DESKTOP */
 @media (min-width: 992px) {
   .home-header .hero-content {
@@ -13539,6 +13584,47 @@ h6.name, .name.h6 {
     line-height: 6.7rem;
   }
 }
+.model-box, .right-box, .left-box {
+  position: relative;
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  margin: 25px;
+}
+
+.left-box {
+  background: #797979;
+  margin: 25px auto;
+}
+
+.right-box {
+  background: #089098;
+  margin: 0;
+}
+
+.model-box::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 25px;
+  background-color: black;
+}
+
+.model-box:last-child::after {
+  bottom: -100%;
+  height: 100%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
 h5.quote, .quote.h5 {
   font-size: 2rem;
   line-height: 2.35rem;

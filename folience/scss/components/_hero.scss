@@ -3,7 +3,7 @@
 .hero-image figure{z-index:-1;position:absolute;opacity:0.25;top:0;left:0;right:0;bottom:0;margin:0;}
 .hero-image img{object-fit:cover;width:100%;height:100%;}
 .hero-content{color:#fff;}
-.hero-content h1{font-size:5.563rem;line-height:6.3rem}
+.hero-content h1{font-size:5rem;line-height:5.35rem}
 .hero-content h1::before{content:'';position:absolute;top:-30px;left:50%;transform:translateX(-40px);width:80px;height:1px;background-color:var(--primary);}
 
 .scroll-downs p{font-size:0.8rem;}
@@ -15,9 +15,16 @@
 100%{transform:translateY(15px);opacity:0;}
 }
 
+
+/* TABLET */
+@media (min-width: 768px) {
+.hero-content h1{font-size:5.5rem;line-height:6.5rem}
+} 
+
 /* WIDE DESKTOP */
 @media (min-width: 992px) {
 .home-header .hero-content{margin-top:120px}
 .hero-content h1{font-size:6.563rem;line-height:6.7rem}
 }
+
 

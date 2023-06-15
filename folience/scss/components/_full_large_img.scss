@@ -4,8 +4,8 @@
 .bg-image figure img{object-fit:cover;width:100%;height:100%;}
 
  /* Dark Blue Background - Shapes in Corners */
- .corner-left{z-index:-1;background:url("/img/left-angles.svg")no-repeat;position:absolute;left:0;bottom:0;width:410px;height:250px;opacity:35%;}
- .corner-right{z-index:-1;background:url("/img/right-angles.svg")no-repeat;position:absolute;right:0;top:0;width:410px;height:315px;opacity:35%;}
+ .corner-left{z-index:-1;background:url("../img/left-angles.svg")no-repeat;position:absolute;left:0;bottom:0;width:410px;height:250px;opacity:35%;}
+ .corner-right{z-index:-1;background:url("../img/right-angles.svg")no-repeat;position:absolute;right:0;top:0;width:410px;height:315px;opacity:35%;}
  .overlay-bg{background:var(--navy);width:100%;height:100%;position:absolute;z-index:-3;}
  .overlay-dark{background:#000;width:100%;height:100%;position:absolute;z-index:-3;}
 
