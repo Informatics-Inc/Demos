@@ -66,7 +66,7 @@
 .btn-theme {background: var(--secondary); color: #fff; padding: 10px 20px; display: block; border-radius: 5px; letter-spacing: .5px; font-size: .925rem; font-weight: 700; text-decoration: none; border-color: var(--secondary);}
 .btn-theme:hover, .ccm-ui .btn-primary:hover {color: #fff; background: var(--primary);}
 .btn-secondary {padding: 10px 15px; border: 2px solid var(--border); background: #fff; border-radius: 5px; box-shadow: 5px 5px 5px rgba(0,0,0,.1); font-size: .925rem; color: var(--text); text-decoration: none;}
-.btn-secondary:hover {background: #f4f4f4;}
+.btn-secondary:hover {background: #f4f4f4; color: var(--text);}
 .btn-secondary i {color: #38844B;}
 
 .ccm-ui label.control-label {color: var(--primary); font-size: .9rem;}
@@ -75,6 +75,8 @@
 .ccm-ui .btn-primary {background: #38844B; border-color: #38844B;}
 
 .form-actions {padding: 25px 0; border-top: 1px dotted var(--border); display: flex; justify-content: space-between;}
+.btn-primary {padding: 10px 15px;}
+.modal-lg .modal-body {padding: 25px;}
 
 /* TABLET */
 @media (min-width: 768px) {
