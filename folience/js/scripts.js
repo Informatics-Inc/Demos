@@ -1,7 +1,16 @@
+window.addEventListener('scroll', function() {
+  var image = document.getElementById('image');
+  var scrollPosition = window.scrollY;
 
-// -- Search Toggle -- //
-$(".search-toggle").click(function(){
-	$("#hdr-search").toggleClass("open");
+  // Define the scaling factor based on the scroll position
+  var scaleFactor = 1 + (scrollPosition * 0.001) + 0;
+ 
+  // Define the opacity factor based on the scroll position
+  var opacityFactor = Math.min(scrollPosition / 500, 1); // Adjust 500 to control the speed of fading
+
+  // Apply the scale and opacity transformations
+  image.style.transform = 'scale(' + scaleFactor + ')';
+  image.style.opacity = 1 - opacityFactor;
 });
 
 // -- ADD CLASS ON SCROLL --//

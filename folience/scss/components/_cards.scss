@@ -19,14 +19,12 @@ a h5:hover{color:var(--primary)}
 .image-box img{padding:35px 35px 15px 35px;width:100%;height:auto;object-fit:cover;}
 .comp .card-body{padding:0px 30px 30px 30px}
 
-/* Services Icon Cards */
+/* Services Icon Cards on Homepage*/
 .services .card{border:none;border-left:solid 1px #E6E2E1;background:#FAF7F7;}
 .services .card-body{padding:10px}
-.services .card:first-of-type{border-left:none}
-.services .card:first-of-type{border-left:none}
 .services h5{font-size:1.20rem;line-height:1.5rem}
 
-/* Bio Cards */
+/* Bio Cards on Homepage*/
 .board-members .bio-pic{width:100%;height:200px;object-fit:cover;border:none}
 .bio-pic{width:100%;height:350px;object-fit:cover;border:none}
 .team-photo .card-body{padding:20px}
@@ -48,7 +46,12 @@ a h5:hover{color:var(--primary)}
 .plain-cards .card-text{margin-top:0px}
 .plain-cards{border:none;}
 
+
 /* TABLET */
 @media (min-width:768px){.card-body{padding:30px}
 .icon-card.card{padding:30px;}
+}
+
+@media (min-width: 1200px) {
+.services .card:first-of-type{border-left:none}
 }
