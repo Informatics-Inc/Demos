@@ -12875,6 +12875,9 @@ a h5:hover, a .h5:hover {
   .home-header .hero-image {
     height: 70vh;
   }
+  .scroll-downs {
+    display: none;
+  }
 }
 /* TABLET */
 @media (min-width: 768px) {
