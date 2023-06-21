@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Santa Clara Portal</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ccm.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<main id="main">
+  
+  <div class="tools">
+    <div class="language">
+      <button id="lang-btn" aria-controls="lang-options"><img src="img/flag-us.jpg" /><span>Language: English <i class="fa fa-caret-down"></i></span></button>
+      <ul id="lang-options">
+        <li><a href="#.html"><img src="img/flag-us.jpg" /> English</a></li>
+        <li><a href="#.html"><img src="img/flag-viet.jpg" /> Vietnamese</a></li>
+      </ul>
+    </div>
+    <div class="user-details">
+      <p>Logged in as <a href="#.html">Lisa Vazquez</a> | <a href="#.html">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a></p>
+    </div>
+  </div>
+
+  <div class="admin-wrapper">
+    <nav class="menu">
+      <div class="menu-wrapper">
+        <div class="menu-hdr">
+          <div class="brand">
+            <img src="img/logo.jpg" />
+            <p>Child Care Portal</p>
+          </div>
+          <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#menu-expand" aria-expanded="false" aria-controls="menu-expand"><i class="fa fa-bars"></i></span></button>
+        </div>
+        <div id="menu-expand" class="collapse">
+          <ul class="menu-links">
+            <li><a href="index.html"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="referrals.html"><i class="fa fa-check"></i>Approve/Deny Referrals</a>
+            </li>
+            <li><a href="details.html"><i class="fa fa-building"></i>Your Details</a>
+            </li>
+            <li class="active"><a href="settings.html"><i class="fa fa-user"></i>Settings</a>
+                <ul>
+                    <li class="active"><a href="#.html">Edit Profile</a></li>
+                    <li><a href="#.html">Profile Picture</a></li>
+                    <li><a href="#.html">Private Messages</a></li>
+                  </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="portal-content fadein">
+      <div class="portal-content-wrap">
+      <div class="portal-content-hdr">
+        <span class="hdr-wrap"><h1>Edit Profile</h1> <a href="#.html" class="btn-secondary"><i class="fa-solid fa-file-export"></i> Export Updates</a></span>
+        <p>Update your staff information here. </p>
+      </div>
+        <div class="ccm-ui">
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <form method="post" action="https://www.childcarescc.org/account/edit_profile/save" enctype="multipart/form-data">
+                    <input type="hidden" name="ccm_token" value="1687198129:54c34942df25bd7d5a6a57f7c441f766">	<fieldset>
+                        <legend>Basic Information</legend>
+                
+                        <div class="form-group">
+                            <label for="uName" class="control-label">Username</label>            <input type="text" id="uName" name="uName" value="DJ_Test_6234adb99c713" class="form-control ccm-input-text">        <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                
+                        <div class="form-group">
+                            <label for="uEmail" class="control-label">Email</label>            <input type="text" id="uEmail" name="uEmail" value="danieljin.47+family@gmail.com" class="form-control ccm-input-text">        <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                
+                        
+                            </fieldset>
+                
+                    
+                            <fieldset>
+                            <legend>Other</legend>
+                            
+                <div class="form-group">
+                            <label class="control-label" for="akID[14][value]">I would like to receive private messages.</label>
+                    
+                    
+                    <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="1" name="akID[14][value]" checked="">
+                        I would like to receive private messages.    </label>
+                </div></div>
+                
+                <div class="form-group">
+                            <label class="control-label" for="akID[15][value]">Send me email notifications when I receive a private message.</label>
+                    
+                    
+                    <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="1" name="akID[15][value]" checked="">
+                        Send me email notifications when I receive a private message.    </label>
+                </div></div>
+                
+                <div class="form-group">
+                            <label class="control-label" for="akID[35][value]">Full Name</label>
+                    
+                            <span class="text-muted small">Required</span>
+                    
+                    <input type="text" id="akID[35][value]" name="akID[35][value]" value="DJ Test" placeholder="Full Name" class="form-control ccm-input-text"></div>
+                
+                <div class="form-group">
+                            <label class="control-label" for="akID[36][value]">License Number</label>
+                    
+                            <span class="text-muted small">Required</span>
+                    
+                    <input type="text" id="akID[36][value]" name="akID[36][value]" value="" placeholder="License Number" class="form-control ccm-input-text"></div>
+                
+                <div class="form-group">
+                            <label class="control-label" for="akID[37][value]">Verified Provider Admin</label>
+                    
+                            <span class="text-muted small">Required</span>
+                    
+                    <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="1" name="akID[37][value]">
+                        Verified Provider Admin    </label>
+                </div></div>
+                        </fieldset>
+                    
+                        <br>
+                    <fieldset>
+                        <legend>Change Password</legend>
+                
+                        <div class="form-group">
+                            <label for="uPasswordMine" class="control-label">Your Current Password</label>            <input type="password" id="uPasswordMine" name="uPasswordMine" value="" autocomplete="off" class="form-control ccm-input-password">        <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                
+                        <div class="form-group">
+                            <label for="uPasswordNew" class="control-label">New Password</label>            <input type="password" id="uPasswordNew" name="uPasswordNew" value="" autocomplete="off" class="form-control ccm-input-password">		<div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                
+                        <div class="form-group">
+                            <label for="uPasswordNewConfirm" class="control-label">Confirm New Password</label>            <input type="password" id="uPasswordNewConfirm" name="uPasswordNewConfirm" value="" autocomplete="off" class="form-control ccm-input-password">        <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                
+                        <div class="help-block">Leave blank to leave the password unchanged.</div>
+                    </fieldset>
+                
+                    <div class="form-actions">
+                        <div class="ccm-dashboard-form-actions">
+                            <input type="submit" name="save" value="Save" class="btn btn-primary">
+                        </div>
+                    </div>
+                
+                </form>
+
+            </div>
+        </div>        </div>
+      </div>
+      </div>
+  </div>
+</main>
+
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  </body>
+</html>

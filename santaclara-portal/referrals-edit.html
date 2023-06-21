@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Santa Clara Portal</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ccm.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<main id="main">
+  
+  <div class="tools">
+    <div class="language">
+      <button id="lang-btn" aria-controls="lang-options"><img src="img/flag-us.jpg" /><span>Language: English <i class="fa fa-caret-down"></i></span></button>
+      <ul id="lang-options">
+        <li><a href="#.html"><img src="img/flag-us.jpg" /> English</a></li>
+        <li><a href="#.html"><img src="img/flag-viet.jpg" /> Vietnamese</a></li>
+      </ul>
+    </div>
+    <div class="user-details">
+      <p>Logged in as <a href="#.html">Lisa Vazquez</a> | <a href="#.html">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a></p>
+    </div>
+  </div>
+
+  <div class="admin-wrapper">
+    <nav class="menu">
+      <div class="menu-wrapper">
+        <div class="menu-hdr">
+          <div class="brand">
+            <img src="img/logo.jpg" />
+            <p>Child Care Portal</p>
+          </div>
+          <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#menu-expand" aria-expanded="false" aria-controls="menu-expand"><i class="fa fa-bars"></i></span></button>
+        </div>
+        <div id="menu-expand" class="collapse">
+          <ul class="menu-links">
+            <li><a href="index.html"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li class="active"><a href="referrals.html"><i class="fa fa-check"></i>Approve/Deny Referrals</a>
+            </li>
+            <li><a href="details.html"><i class="fa fa-building"></i>Your Details</a>
+            </li>
+            <li><a href="family.html"><i class="fa fa-users"></i>Family Information</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="portal-content fadein">
+      <div class="portal-content-wrap">
+      <div class="portal-content-hdr">
+        <div class="hdr-wrap">
+          <h1>Xavier Stax</h1>
+          <div class="hdr-buttons">
+            <a href="referrals.html" class="btn-secondary"><i class="fa-solid fa-arrow-alt-circle-left"></i> Back to Listing</a> <a href="#.html" class="btn-secondary"><i class="fa-solid fa-users"></i> Edit Family Information</a>
+          </div>
+        </div>
+        <!-- <p>Update your staff information here.</p> -->
+      </div>
+      <div class="ccm-ui">
+      <div class="panel panel-default">
+        
+        <div class="panel-body">
+          <div class="ccm-pane-body">
+    
+            <div class="row">
+                <div class="col-sm-12">
+                      <form id="form-details" enctype="multipart/form-data" action="https://www.childcarescc.org/index.php/dashboard/portal/referrals/save_referral" method="post">
+                      <input type="hidden" id="application_id" name="application_id" value="1482">                    <input type="hidden" id="url_type" name="url_type" value="">                    <input type="hidden" id="url_id" name="url_id" value="">                                <!--                                 <div class="alert alert-warning">
+                            <p>Please note that referrals cannot be edited after submission because providers are being matched to the specific search criteria you enter. If you need to change your search criteria, please submit a new referral reflecting the most up-to-date criteria regarding your family's childcare needs.</p>                </div>
+                     -->
+                        <div class="row">
+                            <div class="col-sm-12 hide-family-admin hide-provider-admin hide-site-super-admin" style="display: none;">
+                                <div class="form-group">
+                                    <input type="checkbox" id="sccoe_staff_application" name="sccoe_staff_application" class="ccm-input-checkbox" value="1">                            This referral was entered on behalf of the family from SCCOE staff.                        </div>
+                            </div>
+                        </div>
+                                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Type of Care Location</label><br>
+                                        Near child's school                            </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Number Of Children</label><br>
+                                        <!-- SR: added span so that this value can be collected in javascript -->
+                                        <span class="no_of_children">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                                        <div class="col-sm-6 hidden">
+                            <div class="form-group">
+                                <label for="no_of_children" class="control-label">Select Number of Children:</label> 
+                                <!-- SR: added span so that this value can be collected in javascript -->
+                                <span class="no_of_children">1</span>
+                            </div>
+                        </div>
+                        <div class="row hide-family-admin hide-provider-admin hide-site-super-admin" style="display: none;">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="care_needed_reason" class="required control-label">Reason Care is needed</label>                            <div class="checkbox row">
+                                                                            <div class="col-sm-6">
+                                                <label>
+                                                    <input type="checkbox" id="care_needed_reason_312" name="care_needed_reason[]" class="ccm-input-checkbox" value="312" checked="checked">                                            Alternate/back-up care                                        </label>
+                                            </div>
+                                                                            <div class="col-sm-6">
+                                                <label>
+                                                    <input type="checkbox" id="care_needed_reason_314" name="care_needed_reason[]" class="ccm-input-checkbox" value="314">                                            CPS/respite referral                                        </label>
+                                            </div>
+                                                                            <div class="col-sm-6">
+                                                <label>
+                                                    <input type="checkbox" id="care_needed_reason_311" name="care_needed_reason[]" class="ccm-input-checkbox" value="311" checked="checked">                                            Employed                                        </label>
+                                            </div>
+                                                                            <div class="col-sm-6">
+                                                <label>
+                                                    <input type="checkbox" id="care_needed_reason_315" name="care_needed_reason[]" class="ccm-input-checkbox" value="315">                                            Enrichment and/or development                                        </label>
+                                            </div>
+                                                                            <div class="col-sm-6">
+                                                <label>
+                                                    <input type="checkbox" id="care_needed_reason_313" name="care_needed_reason[]" class="ccm-input-checkbox" value="313">                                            In school/training                                        </label>
+                                            </div>
+                                                                            <div class="col-sm-6">
+                                                <label>
+                                                    <input type="checkbox" id="care_needed_reason_317" name="care_needed_reason[]" class="ccm-input-checkbox" value="317">                                            Looking for work                                        </label>
+                                            </div>
+                                                                            <div class="col-sm-6">
+                                                <label>
+                                                    <input type="checkbox" id="care_needed_reason_316" name="care_needed_reason[]" class="ccm-input-checkbox" value="316">                                            Mildly ill child                                        </label>
+                                            </div>
+                                                                            <div class="col-sm-6">
+                                                <label>
+                                                    <input type="checkbox" id="care_needed_reason_318" name="care_needed_reason[]" class="ccm-input-checkbox" value="318">                                            Other Parental Needs                                        </label>
+                                            </div>
+                                                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <!-- </div> -->
+                        
+                            <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                                                <table class="portal-table" cellspacing="0" cellpadding="0" border="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Provider Name</th>
+                                                <th>Status</th>
+                                                <th>Provider Notes</th>
+                                                <th>Date Status Change</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                                                <tr>
+                                                <td style="display:none">                                        </td>
+                                                <td>
+                                                    test large home (test)                                        </td>
+                                                <td>
+                                                    Denied                                        </td>
+                                                <td>
+                                                                                            </td>
+                                                <td>
+                                                                                                                                            05/02/2023                                            
+                                                </td>
+                                            </tr>
+                                                                            </tbody>
+                                    </table>
+                                                            </div>
+                            </div>
+                        </div>
+                            
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <h4>Family Information</h4>
+                                </div>
+                            </div>
+                                    <div class="col-sm-6">
+                                <div class="form-group">
+                                    
+                                </div>
+                            </div>
+                                </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                <label>Full Name</label>
+                                <p>DJIV Testing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row hide-family-admin hide-provider-admin hide-site-super-admin" style="display: none;">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <p>408-887-2124</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <p>danieljin.47+family_test@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Email Address</label>
+                                        <p>danieljin.47+family_test@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Secondary Email Address(Optional)</label>
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label>Primary Phone</label>
+                                        <p>408-887-2124</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label>Phone Type</label>
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label>Secondary Phone</label>
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label>Secondary Phone Type</label>
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                                        <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <p>1299 Ridder Park Dr, WY, 82001</p>
+                                    </div>
+                                </div>
+                                                        <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Mailing Address</label>
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                                        <!-- Co-Applicant Information -->
+                                        <hr>
+                                        
+                            <div class="children-details"><div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <h4>Child  1</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group"></div>
+                                </div>
+                            </div><input type="hidden" id="child_id[1]" name="child_id[1]" value="1284">
+                            <div class="form-group"><label for="child_first_name[1]" class="control-label">Child Name</label><br>Xavier Stax
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="child_birth_date[1]" class="control-label">Birthdate</label><br>01/03/2019</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="child_age_category[1]" class="control-label">Age Category</label><br>2-5 years</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="child_gender[1]" class="control-label">Gender</label><br>-</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="child_childcare_start_date[1]" class="control-label">Start date childcare is needed</label><br>05/15/2023</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="child_care_start_time[1]" class="control-label">Start Time for Care</label><br>00:50:00</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="child_care_end_time[1]" class="control-label">End Time for Care</label><br>11:10:00</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="child_special[1]" class="control-label">Special Needs</label><br>No</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="child_days_needing_care" class="control-label">Days Needing Care</label><br>Tuesday | Thursday</div>
+                            </div>
+                        </div>
+                        </div>
+                                        <!-- <hr />  -->
+                        <div class="form-actions">
+                          <span>
+                            <a href="#.html" class="btn-secondary"><i class="fa-solid fa-check"></i> Approve</a>
+                            <a href="#.html" class="btn-secondary"><i class="fa-solid fa-cancel text-danger"></i> Deny</a>
+                          </span>
+                            <a href="#.html" class="btn-secondary"><i class="fa-solid fa-arrow-alt-circle-left"></i> Back to Listing</a>
+                        
+                        </div>
+                        </form> 
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      </div></div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Example Modal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>This is a popover to help users</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ullam, repellat alias illum voluptatibus laudantium hic unde doloribus placeat itaque magnam vero enim. Dignissimos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  </body>
+</html>

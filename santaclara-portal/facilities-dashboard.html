@@ -11,12 +11,13 @@
     <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
     <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ccm.css" rel="stylesheet">
     <link href="css/app.min.css" rel="stylesheet">
 
   </head>
   <body>
 
-<main id="main" class="ccm-ui">
+<main id="main">
   <div class="tools">
     <div class="language">
       <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#lang-options" aria-expanded="false" aria-controls="lang-options"><img src="img/flag-us.jpg" /><span>Language: English <i class="fa fa-caret-down"></i></span></button>
@@ -45,35 +46,46 @@
             <li><a href="index.html"><i class="fa fa-home"></i>Dashboard</a></li>
             <li><a href="referrals.html"><i class="fa fa-check"></i>Approve/Deny Referrals</a>
             </li>
-            <li class="active"><a href="details.html"><i class="fa fa-building"></i>Your Details</a>
-               <ul>
-                <li><a href="details-detail.html">Manage Admins</a></li>
-                <li><a href="details-detail.html">Referral & Vacancies</a></li>
-                <li><a href="details-detail.html">License Information</a></li>
-                <li><a href="details-detail.html">Public Information</a></li>
-                <li><a href="details-detail.html">Contact Information</a></li>
-                <li><a href="details-detail.html">Workforce Information</a></li>
-                <li><a href="details-detail.html">Transportation & Meals</a></li>
-                <li><a href="details-detail.html">Schedule Of Care</a></li>
-                <li><a href="details-detail.html">Payment & Subsidies</a></li>
-                <li><a href="details-detail.html">Qualifications</a></li>
-                <li><a href="details-detail.html">Program Information</a></li>
-              </ul> 
+            <li class="active"><a href="details.html"><i class="fa fa-building"></i>Your Facilities</a>
+              <ul>
+                <li><a href="#.html">Location #1</a></li>
+                <li class="active"><a href="#.html">Location #2</a>
+                  <ul>
+                    <li><a href="details-detail.html">Manage Admins</a></li>
+                    <li><a href="details-detail.html">Referral & Vacancies</a></li>
+                    <li><a href="details-detail.html">License Information</a></li>
+                    <li><a href="details-detail.html">Public Information</a></li>
+                    <li><a href="details-detail.html">Contact Information</a></li>
+                    <li><a href="details-detail.html">Workforce Information</a></li>
+                    <li><a href="details-detail.html">Transportation & Meals</a></li>
+                    <li><a href="details-detail.html">Schedule Of Care</a></li>
+                    <li><a href="details-detail.html">Payment & Subsidies</a></li>
+                    <li><a href="details-detail.html">Qualifications</a></li>
+                    <li><a href="details-detail.html">Program Information</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li><a href="family.html"><i class="fa fa-users"></i>Family Information</a></li>
+            <li><a href="settings.html"><i class="fa fa-cog"></i>Settings</a>
+            </li>
           </ul>
+          
         </div>
       </div>
     </nav>
     <div class="portal-content fadein">
       <div class="portal-content-hdr">
+        <ol class="breadcrumb">
+          <li><a href="details.html">Your Faciliities</a></li>
+          <li>Location #2</li>
+        </ol>
         <div class="hdr-wrap">
-          <h1>Your Details</h1>
+          <h1>Location #2</h1>
           <div class="hdr-buttons">
-            <a href="#.html" class="btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-edit"></i> Edit Your Information</a>
+            <a href="#.html" class="btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-file-export"></i> Export To Excel</a>
           </div>
         </div>
-        <p>Manage your provider details here.</p>
+        <p>Manage your license information here.</p>
       </div>
       <div class="grid grid-3">
         <div class="box">
@@ -105,6 +117,13 @@
             <p>Update you qualifications so visitors know the skills and care you can provide.</p>
             <a href="#.html" class="btn-theme">Update Qualifications</a>
           </div>
+        </div>
+      </div>
+    </div>
+<script>
+$('#regulation').attr("disabled", true); 
+document.getElementById("regional_office").disabled = true;
+</script>                        </div>
         </div>
       </div>
     </div>
