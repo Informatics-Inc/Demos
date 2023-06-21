@@ -59,7 +59,7 @@
           </ul>
         </div>
         <ul class="menu-main">
-          <li class="active"><a href="book-now.html">Book Now</a></li>
+          <li><a href="book-now.html">Book Now</a></li>
           <li><a href="counties.html">Counties</a></li>
           <li><a href="events.html">Events</a></li>
         </ul>
@@ -68,22 +68,19 @@
   </nav>
 
   <main id="main-content">
-    <header class="page-header fadeinup delay-1">
+    <header class="page-header fadeinup delay-1" id="hero">
       <figure>
-        <img src="img/hero-4.jpg" />
+        <video autoplay="" loop="" muted="" playsinline="" src="img/MCP-hero-video.mp4" type="video/mp4" poster="img/hero-3.jpg" />
+        </video>
       </figure>
       <div class="text">
         <div class="container">
-          <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li>Book Now</li>
-          </ol>
-          <h1>Book Facilities</h1>
+          <h1>Book a Cabin, Campsite, or Shelter.</h1>
         </div>
       </div>
     </header>
     <div class="container grid grid-gap-md">
-      <div class="search grid fadeinup delay-2">
+      <div class="search fadeinup delay-2">
         <div class="row">
           <div class="col flex-shrink-no">
             <div class="input-wrap">
@@ -103,70 +100,6 @@
             <a href="book-now.html" class="btn-theme"><i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="row selects">
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-tent"></i>
-                <select class="form-select">
-                  <span><option>Facility Type</option></span>
-                  <option>Cabin</option>
-                  <option>Campsite</option>
-                  <option>Lodge</option>
-                  <option>Other</option>
-                  <option>Shelter</option>
-                </select>
-              </div>
-          </div>
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-map-location-dot"></i>
-              <select class="form-select">
-                <option>County</option>
-                  <option>Adair</option>
-                  <option>Allapoose</option>
-                  <option>Benton</option>
-                  <option>Iowa</option>
-                  <option>Eli</option>
-                  <option>Frester</option>
-                  <option>Gordon</option>
-                  <option>Genevieve</option>
-                  <option>Horatia</option>
-                  <option>Ilk</option>
-                  <option>Illingsburg</option>
-                  <option>The rest with go here</option>
-                </select>
-              </div>
-          </div>
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-person-hiking"></i>
-              <select class="form-select">
-                <option>Activity</option>
-                  <option>Biking</option>
-                  <option>Boating</option>
-                  <option>Cabins</option>
-                  <option>Camping</option>
-                  <option>Fishing</option>
-                  <option>The rest...</option>
-                </select>
-              </div>
-          </div>
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-regular fa-star"></i>
-              <select class="form-select">
-                <option>Amenities</option>
-                  <option>A/C</option>
-                  <option>Campnig Winter</option>
-                  <option>Carry in/out refuse</option>
-                  <option>Dump Station</option>
-                  <option>EV Charger</option>
-                  <option>The rest...</option>
-                </select>
-              </div>
-          </div>
-        </div>
-        
       </div>
       
       <div class="grid auto-grid grid-gap-xm fadeinup delay-3">
@@ -230,271 +163,54 @@
     <!-- CONTENT -->
     <div class="content-sections">
 
-      <!-- RESULTS -->
-      <section class="animate-in delay-2">
+      <!-- OFFERS -->
+      <section class="fadeinup delay-3">
         <div class="container">
           <div class="full-hdr">
-            <h3>Results</h3>
+            <h3>What's Happening</h3>
             <hr />
-            <a href="book-now.html">Reset Search</a>
+            <a href="book-now.html">View All Offers</a>
           </div>
-          <div class="results-info">
-            <ul>
-              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Search Criteria</a></li>
-              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Parameter</a></li>
-            </ul>
-            <p>Showing 25 of 375 Results</p>
+          <div class="grid grid-3 grid-gap-md">
+            <div class="col">
+              <a href="#.html" class="img-feature">
+                <img src="img/feature-ragbrai.jpg" />
+                <div class="text">
+                  <h3>Ragbrai Rides On!</h3>
+                  <p>The infamous bike race rolls through the lovely Iowa hills.</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#.html" class="img-feature">
+                <img src="img/feature-careers.jpg" />
+                <div class="text">
+                  <h3>Explore Careers</h3>
+                  <p>Kickstart your career with job openings at MyCountyParks.</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#.html" class="img-feature native-ad">
+                <img src="img/cabin-1.webp" />
+                <div class="text">
+                  <h3>234 Cabins Across Iowa!</h3>
+                  <p>Kickstart your career with job openings at MyCountyParks.</p>
+                </div>
+              </a>
+            </div>
           </div>
+          
         </div>  
       </section>
 
-      <!-- RESULTS LIST -->
-      <section class="animate-in delay-3">
-        <div class="container">
-          <div class="auto-grid-5 grid-gap-sm">
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-1.jpg" />
-                </figure>
-                <h3>Chichaqua Longhouse</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-2.jpg" />
-                </figure>
-                <h3>Easter Lake Shelter 1</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-3.jpg" />
-                </figure>
-                <h3>Fort Des Moines Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-4.jpg" />
-                </figure>
-                <h3>Jester Cabin 1</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-5.jpg" />
-                </figure>
-                <h3>Thomas Mitchell Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-6.jpg" />
-                </figure>
-                <h3>Morgan Creek Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-7.jpg" />
-                </figure>
-                <h3>Birxshire Cabin</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-1.jpg" />
-                </figure>
-                <h3>Chichaqua Longhouse</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-2.jpg" />
-                </figure>
-                <h3>Easter Lake Shelter 1</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-3.jpg" />
-                </figure>
-                <h3>Fort Des Moines Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-4.jpg" />
-                </figure>
-                <h3>Jester Cabin 1</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-5.jpg" />
-                </figure>
-                <h3>Thomas Mitchell Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-6.jpg" />
-                </figure>
-                <h3>Morgan Creek Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-7.jpg" />
-                </figure>
-                <h3>Birxshire Cabin</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-last.jpg" />
-                </figure>
-                <h3>Still Can't Find What You Want?</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Advanced Search</a></li>
-                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LOAD MORE -->
-      <section>
-        <div class="container">
-          <div class="load-more animate-in delay-2">
-            <a href="counties.html" class="btn-theme">Load More Results</a>
-          </div>
-        </div>
-      </section>
-       <!-- CTA -->
-       <section>
-        <div class="container">
-          <div class="content-cta animate-in delay-3">
-            <figure><img src="img/hero-location-couple.jpg"></figure>
-            <div class="text">
-              <h2>Search Near You!</h2>
-              <p>Turn on location services and get results within miles of your current location!</p>
-              <a href="book-now.html" class="btn-theme">Turn On Location Services</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- POPULAR SEARCHES-->
+      <!-- FACILITIES -->
       <section class="animate-in delay-1">
         <div class="container">
           <div class="full-hdr">
-            <h3>Popular Searches</h3>
+            <h3>Featured Facilities</h3>
             <hr />
+            <a href="book-now.html">View All Facilities</a>
           </div>
     
           <div class="scroll-item-wrapper">
@@ -503,48 +219,117 @@
                 <div class="swiper-slide scroll-item">
                   <a href="#.html">
                     <figure>
-                      <img src="img/feature-tall-14.jpg" />
+                      <img src="img/feature-tall-4.jpg" />
                     </figure>
-                    <h3>Landmarks of Iowa</h3>
+                    <h3>Jester Cabin 1</h3>
                   </a>
-                 
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-2.jpg" />
+                    </figure>
+                    <h3>Easter Lake Shelter 1</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="swiper-slide scroll-item">
                   <a href="#.html">
                     <figure>
-                      <img src="img/feature-hike.jpg" />
+                      <img src="img/feature-tall-19.jpg" />
                     </figure>
-                    <h3>Parks with hiking trails in Black Hawk County</h3>
+                    <h3>Hyrule Pond Cabin</h3>
                   </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="swiper-slide scroll-item">
                   <a href="#.html">
                     <figure>
-                      <img src="img/feature-tall-15.jpg" />
+                      <img src="img/feature-tall-20.jpg" />
                     </figure>
-                    <h3>Am I close to Adventureland?</h3>
+                    <h3>Jake Sisco Outdoor Compound</h3>
                   </a>
-                  
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-3.jpg" />
+                    </figure>
+                    <h3>Fort Des Moines Shelter</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-5.jpg" />
+                    </figure>
+                    <h3>Thomas Mitchell Shelter</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="swiper-slide scroll-item">
                   <a href="#.html">
                     <figure>
                       <img src="img/feature-tall-6.jpg" />
                     </figure>
-                    <h3>Facilities with a grill in Polk County</h3>
+                    <h3>Morgan Creek Shelter</h3>
                   </a>
-                  
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="swiper-slide scroll-item">
                   <a href="#.html">
                     <figure>
-                      <img src="img/feature-higwayhike.jpg" />
+                      <img src="img/feature-tall-7.jpg" />
                     </figure>
-                    <h3>Hiking Near Highways</h3>
+                    <h3>Birxshire Cabin</h3>
                   </a>
-                  
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                    </ul>
+                  </div>
                 </div>
-                
                 <div class="swiper-slide scroll-item">
                   <a href="#.html">
                     <figure>
@@ -567,9 +352,156 @@
         </div>
       </section>
 
+      <!-- CONTENT -->
+      <section class="animate-in delay-1">
+        <div class="container after-dots">
+        <div class="full-img-content">
+          <figure>
+            <img src="img/hero-4.jpg" />
+          </figure>
+          <div class="text animate-in delay-2">
+            <p class="preheader">Explore All 99 Counties</p>
+            <h2>Discover the Natural Beauty of Iowa</h2>
+            <p class="lead">Unwind in County Cabins and Shelters Amidst Stunning Landscapes</p>
+            <p>Are you craving a vacation that’s all about reconnecting with nature? Look no further than Iowa, where you can explore the state’s 99 counties and their natural environs. From the lush greenery of Jackson County to the rugged bluffs of Lyon County, Iowa’s landscapes are as diverse as they are breathtaking.</p>
+            <a href="counties.html" class="btn-theme">Explore Our Counties</a>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- PARKS LIST -->
+      <section class="animate-in delay-1 clearfix">
+        <div class="container">
+          <div class="full-hdr">
+            <h3>Popular Parks</h3>
+            <hr />
+            <a href="listing.html">View All Parks</a>
+          </div>
+    
+          <div class="scroll-item-wrapper">
+            <div class="swiper scroll-list">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-8.jpg" />
+                    </figure>
+                    <h3>Beaver Creek Greenbelt</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                      <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-9.jpg" />
+                    </figure>
+                    <h3>Carney Marsh</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                      <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-10.jpg" />
+                    </figure>
+                    <h3>Fort Des Moines Park</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                      <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-11.jpg" />
+                    </figure>
+                    <h3>Jester Park</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                      <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-12.jpg" />
+                    </figure>
+                    <h3>High Trestle Park</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                      <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-13.jpg" />
+                    </figure>
+                    <h3>Krogan Overlook Park</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                      <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="#.html">
+                    <figure>
+                      <img src="img/feature-tall-last.jpg" />
+                    </figure>
+                    <h3>Still Can't Find What You Want?</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Advanced Search</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       
-     
-      
+
+      <!-- CTA -->
+      <section>
+        <div class="container">
+          <div class="content-cta animate-in delay-3">
+            <figure><img src="img/hero-1.jpg"></figure>
+            <div class="text">
+              <h2>Book a Cabin, Campsite, or Shelter Today!</h2>
+              <p>Our facilities are filling up fast for the busy Summer season. Don't wait!</p>
+              <a href="book-now.html" class="btn-theme">Book Now </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     
   </main>
@@ -582,7 +514,6 @@
           <div class="col">
             <img src="img/logo.svg" />
             <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
-            
           </div>
           <div class="col">
             <h4>Links</h4>
