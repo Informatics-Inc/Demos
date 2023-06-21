@@ -11,18 +11,22 @@
   <link href='css/icons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <style>
+    body{opacity:0;transition-duration:0.65s;transition-property:opacity;}
+    body.transitionfade{opacity:1;}
+  </style>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link href="scss/app.css" rel="stylesheet">
   <link href="css/animations.css" rel="stylesheet">
-
 </head>
 
 <body>
+<script>document.body.className = 'transitionfade';</script>
 
   <header id="site-header"> <!-- HEADER -->
     <div class="container position-relative ">
