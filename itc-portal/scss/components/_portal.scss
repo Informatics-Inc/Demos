@@ -1,0 +1,45 @@
+.page-header {display: grid; gap: 15px; position: relative; z-index: 5; overflow: hidden; padding: 25px 0 15px 0; border-bottom: 1px dotted #ccc; margin-bottom: 25px;}
+.page-header h1 {margin: 0;}
+
+.filter {padding: 15px; background: #f4f4f4; border: 1px solid #ccc; border-radius: 5px; box-shadow: 10px 10px 25px rgba(0,0,0,.1); margin: 0 0 2rem 0;}
+.filter label {display: block; text-transform: uppercase; letter-spacing: 1px; font-size: .825rem; font-weight: 600; margin: 0 0 5px 0; color: #999;}
+.filter .filter-items {display: flex; gap: 15px;}
+.filter .filter-items input {padding: 10px; border: 1px solid #ccc; flex-grow: 1; border-radius: 5px; accent-color: var(--secondary);}
+
+.btn-theme {border: 1px solid var(--primary); background: var(--primary); color: #fff; padding: 10px 15px; border-radius: 5px;}
+.btn-theme.btn-theme-alt {background: #fff; color: var(--primary);}
+.btn-theme:hover {opacity: .8; color: #fff;}
+.btn-theme.btn-theme-alt {background: #fff; color: var(--primary);}
+
+.list-item {padding: 15px; background: #fff; border: 1px solid #ccc; box-shadow: 5px 5px 15px rgba(0,0,0,.1); font-size: .825rem; display: flex; justify-content: flex-start; flex-direction: column;}
+.list-item .btn-theme {display: block; text-align: center; font-family: var(--header); font-size: 1rem; margin-top: auto;}
+.list-item h3 {position: relative; padding: 0 0 0 30px; font-size: 1.5rem;}
+.list-item h3 i {position: absolute; left: 2px; top: calc(50% - .8rem); color: var(--secondary); font-size: 1.15rem;}
+.list-item .btn-theme-alt {background: #eee; font-weight: 700;}
+.list-item .btn-theme-alt:hover {background: none;}
+.list-item ul {padding: 0; list-style: none;}
+.list-item ul li {border-top: 1px dotted #ccc; padding: 5px;}
+
+#pagination ul {list-style: none; padding: 0; margin: 0; display: flex; gap: 5px; justify-content: center;}
+#pagination ul a {display: block; padding: 10px; background: #f4f4f4;}
+#pagination ul .active {padding: 10px; background: var(--primary); color: #fff;}
+
+.login {display: flex; justify-content: center; flex-direction: column; align-items: center; min-height: 100vh; align-content: center;}
+.login .footer {margin-top: auto; width: 100%;}
+.login img {max-width: 200px; margin: 50px auto 2rem auto;}
+.login .form-group {margin: 0 0 .5rem 0;}
+.login .form-group label {display: block; text-transform: uppercase; letter-spacing: 1px; font-size: .825rem; font-weight: 600; margin: 0 0 5px 0; color: #555;}
+.login .form-group input {width: 100%;padding: 5px 10px; border: 1px solid #ccc; flex-grow: 1; border-radius: 5px; accent-color: var(--secondary);}
+.form-box {width: 350px; padding: 25px;background: #f9f9f9; border: 1px solid #ccc; box-shadow: 5px 5px 15px rgba(0,0,0,.1); margin: 0 0 50px 0;}
+.login .btn-theme {display: block;text-align: center; font-family: var(--header); font-size: 1rem; margin-top: 1.5rem; font-size: 1.25rem; text-transform: uppercase;}
+.form-message {text-align: center; margin: 1rem 0 0 0;}
+.form-message a {display: block; text-decoration: underline;}
+
+@media (min-width: 768px) {
+.filter {padding: 25px;}
+.page-header {padding: 35px 0 25px 0;}
+.list-item {padding: 20px;}
+}
+@media (min-width: 992px) {
+
+}
