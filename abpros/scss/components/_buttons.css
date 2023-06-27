@@ -1,0 +1,139 @@
+/* Theme Buttons */
+.wp-block-button {
+  display: block;
+}
+
+.wp-block-button__link, .btn-theme {
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 12px 30px;
+  background: var(--primary);
+  background-image: linear-gradient(190deg, rgb(139, 209, 211) 0%, rgb(128, 69, 171) 75%);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  background-size: 100% auto;
+}
+
+.wp-block-button__link:hover, .btn-theme:hover, .wp-block-button__link:focus {
+  cursor: pointer;
+  background-size: 240% auto;
+}
+
+.btn-theme i {
+  margin-right: 8px;
+}
+
+p .btn-theme:hover {
+  text-decoration: none;
+}
+
+/* White Buttons */
+.btn-white.btn-theme {
+  background: #fff;
+  color: var(--primary);
+  border: solid 1px var(--primary);
+}
+
+.btn-white.btn-theme:hover {
+  background: var(--primary);
+  color: #fff;
+  border: solid 1px var(--primary);
+}
+
+.btn-allwhite.btn-theme {
+  background: none;
+  color: #fff;
+  border: solid 1px #fff;
+}
+
+.btn-allwhite.btn-theme:hover {
+  background: #fff;
+  color: var(--primary);
+  border: solid 1px var(--primary);
+}
+
+/* Arrow Icon Buttons */
+.btn-arrow.btn-theme, .btn-arrow {
+  position: relative;
+  display: inline-block;
+  padding-right: 55px;
+}
+
+.btn-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translate(50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.btn-arrow::before, btn-arrow.btn-white::before {
+  transition: var(--transition);
+  content: "";
+  background: url("../img/main-images/icon-arrow.svg") no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  top: 50%;
+  right: 30px;
+  transform: translate(50%, -50%);
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.btn-arrow:hover::before {
+  transform: translate(95%, -50%);
+}
+
+.btn-arrow.btn-white::after {
+  border: 1px solid var(--primary);
+}
+
+.btn-arrow.btn-white::before {
+  background: url("../img/main-images/icon-arrow-purple.svg") no-repeat;
+}
+
+.btn-arrow.btn-white:hover {
+  background: #fff;
+  color: var(--primary);
+}
+
+/* Text Only Buttons */
+.btn-text {
+  font-size: 0.813rem;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-text.left-icon i {
+  margin-top: 25px;
+  margin-right: 5px;
+  padding-left: 0px;
+}
+
+.btn-text i {
+  transition: padding-left 0.5s ease;
+  padding-left: 5px;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.btn-text:hover {
+  color: var(--primary);
+}
+
+.btn-text.left-icon:hover i {
+  padding-left: 0px;
+}
+
+.btn-text:hover i {
+  padding-left: 10px;
+}/*# sourceMappingURL=_buttons.css.map */

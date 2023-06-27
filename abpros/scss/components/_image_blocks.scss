@@ -1,0 +1,38 @@
+ /* Combo Overlay Images */
+.img-combo-overlap{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,1fr);grid-column-gap:0px;grid-row-gap:0px;}
+.img-large{grid-area:1 / 1 / 4 / 5;position:relative;padding-left:75px;}
+.img-large::before{content:"";position:absolute;top:-52px;left:20px;width:110px;height:110px;background:url("../img/dots.svg")no-repeat;background-size:cover;z-index:-1;}
+.img-small{margin-top:-45%;position:relative;grid-area:4 / 1 / 5 / 3;}
+.img-large img{border-radius:0px 70px 70px 70px;}
+.img-small img{border:solid 12px #fff;border-radius:0px 25px 25px 25px;}
+
+/* Full Width Side Images */
+figure.fullwidth-image  {position:relative;height:100%;width:100%;}
+figure.left.fullwidth-image  {left:0} figure.right.fullwidth-image  {right:0}
+.fullwidth-image img{border-radius:0px;width:100%;height:100%;object-fit: cover;}
+ 
+/* PURPLE BACKGROUN --- Full Width Side Images */
+figure.left.purple-fullwidth-image{left:0}
+figure.right.fullwidth-image{right:0}
+.purple-fullwidth-image img{border-radius:0px;width:100%;height:100%;object-fit:cover;}
+.bg-faded-purple::before{content:"";position:absolute;top:0;left:0;width:100%;height:50%;background-color:rgba(128,69,171,0.85);z-index:-1;}
+figure.purple-fullwidth-image{overflow:hidden;position:absolute;height:50%;width:100%;top:0;z-index:-10;}
+
+@media (min-width:768px){figure.purple-fullwidth-image{overflow:hidden;position:absolute;height:100%;width:50%;top:0;z-index:-10;}
+.bg-faded-purple::before{content:"";position:absolute;top:0;left:0;width:50%;height:100%;background-color:rgba(128,69,171,0.85);z-index:-1;}
+}
+
+
+@media (min-width: 768px) {
+ figure.fullwidth-image  {overflow:hidden;position:absolute;height:100%;width:48%;top:0;z-index: 9999;}
+.img-large::before{content:"";position:absolute;top:-52px;left:20px;width:110px;height:110px;background:url("../img/dots.svg")no-repeat;background-size:cover;z-index:-1;}
+.img-large img{border-radius:0px 90px 90px 90px;}
+.img-small img{border:solid 12px #fff;border-radius:0px 30px 30px 30px;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+    .img-small img{border:solid 12px #fff;border-radius:0px 50px 50px 50px;}
+    .img-large img{border-radius:0px 140px 140px 140px;}
+}
+

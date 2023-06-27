@@ -1,0 +1,9 @@
+#exams h4{color:var(--primary)}
+
+@media (min-width:768px){
+.grid-exam{padding:0 var(--side-width);display:grid;grid-template-columns:2fr 3fr;gap:50px;}
+}
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+ .grid-exam{padding:0 var(--side-width);display:grid;grid-template-columns:1fr 3fr;gap:50px;}
+}
