@@ -15,7 +15,7 @@
     --shadow: 0 2px 4px rgba(51, 47, 60, 0.15);
     --spacer: 25px;
     --spacer-large: 50px;
-    --max-width: 1500px;
+    --max-width: 1180px;
     --side-width: 25px;
 
   }
@@ -30,6 +30,7 @@ font-family: var(--body); font-weight: 400; font-size: 1rem; background: var(--b
 font-feature-settings: "liga";
 text-rendering: optimizeLegibility;
 }
+.container{max-width:var(--max-width)}
 
 /*
 font-family: 'Castoro', serif;

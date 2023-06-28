@@ -351,7 +351,7 @@ select {
   --shadow: 0 2px 4px rgba(51, 47, 60, 0.15);
   --spacer: 25px;
   --spacer-large: 50px;
-  --max-width: 1500px;
+  --max-width: 1180px;
   --side-width: 25px;
 }
 
@@ -370,6 +370,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "liga";
   text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: var(--max-width);
 }
 
 /*
@@ -1028,8 +1032,8 @@ mark {
 /* SUPER WIDE DESKTOP */
 @media (min-width: 1500px) {
   #menu-main a {
-    font-size: 1rem;
-    margin: 0 0 0 2.25rem;
+    font-size: 0.95rem;
+    margin: 0 0 0 1.5rem;
   }
 }
 footer {
@@ -2150,7 +2154,7 @@ figure.purple-fullwidth-image {
 /* ONLY MOBILE */
 @media (max-width: 991px) {
   .hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     line-height: 2.95rem;
   }
 }
