@@ -23,6 +23,7 @@
   .sidebar{margin-bottom:50px}
 
   /* Sidebar Right */
+  .sb-right > * {margin-bottom: 2rem;}
   .sb-right a {padding: 5px; color: #777; display: block;}
   .sb-right a:hover {padding: 5px 0 5px 10px; color:var(--secondary);}
   .sb-right li {padding-left: 15px; border-left: solid rgba(0, 0, 0, .20) 1px;}
