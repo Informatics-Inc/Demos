@@ -23,11 +23,14 @@
   .sidebar{margin-bottom:50px}
 
   /* Sidebar Right */
-  .sb-right a {padding:5px 15px 5px 0px;}
-  .sb-right ul li:hover a{color:var(--secondary);}
-  .sb-right li {padding-left:25px;border-left: solid rgba(0, 0, 0, .20) 1px;}
+  .sb-right a {padding: 5px; color: #777; display: block;}
+  .sb-right a:hover {padding: 5px 0 5px 10px; color:var(--secondary);}
+  .sb-right li {padding-left: 15px; border-left: solid rgba(0, 0, 0, .20) 1px;}
 
-  .sb-right a:last-child{padding:3px 15px 0px 0px;}
-  .sb-right a:first-child{padding:0px 15px 10px 0px;}
   .sb-right .tags{font-size:0.8rem;line-height:1.5rem}
-  .sb-label{font-weight:700;text-transform: uppercase;font-size:1rem;letter-spacing: 1px;margin:30px 0px 20px 0px;color:var(--dark) }
+
+  .sb-label {font-weight:700;text-transform: uppercase;font-size:1rem;letter-spacing: 1px;margin: 0 0px 20px 0px;color:var(--dark) }
+
+  .sidebar-tags {display: flex; flex-wrap: wrap; padding-left: 15px; border-left: solid rgba(0, 0, 0, .20) 1px; gap: 7px;}
+  .sidebar-tags li {display: inline-block; padding: 0; border: none;}
+  .sidebar-tags a {display: flex; font-size: .825rem; background: #f9f9f9; padding: 3px 6px;}

@@ -1,11 +1,17 @@
 /* Globals */
-.page-hdr {padding:50px 0px;position: relative;overflow: hidden;z-index: 5;text-align: center;background: var(--dark);}
-.page-hdr img {position: absolute;z-index: -1;opacity: 0.6;width: 100%;height: calc(100% + 25px);top: -25px;object-fit: cover;}
+.page-hdr {padding:50px 0px;position: relative;overflow: hidden;z-index: 5;text-align: center;background: var(--dark); margin: 0 0 50px 0;}
+.page-hdr h1 {color: #fff; text-transform: uppercase;}
+.page-hdr img {position: absolute;z-index: -1;opacity: 0.6;width: 100%;height: calc(100% + 25px);top: -25px;object-fit: cover; inset: 0;}
 .page-hdr .text {padding: 15px 25px;}
 
-.breadcrumb li{ display: inline-block;padding: 0;}
+.breadcrumb li { display: inline-block;padding: 0;}
 .breadcrumb { display: inline-block;background: none;padding: 0; color: #fff;opacity: 0.9; font-size: .825rem; margin: 0 0 1rem 0;}
-// .breadcrumb a {color: #fff;text-decoration: underline;}
+.page-hdr .breadcrumb a {color: #fff;text-decoration: underline;}
 
+@media (min-width: 992px) {
+.page-hdr {margin-top: 170px;}
+}
 
-
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+}
