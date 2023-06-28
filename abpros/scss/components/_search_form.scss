@@ -1,0 +1,32 @@
+.mem-search-filter{padding:50px 0px}
+.alpha-box{width:100%;text-align: center;}
+.search-filters {background: #fff; margin: 0 0 20px 0 }
+.search-filters .search-item {padding: 10px 5px;}
+.search-filters .search-item label {font-size: 13px; display: block; padding: 0 10px 5px 0;}
+.search-filters .search-item input, .search-filters .search-item select {padding: 10px 5px; border: 1px solid #ccc; height: 50px; width: 100%;}
+.search-filters .search-item .btn-abp {padding: 5px 10px; margin: 0;}
+.alphabet-search{letter-spacing: 8px;}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.search-results {margin: 0 -10px;}
+.person-list-item {width: 48%; margin: 0 1% 20px 1%; float: left; min-height: 180px; position: relative;}
+.person-list-item figure {height: 150px; overflow: hidden;}
+.person-list-item figure img {width: 100%;}
+
+.search-filters .search-item {width: 33%; float: left;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+.search-filters .search-item {width: 25%;}
+.search-filters .search-item-go {margin-top: 25px;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+.person-list-item {width: 31%;}
+.search-filters .search-item-go {margin-top: 0; text-align: center; width: 100%;}
+}
+.person-list-item {min-height: 300px;}
+

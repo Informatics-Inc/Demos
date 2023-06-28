@@ -38,7 +38,7 @@ font-family: 'Plus Jakarta Sans', sans-serif;
 
 h1, h2, h3, h4, h5 {font-family: var(--header);font-weight:normal; margin: 0 0 1rem 0; color: var(--header-color);}
 h1 {font-size: 3rem;line-height:3.5rem;}
-h2 {font-size: 2.75rem;line-height:3.25rem;}
+h2 {font-size: 2.75rem;line-height:3.0rem;}
 h3 {font-size: 2.25rem;line-height:2.75rem;}
 h4 {font-size: 1.32rem;line-height:1.5rem;} 
 
@@ -65,21 +65,25 @@ li.checkmarks::before{content:"\2713";position:absolute;left:0;color:var(--prima
 li{margin-bottom:3px}
 .text-white h2,.text-white p,.text-white li{color:#fff}
 .text-white li::marker{color:var(--light-purple);}
-.reduce-margin{margin-bottom:-100px}     
 
 mark{padding:5px 10px;color:#fff;background:var(--primary);display:block;float:left;width:100%;margin:10px 0px 30px 0px;}
 
 .bg-purple{background-color:var(--light-purple);}
 .bg-dark-purple{background-color:var(--primary);}
 .bg-purple-grad{background: rgb(247,247,247);background: linear-gradient(0deg, rgba(247,247,247,1) 8%, rgba(243,242,244,1) 100%);}
-.bg-faded-purple{ rgba(128,69,171) 80%,}
+.bg-white{background:#fff;}
 
 .center-titles{margin-bottom:50px;text-align: center;}
 .center-titles h2{margin-bottom:0.5rem;}
 
 @media (min-width: 768px) {
 .pad-large{padding-top:50px;padding-bottom:50px;}
+.reduce-margin{margin-bottom:-100px}     
 }
 
+@media (min-width:992px){
+.pad-large-top{padding-top:170px;}
+
+}
 @media (min-width: 1500px) {
 }

@@ -1,28 +1,36 @@
-  
   .hero p{margin-top:35px}
   .hero .text{padding-right:35px}
   .position-relative{position: relative;} 
   .eyebrow{font-size:1rem;color:var(--primary);margin-bottom:20px;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;}     
   .rightside img{border-radius:0px 25px 0px 25px;}
-  
+  .hero .rightside img{margin:25px 0px}
+
   @media (min-width: 768px) {
   .pad-top{margin-top:20px}
   .hero{padding-top:50px;padding-bottom:50px;}
   .rightside img{border-radius:0px}
   .rightside {min-height:550px;overflow:hidden;position:absolute;height:100%;width:50%;right:0;top:0;}
   .rightside img{height:100%;width:100%;object-fit:cover;object-position: left center;}
-  .rightside::before{content:"";position:absolute;top:0;left:0;width:90%;height:100%;background: url("img/round-border.svg")no-repeat 0 ;background-size:cover;z-index:10;}
-  .rightside::after{content:"";position:absolute;top:0px;left:2px;width:116px;height:116px;background: url("img/dots.svg")no-repeat;background-size:cover;z-index:10;}
-  }
-       
+  .rightside::before{content:"";position:absolute;top:0;left:0;width:90%;height:100%;background: url("../img/round-border.svg")no-repeat 0 ;background-size:cover;z-index:10;}
+  .rightside::after{content:"";position:absolute;top:0px;left:2px;width:116px;height:116px;background: url("../img/dots.svg") no-repeat;background-size:cover;z-index:10;}
+  .hero .rightside img{margin:0px}
+}
+
+/* ONLY MOBILE */
+@media (max-width: 991px) {
+.hero h1{font-size: 2.8rem;line-height:2.95rem;}
+}
+
   /* TABLET */
   @media (min-width: 992px) {
   .rightside img{border-radius:0px}
   .pad-top{margin-top:170px}
   .hero{padding-top:100px;padding-bottom:100px;}
-  .rightside::after{content:"";position:absolute;top:0px;left:2px;width:114px;height:114px;background: url("img/dots-masked.svg")no-repeat;background-size:cover;z-index:10;}
+  .rightside::after{content:"";position:absolute;top:0px;left:2px;width:114px;height:114px;background: url("../img/dots.svg")no-repeat;background-size:cover;z-index:10;}
   .rightside::before{width:60%;}
+  .hero h1{font-size: 3.25rem;line-height:3.65rem;}
   }
+  
   /* WIDE DESKTOP */
   @media (min-width: 1500px) {
   .rightside::before{width:40%;}
