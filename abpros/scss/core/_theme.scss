@@ -60,9 +60,14 @@ img{border-radius:12px}
 li::marker {color:var(--primary)}
 ul{padding-left:15px;}
 ul ul {list-style-type: disc;}
-ul.checkmarks{list-style-type:none;padding-left:0;}
-li.checkmarks{list-style-type:none;position:relative;padding-left:18px;}
-li.checkmarks::before{content:"\2713";position:absolute;left:0;color:var(--primary)}
+
+ul.checklist {list-style: none; padding: 0;}
+ul.checklist li {font-weight: 700; margin: 5px 0;}
+ul.checklist li:before {content: "\f00c";font-family: FontAwesome; color: var(--primary); margin: 0 5px 0 0;}
+
+// ul.checkmarks{list-style-type:none;padding-left:0;}
+// li.checkmarks{list-style-type:none;position:relative;padding-left:18px;}
+// li.checkmarks::before{content:"\2713";position:absolute;left:0;color:var(--primary)}
 li{margin-bottom:3px}
 .text-white h2,.text-white p,.text-white li{color:#fff}
 .text-white li::marker{color:var(--light-purple);}

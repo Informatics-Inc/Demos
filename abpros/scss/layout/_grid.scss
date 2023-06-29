@@ -3,12 +3,13 @@
 .grid-columns .text{align-self:center;}
 
 @media (min-width:768px){.grid-columns .img-combo-overlap{padding-right:20px}
-.grid-columns{grid-template-columns:repeat(2,1fr);gap:75px;}
+.grid-columns{grid-template-columns: 1.18fr 1fr;gap:75px;}
 }
  @media (min-width:992px){.grid-columns .img-combo-overlap{padding-right:20px}
 }
 
 .content section{padding: var(--spacer) 0px}
+.content section.no-padding {padding: 0 0px}
 .grid-container{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));grid-gap:20px;}
 .contain{width:100%;max-width:var(--max-width);margin:0 auto;padding:0 var(--spacer);}
 .contain-fluid {width: 100%;position: relative;overflow:hidden}
@@ -21,7 +22,8 @@
 @media (min-width: 768px) {
 .grid-md {display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px;}
 .col-4-md, .col-md-4 {grid-column: span 4;}
-.content section{padding: var(--spacer-large) 0px}
+.content section {padding: var(--spacer-large) 0px}
+
 }
   
 @media (min-width: 992px) {

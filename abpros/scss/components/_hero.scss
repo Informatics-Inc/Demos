@@ -7,7 +7,7 @@
 
   @media (min-width: 768px) {
   .pad-top{margin-top:20px}
-  .hero{padding-top:50px;padding-bottom:50px;}
+  .hero{padding-top: 100px;padding-bottom: 100px; min-height: 550px;}
   .rightside img{border-radius:0px}
   .rightside {min-height:550px;overflow:hidden;position:absolute;height:100%;width:50%;right:0;top:0;}
   .rightside img{height:100%;width:100%;object-fit:cover;object-position: left center;}
@@ -25,8 +25,8 @@
   @media (min-width: 992px) {
   .rightside img{border-radius:0px}
   .pad-top{margin-top:170px}
-  .hero{padding-top:100px;padding-bottom:100px;}
-  .rightside::after{content:"";position:absolute;top:0px;left:2px;width:114px;height:114px;background: url("../img/dots.svg")no-repeat;background-size:cover;z-index:10;}
+  .hero{padding-top:125px;padding-bottom:125px;}
+  .rightside::after{content:"";position:absolute;top:0px;left:2px;width:124px;height:114px;background: url("../img/dots.svg")no-repeat;background-size:cover;z-index:10;}
   .rightside::before{width:60%;}
   .hero h1{font-size: 3.25rem;line-height:3.65rem;}
   }
