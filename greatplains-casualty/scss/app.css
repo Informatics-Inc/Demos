@@ -1715,6 +1715,7 @@ p.small {
 
 /* Video Block */
 .video-container {
+  background: #000;
   position: relative;
   width: 100%;
   height: 0;
