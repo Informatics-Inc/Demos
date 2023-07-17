@@ -1,6 +1,7 @@
 /* Header */
 .feature-hdr {margin-top: 100px; text-align: center;}
-.feature-hdr h1:before {left: calc(50% - 50px);}
+.feature-hdr h1:before {left: calc(50% - 50px); display: none;}
+.feature-hdr h1 {padding: 0;}
 .feature-hdr p {font-size: 1.5rem;}
 
 .feature-phrase {position: relative; margin: 25px; border-radius: 25px; min-height: 300px;}
@@ -36,7 +37,7 @@
 
 /* Small devices (tablets, 992px and up) */
 @media (min-width: 992px) {
-.feature-hdr {margin-top: 150px;}
+.feature-hdr {margin: 200px 0 25px 0;}
 
 .content .case-study {position: relative; padding: 0; overflow: hidden;}
 .content .case-study figure {position: absolute; left: 0; top: 0; width: 80%; border-radius: 0 50px 50px 0; overflow: hidden; height: 100%;}
