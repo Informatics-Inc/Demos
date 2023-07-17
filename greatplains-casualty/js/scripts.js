@@ -1,19 +1,31 @@
-  // -- No Orphans in H2 -- //
-document.addEventListener('DOMContentLoaded', function () {
+ // -- H2 Orphans Get Rid Of -- //
+ document.addEventListener('DOMContentLoaded', function () {
   var h2Elements = document.getElementsByTagName('h2');
 
   for (var i = 0; i < h2Elements.length; i++) {
-    var words = h2Elements[i].innerText.split(' ');
-    var lastWord = words.pop();
-    var orphanWord = words.pop();
-    var orphanText = `${orphanWord}&nbsp;${lastWord}`;
+    var isInsideCta = isDescendantOf(h2Elements[i], document.getElementsByClassName('cta')[0]);
 
-    if (!h2Elements[i].querySelector('span')) {
-      h2Elements[i].innerHTML = `${words.join(' ')} <span class="no-wrap">${orphanText}</span>`;
-    } 
+    if (!isInsideCta) {
+      var words = h2Elements[i].innerText.split(' ');
+      var lastWord = words.pop();
+      var orphanWord = words.pop();
+      var orphanText = `${orphanWord}&nbsp;${lastWord}`;
+
+      if (!h2Elements[i].querySelector('span')) {
+        h2Elements[i].innerHTML = `${words.join(' ')} <span class="no-wrap">${orphanText}</span>`;
+      }
+    }
   }
 });
 
+function isDescendantOf(element, ancestor) {
+  while (element = element.parentNode) {
+    if (element === ancestor) {
+      return true;
+    }
+  }
+  return false;
+}
 
   // -- Hero Scale/Fade on Scroll -- //
   window.addEventListener('scroll', function() {
