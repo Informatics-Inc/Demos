@@ -78,10 +78,11 @@ li{margin-bottom:3px}
 
 .content img{border-radius:9px;}
 .img-fluid img{width:100%;height:auto}
-.content img{width:100%;height:auto}
+.content img{width:100%;height:auto} 
 
 .listings figure + .text {margin-top:0rem}
-figure + .text {margin-top:2rem}
+figure + .text {margin-top:32rem}
+.image-text-box + .text {margin-top:3rem}
 
 .text-center{text-align: center;max-width: 700px !important;}
 .eyebrow{position: relative;font-size:1rem;color:var(--secondary-light);padding-left:38px;margin-bottom:20px;text-transform: uppercase;font-weight: 700;letter-spacing:2px;}     
@@ -112,7 +113,7 @@ section.position-relative{overflow: hidden;}
 }
 
 @media (min-width: 768px) {
-figure + .text {margin-top:0px}
+figure + .text,.image-text-box + .text  {margin-top:0px}
 .text{margin-top:0rem;}
 .pad-top-50{padding-top:50px}
 }

@@ -544,7 +544,11 @@ li {
 }
 
 figure + .text {
-  margin-top: 2rem;
+  margin-top: 32rem;
+}
+
+.image-text-box + .text {
+  margin-top: 3rem;
 }
 
 .text-center {
@@ -698,7 +702,7 @@ section.position-relative {
   }
 }
 @media (min-width: 768px) {
-  figure + .text {
+  figure + .text, .image-text-box + .text {
     margin-top: 0px;
   }
   .text {
@@ -2078,7 +2082,7 @@ footer p {
     line-height: 1.6rem;
   }
   .hero {
-    height: 80vh;
+    height: 70vh;
   }
 }
 @media (min-width: 768px) {
@@ -2090,9 +2094,10 @@ footer p {
     height: 80vh;
   }
   .hero p {
-    margin-top: 0px;
+    margin: 0 auto;
     font-size: 1.25rem;
     line-height: 1.6rem;
+    width: 550px;
   }
 }
 /* TABLET */
