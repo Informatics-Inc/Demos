@@ -1,0 +1,42 @@
+/* Full Size - Background Image*/
+.full-image{text-align:center;padding:25px;display:flex;justify-content:center;align-items:center;position:relative;overflow:hidden;width:100%;}
+.full-image-overlay{z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background-color:var(--full-image-overlay)}
+.full-image .full-bg img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;}
+
+/* Combo Overlay Images */
+.img-combo-overlap{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,1fr);}
+.img-large{grid-area:1 / 1 / 4 / 5;position:relative;}
+.img-small{margin-top:-50%;border:solid 12px #fff;position:relative;}
+.left-side .img-small{grid-area:4 / 1 / 5 / 3;}
+.right-side .img-large{padding-right:75px;}
+.right-side .img-small{grid-area:4 / 3 / 5 / 5;}
+
+/* Imager Combos Side by Side */
+.img-combo {display: grid; grid-template-columns: 1fr 1fr; gap: 25px; position: relative;min-height:200px}
+.img-combo img {width:100%;height:100%;object-fit:cover;object-position: center;}
+
+/* Testimonial Boxes */
+.image-text-box{display: flex;flex-direction: column;}
+.text-box-overlap,.testimonial-box-overlap{padding:30px;background:#fff;border-radius:6px;box-shadow:var(--shadow);}
+.text-box-overlap,.testimonial-box-overlap{ order: 1;margin:-25px auto 0px auto;width:80%}
+.quote{ margin-bottom:15px; display: flex;justify-content: flex-end;width:100%;height:35px;}
+.quote img{width:auto;height:100%;position: right center;}
+.text-box-overlap p,.testimonial-box-overlap p,.right-box p,.left-box p{line-height:1.5rem;font-style: italic;}
+.text-box-overlap b,.testimonial-box-overlap b{font-style: normal;}
+.text-box-overlap p:last-of-type,.testimonial-box-overlap p:last-of-type{margin-bottom: 0px;}
+.right-box{background-color: var(--primary);color:#fff}
+.img-absolute img,.testimonial-img-absolute img,.img-absolute.right-image,.img-absolute.left-image{width:100%;height:100%;object-fit:cover;border-radius:9px;}
+
+@media (min-width: 768px) {
+    .img-combo {min-height:400px;}
+    .image-text-box{position: relative;min-height:550px}
+    .text-box-overlap{margin:150px 0px 100px 0px;z-index: 5;width:224px}
+    .testimonial-box-overlap{margin:0px 0px 0px 0px;position:absolute ;bottom:0;;z-index: 5;width:80%}
+    .text-box-overlap.right-box{margin:205px 0px 100px 0px;z-index: 5;width:224px;align-self: end;}
+    .text-box-overlap.left-box{margin:205px 0px 100px 0px;z-index: 5;width:224px;align-self: start;}
+    .testimonial-img-absolute{padding-bottom:100px;padding-left:112px;z-index: -1;position: absolute;height:100%;width:100%;top:0;right:0;left:0;bottom:0;}
+    .img-absolute{padding-left:112px;z-index: -1;position: absolute;height:100%;width:100%;top:0;right:0;left:0;bottom:0;}
+    .img-absolute.left-image{padding-left:0px;padding-right:112px;z-index: -1;position: absolute;height:100%;width:100%;top:0;right:0;left:0;bottom:0;}
+    .img-absolute.right-image{padding-right:0px;padding-left:112px;z-index: -1;position: absolute;height:100%;width:100%;top:0;right:0;left:0;bottom:0;}
+
+}
