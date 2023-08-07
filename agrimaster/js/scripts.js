@@ -1,38 +1,5 @@
 
 
-// -- SWIPER -- //
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 15,
-    loop: true, // Set loop to true for continuous scrolling
-    navigation: {
-      nextEl: '.custom-next-button',
-      prevEl: '.custom-prev-button',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-
-  // Add media query for screens with maximum width of 991px
-  if (window.matchMedia('(min-width: 768px)').matches) {
-    swiper.params.slidesPerView = 2;
-  }
-
-  // Add media query for screens with minimum width of 992px
-  if (window.matchMedia('(min-width: 992px)').matches) {
-    swiper.params.slidesPerView = 4;
-  }
-
-   // Add media query for screens with maximum width of 991px
-   if (window.matchMedia('(min-width: 1200px)').matches) {
-    swiper.params.slidesPerView = 7;
-  }
-
-  // Update Swiper to apply the new slidesPerView value
-  swiper.update();
-
   
 
 // -- ANIMATE IN TO VIEW -- //
@@ -89,3 +56,36 @@ $window.trigger('scroll');
     video.setAttribute('controls', 'controls'); /* Show controls when played */
   });
 
+
+// -- SWIPER -- //
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  loop: true, // Set loop to true for continuous scrolling
+  navigation: {
+    nextEl: '.custom-next-button',
+    prevEl: '.custom-prev-button',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+// Add media query for screens with maximum width of 991px
+if (window.matchMedia('(min-width: 768px)').matches) {
+  swiper.params.slidesPerView = 2;
+}
+
+// Add media query for screens with minimum width of 992px
+if (window.matchMedia('(min-width: 992px)').matches) {
+  swiper.params.slidesPerView = 4;
+}
+
+ // Add media query for screens with maximum width of 991px
+ if (window.matchMedia('(min-width: 1200px)').matches) {
+  swiper.params.slidesPerView = 7;
+}
+
+// Update Swiper to apply the new slidesPerView value
+swiper.update();
