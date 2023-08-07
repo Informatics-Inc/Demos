@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Agrimaster</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.typekit.net/xfe3dsq.css">
+    <!-- CSS -->
+    <link href="scss/app.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  </head>
+
+  <body>
+
+ <header id="site-header"> <!-- HEADER -->
+      <div class="container position-relative ">
+      <div class="mobile-header">
+        <a href="index.html" id="logo">
+          <img src="img/logo-color.png" alt="Agrimaster Logo " />
+        </a>
+        <button id="menu-toggle"   class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+          <div class="closed">
+            Menu
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="open">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+      </div>
+    
+      <!-- MENU -->
+      <nav id="menu" class="menu collapse">
+        <div class="desktop-header">
+          <a href="index.html" id="logo">
+            <img src="img/logo-color.png" alt="Agrimaster Logo " />
+          </a>
+
+          <ul id="menu-main">
+            <li><a href="product_detail.html">Poultry</a></li> 
+            <li><a href="">Equine</a></li> 
+            <li><a href="">Calf/Cow</a></li> 
+            <li><a href="">Multi-species</a></li> 
+            <li><a href="">Other species</a></li> 
+            <li><a href="">Equipment & Supplies</a></li> 
+          </ul>
+        </div>
+        <div id="menu-utility">
+          <ul class="mini-nav">
+            <li><a href="product_list.html">Product Search </a></li>
+            <li><a href="">Store Finder</a></li>
+          </ul>
+          <ul class="mini-nav">
+            <li class="secondary-menus"><a href="">Animal Expert Tips </a></li>
+            <li class="secondary-menus"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+ </header>
+
+      <div class="hero">
+        <div class="container">
+        <figure">
+          <img src="img/bg-cow-feeding.webp"
+            alt="Agrimaster Feeding">
+        </figure>
+        <div class="hero-overlay"></div>
+        <h1 class="animate-in delay-4">
+          Masterfully Crafted, Animal Approved<span class="trademark">TM</span>
+        </h1>
+        <p class="animate-in delay-6 lead">
+          Agrimaster® is the brand that brings you quality livestock feed and supplies created by experts in the Midwest for your animals’ specific nutritional needs to keep them healthy and performing at their best. 
+        </p>
+        <div class="animate-in delay-6">
+        <div class="wp-block-button">
+          <a class="wp-block-button__link btn-theme" href>Shop Now</a>
+        </div>
+        <div class="wp-block-button">
+          <a class="wp-block-button__link btn-white" href>View All Products</a>
+        </div>
+      </div>
+    </div>
+      </div>
+
+      <main class="content">
+
+        <!-- Top - Main Services -->
+        <section class="top-overlay bg-color">
+          <div class="container">
+            <div class="grid-columns">
+              <div class="text">
+                <h4>Nurturing
+                </h4>
+                <p>
+                  Animals are a big responsibility. For them, It’s a lifetime commitment. Your animals become part of your family. You care about them and 
+                  so do we. That’s why, when we talk, we’re thoughtful and conscientious about our words, leaning in and articulating slowly so we  
+                  can listen back as easily as we speak. 
+                </p>
+              </div>
+              <!-- Image Text Box Overlap -->
+              <div class="image-box">
+                <div class="img-absolute">
+                  <img src="img/main-images/bag-combo3.webp"
+                    alt="Agrimaster Feed Bags">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- About Info -->
+        <section class="shapes pad-b-0">
+          <div class="shape-left"></div> 
+          <div class="container">
+            <div class="grid-columns">
+
+            <div id="video-container">
+              <video id="my-video">
+                <source src="img/main-images/video-bg.mp4" type="video/mp4">
+              </video>
+              <div id="play-button">
+                <button class="play-button">
+                  <span class="circle">
+                    <i class="fas fa-play"></i>
+                  </span>
+                  <span class="ripple"></span>
+                  <span class="ripple"></span>
+                </button>
+              </div>
+            </div>
+
+              <div class="text">
+                <div class="eyebrow">Who We Are</div>
+                <h2>Nourishing Farms, Empowering Farmers
+                </h2>
+                <p>
+                  At Agrimaster, we are committed to providing farm animals with balanced and top-quality nutrition. Our feed products are carefully formulated to meet their specific dietary needs, ensuring optimal health and performance.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Product Carousel -->
+        <section class="shapes">
+        <div class="shape-right"></div>
+          <div class="container">
+            <div class="text text-center">
+              <h2>Our Products</h2>
+              <p>
+                Explore our premier selection of animal feed carefully curated to meet the diverse needs of modern farmers
+              </p>
+            </div>
+
+  <div class="position-relative">
+    <div class="custom-controls">
+      <button class="custom-prev-button"><i class="fas fa-arrow-left"></i></button>
+      <button class="custom-next-button"><i class="fas fa-arrow-right"></i></button>
+    </div>
+    
+              <div class="swiper-container">
+               <div class="swiper-wrapper">
+                 <!-- Your carousel items -->
+                 <div class="swiper-slide"><img src="img/bags/sample-poultry.webp" alt="poultry"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-equine.webp" alt="equine"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-calfcow.webp" alt="calfcow"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-swine.webp" alt="swine"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-rabbit.webp" alt="rabbit"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-multi.webp" alt="multi"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-goat.webp" alt="goat"></div>
+           
+                 <div class="swiper-slide"><img src="img/bags/sample-poultry.webp" alt="poultry"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-equine.webp" alt="equine"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-calfcow.webp" alt="calfcow"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-swine.webp" alt="swine"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-rabbit.webp" alt="rabbit"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-multi.webp" alt="multi"></div>
+                 <div class="swiper-slide"><img src="img/bags/sample-goat.webp" alt="goat"></div>
+               </div>
+  <!-- Pagination -->
+             </div>
+             <div class="swiper-pagination"></div>
+
+            </div></div>
+          </div>
+        </section>
+
+
+
+         <!-- Blog/News -->
+         <section class="bg-color">
+          <div class="container">
+            <div class="blog-container">
+              <div class="text text-center">
+                <h2>Animal Expert Tips</h2>
+                <p>Quo natum noster scripserit ea. Ius novum everti solum facer imperdiet an disputando in.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="animate-in delay-2 col-md-4">
+                <div class="blog card">
+                  <figure class="card-image">
+                    <img src="img/posts/post-1.jpg" alt="News Post">
+                  </figure>
+                  <div class="card-content">
+                    <h5 class="title">Unlocking the Benefits of Multi-Species Feed: A Farming Game Changer</h5>
+                    <p>Explore the advantages of incorporating multi-species feed into your farming practices.</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="wp-block-button">
+                      <a class="wp-block-button__link btn-theme" href>Read article</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="animate-in delay-4 col-md-4">
+                <div class="blog card">
+                  <figure class="card-image">
+                    <img src="img/posts/post-2.jpg" alt="News Post">
+                  </figure>
+                  <div class="card-content">
+                    <h5 class="title">Sumo accusamus no qui, duo in iudico Sumo accusamus Sumo accusamu</h5>
+                    <p>Explore the advantages of incorporating multi-species feed into your farming practices.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="wp-block-button">
+                      <a class="wp-block-button__link btn-theme" href>Read article</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="animate-in delay-6 col-md-4">
+                <div class="blog card">
+                  <figure class="card-image">
+                    <img src="img/posts/post-3.jpg" alt="News Post">
+                  </figure>
+                  <div class="card-content">
+                    <h5 class="title">Sumo accusamus no qui, duo in iudico Sumo accusamus
+                    </h5>
+                    <p>Explore the advantages of incorporating multi-species feed into your farming practices.</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="wp-block-button">
+                      <a class="wp-block-button__link btn-theme" href>Read article</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+  <!-- VS Chart -->
+  <section class="full-image pad-b-0 ">
+    <figure class="half-bg">
+      <img src="img/bg-cows.webp"
+        alt="Agrimaster Footer Background">
+    </figure>
+    <div class="half-black-overlay"></div>
+
+  <div class="container">
+    <div class="text-center text-white">
+      <h2>
+        Compare to National Brands
+      </h2>
+      <p>
+        When you are faced with the choice of national brands, you can confidently opt for Agrimaster® feed and supplies.
+      </p>
+    </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Agrimaster®</th>
+                        <th>VS</th>
+                        <th>Leading National Brand</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Agrimaster®"><img src="img/icons/check.svg"></td>
+                        <td data-label="VS">Complete Balanced Nutrition</td>
+                        <td data-label="Leading National Brand"><img src="img/icons/check.svg"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Agrimaster®"><img src="img/icons/check.svg"></td>
+                        <td data-label="VS">High-quality Ingredients</td>
+                        <td data-label="Leading National Brand"><img src="img/icons/check.svg"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Agrimaster®"><img src="img/icons/check.svg"></td>
+                        <td data-label="VS">Specially Formulated for every life stage</td>
+                        <td data-label="Leading National Brand"><img src="img/icons/check.svg"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Agrimaster®"><img src="img/icons/check.svg"></td>
+                        <td data-label="VS">Lower Price</td>
+                        <td data-label="Leading National Brand"><img src="img/icons/no.svg"></td>
+                    </tr>
+                </tbody>
+            </table>
+  </div>
+</section>
+
+
+
+<section>
+ <div class="container ">
+<div class="textimonial text-center">
+  <div class="quote-mark"><img src="img/icons/quotes.svg"></div>
+  <div class="quote-line"></div>
+  <div class="quote">Love the value of this feed, always fresh, not ever buggy or dusty.</div>
+  <div class="quote-line"></div>
+  <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+  <div class="additional-info">
+    <p class="info-text">
+      5 Stars| Verified Buyer | <a href="">50 lb Sweet 12% Horse Feed</a>
+    </p>
+  </div>
+</div>
+</div>
+</section>
+
+</main>
+  <!-- Footer -->
+  <footer>
+    <figure class="full-bg">
+      <img src="img/bg-footer.webp" alt="Agrimaster Footer Background">
+    </figure>
+    <div class="black-overlay"></div>
+
+    <!-- Call to Action -->
+    <div class="container">
+      <div class="cta-box">
+        <div class="text-center text-white">
+          <h2>
+            Agrimaster<span style="font-size:1.4rem; padding-left:2px">&reg;</span> - the best for your animals
+          </h2>
+          <p>
+            Shop now to explore our extensive range of products and unlock the
+            Agrimaster advantage.
+          </p>
+          <div class="wp-block-button">
+            <a class="wp-block-button__link btn-theme" href>Shop Now</a>
+          </div>
+          <div class="wp-block-button">
+            <a class="wp-block-button__link btn-white" href>View All Products</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div class="col">
+          <h5>About Agrimaster®</h5>
+          <p>
+            Learn how to select the perfect poultry feed for your flock.
+            Discover the key factors to consider, from nutritional
+            requirements to feed types, and ensure optimal health and
+            productivity for your poultry.
+          </p>
+        </div>
+        <div class="col">
+          <h5>Our Products</h5>
+          <div class="link-group">
+            <ul>
+              <li><a href>Bovine</a></li>
+              <li><a href>Poultry</a></li>
+              <li><a href>Equine</a></li>
+              <li><a href>Multi-Species</a></li>
+            </ul>
+            <ul>
+              <li><a href>Other Species</a></li>
+              <li><a href>Equipment & Supplies</a></li>
+              <li><a href>View All Products</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <h5>Connect</h5>
+          <div class="link-group">
+            <ul>
+              <li><a href>Blog</a></li>
+              <li><a href>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <p>© 2023 Agrimaster® | Privacy Policy | Web Application by
+        <a target="_blank" href="https://www.informaticsinc.com/">Informatics,
+          Inc</a>
+      </p>
+    </div>
+  </footer>
+
+        <!-- FOOTER SCRIPTS -->
+
+<!-- Add the Swiper JS file -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+          integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+          crossorigin="anonymous"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+      </body>
+
+    </html>

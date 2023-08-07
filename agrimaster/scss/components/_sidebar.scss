@@ -1,0 +1,24 @@
+/* Sidebar */
+.sidebar{margin:0px 0px 25px 0px;border-top:solid 5px var(--accent);}
+.sidebar.red{margin:0px 0px 25px 0px;border-top:solid 5px var(--secondary);}
+.products .text{margin-bottom:50px}
+.sidebar li{list-style-type:none;}
+
+.sidebar-container{padding:25px 0 0 0}
+.sidebar-container a i{color:var(--accent);padding-left:5px}
+.sidebar-container a i.red{color:var(--secondary);padding-left:5px}
+
+.sidebar-container a{color:rgba(29, 32, 33, 0.7)}
+
+.sidebar-container a li:hover {padding-left:4px;color:rgba(29, 32, 33, 1)}
+.sidebar-container a.active li{padding-left:4px;font-weight:bold;}
+.sidebar-container a li{margin-bottom:0px;transition:var(--transition);list-style-type:none;padding:5px 0px;}
+.sidebar-container a:last-child li{border-bottom:none}
+.sidebar-container ul{padding-left:2px;margin:0}
+.sidebar-title{font-weight:lighter;font-size:1.5rem;color:var(--text-color);}
+h5.sidebar-title{font-size:2rem;margin:0;}
+
+.pagination{border-top:solid 1px #eeeeee;padding-top:35px;margin-top:10px;display:flex;justify-content:center;align-items:center;}
+.page-item{transform:var(--transition);width:50px;height:50px;background-color:#eeeeee;display:flex;justify-content:center;align-items:center;margin:0 5px;cursor:pointer;border-radius:3px;}
+.page-item:hover,.page-item.active{background-color:var(--secondary);color:#fff}
+

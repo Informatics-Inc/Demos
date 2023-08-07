@@ -1,0 +1,9 @@
+.chart-title{text-align:center;margin-bottom:20px;font-size:1.313rem;font-weight:bold;height:100}
+.grey{line-height:2rem;padding:35px;background:#eeeeee;height:100}
+.grey p{line-height:2rem;}
+.chart ul{background:#eeeeee;list-style-type:none;padding:35px 25px;}
+.chart li{display:flex;justify-content:space-between;padding:10px;}
+.chart li:nth-child(odd){background-color:rgba(0,0,0,0.05);}
+.chart .left-item{flex:2;}
+.chart .right-item{flex:1;}
+

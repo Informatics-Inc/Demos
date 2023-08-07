@@ -1,0 +1,12 @@
+/* Theme Buttons */
+.wp-block-button,.wp-block-button__link.btn-theme,.wp-block-button__link.btn-white {display: inline-block;}
+.wp-block-button__link.btn-theme, #submit.btn-abp,.btn.btn-default{font-family:'agrifont', sans-serif;font-weight:bold;text-transform:uppercase;font-size:0.85rem;line-height:0.95rem;padding:10px 25px 8px 25px;transition:var(--transition);background:var(--primary);color:#fff;border:none;border-radius:5px;border:solid 1px var(--primary)}
+.wp-block-button__link:hover.btn-theme:hover,.wp-block-button__link:focus,#submit.btn-abp:hover{text-decoration: none;cursor:pointer;background:#0B6FCC;border:solid 1px #0B6FCC}
+.wp-block-button__link.btn-theme i{padding-left:5px;}
+
+.wp-block-button__link.btn-white{font-family:'agrifont', sans-serif;font-weight:bold;text-transform:uppercase;font-size:0.85rem;padding:10px 25px 8px 25px;line-height:0.95rem;transition:var(--transition);background:#fff;color:var(--primary);border:none;border-radius:5px;border:solid 1px var(--primary)}
+.wp-block-button__link:hover.btn-white:hover{text-decoration: none;cursor:pointer;background:var(--primary);color:#fff;border:solid 1px var(--primary)}
+
+
+
+

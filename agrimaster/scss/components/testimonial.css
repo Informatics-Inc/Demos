@@ -1,0 +1,81 @@
+.textimonial {
+  position: relative;
+}
+
+.quote {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-family: "agrifont-light";
+  margin: 20px auto;
+}
+
+.quote-mark {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quote-mark::before {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+  top: 50%;
+  left: -110px;
+  transform: translateY(-50%);
+}
+
+.quote-mark::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+  top: 50%;
+  right: -110px;
+  transform: translateY(-50%);
+}
+
+.stars {
+  font-size: 1.1rem;
+  color: #BC7B00;
+  margin: 10px auto;
+}
+
+.additional-info {
+  font-size: 1rem;
+  margin: 10px auto;
+}
+
+.info-text a {
+  color: var(--primary);
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .quote-mark::after {
+    width: 110px;
+    right: -140px;
+  }
+  .quote-mark::before {
+    width: 110px;
+    left: -140px;
+  }
+  .quote {
+    font-size: 2.875rem;
+    line-height: 3.2rem;
+  }
+}
+/* DESKTOP */
+@media (min-width: 992px) {
+  .quote-mark::before {
+    width: 150px;
+    left: -220px;
+  }
+  .quote-mark::after {
+    width: 150px;
+    right: -220px;
+  }
+}/*# sourceMappingURL=testimonial.css.map */

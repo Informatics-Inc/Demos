@@ -1,0 +1,12 @@
+.two-column-grid{display: grid;gap:25px;}
+.content section.top-overlay p:last-of-type{margin-bottom:0px}
+.top-overlay p{line-height:1.65rem;}
+.top-overlay{position:relative}
+
+@media (min-width:992px){
+.image-box{position: relative;}
+.top-overlay .image-box img{position: absolute;height:auto;width:100%;bottom:-3px;}
+.two-column-grid{grid-template-columns: 1fr 2fr;gap:25px;}
+.content section.top-overlay{padding:50px 0px}
+}
+
