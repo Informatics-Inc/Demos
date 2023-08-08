@@ -1,6 +1,16 @@
-
-
-  
+// -- Get Rid of Orphans in H2 Titles -- //
+window.onload = function() {
+  var h2Elements = document.querySelectorAll('h2');
+  for (var i = 0; i < h2Elements.length; i++) {
+    var h2Text = h2Elements[i].textContent.trim();
+    var words = h2Text.split(' ');
+    if (words.length > 1) {
+      words[words.length - 2] += '&nbsp;' + words[words.length - 1];
+      words.pop();
+      h2Elements[i].innerHTML = words.join(' ');
+    }
+  }
+};
 
 // -- ANIMATE IN TO VIEW -- //
 var $animation_elements = $('.animate-in, .btn-text, .fade-in');
