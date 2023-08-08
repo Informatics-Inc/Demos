@@ -1,5 +1,6 @@
-// -- Get Rid of Orphans in H2 Titles -- //
+// -- Get Rid of Orphans in H2 Titles and "p.lead" Paragraphs -- //
 window.onload = function() {
+  // Get rid of orphans in H2 titles
   var h2Elements = document.querySelectorAll('h2');
   for (var i = 0; i < h2Elements.length; i++) {
     var h2Text = h2Elements[i].textContent.trim();
@@ -8,6 +9,18 @@ window.onload = function() {
       words[words.length - 2] += '&nbsp;' + words[words.length - 1];
       words.pop();
       h2Elements[i].innerHTML = words.join(' ');
+    }
+  }
+
+  // Get rid of orphans in ".hero p" paragraphs
+  var heroParagraphs = document.querySelectorAll('.hero p');
+  for (var k = 0; k < heroParagraphs.length; k++) {
+    var heroText = heroParagraphs[k].textContent.trim();
+    var heroWords = heroText.split(' ');
+    if (heroWords.length > 1) {
+      heroWords[heroWords.length - 2] += '&nbsp;' + heroWords[heroWords.length - 1];
+      heroWords.pop();
+      heroParagraphs[k].innerHTML = heroWords.join(' ');
     }
   }
 };

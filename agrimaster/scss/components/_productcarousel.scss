@@ -1,6 +1,6 @@
 .swiper-container{width: calc(100% - 120px); /* Subtracting 50px from each side */margin:0 auto;overflow:hidden;}
 .custom-controls{position:absolute;top:50%;transform:translateY(-50%);display:flex;justify-content:space-between;align-items:center;width:100%;z-index:9999;}
-.custom-controls .custom-prev-button,.custom-controls .custom-next-button{cursor:pointer;background-color:#000;font-size:1.5rem;color:#fff;border:none;width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;}
+.custom-controls .custom-prev-button,.custom-controls .custom-next-button{cursor:pointer;background-color:#000;font-size:1.2rem;color:#fff;border:none;width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;}
 
 .swiper-pagination-bullet-active{opacity:1;background:#E01A27!important;}
 .swiper-horizontal > .swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:-35px!important;}

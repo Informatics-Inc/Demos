@@ -19,65 +19,66 @@
   <body>
 
     
- <header id="site-header"> <!-- HEADER -->
-  <div class="container position-relative ">
-  <div class="mobile-header">
-    <a href="index.html" id="logo">
-      <img src="img/logo-color.png" alt="Agrimaster Logo " />
-    </a>
-    <button id="menu-toggle"   class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
-      <div class="closed">
-        Menu
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+ 
+    <header id="site-header"> <!-- HEADER -->
+      <div class="container position-relative ">
+      <div class="mobile-header">
+        <a href="index.html" id="logo">
+          <img src="img/logo-color.png" alt="Agrimaster Logo " />
+        </a>
+        <button id="menu-toggle"   class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+          <div class="closed">
+            Menu
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="open">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
       </div>
-      <div class="open">
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </button>
-  </div>
+    
+      <!-- MENU -->
+      <nav id="menu" class="menu collapse">
+        <div class="desktop-header">
+          <a href="index.html" id="logo">
+            <img src="img/logo-color.png" alt="Agrimaster Logo " />
+          </a>
 
-  <!-- MENU -->
-  <nav id="menu" class="menu collapse">
-    <div class="desktop-header">
-      <a href="index.html" id="logo">
-        <img src="img/logo-color.png" alt="Agrimaster Logo " />
-      </a>
-
-      <ul id="menu-main">
-        <li><a href="product_detail.html">Poultry</a></li> 
-        <li><a href="">Equine</a></li> 
-        <li><a href="">Calf/Cow</a></li> 
-        <li><a href="">Multi-species</a></li> 
-        <li><a>Other species</a>
-          <button class="btn-expand collapsed" type="button"
-            data-bs-toggle="collapse" data-bs-target="#menu-2"
-            aria-expanded="false" aria-controls="menu-1"><span
-              class="bar"></span><span class="bar"></span></button>
-          <ul id="menu-2" class="collapse">
-            <li><a href="">Swine</a></li>
-            <li><a href="">Sheep & Goat</a></li>
-            <li><a href="">Rabbit</a></li>
+          <ul id="menu-main">
+            <li><a href="product_detail.html">Poultry</a></li> 
+            <li><a href="">Equine</a></li> 
+            <li><a href="">Calf/Cow</a></li> 
+            <li><a href="">Multi-species</a></li> 
+            <li><a>Other species</a>
+              <button class="btn-expand collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu-2"
+                aria-expanded="false" aria-controls="menu-1"><span
+                  class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-2" class="collapse">
+                <li><a href="">Swine</a></li>
+                <li><a href="">Sheep & Goat</a></li>
+                <li><a href="">Rabbit</a></li>
+              </ul>
+            </li>
+            <li><a href="overview.html">Equipment & Supplies</a></li> 
           </ul>
-        </li>
-        <li><a href="">Equipment & Supplies</a></li> 
-      </ul>
+        </div>
+        <div id="menu-utility">
+          <ul class="mini-nav">
+            <li><a href="product_list.html">Product Search </a></li>
+            <li><a href="">Store Finder</a></li>
+          </ul>
+          <ul class="mini-nav">
+            <li class="secondary-menus"><a href="blog.html">Animal Expert Tips </a></li>
+            <li class="secondary-menus"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <div id="menu-utility">
-      <ul class="mini-nav">
-        <li><a href="product_list.html">Product Search </a></li>
-        <li><a href="">Store Finder</a></li>
-      </ul>
-      <ul class="mini-nav">
-        <li class="secondary-menus"><a href="">Animal Expert Tips </a></li>
-        <li class="secondary-menus"><a href="">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-</header>
+ </header>
 
     <div class="page-hdr">
       <figure">
@@ -97,7 +98,7 @@
     <main class="content">
 
       <section>
-        <div class="container grid-sidebar ">
+        <div class="container grid-sidebar">
           <div class="col">
             <div class="sidebar red">
               <div class="sidebar-container">

@@ -8,5 +8,11 @@
 .wp-block-button__link:hover.btn-white:hover{text-decoration: none;cursor:pointer;background:var(--primary);color:#fff;border:solid 1px var(--primary)}
 
 
+/* Text Only Buttons */
+.btn-text i{transition: padding-left 0.5s ease;padding-left:6px;}
+.btn-text.left-icon i{padding-right:6px;}
+.btn-text:hover i{padding-left:10px}
+
+.btn-text {font-family:'agrifont', sans-serif;font-weight:bold;text-transform:uppercase;}
 
 
