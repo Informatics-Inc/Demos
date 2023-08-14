@@ -9,21 +9,19 @@
 
 /* TABLES */
 table{width:100%;border-collapse:collapse;}
-tr:first-child td{padding-top:40px;}
-tr:last-child td{padding-bottom:40px;}
+tr:first-child td{padding-top:40px;width:33%}
+tr:last-child td{padding-bottom:40px;width:33%}
 table img{max-width:35px;margin:0 auto;}
 th,td{padding:8px;text-align:center;background:var(--grey)}
 th{font-family:'agrifont-cond';background-color:var(--primary);color:#fff;padding:15px;}
 th,td{font-size:1rem;line-height:1.2rem}
 
 /* Really Small */
-@media (max-width: 340px) {
+@media (max-width: 400px) {
     th,td{font-size:0.85rem;}
     }
        
 @media (min-width: 768px) {
-    tr:first-child td{width:33%}
-    tr:last-child td{width:33%}
     th,td{font-size:1.4rem;line-height:1.6rem}
     th{letter-spacing:-1px;}
     table{margin-top:70px;}
