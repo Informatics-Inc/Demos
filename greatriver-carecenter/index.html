@@ -11,39 +11,38 @@
     <link href='css/icons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.typekit.net/xfe3dsq.css">
     <!-- CSS -->
-    <link href="scss/app.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
 
   </head>
 
   <body>
-    <style>
+    <header id="site-header">
 
-    </style>
-
-    <section>
-      <!-- HEADER -->
-      <header id="site-header">
-        <div class="position-relative">
-          <div class="toolbar-container">
-            <div class="container">
-              <div class="toolbar">
-                <div class="address">Assisted Living <span
-                    style="color:var(--primary-color)">•</span> Skilled
-                  Rehabilitation <span style="color:var(--primary-color)">•</span>
-                  Long-term Nursing Care</div>
-                <div class="phone"><span class="social">Follow Us:<a href><i
-                        class="fa-brands fa-facebook"></i></a><span
-                      style="color:var(--primary-color)"> | </span></span>Call
-                  us: <b>1-563-873-3527</b></div>
-              </div>
-            </div>
+      <!-- TOOLBAR -->
+      <div class="toolbar">
+        <div class="container">
+          <div class="tools-one">
+            <ul>
+              <li>Assisted Living</li>
+              <li>Assisted Skilled Rehabilitiation</li>
+              <li>Long-term Nursing Care</li>
+            </ul>
           </div>
-          <div class="mobile-header">
-            <a href="index.html" id="logo">
-              <img src="img/logo-color.png" alt="Great River Logo " />
-            </a>
-            <button id="menu-toggle" class="collapsed " type="button"
+          <div class="tools-two">
+            <div class="tools-link">Follow Us: <a href="#.html"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="tools-link">Call Us <a href="#.html">1-563-873-3527</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN NAV -->
+      <div class="container">
+        <div class="mobile-header">
+          <a href="index.html" id="logo">
+            <img src="img/logo-color.png" alt="Great River Logo " />
+          </a>
+          <button id="menu-toggle" class="collapsed " type="button"
               data-bs-toggle="collapse" data-bs-target="#menu"
               aria-expanded="false" aria-controls="menu">
               <div class="closed">
@@ -56,37 +55,43 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
               </div>
-            </button>
-          </div>
-
-          <nav id="menu" class="menu collapse">
-            <div class="desktop-header">
-              <a href="index.html" id="logo">
-                <img src="img/logo-color.png" alt="Great River Logo" />
-                <img src="img/logo-color.png" alt="Great River Logo" />
-              </a>
-              <ul id="menu-main">
-                <li><a href="basic.html">Facilities</a></li>
-                <li><a href="overview.html">Lifestyle</a>
-                  <button class="btn-expand collapsed" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#menu-2"
-                    aria-expanded="false" aria-controls="menu-1"><span
-                      class="bar"></span><span class="bar"></span></button>
-                  <ul id="menu-2" class="collapse">
-                    <li><a href="secondary.html">Independent Living</a></li>
-                    <li><a href="secondary.html">Assisted Living</a></li>
-                    <li><a href="secondary.html">Memory Support</a></li>
-                  </ul>
-                </li>
-                <li><a href=".html">Careers</a></li>
-                <li><a href="listing.html">Activities & News</a></li>
-                <li><a href=".html">Contact Us</a></li>
+          </button>
+        </div>
+        <nav id="menu" class="menu collapse">
+          <ul>
+            <li><a href="basic.html">Facilities</a></li>
+            <li><a href="overview.html">Lifestyle</a>
+              <button class="btn-expand collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu-2"
+                aria-expanded="false" aria-controls="menu-1"><span
+                  class="bar"></span><span class="bar"></span></button>
+              <ul id="menu-2" class="collapse">
+                <li><a href="secondary.html">Independent Living</a></li>
+                <li><a href="secondary.html">Assisted Living</a></li>
+                <li><a href="secondary.html">Memory Support</a></li>
               </ul>
-            </nav>
-          </div>
-        </header>
-      </section>
+            </li>
+            <li><a href=".html">Careers</a></li>
+            <li><a href="listing.html">Activities & News</a></li>
+            <li><a href=".html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <section class="hero">
+      <figure>
+        <img src="img/main-images/hero-home.webp" alt="Great River Facility Hero">
+      </figure>
+      <div class="text">
+        <h1>The Perfect Lifestyle <span>is Waiting For You</span></h1>
+        <p>Providing advanced and compassionate care, ensuring well-being and comfort throughout their journey.</p>
+        <div class="wp-block-button">
+          <a class="wp-block-button__link btn-theme" href>Explore Our Facilities</a>
+        </div>
+      </div>
+    </section>
+    <!-- </section>
       <div class="hero">
         <figure">
           <img src="img/main-images/hero-home.webp"
@@ -102,7 +107,7 @@
         <div class="wp-block-button">
           <a class="wp-block-button__link btn-theme" href>Explore Our Facilities</a>
         </div>
-      </div>
+      </div> -->
 
       <main class="content">
 

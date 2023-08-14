@@ -11,13 +11,13 @@
     if (scrollPosition > effectStart) {
       var progress = (scrollPosition - effectStart) / (windowHeight * 0.2); // Adjust this value to change the duration of the scaling and fading effects
       var scale = 1 + progress * 0.1; // Adjust this value to change the maximum scale factor
-      var opacity = 4.5 - progress;
+      // var opacity = 4.5 - progress;
       
       image.style.transform = 'scale(' + scale + ')';
-      image.style.opacity = opacity;
+      // image.style.opacity = opacity;
     } else {
       image.style.transform = 'scale(1)';
-      image.style.opacity = '1';
+      // image.style.opacity = '1';
     }
   });
 

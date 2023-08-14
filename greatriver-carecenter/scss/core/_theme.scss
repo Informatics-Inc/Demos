@@ -3,9 +3,13 @@
     --primary: #545759;
     --api-dark: #0B6060;
     --primary-color: #95C93D;
+    --tertiary: #95C93D;
     --highlight-color: #C3F075;
     --light-color: #F3FFD9;
-
+    --light: #f4f4f4;
+    --dark: #222;
+    --max-text-width: 600px;
+    --fixed-header-height: 145px;
     --secondary: #084D68;
     --secondary-light: #007979;
     --secondary-dark: #005c5c;
@@ -24,6 +28,7 @@
     --header: "itc-avant-garde-gothic-pro", sans-serif;
     --body: "lato", sans-serif;
     --text-color:#464544;
+    --text-inverse: rgba(255,255,255,.85);
     --header-color:#211F1F;
     
     --transition:all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -69,7 +74,6 @@ ul ul {list-style-type: disc;}
 ul.checkmarks{list-style-type:none;padding-left:0;}
 li.checkmarks{list-style-type:none;position:relative;padding-left:18px;}
 li.checkmarks::before{content:"\2713";position:absolute;left:0;color:var(--secondary)}
-li{margin-bottom:3px}
 .checkmark li{list-style-type: none; padding-left: 1em; text-indent: -1em; }
 .checkmark .fas{margin-left:15px;margin-right:7px;color:var(--secondary)}
 
@@ -80,9 +84,9 @@ li{margin-bottom:3px}
 .img-fluid img{width:100%;height:auto}
 .content img{width:100%;height:auto} 
 
-.listings figure + .text {margin-top:0rem}
-figure + .text {margin-top:2rem}
-.image-text-box + .text {margin-top:3rem}
+// .listings figure + .text {margin-top:0rem}
+// figure + .text {margin-top:2rem}
+// .image-text-box + .text {margin-top:3rem}
 
 .text-center{text-align: center;max-width: 700px !important;}
 .eyebrow{position: relative;font-size:1rem;color:var(--secondary-light);padding-left:38px;margin-bottom:20px;text-transform: uppercase;font-weight: 700;letter-spacing:2px;}     
@@ -121,6 +125,11 @@ figure + .text,.image-text-box + .text  {margin-top:0px}
 @media (min-width:992px){
 .width-60{max-width: 60%;}
 .width-50{max-width: 50%;}
+
+/* Variables */
+:root {
+  --max-text-width: 800px;
+}
 }
 
 @media (min-width:1200px){

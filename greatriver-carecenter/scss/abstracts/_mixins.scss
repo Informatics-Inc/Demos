@@ -30,3 +30,7 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
 }
+@mixin margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
