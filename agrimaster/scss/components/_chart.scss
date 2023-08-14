@@ -6,3 +6,25 @@
 .chart li:nth-child(odd){background-color:rgba(0,0,0,0.05);}
 .chart .left-item{flex:2;}
 .chart .right-item{flex:1;}
+
+/* TABLES */
+table{width:100%;border-collapse:collapse;}
+tr:first-child td{padding-top:40px;}
+tr:last-child td{padding-bottom:40px;}
+table img{max-width:35px;margin:0 auto;}
+th,td{padding:8px;text-align:center;background:var(--grey)}
+th{font-family:'agrifont-cond';background-color:var(--primary);color:#fff;padding:15px;}
+th,td{font-size:1rem;line-height:1.2rem}
+
+/* Really Small */
+@media (max-width: 340px) {
+    th,td{font-size:0.85rem;}
+    }
+       
+@media (min-width: 768px) {
+    tr:first-child td{width:33%}
+    tr:last-child td{width:33%}
+    th,td{font-size:1.4rem;line-height:1.6rem}
+    th{letter-spacing:-1px;}
+    table{margin-top:70px;}
+} 
