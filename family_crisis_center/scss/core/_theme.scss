@@ -1,0 +1,116 @@
+/* Variables */
+:root {
+    --primary: #51176F;
+    --secondary: #DBC6F7;
+    --full-image-overlay:rgba(21, 21, 21, 0.7);
+    --hero-overlay:rgba(21, 21, 21, 0.7);
+    --cta-color:#545759;
+    
+    --bg-color: #F5F4F0;
+    --grey:#9B99A5;
+    --richblack:#211F1F;
+    
+    --header: "area-normal", sans-serif;
+    --body: "area-normal", sans-serif;
+    --text-color:#464544;
+    --header-color:#211F1F;
+    
+    --transition:all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --shadow: 0 10px 18px rgba(65, 63, 70, 0.15);
+    --spacer:25px;
+    --spacer-large: 50px;
+    --max-width: 1180px;
+  }
+
+
+/* TYPOGRAPHY 
+  font-family: "area-normal", sans-serif;
+  weights - 100 (thin), 400 (normal), 800 (extrabold)
+*/
+html {font-size: 100%;}
+body {font-family: var(--body); font-weight: 300; font-size:0.938rem; color: var(--text-color); 
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-moz-font-feature-settings: "liga" on;
+font-feature-settings: "liga";
+text-rendering: optimizeLegibility;
+}
+.container{max-width:var(--max-width)}
+/* 
+font-family: itc-avant-garde-gothic-pro, sans-serif; --  300 reg, 500 med, 700 bold
+font-family: lato, sans-serif;  --  400 reg, 700 bold */
+
+h1, h2, h3, h4, h5 {color:var(--header-color);font-family: var(--header);font-weight:300; margin: 0 0 1rem 0; color: var(--header-color);}
+h1 {font-size: 3.6rem;line-height:3.75rem;}
+h2 {font-size:2.0rem;line-height:2.5rem;}
+h3 {font-size: 1.7rem;line-height:2.0rem;}
+h4 {font-size: 1.45rem;line-height:1.75rem;}
+h5 {font-size:1.375rem;line-height: 1.85rem;font-weight:800;; margin: 0.25rem 0 0.5rem 0}
+
+p.lead {font-size: 1.35rem;font-family: var(--body);line-height:2rem;}
+p, ul {margin-bottom: 1.5em;}
+p{font-size:0.938rem;line-height: 1.65rem;font-weight: 400;}
+hr {margin: 35px 0; border: none; border-bottom: 2px dotted #ccc;} 
+a {transition: var(--transition); text-decoration: none; color: var(--primary);}
+p a {color: var(--primary);}
+p a:hover {text-decoration: underline;}
+blockquote {font-weight:700;font-style: italic;border-left: 1px solid var(--primary);padding-left: 16px;margin: 16px 0;}
+b,strong{font-weight: 700;}
+li::marker {color:var(--secondary)}
+ul{padding-left:15px;}
+ul ul {list-style-type: disc;}
+ul.checkmarks{list-style-type:none;padding-left:0;}
+li.checkmarks{list-style-type:none;position:relative;padding-left:18px;}
+li.checkmarks::before{content:"\2713";position:absolute;left:0;color:var(--secondary)}
+li{margin-bottom:3px}
+.checkmark li{list-style-type: none; padding-left: 1em; text-indent: -1em; }
+.checkmark .fas{margin-left:15px;margin-right:7px;color:var(--secondary)}
+
+.text-white,.text-white .eyebrow,.text-white h2,.text-white p,.text-white li{color: #fff}
+.text-white li::marker{color:var(--secondary-light); }
+
+.full-image ,.full-image p,.full-image h2{color:#fff}
+.full-image .eyebrow,.full-image a{color:var(--secondary)}
+.full-image .stat-card:not(:last-child)::before {background-color: #fff;}
+.full-image .stat-card:not(:last-child)::before{background-color:#fff;border-right:1px dotted #000;}
+
+.content img{border-radius:9px;}
+.img-fluid img{width:100%;height:auto}
+.content img{width:100%;height:auto} 
+
+.listings figure + .text {margin-top:0rem}
+figure + .text {margin-top:2rem}
+figure + h2{margin-top:50px}
+p + figure,h2 + figure{margin-top:50px}
+.image-text-box + .text {margin-top:3rem}
+.grid-container + h2,p + .grid-container, .grid-container + figure{margin-top:50px}
+
+.text-center{text-align: center;max-width: 650px !important;}
+
+.eyebrow{position: relative;font-size:0.75rem;color:var(--primary);margin-bottom:20px;text-transform: uppercase;font-weight: 700;letter-spacing:2px;}     
+
+.bg-color{background-color:var(--bg-color);}
+.position-relative{position: relative;} 
+
+.black-overlay{z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.75);}
+.color-overlay{z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(201,192,171,.90);}
+.image-overlay{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;}
+
+/* ONLY MOBILE */
+ @media (max-width:991px){
+  h1 {font-size: 3.2rem;line-height:3.25rem;}
+}
+
+@media (min-width: 768px) {
+ h2 {font-size:2.75rem;line-height:3rem;}
+.eyebrow{font-size:0.875rem;}
+figure + .text,.image-text-box + .text  {margin-top:0px}
+.text{margin-top:0rem;}
+}
+
+@media (min-width:992px){
+.pad-left-75{padding-left:75px}
+}
+
+@media (min-width:1200px){
+}

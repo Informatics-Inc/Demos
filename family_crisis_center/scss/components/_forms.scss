@@ -1,0 +1,15 @@
+/* Main Layout */
+form{margin-bottom:50px}
+.form-group{border-bottom:solid 1px #ccc;padding-bottom:20px;margin-bottom:30px}
+.form-group:last-of-type{border-bottom:none}
+.form-label,.form-group label:first-child{font-weight: 700;color:#111}
+.form-check{margin-top:10px}
+.form-control {padding: 20px 15px}
+
+/* Form Buttons and Navigation */
+.btn-submit{margin-top:25px;font-weight:800;font-size:.85rem;display:inline-block;padding:18px 25px 12px 25px;transition:var(--transition);background:var(--primary);color:#fff;border:none;border-radius:100px;margin:0 0 0 0;text-transform: uppercase;}
+.btn-submit:hover{text-decoration: none;cursor:pointer;background:var(--secondary);color:var(--primary)}
+.prev-arrows a:hover{color:#333}
+.prev-arrows {font-weight: 400;font-size:1.1rem}
+.prev-arrows a:first-child{margin-right:5px}
+.prev-arrows a:last-child{margin-left:5px}

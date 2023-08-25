@@ -1,0 +1,22 @@
+.accordion{border-radius:9px;box-shadow:var(--shadow);margin-bottom:20px;margin-top:30px  }
+.accordion-button:focus {
+  box-shadow:none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #333;border-top:0px
+}
+.accordion-body {
+ background:#FCFCFA;padding:35px;border-top:solid #f1f1f1 1px
+}
+.accordion-body li{margin-bottom: 8px;}
+.accordion-button:hover {
+ color:var(--primary);
+}
+.accordion-button {
+  color:var(--primary);font-weight:800;;border-top:0px 
+}
+.accordion-content{padding:35px;}
+.accordion-content h5{color:var(--primary)}
+.accordion-content p{margin-bottom:0;}
+.accordion-header{line-height: 1.5rem;padding:20px;border-top:solid #ccc 1px}

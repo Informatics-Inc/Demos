@@ -1,0 +1,26 @@
+/* Full Size - Background Image*/
+.full-image{text-align:center;padding:25px;display:flex;justify-content:center;align-items:center;position:relative;overflow:hidden;width:100%;}
+.full-image-overlay{z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background-color:var(--full-image-overlay)}
+.full-image .full-bg img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;}
+
+/* Imager Combos Side by Side */
+.img-combo {display: grid; grid-template-columns: 1fr 1fr; gap: 25px; position: relative;min-height:200px}
+.img-combo img {width:100%;height:100%;object-fit:cover;object-position: center;box-shadow: 0 10px 34px rgba(65, 63, 70, 0.15)}
+.img-combo img:nth-of-type(2) {margin: 50px 0 0 0;}
+
+/* Testimonials */
+.testimonial-box-overlap{margin-top:50px;align-self: center;background:#fff;padding:45px;box-shadow: 0 10px 34px rgba(65, 63, 70, 0.15);border-radius: 9px;}
+.testimonial-box-overlap p:after{content:"";display:block;width:50px;margin-top:20px;border-bottom: 1px dotted var(--primary);}
+.name{text-transform: uppercase;letter-spacing: 2px;margin-bottom:0px;font-size:0.8rem;color:#000;font-weight: 700;}
+p.name:after{display:none}
+
+@media (min-width: 768px) {
+    .img-combo {min-height:400px;}
+    .testimonial-box-overlap{margin-top:0px;}
+
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .testimonial-box-overlap{margin-left:-150px;margin-top:0px;}
+}
