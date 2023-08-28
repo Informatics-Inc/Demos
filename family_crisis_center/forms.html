@@ -131,11 +131,25 @@
         </div>
       </div>
 
-      <main class="content">
+      <main class="content bg-color">
 
 
  <!-- Form - Basic Info -->
-<section>
+<section class="safety-form">
+  <div class="pagenumber container">
+    <h4>Form 1 of 7</h4>
+  <div class="prev-arrows">
+    <a href="#">
+      <i class="fa-solid fa-arrow-left"></i> Previous
+    </a>
+    |
+    <a href="#">
+        Next <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</div>
+</div>
+<hr>
+
   <div class="container">
 <h2>Basic Information</h2>
 <p>
@@ -189,12 +203,14 @@
             </div>
           </div>
         <div class="form-group">
-            <label>Email Address</label>
-            <p>We’ll email a private link to your safety plan to this email address. If your partner monitors your email, use an email address of a trusted friend or family member. This link will expire after 24 hours and your private data will be deleted from our site. We never store your information.  
+            <label>Email Address
+                         <p>We’ll email a private link to your safety plan to this email address. If your partner monitors your email, use an email address of a trusted friend or family member. This link will expire after 24 hours and your private data will be deleted from our site. We never store your information.  
             </p>
+            </label>
+ 
             <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
         </div>
-        <button type="submit" class="btn-submit">Submit</button>
+
 
         <div class="prev-arrows">
           <a href="#">
@@ -211,7 +227,7 @@
 </section> <!-- End Form Basic Info -->
 
 
-<section> <!-- Start Safety at Home  -->
+<section class="safety-form">  <!-- Start Safety at Home  -->
   <div class="container">
     <h2>Safety at Home </h2>
     <p>
@@ -223,9 +239,10 @@
     <form>
         <label for="trustedPeople" class="form-label">List the people in your life that you trust telling about your situation or that you’ve already told about your situation.</label>
         <textarea class="form-control" id="trustedPeople" name="trustedPeople" rows="4"></textarea>
-      
+
         <label for="codeWord" class="form-label">What code word or phrase can you use to ask your trusted individuals to call for help without your partner knowing?</label>
-        <input type="text" class="form-control" id="codeWord" name="codeWord">
+        <textarea class="form-control" id="codeWord" name="codeWord" rows="4"></textarea>
+
       
         <label for="safeLocation" class="form-label">
           When you feel an argument or fight coming on, where can you move to lower your risk?</label>
@@ -240,83 +257,414 @@
         <label for="emergencyRide" class="form-label">If your partner leaves you stranded and in need of a ride, whom could you call or text to pick you up?</label>
         <textarea class="form-control" id="emergencyRide" name="emergencyRide" rows="4"></textarea>
       
+        <div class="form-grid">
           <div class="form-group">
               <label>Identification (driver’s license, immigration documents, school ID, military ID)</label><br>
               <input type="checkbox" name="items[]" value="Identification">
           </div>
           <div class="form-group">
-              <label>Cell phone</label><br>
+              <label>Cell phone</label>
               <input type="checkbox" name="items[]" value="Cell phone">
           </div>
           <div class="form-group">
-              <label>Cell phone charger</label><br>
-              <input type="checkbox" name="items[]" value="Cell phone charger">
+              <label>Cell Phone Charger</label>
+              <input type="checkbox" name="items[]" value="Cell Phone Charger">
           </div>
           <div class="form-group">
-            <label>Cell phone charger</label><br>
-            <input type="checkbox" name="items[]" value="Cell phone charger">
+            <label>Medication</label>
+            <input type="checkbox" name="items[]" value="Medication">
         </div>
         <div class="form-group">
-          <label>Cell phone charger</label><br>
-          <input type="checkbox" name="items[]" value="Cell phone charger">
+          <label>Cash</label>
+          <input type="checkbox" name="items[]" value="Cash">
       </div>
       <div class="form-group">
-        <label>Cell phone charger</label><br>
-        <input type="checkbox" name="items[]" value="Cell phone charger">
+        <label>ATM Card </label>
+        <input type="checkbox" name="items[]" value="ATM Card ">
     </div>
-    <div class="form-group">
-      <label>Cell phone charger</label><br>
-      <input type="checkbox" name="items[]" value="Cell phone charger">
-  </div>
-  <div class="form-group">
-    <label>Cell phone charger</label><br>
-    <input type="checkbox" name="items[]" value="Cell phone charger">
-</div>
-<div class="form-group">
-  <label>Cell phone charger</label><br>
-  <input type="checkbox" name="items[]" value="Cell phone charger">
-</div>
-
+      <div class="form-group">
+        <label> House Key </label>
+        <input type="checkbox" name="items[]" value="House Key ">
+    </div>
           <div class="form-group">
-              <label>Other</label><br>
-              <textarea name="other"></textarea>
-          </div>
-   
+        <label>Car Key </label>
+        <input type="checkbox" name="items[]" value="Car Key ">
+    </div>
+          <div class="form-group">
+        <label>Change of Clothes </label>
+        <input type="checkbox" name="items[]" value="Change of Clothes ">
+    </div>
+          <div class="form-group">
+        <label>Comfort Items (pictures, etc) </label>
+        <input type="checkbox" name="items[]" value="Comfort Items (pictures, etc) ">
+    </div>
+          <div class="form-group">
+        <label>Baby Supplies (formula, diapers, clothes, wipes) </label>
+        <input type="checkbox" name="items[]" value="Baby supplies (formula, diapers, clothes, wipes) ">
+    </div>
+          <div class="form-group">
+        <label>Pet Supplies (food, vaccination records, other supplies) </label>
+        <input type="checkbox" name="items[]" value="Pet Supplies (food, vaccination records, other supplies) ">
+    </div>
+          <div class="form-group">
+        <label>Children’s Clothes </label>
+        <input type="checkbox" name="items[]" value="Children’s Clothes ">
+    </div>
+          <div class="form-group">
+        <label>Children’s Favorite Toys or Comfort Items </label>
+        <input type="checkbox" name="items[]" value="Children’s Favorite Toys or Comfort Items ">
+      </div>
+      <div class="form-group">
+        <label>Copy of Protection Order </label>
+        <input type="checkbox" name="items[]" value="Copy of Protection Order ">
+      </div>
+        <div class="form-group">
+        <label>Child’s Birth Certificate </label>
+        <input type="checkbox" name="items[]" value="Child’s Birth Certificate">
+      </div>
+        <div class="form-group">
+        <label>Health Insurance Card </label>
+        <input type="checkbox" name="items[]" value="Health Insurance Card">
+      </div>
+    </div> <!-- End Form Grid  -->
+    
+    <div class="form-group">
+        <label>Other</label>
+        <textarea class="form-control" id="other" name="other" rows="4"></textarea>
+    </div>
 
+    <div class="form-group">
+      <label>Who Should You Tell This To
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+        <em>If your partner no longer lives with you, who should you tell this to so that they can call the police if they are observed at your house?  </em>
+
+      <em>Think of any neighbors, friends, or family that might observe your house at any time. It’d also be good to consider additional security measures, such as outside cameras or security lighting.  </em>
+
+      </label><br>
+      <textarea class="form-control" id="whom" name="whom" rows="4"></textarea>
+  </div>
+
     </form>
-
+  </div>
 
     </div>
     </section> <!-- End Safety at Home  -->
 
+ 
 
-
-
-    <section> <!-- Start Form Basic Info -->
+    <section class="safety-form"><!-- Start Safety at Work -->
       <div class="container">
-        <h2>Safety at Home </h2>
+        <h2>Safety at Work </h2>
         <p>
           I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
         </p>
     
         <hr>
 
+        <form>
+          <label for="workroute" class="form-label">
+            What route can you take to avoid seeing your partner or ex-partner on your way to and from work?              <em>This should be different than the route you typically take. Consider a couple of alternative routes.</em> 
+          </label>
+          <textarea class="form-control" id="workroute" name="workroute" rows="4"></textarea>
+
+          <label for="enteralone" class="form-label">
+            Can you arrive and leave at times so that you’re not entering and exiting your workplace alone?   
+        </label>
+          <textarea class="form-control" id="enteralone" name="enteralone" rows="4"></textarea>
+
+          <label for="wheresafe" class="form-label">
+            If your partner or ex-partner shows up at your workplace, where can you go to feel safe? 
+             </label>
+          <textarea class="form-control" id="wheresafe" name="wheresafe" rows="4"></textarea>
+
+          <label for="workpickup" class="form-label">
+            If need to leave work immediately, who can you ask to pick you up, meet you, or take you from work?               </label>
+          <textarea class="form-control" id="workpickup" name="workpickup" rows="4"></textarea>
+
+          </form> <!-- End Safety at Work  -->
+
+    </div>
+</section>
+
+
+
+<section class="safety-form">  <!-- Start Safety at School -->
+      <div class="container">
+        <h2>Safety at School </h2>
+        <p>
+          I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
+        </p>
+    
+        <hr>
+
+        <form>
+          <label for="schoolroute" class="form-label">
+            What route can you take to get to school safely and avoid seeing your partner or ex-partner on your way?  
+            <em>This should be different than the route you typically take. Consider a couple of alternative routes.</em> 
+          </label>
+          <textarea class="form-control" id="schoolroute" name="schoolroute" rows="4"></textarea>
+
+          <label for="whombetweenclasses" class="form-label">
+            If your partner or ex-partner attends school with you, whom can you spend time with between classes so that you aren’t alone? 
+        </label>
+          <textarea class="form-control" id="whombetweenclasses" name="whombetweenclasses" rows="4"></textarea>
+
+          <label for="schoolpickup" class="form-label">
+            If you need to leave school immediately, whom can you call to pick you up or meet you somewhere?   
+        </label>
+          <textarea class="form-control" id="schoolpickup" name="schoolpickup" rows="4"></textarea>
+
+          </form> <!-- End Safety at School  -->
+
+    </div>
+</section>
 
 
 
 
+<section class="safety-form">  <!-- Start Safety with Children  -->
+  <div class="container">
+    <h2>Safety with Children  </h2>
+    <p>
+      I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
+    </p>
+
+    <hr>
+
+    <form>
+      <label for="emergencycontact" class="form-label">
+        Who can your children contact during an emergency? List the name and phone number for each contact.  
+        <em> List all of the people your children can contact. This should include family, friends, neighbors, emergency services, local agencies, and others. </em> 
+      </label>
+      <textarea class="form-control" id="emergencycontact" name="emergencycontact" rows="4"></textarea>
+
+      <label for="childrensituation" class="form-label">
+        What should your children do when situations begin to escalate?   
+       <em> Do you want them to leave the home and go to a neighbor’s house? Should they call someone? Is there a safe room in the house? Think about what you want them to do to stay safe. That can include staying safe from witnessing and hearing emotional abuse.  
+      </em>
+    </label>
+      <textarea class="form-control" id="childrensituation" name="childrensituation" rows="4"></textarea>
+
+      <label for="wordforhelp" class="form-label">
+        What word or phrase can you use to let your children know that they should call for help? Include what they should do and who they should call when you use the code or phrase.  
+    </label>
+      <textarea class="form-control" id="wordforhelp" name="wordforhelp" rows="4"></textarea>
+
+      <label for="childgo" class="form-label">
+        What rooms in the house can your children go to when they’re afraid or need to seek safety? What rooms should your children avoid?  
+       <em>Children should avoid rooms that could include weapons or no escape, such as bathrooms and kitchens. </em>   
+    </label>
+      <textarea class="form-control" id="childgo" name="childgo" rows="4"></textarea>
+
+      <label for="safeplace" class="form-label">
+        Where is a safe place your children could go if they’re in danger?  
+        <em>This could be a neighbor’s house, a space in the house, police department, etc. It should be somewhere your children can get to safely on their own. </em> 
+    </label>
+      <textarea class="form-control" id="safeplace" name="safeplace" rows="4"></textarea>
+
+      </form> <!-- End Safety with Children   -->
+</div>
+</section>
 
 
 
+<section class="safety-form">  <!-- Start Safety with Pets -->
+      <div class="container">
+        <h2>Safety at Pets </h2>
+        <p>
+          I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
+        </p>
+    
+        <hr>
+
+        <form>
+          <label for="petprovider" class="form-label">
+            Where can you store emergency provisions for your pet(s), and what should be included?  
+                <em>It’s good to have emergency provisions stored for your pet(s) in case your partner withholds money from you.</em> 
+          </label>
+          <textarea class="form-control" id="petprovider" name="petprovider" rows="4"></textarea>
+
+          <label for="nearestvet" class="form-label">
+             What is the name, address, and phone number of the nearest vet that provides 24-hour emergency services?   
+        </label>
+          <textarea class="form-control" id="nearestvet" name="nearestvet" rows="4"></textarea>
+
+          <label for="ownership" class="form-label">
+                Is your pet’s ownership in your name? If yes, list documents that prove ownership and keep copies of those somewhere safe. If not, what steps do you need to take to establish ownership?  
+                      <em> You can establish ownership by making sure your pet(s) are vaccinated and licensed where you live and in your name. If they are not in your name or at your address, take steps to have them changed. 
+                      </em>    
+        </label>
+          <textarea class="form-control" id="ownership" name="ownership" rows="4"></textarea>
+
+                    <label for="takepet" class="form-label">
+                    Who could take your pet(s) if you need to leave your home immediately?   
+                      <em> Think of trusted individuals, friends, family, or boarding facilities, including the vet. Make sure you have copies of your pet’s vaccination records. It’s also important to make sure this location isn’t disclosed to your partner.  
+                      </em>    
+        </label>
+          <textarea class="form-control" id="takepet" name="takepet" rows="4"></textarea>
+
+          
+                    <div class="form-group">
+              <label>If you need to leave with your pet(s), what do you need to take with you for them?   </label><br>
+              </div>
+
+      <div class="form-grid"> <!-- FORM GRID -->
+             <div class="form-group">
+              <label>Food</label><br>
+              <input type="checkbox" name="items[]" value="Food">
+              </div>
+
+                                                <div class="form-group">
+              <label>Medicine</label><br>
+              <input type="checkbox" name="items[]" value="Medicine">
+              </div>
+
+                                                <div class="form-group">
+              <label>    Ownership documents (receipts from purchase or adoption, receipts for purchases, license, vaccination records with your name) </label><br>
+              <input type="checkbox" name="items[]" value="documents">
+              </div>
+
+                                                <div class="form-group">
+              <label>    Vaccination Records </label><br>
+              <input type="checkbox" name="items[]" value="Vaccination Records ">
+              </div>
+
+                                                <div class="form-group">
+              <label>Leash</label><br>
+              <input type="checkbox" name="items[]" value="Leash">
+              </div>
+
+                                                   <div class="form-group">
+              <label>Toys</label><br>
+              <input type="checkbox" name="items[]" value="Toys">
+              </div>
+
+                                                   <div class="form-group">
+              <label>Pet carrier </label><br>
+              <input type="checkbox" name="items[]" value="Pet carrier ">
+              </div>
+
+                                                    <div class="form-group">
+              <label>Bedding </label><br>
+              <input type="checkbox" name="items[]" value="Bedding">
+              </div>
+
+                                                    <div class="form-group">
+              <label>Pet carrier </label><br>
+              <input type="checkbox" name="items[]" value="Pet carrier ">
+              </div>
+
+              <div class="form-group">
+              <label>ID Tags or Rabies Tags for dogs and cats (this can help with ownership)</label><br>
+              <input type="checkbox" name="items[]" value="idtags">
+              </div>
+          </div> <!-- END FORM GRID -->
 
 
+          <label for="othervets" class="form-label">
+                 What are some alternative veterinarians you could use if you need to change due to your partner?     
+        </label>
+          <textarea class="form-control" id="othervets" name="othervets" rows="4"></textarea>
+              
+              <label for="microchipped" class="form-label">
+                   Is your pet microchipped? Who is listed as a contact? Do you need to change it?    
+        </label>
+          <textarea class="form-control" id="microchipped" name="microchipped" rows="4"></textarea>
+              
+
+              <label for="petroute" class="form-label">
+                     If you need to walk your pet(s), what is the safest route? Is there anyone that could go with you?      
+        </label>
+          <textarea class="form-control" id="petroute" name="petroute" rows="4"></textarea>
+              
+          </div>
+          </form> 
+
+    </div>
+</section><!-- End Safety  with Pets  -->
 
 
+<section class="safety-form">  <!-- Start Safety for Teenagers -->
+  <div class="container">
+    <h2>Safety for Teenagers</h2>
+    <p>
+      I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
+    </p>
 
+    <hr>
+
+        <form>
+          <label for="whocallrelationship" class="form-label">
+            What family member can you tell about what is going on in your relationship?  
+          </label>
+          <textarea class="form-control" id="whocallrelationship" name="whocallrelationship" rows="4"></textarea>
+
+          <label for="friends" class="form-label">
+            Which friends can you trust and ask for help?   
+          </label>
+          <textarea class="form-control" id="friends" name="friends" rows="4"></textarea>
+
+          <label for="codeword" class="form-label">
+                What code word or phrase can you share with the people you trust so that when you use it they know to call for help for you?     
+          </label>
+          <textarea class="form-control" id="codeword" name="codeword" rows="4"></textarea>
+
+                    <label for="dofeelsafe" class="form-label">
+               There might be times when you’re home alone. What can you do to feel safe? Who could you invite over so you’re not alone?  
+          </label>
+          <textarea class="form-control" id="dofeelsafe" name="dofeelsafe" rows="4"></textarea>
+
+                              <label for="leavesituation" class="form-label">
+              If you’re with your boyfriend or girlfriend and not feeling safe, what can you do or say to leave the situation?  
+          </label>
+          <textarea class="form-control" id="leavesituation" name="leavesituation" rows="4"></textarea>
+
+                              <label for="feelingdown" class="form-label">
+                What are some things you could do when you’re feeling down?  
+                <em>Unhealthy/abusive relationships can take a toll on your mental health. Try to think of things you could do that make you happy. Talking with friends or exercise are healthy things to do. </em> 
+          </label>
+          <textarea class="form-control" id="feelingdown" name="feelingdown" rows="4"></textarea>
+
+
+                                        <label for="wherestaysafe" class="form-label">
+                  If you need to leave in an emergency, where could you go to stay safe?  
+                   <em>Consider a friend’s house, somewhere public, or some other place where you feel safe. Consider places that are unknown to your boyfriend or girlfriend.   </em>
+          </label>
+          <textarea class="form-control" id="wherestaysafe" name="wherestaysafe" rows="4"></textarea>
+
+          </form>
+    </div>
+    </section> <!-- End Safety for Teenagers -->
+
+
+    <section class="safety-form"><!-- Start Safety Tips -->
+  <div class="container">
+    <h2>Safety Tips</h2>
+    <p>
+     This will be a section of safety tips and information that I would like to be included in everyone’s safety plan. There are no questions to answer, so it’ll just be some bullet points of information. I’ll provide this once I have it.  
+    </p>
+
+    <hr>
+<ul>
+  <li>Safety Tip - Loreum ipsum nueve gneration giavin situations.</li>
+  <li>Safety Tip - Loreum ipsum nueve gneration giavin situations.</li>
+  <li>Safety Tip - Loreum ipsum nueve gneration giavin situations.</li>
+  <li>Safety Tip - Loreum ipsum nueve gneration giavin situations.</li>
+  <li>Safety Tip - Loreum ipsum nueve gneration giavin situations.</li>
+</ul>
 
   </div>
+  </section><!-- End Safety Tips -->
+
+<hr>
+<section class="safety-form">  <!-- Submit Button -->
+  <div class="container">
+    <p class="lead">When Completed Submit this form by using the button below.  
+</p>
+          <button type="submit" class="btn-submit">Submit</button>
+          </div>
+</section>
+
 
       </main>
 

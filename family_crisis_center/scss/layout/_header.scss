@@ -7,11 +7,11 @@
 @media (max-width: 991px) {
 .mobile-header{display:grid;grid-template-columns:auto 40px;gap:50px;padding:25px;border-bottom:solid 1px var(--secondary);}
 .desktop-header #logo, .hidden-sm {display: none !important;}
-#site-header {z-index:99999;border-top:solid 8px var(--primary);border-bottom:1px solid var(--secondary);background:#4C2572}
+#site-header {z-index:99999;border-top:solid 8px #3f1e60;border-bottom:1px solid var(--secondary);background:#4C2572}
 #logo {max-width: 140px; display: block; position: relative;}
 .seperator{display:none;}
 #menu-utility li.phone{display:none;}
-.toolbar{background:#51176F;padding:10px 25px;display: flex;justify-content: space-between;color:#fff;font-weight: 800;font-size:1.2rem;align-items: center;}
+.toolbar{background:#3f1e60;;padding:10px 25px;display: flex;justify-content: space-between;color:#fff;font-weight: 800;font-size:1.2rem;align-items: center;}
 .toolbar a{color:#EEFFD8;font-size:0.85rem;text-transform: uppercase;}
 .toolbar i{margin-right:5px;color:var(--secondary);transform: scale(1);transition:var(--transition)}
 .toolbar a:hover{color:var(--secondary);}
@@ -106,8 +106,8 @@
 .hidden-lg {display: none !important;}
 
 /* Last Nav Buttons */
-#menu-main .btn-theme a{display:inline-block;padding:18px 20px 12px 20px;transition:var(--transition);background:var(--secondary);color:var(--primary);border:none;border-radius:100px; margin: 0 0 0 0.75rem;}
-#menu-main .btn-secondary a{display:inline-block;padding:18px 20px 12px 20px;transition:var(--transition);border:solid 1px var(--secondary);border-radius:100px;}
+#menu-main .btn-theme a{display:inline-block;padding:18px 20px 12px 20px;transition:var(--transition);background:var(--bg-color);color:var(--primary);border:none;border-radius:100px; margin: 0 0 0 1.5rem;}
+#menu-main .btn-secondary a{display:inline-block;padding:18px 20px 12px 20px;transition:var(--transition);border:solid 1px var(--bg-color);border-radius:100px;}
 #menu-main .btn-theme a:hover {background:var(--primary);color:#fff}
 #menu-main .btn-secondary a:hover {background:var(--primary);color:#fff;border:solid 1px var(--primary)}
 }
