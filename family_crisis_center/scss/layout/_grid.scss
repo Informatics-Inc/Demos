@@ -17,7 +17,7 @@
 .grid-columns{display:grid;grid-template-columns:repeat(2,1fr);gap:75px;}
 .grid-2x2{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:25px;}
 .grid.grid-hero .text{grid-column:span 2;display:flex;justify-content:center;flex-direction:column;padding:0px 50px 0px 0px;}
-.grid.grid-hero{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:25px !important;}
+.grid.grid-hero{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:25px !important;}
 .col-4-md,.col-md-4{grid-column:span 4;}
 }
 

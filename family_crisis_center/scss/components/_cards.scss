@@ -6,7 +6,7 @@
 .card .small{font-size:0.75rem;color:var(--gold);margin-bottom:5px;text-transform:uppercase;font-weight:700;letter-spacing:2px;}
 
 /* Icon Cards */
-.icon.card{padding:35px 30px 30px 30px;transition:var(--transition);height:100%;background:var(--primary);border-radius:12px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);  position: relative; box-shadow:var(--shadow);}
+.icon.card{height:100%;padding:35px 30px 40px 30px;transition:var(--transition);height:100%;background:var(--primary);border-radius:12px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);  position: relative; box-shadow:var(--shadow);}
 .icon.card .card-content{flex-grow:1;padding:0px;color:#fff}
 .icon.card .card-footer{padding:15px 0px 0px 0px;}
 .icon.card:hover{box-shadow:0 12px 34px rgba(122,102,137,0.75);background:#661e8a;}
