@@ -9,7 +9,7 @@
 .grid,.grid-md{display:grid;gap:25px;}
 .align-self-center{align-self:center;}
 .flex{display:flex;justify-content:center;gap:20px;}
-.flex-container{display:flex;flex-direction:column;justify-content:space-between;align-items:center;}
+.flex-container{display:flex;flex-direction:column;justify-content:space-between;align-items:center;gap:50px}
 .flex-container-scale {display: flex;flex-wrap: wrap;gap:40px;}
 
 @media (min-width:768px){

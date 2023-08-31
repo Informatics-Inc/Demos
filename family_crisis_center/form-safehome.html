@@ -18,6 +18,7 @@
   
   <body>
 
+
     <header id="site-header"> <!-- HEADER -->
       <div class="toolbar">
         <span>1-800-382-5603</span>
@@ -65,10 +66,11 @@
                   <li><a href="">Services</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-2"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-2"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-2" class="collapse">
                       <li><a href="">Domestic Violence</a></li>
+                      <li><a href="">Human Trafficking</a></li>
                       <li><a href="">Houseing & Homeless Services</a></li>
                       <li><a href="">Homicide & Violent Crimes</a></li>
                       <li><a href="">Family Visitation Exchange</a></li>
@@ -81,7 +83,7 @@
                   <li><a href="">Events</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-3"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-3"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-3" class="collapse">
                       <li><a href="">The Gala</a></li>
@@ -92,14 +94,30 @@
                   <li><a href="">Resources</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-4"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-4"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-4" class="collapse">
                       <li><a href="">Resource Entry</a></li>
                     </ul>
                   </li>
-                  <li class="btn-secondary"><a href="">Volunteer</a></li>
-                  <li class="btn-theme"><a href="">Support Our Cause</a></li>
+                  <li><a href="">Donate</a>
+                    <button class="btn-expand collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#menu-5"
+                      aria-expanded="false" aria-controls="menu-5"><span
+                        class="bar"></span><span class="bar"></span></button>
+                    <ul id="menu-5" class="collapse">
+                      <li><a href="">Donate Now</a></li>
+                      <li><a href="">Donate Monthly</a></li>
+                      <li><a href="">Corporate Partnership</a></li>
+                      <li><a href="">Gifts of Grain</a></li>
+                      <li><a href="">Legacy Giving</a></li>
+                      <li><a href="">Other Ways to Give</a></li>
+                      <li><a href="">Charitable IRA Rollovers</a></li>
+                      <li><a href="">Where Your Money Goes</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Volunteer</a></li>
+                  <li class="btn-theme"><a href="">Donate Now</a></li>
                 </ul>
    
                 <ul id="menu-utility">
@@ -136,18 +154,26 @@
 
         <section class="safety-form">  <!-- Start Safety at Home  -->
 
-          <div class="pagenumber container">
-            <h4>Form 1 of 8</h4>
-          <div class="prev-arrows">
-            <a href="#">
-              <i class="fa-solid fa-arrow-left"></i> Previous
-            </a>
-            |
-            <a href="#">
-                Next <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </div>
-        </div>
+          <div class="container"> <!-- Submit Buttons -->
+            <div class="pagenumber">
+            <div class="prev-arrows">
+              <h4>Form 1 of 8</h4>
+              <a href="#">
+                <i class="fa-solid fa-arrow-left"></i> Previous
+              </a>
+              |
+              <a href="#">
+                  Next <i class="fa-solid fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col">
+            <h4>Out of Time?</h4>
+            <div class="wp-block-button">
+              <a class="wp-block-button__link btn-text" href="">Submit Form Now</a>
+            </div>
+          </div>
+          </div>
+          </div> <!-- End Submit -->
         <hr>
 
         
@@ -157,28 +183,27 @@
               I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
             </p>
         
-            <hr>
         
             <form>
                 <label for="trustedPeople" class="form-label">List the people in your life that you trust telling about your situation or that you’ve already told about your situation.</label>
-                <textarea class="form-control" id="trustedPeople" name="trustedPeople" rows="4"></textarea>
+                <textarea class="form-control" id="trustedPeople" name="trustedPeople" rows="2"></textarea>
         
                 <label for="codeWord" class="form-label">What code word or phrase can you use to ask your trusted individuals to call for help without your partner knowing?</label>
-                <textarea class="form-control" id="codeWord" name="codeWord" rows="4"></textarea>
+                <textarea class="form-control" id="codeWord" name="codeWord" rows="2"></textarea>
         
               
                 <label for="safeLocation" class="form-label">
                   When you feel an argument or fight coming on, where can you move to lower your risk?</label>
-                <textarea class="form-control" id="safeLocation" name="safeLocation" rows="4"></textarea>
+                <textarea class="form-control" id="safeLocation" name="safeLocation" rows="2"></textarea>
               
                 <label for="safePlace" class="form-label">If you’re feeling unsafe being at home, where could you go to stay safe?</label>
-                <textarea class="form-control" id="safePlace" name="safePlace" rows="4"></textarea>
+                <textarea class="form-control" id="safePlace" name="safePlace" rows="2"></textarea>
               
                 <label for="notifyWhenLeaving" class="form-label">If you leave with your partner, whom could you call or text to let them know where you are going?</label>
-                <textarea class="form-control" id="notifyWhenLeaving" name="notifyWhenLeaving" rows="4"></textarea>
+                <textarea class="form-control" id="notifyWhenLeaving" name="notifyWhenLeaving" rows="2"></textarea>
               
                 <label for="emergencyRide" class="form-label">If your partner leaves you stranded and in need of a ride, whom could you call or text to pick you up?</label>
-                <textarea class="form-control" id="emergencyRide" name="emergencyRide" rows="4"></textarea>
+                <textarea class="form-control" id="emergencyRide" name="emergencyRide" rows="2"></textarea>
               
                 <div class="form-grid">
                   <div class="form-group">
@@ -253,7 +278,7 @@
             
             <div class="form-group">
                 <label>Other</label>
-                <textarea class="form-control" id="other" name="other" rows="4"></textarea>
+                <textarea class="form-control" id="other" name="other" rows="2"></textarea>
             </div>
         
             <div class="form-group">
@@ -264,31 +289,43 @@
               <em>Think of any neighbors, friends, or family that might observe your house at any time. It’d also be good to consider additional security measures, such as outside cameras or security lighting.  </em>
         
               </label><br>
-              <textarea class="form-control" id="whom" name="whom" rows="4"></textarea>
+              <textarea class="form-control" id="whom" name="whom" rows="2"></textarea>
           </div>
-        
-
-
-        <div class="prev-arrows"><!-- NEXT FORM -->
-          <a href="#">
-            <i class="fa-solid fa-arrow-left"></i> Previous
-          </a>
-          |
-          <a href="#">
-              Next <i class="fa-solid fa-arrow-right"></i>
-          </a>
-      </div>
-
 
             </form>
           </div>
         
             </div>
+
+
+          <div class="container"> <!-- Submit Buttons -->
+            <div class="pagenumber">
+            <div class="prev-arrows">
+              <h4>Form 1 of 8</h4>
+              <a href="#">
+                <i class="fa-solid fa-arrow-left"></i> Previous
+              </a>
+              |
+              <a href="#">
+                  Next <i class="fa-solid fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col">
+            <h4>Out of Time?</h4>
+            <div class="wp-block-button">
+              <a class="wp-block-button__link btn-text" href="">Submit Form Now</a>
+            </div>
+          </div>
+          </div>
+          </div> <!-- End Submit -->
+          
             </section> <!-- End Safety at Home  -->
         
          
  
       </main>
+
+
 
 
   <!-- Footer -->
@@ -355,6 +392,8 @@
               <li><a href="">Careers</a></li>
               <li><a href="">The Inside Story</a></li>
               <li><a href="">Volunteer</a></li>
+              <li><a href="">Donate</a></li>
+              <li><a href="">Where Your Money Goes</a></li>
             </ul>
           </div>
     </div>

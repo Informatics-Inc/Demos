@@ -76,7 +76,7 @@
 #menu-main{display:flex;justify-content:flex-end;padding-top: 65px;padding-bottom: 15px;}
 #menu-main a {text-transform: uppercase; font-weight:800; color: #fff;padding: 18px 0px; font-size:0.78rem; display: block; margin: 0 0 0 0.8rem; position: relative; }
 #menu-main a:hover,#menu-utility li a:hover{color:var(--secondary)}
-#menu {display: block;border-bottom:1px rgba(255,255,255,0.50) solid}
+#menu {display: block;border-bottom:1px rgba(255,255,255,0.20) solid}
 #menu-main > li:hover > a,#menu-main a:hover  {color: var(--secondary);}
 #menu-utility .btn-theme{margin-left:10px}
 

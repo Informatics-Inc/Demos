@@ -18,6 +18,7 @@
   
   <body>
 
+
     <header id="site-header"> <!-- HEADER -->
       <div class="toolbar">
         <span>1-800-382-5603</span>
@@ -65,10 +66,11 @@
                   <li><a href="">Services</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-2"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-2"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-2" class="collapse">
                       <li><a href="">Domestic Violence</a></li>
+                      <li><a href="">Human Trafficking</a></li>
                       <li><a href="">Houseing & Homeless Services</a></li>
                       <li><a href="">Homicide & Violent Crimes</a></li>
                       <li><a href="">Family Visitation Exchange</a></li>
@@ -81,7 +83,7 @@
                   <li><a href="">Events</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-3"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-3"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-3" class="collapse">
                       <li><a href="">The Gala</a></li>
@@ -92,14 +94,30 @@
                   <li><a href="">Resources</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-4"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-4"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-4" class="collapse">
                       <li><a href="">Resource Entry</a></li>
                     </ul>
                   </li>
-                  <li class="btn-secondary"><a href="">Volunteer</a></li>
-                  <li class="btn-theme"><a href="">Support Our Cause</a></li>
+                  <li><a href="">Donate</a>
+                    <button class="btn-expand collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#menu-5"
+                      aria-expanded="false" aria-controls="menu-5"><span
+                        class="bar"></span><span class="bar"></span></button>
+                    <ul id="menu-5" class="collapse">
+                      <li><a href="">Donate Now</a></li>
+                      <li><a href="">Donate Monthly</a></li>
+                      <li><a href="">Corporate Partnership</a></li>
+                      <li><a href="">Gifts of Grain</a></li>
+                      <li><a href="">Legacy Giving</a></li>
+                      <li><a href="">Other Ways to Give</a></li>
+                      <li><a href="">Charitable IRA Rollovers</a></li>
+                      <li><a href="">Where Your Money Goes</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Volunteer</a></li>
+                  <li class="btn-theme"><a href="">Donate Now</a></li>
                 </ul>
    
                 <ul id="menu-utility">
@@ -124,7 +142,6 @@
         <div class="container">
           <ol class="breadcrumb">
             <h1>Safety Planning Tool</h1>
-
             <li><a href>Home</a></li>
             <li>Safety Planning Tool</li>
           </ol>
@@ -136,9 +153,11 @@
 
  <!-- Form - Basic Info -->
 <section class="safety-form">
-  <div class="pagenumber container">
-    <h4>Form 1 of 8</h4>
+
+  <div class="container">
+  <div class="pagenumber">
   <div class="prev-arrows">
+    <h4>Form 1 of 8</h4>
     <a href="#">
       <i class="fa-solid fa-arrow-left"></i> Previous
     </a>
@@ -147,7 +166,15 @@
         Next <i class="fa-solid fa-arrow-right"></i>
     </a>
 </div>
+<div class="col">
+  <h4>Out of Time?</h4>
+  <div class="wp-block-button">
+    <a class="wp-block-button__link btn-text" href="">Submit Form Now</a>
+  </div>
 </div>
+</div>
+</div>
+
 <hr>
 
   <div class="container">
@@ -155,7 +182,6 @@
 <p>
   I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
 </p>
-<hr>
 
     <form> 
         <div class="form-group">
@@ -210,27 +236,37 @@
  
             <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
         </div>
-
-
-        <div class="prev-arrows"><!-- NEXT FORM -->
-          <a href="#">
-            <i class="fa-solid fa-arrow-left"></i> Previous
-          </a>
-          |
-          <a href="#">
-              Next <i class="fa-solid fa-arrow-right"></i>
-          </a>
-      </div>
-
     </form> 
 </div>
 
 
 
+<div class="container"> <!-- Submit Buttons -->
+  <div class="pagenumber">
+  <div class="prev-arrows">
+    <h4>Form 1 of 8</h4>
+    <a href="#">
+      <i class="fa-solid fa-arrow-left"></i> Previous
+    </a>
+    |
+    <a href="#">
+        Next <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</div>
+<div class="col">
+  <h4>Out of Time?</h4>
+  <div class="wp-block-button">
+    <a class="wp-block-button__link btn-text" href="">Submit Form Now</a>
+  </div>
+</div>
+</div>
+</div> <!-- End Submit -->
 </section> <!-- End Form Basic Info -->
 
 
       </main>
+
+
 
 
   <!-- Footer -->
@@ -297,6 +333,8 @@
               <li><a href="">Careers</a></li>
               <li><a href="">The Inside Story</a></li>
               <li><a href="">Volunteer</a></li>
+              <li><a href="">Donate</a></li>
+              <li><a href="">Where Your Money Goes</a></li>
             </ul>
           </div>
     </div>

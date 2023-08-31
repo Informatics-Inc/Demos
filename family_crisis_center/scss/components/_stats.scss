@@ -2,7 +2,8 @@
 .stat-card{text-align:center;padding:10px;position:relative;}
 .stat-card:not(:last-child)::before{content:'';position:absolute;top:0;right:-10px;bottom:0;width:1px;border-right:1px dotted #000;background-color:#000;}
 .stat-card h5{font-size:3.375rem;color:var(--secondary);margin-bottom:25px;font-weight:800;}
-.stat-card p{font-size:1.20rem;font-weight:800;margin-bottom:0}
+.stat-card p{font-size:0.95rem;font-weight:700;line-height:1.5rem;margin-bottom:0}
+
 @media (max-width:767px){.grid-4x1{grid-template-columns:1fr;}
 .stat-card::before{display:none;}
 }

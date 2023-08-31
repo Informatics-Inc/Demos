@@ -1,30 +1,32 @@
 /* Main Layout */
+.safety-form{max-width:780px;margin:0 auto}
 .safety-form form{margin-bottom:50px;color:#000}
 .safety-form .form-group{padding-bottom:20px;margin-bottom:30px}
 .safety-form .form-group:last-of-type{border-bottom:none}
-.safety-form .form-label,.form-group label:first-child{font-weight: 700;color:#000;font-size:1rem;}
+.safety-form .form-label,.form-group label:first-child{font-weight: 700;color:#000;font-size:0.85rem;}
 .safety-form .form-label em,.form-group em{font-size:0.9rem;font-style:italic;font-weight: 500;display: block;padding:5px 0px}
 .safety-form .form-check{margin-top:10px}
-.safety-form .form-control {padding: 20px 15px}
+.safety-form .form-control {padding: 15px}
 .safety-form label.form-label{margin:15px 0px;display: block}
 .safety-form textarea{margin-bottom:50px}
-
+.safety-form{padding-bottom:160px!important}
 
 /* Grid */
 .safety-form .form-grid{display:grid;grid-template-columns:repeat(2,1fr);/* Creates 4 equal columns */
- grid-template-rows:repeat(2,1fr);/* Creates 4 equal rows */
  grid-column-gap:30px;/* Gap between columns */
  grid-row-gap:5px;/* Adds a gap between cells */
 }
 .safety-form .form-grid .form-group{display:flex;border-bottom:1px solid #ccc;justify-content:space-between;}
 .safety-form .form-grid input{margin-left:15px;margin-top:0px;align-self:start}
+.pagenumber{display:grid;align-items:center;gap:30px}
+.pagenumber h4{margin: 0 0 0.25rem 0;}
+
+@media (min-width:768px){
+    .pagenumber{display:flex;justify-content:space-between;align-items:center;}
+   }
 
 @media (min-width:992px){
-    .safety-form .form-grid{display:grid;grid-template-columns:repeat(3,1fr);/* Creates 4 equal columns */
-    grid-template-rows:repeat(3,1fr);/* Creates 4 equal rows */
-    grid-column-gap:50px;/* Gap between columns */
-    grid-row-gap:5px;/* Adds a gap between cells */
-   }
+ 
 }
 
 /* Form Buttons and Navigation */

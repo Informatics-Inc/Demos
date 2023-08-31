@@ -18,6 +18,8 @@
   
   <body>
 
+
+
     <header id="site-header"> <!-- HEADER -->
       <div class="toolbar">
         <span>1-800-382-5603</span>
@@ -65,10 +67,11 @@
                   <li><a href="">Services</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-2"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-2"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-2" class="collapse">
                       <li><a href="">Domestic Violence</a></li>
+                      <li><a href="">Human Trafficking</a></li>
                       <li><a href="">Houseing & Homeless Services</a></li>
                       <li><a href="">Homicide & Violent Crimes</a></li>
                       <li><a href="">Family Visitation Exchange</a></li>
@@ -81,7 +84,7 @@
                   <li><a href="">Events</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-3"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-3"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-3" class="collapse">
                       <li><a href="">The Gala</a></li>
@@ -92,14 +95,30 @@
                   <li><a href="">Resources</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-4"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-4"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-4" class="collapse">
                       <li><a href="">Resource Entry</a></li>
                     </ul>
                   </li>
-                  <li class="btn-secondary"><a href="">Volunteer</a></li>
-                  <li class="btn-theme"><a href="">Support Our Cause</a></li>
+                  <li><a href="">Donate</a>
+                    <button class="btn-expand collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#menu-5"
+                      aria-expanded="false" aria-controls="menu-5"><span
+                        class="bar"></span><span class="bar"></span></button>
+                    <ul id="menu-5" class="collapse">
+                      <li><a href="">Donate Now</a></li>
+                      <li><a href="">Donate Monthly</a></li>
+                      <li><a href="">Corporate Partnership</a></li>
+                      <li><a href="">Gifts of Grain</a></li>
+                      <li><a href="">Legacy Giving</a></li>
+                      <li><a href="">Other Ways to Give</a></li>
+                      <li><a href="">Charitable IRA Rollovers</a></li>
+                      <li><a href="">Where Your Money Goes</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Volunteer</a></li>
+                  <li class="btn-theme"><a href="">Donate Now</a></li>
                 </ul>
    
                 <ul id="menu-utility">
@@ -114,6 +133,7 @@
             </nav>
           </div>
         </header>
+
 
       <div class="page-hdr">
         <figure">
@@ -135,18 +155,27 @@
 
         <section class="safety-form">  <!-- Start Safety with Children  -->
 
-          <div class="pagenumber container">
-            <h4>Form 1 of 8</h4>
-          <div class="prev-arrows">
-            <a href="#">
-              <i class="fa-solid fa-arrow-left"></i> Previous
-            </a>
-            |
-            <a href="#">
-                Next <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </div>
-        </div>
+          <div class="container"> <!-- Submit Buttons -->
+            <div class="pagenumber">
+            <div class="prev-arrows">
+              <h4>Form 1 of 8</h4>
+              <a href="#">
+                <i class="fa-solid fa-arrow-left"></i> Previous
+              </a>
+              |
+              <a href="#">
+                  Next <i class="fa-solid fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col">
+            <h4>Out of Time?</h4>
+            <div class="wp-block-button">
+              <a class="wp-block-button__link btn-text" href="">Submit Form Now</a>
+            </div>
+          </div>
+          </div>
+          </div> <!-- End Submit -->
+          
         <hr>
 
         
@@ -156,57 +185,72 @@
               I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
             </p>
         
-            <hr>
         
             <form>
               <label for="emergencycontact" class="form-label">
                 Who can your children contact during an emergency? List the name and phone number for each contact.  
                 <em> List all of the people your children can contact. This should include family, friends, neighbors, emergency services, local agencies, and others. </em> 
               </label>
-              <textarea class="form-control" id="emergencycontact" name="emergencycontact" rows="4"></textarea>
+              <textarea class="form-control" id="emergencycontact" name="emergencycontact" rows="2"></textarea>
         
               <label for="childrensituation" class="form-label">
                 What should your children do when situations begin to escalate?   
                <em> Do you want them to leave the home and go to a neighbor’s house? Should they call someone? Is there a safe room in the house? Think about what you want them to do to stay safe. That can include staying safe from witnessing and hearing emotional abuse.  
               </em>
             </label>
-              <textarea class="form-control" id="childrensituation" name="childrensituation" rows="4"></textarea>
+              <textarea class="form-control" id="childrensituation" name="childrensituation" rows="2"></textarea>
         
               <label for="wordforhelp" class="form-label">
                 What word or phrase can you use to let your children know that they should call for help? Include what they should do and who they should call when you use the code or phrase.  
             </label>
-              <textarea class="form-control" id="wordforhelp" name="wordforhelp" rows="4"></textarea>
+              <textarea class="form-control" id="wordforhelp" name="wordforhelp" rows="2"></textarea>
         
               <label for="childgo" class="form-label">
                 What rooms in the house can your children go to when they’re afraid or need to seek safety? What rooms should your children avoid?  
                <em>Children should avoid rooms that could include weapons or no escape, such as bathrooms and kitchens. </em>   
             </label>
-              <textarea class="form-control" id="childgo" name="childgo" rows="4"></textarea>
+              <textarea class="form-control" id="childgo" name="childgo" rows="2"></textarea>
         
               <label for="safeplace" class="form-label">
                 Where is a safe place your children could go if they’re in danger?  
                 <em>This could be a neighbor’s house, a space in the house, police department, etc. It should be somewhere your children can get to safely on their own. </em> 
             </label>
-              <textarea class="form-control" id="safeplace" name="safeplace" rows="4"></textarea>
+              <textarea class="form-control" id="safeplace" name="safeplace" rows="2"></textarea>
         
 
-              <div class="prev-arrows"><!-- NEXT FORM -->
-                <a href="#">
-                  <i class="fa-solid fa-arrow-left"></i> Previous
-                </a>
-                |
-                <a href="#">
-                    Next <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
 
 
               </form> <!-- End Safety with Children   -->
         </div>
+
+
+        <div class="container"> <!-- Submit Buttons -->
+          <div class="pagenumber">
+          <div class="prev-arrows">
+            <h4>Form 1 of 8</h4>
+            <a href="#">
+              <i class="fa-solid fa-arrow-left"></i> Previous
+            </a>
+            |
+            <a href="#">
+                Next <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="col">
+          <h4>Out of Time?</h4>
+          <div class="wp-block-button">
+            <a class="wp-block-button__link btn-text" href="">Submit Form Now</a>
+          </div>
+        </div>
+        </div>
+        </div> <!-- End Submit -->
         </section>
         
  
       </main>
+
+
+  
 
 
   <!-- Footer -->
@@ -273,6 +317,8 @@
               <li><a href="">Careers</a></li>
               <li><a href="">The Inside Story</a></li>
               <li><a href="">Volunteer</a></li>
+              <li><a href="">Donate</a></li>
+              <li><a href="">Where Your Money Goes</a></li>
             </ul>
           </div>
     </div>

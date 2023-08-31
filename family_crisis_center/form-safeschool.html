@@ -18,6 +18,7 @@
   
   <body>
 
+
     <header id="site-header"> <!-- HEADER -->
       <div class="toolbar">
         <span>1-800-382-5603</span>
@@ -65,10 +66,11 @@
                   <li><a href="">Services</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-2"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-2"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-2" class="collapse">
                       <li><a href="">Domestic Violence</a></li>
+                      <li><a href="">Human Trafficking</a></li>
                       <li><a href="">Houseing & Homeless Services</a></li>
                       <li><a href="">Homicide & Violent Crimes</a></li>
                       <li><a href="">Family Visitation Exchange</a></li>
@@ -81,7 +83,7 @@
                   <li><a href="">Events</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-3"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-3"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-3" class="collapse">
                       <li><a href="">The Gala</a></li>
@@ -92,14 +94,30 @@
                   <li><a href="">Resources</a>
                     <button class="btn-expand collapsed" type="button"
                       data-bs-toggle="collapse" data-bs-target="#menu-4"
-                      aria-expanded="false" aria-controls="menu-1"><span
+                      aria-expanded="false" aria-controls="menu-4"><span
                         class="bar"></span><span class="bar"></span></button>
                     <ul id="menu-4" class="collapse">
                       <li><a href="">Resource Entry</a></li>
                     </ul>
                   </li>
-                  <li class="btn-secondary"><a href="">Volunteer</a></li>
-                  <li class="btn-theme"><a href="">Support Our Cause</a></li>
+                  <li><a href="">Donate</a>
+                    <button class="btn-expand collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#menu-5"
+                      aria-expanded="false" aria-controls="menu-5"><span
+                        class="bar"></span><span class="bar"></span></button>
+                    <ul id="menu-5" class="collapse">
+                      <li><a href="">Donate Now</a></li>
+                      <li><a href="">Donate Monthly</a></li>
+                      <li><a href="">Corporate Partnership</a></li>
+                      <li><a href="">Gifts of Grain</a></li>
+                      <li><a href="">Legacy Giving</a></li>
+                      <li><a href="">Other Ways to Give</a></li>
+                      <li><a href="">Charitable IRA Rollovers</a></li>
+                      <li><a href="">Where Your Money Goes</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Volunteer</a></li>
+                  <li class="btn-theme"><a href="">Donate Now</a></li>
                 </ul>
    
                 <ul id="menu-utility">
@@ -135,19 +153,26 @@
 
 
         <section class="safety-form">  <!-- Start Safety at School -->
-
-          <div class="pagenumber container">
-            <h4>Form 1 of 8</h4>
-          <div class="prev-arrows">
-            <a href="#">
-              <i class="fa-solid fa-arrow-left"></i> Previous
-            </a>
-            |
-            <a href="#">
-                Next <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </div>
-        </div>
+          <div class="container"> <!-- Submit Buttons -->
+            <div class="pagenumber">
+            <div class="prev-arrows">
+              <h4>Form 1 of 8</h4>
+              <a href="#">
+                <i class="fa-solid fa-arrow-left"></i> Previous
+              </a>
+              |
+              <a href="#">
+                  Next <i class="fa-solid fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col">
+            <h4>Out of Time?</h4>
+            <div class="wp-block-button">
+              <a class="wp-block-button__link btn-text" href="">Submit Form Now</a>
+            </div>
+          </div>
+          </div>
+          </div> <!-- End Submit -->
         <hr>
 
         
@@ -157,46 +182,61 @@
               I’d like to include some narrative text here before the questions. I’ll provide this as soon as I have it.
             </p>
         
-            <hr>
     
             <form>
               <label for="schoolroute" class="form-label">
                 What route can you take to get to school safely and avoid seeing your partner or ex-partner on your way?  
                 <em>This should be different than the route you typically take. Consider a couple of alternative routes.</em> 
               </label>
-              <textarea class="form-control" id="schoolroute" name="schoolroute" rows="4"></textarea>
+              <textarea class="form-control" id="schoolroute" name="schoolroute" rows="2"></textarea>
     
               <label for="whombetweenclasses" class="form-label">
                 If your partner or ex-partner attends school with you, whom can you spend time with between classes so that you aren’t alone? 
             </label>
-              <textarea class="form-control" id="whombetweenclasses" name="whombetweenclasses" rows="4"></textarea>
+              <textarea class="form-control" id="whombetweenclasses" name="whombetweenclasses" rows="2"></textarea>
     
               <label for="schoolpickup" class="form-label">
                 If you need to leave school immediately, whom can you call to pick you up or meet you somewhere?   
             </label>
-              <textarea class="form-control" id="schoolpickup" name="schoolpickup" rows="4"></textarea>
+              <textarea class="form-control" id="schoolpickup" name="schoolpickup" rows="2"></textarea>
     
-
-
-
-        <div class="prev-arrows"><!-- NEXT FORM -->
-          <a href="#">
-            <i class="fa-solid fa-arrow-left"></i> Previous
-          </a>
-          |
-          <a href="#">
-              Next <i class="fa-solid fa-arrow-right"></i>
-          </a>
-      </div>
-
 
               </form> <!-- End Safety at School  -->
     
         </div>
+
+
+        <div class="container"> <!-- Submit Buttons -->
+          <div class="pagenumber">
+          <div class="prev-arrows">
+            <h4>Form 1 of 8</h4>
+            <a href="#">
+              <i class="fa-solid fa-arrow-left"></i> Previous
+            </a>
+            |
+            <a href="#">
+                Next <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="col">
+          <h4>Out of Time?</h4>
+          <div class="wp-block-button">
+            <a class="wp-block-button__link btn-text" href="">Submit Form Now</a>
+          </div>
+        </div>
+        </div>
+        </div> <!-- End Submit -->
+
+
+        
     </section>
     
  
       </main>
+
+
+
+
 
 
   <!-- Footer -->
@@ -263,6 +303,8 @@
               <li><a href="">Careers</a></li>
               <li><a href="">The Inside Story</a></li>
               <li><a href="">Volunteer</a></li>
+              <li><a href="">Donate</a></li>
+              <li><a href="">Where Your Money Goes</a></li>
             </ul>
           </div>
     </div>
