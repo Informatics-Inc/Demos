@@ -30,7 +30,7 @@
 }
 
 /* Form Buttons and Navigation */
-.safety-form .btn-submit{margin-top:25px;font-weight:800;font-size:.85rem;display:inline-block;padding:18px 25px 12px 25px;transition:var(--transition);background:var(--primary);color:#fff;border:none;border-radius:100px;margin:0 0 0 0;text-transform: uppercase;}
+.safety-form .btn-submit{margin-top:25px;font-weight:800;font-size:.85rem;display:inline-block;padding:18px 25px 18px 25px ;transition:var(--transition);background:var(--primary);color:#fff;border:none;border-radius:100px;margin:0 0 0 0;text-transform: uppercase;}
 .safety-form .btn-submit:hover{text-decoration: none;cursor:pointer;background:var(--secondary);color:var(--primary)}
 .safety-form .prev-arrows a:hover{color:#333}
 .safety-form .prev-arrows {font-weight: 400;font-size:1.1rem}
