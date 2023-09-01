@@ -106,7 +106,7 @@
 .hidden-lg {display: none !important;}
 
 /* Last Nav Buttons */
-#menu-main .btn-theme a{display:inline-block;padding:18px 20px 12px 20px;transition:var(--transition);background:var(--bg-color);color:var(--primary);border:none;border-radius:100px; margin: 0 0 0 1.5rem;}
+#menu-main .btn-theme a{display:inline-block;padding:18px 20px;transition:var(--transition);background:var(--bg-color);color:var(--primary);border:none;border-radius:100px; margin: 0 0 0 1.5rem;}
 #menu-main .btn-secondary a{display:inline-block;padding:18px 20px 12px 20px;transition:var(--transition);border:solid 1px var(--bg-color);border-radius:100px;}
 #menu-main .btn-theme a:hover {background:var(--primary);color:#fff}
 #menu-main .btn-secondary a:hover {background:var(--primary);color:#fff;border:solid 1px var(--primary)}
