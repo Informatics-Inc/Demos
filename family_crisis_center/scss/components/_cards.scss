@@ -32,10 +32,13 @@
   .card-content-right{flex:1;}
 
     /* White Icon-Left Background Cards */
-.white.icon-only-left.card{height:100%;padding:35px 30px 40px 30px;transition:var(--transition);height:100%;background:#fff;border-radius:12px;display:flex;box-shadow:var(--shadow);  position: relative; box-shadow:var(--shadow); }
-.white.icon-only-left.card:hover{box-shadow:0 12px 34px rgba(111,111,111,0.25) }
-.white.icon-only-left img{transition:var(--transition);width:auto;height:100%;}
-.white.icon-only-left:hover img{transform: scale(1.1); }
+    .white.icon-only-left.card{height:100%;padding:35px 30px 40px 30px;transition:var(--transition);height:100%;background:#fff;border-radius:12px;display:block;box-shadow:var(--shadow);  position: relative; box-shadow:var(--shadow); }
+    .white.icon-only-left.card:hover{box-shadow:0 12px 34px rgba(111,111,111,0.25) }
+    .white.icon-only-left img{transition:var(--transition);width:auto;height:100%;}
+    .white.icon-only-left:hover img{transform: scale(1.1); }
+    .white.icon-only-left .card-image-left{display: block;float:left;width:100%;height:60px;margin-bottom:25px} 
+    .white.card-content-right{display: block;float:left;width:100%}
+
 
 /* Blog/News Cards */
 .blog.card{transition:var(--transition);height:100%;border:solid 1px #e9e9e5;background:#fff;border-radius:12px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);}
@@ -70,6 +73,11 @@ a.bio-contact:hover{color:#fff}
 }
 
 @media (min-width:768px){
+
+  /* White Icon-Left Background Cards */
+  .white.icon-only-left.card{height:100%;padding:35px 30px 40px 30px;transition:var(--transition);height:100%;background:#fff;border-radius:12px;display:flex;box-shadow:var(--shadow);  position: relative; box-shadow:var(--shadow); }
+  .white.icon-only-left .card-image-left{display: block;float:left;width:100%;height:60px;margin-bottom:0} 
+
     .icon-only-left.card {flex: 1 0 45%;}
     .icon-only.card {flex: 1 0 30%;max-width: 50%;margin:0 auto;} 
 .bio-grid{grid-template-columns:repeat(2,1fr);}
