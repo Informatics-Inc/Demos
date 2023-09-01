@@ -106,8 +106,8 @@
 .hidden-lg {display: none !important;}
 
 /* Last Nav Buttons */
-#menu-main .btn-theme a{display:inline-block;padding:18px 20px;transition:var(--transition);background:var(--bg-color);color:var(--primary);border:none;border-radius:100px; margin: 0 0 0 1.5rem;}
-#menu-main .btn-secondary a{display:inline-block;padding:18px 20px 12px 20px;transition:var(--transition);border:solid 1px var(--bg-color);border-radius:100px;}
+#menu-main .btn-theme a{display:inline-block;padding:18px 20px 18px 20px;transition:var(--transition);background:var(--bg-color);color:var(--primary);border:none;border-radius:100px; margin: 0 0 0 1.5rem;}
+#menu-main .btn-secondary a{display:inline-block;padding:18px 20px 18px 20px;transition:var(--transition);border:solid 1px var(--bg-color);border-radius:100px;}
 #menu-main .btn-theme a:hover {background:var(--primary);color:#fff}
 #menu-main .btn-secondary a:hover {background:var(--primary);color:#fff;border:solid 1px var(--primary)}
 }
@@ -116,7 +116,7 @@
 @media (min-width:1200px){
 .phone::after{right:15px;}
 .phone b{color:#fff;margin-left:5px;margin-right:40px;font-weight:800;font-size:1.15rem}
-#menu-main .btn-secondary a,#menu-main .btn-theme a{padding:18px 25px 12px 25px;}
+#menu-main .btn-secondary a,#menu-main .btn-theme a{padding:18px 25px 18px 25px}
 .desktop-header{grid-template-columns:240px auto;}
 #menu-main a{font-size:0.85rem;padding:18px 0px;margin:0 0 0 1.2rem;}
 }
