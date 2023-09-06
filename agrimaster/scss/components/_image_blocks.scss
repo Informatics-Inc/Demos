@@ -4,7 +4,7 @@
 .half-bg img{position:absolute;top:0;left:0;width:100%;height:50%;object-fit:cover;z-index:-1;}
 
 /* Cirlce Side Image */
-.circle-image { margin:0 auto;border:solid var(--accent) 12px;border-radius: 50%;width:280px;height:280px;overflow:hidden}
+.circle-image { margin:0 auto;border:solid var(--secondary) 12px;border-radius: 50%;width:280px;height:280px;overflow:hidden}
 .circle-image img{ width:100%;height:100%;object-fit: cover;}
 
 /* Video Background*/
@@ -33,7 +33,7 @@ video{display:block;width:100%;height:100%;}
 @media (min-width: 992px) {
     /* Circle Images*/
 .circle-bg{overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;width:100%;}
-.circle-image{border:none;position:absolute;width:100%;height:120%;right:calc(-50% - 100px);top:-10%;border-radius:500px;background-color:transparent;overflow:hidden;}
-.circle-image::after{content:"";position:absolute;width:calc(100% + 36px);height:calc(100% + 36px);top:-18px;left:-18px;border:solid var(--accent) 36px;border-radius:inherit;}
+.circle-image{border: none !important;position:absolute;width:100%;height:120%;right:calc(-50% - 100px);top:-10%;border-radius:500px;background-color:transparent;overflow:hidden;}
+.circle-image::after{content:"";position:absolute;width:calc(100% + 36px);height:calc(100% + 36px);top:-18px;left:-18px;border:solid var(--secondary) 36px;border-radius:inherit;}
 .circle-image img{position:absolute;top:50%;right:0;transform:translate(-50%,-50%);max-width:100%;max-height:100%;object-fit:cover;}
 }

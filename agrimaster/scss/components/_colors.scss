@@ -1,0 +1,240 @@
+:root {
+    /* Poultry */
+    --yellow: #EE9C38; /* (poultry) */
+    --green: #00857A; /* (crumbles) */
+    --limegreen: #658E1E; /* (pelleted) */
+    --skyblue: #0085DC; /* (crumbles-blue) */
+    --brown: #8C502B; /* (grains) */
+      /* Horse-Equine */
+    --purple: #8531A5; /* (horse)  (hoof support) */
+    --blue: #004670; /* (textured) */
+    --red: #9E2A2F;  /* (protein)  (weigth booster) */
+      /* Supplements */
+    --dullgreen: #799F51; /* (senior combo) */
+    --dullyellow: #EAAB00; /* (powdered yellow) */
+    --powederblue: #69b4f6; /* (Flex Aid) (Milk Replacer) */
+    /* Cows */
+    --brightred: #c91235;/* (powdered red) */
+    --tealgreen: #00857A;/* (powdered teal) */
+    --lightblue: #0095D4;/* (powdered lightblue) */
+    --seablue: #297EA6;/* (calf) */
+    --darkblue: #00629F;/* (cattle) */
+    --nightblue: #004670;/* (textured-nightblue) */
+    --tan: #A99870;/* (mineral) */
+    --mudbrown: #7E6954;/* (all purpose) */
+    /* Grains */
+    --wheatbrown: #C48E10;/* (whole cleaned oats) */
+    --richbrown: #8C502B;/* (grains) */
+    --cornyellow: #FFCF00;/* (whole corn) */
+    --pumkinorange: #DE7C00;/* (cracked corn) */
+    /* Swine */
+    --huntergreen: #205E45;/* (swine) */
+    /* Rabbit */
+    --pink: #C980A8;/* (rabbit) */
+    /* Goat */
+    --navyblue: #403A65;/* (goat) */
+    /* SheepGoat */
+    --fusiapink: #9A4980;/* (sheep and goat) */
+  }
+
+ /* Yellow (POULTRY) */
+ .yellow .circle-icon{outline:3px solid var(--yellow);background:var(--yellow);}
+ .yellow .circle-icon-grey{outline:3px solid var(--yellow);background:#eee}
+ .yellow h2::after, .yellow h1::after,.yellow .page-hdr h1::after{background-color:var(--yellow)}
+ .yellow .custom-list-item li:before {color:var(--yellow)}
+ .yellow .circle-image { border:solid var(--yellow) 12px;}
+ .yellow .sidebar{border-top:solid 5px var(--yellow);}
+ .yellow .sidebar-container a i{color:var(--yellow)}
+ .yellow .page-item:hover, .yellow .page-item.active{background-color:var(--yellow)}
+
+  /* Purple (Horse) */
+ .purple .circle-icon{outline:3px solid var(--purple);background:var(--purple);}
+ .purple .circle-icon-grey{outline:3px solid var(--purple);background:#eee}
+ .purple h2::after, .purple h1::after,.purple .page-hdr h1::after{background-color:var(--purple)}
+ .purple .custom-list-item li:before {color:var(--purple)}
+ .purple .circle-image { border:solid var(--purple) 12px;}
+ .purple .sidebar{border-top:solid 5px var(--purple);}
+ .purple .sidebar-container a i{color:var(--purple)}
+ .purple .page-item:hover, .purple .page-item.active{background-color:var(--purple)}
+
+   /* Lightblue (Milk Replacer) */
+ .lightblue .circle-icon{outline:3px solid var(--lightblue);background:var(--lightblue);}
+ .lightblue .circle-icon-grey{outline:3px solid var(--lightblue);background:#eee}
+ .lightblue h2::after, .lightblue h1::after,.lightblue .page-hdr h1::after{background-color:var(--lightblue)}
+ .lightblue .custom-list-item li:before {color:var(--lightblue)}
+ .lightblue .circle-image { border:solid var(--lightblue) 12px;}
+ .lightblue .sidebar{border-top:solid 5px var(--lightblue);}
+ .lightblue .sidebar-container a i{color:var(--lightblue)}
+ .lightblue .page-item:hover, .lightblue .page-item.active{background-color:var(--lightblue)}
+
+    /* darkblue (Cattle) */
+    .darkblue .circle-icon{outline:3px solid var(--darkblue);background:var(--darkblue);}
+    .darkblue .circle-icon-grey{outline:3px solid var(--darkblue);background:#eee}
+    .darkblue h2::after, .darkblue h1::after,.darkblue .page-hdr h1::after{background-color:var(--darkblue)}
+    .darkblue .custom-list-item li:before {color:var(--darkblue)}
+    .darkblue .circle-image { border:solid var(--darkblue) 12px;}
+    .darkblue .sidebar{border-top:solid 5px var(--darkblue);}
+    .darkblue .sidebar-container a i{color:var(--darkblue)}
+    .darkblue .page-item:hover, .darkblue .page-item.active{background-color:var(--darkblue)}
+
+   /* mudbrown (All Purpose) */
+   .mudbrown .circle-icon{outline:3px solid var(--mudbrown);background:var(--mudbrown);}
+   .mudbrown .circle-icon-grey{outline:3px solid var(--mudbrown);background:#eee}
+   .mudbrown h2::after, .mudbrown h1::after,.mudbrown .page-hdr h1::after{background-color:var(--mudbrown)}
+   .mudbrown .custom-list-item li:before {color:var(--mudbrown)}
+   .mudbrown .circle-image { border:solid var(--mudbrown) 12px;}
+   .mudbrown .sidebar{border-top:solid 5px var(--mudbrown);}
+   .mudbrown .sidebar-container a i{color:var(--mudbrown)}
+   .mudbrown .page-item:hover, .mudbrown .page-item.active{background-color:var(--mudbrown)}
+
+   /* huntergreen (Swine) */
+   .huntergreen .circle-icon{outline:3px solid var(--huntergreen);background:var(--huntergreen);}
+   .huntergreen .circle-icon-grey{outline:3px solid var(--huntergreen);background:#eee}
+   .huntergreen h2::after, .huntergreen h1::after,.huntergreen .page-hdr h1::after{background-color:var(--huntergreen)}
+   .huntergreen .custom-list-item li:before {color:var(--huntergreen)}
+   .huntergreen .circle-image { border:solid var(--huntergreen) 12px;}
+   .huntergreen .sidebar{border-top:solid 5px var(--huntergreen);}
+   .huntergreen .sidebar-container a i{color:var(--huntergreen)}
+   .huntergreen .page-item:hover, .huntergreen .page-item.active{background-color:var(--huntergreen)}
+
+      /* pink (Rabbit) */
+ .pink .circle-icon{outline:3px solid var(--pink);background:var(--pink);}
+ .pink .circle-icon-grey{outline:3px solid var(--pink);background:#eee}
+ .pink h2::after, .pink h1::after,.pink .page-hdr h1::after{background-color:var(--pink)}
+ .pink .custom-list-item li:before {color:var(--pink)}
+ .pink .circle-image { border:solid var(--pink) 12px;}
+ .pink .sidebar{border-top:solid 5px var(--pink);}
+ .pink .sidebar-container a i{color:var(--pink)}
+ .pink .page-item:hover, .pink .page-item.active{background-color:var(--pink)}
+
+    /* navyblue (Goat) */
+    .navyblue .circle-icon{outline:3px solid var(--navyblue);background:var(--navyblue);}
+    .navyblue .circle-icon-grey{outline:3px solid var(--navyblue);background:#eee}
+    .navyblue h2::after, .navyblue h1::after,.navyblue .page-hdr h1::after{background-color:var(--navyblue)}
+    .navyblue .custom-list-item li:before {color:var(--navyblue)}
+    .navyblue .circle-image { border:solid var(--navyblue) 12px;}
+    .navyblue .sidebar{border-top:solid 5px var(--navyblue);}
+    .navyblue .sidebar-container a i{color:var(--navyblue)}
+    .navyblue .page-item:hover, .navyblue .page-item.active{background-color:var(--navyblue)}
+
+     /* fusiapink (Sheep and Goat) */
+ .fusiapink .circle-icon{outline:3px solid var(--fusiapink);background:var(--fusiapink);}
+ .fusiapink .circle-icon-grey{outline:3px solid var(--fusiapink);background:#eee}
+ .fusiapink h2::after, .fusiapink h1::after,.fusiapink .page-hdr h1::after{background-color:var(--fusiapink)}
+ .fusiapink .custom-list-item li:before {color:var(--fusiapink)}
+ .fusiapink .circle-image { border:solid var(--fusiapink) 12px;}
+ .fusiapink .sidebar{border-top:solid 5px var(--fusiapink);}
+ .fusiapink .sidebar-container a i{color:var(--fusiapink)}
+ .fusiapink .page-item:hover, .fusiapink .page-item.active{background-color:var(--fusiapink)}
+
+     /* wheatbrown (Variety Livestock Wheatbrown) */
+ .wheatbrown .circle-icon{outline:3px solid var(--wheatbrown);background:var(--wheatbrown);}
+ .wheatbrown .circle-icon-grey{outline:3px solid var(--wheatbrown);background:#eee}
+ .wheatbrown h2::after, .wheatbrown h1::after,.wheatbrown .page-hdr h1::after{background-color:var(--wheatbrown)}
+ .wheatbrown .custom-list-item li:before {color:var(--wheatbrown)}
+ .wheatbrown .circle-image { border:solid var(--wheatbrown) 12px;}
+ .wheatbrown .sidebar{border-top:solid 5px var(--wheatbrown);}
+ .wheatbrown .sidebar-container a i{color:var(--wheatbrown)}
+ .wheatbrown .page-item:hover, .wheatbrown .page-item.active{background-color:var(--wheatbrown)}
+
+   /* cornyellow (Variety Livestock Yellow) */
+   .cornyellow .circle-icon{outline:3px solid var(--cornyellow);background:var(--cornyellow);}
+   .cornyellow .circle-icon-grey{outline:3px solid var(--cornyellow);background:#eee}
+   .cornyellow h2::after, .cornyellow h1::after,.cornyellow .page-hdr h1::after{background-color:var(--cornyellow)}
+   .cornyellow .custom-list-item li:before {color:var(--cornyellow)}
+   .cornyellow .circle-image { border:solid var(--cornyellow) 12px;}
+   .cornyellow .sidebar{border-top:solid 5px var(--cornyellow);}
+   .cornyellow .sidebar-container a i{color:var(--cornyellow)}
+   .cornyellow .page-item:hover, .cornyellow .page-item.active{background-color:var(--cornyellow)}
+
+   /* pumkinorange (Variety Livestock Orange) */
+ .pumkinorange .circle-icon{outline:3px solid var(--pumkinorange);background:var(--pumkinorange);}
+ .pumkinorange .circle-icon-grey{outline:3px solid var(--pumkinorange);background:#eee}
+ .pumkinorange h2::after, .pumkinorange h1::after,.pumkinorange .page-hdr h1::after{background-color:var(--pumkinorange)}
+ .pumkinorange .custom-list-item li:before {color:var(--pumkinorange)}
+ .pumkinorange .circle-image { border:solid var(--pumkinorange) 12px;}
+ .pumkinorange .sidebar{border-top:solid 5px var(--pumkinorange);}
+ .pumkinorange .sidebar-container a i{color:var(--pumkinorange)}
+ .pumkinorange .page-item:hover, .pumkinorange .page-item.active{background-color:var(--pumkinorange)}
+
+
+
+ @media (min-width:992px){
+  .yellow .circle-image::after{border:solid var(--yellow) 36px;}
+  .purple .circle-image::after{border:solid var(--purple) 36px;}
+  .lightblue .circle-image::after{border:solid var(--lightblue) 36px;}
+  .darkblue .circle-image::after{border:solid var(--darkblue) 36px;}
+  .mudbrown .circle-image::after{border:solid var(--mudbrown) 36px;}
+  .huntergreen .circle-image::after{border:solid var(--huntergreen) 36px;}
+  .pink .circle-image::after{border:solid var(--pink) 36px;}
+  .navyblue .circle-image::after{border:solid var(--navyblue) 36px;}
+  .fusiapink .circle-image::after{border:solid var(--fusiapink) 36px;}
+  .wheatbrown .circle-image::after{border:solid var(--wheatbrown) 36px;}
+  .cornyellow .circle-image::after{border:solid var(--cornyellow) 36px;}
+  .pumkinorange .circle-image::after{border:solid var(--pumkinorange) 36px;}
+  }
+
+
+
+
+   /* Color Bars */
+  .yellowbar .colorbar{background:var(--yellow);} /* (poultry) */
+  .greenbar .colorbar{background:var(--green);} /* (crumbles) */
+  .limegreenbar .colorbar{background:var(--limegreen);}/* (pelleted) */
+  .skybluebar .colorbar{background:var(--skyblue);} /* (crumbles-blue) */
+  .brownbar .colorbar{background:var(--brown);} /* (grains) */
+  .purplebar .colorbar{background:var(--purple);} /* (horse)  (hoof support) */
+  .bluebar .colorbar{background:var(--blue);} /* (textured) */
+  .redbar .colorbar{background:var(--red);}  /* (protein)  (weigth booster) */
+  .dullgreenbar .colorbar{background:var(--dullgreen);}/* (senior combo) */
+  .dullyellowbar .colorbar{background:var(--dullyellow);} /* (powdered yellow) */
+  .powederbluebar .colorbar{background:var(--powederblue);} /* (Flex Aid) (Milk Replacer) */
+  .brightredbar .colorbar{background:var(--brightred);}/* (powdered red) */
+  .tealgreenbar .colorbar{background:var(--tealgreen);}/* (powdered teal) */
+  .lightbluebar .colorbar{background:var(--lightblue);}/* (powdered lightblue) */
+  .seabluebar .colorbar{background:var(--seablue);}/* (calf) */
+  .darkbluebar .colorbar{background:var(--darkblue);}/* (cattle) */
+  .nightbluebar .colorbar{background:var(--nightblue);}/* (textured-nightblue) */
+  .tanbar .colorbar{background:var(--tan);}/* (mineral) */
+  .mudbrownbar .colorbar{background:var(--mudbrown);}/* (all purpose) */
+  .wheatbrownbar .colorbar{background:var(--wheatbrown);}/* (whole cleaned oats) */
+  .richbrownbar .colorbar{background:var(--richbrown);}/* (grains) */
+  .cornyellowbar .colorbar{background:var(--cornyellow);}/* (whole corn) */
+  .pumkinorangebar .colorbar{background:var(--pumkinorange);}/* (cracked corn) */
+  .huntergreenbar .colorbar{background:var(--huntergreen);}/* (swine) */
+  .pinkbar .colorbar{background:var(--pink);}/* (rabbit) */
+  .navybluebar .colorbar{background:var(--navyblue);}/* (goat) */
+  .fusiapinkbar .colorbar{background:var(--fusiapink);}/* (sheep and goat) */
+
+
+  @media (min-width:992px){
+  .yellowbar .colorbar-extend{background-image:linear-gradient(to right,var(--yellow),var(--yellow))}
+  .greenbar .colorbar-extend{background-image:linear-gradient(to right,var(--green),var(--green))}
+  .limegreenbar .colorbar-extend{background-image:linear-gradient(to right,var(--limegreen),var(--limegreen))}
+  .skybluebar .colorbar-extend{background-image:linear-gradient(to right,var(--skyblue),var(--skyblue))}
+  .brownbar .colorbar-extend{background-image:linear-gradient(to right,var(--brown),var(--brown))}
+  .purplebar .colorbar-extend{background-image:linear-gradient(to right,var(--green),var(--purple))}
+  .bluebar .colorbar-extend{background-image:linear-gradient(to right,var(--blue),var(--blue))}
+  .redbar .colorbar-extend{background-image:linear-gradient(to right,var(--red),var(--red))}
+  .dullgreenbar .colorbar-extend{background-image:linear-gradient(to right,var(--dullgreen),var(--dullgreen))}
+  .dullyellobar .colorbar-extend{background-image:linear-gradient(to right,var(--dullyello),var(--dullyello))}
+  .powederbluebar .colorbar-extend{background-image:linear-gradient(to right,var(--powederblue),var(--powederblue))}
+  .brightredbar .colorbar-extend{background-image:linear-gradient(to right,var(--brightred),var(--brightred))}
+  .tealgreenbar .colorbar-extend{background-image:linear-gradient(to right,var(--tealgreen),var(--tealgreen))}
+  .lightbluebar .colorbar-extend{background-image:linear-gradient(to right,var(--lightblue),var(--lightblue))}
+  .seabluebar .colorbar-extend{background-image:linear-gradient(to right,var(--seablue),var(--seablue))}
+  .darkbluebar .colorbar-extend{background-image:linear-gradient(to right,var(--darkblue),var(--darkblue))}
+  .nightbluebar .colorbar-extend{background-image:linear-gradient(to right,var(--nightblue),var(--nightblue))}
+  .tanbar .colorbar-extend{background-image:linear-gradient(to right,var(--tan),var(--tan))}
+  .mudbrownbar .colorbar-extend{background-image:linear-gradient(to right,var(--mudbrown),var(--mudbrown))}
+  .wheatbrownbar .colorbar-extend{background-image:linear-gradient(to right,var(--wheatbrown),var(--wheatbrown))}
+  .richbrownbar .colorbar-extend{background-image:linear-gradient(to right,var(--richbrown),var(--richbrown))}
+  .cornyellowbar .colorbar-extend{background-image:linear-gradient(to right,var(--cornyellow),var(--cornyellow))}
+  .pumkinorangebar .colorbar-extend{background-image:linear-gradient(to right,var(--pumkinorange),var(--pumkinorange))}
+  .huntergreenbar .colorbar-extend{background-image:linear-gradient(to right,var(--huntergreen),var(--huntergreen))}
+  .pinkbar .colorbar-extend{background-image:linear-gradient(to right,var(--pink),var(--pink))}
+  .navybluebar .colorbar-extend{background-image:linear-gradient(to right,var(--navyblue),var(--navyblue))}
+  .fusiapinkbarbar .colorbar-extend{background-image:linear-gradient(to right,var(--fusiapinkbar),var(--fusiapinkbar))}
+
+    }
+
