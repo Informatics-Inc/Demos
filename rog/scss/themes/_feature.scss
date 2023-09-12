@@ -30,6 +30,10 @@
 .case-study .text {width:90%; margin: -75px 5% 25px 5%; background: var(--light); padding: 25px; position: relative; z-index: 5; border-radius: 15px;  position: relative;}
 .case-study .text .preheader {margin: 0; padding: 0;}
 .case-study .text .btn-text {background: rgba(0,0,0,.1);}
+
+.cta {background: var(--light); border-radius: 10px; padding: 50px 50px 15px 50px; text-align: center; margin-top: 3rem;}
+.cta h3 {font-size: 2rem;}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
@@ -46,6 +50,9 @@
 
 .case-study + .case-study .text {float: left; margin: 75px 0 75px 10%;}
 .case-study + .case-study figure {margin: 0; margin-left: 20%; border-radius: 50px 0 0 50px;}
+
+.grid-2-3 {grid-template-columns: 2fr 3fr; gap: 50px;}
+.col .grid-2-3 {gap: 20px;}
 }
 
 /* Large devices (large desktops, 1200px and up) */
