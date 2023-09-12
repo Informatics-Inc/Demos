@@ -17,6 +17,10 @@
 .toolbar a:hover{color:var(--secondary);}
 .toolbar a:hover i{color:var(--secondary);transform: scale(1.1)}
  
+/* Collapse */
+.collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
+.show {height: auto;}
+
 /* Menu Toggle */
 #menu-toggle {font-size:.7rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 800; color:#fff; width: 38px; height: auto; position: relative; line-height: 1;text-align: left;}
 #menu-toggle > div {position: absolute; width: 100%; height: 100%; top: 0; left: 0; transition: var(--transition);}
@@ -39,7 +43,7 @@
 .menu-close-btm img {margin: 0 1rem;}
 
 /* Menu Main */
-#menu-utility li,#menu-main li{transition:var(--transition);display:block;border-bottom:2px dotted rgba(255,255,255,0.5);position:relative;padding:5px 25px;margin:0;}
+#menu-utility li,#menu-main li{transition:var(--transition);display:block;border-bottom:1px dotted rgba(255,255,255,0.25);position:relative;padding:5px 25px;margin:0;}
 #menu-main a {color: #fff; font-size:0.9rem; text-transform: uppercase; font-weight: 800; letter-spacing:0.5px; display: block; width: 100%;padding: 15px 10px 7px 10px;}
 .show #menu-utility ul li:last-of-type, .show #menu-main ul li:last-of-type{border-bottom:none}
 #menu-utility ul li a, #menu-main ul li a{color:var(--secondary)}

@@ -1,31 +1,18 @@
-  /* Full Size - Color Overlay - Scale on Scroll */
-  .hero{text-align:center;padding:25px;display:flex;justify-content:center;align-items:center;position:relative;overflow:hidden;height:100vh;width:100%;}
-  .hero::after{content:"";position:absolute;bottom:-1px;left: -1%;width:102%;height:100%;background:url('../img/shape.svg') no-repeat bottom;z-index:-1;}
-  .hero-overlay{z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background-color:var(--hero-overlay)}
-  .hero img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform 0.5s,opacity 0.5s;z-index:-1;}
-  .hero.scaled img{transform:scale(1.2);opacity:0;}
-  .hero p{margin-top:25px;margin-bottom:0px;color:#fff;font-weight: 400;font-size:1.5rem;line-height:2rem}
-  .hero h1{color:var(--highlight-color);color:#fff;margin:0 auto}
-  .hero .btn-theme{margin-top:50px}
+.hero {position: relative; overflow-x: hidden;}
+.hero figure {background: #251f28; position: absolute; inset: 0;}
+.hero figure img {width: 100%; height: 100%; object-fit: cover; opacity: .25;}
+.hero .text {text-align: center; color: #fff; padding: 75px 25px; display: flex; justify-content: center; flex-direction: column; height: 100%;}
+.hero .text h1 {color:#fff; font-size: 2.75rem;}
+.hero .text h1 strong {color: var(--secondary);}
+.hero .text p:last-of-type {margin: 0;}
+.hero::after{content:"";position:absolute;bottom:-1px;left: -1%;width:102%;height:100%;background:url('../img/shape.svg') no-repeat bottom; padding: 0; margin: 0;}
 
-  /* ONLY MOBILE */
-  @media (max-width:991px){
-    .hero .btn-theme{margin-top:25px}
-    .hero h1{font-size:2.8rem;line-height:3.0rem;}
-    .hero p{margin-top:20px;font-size:1.25rem;line-height:1.8rem;}
-    .hero{height:70vh;}
-  }
-  @media (min-width:768px){
-    .hero h1{font-size:4.20rem;line-height:5.0rem;}
-    .hero{height:80vh;}
+@media (min-width:768px) {
+.hero .text {min-height: 70vh; max-width: 950px; margin: 0 auto;}
+.hero .text h1 {font-size: 4rem;}
 }
 
-  /* TABLET */
-   @media (min-width:992px){
-    .hero p{margin:0 auto;font-size:1.35rem;line-height:1.8rem;width:850px;margin-top:25px}
-    .hero h1{font-size:5rem;line-height:5.55rem;max-width:900px;margin-top:110px}
-  }
-  
-
-
-  
+@media (min-width:992px) {
+.hero {padding-top: 75px;}
+.hero .text h1 {font-size: 5rem;}
+}

@@ -17,13 +17,17 @@
   </head>
   
   <body>
-
+  
+    <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
   <header id="site-header"> <!-- HEADER -->
     <div class="toolbar">
       <span>1-800-382-5603</span>
       <a href=""><i class="fa-solid fa-heart"></i>Get Help</a>
     </div>
-        <div class=" position-relative ">
+        <div class="position-relative">
           <div class="mobile-header">
             <a href="index.html" id="logo">
               <img src="img/FCC-logo-white.png" alt="Family Crisis Center Logo" />
@@ -44,7 +48,7 @@
           </div>
   
           <!-- MENU -->
-          <nav id="menu" class="menu collapse">
+          <nav id="menu" class="menu collapsed">
             <div class="desktop-header">
               <a href="index.html" id="logo">
                 <img src="img/FCC-logo-white.png" alt="Family Crisis Center Logo" />
@@ -56,7 +60,7 @@
                     data-bs-toggle="collapse" data-bs-target="#menu-1"
                     aria-expanded="false" aria-controls="menu-1"><span
                       class="bar"></span><span class="bar"></span></button>
-                  <ul id="menu-1" class="collapse">
+                  <ul id="menu-1" class="collapsed">
                     <li><a href="">Board of Directors</a></li>
                     <li><a href="">Our Team</a></li>
                     <li><a href="">Our History</a></li>
@@ -67,7 +71,7 @@
                     data-bs-toggle="collapse" data-bs-target="#menu-2"
                     aria-expanded="false" aria-controls="menu-2"><span
                       class="bar"></span><span class="bar"></span></button>
-                  <ul id="menu-2" class="collapse">
+                  <ul id="menu-2" class="collapsed">
                     <li><a href="">Domestic Violence</a></li>
                     <li><a href="">Human Trafficking</a></li>
                     <li><a href="">Houseing & Homeless Services</a></li>
@@ -84,7 +88,7 @@
                     data-bs-toggle="collapse" data-bs-target="#menu-3"
                     aria-expanded="false" aria-controls="menu-3"><span
                       class="bar"></span><span class="bar"></span></button>
-                  <ul id="menu-3" class="collapse">
+                  <ul id="menu-3" class="collapsed">
                     <li><a href="">The Gala</a></li>
                     <li><a href="">Polaris Raffle</a></li>
                     <li><a href="">Fan Fun Golf Tournament</a></li>
@@ -95,7 +99,7 @@
                     data-bs-toggle="collapse" data-bs-target="#menu-4"
                     aria-expanded="false" aria-controls="menu-4"><span
                       class="bar"></span><span class="bar"></span></button>
-                  <ul id="menu-4" class="collapse">
+                  <ul id="menu-4" class="collapsed">
                     <li><a href="">Resource Entry</a></li>
                   </ul>
                 </li>
@@ -104,7 +108,7 @@
                     data-bs-toggle="collapse" data-bs-target="#menu-5"
                     aria-expanded="false" aria-controls="menu-5"><span
                       class="bar"></span><span class="bar"></span></button>
-                  <ul id="menu-5" class="collapse">
+                  <ul id="menu-5" class="collapsed">
                     <li><a href="">Donate Now</a></li>
                     <li><a href="">Donate Monthly</a></li>
                     <li><a href="">Corporate Partnership</a></li>
@@ -130,24 +134,21 @@
               </ul>
           </nav>
         </div>
-      </header>
+  </header>
 
-      <div class="hero">
-        <figure">
-          <img src="img/hero-bg.webp"
-            alt="Family Crisis Center Hero">
-        </figure>
-        <div class="hero-overlay"></div>
-        <div class="container ">
-        <h1 class="animate-in delay-4">Encouraging  <span style="font-weight: 800; color: var(--secondary)">Safety,</span>
-          <span style="font-weight: 800; color: var(--secondary)">Healing</span> and  <span style="font-weight: 800; color: var(--secondary)">Freedom</span>
-        </h1>
-        <p class="animate-in delay-6 lead"><b> Empowering people </b></Empowering>to live a life free from violence. 
-        </p>
+  <main class="content" id="content">
+  
+  <div class="hero">
+    <figure>
+      <img src="img/hero-bg.webp" alt="Family Crisis Center Hero">
+    </figure>
+    
+      <div class="text">
+        <h1 class="animate-in delay-4">Encouraging <strong>Safety</strong>, <strong>Healing</strong> and <strong>Freedom</strong></h1>
+        <p class="animate-in delay-6 lead">Empowering people to live a life free from violence.</p>
       </div>
-      </div>
-
-      <main class="content">
+    
+  </div>
 
         <!-- TOP - Services -->
         <section>
@@ -599,8 +600,6 @@
             </ul>
           </div>
     </div>
-
- 
  
     <div class="col">
           <h5>See the Impact of Giving 
@@ -625,7 +624,7 @@
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"
           integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
           crossorigin="anonymous"></script>
-        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/timeline.js"></script>
 
