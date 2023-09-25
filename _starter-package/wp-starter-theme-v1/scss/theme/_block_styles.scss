@@ -1,0 +1,40 @@
+/* WP Paragraph Styles */
+.is-style-eyebrow {text-transform: uppercase;}
+.is-style-lead {font-size: 1.5rem; font-weight: 300;}
+.is-style-callout {font-size: 1.5rem; border-left: 5px solid var(--primary); padding-left: 2rem;}
+.is-style-max-width {max-width: 800px;}
+
+/* WP Column Section Colors */
+.is-style-bkg-light {background: var(--light); padding-top:var(--spacer-vert);padding-bottom:var(--spacer-vert);}
+.is-style-bkg-dark {background: var(--dark);}
+
+/* WP Button Styles */
+/* Primary */
+.wp-block-button__link {background: var(--primary);}
+.wp-block-button__link:hover {background: var(--hover);}
+/* Secondary */
+.is-style-btn-text .wp-block-button__link {background: var(--primary);}
+.is-style-btn-text .wp-block-button__link:hover {background: var(--hover);}
+/* Text */
+.is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
+.is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
+
+/* WP Block Separator */
+.wp-block-separator, hr {margin: var(--spacer) auto; border: none; border-bottom: 1px solid #ccc;} 
+
+/* WP File Block Styles */
+.wp-block-file:not(.wp-element-button) {
+    font-size: .85em;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+}
+.wp-block-file * + .wp-block-file__button {
+    margin-left: .75em;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+}

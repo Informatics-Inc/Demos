@@ -1,0 +1,43 @@
+/* CSS Document
+Client: Informatics Starter Theme
+Company: Informatics, Inc
+Author: Jeff S
+Date: Feb 2023
+*/
+
+// Abstracts
+@import "abstracts/mixins"; 
+@import "abstracts/variables";
+
+// Vendors 
+/* Bootstrap Reqs */
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/transitions";
+
+// Core
+@import "core/reset";
+@import "core/animations";
+
+// Wordpress Theme
+@import "theme/brand";
+@import "theme/block_styles";
+@import "theme/layout";
+
+// Theme Layouts
+@import "layout/header";
+@import "layout/footer";
+@import "layout/blog";
+
+// Theme Components
+@import "components/page-headers";
+@import "components/image_blocks";
+@import "components/testimonials";
+@import "components/cards";
+@import "components/full_large_img";
+@import "components/hero";
+@import "components/sidebar"; 
+@import "components/contact_form";

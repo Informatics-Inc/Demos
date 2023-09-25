@@ -1,0 +1,8 @@
+.wp-block-quote p {font-family: var(--header); font-size:2rem;line-height:2.35rem}
+.wp-block-quote p em{color:var(--primary);font-style:normal;}
+.is-style-btmdash::after {content:"";display:block;width:45px;height:2px;background-color:var(--primary);margin-top:30px;}
+
+/* TABLET */
+@media (min-width: 768px) {
+.wp-block-quote p {font-size:2.375rem;line-height:2.75rem}
+} 

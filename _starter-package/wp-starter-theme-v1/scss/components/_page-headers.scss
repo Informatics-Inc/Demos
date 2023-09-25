@@ -1,0 +1,19 @@
+/* Page Headers */
+.page-hdr {position: relative; z-index: 5;}
+.page-hdr figure {position: absolute; inset: 0; background: var(--dark);}
+.page-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .25;}
+.page-hdr .content {padding: 50px var(--spacer); text-align: center; position: relative; z-index: 5;}
+.page-hdr .content h1{font-size:1.75rem; color: #fff; margin-bottom: 10px;}
+
+/* Breadcrumb */
+.page-hdr .breadcrumb-nav {display: flex; justify-content: center; padding: 0; margin: 0; font-size:0.85rem;letter-spacing:0px; text-transform: uppercase; color: rgba(255,255,255,.7);}
+.page-hdr .breadcrumb-nav a {color: var(--primary);}
+.page-hdr .breadcrumb-nav a:hover {text-decoration: underline;}
+.page-hdr .breadcrumb-nav span {display: flex; gap: 5px;} 
+
+/* WIDE DESKTOP */
+@media (min-width:992px){
+.page-hdr {margin-top: var(--fixed-header-height);}
+.page-hdr .content {padding: 75px var(--spacer);}
+.page-hdr .content h1 {font-size: 2.5rem;}
+}

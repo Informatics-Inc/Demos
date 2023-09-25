@@ -1,0 +1,25 @@
+.btn-primary, .wp-block-button__link{text-transform:uppercase;font-size:0.85rem;padding:10px 30px;background:var(--primary);letter-spacing:1px;border-radius: 0px;border:solid 1px var(--primary); color: #fff;}
+.btn-primary:hover, .wp-block-button__link:hover{background:#06a3e6;border:solid 1px #06a3e6; color: #fff;}
+
+.btn-secondary{text-transform:uppercase;font-size:0.85rem;padding:10px 30px;background:none;color:var(--primary);letter-spacing:1px;border:solid 1px var(--primary);border-radius: 0px;}
+.btn-secondary:hover{background:var(--primary);border:solid 1px var(--primary)}
+
+.btn-text, .is-style-btn_text .wp-block-button__link {font-size:0.813rem;color:#000;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+.btn-text.left-icon i{margin-top:25px;margin-right:5px;padding-left:0px;}
+.btn-text i{transition: padding-left 0.5s ease;padding-left:5px;color:var(--primary);font-size:0.95rem;}
+.btn-text:hover{color:var(--primary)}
+.btn-text.left-icon:hover i{padding-left:0px}
+.btn-text:hover i{padding-left:10px}
+
+.is-style-btn_text .wp-block-button__link {background: none; padding: 5px 0; color: #000; border: none;}
+.is-style-btn_text .wp-block-button__link::after {content: "\f061";font-family: FontAwesome; color: var(--primary); transition: var(--transition); margin-left: 5px;}
+.is-style-btn_text .wp-block-button__link:hover:after {margin-left: 10px;}
+.is-style-btn_text .wp-block-button__link:hover {color: var(--primary)}
+
+/* Next Post - Our Companies */
+.next-post-button{color:#000;font-size: 1.1rem;background:#f0f0f0;padding:15px 0px;width:100%;display:block;text-align: center;}
+.previous.next-post-button{background:#FAF8F8;}
+.next-post-button:hover {background:#fcfcfc;color:var(--primary)}
+.next-post-button i{color:var(--primary);padding:8px}
+.thumbnail{padding:70px 15px;max-width: 350px;margin:0 auto}
+

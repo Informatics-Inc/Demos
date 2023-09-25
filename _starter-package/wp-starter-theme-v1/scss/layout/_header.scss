@@ -1,0 +1,105 @@
+/* GLOBAL */
+#site-header {position: relative; z-index: 10; box-shadow: 0 0 10px rgba(0,0,0,.1);}
+#logo {max-width: 200px; display: block; position: relative;}
+.mobile-header {padding: 15px 0;display: grid; grid-template-columns: auto 40px; gap: 50px;}
+
+.toolbar {background: var(--primary); font-size: 85%; padding: 10px 0;}
+.toolbar .tools-one {display: flex; color: #fff; justify-content: center; display: none;}
+.toolbar .tools-one ul {display: flex; color: var(--text-inverse); flex-wrap: wrap; justify-content: center; column-gap: 10px; margin: 0; padding: 0;}
+.toolbar .tools-one ul li {display: flex; align-items: center; gap: 10px; margin: 0; font-style: italic;}
+.toolbar .tools-one ul li:after {width: 5px; height: 5px; border-radius: 50%; background: var(--accent-1); content: ""; display: block;}
+.toolbar .tools-one ul li:last-of-type:after {display: none;}
+.toolbar .tools-two ul {font-size: 1rem; color: #fff; margin: 0 0 0 5px; padding: 0;}
+.toolbar .tools-two ul li {color: #fff;}
+.toolbar .tools-two ul a {color: #fff !important;}
+.toolbar .tools-two ul a:hover {opacity: .75;}
+.toolbar .tools-two {display: flex; color: #fff; justify-content: center; gap: 10px;}
+.toolbar .tools-two p {margin: 0;}
+.toolbar .tools-two p a {color: #fff; margin: 0 0 0 5px;}
+.toolbar .tools-item {display: flex; align-items: center;}
+.toolbar .tools-item + .tools-item {border-left: 1px solid var(--accent-1); padding-left: 10px;}
+
+#menu ul {list-style: none; padding: 0; margin: 0;}
+#menu ul a {color: #000; font-size:1rem; font-weight: 600; letter-spacing:0.5px; display: block; width: 100%; padding: 15px;}
+
+/* Wordpress Nav Active State */
+#menu ul .current-page-ancestor > a,
+#menu ul .current-menu-item > a,
+#menu ul .current-menu-item a {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* ONLY MOBILE */
+@media (max-width: 991px) {
+/* Menu Toggle */
+#menu-toggle {font-size:.65rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 700; color: var(--gray); width: 40px; height: auto; position: relative; line-height: 1;}
+#menu-toggle > div {position: absolute; width: 100%; height: 100%; top: 0; left: 0; transition: var(--transition);}
+#menu-toggle .closed {display: flex; flex-direction: column; gap: 4px;}
+#menu-toggle .closed .bar {width: 100%; height: 3px; background: var(--primary); display: block;}
+#menu-toggle .open .bar {width: 100%; height: 3px; transform: rotate(45deg); background: var(--primary); display: block; transform-origin: center;position: absolute;left: 0;top: 46%;}
+#menu-toggle .open .bar:nth-last-of-type(2) {transform: rotate(-45deg)}
+#menu-toggle.collapsed .open {opacity: 0; visibility: hidden; top: -5px;}
+#menu-toggle.collapsed .closed {opacity: 1; visibility: visible; top: 10px;}
+#menu-toggle .open {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .closed {opacity: 0; visibility: hidden; top: 5px;}
+
+/* Menu Buttons */
+.btn-expand {position: absolute; right: 0; top: 0; width: 50px; height: 57px; border: none; background: 0; display: grid; place-content: center;}
+.btn-expand .bar {width: 15px; height: 3px; background: var(--tertiary); display: block; transition: var(--transition);}
+.btn-expand .bar:nth-of-type(2) {transform: rotate(90deg); position: relative; top: -3px; opacity: 0;}
+.btn-expand.collapsed .bar:nth-of-type(2) {opacity: 1;}
+.menu-close-btm {background: none; border: none; padding: 15px var(--spacer) 0 var(--spacer); width: 100%;}
+.menu-close-btm p {display: flex; background: var(--light-gray); text-transform: capitalize; color: var(--dark-blue); font-weight: 400; font-size: .725rem; letter-spacing: 0.5px; margin: 0; border-radius: 5px 5px 0 0; width: 100%; justify-content: center; padding: 5px 10px;}
+.menu-close-btm img {margin: 0 1rem;}
+
+/* Menu Main */
+#menu ul li {margin-bottom: 0px;transition: var(--transition);display: block;  border-bottom: 1px solid rgba(0, 0, 0, 0.2); position: relative;}
+#menu ul li a:hover {background:#f2f2f2}
+#menu ul li ul li:hover {background:#f2f2f2}
+#menu ul ul li {border-bottom:solid 1px #ccc;padding-left:15px;}
+#menu ul ul li:last-child{border-bottom:none;}
+#menu ul ul {padding-bottom: 2rem;}
+#menu ul ul li {border: none;}
+#menu ul ul a {font-weight: 400; border: none; padding: 10px 15px;}
+}
+
+@media (min-width: 992px) {
+.toolbar {padding: 12px 0; font-size: 90%;}
+.toolbar .container {display: flex; justify-content: space-between;}
+.toolbar .tools-one {display: flex;}
+
+#menu-toggle, .btn-expand {display: none;}
+#site-header {position: fixed; width: 100%; top: 0; background: #fff;}
+#site-header .container {display: flex; justify-content: space-between; align-items: center;}
+.mobile-header {padding: 0; display: flex; justify-content: center; flex-direction: column;}
+#menu {display: block;}
+#menu ul {display: flex;}
+#menu ul li {position: relative;}
+#menu ul a {padding: 35px 15px;}
+
+#menu ul ul {position: absolute; visibility: hidden; opacity: 0; top: 105%; width: 300px; left: calc(50% - 150px); background:#fff; padding: 10px; box-shadow: 0 0 15px rgba(0,0,0,.1); border-radius: 5px; transition: var(--transition); display: block;}
+#menu ul li:hover ul {opacity: 1; visibility: visible; top: 100%;}
+#menu > ul > li > a:after {width: 0; height: 3px; background: var(--accent-1); content: ""; position: absolute; left: 50%; bottom: 0; display: block; opacity: 0;transition: var(--transition);}
+#menu > ul > li:hover > a {background: var(--light);}
+#menu ul > li:hover > a:after {left: 0; opacity: 1; width: 100%;}
+#menu ul ul a {padding: 10px; font-weight: 400; border-radius: 4px;}
+#menu ul ul a:hover {padding: 10px 5px 10px 15px;text-decoration: underline; background: var(--light);}
+
+/* Last Menu Item as Button */
+#menu > ul > li:last-of-type {display: flex; justify-content: center; flex-direction: column; margin-left: 1rem;}
+#menu > ul > li:last-of-type > a {display:inline-block;padding:12px 25px;transition:var(--transition);background:var(--primary);color:#fff;border:none;border-radius: 25px;}
+#menu > ul > li:last-of-type > a:after {display: none;}
+#menu > ul > li:last-of-type > a:hover {background: var(--accent-1);}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+    #logo {max-width: 250px;}
+    #menu ul a {font-size: 1.1rem; padding: 40px 20px;}
+    #menu ul ul a {font-size: 1rem;}
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}
