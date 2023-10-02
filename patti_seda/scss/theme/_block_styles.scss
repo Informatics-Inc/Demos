@@ -1,0 +1,47 @@
+/* WP Paragraph Styles */
+.is-style-eyebrow {text-transform: uppercase;}
+.is-style-lead {font-size: 1.25rem; font-weight: 300;}
+.is-style-callout {font-size: 1.5rem; color: #888;}
+.is-style-max-width {max-width: 800px;}
+
+/* WP Column Section Colors */
+/* Light background */
+.is-style-bkg-light {background: var(--light); padding: 1px 0; }
+
+/* Light Background Attach Right */
+.is-style-lightleft {padding: 1px 0; position: relative; z-index: 5;}
+.is-style-lightleft:after {position: absolute; top: 0; right: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--light); border-radius: 10px 0 0 10px; content:""; z-index: -1;}
+.is-style-lightleft .wp-block-columns.is-layout-flex {gap: var(--column-gap-lg);}
+
+/* Light Background Attach Left */
+.is-style-lightright {padding: 1px 0; position: relative; z-index: 5;}
+.is-style-lightright:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--light); border-radius: 0 10px 10px 0; content:""; z-index: -1;}
+.is-style-lightleft .wp-block-columns.is-layout-flex {gap: var(--column-gap-lg);}
+
+/* Custom List Styles */
+.is-style-linklist {font-size: 1.25rem; padding: 0 0 0 1.25rem;}
+.is-style-linklist li {margin: 4px 0;}
+.is-style-linklist li::marker {color: var(--accent-1);}
+.is-style-linklist a {display: block; padding: 0 3px 0 0;}
+.is-style-linklist a {color: var(--text); font-weight: 500;}
+.is-style-linklist a:hover {padding: 0 0 0 3px;}
+
+/* WP Block Separator */
+.wp-block-separator, hr {margin: var(--spacer) auto; border: none; border-bottom: 1px solid #ccc;} 
+
+/* WP File Block Styles */
+.wp-block-file:not(.wp-element-button) {
+    font-size: .85em;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+}
+.wp-block-file * + .wp-block-file__button {
+    margin-left: .75em;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+}

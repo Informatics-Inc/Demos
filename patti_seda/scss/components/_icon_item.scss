@@ -1,0 +1,11 @@
+.icon-item {display: grid; grid-template-columns: 1fr 5fr; gap: .25rem;}
+.icon-item .fa {color:var(--primary); display: flex; align-items: top; text-align: center; font-size:2.2rem;}
+.icon-item .is-style-callout {margin: 0 0 .25rem 0;}
+.icon-item h3 {margin: 0 0 .5rem 0;}
+
+.icon-item figure {width: 66px; height: 66px; background: var(--primary);display: flex; align-items: center; text-align: center; align-content: center; padding:10px; border-radius:12px;}
+
+.icon-item figure.yellow { background: var(--yellow);}
+.icon-item figure.red{ background: var(--red);}
+.icon-item figure.green{ background: var(--green);}
+.icon-item figure.blue{ background: var(--blue);}

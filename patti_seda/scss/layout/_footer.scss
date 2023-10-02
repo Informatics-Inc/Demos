@@ -1,0 +1,16 @@
+.footer {position: relative; background: var(--darkblue); z-index: 5; padding: var(--spacer-vert) 0 0 0; color: var(--text-color-inverse);}
+.footer > img {position: absolute; left: 0; height: 100%; z-index: -1; opacity: .5; }
+footer p{color:#fff}
+.ftr-cols {display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;}
+.ftr-cols  .col img {max-width: 225px;}
+.ftr-cols h3 {font-size: 1.25rem;color:#fff;font-weight: 800;position: relative;opacity: 60%;}
+.ftr-cols ul {list-style: none; padding: 0;}
+.ftr-cols ul a{font-weight:800; text-decoration: none;color: #fff; display: block; padding: 5px 5px 0px 0}
+.ftr-cols a {display:inline;color:#fff; text-decoration: none;margin-right:10px}
+.ftr-cols ul a:hover ,.ftr-cols a:hover {color: var(--primary); text-decoration: none;}
+.ftr-copy {text-align:center;padding:25px 0px 20px 0px;color:#fff;align-items:center;margin-top:35px;border-top:solid 1px rgba(255,255,255,0.3);}
+.ftr-copy a {color:#fff}
+
+@media (min-width: 992px) {
+.footer .footer-content {padding: 100px 25px;}
+}
