@@ -60,3 +60,16 @@
   }
   $window.on("scroll resize", check_if_in_view);
   $window.trigger("scroll");
+
+
+
+    // -- Video Play Button -- //
+  const iframe = document.querySelector('iframe');
+  const playButton = document.querySelector('.video-container .play-button');
+
+  playButton.addEventListener('click', function() {
+      // Play the video
+      iframe.src += "&autoplay=1";
+      // Hide the play button
+      playButton.style.display = 'none';
+  });

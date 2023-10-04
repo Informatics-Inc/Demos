@@ -1,12 +1,13 @@
 /* WP Paragraph Styles */
-.is-style-eyebrow {text-transform: uppercase;}
+.is-style-eyebrow {position: relative;font-size:0.875rem;color:var(--text-color);margin-bottom:20px;text-transform: uppercase;font-weight: 700;letter-spacing:3px;}
 .is-style-lead {font-size: 1.25rem; font-weight: 300;}
 .is-style-callout {font-size: 1.5rem; color: #888;}
 .is-style-max-width {max-width: 800px;}
 
 /* WP Column Section Colors */
 /* Light background */
-.is-style-bkg-light {background: var(--light); padding: 1px 0; }
+.is-style-bkg-light {background:var(--light); padding: 1px 0; }
+.container .is-style-bkg-light {border-radius:18px;padding:20px;}
 
 /* Light Background Attach Right */
 .is-style-lightleft {padding: 1px 0; position: relative; z-index: 5;}
@@ -27,7 +28,7 @@
 .is-style-linklist a:hover {padding: 0 0 0 3px;}
 
 /* WP Block Separator */
-.wp-block-separator, hr {margin: var(--spacer) auto; border: none; border-bottom: 1px solid #ccc;} 
+.wp-block-separator, hr {margin:40px auto; border: none; border-bottom: 1px solid #ccc;} 
 
 /* WP File Block Styles */
 .wp-block-file:not(.wp-element-button) {
@@ -45,3 +46,4 @@
     font-weight: 700;
     padding: 10px;
 }
+

@@ -1,16 +1,15 @@
 /* card */
-.card {position: relative; border-radius: 10px; overflow: hidden; box-shadow: var(--box-shadow-sm);}
-.card figure {aspect-ratio: 16 / 9; overflow: hidden; border-bottom: 5px solid var(--accent-1); margin: 0;}
+.insights.card{height:100%;background:#fff;position:relative;padding:20px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;height:100%;}
+.insights .wp-block-buttons {margin-top: auto; /* Push the button to the bottom */}
+
+.card figure{aspect-ratio:16 / 9;overflow:hidden;border-bottom:5px solid var(--accent-1);margin:0;}
 .card figure img {width: 100%; height: 100%; object-fit: cover;}
-.card .text {padding: 15px; background: #fff;}
-.card .text h3 {margin: 0 0 1rem 0; font-size: 1.35rem;}
-.post-info {text-transform: uppercase; color: #888; margin: 0 0 10px 0; font-size: .85rem;}
-.post-info a {color: #888;}
-.post-info a:hover {color: var(--primary);}
+.card .text{padding:15px;margin-top:-40px;flex-grow:1;display:flex;flex-direction:column;}
+.card .text h3 {margin: 0 0 1rem 0; font-size: 1.45rem;line-height: 1.3;}
+.post-info {align-self: flex-start; background:var(--darkblue); color: #fff; font-size:1rem;font-weight:800;padding:6px 15px 5px 15px;z-index: 1;position:relative;}
 
 /* TABLET */
 @media (min-width:768px){
-.card .text {padding: 25px;}
 }
 
 @media (min-width: 1200px) {

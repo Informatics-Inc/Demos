@@ -1,6 +1,9 @@
 .footer {position: relative; background: var(--darkblue); z-index: 5; padding: var(--spacer-vert) 0 0 0; color: var(--text-color-inverse);}
 .footer > img {position: absolute; left: 0; height: 100%; z-index: -1; opacity: .5; }
-footer p{color:#fff}
+.footer .wp-block-column > img {width:350px}
+.footer .wp-block-columns { margin: 0px auto;}
+.footer .is-style-lead{color:#fff;margin-top:10px;margin-bottom:50px;font-weight: 700;}
+
 .ftr-cols {display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;}
 .ftr-cols  .col img {max-width: 225px;}
 .ftr-cols h3 {font-size: 1.25rem;color:#fff;font-weight: 800;position: relative;opacity: 60%;}
@@ -11,6 +14,14 @@ footer p{color:#fff}
 .ftr-copy {text-align:center;padding:25px 0px 20px 0px;color:#fff;align-items:center;margin-top:35px;border-top:solid 1px rgba(255,255,255,0.3);}
 .ftr-copy a {color:#fff}
 
+/* TABLET */
+@media (min-width:768px){
+.footer .is-style-lead{margin-top:40px;margin-bottom:50px;}
+}
+
 @media (min-width: 992px) {
+.footer .is-style-lead{margin-top:70px;margin-bottom:50px;}
+.footer .wp-block-column > img {width:350px}
+.footer .wp-block-columns { margin: 0px auto;}
 .footer .footer-content {padding: 100px 25px;}
 }

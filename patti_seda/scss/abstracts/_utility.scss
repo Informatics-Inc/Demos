@@ -6,6 +6,8 @@
 .box + .box {margin-top: var(--spacer);}
 .grid {display: grid; gap: var(--spacer);}
 .is-layout-flex {display: flex; gap: .5rem;}
+.flex-grid{display:flex;width:100%;gap:25px;flex-wrap:wrap;justify-content:center;}
+.flex-grid .wp-block-column{flex-basis:100%}
 
 /* Utility Classes */
 .hidden-sm {display: none;}
@@ -21,7 +23,8 @@
 
 @media (min-width: 992px) {
 .grid-3-lg {grid-template-columns: 1fr 1fr 1fr; gap: var(--spacer);}
-   
+.flex-grid .wp-block-column{flex-basis:calc(50% - 25px);max-width:50%;}
+
 }
 
 /* WIDE DESKTOP */

@@ -1,11 +1,34 @@
-.icon-item {display: grid; grid-template-columns: 1fr 5fr; gap: .25rem;}
-.icon-item .fa {color:var(--primary); display: flex; align-items: top; text-align: center; font-size:2.2rem;}
+.icon-item {display: grid; grid-template-columns: 1fr 5fr; gap: .25rem; }
+.icon-item .fa {color:var(--primary); align-items: top; text-align: center; font-size:2.2rem;}
 .icon-item .is-style-callout {margin: 0 0 .25rem 0;}
 .icon-item h3 {margin: 0 0 .5rem 0;}
 
-.icon-item figure {width: 66px; height: 66px; background: var(--primary);display: flex; align-items: center; text-align: center; align-content: center; padding:10px; border-radius:12px;}
+.icon-item figure {margin-right:20px;width: 66px; height: 66px; background: var(--primary);display: flex; align-items: center; text-align: center; align-content: center; padding:10px; border-radius:12px;}
 
 .icon-item figure.yellow { background: var(--yellow);}
 .icon-item figure.red{ background: var(--red);}
 .icon-item figure.green{ background: var(--green);}
 .icon-item figure.blue{ background: var(--blue);}
+.icon-item figure.grey{ background: var(--grey);}
+
+/* Service Tree */
+.service-tree {position: relative;margin:70px 0}
+.service-tree .icon-item{padding:33px;box-shadow:var(--shadow);border-radius:15px;height:100%;background-color: #fff}
+.service-tree .icon-item p:last-child{margin-bottom:0}
+.service-tree .grid.grid-2x2-md{column-gap:25px;}
+.service-tree > img{position:relative;bottom:0%;left:50%;transform:translate(-50%,0%);max-width:360px;z-index:-1;}
+
+/* Top Icon */
+.icon-item.top-icon{padding:33px;box-shadow:var(--shadow);border-radius:15px;height:100%;background-color: #fff;}
+.icon-item.top-icon li{font-weight:800}
+.icon-item.top-icon{display:grid;grid-template-columns:1fr;gap:20px;}
+.icon-item.top-icon h3 {margin: 0 0 20px 0;}
+.icon-item.top-icon i{text-align: left;margin-bottom:10px}
+
+    /* WIDE DESKTOP */
+@media (min-width: 992px) {
+    .service-tree {position: relative;margin:70px 0 120px 0}
+    .service-tree .grid.grid-2x2-md{column-gap: 230px;}
+    .service-tree.no-gap .grid.grid-2x2-md{column-gap: 25px;}
+    .service-tree > img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:360px;z-index:-1;}
+}
