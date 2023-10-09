@@ -1,8 +1,12 @@
 .testimonial {max-width: 900px;margin:15px auto 0px auto; position: relative; padding: 0 0 0 65px;}
 .testimonial:before {content: "\f086";font-family: FontAwesome; color:#fff; background: var(--yellow); font-size: 2.25rem; width: 80px; height: 80px; padding: 0 11px; border-radius: 50%; display: block; display: flex; justify-content: center; flex-direction: column; position: absolute; left: 0; top: 0;}
-.testimonial .quote {font-size: 1.6rem;margin-top:40px;font-weight: 700;line-height: 1.5;}
+.testimonial .quote {font-size: 1.26rem;margin-top:40px;font-weight: 700;line-height: 1.5;}
 .testimonial .author {font-weight:400;color:var(--text);line-height:1.5;margin-top:25px}
 .testimonial .author strong{font-weight: 800;color:var(--text);}
 
 .testimonial.fullwidth {text-align: center; padding: 75px 10% 25px 10%;}
 .testimonial.fullwidth:before {left: calc(50% - 40px); z-index: 5;}
+
+@media (min-width: 992px) {
+    .testimonial .quote {font-size: 1.6rem;}
+}

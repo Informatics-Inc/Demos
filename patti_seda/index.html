@@ -97,7 +97,8 @@
     </div>
   </section>
 
-              <!-- Pattie's Approach -->
+
+  <!-- Pattie's Approach -->
               <div class="wp-block-group">
                 <div class="wp-block-column has-text-align-center">
                       <div class="is-style-eyebrow">Patti’s Approach</div>
@@ -251,64 +252,144 @@
       </div>
     </div>
 
- <!-- Blog Insights -->
-<section>
 
-  <h2>Latest Insights</h2>
-  <p>Read the latest leadership development and workplace culture insights from Patti and Ashley.  
-  </p>
 
-  <div class="wp-block-group is-style-lightright">
-    <div class="wp-block-columns is-layout-flex">
-      <div class="wp-block-column">
-        <div class="insights card">
-          <figure>
-            <img src="img/posts/blog-1.jpg" />
-          </figure>
-          <div class="text">
-            <p class="post-info">Business Reach</p>
-            <h3 class="title">How can I become a volunteer?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="wp-block-buttons is-layout-flex">
-              <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="">Read More</a></div>
-            </div>
-          </div>
+ <!-- Latest Listings -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<style>
+      .news-block .wp-block-column{position: relative;padding:15px 0}
+      .news-block .swiper-container{overflow:hidden;}
+      
+      /* WIDE DESKTOP */
+      @media (min-width: 992px) {
+        .news-block .wp-block-column{padding:15px 15px}
+      }
+
+/* Style the navigation buttons */
+.swiper-button-next,.swiper-button-prev{font-size:24px;width:60px;height:60px;display:flex;justify-content:center;align-items:center;border:1px solid #ccc;border-radius:50%;cursor:pointer;transition:background-color 0.3s,border-color 0.3s;}
+.swiper-button-next::before,.swiper-button-prev::before{font-family:"Font Awesome 5 Free";font-weight:900;color:var(--primary);}
+.swiper-button-next::before{content:"\f178";}
+.swiper-button-prev::before{content:"\f177";}
+.swiper-button-next:hover,.swiper-button-prev:hover{background-color:var(--primary);border:var(--primary);}
+.swiper-button-next:hover::before,.swiper-button-prev:hover::before{color:#fff;}
+.swiper-button-next::after,.swiper-button-prev::after{display:none;}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  left: 90px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 0px;
+}
+.swipe-buttons{position: relative;display: block;float:left;margin-top:25px}
+</style>
+      <div class="news-block  is-style-lightright">
+        <div class="wp-block-columns is-layout-flex">
+        <div class="wp-block-column is-vertically-aligned-center" style="flex-basis: 35%;">
+          <h2>Latest Insights</h2>
+          <p>Read the latest leadership development and workplace culture insights from Patti and Ashley.  
+          </p>
+          <div class="swipe-buttons">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-      </div>
-
-      <div class="wp-block-column">
-        <div class="insights card">
-          <figure>
-            <img src="img/posts/blog-2.jpg" />
-          </figure>
-          <div class="text">
-            <p class="post-info">Need To Know</p>
-            <h3>Proven Consulting Approaches for Enhancements</h3>
-            <p>Expert Consulting Insights for Growth and Innovation.</p>
-            <div class="wp-block-buttons is-layout-flex">
-              <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="#">Read More</a></div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div class="wp-block-column">
-        <div class="insights card">
-          <figure>
-            <img src="img/posts/blog-3.jpg" />
-          </figure>
-          <div class="text">
-            <p class="post-info">Business Reach</p>
-            <h3>Navigating the Paths of Success: Essential Tips and Strategies</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
-            <div class="wp-block-buttons is-layout-flex">
-              <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="#">Read More</a></div>
-            </div>
+        
+        <div class="wp-block-column">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="wp-block-column">
+                      <div class="insights card">
+                        <figure>
+                          <img src="img/posts/blog-1.jpg" />
+                        </figure>
+                        <div class="text">
+                          <p class="post-info">Business Reach</p>
+                          <h3 class="title">How can I become a volunteer?</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          <div class="wp-block-buttons is-layout-flex">
+                            <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="">Read More</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="wp-block-column">
+                      <div class="insights card">
+                        <figure>
+                          <img src="img/posts/blog-2.jpg" />
+                        </figure>
+                        <div class="text">
+                          <p class="post-info">Need To Know</p>
+                          <h3>Proven Consulting Approaches for Enhancements</h3>
+                          <p>Expert Consulting Insights for Growth ipsum dolor sit amet, consectetur adipiscing elit and Innovation.</p>
+                          <div class="wp-block-buttons is-layout-flex">
+                            <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="#">Read More</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="wp-block-column">
+                      <div class="insights card">
+                        <figure>
+                          <img src="img/posts/blog-3.jpg" />
+                        </figure>
+                        <div class="text">
+                          <p class="post-info">Business Reach</p>
+                          <h3>Navigating the Paths of Success: Essential Tips and Strategies</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore </p>
+                          <div class="wp-block-buttons is-layout-flex">
+                            <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="#">Read More</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+              </div>
+              <div class="swiper-slide">
+                  <div class="wp-block-column">
+                      <div class="insights card">
+                        <figure>
+                          <img src="img/posts/blog-2.jpg" />
+                        </figure>
+                        <div class="text">
+                          <p class="post-info">Need To Know</p>
+                          <h3>Proven Consulting Approaches for Enhancements</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                          <div class="wp-block-buttons is-layout-flex">
+                            <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="#">Read More</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
           </div>
-        </div>
+      
       </div>
-    </div>
-  </section>
+      </div>
+      </div>
+      </div> <!-- END News Block -->
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView:1, // Number of visible slides for larger screens
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    loop: true, // Enable loop mode
+    breakpoints: {
+        // When the viewport width is less than or equal to 992px (typical mobile devices)
+        992: {
+            slidesPerView: 2, // Number of visible slides for mobile
+        },
+    },
+});
+    </script>
+
 
               <!-- Call To Action -->
               <div class="wp-block-columns">
@@ -375,6 +456,7 @@
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/swiper.js"></script>
 
 </body>
 </html>

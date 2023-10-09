@@ -1,4 +1,4 @@
-  // -- SCROLL EVENTS -- //
+ // -- SCROLL EVENTS -- //
 
   // Vanilla JavaScript scroll event
   window.addEventListener("scroll", function () {

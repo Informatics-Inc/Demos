@@ -7,8 +7,12 @@
 /* WP Column Section Colors */
 /* Light background */
 .is-style-bkg-light {background:var(--light); padding: 1px 0; }
-.container .is-style-bkg-light {border-radius:18px;padding:20px;}
-
+.container .is-style-bkg-light {border-radius:18px;padding:10px;}
+      /* WIDE DESKTOP */
+      @media (min-width: 992px) {
+        .container .is-style-bkg-light{padding:20px;}
+      }
+      
 /* Light Background Attach Right */
 .is-style-lightleft {padding: 1px 0; position: relative; z-index: 5;}
 .is-style-lightleft:after {position: absolute; top: 0; right: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--light); border-radius: 10px 0 0 10px; content:""; z-index: -1;}

@@ -1,11 +1,11 @@
 /* Page Headers */
 .page-hdr {position: relative; z-index: 5;background:var(--light);margin-bottom:50px}
 .page-hdr .content {padding: 50px var(--spacer); text-align: center; position: relative; z-index: 5;}
-.page-hdr .content h1 {font-size: 2.75rem;line-height:1.1; color:var(--dark); position: relative; padding: .5rem 0 1.25rem 0; margin: 0;}
+.page-hdr .content h1 {font-size: 2.75rem;line-height:1.1; color:var(--dark); position: relative; padding: .5rem 0 0.5rem 0; margin: 0;}
 .page-hdr .content h1:after {width: 100px; height: 5px; content: ""; position: absolute; bottom: 0; left: calc(50% - 50px);}
 
 /* Breadcrumb */
-.page-hdr .breadcrumb-nav {display: flex; justify-content: center; align-items: center; padding: 0; margin: 0; font-size:0.85rem;letter-spacing:0px; color:#8897AC; list-style: none;font-weight:700}
+.page-hdr .breadcrumb-nav {display: flex; justify-content: center; align-items: center; padding: 0; margin: 0; font-size:0.85rem;letter-spacing:0px; color:#8897AC; list-style: none;font-weight:700;line-height:1.2}
 .page-hdr .breadcrumb-nav li:after {content: "•"; margin: 0 5px;color:var(--primary)}
 .page-hdr .breadcrumb-nav li:last-of-type:after {display: none;}
 .page-hdr .breadcrumb-nav a {color: #8897AC;text-decoration: none;}
@@ -17,4 +17,11 @@
 .page-hdr{padding: 100px 0 0 0;}
 .page-hdr .content {padding: 75px var(--spacer) 70px var(--spacer);}
 .page-hdr .content h1 {font-size: 3.25rem; padding-bottom:0.5rem;}
+}
+
+/* ONLY MOBILE */
+@media (max-width: 991px) {
+    .page-hdr .breadcrumb-nav {display: inline; justify-content: center; align-items: center; line-height:1.4}
+    .page-hdr .breadcrumb-nav li:after {content: "";display:none;}
+
 }
