@@ -3,12 +3,12 @@
 #logo {display: block;width:150px}
 #menu ul {list-style: none; padding: 0; margin: 0;}
 #menu ul a {color: var(--text); text-decoration: none; display: block; padding: 1rem; font-weight: 700; position: relative;font-size: 1rem; }
-#menu .wp-block-button__link {
-    margin: 1rem 0;
-    display: block;
-    text-align: left;
-    border-radius: 0;
-}
+
+#menu .wp-block-button__link {padding: 15px 15px 12px 15px;font-size:0.9rem; border-radius: 50px; display: block;}
+#menu .wp-block-button__link {border:solid 1px var(--primary);}
+#menu .wp-block-button__link:hover{border:solid 1px var(--darkblue);}
+#menu .wp-block-button__link:nth-of-type(1)  {background:none;color:var(--primary);}
+#menu .wp-block-button__link:nth-of-type(1):hover  {border:solid 1px var(--primary);background:  var(--primary);color:#fff;}
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
@@ -38,41 +38,30 @@
 #menu .wp-block-button__link {margin: 1rem 0;}
 #menu li {position: relative;border-bottom: dotted 2px #ddd;}
 #menu ul ul a {border: none; padding: 10px 20px 10px 30px; font-weight: 400;}
-#menu li:last-of-type{border-bottom: solid 1px var(--primary);} 
 #menu ul ul li:last-of-type {margin-bottom: 1rem;border-bottom: none;}
-#menu .wp-block-button__link {margin: 0;padding: 20px;}
-#menu .wp-block-button__link:nth-of-type(1)  {background:none;color:var(--primary);}
-#menu .wp-block-button__link:nth-of-type(1):hover  {background:  var(--primary);color:#fff;}
 }
 /* END ONLY MOBILE */
 
 /* DESKTOP */
 @media (min-width: 992px) {
-#hdr-site {position: fixed; width: 100%; top: 0; box-shadow: none;}
+#hdr-site {position: fixed; width: 100%; top: 0; box-shadow: none; transition: var(--transition);}
 #hdr-site.scroll{box-shadow:var(--box-shadow-sm);background:#fff}
-#hdr-site.scroll{background-color:#fff;}
-#hdr-site.scroll #logo{width:200px;}
-#hdr-site.scroll #menu ul a{font-size:0.85rem;}
-#hdr-site.scroll #menu .wp-block-button__link{padding:10px 15px;font-size:0.85rem;}
 
-#logo {display: block;width: 225px;}
+#logo {display: block; width: 215px; position: relative; top: -5px;}
 #menu-toggle {display: none;}
 .hdr-desktop {display: flex; justify-content: space-between; align-items: center;padding:12px 0px}
 #menu {display: flex; align-items: center;}
 #menu ul {display: flex;}
 #menu ul a {padding: 2.15rem .7rem;font-size:0.85rem; letter-spacing: -.5px;}
-#menu .wp-block-button__link {margin-left: 1rem;padding:12px 18px;font-size:0.9rem;  border-radius:50px;}
-#menu .wp-block-button__link {border:solid 1px var(--primary);}
-#menu .wp-block-button__link:hover{border:solid 1px var(--darkblue);}
-#menu .wp-block-button__link:nth-of-type(1)  {background:none;color:var(--primary);}
-#menu .wp-block-button__link:nth-of-type(1):hover  {border:solid 1px var(--primary);background:  var(--primary);color:#fff;}
 
+#menu .wp-block-button__link {margin-left: .75rem; font-size: .85rem; padding: 12px 20px 10px 20px;}
 
 /* Dropdown */
 #menu .btn-expand {display: none;}
 #menu ul li {position: relative;}
 #menu ul ul {position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
-#menu ul ul a {font-weight: 400; padding: 10px; border-radius: 5px;border-bottom:dotted 2px #ddd}
+#menu ul ul a {font-weight: 400; padding: 10px; border-bottom:dotted 2px #ddd}
+#menu ul ul li:last-of-type a {border: none;}
 #menu li:hover ul {opacity: 1; visibility: visible; top: 100%;}
 #menu ul ul a:hover {color: var(--header-color); text-decoration: none; padding: 10px 5px 10px 15px; background: var(--light);}
 
@@ -91,12 +80,8 @@
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
-#logo {display: block;width:290px;}
-#menu ul a {padding: 2.15rem .9rem;font-size:1rem;}
-#menu .wp-block-button__link{padding:12px 20px;font-size:1rem;}
-#hdr-site.scroll #logo{width:260px;}
-#hdr-site.scroll #menu ul a{font-size:0.95rem;}
-#hdr-site.scroll #menu .wp-block-button__link{padding:10px 15px;font-size:0.95rem;}
+#logo {width: 225px;}
+#menu ul a {padding: 2.15rem .9rem; font-size: .95rem;}
 }
 
 /* SUPER WIDE DESKTOP */
