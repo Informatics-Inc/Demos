@@ -1,0 +1,85 @@
+/* GLOBAL */
+#hdr-site {position: relative; z-index: 10; box-shadow: var(--box-shadow-sm);}
+#logo {display: block; width: 150px;}
+#menu ul {list-style: none; padding: 0; margin: 0;}
+#menu ul a {color: var(--text); text-decoration: none; display: block; padding: 1rem; font-weight: 600; position: relative;}
+#menu ul ul .menu-title {color: #706D88; opacity: .65; font-size: .85rem; font-weight: 700; margin: 5px 1rem; border-bottom: 1px dotted var(--gray); width: 100%; display: block; padding: 0 0 .5rem 0;}
+.menu-cta {display: flex; gap: .75rem;}
+.menu-cta > * {flex-grow: 1;}
+
+/* ONLY MOBILE */
+@media (max-width: 991px) {
+#hdr-main {display: grid; grid-template-columns: auto 35px; align-items: center; padding: 1rem 0;}
+
+/* Menu Toggle */
+#menu-toggle {font-size:.65rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 700; color: var(--text); width: 35px; height: 40px; position: relative;}
+#menu-toggle > div {position: absolute; width: 100%; height: 100%; top: 0; left: 0; transition: var(--transition);}
+#menu-toggle .closed {display: flex; flex-direction: column; gap: 4px;}
+#menu-toggle .closed .bar {width: 100%; height: 3px; background: var(--primary); display: block;}
+#menu-toggle .open .bar {width: 100%; height: 3px; transform: rotate(45deg); background: var(--primary); display: block; transform-origin: center;position: absolute;left: 0;top: 46%;}
+#menu-toggle .open .bar:nth-last-of-type(2) {transform: rotate(-45deg)}
+#menu-toggle.collapsed .open {opacity: 0; visibility: hidden; top: -5px;}
+#menu-toggle.collapsed .closed {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .open {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .closed {opacity: 0; visibility: hidden; top: 5px;}
+
+/* Menu Collapse */
+#menu .btn-expand {position: absolute; right: 0; top: 0; height: auto; border: none; background: none; color: var(--primary); padding: 1rem;}
+.collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
+.show {height: auto;}
+
+/* Menu Links */
+#menu ul a {border-top: 1px dotted var(--gray);}
+#menu ul a:hover, #menu ul a:focus {background: var(--light);}
+#menu .wp-block-button__link {margin: 1rem 0;}
+#menu li {position: relative;}
+#menu ul ul a {border: none; padding: 5px 20px 5px 30px; font-weight: 400; font-size: .8rem;}
+
+#menu ul ul li:last-of-type {margin-bottom: 1rem;}
+.menu-cta {margin: 2rem 0;}
+#menu .mini-nav {display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 2rem 0;}
+#menu .mini-nav a {background: #f4f4f4; font-size: .85rem; text-align: center; padding: 5px; border: none; border-radius: 4px; font-weight: 400;}
+
+} /* END ONLY MOBILE */
+
+/* DESKTOP */
+@media (min-width: 992px) {
+#hdr-site {position: fixed; top: 0; width: 100%; background: #fff;}
+#menu-toggle {display: none;}
+.hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
+#menu {display: flex; align-items: center; justify-content: space-between; margin-left: 2rem;}
+#menu ul {display: flex;}
+#menu ul a {padding: 2.25rem 1.5rem; font-size: 1.15rem;}
+#menu .wp-block-button__link {margin-left: 1rem;}
+
+/* Dropdown */
+#menu .btn-expand {display: none;}
+#menu .mega-menu {display: block; width: 900px; left: calc(50% - 450px); top: 105%; position: absolute; display: flex; gap: 2rem; background: #fff; box-shadow: var(--box-shadow-sm); border-radius: 5px; padding: 2rem; opacity: 0; visibility: hidden; transition: var(--transition);}
+#menu .mega-menu ul { flex-direction: column; flex: 25%;}
+#menu .mega-menu ul a {padding: 5px 0; font-size: .85rem; font-weight: 400;}
+#menu ul ul .menu-title {margin: 0 0 1.15rem 0; padding: 0 0 1.5rem 0;}
+#menu li:hover .mega-menu {opacity: 1; visibility: visible; top: 100%;}
+
+/* Hovers & Active */
+#menu > ul > li > a:after {width: 0; height: 3px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--accent-1); opacity: 0; transition: var(--transition);}
+#menu > ul > li:hover > a {background: var(--light);}
+#menu > ul > li:hover > a:after {width: 100%; left: 0; opacity: 1;}
+#menu ul ul a:hover {color: var(--dark); text-decoration: underline; padding: 5px 0 5px 5px; background: var(--light);}
+}
+
+/* Wordpress Nav Active State */
+#menu ul .current-page-ancestor > a,
+#menu ul .current-menu-item > a,
+#menu ul .current-menu-item a {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+#logo {width: 175px;}
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}

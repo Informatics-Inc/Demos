@@ -1,0 +1,17 @@
+/* WP Button Styles */
+/* Primary */
+.btn-theme, .button {background: var(--primary); padding: .65rem 1rem; color: #fff; display: inline-block; text-align: center; border-radius: 5px; text-decoration: none; font-weight: 700; border: 2px solid var(--primary); font-size: .9rem;}
+.btn-theme:hover, .button:hover {background: var(--primary-dark); border-color: var(--primary-dark)}
+
+.button-arrow:after {content: "\f061";font-family: FontAwesome; margin-left: .5rem; transition: var(--transition);}
+.button-arrow:hover:after {margin-left: .75rem;}
+
+/* Secondary */
+.btn-theme-secondary, .button-secondary {background: none; color: var(--primary);}
+.btn-theme-secondary:hover, .button-secondary:hover {background: var(--light); color: var(--primary);}
+
+.is-style-btn-text .wp-block-button__link {background: var(--primary);}
+.is-style-btn-text .wp-block-button__link:hover {background: var(--hover);}
+/* Text */
+.is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
+.is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
