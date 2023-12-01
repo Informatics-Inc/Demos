@@ -56,7 +56,7 @@
 #menu .btn-expand {display: none;}
 #menu .mega-menu {display: block; width: 900px; left: calc(50% - 450px); top: 105%; position: absolute; display: flex; gap: 2rem; background: #fff; box-shadow: var(--box-shadow-sm); border-radius: 5px; padding: 2rem; opacity: 0; visibility: hidden; transition: var(--transition);}
 #menu .mega-menu ul { flex-direction: column; flex: 25%;}
-#menu .mega-menu ul a {padding: 5px 0; font-size: .85rem; font-weight: 400;}
+#menu .mega-menu ul a {padding: 5px 0; font-size: .85rem; font-weight: 400; border-radius: 3px;}
 #menu ul ul .menu-title {margin: 0 0 1.15rem 0; padding: 0 0 1.5rem 0;}
 #menu li:hover .mega-menu {opacity: 1; visibility: visible; top: 100%;}
 
