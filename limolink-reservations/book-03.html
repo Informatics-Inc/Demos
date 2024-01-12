@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Limolink Reservations</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Roboto+Condensed:300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
+
+  <header id="hdr-site">
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div id="hdr-main">
+            <a href="login.html" id="logo">
+                <img src="img/logo.png" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+                <div class="closed">
+                    Menu
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <nav id="menu" class="collapsed">
+          <ul class="menu-main">
+            <li><a href="reservations.html">Reservations</a></li>
+            <li class="active"><a href="book-01.html">Book a Ride</a></li>
+            <li><a href="profiles.html">Profiles</a></li>
+            <li><a href="receipts.html">Receipts</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+            <li class="user-menu"><a href="#.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <i class="fa-solid fa-bars"></i>
+              <span>My Account</span>
+            </a>
+            <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+              <ul id="menu-1" class="collapsed">
+                <p>Logged in as: <strong>Luke Skywalker</strong></p>
+                <li><a href="account.html">Edit My Account</a></li>
+                <li><a href="login.html">Log out</a></li>
+                <p class="divider">Choose Account</p>
+                <li><a href="#.html">All Acccounts</a></li>
+                <li><a href="#.html">Yankee CEO Transportation</a></li>
+                <li><a href="#.html">NCAA Rules Committee</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
+      </div>
+    </div>
+  </header>
+  <main id="content">
+  <div class="book-steps">
+    <ol>
+      <li class="complete"><a href="book-01.html"><strong>01</strong> Who, Where, When</a></li>
+      <li class="complete"><a href="book-02.html"><strong>02</strong> Vehicle Select</a></li>
+      <li class="active"><a href="book-03.html"><strong>03</strong> Confirm and Pay</a></li>
+    </ol>
+  </div>
+
+  <div class="book-layout">
+    <div class="col panel">
+      <form class="ll-form flex-vert" action="book-03.html">
+
+        <div class="toggle-header">
+          <h1>Confirm and Pay</h1>
+        </div>
+        <div class="grid">
+          <div class="form-group">
+            <div class="flex">
+              <label>Payment</label>
+              <div class="custom-select">
+                <select>
+                  <option>Select</option>
+                  <option>Visa 1234</option>
+                  <option>Mastercard 1234</option>
+                  <option>AmEx 1234</option>
+                </select>
+              </div>
+
+              <!-- MODAL -->
+              <a href="#" data-target="new-payment" class="add-action modal-toggle"><i class="fa fa-add"></i>Add New</a>
+              <div class="modal" id="new-payment">
+                <div class="modal-item">
+                  <header class="toggle-header"><h2>Add New Credit Card</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+                  <div class="form-group">
+                    <div class="flex input-row">
+                      <label>Card Holder Name</label>
+                      <input type="text">
+                    </div>
+                    <div class="flex input-row">
+                      <label>Card Number</label>
+                      <input type="text">
+                    </div>
+                    <div class="flex input-row">
+                      <label>Expiration</label>
+                      <input type="text" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="flex input-row">
+                      <label>CVV Value</label>
+                      <input type="text">
+                    </div>
+                    <div class="flex input-row">
+                      <label>Billing Zip</label>
+                      <input type="text">
+                    </div>
+                  </div>
+                  <header class="toggle-header"><h2>Additional Options:</h2></header>
+                  <div class="form-group">
+                    <div class="flex input-row">
+                      <label>Email Receipt</label>
+                      <input type="text">
+                    </div>
+                    <div class="flex input-row">
+                      <label>Booking Agent</label>
+                      <div class="checkbox-inline">
+                        <input type="checkbox" name="notify">
+                        <label>Send Email</label>
+                      </div>
+                    </div>
+                    <div class="flex input-row">
+                      <label>Lead Passenger</label>
+                      <div class="checkbox-inline">
+                        <input type="checkbox" name="notify">
+                        <label>Send Email</label>
+                      </div>
+                    </div>
+                    <div class="flex input-row">
+                      <label>Save Card To</label>
+                      <div class="checkbox-inline">
+                        <input type="radio" name="save-card">
+                        <label>Booking Agent</label>
+                        <input type="radio" name="save-card">
+                        <label>Passenger</label>
+                        <input type="radio" name="save-card">
+                        <label>Don't Save</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+                    <button type="submit" class="modal-toggle btn-theme">Add Card</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="flex">
+              <label>Notify</label>
+              <h3>Booking Agent</h3>
+
+              <!-- MODAL -->
+              <a href="#" data-target="edit-notify-1" class="add-action modal-toggle"><i class="fa fa-edit"></i>Edit Item</a>
+              <div class="modal" id="edit-notify-1">
+                <div class="modal-item">
+                  <header class="toggle-header"><h2>Booking Agent Notifications</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+                  <p class="helper">Choose which options to show in the form</p>
+                  <div class="form-group checkbox-list">
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Chauffer Name & Number</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Chauffer On Site</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">MapLink</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Vehicle Information</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Confirmation</label>
+                    </div>
+                  </div>
+                  
+                  <div class="form-actions">
+                    <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+                    <button type="submit" class="modal-toggle btn-theme">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-group-content flex">
+              <div class="checkbox-group">
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Confirmation</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Chauffer Name & Number</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Chauffer On Site</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">MapLink</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+              </div> 
+              
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="flex">
+              <label>Notify</label>
+              <h3>Lead Passenger</h3>
+              <!-- MODAL -->
+              <a href="#" data-target="edit-notify-2" class="add-action modal-toggle"><i class="fa fa-edit"></i>Edit Item</a>
+              <div class="modal" id="edit-notify-2">
+                <div class="modal-item">
+                  <header class="toggle-header"><h2>Lead Passenger Notifications</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+                  <p class="helper">Choose which options to show in the form</p>
+                  <div class="form-group checkbox-list">
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Chauffer Name & Number</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Chauffer On Site</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" checked name="notify">MapLink</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" checked name="notify">Vehicle Information</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Confirmation</label>
+                    </div>
+                  </div>
+                  
+                  <div class="form-actions">
+                    <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+                    <button type="submit" class="modal-toggle btn-theme">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group-content flex">
+              <div class="checkbox-group">
+                <div class="checkbox-item">
+                  <div class="checkbox-title">MapLink</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Vehicle Informatics</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="flex">
+              <label>Notify</label>
+              <p class="helper">Add a person and configure their notifications</p>
+              <!-- MODAL -->
+              <a href="#" data-target="edit-notify-3" class="add-action modal-toggle"><i class="fa fa-edit"></i>Edit Item</a>
+              <div class="modal" id="edit-notify-3">
+                <div class="modal-item">
+                  <header class="toggle-header"><h2>Add Notification</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+                  <div class="form-group">
+                    <div class="flex input-row">
+                      <label>Email</label>
+                      <input type="text">
+                    </div>
+                    <div class="flex input-row">
+                      <label>Phone</label>
+                      <input type="text">
+                    </div>
+                  </div>
+                  <header class="toggle-header"><h2>Notifications</h2></header>
+                  <div class="form-group checkbox-list">
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Chauffer Name & Number</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Chauffer On Site</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" checked name="notify">MapLink</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" checked name="notify">Vehicle Information</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Confirmation</label>
+                    </div>
+                  </div>
+                  
+                  <div class="form-actions">
+                    <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+                    <button type="submit" class="modal-toggle btn-theme">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="flex input-row">
+              <label>Department</label>
+              <input type="text" value="Marketing 12C-A">
+              <!-- MODAL -->
+              <a href="#" data-target="edit-notify-4" class="add-action modal-toggle"><i class="fa fa-edit"></i>Edit Item</a>
+              <div class="modal" id="edit-notify-4">
+                <div class="modal-item">
+                  <header class="toggle-header"><h2>Add Notification</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+                  <p class="helper">This is entered when you book a reservation and will appear on the confirmation and billing statement</p>
+                  <div class="form-group">
+                    <div class="flex input-row">
+                      <label>Label</label>
+                      <input type="text">
+                    </div>
+                    <div class="flex input-row">
+                      <label>Text</label>
+                      <textarea></textarea>
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+                    <button type="submit" class="modal-toggle btn-theme">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="flex input-row">
+              <label>Ref. Code</label>
+              <p class="helper">Add reference info (e.g. Department, Purchase Order, Billing Code, etc.)</p>
+              <!-- MODAL -->
+              <a href="#" data-target="edit-notify-4" class="add-action modal-toggle"><i class="fa fa-plus"></i>Add Item</a>
+              <div class="modal" id="edit-notify-4">
+                <div class="modal-item">
+                  <header class="toggle-header"><h2>Add Notification</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+                  <p class="helper">This is entered when you book a reservation and will appear on the confirmation and billing statement</p>
+                  <div class="form-group">
+                    <div class="flex input-row">
+                      <label>Label</label>
+                      <input type="text">
+                    </div>
+                    <div class="flex input-row">
+                      <label>Text</label>
+                      <textarea></textarea>
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+                    <button type="submit" class="modal-toggle btn-theme">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="flex input-row">
+              <label>Special Instructs</label>
+              <textarea>Add special instructions here</textarea>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="form-actions">
+          <button class="btn-theme btn-secondary">Cancel</button>
+          <button type="submit" class="btn-theme">Confirm Ride</button>
+        </div>
+      </form>
+      
+      
+    </div>
+    <div class="col panel">
+      <div class="summary">
+        <div class="toggle-header">
+          <h2>Trip Summary</h2>
+        </div>
+          <p class="summary-item"><strong>Account</strong> iLink Test Account</p>
+          <p class="summary-item"><strong>Passenger</strong> Luke Skywalker</p>
+          <p class="summary-item"><strong>Pickup Date</strong> 03/29/2024</p>
+          <p class="summary-item"><strong>Pickup Time</strong> 11:30 PM</p>
+          <p class="summary-item"><strong>Passengers</strong> 2</p>
+          <p class="summary-item"><strong>Luggage</strong> 4</p>
+          <p class="summary-item"><strong>Pickup</strong> Brew's Tavern, Charlotte Highway, Fort Mill, SC, USA</p>
+          <p class="summary-item"><strong>Stop #1</strong> Hawkers Asian Street Food, Camden Road, Charlotte, NC, USA </p>
+          <p class="summary-item"><strong>Dropoff</strong> Public Storage, Indian Trail Fairview Road, Indian Trail, NC, USA </p>
+          <p class="summary-item"><strong>Vehicle</strong> Sedan</p>
+          <p class="summary-cost"><strong>Price</strong> $450.99</p>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2024 LimoLink | <a href="#.html">Privacy Policy</a> | <a href="#.html">Terms & Conditions</a><a href="#.html">Privacy Policy</a> | <a href="#.html">To Book Reservations : (877) 798-5466</a> | <a href="mailto:reservations@limolink.com">reservations@limolink.com</a> | <a href="mailto:customersupport@limolink.com">CustomerSupport@limolink.com</a></p>
+  <p>Version 0.0.1 | Updated 02-28-2024</p>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

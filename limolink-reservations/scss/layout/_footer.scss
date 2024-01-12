@@ -1,0 +1,7 @@
+.footer {background: var(--dark); padding: 25px; text-align: center;}
+.footer p {margin: 0; font-size: .75rem; color: rgba(255,255,255,.5);}
+.footer a { color: rgba(255,255,255,.5); font-weight: 400;}
+.footer p + p {margin-top: .5rem;}
+@media (min-width: 992px) {
+
+}

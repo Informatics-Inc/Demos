@@ -1,0 +1,38 @@
+.book-steps {@include container;}
+.book-steps ol {margin: var(--spacer) auto; padding: 0; list-style: none;}
+.book-steps ol a {font-weight: 400; text-decoration: none; position: relative; padding: 0 0 25px 45px; color: #999; display: block; font-size: .85rem; font-style: italic;}
+.book-steps ol a strong {border-right: 1px solid #ccc; padding-right: 7px; margin-right: 4px; font-style: normal;}
+.book-steps ol a:after {content: "\f141";font-family: FontAwesome; width: 40px; height: 40px; position: absolute; left: 0; bottom: 0; background: var(--light); border-radius: 50%; display: flex; justify-content: center; flex-direction: column; text-align: center; border: 2px solid #bbb; font-size: 1rem;font-style: normal; background: #eee;}
+.book-steps ol a:before {content: ""; position: absolute; left: 40px; bottom: 17px; height: 2px; width: calc(100% - 50px); border-bottom: 2px solid #bbb;}
+
+.book-steps .active > a:after {animation: .75s ease-in-out .25s forwards pulse;}
+
+.book-steps .active > a, .book-steps .complete > a {opacity: 1; color: var(--dark);}
+.book-steps .active > a:after, .book-steps .complete > a:after {border: 2px solid var(--dark); content: "\f0d7"; background: #fff; color: var(--dark); box-shadow: 5px 5px 5px rgba(0,0,0,.075);}
+.book-steps .active > a:before, .book-steps .complete > a:before {border-bottom: 2px solid var(--dark);}
+
+.book-steps .complete > a:after {content: "\f00c"; background: var(--dark); color: #fff;}
+
+/* TABLET */
+@media (min-width: 768px) {
+.book-steps ol {display: flex; gap: 20px;}
+.book-steps ol li {flex: 1;}
+} 
+/* DESKTOP */
+@media (min-width: 992px) {
+.book-steps ol {max-width: 800px;}
+}
+
+@keyframes pulse { 
+    0% { 
+        transform: scale(1); 
+    } 
+
+    50% { 
+        transform: scale(1.15); 
+    } 
+
+    100% { 
+        transform: scale(1); 
+    } 
+} 

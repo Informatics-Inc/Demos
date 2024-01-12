@@ -1,0 +1,81 @@
+/* Variables */
+:root {
+  /* Colors */
+  --primary: #8ab6ab;
+  --primary-dark: #78B2A5;
+  --secondary: #397eb9;
+  --dark-green: #76a398;
+  --dark: #111;
+  --light: #f4f4f4;
+  --light-gray: #D4D4D4;
+  --gray: #ccc;
+  --bkg: #f9f9f9;
+  
+  /* Fonts */
+  --font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --text-color: rgba(0,0,0,.85);
+  --text-color-inverse: rgba(255,255,255,.85);
+  --form-text: rgba(0,0,0,.55);
+
+  /* Globals */
+  --transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --box-shadow-sm: 0 0px 10px rgba(0,0,0,.08);
+  --shadow: 0 5px 25px rgba(255,161,0,.15);
+  
+  /* Spacing */
+  --max-width: 1280px;
+  --side-padding: 1.5rem;
+  --spacer: 1.5rem;
+  --spacer-vert: 2rem;
+  --column-gap: 2rem;
+  --column-gap-lg: 4rem;
+  --fixed-header-height: 145px;
+}
+
+/* TYPOGRAPHY */
+html {font-size: 100%;}
+body {font-family: var(--font); font-weight: 400; font-size: .95rem; background: var(--bkg); color: var(--text-color); padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
+
+h1, h2, h3, h4, h5 {line-height: 1; margin:0; margin-bottom: 1rem; font-weight: 400;}
+h1 {font-size: 1.75rem; margin: 0 0 1rem 0;}
+h2 {font-size: 1.25rem;}
+h3 {font-size: 1.25rem;}
+h4 {font-size: 1.15rem;}
+h5 {font-size: 1rem;}
+p, ul, ol {margin-bottom: 1.25rem;}
+
+/* Links */
+a {transition: var(--transition); color: var(--secondary);}
+p a {font-weight: 700; text-decoration: underline;}
+p a:hover {text-decoration: none;}
+
+/* Buttons */
+.btn-theme {background: var(--dark); color: #fff; padding: .75rem 1rem; display: block; text-decoration: none; border-radius: 3px; text-align: center; text-transform: uppercase; font-weight: 700;font-size: .8rem; border: none; border-radius: 4px; border: 1.5px solid var(--dark); transition: var(--transition);}
+.btn-secondary {background: none; border-color: var(--dark); color: var(--dark);}
+.btn-theme:hover {background: #555;}
+.btn-theme.btn-secondary:hover {background: var(--light-gray); color: var(--dark);}
+
+/* Layouts */
+.container {max-width: var(--max-width); margin: 0 auto; padding-left: var(--spacer);padding-right: var(--spacer);}
+.box {padding: var(--spacer); border: 1px solid rgba(0,0,0,.1); background: var(--light); text-align: center;}
+#content .container {margin: var(--spacer) auto;}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  :root {
+  --spacer-vert: 6rem;
+  }
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+  :root {
+  --spacer-vert: 8rem;
+  --fixed-header-height: 150px;
+  }  
+}

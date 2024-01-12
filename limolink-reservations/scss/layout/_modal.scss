@@ -1,0 +1,19 @@
+.modal {position: fixed; inset: 0; width: 100dvw; height: 100dvh; display: grid; align-items:  center; z-index: 50; background: rgba(0,0,0,.3); opacity: 0; visibility: hidden; padding: 25px; transition: var(--transition); transition-duration: 150ms;}
+.modal.open {opacity: 1; visibility: visible;}
+html.modal-open {position: fixed;}
+
+.modal-item {background: #fff; padding: 25px; box-shadow: 0 0 15px rgba(0,0,0,.2); z-index: 50; margin: 25px auto; width: 100%; max-width: 600px; border-top: 5px solid var(--dark);}
+.modal-item .form-group label {flex-basis: 150px;}
+.modal-item .form-group + header {margin-top: 1.5rem;}
+.modal-item .form-actions {margin-top: 1rem;}
+
+.toggle-header .modal-toggle {padding: 7px 12px; background: var(--light); border-radius: 3px;}
+.toggle-header .modal-toggle:hover {background: none; color: var(--dark);}
+/* TABLET */
+@media (min-width: 768px) {
+
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {
+}

@@ -13,8 +13,12 @@
 .page-hdr .breadcrumb-nav a:hover {text-decoration: underline;}
 .page-hdr .breadcrumb-nav span {display: flex; gap: 5px;} 
 
+#landing-hdr .form, #landing-hdr .content-2 {margin: var(--spacer-vert) 0; padding: 0 var(--side-padding);}
+
 /* WIDE DESKTOP */
 @media (min-width:992px){
 .page-hdr {margin-top: var(--fixed-header-height);}
 .page-hdr .content {padding: 100px var(--spacer);}
+
+#landing-hdr {}
 }

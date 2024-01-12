@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Limolink Reservations</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Roboto+Condensed:300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
+
+  <header id="hdr-site">
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div id="hdr-main">
+            <a href="login.html" id="logo">
+                <img src="img/logo.png" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+                <div class="closed">
+                    Menu
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <nav id="menu" class="collapsed">
+            <ul class="menu-main">
+                <li><a href="reservations.html">Reservations</a></li>
+                <li class="active"><a href="book-01.html">Book a Ride</a></li>
+                <li><a href="profiles.html">Profiles</a></li>
+                <li><a href="receipts.html">Receipts</a></li>
+                <li><a href="get-a-quote.html">Get a Quote</a></li>
+                <li class="user-menu"><a href="#.html">
+                  <i class="fa-regular fa-circle-user"></i>
+                  <i class="fa-solid fa-bars"></i>
+                  <span>My Account</span>
+                </a>
+                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                  <ul id="menu-1" class="collapsed">
+                    <p>Logged in as: <strong>Luke Skywalker</strong></p>
+                    <li><a href="account.html">Edit My Account</a></li>
+                    <li><a href="login.html">Log out</a></li>
+                    <p class="divider">Choose Account</p>
+                    <li><a href="#.html">All Acccounts</a></li>
+                    <li><a href="#.html">Yankee CEO Transportation</a></li>
+                    <li><a href="#.html">NCAA Rules Committee</a></li>
+                  </ul>
+                </li>
+            </ul>
+            <!-- <div class="menu-user">
+              <a href="#.html" id="user-menu-toggle">
+                <span class="menu-alert">2</span>
+                <i class="fa-regular fa-circle-user"></i>
+                <i class="fa-solid fa-bars"></i>
+              </a>
+              <ul id="user-menu-list">
+                <div>Welcome, <strong>Luke Skywalker</strong></div>
+                <li><a href="#.html">My Account</a></li>
+                <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
+                <li class="divider">Choose Account</li>
+                <li><a href="#.html">All Acccounts</a></li>
+                <li><a href="#.html">Yankee CEO Transportation</a></li>
+                <li><a href="#.html">NCAA Rules Committee</a></li>
+              </ul>
+            </div> -->
+            <!-- <a href="#.html" class="btn-theme">Book New</a> -->
+        </nav>
+        </div>
+    </div>
+  </header>
+  
+  <main id="content">
+
+  <!-- Step Indicator -->
+  <div class="book-steps">
+    <ol>
+      <li class="active"><a href="book-01.html"><strong>01</strong> Who, Where, When</a></li>
+      <li><a href="book-02.html"><strong>02</strong> Vehicle Select</a></li>
+      <li><a href="book-03.html"><strong>03</strong> Confirm and Pay</a></li>
+    </ol>
+  </div>
+  
+  <div class="book-layout">
+    <div class="col panel">
+      <form class="ll-form" action="book-02.html">
+
+        <div class="toggle-header">
+          <h1>Who, Where, When</h1>
+          <div class="btn-toggle-group">
+            <button class="active">Transfer</button>
+            <button>Hourly</button>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="form-group">
+            <div class="flex">
+              <label>Account</label>
+              <div class="custom-select">
+                <select>
+                  <option>Select</option>
+                  <option>NCAA Board of Regents</option>
+                  <option>Carolina Panthers Football</option>
+                  <option>Miami Dolphins Football</option>
+                  <option>Rebel Alliance</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="flex">
+              <label>Passenger</label>
+              <div class="custom-select">
+                <select>
+                  <option>Select</option>
+                  <option>Claudia Gray</option>
+                  <option>Emperor Palpatine</option>
+                  <option>Tyreek Hill</option>
+                  <option>Benjamin Rush</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="form-group">
+            <div class="flex">
+              <label>Pickup Date</label>
+              <input type="date" value="2024-03-29" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="flex">
+              <label>Pickup Time</label>
+              <input type="time" value="23:30" />
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="form-group">
+            <div class="flex">
+              <label>Passengers</label>
+              <input type="number" name="passengers" min="1" max="10" value="1" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="flex">
+              <label>Luggage</label>
+              <input type="number" name="luggage" min="1" max="10" value="1" />
+            </div>
+          </div>
+        </div>
+
+        <div class="locations">
+
+          <!-- Location Item -->
+          <div class="location-item">
+            <div class="form-group">
+              <div class="flex">
+                <label>Pickup</label>
+                <ul class="location-list">
+                  <li><a href="#.html" class="tablinks active" onclick="locType(event, 'Place')" data-tab="Place">Place</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Commercial-Aviation')" data-tab="Commercial-Aviation">Comm. Aviation</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Private-Aviation')" data-tab="Private-Aviation">Pvt. Aviation</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Train')" data-tab="Train">Train</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Pier')" data-tab="Pier">Pier</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Heliport')" data-tab="Heliport">Heliport</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Quick-List')" data-tab="Quick-List">Quick List</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Recents')" data-tab="Recents">Recents</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Address-Book')" data-tab="Address-Book">Address Book</a></li>
+                </ul>
+              </div>
+
+              
+              <div class="location-input">
+
+                <!-- Place -->
+                <div data-content="Place" class="tabcontent">
+                  <i class="fa fa-search"></i>
+                  <input type="search" placeholder="Search Place">
+                </div>
+
+                <!-- Commercial Air -->
+                <div data-content="Commercial-Aviation" class="tabcontent">
+                  <i class="fa fa-search"></i>
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Search Airports">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-plane"></i>
+                      <input type="text" placeholder="Airline">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="number" placeholder="Flight No.">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Private Air -->
+                <div data-content="Private-Aviation" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Search Airports">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-plane"></i>
+                      <input type="text" placeholder="FBO/Hanger">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="text" placeholder="Tail No.">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-headset"></i>
+                      <input type="text" placeholder="Flight Designator">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Train -->
+                <div data-content="Train" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-train"></i>
+                      <input type="text" placeholder="Station Code">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="text" placeholder="Train Number">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pier -->
+                <div data-content="Pier" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-ship"></i>
+                      <input type="text" placeholder="Cruise Line">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-id-badge"></i>
+                      <input type="text" placeholder="Ship Name">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Heliport -->
+                <div data-content="Heliport" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa-regular fa-clock"></i>
+                      <input type="time" value="12:00">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick List -->
+                <div data-content="Quick-List" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-list"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>Claudia Gray</option>
+                          <option>Emperor Palpatine</option>
+                          <option>Tyreek Hill</option>
+                          <option>Benjamin Rush</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Recents -->
+                <div data-content="Recents" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa-regular fa-clock"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>Claudia Gray</option>
+                          <option>Emperor Palpatine</option>
+                          <option>Tyreek Hill</option>
+                          <option>Benjamin Rush</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Address Book -->
+                <div data-content="Address-Book" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa-regular fa-address-book"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>123 House Street</option>
+                          <option>Rebel Base, Yavin 4</option>
+                          <option>Miami Dolphins Practice Facility</option>
+                          <option>Liberty Pub</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+
+            </div>
+          </div>
+
+          <!-- Location Item -->
+          <div class="location-item">
+            <div class="form-group">
+              <div class="flex">
+                <label>Stop #1</label>
+                <ul class="location-list">
+                  <li><a href="#.html" class="tablinks active" onclick="locType(event, 'Place')" data-tab="Place">Place</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Commercial-Aviation')" data-tab="Commercial-Aviation">Comm. Aviation</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Private-Aviation')" data-tab="Private-Aviation">Pvt. Aviation</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Train')" data-tab="Train">Train</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Pier')" data-tab="Pier">Pier</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Heliport')" data-tab="Heliport">Heliport</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Quick-List')" data-tab="Quick-List">Quick List</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Recents')" data-tab="Recents">Recents</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Address-Book')" data-tab="Address-Book">Address Book</a></li>
+                </ul>
+              </div>
+
+              
+              <div class="location-input">
+
+                <!-- Place -->
+                <div data-content="Place" class="tabcontent">
+                  <i class="fa fa-search"></i>
+                  <input type="search" placeholder="Search Place">
+                </div>
+
+                <!-- Commercial Air -->
+                <div data-content="Commercial-Aviation" class="tabcontent">
+                  <i class="fa fa-search"></i>
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Search Airports">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-plane"></i>
+                      <input type="text" placeholder="Airline">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="number" placeholder="Flight No.">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Private Air -->
+                <div data-content="Private-Aviation" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Search Airports">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-plane"></i>
+                      <input type="text" placeholder="FBO/Hanger">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="text" placeholder="Tail No.">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-headset"></i>
+                      <input type="text" placeholder="Flight Designator">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Train -->
+                <div data-content="Train" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-train"></i>
+                      <input type="text" placeholder="Station Code">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="text" placeholder="Train Number">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pier -->
+                <div data-content="Pier" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-ship"></i>
+                      <input type="text" placeholder="Cruise Line">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-id-badge"></i>
+                      <input type="text" placeholder="Ship Name">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Heliport -->
+                <div data-content="Heliport" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa-regular fa-clock"></i>
+                      <input type="time" value="12:00">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick List -->
+                <div data-content="Quick-List" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-list"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>Claudia Gray</option>
+                          <option>Emperor Palpatine</option>
+                          <option>Tyreek Hill</option>
+                          <option>Benjamin Rush</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Recents -->
+                <div data-content="Recents" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa-regular fa-clock"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>Claudia Gray</option>
+                          <option>Emperor Palpatine</option>
+                          <option>Tyreek Hill</option>
+                          <option>Benjamin Rush</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Address Book -->
+                <div data-content="Address-Book" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa-regular fa-address-book"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>123 House Street</option>
+                          <option>Rebel Base, Yavin 4</option>
+                          <option>Miami Dolphins Practice Facility</option>
+                          <option>Liberty Pub</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Location Item -->
+          <div class="location-item">
+            <div class="form-group">
+              <div class="flex">
+                <label>Dropoff</label>
+                <ul class="location-list">
+                  <li><a href="#.html" class="tablinks active" onclick="locType(event, 'Place')" data-tab="Place">Place</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Commercial-Aviation')" data-tab="Commercial-Aviation">Comm. Aviation</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Private-Aviation')" data-tab="Private-Aviation">Pvt. Aviation</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Train')" data-tab="Train">Train</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Pier')" data-tab="Pier">Pier</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Heliport')" data-tab="Heliport">Heliport</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Quick-List')" data-tab="Quick-List">Quick List</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Recents')" data-tab="Recents">Recents</a></li>
+                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Address-Book')" data-tab="Address-Book">Address Book</a></li>
+                </ul>
+              </div>
+
+              
+              <div class="location-input">
+
+                <!-- Place -->
+                <div data-content="Place" class="tabcontent">
+                  <i class="fa fa-search"></i>
+                  <input type="search" placeholder="Search Place">
+                </div>
+
+                <!-- Commercial Air -->
+                <div data-content="Commercial-Aviation" class="tabcontent">
+                  <i class="fa fa-search"></i>
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Search Airports">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-plane"></i>
+                      <input type="text" placeholder="Airline">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="number" placeholder="Flight No.">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Private Air -->
+                <div data-content="Private-Aviation" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Search Airports">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-plane"></i>
+                      <input type="text" placeholder="FBO/Hanger">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="text" placeholder="Tail No.">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-headset"></i>
+                      <input type="text" placeholder="Flight Designator">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Train -->
+                <div data-content="Train" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-train"></i>
+                      <input type="text" placeholder="Station Code">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-hashtag"></i>
+                      <input type="text" placeholder="Train Number">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pier -->
+                <div data-content="Pier" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-ship"></i>
+                      <input type="text" placeholder="Cruise Line">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa fa-id-badge"></i>
+                      <input type="text" placeholder="Ship Name">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Heliport -->
+                <div data-content="Heliport" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-search"></i>
+                      <input type="search" placeholder="Pickup Location">
+                    </div>
+                    <div class="ico-input">
+                      <i class="fa-regular fa-clock"></i>
+                      <input type="time" value="12:00">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick List -->
+                <div data-content="Quick-List" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa fa-list"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>Claudia Gray</option>
+                          <option>Emperor Palpatine</option>
+                          <option>Tyreek Hill</option>
+                          <option>Benjamin Rush</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Recents -->
+                <div data-content="Recents" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa-regular fa-clock"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>Claudia Gray</option>
+                          <option>Emperor Palpatine</option>
+                          <option>Tyreek Hill</option>
+                          <option>Benjamin Rush</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Address Book -->
+                <div data-content="Address-Book" class="tabcontent">
+                  <div class="flex">
+                    <div class="ico-input">
+                      <i class="fa-regular fa-address-book"></i>
+                      <div class="custom-select">
+                        <select>
+                          <option>Select</option>
+                          <option>123 House Street</option>
+                          <option>Rebel Base, Yavin 4</option>
+                          <option>Miami Dolphins Practice Facility</option>
+                          <option>Liberty Pub</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <button class="btn-theme btn-secondary">Cancel</button>
+          <button class="btn-theme btn-secondary"><i class="fa fa-add"></i>Add Stop</button>
+          <button type="submit" class="btn-theme">Continue</button>
+        </div>
+      </form>
+      
+      
+    </div>
+    <div class="col map-item panel">
+      <div class="map-wrapper">
+        <img src="img/map-example.png" />
+      </div>
+    </div>
+  </div>
+
+  </main>
+  
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2024 LimoLink | <a href="#.html">Privacy Policy</a> | <a href="#.html">Terms & Conditions</a><a href="#.html">Privacy Policy</a> | <a href="#.html">To Book Reservations : (877) 798-5466</a> | <a href="mailto:reservations@limolink.com">reservations@limolink.com</a> | <a href="mailto:customersupport@limolink.com">CustomerSupport@limolink.com</a></p>
+  <p>Version 0.0.1 | Updated 02-28-2024</p>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

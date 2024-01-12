@@ -1,0 +1,65 @@
+/* LimoLink Forms */
+.ll-form {display: grid; gap: 15px;}
+.ll-form ::placeholder {color: var(--form-text); opacity: 1;}
+
+.ll-form .grid {gap: 15px;}
+.ll-form .flex {display: flex; gap: 10px;}
+
+.ll-form input, .ll-form textarea, .form-group input[type="month"], .form-group input[type="email"] {background: #fff; border: 1px solid rgba(0,0,0,.2); font-size: 1rem; color: var(--form-text);accent-color: var(--dark);} 
+.ll-form input:active {border: none;}
+.ll-form label {color: var(--dark); text-transform: uppercase; font-weight: 700; font-size: .7rem;}
+.ll-form h3 {margin: 1rem 0 0 0;}
+.form-group {background: var(--bkg); border: 1px solid rgba(0, 0, 0, 0.1);}
+.form-group label {border-right: 1px solid #D0D0D0; padding: 5px 5px 5px 15px; display: inline-block; width: 115px; margin: 10px 0; flex: 105px 0 0; align-self: center;}
+.form-group input[type="date"], .form-group input[type="time"], .form-group input[type="number"]  {width: 100%; border: none; background: none; padding: 0 10px; accent-color: var(--dark); border-radius: 0; color: var(--form-text);}
+
+.input-row {
+input[type="text"], input[type="month"], input[type="email"], input[type="password"] {width: 100%; margin: 8px 8px 8px 0; padding: 0 7px; height: 35px;}
+textarea {width: 100%; margin: 10px 10px 10px 0; padding: 10px;}
+}
+
+.form-group p.helper {margin: 0 0 1rem 0; align-self: center; color: var(--form-text);}
+.form-group .flex > p.helper {margin: 0;}
+.long-label label {flex-basis: 200px !important;}
+
+/* The container must be positioned relative: */
+.custom-select {position: relative; width: 100%; color:  var(--form-text);}
+.custom-select select {display: none; /*hide original SELECT element: */}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {position: absolute; content: ""; top: calc(50% - 3px); right: 15px; width: 0; height: 0;border: 5px solid transparent; border-color: var(--dark) transparent transparent transparent; opacity: .5;}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active {box-shadow: 0 0 0 2px var(--dark);}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent var(--dark) transparent;
+  top: calc(50% - 10px);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {color: var(--dark); height: 100%; display: flex; align-items: center;cursor: pointer;padding: 0 30px 0 10px;color: var(--form-text);}
+.select-items div { padding: 10px;}
+.select-items div:hover {color: var(--dark);}
+
+/* Style items (options): */
+.select-items { position: absolute; width: calc(100% + 1px); top: 103%; left: 0; right: 0; z-index: 99; transition: var(--transition); visibility: visible; opacity: 1; background: #fff; border: 1px solid #ccc; box-shadow: var(--box-shadow-sm);}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  visibility: hidden; opacity: 0;
+  top: 105%;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+} 
+
+/* Inline Forms */
+.ll-form-inline label {flex: 1; padding-right: 15px;}
+.fixed-label {position: relative;}
+.fixed-label input {width: 100%; padding: 7px 5px 7px 125px;}
+.fixed-label label {position: absolute; left: 15px; top: 25%; width: 100px; display: flex; align-items: center; height: 50%; margin: 0; border-right: 1px solid var(--light-gray);}
+
+/* TABLET */
+@media (min-width: 768px) {
+  // .ll-form .grid + .grid {margin-top: 15px;}
+}

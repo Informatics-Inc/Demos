@@ -1,0 +1,136 @@
+// .book-steps {display: none}
+.book-layout {@include container; margin: var(--spacer) auto; display: grid; gap: 15px;}
+.panel {padding: var(--spacer); background: #fff; box-shadow: var(--box-shadow-sm);}
+
+.toggle-header {border-bottom: 1px solid var(--light-gray); padding: 0 0 20px 0; margin-bottom: 10px;}
+.toggle-header h1, .toggle-header h2 {margin: 0 0 1rem 0;}
+.btn-toggle-group {display: flex;}
+.btn-toggle-group button {background: var(--light); border: 1px solid rgba(0,0,0,.1); margin: 0; color: var(--form-text); font-size: .85rem; padding: 5px 15px; border-radius: 0 4px 4px 0; flex: 1;}
+.btn-toggle-group button.active {background: var(--dark); color: #fff; border-color: var(--dark);}
+.btn-toggle-group button:first-of-type {border-radius: 4px 0 0 4px;}
+.btn-toggle-group button + button {border-left: none;}
+
+/* Location Tabs */
+// .location-item .form-group label {border: none;}
+.locations {display: grid; gap: 15px; position: relative;}
+.locations:before {content: ""; position: absolute; left: 0; top: 15px; bottom: 70px; border-left: 1.5px dashed var(--light-gray);}
+.location-item {padding-left: 15px; position: relative;}
+.location-item:before {content: "\f192";font-family: FontAwesome; position: absolute; left: -6px; top: 10px; font-size: 12px; background: #fff; padding: 5px 0;}
+.location-item:first-of-type:before, .location-item:last-of-type:before {content: "\f005";}
+
+.location-item .form-group label {flex-basis: 89px;}
+.location-list {display: flex; flex-wrap: wrap; align-items: center; list-style: none; margin: 10px 0; padding: 0;}
+.location-list a {color: var(--form-text); font-weight: 600; font-size: .75rem; letter-spacing: -.2px; text-decoration: none; padding: 3px 8px; border-right: 1px solid var(--light-gray); display: inline-block;}
+.location-list a:hover {color: var(--dark);}
+.location-list li:last-of-type a {border: none;}
+.location-list a.active {background: var(--dark); color: #fff; border-color: transparent; border-radius: 3px; box-shadow: 3px 3px 5px rgba(0,0,0,.15);}
+.location-input, .tabcontent input {width: 100%;}
+
+.location-input .flex {flex-wrap: wrap;}
+.location-input .flex .ico-input {flex: 150px 1 1;}
+.location-input .tabcontent {padding: 0 15px 15px 15px; display: none; position: relative;}
+.location-input .tabcontent > i {position: absolute; left: 26px; top: 12px;}
+.location-input .tabcontent:first-of-type {display: block;}
+.location-input .tabcontent input, .location-input .select-items div, .location-input .select-selected {padding: 7px 10px 7px 35px; background: #fff; border: 1px solid rgba(0,0,0,.2); min-height: 40px;}
+.location-input .select-items div {border: none; border-bottom: 1px dotted #ccc;}
+.location-input .select-items div:hover {background-color: rgba(0, 0, 0, 0.1);}
+
+/* Ico Input */
+.ico-input {position: relative;}
+.ico-input  > i {position: absolute; left: 12px; top: 12px; z-index: 15;}
+
+/* Form Actions */
+.form-actions {display: flex; flex-wrap: wrap; gap: 15px;border-top: 1px solid var(--light-gray); padding: 20px 0 0 0; margin-top: 10px; margin-top: auto;}
+.form-actions > * {flex: 1;}
+.form-actions button:last-of-type {flex: 100%;}
+.form-actions button:hover {cursor: pointer;}
+
+/* Map */
+.map-item {display: none;}
+
+/* Car Select */
+.car-choice {display: block; position: relative; padding: 5px 15px 5px 45px; background: var(--bkg);cursor: pointer; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; align-items: center;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; border: 5px; overflow: hidden;}
+.car-choice img {max-width: 125px; mix-blend-mode: multiply;}  
+.car-choice input {position: absolute;opacity: 0;cursor: pointer;}
+.checkmark {position: absolute; inset: 0; border: 1px solid rgba(0,0,0,.1); background-color: none; border-radius: 5px; transition: var(--transition); background: rgba(255,255,255,.25);}
+.car-choice:hover input ~ .checkmark {border-color: rgba(0,0,0,.25); background: none;}
+.car-choice input:checked ~ .checkmark {border-color: var(--dark);}
+.checkmark:after {content: "\f00c";font-family: FontAwesome; color: #fff; font-size: 14px;position: absolute;display: none; left: -37px; top: 0; background: var(--dark); height: 100%; width: 30px; text-align: center; line-height: 6.5;transition: var(--transition); transition-duration: 150ms; display: block;}
+.car-choice input:checked ~ .checkmark:after {left: 0;}
+.car-name {text-transform: none; font-size: 1.25rem; font-weight: 400;}
+
+// .car-price {text-transform: none; font-size: 1.25rem; font-weight: 400;}
+.car-price strong {text-transform: none; font-size: 1.25rem; font-weight: 400; margin-left: 5px;}
+
+/* Summary */
+.summary {height: 100%;}
+.summary {display: flex; justify-content: flex-start; flex-direction: column; height: 100%;}
+.summary p {margin: 0; display: flex; font-size: .8rem; padding: 10px; line-height: 1.2;}
+.summary strong {flex: 100px 0 0; float: left; gap: 15px;}
+.summary p:nth-of-type(2n) {background: #f4f4f4;}
+.summary .summary-cost {border-top: 1px solid var(--light-gray); background: none !important; font-size: 1.25rem; text-transform: uppercase; margin-top: auto; padding: 30px 0 10px 0; text-align: center; display: block;}
+.summary .summary-cost strong {float: none; margin-right: 1rem;}
+
+/* Add Button */
+.add-action {flex: 100px 0 0; border: none; background: none; color: var(--dark); font-weight: 700; padding: 0 15px 0 10px; border-left: 1px solid rgba(0,0,0,.1); font-size: .75rem; text-decoration: none; transition: var(--transition); cursor: pointer; margin-left: auto; text-align: left; display: flex; align-items: center; color: var(--secondary);}
+.add-action .fa {margin: 0 5px 0 0;}
+.add-action:hover {background: #fff;}
+
+/* Checkbox Group */
+.checkbox-group {width: 100%;}
+.checkbox-group h3, .form-group h3 {margin: .25rem 0 1rem 0; padding: 0 0 0 5px; font-size: .85rem; font-weight: 600; align-self: center; margin: 0;}
+.checkbox-group label {width: auto; flex: auto 1 1; border: 0; padding: 0; margin: 0 0 1rem 0;}
+.checkbox-item {display: flex; flex-wrap: wrap; padding: 3px 5px; transition: var(--transition);}
+.checkbox-item:hover {background: rgba(0, 0, 0, 0.05); color: var(--dark);}
+.checkbox-item label {width: auto; flex: auto 1 1; padding: 0; margin: 0; text-transform: none; font-weight: 400; font-size: .85rem;}
+.checkbox-title {flex: 150px 1 1; font-size: .85rem;}
+.checkbox-options input {margin: 0 1rem 0 0;}
+.form-group-content {border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 15px;} 
+
+.checkbox-inline label {text-transform: none; font-weight: 400; font-size: .85rem; border: 0; padding: 0; width: auto !important;}
+.modal-item .long-label label {flex-basis: 250px;}
+.checkbox-list {padding: 15px;}
+
+/* Traditional Checkbox */
+.traditional-checkbox label {border: 0; padding: 0; width: auto; flex: 1;}
+.traditional-checkbox label input {margin: 0 5px 0 0;}
+
+/* TABLET */
+@media (min-width: 768px) {
+.toggle-header {display: flex; justify-content: space-between; align-items: center;}
+.toggle-header h1, .toggle-header h2 {margin: 0;}
+
+.car-select {grid-template-columns: 1fr 1fr;}
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {
+.book-layout {display: grid; grid-template-columns: 3fr 1.25fr; gap: 20px;}
+.form-actions > * {flex: 150px 0 1;}
+.form-actions button:last-of-type {flex: 150px 0 1;}
+.form-actions button:first-of-type {margin-right: auto;}
+
+/* Map */
+.map-item {display: block; box-shadow: var(--box-shadow-sm); position: relative; z-index: -1;}
+.map-wrapper {height: 100%; width: 100%;}
+.map-item img {height: 100%; width: 100%; object-fit: cover; border: 1.5px solid var(--light-gray);}
+
+.checkbox-item {border: none;}
+
+.form-group-content {padding-left: 104px;}
+.checkbox-group {border-left: 1px solid rgba(0, 0, 0, 0.15); padding-left: 10px;}
+}
+
+@keyframes pulse { 
+    0% { 
+        transform: scale(1); 
+    } 
+
+    50% { 
+        transform: scale(1.15); 
+    } 
+
+    100% { 
+        transform: scale(1); 
+    } 
+} 
