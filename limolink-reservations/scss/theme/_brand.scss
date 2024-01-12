@@ -50,7 +50,7 @@ p a {font-weight: 700; text-decoration: underline;}
 p a:hover {text-decoration: none;}
 
 /* Buttons */
-.btn-theme {background: var(--dark); color: #fff; padding: .75rem 1rem; display: block; text-decoration: none; border-radius: 3px; text-align: center; text-transform: uppercase; font-weight: 700;font-size: .8rem; border: none; border-radius: 4px; border: 1.5px solid var(--dark); transition: var(--transition);}
+.btn-theme {background: var(--secondary); color: #fff; padding: .75rem 1rem; display: block; text-decoration: none; border-radius: 3px; text-align: center; text-transform: uppercase; font-weight: 700;font-size: .8rem; border: none; border-radius: 4px; border: 1.5px solid var(--dark); transition: var(--transition);}
 .btn-secondary {background: none; border-color: var(--dark); color: var(--dark);}
 .btn-theme:hover {background: #555;}
 .btn-theme.btn-secondary:hover {background: var(--light-gray); color: var(--dark);}
