@@ -1,0 +1,45 @@
+.wp-block-group.is-style-bkg-light h2.has-text-align-center{margin-top:50px}
+:where(.wp-block) {margin-top: 0; margin-bottom: 0;}
+.wp-block-column {flex-grow: 1; flex-basis: 0;}
+.wp-block-column.is-vertically-aligned-center {align-self: center;}
+.wp-block-columns {
+    margin: var(--spacer-vert) auto;
+    max-width: var(--max-width);
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+}
+.wp-block-columns .wp-block-columns {margin-top: 0; margin-bottom: 0;}
+.wp-block-columns.alignfull,
+:where(.wp-block)[data-align="full"],
+:where(.wp-block)[data-align="full"] > div {
+    max-width: none;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+:where(.wp-block)[data-align="full"] > div div {margin-left: auto; margin-right: auto;}
+.wp-block-columns.is-layout-flex {gap: var(--column-gap);}
+.container .wp-block-columns.is-layout-flex {gap: var(--column-gap-lg);}
+
+.wp-block-columns + .wp-block-columns {margin: var(--spacer-vert) auto var(--spacer-vert) auto;}
+
+.wp-block-columns .wp-block-columns {padding-left: 0; padding-right: 0;}
+.wp-block-columns.alignfull > .wp-block-columns, .wp-block-columns.alignfull > .wp-block-column,  .wp-block-columns.alignfull > .wp-block-column > .wp-block-columns {padding-left: var(--spacer); padding-right: var(--spacer);}
+
+.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {max-width: var(--max-width);}
+
+.wp-block-group {margin-top: var(--spacer-vert);margin-bottom: var(--spacer-vert); max-width: var(--max-width); margin-left: auto; margin-right: auto;}
+.wp-block-group.alignfull {max-width: 100%;}
+
+.wp-block-group + .footer {margin-top: calc(var(--spacer-vert) * -1);}
+#content .wp-block-group:last-of-type {margin-bottom: 0;}
+@media (min-width: 768px) {
+    .three-cta-boxes .wp-block-columns.is-layout-flex{  display: grid;
+        grid-template-columns: repeat(3, 1fr);}
+    .wp-block-image .alignleft {float:left; margin: 0 2rem 2rem 0;}
+    .wp-block-image .alignright {float:right; margin: 0 0 2rem 2rem;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+}

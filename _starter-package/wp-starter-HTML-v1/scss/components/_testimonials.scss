@@ -1,9 +1,0 @@
-.testimonial {position: relative; padding: 0 0 0 65px;}
-.testimonial:before {content: "\f10d";font-family: FontAwesome; color: var(--accent-1); background: var(--primary); font-size: 1.25rem; width: 40px; height: 40px; padding: 0 11px; border-radius: 50%; display: block; display: flex; justify-content: center; flex-direction: column; position: absolute; left: 0; top: 0;}
-.testimonial:after {position: absolute; left: 18px; bottom: 0; height: calc(100% - 60px); background: #ccc; width: 1px; content: ""; display: block;}
-.testimonial .quote {font-size: 1.25rem;}
-.testimonial .author {font-weight: 700;}
-
-.testimonial.fullwidth {text-align: center; padding: 75px 10% 25px 10%;}
-.testimonial.fullwidth:before {left: calc(50% - 20px); z-index: 5;}
-.testimonial.fullwidth:after {width: 150px; height: 1px; left: calc(50% - 75px); top: 20px; z-index: 3;}

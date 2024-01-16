@@ -1,0 +1,33 @@
+/* WP Button Styles */
+/* Primary */
+.wp-block-button__link {background: var(--accent-1); padding: .75rem 1rem; color: #fff; display: block; text-align: center; border-radius: 5px; text-decoration: none; font-weight: 700;position: relative; z-index: 5; box-shadow: 5px 5px 15px rgba(0,0,0,.15);}
+.wp-block-button__link:before {content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 100%; top: 0;left: 0; background-color: rgba(0,0,0,.15);transform-origin: bottom right; transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); z-index: -1; border-radius: 5px;}
+.wp-block-button__link:hover:before {transform: scaleX(1);transform-origin: bottom left;}
+
+/* Text */
+.is-style-btn-text .wp-block-button__link {background: none; padding: 1rem 0; color: var(--primary); box-shadow: none;}
+.is-style-btn-text .wp-block-button__link:before {display: none;}
+.is-style-btn-text .wp-block-button__link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);}
+.is-style-btn-text .wp-block-button__link:hover {color: var(--primary-dark);}
+.is-style-btn-text .wp-block-button__link:hover:after {margin: 0 0 0 10px;}
+
+/* Secondary */
+.is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
+.is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
+
+/* Icon Buttons */
+.ico-btn {background: var(--primary); color: #fff; padding: 15px; display: inline-block; display: grid; grid-template-columns: 40px auto; gap: 10px; align-items: center; border-radius: 5px; line-height: 1.1; font-weight: 700; text-decoration: none;}
+.ico-btn .fa {padding: 5px; aspect-ratio: 1 / 1; color: #fff; background: var(--accent-2); font-size: 1.5rem; display: flex; justify-content: center; flex-direction: column;text-align: center; border-radius: 3px;transition: var(--transition);}
+.ico-btn:hover {background: var(--primary-dark);}
+.ico-btn:hover .fa {transform: scale(1.1);}
+.ico-btn:nth-of-type(4n + 1) .fa {background: var(--accent-2);}
+.ico-btn:nth-of-type(4n + 2) .fa {background: var(--accent-3);}
+.ico-btn:nth-of-type(4n + 3) .fa {background: var(--accent-1);}
+.ico-btn:nth-of-type(4n + 4) .fa {background: var(--accent-4);}
+.ico-btn-group {display: grid; grid-template-columns: 1fr 1fr; gap: 15px;}
+.ico-btn-group .ico-btn {font-size: 1.25rem;}
+
+.ico-btn span {font-size: .85rem !important; color: var(--primary);}
+.ico-btn span:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition); }
+.ico-btn:hover span:after {margin: 0 0 0 10px;}
+.ico-btn:hover img {transform: scale(1.1); opacity: .3;}

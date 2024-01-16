@@ -1,0 +1,20 @@
+.event-list {display: grid; gap: 15px; margin: 2rem 0;}
+.event-item {border: 1px solid var(--gray); border-radius: var(--border-radius-sm); display: grid; grid-template-columns: 15px 75px auto; align-items: center; overflow: hidden; color: var(--text-color); text-decoration: none;}
+.event-item .info {padding: 15px;}
+.event-item .info p {font-size: .8rem; margin: 0;}
+.event-item .info h3 {font-size: 1.25rem; margin: 0 0 .5rem 0;}
+.event-item .date {font-size: 3rem; text-align: center; background: var(--light); line-height: 1; height: 100%; display: flex; justify-content: center; flex-direction: column; color: #999;}
+.event-item .date span {font-size: 1.25rem; display: block;}
+.event-item:before {display: block; content:""; background: var(--accent-1); height: 100%; width: 100%;}
+.event-item:hover {background: var(--light);}
+.event-item:nth-of-type(3n+2):before {background: var(--accent-2);}
+.event-item:nth-of-type(3n+3):before {background: var(--accent-3);}
+
+/* TABLET */
+@media (min-width:768px){.card-body{padding:30px}
+
+}
+
+@media (min-width: 1200px) {
+
+}
