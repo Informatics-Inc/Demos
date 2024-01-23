@@ -32,7 +32,8 @@
 .wp-block-group.alignfull {max-width: 100%;}
 
 .wp-block-group + .footer {margin-top: calc(var(--spacer-vert) * -1);}
-#content .wp-block-group:last-of-type {margin-bottom: 0;}
+// #content .wp-block-group:last-of-type {margin-bottom: 0;}
+
 @media (min-width: 768px) {
     .three-cta-boxes .wp-block-columns.is-layout-flex{  display: grid;
         grid-template-columns: repeat(3, 1fr);}

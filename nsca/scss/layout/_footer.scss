@@ -1,18 +1,29 @@
-.footer {position: relative; z-index: 5;color: var(--text-inverse);}
-.footer figure {position: absolute; inset: 0; background: var(--dark); z-index: -5;}
-.footer figure img {width: 100%; height: 100%; object-fit: cover; opacity: .25; margin: 0 auto;}
-.footer .footer-content {margin: 0 0 1rem 0; padding: 50px var(--side-padding); position: relative; z-index: 5; text-align: center;}
-.footer .footer-content img {margin: 0 auto;}
-.footer .footer-content > * {margin: 0 0 1rem 0;}
-.footer nav ul {list-style: none;}
-.footer nav ul  {display: flex; color: var(--text-inverse); flex-wrap: wrap; justify-content: center; column-gap: 10px; margin: 0; padding: 0;}
-.footer nav ul li {display: flex; align-items: center; gap: 10px; margin: 0;}
-.footer nav ul li:after {width: 5px; height: 5px; border-radius: 50%; background: var(--accent-1); content: ""; display: block;}
-.footer nav ul li:last-of-type:after {display: none;}
-.footer nav ul li a {color: var(--text-color-inverse);}
-.footer nav ul li a:hover {color: #fff; text-decoration: underline;}
+.footer {margin-top: 100px; background: url(../img/bkg-logomark.png) no-repeat var(--primary-dark);position: relative; z-index: 5;color: var(--text-color-inverse); background-position: -100px 150px; background-size: 400px auto;}
+.footer .call-to-action {position: relative; top: -50px; box-shadow: 0 10px 25px 15px rgba(0,0,0,.1);}
+.footer a {color: var(--text-color-inverse);}
 
-.footer-copy {text-align: center; border-top: 1px solid rgba(255,255,255,.25); padding: 15px; margin: 0; font-size: .85rem; color: var(--text-color-inverse);}
+.ftr-cols {display: grid; gap: 25px;}
+.footer .col img {margin: 0 0 2rem 0; display: block; max-width: 250px;}
+.footer ul {list-style: none; color: var(--text-inverse); margin: 0; padding: 0; column-count: 2;}
+.footer ul li {display: flex; align-items: center; gap: 10px; margin: 0;}
+.footer ul li a {color: var(--text-color-inverse); text-decoration: none; display: block;}
+.footer ul li a:hover {color: #fff; text-decoration: underline;}
+.footer .ico-btn-group {grid-template-columns: 1fr;}
+
+.footer-copy {text-align: center; border-top: 1px solid rgba(255,255,255,.25); padding: 15px; margin: 2rem 0 0 0; font-size: .85rem; color: var(--text-color-inverse);}
+
+.ftr-ico-content > * {display: grid; grid-template-columns: 25px auto;}
+.ftr-ico-content > * .fa {color: var(--accent-2);margin: 5px 0 0 0;}
+.ftr-ico-content .nav-social {margin: 0 0 0 25px; gap: 15px;}
+
+.footer-ad {padding: 50px 15px 0 15px; border-top: 1px solid var(--gray); display: flex; justify-content: center; align-tracks: center;}
+.footer-ad:before {content: "Discover Our Members:"; position: absolute; top: 0; width: 100%; text-align: center; padding: 15px; font-size: .65rem; font-weight: 700; text-transform: uppercase; opacity: .5;}
+/* TABLET */
+@media (min-width: 768px) {
+.footer {margin-top: 150px; background-position: -75px 100px;}
+.footer .call-to-action {top: -100px;}
+.ftr-cols {grid-template-columns: 1fr 1.25fr 250px;}
+}
 
 @media (min-width: 992px) {
 .footer .footer-content {padding: 100px 25px;}

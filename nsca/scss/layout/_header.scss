@@ -45,7 +45,10 @@
 
 /* DESKTOP */
 @media (min-width: 992px) {
+#hdr-site {box-shadow: none; position: fixed; width: 100%; top: 0; background: #fff;}
+#hdr-site.scroll {box-shadow:var(--box-shadow-sm);}
 #menu-toggle {display: none;}
+
 .hdr-tools {position: absolute; top: -48px; right: 1.5rem; z-index: 5; display: flex;}
 .hdr-tools a {color: var(--text-color-inverse); font-size: .85rem; padding: 5px; text-decoration: none;}
 .nav-social, .nav-mini {display: flex; gap: 8px;}
@@ -74,8 +77,7 @@
 
 /* Wordpress Nav Active State */
 #menu ul .current-page-ancestor > a,
-#menu ul .current-menu-item > a,
-#menu ul .current-menu-item a {
+#menu ul .current-menu-item > a {
     font-weight: 700;
     color: var(--primary);
 }

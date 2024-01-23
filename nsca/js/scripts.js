@@ -15,9 +15,9 @@
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 50) {
-      $("#site-header").addClass("scroll");
+      $("#hdr-site").addClass("scroll");
     } else {
-      $("#site-header").removeClass("scroll");
+      $("#hdr-site").removeClass("scroll");
     }
     var x = $(this).scrollTop();
     $(".page-header figure img").css(

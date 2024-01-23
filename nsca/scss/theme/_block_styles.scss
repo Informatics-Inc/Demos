@@ -1,15 +1,17 @@
 /* WP Paragraph Styles */
 .is-style-eyebrow {text-transform: uppercase; color: var(--primary); letter-spacing: 2px; margin: 0 0 .5rem 0;}
-.is-style-lead {font-size: 1.25rem; font-weight: 300;}
-.is-style-callout {font-size: 1.5rem; color: #888;}
-.is-style-max-width {max-width: 800px;}
+.is-style-lead {font-size: 1.35rem; font-weight: 400;}
+.is-style-callout {font-size: 1.25rem; border-left: 5px solid var(--accent-2); padding-left: 1.25rem;}
+.is-style-max-width {max-width: 800px; @include margin-auto;}
 
 /* WP Column Section Colors */
 /* Light background */
-
 .is-style-bkg-left, .is-style-bkg-right {padding: 1px 0; position: relative; z-index: 5; overflow: hidden;}
 .is-style-bkg-left:after, .is-style-bkg-right:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--light); border-radius: 0 10px 10px 0; content:""; z-index: -1; border-radius: 0 var(--border-radius-xl) var(--border-radius-xl) 0;}
 .is-style-bkg-right:after {left: auto; right: 0; border-radius: var(--border-radius-xl) 0 0 var(--border-radius-xl);}
+
+.is-style-bkg-blue {background: url(../img/bkg-logomark.png) no-repeat var(--primary-dark); background-size: 600px auto; background-position: 5% center; padding: 1px 0; color: var(--text-color-inverse);}
+.is-style-bkg-blue strong {color: #fff;}
 
 .is-style-linklist {list-style-type:none;padding-left:0;}
 .is-style-linklist li {list-style-type:none;position:relative;padding-left:24px;margin-bottom:15px;line-height:1.4}

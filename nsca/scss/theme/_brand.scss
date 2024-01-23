@@ -33,7 +33,7 @@
   --spacer-vert: 2rem;
   --column-gap: 2rem;
   --column-gap-lg: 4rem;
-  --fixed-header-height: 145px;
+  --fixed-header-height: 140px;
   --side-width: calc(((100vw - var(--max-width))/2) + var(--spacer));
 }
 
@@ -49,6 +49,8 @@ h4 {font-size: 1.5rem;}
 h5 {font-size: 1.4rem;}
 p, ul, ol {margin-bottom: 1.25rem;}
 p strong {color: var(--primary);}
+ul {padding: 0 0 0 15px;}
+ul li::marker {color: var(--accent-2);}
 
 /* Links */
 a {transition: var(--transition); color: var(--primary);}
@@ -57,6 +59,7 @@ p a:hover {text-decoration: none;}
 
 /* Layouts */
 .container {max-width: var(--max-width); margin: 0 auto; padding-left: var(--spacer);padding-right: var(--spacer); position: relative;}
+.container.skinny {max-width: 900px;}
 .box {padding: var(--spacer); border: 1px solid rgba(0,0,0,.1); box-shadow: 0 0 25px rgba(0,0,0,.05);}
 
 /* TABLET */
@@ -67,14 +70,14 @@ p a:hover {text-decoration: none;}
 /* DESKTOP */
 @media (min-width: 992px) {
   :root {
-  --spacer-vert: 6rem;
+  --spacer-vert: 4rem;
   }
+  #content {margin-top: var(--fixed-header-height);}
 }
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
   :root {
-  --spacer-vert: 6rem;
-  --fixed-header-height: 150px;
+  --spacer-vert: 5rem;
   }  
 }

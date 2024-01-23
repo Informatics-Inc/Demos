@@ -11,6 +11,7 @@ Date: Feb 2023
 @import "abstracts/utility";
 
 // Vendors 
+@import "components/flickity";
 /* Bootstrap Reqs */
 
 // Core
@@ -25,21 +26,23 @@ Date: Feb 2023
 @import "theme/layout";
 
 // Theme Layouts
-@import "layout/header_top";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/blog";
+@import "layout/directory";
 
-
-// Theme Components
+// Theme Common Components
+@import "components/hero";
 @import "components/page-headers";
 @import "components/image_blocks";
-@import "components/flickity";
 @import "components/cards";
-@import "components/showcase";
-@import "components/hero";
 @import "components/sidebar"; 
-@import "components/contact_form";  
+@import "components/cta"; 
+@import "components/contact_form";
+@import "components/accordion";
+
+// Theme Custom Components
+@import "components/showcase";
 @import "components/member-grid";  
-@import "components/fullimg-cards";  
-@import "components/event-list";  
+@import "components/fullimg-cards";
+@import "components/event-list";
