@@ -24,6 +24,7 @@ Date: Jan 2024
 @import "theme/buttons"; // style WP buttons
 
 // Theme Layouts
+@import "layout/header_top";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/blog";
@@ -39,8 +40,4 @@ Date: Jan 2024
 @import "components/standard/accordion";
 
 // Custom Components
-@import "components/custom/showcase";
-@import "components/custom/member-grid";  
-@import "components/custom/fullimg-cards";
-@import "components/custom/event-list";
-@import "components/custom/directory";
+@import "components/custom/add-new-here";
