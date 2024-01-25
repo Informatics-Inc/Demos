@@ -4,8 +4,6 @@
 .fullimg-cards .content {text-align: center; color: var(--text-color-inverse); padding: var(--spacer-vert) var(--spacer);}
 .fullimg-cards .content h2 {color: #fff;}
 
-.fullimg-cards .ico-btn {background: #fff; box-shadow: var(--box-shadow-lg); display: flex; justify-content: center; flex-direction: column; color: var(--text-color); text-align: center; gap: 20px; padding: 25px;}
-.fullimg-cards .ico-btn .fa {width: 50px;}
 /* TABLET */
 @media (min-width:768px){.card-body{padding:30px}
 .fullimg-cards .content {padding: 50px;}
@@ -13,7 +11,7 @@
 
 @media (min-width: 1200px) {
 .fullimg-cards .content {padding: 75px;}
-.fullimg-cards .ico-btn-group {margin-top: -2rem; grid-template-columns: 1fr 1fr 1fr 1fr;}
+.fullimg-cards .ico-btn-group {margin-top: -2rem;}
 .fullimg-cards .ico-btn-group a {font-size: 1.5rem; letter-spacing: -1px; padding: 35px;}
 .fullimg-cards .ico-btn-group a span {font-size: 1rem; letter-spacing: normal;}
 }
