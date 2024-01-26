@@ -48,26 +48,30 @@
         <nav id="menu" class="collapsed">
           <ul class="menu-main">
             <li><a href="reservations.html">Reservations</a></li>
-            <li class="active"><a href="book-01.html">Book a Ride</a></li>
+            <li class="active"><a href="book-01.html">Book Reservation</a></li>
             <li><a href="profiles.html">Profiles</a></li>
             <li><a href="receipts.html">Receipts</a></li>
             <li><a href="get-a-quote.html">Get a Quote</a></li>
-            <li class="user-menu"><a href="#.html">
-              <i class="fa-regular fa-circle-user"></i>
-              <i class="fa-solid fa-bars"></i>
-              <span>My Account</span>
-            </a>
-            <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
-              <ul id="menu-1" class="collapsed">
-                <p>Logged in as: <strong>Luke Skywalker</strong></p>
-                <li><a href="account.html">Edit My Account</a></li>
-                <li><a href="login.html">Log out</a></li>
-                <p class="divider">Choose Account</p>
-                <li><a href="#.html">All Acccounts</a></li>
-                <li><a href="#.html">Yankee CEO Transportation</a></li>
-                <li><a href="#.html">NCAA Rules Committee</a></li>
-              </ul>
-            </li>
+            <li class="user-menu">
+              <a href="account.html">
+                <i class="fa-regular fa-circle-user"></i>
+                <span>Edit My Proflie</span>
+              </a>
+              <div class="form-group ll-form">
+                <div class="flex">
+                  <label>Account</label>
+                  <div class="custom-select">
+                    <select>
+                      <option>All Accounts</option>
+                      <option>NCAA Board of Regents</option>
+                      <option>Carolina Panthers Football</option>
+                      <option>Miami Dolphins Football</option>
+                      <option>Rebel Alliance</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>  
         </ul>
     </nav>
       </div>
@@ -87,7 +91,7 @@
       <form class="ll-form flex-vert" action="book-03.html">
 
         <div class="toggle-header">
-          <h1>Confirm and Pay</h1>
+          <h1>Pay and Confirm</h1>
         </div>
         <div class="grid">
           <div class="form-group">
@@ -170,6 +174,34 @@
 
             </div>
           </div>
+
+          <div class="form-group">
+            <div class="flex">
+              <label>Invoice</label>
+              <div class="custom-select">
+                <select>
+                  <option>Select</option>
+                  <option>Option #1</option>
+                  <option>Option #2</option>
+                  <option>Option #3</option>
+                </select>
+              </div>
+
+              <!-- MODAL -->
+              <a href="#" data-target="new-invoice" class="add-action modal-toggle"><i class="fa fa-add"></i>Add New</a>
+              <div class="modal" id="new-invoice">
+                <div class="modal-item">
+                  <header class="toggle-header"><h2>Add New Invoice</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+                  <p>Options go here...</p>
+                  <div class="form-actions">
+                    <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+                    <button type="submit" class="modal-toggle btn-theme">Add Card</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
           
           <div class="form-group">
             <div class="flex">
@@ -214,7 +246,7 @@
                   <div class="checkbox-title">Confirmation</div>
                   <div class="checkbox-options">
                     <label>Text</label>
-                    <input type="checkbox" name="notify">
+                    <input type="checkbox" checked name="notify">
                     <label>Email</label>
                     <input type="checkbox" name="notify">
                   </div>
@@ -232,9 +264,9 @@
                   <div class="checkbox-title">Chauffer On Site</div>
                   <div class="checkbox-options">
                     <label>Text</label>
-                    <input type="checkbox" name="notify">
+                    <input type="checkbox" checked name="notify">
                     <label>Email</label>
-                    <input type="checkbox" name="notify">
+                    <input type="checkbox" checked name="notify">
                   </div>
                 </div>
                 <div class="checkbox-item">
@@ -260,6 +292,65 @@
               <div class="modal" id="edit-notify-2">
                 <div class="modal-item">
                   <header class="toggle-header"><h2>Lead Passenger Notifications</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+                  <p class="helper">Choose which options to show in the form</p>
+                  <div class="form-group checkbox-list">
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Chauffer Name & Number</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Chauffer On Site</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" checked name="notify">MapLink</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" checked name="notify">Vehicle Information</label>
+                    </div>
+                    <div class="traditional-checkbox">
+                      <label><input type="checkbox" name="notify">Confirmation</label>
+                    </div>
+                  </div>
+                  
+                  <div class="form-actions">
+                    <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+                    <button type="submit" class="modal-toggle btn-theme">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group-content flex">
+              <div class="checkbox-group">
+                <div class="checkbox-item">
+                  <div class="checkbox-title">MapLink</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Vehicle Informatics</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="flex">
+              <label>Notify</label>
+              <h3>Pilot #1</h3>
+              <!-- MODAL -->
+              <a href="#" data-target="edit-notify-pilot" class="add-action modal-toggle"><i class="fa fa-edit"></i>Edit Item</a>
+              <div class="modal" id="edit-notify-pilot">
+                <div class="modal-item">
+                  <header class="toggle-header"><h2>Pilot #1 Notifications</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
                   <p class="helper">Choose which options to show in the form</p>
                   <div class="form-group checkbox-list">
                     <div class="traditional-checkbox">

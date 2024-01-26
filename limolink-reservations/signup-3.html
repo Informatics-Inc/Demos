@@ -25,19 +25,41 @@
     <div class="content">
       
       <img src="img/logo.png" alt="Logo" />
-      <h1>Login to your account</h1>
-      <form class="ll-form" action="reservations.html">
+      <h1>Basic Information</h1>
+      <form class="ll-form long-label" action="reservations.html">
           <div class="fixed-label">
-            <label>Email</label>
-            <input type="email">
+            <label>First Name</label>
+            <input type="text">
           </div>
           <div class="fixed-label">
-            <label>Password</label>
-            <input type="password">
+            <label>Last Name</label>
+            <input type="text">
           </div>
-          <button type="submit" class="btn-theme">Login</button>
-          <p>Don't have an account? <a href="signup.html">Sign Up Here</a></p>
-          <p>Forgot your password? <a href="reset-pw.html">Reset Password</a></p>
+          <div class="fixed-label">
+            <label>Account Name</label>
+            <input type="text">
+          </div>
+          <div class="fixed-label">
+            <div class="flex">
+              <label>Customer Type</label>
+              <div class="custom-select">
+                <select>
+                  <option>- Select -</option>
+                  <option>NCAA Board of Regents</option>
+                  <option>Carolina Panthers Football</option>
+                  <option>Miami Dolphins Football</option>
+                  <option>Rebel Alliance</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="fixed-label">
+            <label>Code</label>
+            <input type="text">
+          </div>
+          <button type="submit" class="btn-theme">Submit</button>
+          <p>Already have an account? <a href="login.html">Login here.</a></p>
       </form>
     
     </div>

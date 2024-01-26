@@ -7,11 +7,7 @@
 .menu-main ul a {text-transform: none; opacity: .75;}
 
 /* User Menu */
-.user-menu ul {background: var(--light); list-style: none; padding: 0 1.5rem; border-radius: 5px;}
-.user-menu ul p {margin: 1.5rem 0 .5rem; font-size: .8rem; font-weight: 600; letter-spacing: -.25px;}
-.user-menu ul li a {padding: .35rem .25rem .35rem 1rem; text-decoration: underline; opacity: .7; border-left: 1px solid #ccc; display: block; width: 100%;}
-.user-menu > a i {display: none;}
-.user-menu ul li a:hover {padding: .35rem .15rem .35rem 1.15rem;}
+.user-menu {width: 100%; padding-bottom: 2rem;}
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
@@ -32,7 +28,7 @@
 /* Menu Collapse */
 #menu .btn-expand {position: absolute; right: 0; top: 0; height: auto; border: none; background: none; color: var(--dark); padding: 1rem;}
 .collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
-.show {height: auto;}
+.show {height: auto; overflow: visible;}
 
 /* Menu Links */
 .menu-main a {border-top: 1px dotted var(--gray);}
@@ -48,7 +44,7 @@
 .hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
 #menu {display: flex; align-items: center;}
 .menu-main {display: flex;}
-.menu-main a {padding: 2rem 1rem;}
+.menu-main a {padding: 2rem 1rem; font-size: .8rem;}
 #menu .btn-theme {margin-left: 1rem;}
 
 /* Dropdown */
@@ -65,8 +61,12 @@
 .menu-main .active > a:after {opacity: 1; top: 75%;}
 .menu-main ul a:hover {color: var(--dark); text-decoration: underline; padding: 10px 5px 10px 15px; background: var(--light);}
 
-.user-menu > a {font-size: 1.25rem; padding: .25rem 1.25rem; margin-left: .5rem; border-left: 1px solid #ddd; min-width: 83px;}
+.user-menu {padding: 0; width: auto;}
+.user-menu .form-group label {flex: 75px 0 0; font-size: .6rem;}
+.user-menu > a {font-size: 1.25rem; padding: .25rem 1.25rem; margin-left: .5rem; border-left: 1px solid #ddd;}
 .user-menu > a:after {display: none;}
+.user-menu .select-items {width: calc(100% + 85px); left: auto; right: 0;}
+
 .user-menu > a i {display: inline;}
 .user-menu > a span {display: none;}
 .user-menu ul p {margin: 0 0 .5rem 0;}
