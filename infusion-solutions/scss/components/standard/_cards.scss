@@ -1,0 +1,59 @@
+.page-link-card {padding:0px 10px}
+.page-link-card .text{width:90%;margin:0 auto;z-index:10;transition:  0.3s ease;position: relative; box-shadow: 0 3px 10px rgba(0,0,0,.1); border-radius: var(--border-radius-sm); overflow: hidden; background: #fff ;padding:30px;transition: box-shadow 0.3s ease;}
+.page-link-card:hover .text{box-shadow: 0 5px 15px rgba(0,0,0,.13);}
+.page-link-card p:last-of-type {margin: 0;}
+.page-link-card h3{ transition:  0.3s ease ;font-size:1.5rem;color:var(--primary);line-height:1.5rem;}
+.page-link-card h3:after{ transition:  0.3s ease ;content:"";display:block;width:35px;height:2px;background-color:var(--primary);margin-top:15px;} 
+.page-link-card h3 a{ text-decoration: none;}
+.page-link-card h3 a:hover{color:#000}
+.page-link-card p{ transition: 0.3s ease}
+.page-link-card p:last-of-type{margin-bottom:0px}
+.page-link-card .wp-block-buttons{margin:5px 0px 0px -8px}
+.post-info{font-weight: 700;color:#999}
+.post-info .fa{margin-right:5px}
+.page-link-card figure{width:100%;height:250px;border-radius: var(--border-radius-sm); justify-content:center;align-items:center;overflow:hidden; margin-bottom:-35px;}
+.page-link-card figure img { transition:  0.3s ease ;scale:1;width: 100%; height: 100%; object-fit: cover;}
+.page-link-card:hover figure img {scale:1.2}
+
+/* Icon Cards */
+.icon-card{position:relative;box-shadow:0 10px 25px rgba(0,0,0,.1);border-radius:var(--border-radius-sm);overflow:hidden;padding:30px;transition:box-shadow 0.3s ease;height:100%;background-color:rgba(255,255,255,1);}
+
+.icon-card figure{z-index:-10 ;position:absolute;top:0;right:0;bottom:0;left:0;}
+.icon-card figure img{transition:  0.3s ease ;scale:1;width: 100%; height: 100%; object-fit: cover}
+.icon-card figure:last-of-type{z-index:0 ; position:relative;transition:  0.3s ease ;width:80px;height:80px;background-color:var(--light);border-radius:50%;display:flex;justify-content:center;align-items:center;padding:18px;margin-bottom:25px}
+
+.icon-card h3{ transition:  0.3s ease ;font-size:1.5rem;color:var(--primary);line-height:1.5rem;}
+.icon-card p{transition:  0.3s ease}
+.icon-card h3:after{ transition:  0.3s ease ;content:"";display:block;width:35px;height:2px;background-color:var(--primary);margin-top:15px;} 
+.icon-card .wp-block-buttons{margin:5px 0px -5px -8px}
+.icon-card:hover {box-shadow: 10px 20px 35px rgba(0,0,0,.17)}
+
+/* Background Cards */
+.icon-card.hover-card:hover {transition:background-color 0.3s;overflow: hidden;background-color: rgba(75, 117, 136, 0.85);box-shadow: 0 30px 45px rgba(0,0,0,.17)}
+.icon-card.hover-card:hover h3,.icon-card.hover-card:hover p{color:#fff}
+.icon-card.hover-card:hover h3:after{background-color:#fff;} 
+.icon-card.hover-card:hover img{scale:1.2}
+.icon-card.hover-card:hover figure:last-of-type img{scale:1}
+.icon-card.hover-card:hover .wp-block-button__link{color:#fff}
+
+/* Bio Cards */
+.page-link-card.bio h3:after{display: none;margin-bottom:-15px;} 
+.page-link-card.bio{text-align:center}
+.page-link-card.bio a{font-size:0.8rem}
+.page-link-card.bio h3{margin-bottom:10px}
+.page-link-card.bio p{margin-bottom:15px;margin-top:-10px}
+.page-link-card.bio figure{border-radius:12px;height:315px;overflow:hidden;position: relative;}
+
+
+/* TABLET */
+@media (min-width:768px){.card-body{padding:30px}
+.page-link-card.grid-2x2-md:nth-child(odd){display:flex;flex-direction:row-reverse;}
+.page-link-card.grid-2x2-md:nth-child(even){display:flex;}
+.page-link-card.grid-2x2-md:nth-child(even) figure{min-height:350px;margin-bottom:0;margin-right:-45px;align-self: center;}
+.page-link-card.grid-2x2-md:nth-child(odd) figure{min-height:350px;margin-bottom:0;margin-left:-45px;align-self: center;}
+.page-link-card.grid-2x2-md .text{align-self: center;}
+}
+
+@media (min-width: 1200px) {
+
+}
