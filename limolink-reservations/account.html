@@ -48,26 +48,30 @@
         <nav id="menu" class="collapsed">
           <ul class="menu-main">
             <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="book-01.html">Book a Ride</a></li>
+            <li><a href="book-01.html">Book Reservation</a></li>
             <li><a href="profiles.html">Profiles</a></li>
             <li><a href="receipts.html">Receipts</a></li>
             <li><a href="get-a-quote.html">Get a Quote</a></li>
-            <li class="user-menu"><a href="#.html">
-              <i class="fa-regular fa-circle-user"></i>
-              <i class="fa-solid fa-bars"></i>
-              <span>My Account</span>
-            </a>
-            <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
-              <ul id="menu-1" class="collapsed">
-                <p>Logged in as: <strong>Luke Skywalker</strong></p>
-                <li><a href="account.html">Edit My Account</a></li>
-                <li><a href="login.html">Log out</a></li>
-                <p class="divider">Choose Account</p>
-                <li><a href="#.html">All Acccounts</a></li>
-                <li><a href="#.html">Yankee CEO Transportation</a></li>
-                <li><a href="#.html">NCAA Rules Committee</a></li>
-              </ul>
-            </li>
+            <li class="user-menu">
+              <a href="#.html">
+                <i class="fa-regular fa-circle-user"></i>
+                <span>Edit My Proflie</span>
+              </a>
+              <div class="form-group ll-form">
+                <div class="flex">
+                  <label>Account</label>
+                  <div class="custom-select">
+                    <select>
+                      <option>All Accounts</option>
+                      <option>NCAA Board of Regents</option>
+                      <option>Carolina Panthers Football</option>
+                      <option>Miami Dolphins Football</option>
+                      <option>Rebel Alliance</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>  
         </ul>
         </nav>
         </div>
@@ -99,12 +103,6 @@
             </div>
             <div class="form-group">
               <div class="flex input-row">
-                <label>24 Hour Clock</label>
-                <input type="text">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="flex input-row">
                 <label>Clock</label>
                 <div class="checkbox-inline">
                   <input type="checkbox" name="notify">
@@ -123,21 +121,49 @@
         <div class="col">
           <h2>Notifications</h2>
           <form class="ll-form">
-          <div class="form-group checkbox-list">
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">Chauffer Name & Number</label>
+            <div class="form-group">
+              <div class="flex input-row">
+                <label>EMail</label>
+                <input type="text">
+              </div>
             </div>
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">Chauffer On Site</label>
+            <div class="form-group">
+              <div class="flex input-row">
+                <label>Mobile Phone</label>
+                <input type="text">
+              </div>
             </div>
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">MapLink</label>
-            </div>
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">Vehicle Information</label>
-            </div>
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">Confirmation</label>
+            <div class="form-group">
+            <div class="form-group-no-label flex">
+              <div class="checkbox-group">
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Chauffer Name & Number</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Chauffer On Site</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" checked name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" checked name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">MapLink</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+              </div> 
             </div>
           </div>
         </form>
@@ -252,10 +278,6 @@
                     <header class="toggle-header"><h2>Additional Options:</h2></i></a></header>
                     <div class="form-group">
                       <div class="flex input-row">
-                        <label>Email Receipt</label>
-                        <input type="text">
-                      </div>
-                      <div class="flex input-row">
                         <label>Booking Agent</label>
                         <div class="checkbox-inline">
                           <input type="checkbox" name="notify">
@@ -263,23 +285,18 @@
                         </div>
                       </div>
                       <div class="flex input-row">
+                        <label>Email Receipt</label>
+                        <input type="text">
+                      </div>
+                      
+                      <div class="flex input-row">
                         <label>Lead Passenger</label>
                         <div class="checkbox-inline">
                           <input type="checkbox" name="notify">
                           <label>Send Email</label>
                         </div>
                       </div>
-                      <div class="flex input-row">
-                        <label>Save Card To</label>
-                        <div class="checkbox-inline">
-                          <input type="radio" name="save-card">
-                          <label>Booking Agent</label>
-                          <input type="radio" name="save-card">
-                          <label>Passenger</label>
-                          <input type="radio" name="save-card">
-                          <label>Don't Save</label>
-                        </div>
-                      </div>
+                      
                     </div>
                     <div class="form-actions">
                       <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
@@ -295,8 +312,8 @@
                 <label>Payment</label>
                 <p class="helper">Add a new card</p>
                 <!-- MODAL -->
-                <a href="#" data-target="new-payment" class="add-action modal-toggle"><i class="fa fa-plus"></i>Add Card</a>
-                <div class="modal" id="new-payment">
+                <a href="#" data-target="new-card" class="add-action modal-toggle"><i class="fa fa-plus"></i>Add Card</a>
+                <div class="modal" id="new-card">
                   <div class="modal-item">
                     <header class="toggle-header"><h2>Add New Credit Card</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
                     <div class="form-group">
@@ -324,33 +341,15 @@
                     <header class="toggle-header"><h2>Additional Options:</h2></i></a></header>
                     <div class="form-group">
                       <div class="flex input-row">
-                        <label>Email Receipt</label>
-                        <input type="text">
-                      </div>
-                      <div class="flex input-row">
-                        <label>Booking Agent</label>
+                        <label>Email Receipt?</label>
                         <div class="checkbox-inline">
                           <input type="checkbox" name="notify">
-                          <label>Send Email</label>
+                          <label>Yes, Send Email</label>
                         </div>
                       </div>
                       <div class="flex input-row">
-                        <label>Lead Passenger</label>
-                        <div class="checkbox-inline">
-                          <input type="checkbox" name="notify">
-                          <label>Send Email</label>
-                        </div>
-                      </div>
-                      <div class="flex input-row">
-                        <label>Save Card To</label>
-                        <div class="checkbox-inline">
-                          <input type="radio" name="save-card">
-                          <label>Booking Agent</label>
-                          <input type="radio" name="save-card">
-                          <label>Passenger</label>
-                          <input type="radio" name="save-card">
-                          <label>Don't Save</label>
-                        </div>
+                        <label>Email To:</label>
+                        <input type="email" placeholder="email@email.com">
                       </div>
                     </div>
                     <div class="form-actions">

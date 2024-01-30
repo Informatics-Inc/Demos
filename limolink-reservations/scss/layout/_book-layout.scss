@@ -5,11 +5,14 @@
 .toggle-header {border-bottom: 1px solid var(--light-gray); padding: 0 0 20px 0; margin-bottom: 10px;}
 .toggle-header h1, .toggle-header h2 {margin: 0 0 1rem 0;}
 .btn-toggle-group {display: flex;}
-.btn-toggle-group button {background: var(--light); border: 1px solid rgba(0,0,0,.1); margin: 0; color: var(--form-text); font-size: .85rem; padding: 5px 15px; border-radius: 0 4px 4px 0; flex: 1;}
-.btn-toggle-group button.active {background: var(--dark); color: #fff; border-color: var(--dark);}
-.btn-toggle-group button:first-of-type {border-radius: 4px 0 0 4px;}
-.btn-toggle-group button + button {border-left: none;}
+.btn-toggle-group a {background: var(--light); border: 1px solid rgba(0,0,0,.1); margin: 0; color: var(--form-text); font-size: .85rem; padding: 5px 15px; border-radius: 0 4px 4px 0; flex: 1; text-decoration: none;}
+.btn-toggle-group a.active {background: var(--dark); color: #fff; border-color: var(--dark);}
+.btn-toggle-group a:first-of-type {border-radius: 4px 0 0 4px;}
+.btn-toggle-group a + a {border-left: none;}
 
+.hours-toggle {height: 0;overflow: hidden;transition: height 0.2s ease;}
+.hours-toggle.show {height: auto;}
+.grid + .toggle-header {margin-top: 2rem;}
 /* Location Tabs */
 // .location-item .form-group label {border: none;}
 .locations {display: grid; gap: 15px; position: relative;}
@@ -28,12 +31,32 @@
 
 .location-input .flex {flex-wrap: wrap;}
 .location-input .flex .ico-input {flex: 150px 1 1;}
+.location-input .flex.flex-five-box {flex-wrap: wrap;}
+.location-input .flex.flex-five-box .ico-input {flex: 200px 1 1;}
 .location-input .tabcontent {padding: 0 15px 15px 15px; display: none; position: relative;}
 .location-input .tabcontent > i {position: absolute; left: 26px; top: 12px;}
 .location-input .tabcontent:first-of-type {display: block;}
 .location-input .tabcontent input, .location-input .select-items div, .location-input .select-selected {padding: 7px 10px 7px 35px; background: #fff; border: 1px solid rgba(0,0,0,.2); min-height: 40px;}
 .location-input .select-items div {border: none; border-bottom: 1px dotted #ccc;}
 .location-input .select-items div:hover {background-color: rgba(0, 0, 0, 0.1);}
+.location-input input::placeholder {font-size: .85rem;}
+
+.ico-actions {position: absolute; right: 10px; bottom: 16px; display: flex; transition: var(--transition); }
+.ico-actions a {font-size: 1rem; font-weight: 600; padding: 7px 5px; text-decoration: none; height: 100%;}
+.stops {display: grid; gap: 10px;}
+.stops .location-item {min-height: 0; transition: all 0.25s ease-out;}
+.location-item .tabcontent .flex {padding-right: 25px;}
+
+.stops .location-item:before {content: "\f192";}
+.stops .location-item .tabcontent .flex {padding-right: 55px;}
+.stops .ico-actions {opacity: 0;transition-duration: 0.15s;}
+.stops .new-item .ico-actions {opacity: 1; transition-delay: .2s;}
+.stops .new-item .ico-actions a:nth-of-type(2) {color: #c63030;}
+
+.location-item .delete-stop {position: absolute; right: 0px; top: 0; padding: 10px; color: #c63030; opacity: .75; cursor: pointer; transition: var(--transition);}
+.location-item .delete-stop:hover {opacity: 1;}
+
+
 
 /* Ico Input */
 .ico-input {position: relative;}
@@ -49,18 +72,23 @@
 .map-item {display: none;}
 
 /* Car Select */
-.car-choice {display: block; position: relative; padding: 5px 15px 5px 45px; background: var(--bkg);cursor: pointer; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; align-items: center;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; border: 5px; overflow: hidden;}
+.car-choice {display: block; position: relative; padding: 5px 15px 5px 45px; background: var(--bkg);cursor: pointer; display: grid; grid-template-columns: .75fr 1.25fr 1fr; gap: 15px; align-items: center;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; border: 5px; overflow: hidden;}
 .car-choice img {max-width: 125px; mix-blend-mode: multiply;}  
 .car-choice input {position: absolute;opacity: 0;cursor: pointer;}
 .checkmark {position: absolute; inset: 0; border: 1px solid rgba(0,0,0,.1); background-color: none; border-radius: 5px; transition: var(--transition); background: rgba(255,255,255,.25);}
-.car-choice:hover input ~ .checkmark {border-color: rgba(0,0,0,.25); background: none;}
+.car-choice:hover input ~ .checkmark {border-color: rgba(0,0,0,.25); background: none !important;}
 .car-choice input:checked ~ .checkmark {border-color: var(--dark);}
 .checkmark:after {content: "\f00c";font-family: FontAwesome; color: #fff; font-size: 14px;position: absolute;display: none; left: -37px; top: 0; background: var(--dark); height: 100%; width: 30px; text-align: center; line-height: 6.5;transition: var(--transition); transition-duration: 150ms; display: block;}
 .car-choice input:checked ~ .checkmark:after {left: 0;}
 .car-name {text-transform: none; font-size: 1.25rem; font-weight: 400;}
-
+.car-name p {font-size: .85rem; margin: 0; max-width: 225px;}
 // .car-price {text-transform: none; font-size: 1.25rem; font-weight: 400;}
 .car-price strong {text-transform: none; font-size: 1.25rem; font-weight: 400; margin-left: 5px;}
+.car-price-estimate {max-width: 200px;}
+.car-choice input:checked {opacity: 1;}
+
+.ico-helper {margin: 1rem 0; font-size: .85rem; display: grid; grid-template-columns: 30px auto; align-items: center;}
+.ico-helper + .ico-helper {margin-top: 0;}
 
 /* Summary */
 .summary {height: 100%;}
@@ -87,6 +115,8 @@
 .checkbox-options input {margin: 0 1rem 0 0;}
 .form-group-content {border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 15px;} 
 
+.form-group-no-label .checkbox-group {border: none; padding: 15px;}
+
 .checkbox-inline label {text-transform: none; font-weight: 400; font-size: .85rem; border: 0; padding: 0; width: auto !important;}
 .modal-item .long-label label {flex-basis: 250px;}
 .checkbox-list {padding: 15px;}
@@ -100,7 +130,7 @@
 .toggle-header {display: flex; justify-content: space-between; align-items: center;}
 .toggle-header h1, .toggle-header h2 {margin: 0;}
 
-.car-select {grid-template-columns: 1fr 1fr;}
+// .car-select {grid-template-columns: 1fr 1fr;}
 } 
 
 /* DESKTOP */
@@ -119,6 +149,8 @@
 
 .form-group-content {padding-left: 104px;}
 .checkbox-group {border-left: 1px solid rgba(0, 0, 0, 0.15); padding-left: 10px;}
+
+.location-input .flex {flex-wrap: nowrap;}
 }
 
 @keyframes pulse { 

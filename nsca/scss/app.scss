@@ -27,9 +27,9 @@ Date: Jan 2024
 @import "layout/header";
 @import "layout/footer";
 @import "layout/blog";
+@import "layout/directory";
 
 // Core Components
-@import "components/standard/hero";
 @import "components/standard/page-headers";
 @import "components/standard/image_blocks";
 @import "components/standard/cards";
@@ -39,8 +39,9 @@ Date: Jan 2024
 @import "components/standard/accordion";
 
 // Custom Components
+@import "components/custom/hero";
 @import "components/custom/showcase";
 @import "components/custom/member-grid";  
 @import "components/custom/fullimg-cards";
 @import "components/custom/event-list";
-@import "components/custom/directory";
+@import "components/custom/ico-btns";

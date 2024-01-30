@@ -16,22 +16,3 @@
 .is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
 .is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
 
-/* Icon Buttons */
-.ico-btn {background: var(--primary); color: #fff; padding: 15px; display: inline-block; display: grid; grid-template-columns: 40px auto; gap: 10px; align-items: center; border-radius: 5px; line-height: 1.1; font-weight: 700; text-decoration: none;}
-.ico-btn .fa {padding: 5px; aspect-ratio: 1 / 1; color: #fff; background: var(--accent-2); font-size: 1.5rem; display: flex; justify-content: center; flex-direction: column;text-align: center; border-radius: 3px;transition: var(--transition);}
-.ico-btn:hover {background: var(--primary-dark);}
-.ico-btn:hover .fa {transform: scale(1.1);}
-.ico-btn:nth-of-type(4n + 1) .fa {background: var(--accent-2);}
-.ico-btn:nth-of-type(4n + 2) .fa {background: var(--accent-3);}
-.ico-btn:nth-of-type(4n + 3) .fa {background: var(--accent-1);}
-.ico-btn:nth-of-type(4n + 4) .fa {background: var(--accent-4);}
-.ico-btn-group {display: grid; grid-template-columns: 1fr 1fr; gap: 15px;}
-.ico-btn-group .ico-btn {font-size: 1.25rem;}
-
-.ico-btn-group.three-col {grid-template-columns: 1fr 1fr 1fr; max-width: 800px; @include margin-auto;}
-.ico-btn-group.three-col .ico-btn {font-size: 1rem;}
-
-.ico-btn span {font-size: .85rem !important; color: var(--primary);}
-.ico-btn span:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition); }
-.ico-btn:hover span:after {margin: 0 0 0 10px;}
-.ico-btn:hover img {transform: scale(1.1); opacity: .3;}

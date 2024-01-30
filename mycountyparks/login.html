@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>My County Parks</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id='skip-nav' class='screenreader-text' href='#main-content'>
+    Skip to Content
+  </a>
+
+  <main id="main-content">
+    <div class="form-page login">
+      <div class="content">
+        <header>
+          <a href="index.html" id="logo"><img src="img/logo.svg" alt="My County Parks Logo" /></a>
+          <h1>Login to your account</h1>
+        </header>
+        <form class="mcp-form fixed-labels" action="index.html">
+            <div class="fixed-label">
+              <label>Email</label>
+              <input type="email">
+            </div>
+            <div class="fixed-label">
+              <label>Password</label>
+              <input type="password">
+            </div>
+            <button type="submit" class="btn-theme">Login</button>
+            <button type="submit" class="btn-theme btn-alt">Continue as Guest</button>
+            <p>Don't have an account? <a href="register.html">Sign Up Here</a></p>
+            <p>Forgot your password? <a href="#.html">Reset Password</a></p>
+        </form>
+        
+        <div class="promo">
+          <a href="#.html"><img src="img/ad-new.jpg"></a>
+        </div>
+
+      </div>
+          <figure>
+            <img src="img/gallery5.jpg" />
+          </figure>
+    </div>
+  </main>
+ 
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+  <script src="js/datepicker.js"></script>
+  <script src="js/glightbox.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    
+    // Light Box //
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true
+    });
+
+  </script>
+  </body>
+</html>

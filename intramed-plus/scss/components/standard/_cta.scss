@@ -1,0 +1,16 @@
+.call-to-action {background: var(--light); padding: 2rem; border-radius: var(--border-radius-sm); display: grid; gap: var(--spacer);}
+.call-to-action figure {aspect-ratio: 1 / 1; overflow: hidden; border-radius: 50%; border: 5px solid var(--primary);}
+.call-to-action figure img {width: 100%; height: 100%; object-fit: cover;}
+.call-to-action .wp-block-button__link {font-size: .9rem;}
+
+.call-to-action .wp-block-button__link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);}
+.call-to-action .wp-block-button__link:hover:after {margin: 0 0 0 10px;}
+
+/* TABLET */
+@media (min-width:768px){
+.call-to-action {display: grid; grid-template-columns: 150px auto 175px; align-items: center;}
+}
+
+@media (min-width: 992px) {
+.call-to-action p {max-width: 80%;}
+}

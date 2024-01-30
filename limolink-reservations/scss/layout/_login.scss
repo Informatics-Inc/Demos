@@ -5,6 +5,21 @@
 .login .content p {font-size: .85rem; margin: .5rem 0 0 0;}
 .login .content p + p {margin: 0;}
 
+.events {padding: 50px; position: relative; z-index: 5; display: flex; justify-content: center; flex-direction: column; align-items: center; color: #fff;}
+.events figure {display: block; height: 100%; position: absolute; inset: 0; background: var(--dark); z-index: -1;}
+.events figure img {width: 100%; height: 100%; object-fit: cover; opacity: .2;}
+
+.event-list {max-width: 400px;}
+.event-list header {text-align: center; margin: 0 0 1rem 0; max-width: 400px; margin-inline: auto; border-bottom: 1px dotted rgba(255,255,255,.25);}
+.events h2 {font-weight: 700;}
+.events p {font-size: .85rem;}
+
+.event-item {display: grid; grid-template-columns: 60px auto; gap: 15px; align-items: center; margin: 1rem 0;}
+.event-date {font-size: 1.5rem; display: flex; justify-content: center; flex-direction: column; line-height: 1; text-align: center; background: var(--secondary); padding: 10px 15px; border-radius: 4px; box-shadow: 10px 10px 10px rgba(0,0,0,.1); font-weight: 800;}
+.event-date strong {display: block; font-size: 1rem; text-transform: uppercase; font-weight: 400;}
+.event-content h3 {margin: 0 0 5px 0; font-size: 1.25rem;}
+.event-content p {margin: 0; text-transform: uppercase; letter-spacing: 1.5px; opacity: .7;}
+
 /* TABLET */
 @media (min-width: 768px) {
 
@@ -13,8 +28,7 @@
 /* DESKTOP */
 @media (min-width: 992px) {
 .login {display: grid; grid-template-columns: 1.5fr 2fr; min-height: 100vh;}
-.login figure {display: block; height: 100%;}
-.login figure img {width: 100%; height: 100%; object-fit: cover;}
-
 .login .content {padding: 100px 100px 250px 100px; display: flex; justify-content: center; flex-direction: column;}
+.event-list {max-width: 600px;}
+.event-grid {display: grid; grid-template-columns: 1fr 1fr; column-gap: 25px;}
 }

@@ -48,44 +48,32 @@
         <nav id="menu" class="collapsed">
           <ul class="menu-main">
             <li class="active"><a href="reservations.html">Reservations</a></li>
-            <li><a href="book-01.html">Book a Ride</a></li>
+            <li><a href="book-01.html">Book Reservation</a></li>
             <li><a href="profiles.html">Profiles</a></li>
             <li><a href="receipts.html">Receipts</a></li>
             <li><a href="get-a-quote.html">Get a Quote</a></li>
-            <li class="user-menu"><a href="#.html">
-              <i class="fa-regular fa-circle-user"></i>
-              <i class="fa-solid fa-bars"></i>
-              <span>My Account</span>
-            </a>
-            <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
-              <ul id="menu-1" class="collapsed">
-                <p>Logged in as: <strong>Luke Skywalker</strong></p>
-                <li><a href="account.html">Edit My Account</a></li>
-                <li><a href="login.html">Log out</a></li>
-                <p class="divider">Choose Account</p>
-                <li><a href="#.html">All Acccounts</a></li>
-                <li><a href="#.html">Yankee CEO Transportation</a></li>
-                <li><a href="#.html">NCAA Rules Committee</a></li>
-              </ul>
-            </li>
-        </ul>
-        <!-- <div class="menu-user">
-              <a href="#.html" id="user-menu-toggle">
-                <span class="menu-alert">2</span>
+            <li class="user-menu">
+              <a href="#.html">
                 <i class="fa-regular fa-circle-user"></i>
-                <i class="fa-solid fa-bars"></i>
+                <span>Edit My Proflie</span>
               </a>
-              <ul id="user-menu-list">
-                <div>Welcome, <strong>Luke Skywalker</strong></div>
-                <li><a href="#.html">My Account</a></li>
-                <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
-                <li class="divider">Choose Account</li>
-                <li><a href="#.html">All Acccounts</a></li>
-                <li><a href="#.html">Yankee CEO Transportation</a></li>
-                <li><a href="#.html">NCAA Rules Committee</a></li>
-              </ul>
-            </div> -->
-            <!-- <a href="#.html" class="btn-theme">Book New</a> -->
+              <div class="form-group ll-form">
+                <div class="flex">
+                  <label>Account</label>
+                  <div class="custom-select">
+                    <select>
+                      <option>All Accounts</option>
+                      <option>NCAA Board of Regents</option>
+                      <option>Carolina Panthers Football</option>
+                      <option>Miami Dolphins Football</option>
+                      <option>Rebel Alliance</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>    
+        </ul>
+
         </nav>
         </div>
     </div>
@@ -96,7 +84,7 @@
   <div class="container">
     <div class="col panel">
       <div class="toggle-header">
-        <h1>Upcoming Reservations</h1>
+        <h1>Reservations</h1>
       </div>
       <div class="grid">
         <div class="filter">
@@ -139,8 +127,8 @@
                 <th>Status</th>
                 <th>Booking Agent</th>
                 <th>MapLink</th>
-                <th>Notes</th>
                 <th>Edit</th>
+                <th>Notes</th>
               </tr>
             </thead>
             <tbody>
@@ -153,7 +141,34 @@
                 <td>Reservation</td>
                 <td>Mike Lynch</td>
                 <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
+                <td>
+                  <div class="dropdown">
+                  <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a><i class="fa fa-eye"></i> View</a></li>
+                    <li><a><i class="fa fa-edit"></i> Edit</a></li>
+                    <li><a><i class="fa fa-mail-forward"></i> Book Return</a></li>
+                    <li><a><i class="fa fa-copy"></i> Copy</a></li>
+                    <li><a><i class="fa fa-folder-open"></i> Book Add'l Legs</a></li>
+                    <li><a><i class="fa fa-refresh"></i> Resend Confirmation</a></li>
+                    <li><a><i class="fa fa-calendar"></i> Add to Calendar</a></li>
+                    <li><a><i class="fa fa-ban"></i> Cancel</a></li>
+                  </ul>
+                  </div>
+                </td>
                 <td class="error">Missing Payment Method</td>
+              </tr>
+              <tr>
+                <td>3814270-001</td>
+                <td>01/27/2024</td>
+                <td>Mike Lynch</td>
+                <td>SRQ</td>
+                <td>4:43 PM</td>
+                <td>Reservation</td>
+                <td>Mike Lynch</td>
+                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
                 <td>
                   <div class="dropdown">
                   <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
@@ -169,17 +184,18 @@
                   </ul>
                   </div>
                 </td>
-              </tr>
-              <tr>
-                <td>3814270-001</td>
-                <td>01/27/2024</td>
-                <td>Mike Lynch</td>
-                <td>SRQ</td>
-                <td>4:43 PM</td>
-                <td>Reservation</td>
-                <td>Mike Lynch</td>
-                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
                 <td>--</td>
+              </tr>
+              <tr>
+                <td>3814270-001</td>
+                <td>01/27/2024</td>
+                <td>Mike Lynch</td>
+                <td>SRQ</td>
+                <td>4:43 PM</td>
+                <td>Reservation</td>
+                <td>Mike Lynch</td>
+                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
                 <td>
                   <div class="dropdown">
                   <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
@@ -195,17 +211,18 @@
                   </ul>
                   </div>
                 </td>
-              </tr>
-              <tr>
-                <td>3814270-001</td>
-                <td>01/27/2024</td>
-                <td>Mike Lynch</td>
-                <td>SRQ</td>
-                <td>4:43 PM</td>
-                <td>Reservation</td>
-                <td>Mike Lynch</td>
-                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
                 <td>--</td>
+              </tr>
+              <tr>
+                <td>3814270-001</td>
+                <td>01/27/2024</td>
+                <td>Mike Lynch</td>
+                <td>Ann Arbor,</td>
+                <td>4:43 PM</td>
+                <td>Reservation</td>
+                <td>Mike Lynch</td>
+                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
                 <td>
                   <div class="dropdown">
                   <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
@@ -221,17 +238,18 @@
                   </ul>
                   </div>
                 </td>
+                <td class="error">Missing Tail Number</td>
               </tr>
               <tr>
                 <td>3814270-001</td>
                 <td>01/27/2024</td>
                 <td>Mike Lynch</td>
-                <td>SRQ</td>
+                <td>Naperville, IL</td>
                 <td>4:43 PM</td>
                 <td>Reservation</td>
                 <td>Mike Lynch</td>
                 <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
-                <td class="alert">Unconfirmed</td>
+                
                 <td>
                   <div class="dropdown">
                   <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
@@ -247,17 +265,18 @@
                   </ul>
                   </div>
                 </td>
-              </tr>
-              <tr>
-                <td>3814270-001</td>
-                <td>01/27/2024</td>
-                <td>Mike Lynch</td>
-                <td>SRQ</td>
-                <td>4:43 PM</td>
-                <td>Reservation</td>
-                <td>Mike Lynch</td>
-                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
                 <td>--</td>
+              </tr>
+              <tr>
+                <td>3814270-001</td>
+                <td>01/27/2024</td>
+                <td>Mike Lynch</td>
+                <td>SRQ</td>
+                <td>4:43 PM</td>
+                <td>Reservation</td>
+                <td>Mike Lynch</td>
+                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
                 <td>
                   <div class="dropdown">
                   <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
@@ -273,6 +292,115 @@
                   </ul>
                   </div>
                 </td>
+                <td class="error">Missing Payment Method</td>
+              </tr>
+              <tr>
+                <td>3814270-001</td>
+                <td>01/27/2024</td>
+                <td>Mike Lynch</td>
+                <td>SRQ</td>
+                <td>4:43 PM</td>
+                <td>Reservation</td>
+                <td>Mike Lynch</td>
+                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
+                <td>
+                  <div class="dropdown">
+                  <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a><i class="fa fa-eye"></i> View</a></li>
+                    <li><a><i class="fa fa-edit"></i> Edit</a></li>
+                    <li><a><i class="fa fa-mail-forward"></i> Book Return</a></li>
+                    <li><a><i class="fa fa-copy"></i> Copy</a></li>
+                    <li><a><i class="fa fa-folder-open"></i> Book Add'l Legs</a></li>
+                    <li><a><i class="fa fa-refresh"></i> Resend Confirmation</a></li>
+                    <li><a><i class="fa fa-calendar"></i> Add to Calendar</a></li>
+                    <li><a><i class="fa fa-ban"></i> Cancel</a></li>
+                  </ul>
+                  </div>
+                </td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>3814270-001</td>
+                <td>01/27/2024</td>
+                <td>Mike Lynch</td>
+                <td>SRQ</td>
+                <td>4:43 PM</td>
+                <td>Reservation</td>
+                <td>Mike Lynch</td>
+                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
+                <td>
+                  <div class="dropdown">
+                  <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a><i class="fa fa-eye"></i> View</a></li>
+                    <li><a><i class="fa fa-edit"></i> Edit</a></li>
+                    <li><a><i class="fa fa-mail-forward"></i> Book Return</a></li>
+                    <li><a><i class="fa fa-copy"></i> Copy</a></li>
+                    <li><a><i class="fa fa-folder-open"></i> Book Add'l Legs</a></li>
+                    <li><a><i class="fa fa-refresh"></i> Resend Confirmation</a></li>
+                    <li><a><i class="fa fa-calendar"></i> Add to Calendar</a></li>
+                    <li><a><i class="fa fa-ban"></i> Cancel</a></li>
+                  </ul>
+                  </div>
+                </td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>3814270-001</td>
+                <td>01/27/2024</td>
+                <td>Mike Lynch</td>
+                <td>Ann Arbor,</td>
+                <td>4:43 PM</td>
+                <td>Reservation</td>
+                <td>Mike Lynch</td>
+                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
+                <td>
+                  <div class="dropdown">
+                  <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a><i class="fa fa-eye"></i> View</a></li>
+                    <li><a><i class="fa fa-edit"></i> Edit</a></li>
+                    <li><a><i class="fa fa-mail-forward"></i> Book Return</a></li>
+                    <li><a><i class="fa fa-copy"></i> Copy</a></li>
+                    <li><a><i class="fa fa-folder-open"></i> Book Add'l Legs</a></li>
+                    <li><a><i class="fa fa-refresh"></i> Resend Confirmation</a></li>
+                    <li><a><i class="fa fa-calendar"></i> Add to Calendar</a></li>
+                    <li><a><i class="fa fa-ban"></i> Cancel</a></li>
+                  </ul>
+                  </div>
+                </td>
+                <td class="error">Missing Tail Number</td>
+              </tr>
+              <tr>
+                <td>3814270-001</td>
+                <td>01/27/2024</td>
+                <td>Mike Lynch</td>
+                <td>Naperville, IL</td>
+                <td>4:43 PM</td>
+                <td>Reservation</td>
+                <td>Mike Lynch</td>
+                <td><a href="#.html"><i class="fa fa-map"></i>View</a></td>
+                
+                <td>
+                  <div class="dropdown">
+                  <a role="button" aria-haspopup="false" aria-expanded="false" onclick="toggleDropdown(this)"> Options <i class="fa fa-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a><i class="fa fa-eye"></i> View</a></li>
+                    <li><a><i class="fa fa-edit"></i> Edit</a></li>
+                    <li><a><i class="fa fa-mail-forward"></i> Book Return</a></li>
+                    <li><a><i class="fa fa-copy"></i> Copy</a></li>
+                    <li><a><i class="fa fa-folder-open"></i> Book Add'l Legs</a></li>
+                    <li><a><i class="fa fa-refresh"></i> Resend Confirmation</a></li>
+                    <li><a><i class="fa fa-calendar"></i> Add to Calendar</a></li>
+                    <li><a><i class="fa fa-ban"></i> Cancel</a></li>
+                  </ul>
+                  </div>
+                </td>
+                <td>--</td>
               </tr>
             </tbody>
           </table>

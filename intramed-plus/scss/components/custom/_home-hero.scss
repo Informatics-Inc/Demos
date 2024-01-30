@@ -1,0 +1,32 @@
+.home-hero {border-top: 5px solid var(--dark); background: linear-gradient(var(--light) 90%, #fff 20%);}
+.home-hero .hero-content {text-align: center;}
+.home-hero .hero-content #logo {margin: 2rem auto;}
+
+.hero-cards .card {z-index: 5; margin: 2rem 0; max-width: 375px;}
+.hero-cards .card .content {gap: 25px;}
+.hero-cards .card .content > * {margin: 0;}
+.hero-cards .card figure a {text-decoration: none;}
+.hero-cards .card figure {position: relative; overflow: hidden; aspect-ratio: inherit; z-index: -1; background-color: var(--dark); border-radius: 5px 5px 0 0;}
+.hero-cards .card figure h2 {padding: 65px 50px; position: relative; z-index: 5; width: 100%; background: none; text-align: center; color: #fff; margin: 0; text-decoration: none;}
+.hero-cards .card figure h2:after {display: none;}
+.hero-cards .card figure img {position: absolute; width: 100%; height: 100%; object-fit: cover; inset: 0; opacity: .35; transition: var(--transition);}
+.hero-cards .card figure a:hover img {transform: scale(1.1); opacity: .5;}
+.hero-cards .card strong {color: var(--text-color);}
+.hero-cards .card a {color: var(--text-color); font-weight: 400;}
+.hero-cards .card a strong {font-weight: 700;}
+.hero-cards .card li {margin: 0;}
+.hero-cards .is-style-linklist li a {font-weight: 700;}
+.hero-cards .is-style-linklist li a em {font-weight: 400;}
+
+.hero-cards .card:nth-of-type(2) figure {border-color: #999;}
+.hero-cards .card:nth-of-type(2) .is-style-linklist li:before {color: #999;}
+#content:has(.home-hero) {margin-top: 0;}
+
+/* TABLET */
+@media (min-width:768px) {
+.hero-cards {display: flex; gap: 25px; justify-content: center;}
+}
+
+@media (min-width: 1200px) {
+
+}

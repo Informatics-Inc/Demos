@@ -1,0 +1,46 @@
+/* CSS Document
+Client: Informatics Starter Theme
+Company: Informatics, Inc
+Author: Jeff S
+Date: Jan 2024
+*/
+
+// Abstracts
+@import "abstracts/mixins"; 
+@import "abstracts/utility";
+
+// Vendors 
+@import "vendors/flickity";
+@import "vendors/wpcols-for-demo";  // can delete once in WP
+
+// Core
+@import "core/reset";
+@import "core/animations";
+
+// Wordpress Theme
+@import "theme/layout"; // enhance WP layout ux
+@import "theme/brand"; // fonts, colors, typography
+@import "theme/block_styles"; // extend WP core blocks
+@import "theme/buttons"; // style WP buttons
+
+// Theme Layouts
+@import "layout/header";
+@import "layout/footer";
+@import "layout/blog";
+
+// Core Components
+@import "components/standard/page-headers";
+@import "components/standard/image_blocks";
+@import "components/standard/cards";
+@import "components/standard/sidebar"; 
+@import "components/standard/cta"; 
+@import "components/standard/contact_form";
+@import "components/standard/accordion";
+
+// Custom Components
+@import "components/custom/hero";
+@import "components/custom/content-card-overlap";
+@import "components/custom/icon-links";
+@import "components/custom/img-feature";
+@import "components/custom/file-list";
+@import "components/custom/home-hero";
