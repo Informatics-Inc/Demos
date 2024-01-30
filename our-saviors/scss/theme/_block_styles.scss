@@ -15,7 +15,7 @@
 
 /* Light Background Attach Left */
 .is-style-lightright {padding: 1px 0; position: relative; z-index: 5;}
-.is-style-lightright:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--light); border-radius: 0 10px 10px 0; content:""; z-index: -1;}
+.is-style-lightright:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--)/2)));background: var(--light); border-radius: 0 10px 10px 0; content:""; z-index: -1;}
 .is-style-lightleft .wp-block-columns.is-layout-flex {gap: var(--column-gap-lg);}
 
 /* Custom List Styles */
