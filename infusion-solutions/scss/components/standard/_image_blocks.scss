@@ -91,7 +91,7 @@
 
 /* DESKTOP */
 @media (min-width: 992px) {
-  .theme-img.three-images .text{background-color:var(--light);border-radius:12px;box-shadow:0 33px 55px rgba(0,0,0,.4);display:block;padding:25px;position:absolute;left:-60px;width:calc(100% + 60px);}
+  .theme-img.three-images .text{background-color:var(--light);border-radius:12px;box-shadow:0 33px 55px rgba(0,0,0,.4);display:block;padding:25px;position:relative;left:-60px;width:calc(100% + 60px);margin-bottom: -50px;}
  .theme-img.three-images{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(4,1fr)}
   .theme-img.three-images img:nth-last-of-type(1) {grid-area: 1 / 1 / 5 / 2; }
   .theme-img.three-images img:nth-last-of-type(2) {grid-area: 1 / 2 / 3 / 3; }
