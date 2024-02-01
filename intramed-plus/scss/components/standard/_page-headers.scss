@@ -1,0 +1,20 @@
+/* Page Headers */
+.page-hdr {position: relative; z-index: 5; overflow: hidden;}
+.page-hdr figure {position: absolute; inset: 0; background: var(--dark); margin: 0;}
+.page-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .25;}
+.page-hdr .content {padding: 75px var(--spacer); text-align: center; position: relative; z-index: 5;}
+.page-hdr .content h1 {position: relative; color: #fff;background: url(../img/swoop.svg) center bottom no-repeat; padding: 0 0 2rem 0;}
+
+/* Breadcrumb */
+.page-hdr .breadcrumb-nav {display: flex; justify-content: center; padding: 0; margin: 0 0 .5rem 0; font-size:0.85rem;letter-spacing:0px; list-style: none; gap: 20px;}
+.page-hdr .breadcrumb-nav a {color: var(--text-color-inverse); opacity: .75;}
+.page-hdr .breadcrumb-nav li {position: relative;color: var(--text-color-inverse);}
+.page-hdr .breadcrumb-nav li:after {content:"/"; position: absolute; right: -12px; top: 0px; margin: 0 0 0 .5rem; display: block; border-radius: 50%; opacity: .5;}
+.page-hdr .breadcrumb-nav li:last-of-type:after {display: none;}
+.page-hdr .breadcrumb-nav a:hover {text-decoration: underline; opacity: 1;}
+.page-hdr .breadcrumb-nav span {display: flex; gap: 5px;} 
+
+/* WIDE DESKTOP */
+@media (min-width:992px){
+
+}

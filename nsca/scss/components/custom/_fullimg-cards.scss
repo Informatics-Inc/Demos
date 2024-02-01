@@ -1,5 +1,5 @@
 .fullimg-cards {position: relative;}
-.fullimg-cards figure {position: absolute; background: var(--primary); height: 350px; width: 100%;}
+.fullimg-cards figure {position: absolute; background: var(--light); height: 350px; width: 100%;}
 .fullimg-cards figure img {width: 100%; height: 100%; object-fit: cover; opacity: .2; mix-blend-mode: multiply;}
 .fullimg-cards .content {text-align: center; color: var(--text-color-inverse); padding: var(--spacer-vert) var(--spacer);}
 .fullimg-cards .content h2 {color: #fff;}
