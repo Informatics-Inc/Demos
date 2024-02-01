@@ -29,7 +29,6 @@ Date: Jan 2024
 @import "layout/blog";
 
 // Core Components
-@import "components/standard/hero";
 @import "components/standard/page-headers";
 @import "components/standard/image_blocks";
 @import "components/standard/cards";
@@ -39,6 +38,7 @@ Date: Jan 2024
 @import "components/standard/accordion";
 
 // Custom Components
+@import "components/custom/hero";
 @import "components/custom/content-card-overlap";
 @import "components/custom/icon-links";
 @import "components/custom/img-feature";

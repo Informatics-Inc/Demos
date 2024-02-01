@@ -10,7 +10,7 @@
 #hdr-top ul a {color:var(--text-color-inverse); text-decoration: none; padding: 10px 5px;}
 #hdr-top ul li {position: relative;}
 #hdr-top ul li.current-page-ancestor a {font-weight: 700; color: #fff; position: relative;}
-#hdr-top ul li.current-page-ancestor a:after {border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid var(--dark); content: ""; position: absolute; left: 50%; bottom: -7px;}
+#hdr-top ul li.current-page-ancestor a:after {border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid var(--dark); content: ""; position: absolute; left: 50%; bottom: -6px;}
 #hdr-top ul li:first-of-type:before {height: 15px; width: 1px; background: #fff; content: ""; position: absolute; right: -8px; top: 3px; opacity: .35;}
 #hdr-top ul a:hover {color: #fff;}
 

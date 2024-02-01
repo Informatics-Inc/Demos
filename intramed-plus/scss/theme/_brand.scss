@@ -58,6 +58,7 @@ p a {font-weight: 700; text-decoration: underline;}
 p a:hover {text-decoration: none;}
 
 /* Layouts */
+#content {overflow-x: hidden;}
 .container {max-width: var(--max-width); margin: 0 auto; padding-left: var(--spacer);padding-right: var(--spacer); position: relative;}
 .container.skinny {max-width: 900px;}
 .box {padding: var(--spacer); background: var(--light);}

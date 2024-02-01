@@ -1,28 +1,11 @@
-.icon-links {display: grid; grid-template-columns: 1fr 1fr; gap: 15px;}
+.icon-links {display: grid; grid-template-columns: 1fr; gap: 15px;}
 .icon-link {background: var(--light); border-radius: 5px; display: block; position: relative; padding: 10px 15px 10px 65px; color: var(--dark); text-decoration: none; font-weight: 700; font-size: .9rem;}
 .icon-link .fa {background: var(--primary); color: #fff; padding: 10px; width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; flex-direction: column; text-align: center; font-size: 1.25rem; margin: 0 0 1rem 0; position: absolute; left: 5px; top: calc(50% - 25px); transition: var(--transition);}
 .icon-link:hover {background: none; text-decoration: underline;}
 .icon-link:hover .fa {transform: scale(1.05);}
 
-.fullimg-cards {position: relative; margin: var(--spacer-vert) auto;}
-.fullimg-cards figure {position: absolute; background: var(--light); height: 375px; width: 100%; z-index: -5;}
-.fullimg-cards figure img {width: 100%; height: 100%; object-fit: cover; opacity: .2; mix-blend-mode: multiply;}
-.fullimg-cards .header {text-align: center; padding: var(--spacer-vert) var(--spacer);}
-.grid-4 {display: grid; grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) ); gap: 25px;}
-.fullimg-cards .header h2 {background-position: center bottom;}
-.fullimg-cards .header p {max-width: 800px; margin-inline: auto;}
 
 /* TABLET */
 @media (min-width:768px) {
-.fullimg-cards .header {padding: 50px;}
-}
-
-@media (min-width: 1200px) {
-.fullimg-cards .header {padding: 75px 75px 25px 75px;}
-.fullimg-cards .ico-btn-group {margin-top: -2rem;}
-.fullimg-cards .ico-btn-group a {font-size: 1.5rem; letter-spacing: -1px; padding: 35px;}
-.fullimg-cards .ico-btn-group a span {font-size: 1rem; letter-spacing: normal;}
-
-.fullimg-cards .card {position: relative;}
-.fullimg-cards .grid-4 .card:first-of-type:after {background: url(../img/plus.svg);width: 150px;height: 160px;position: absolute;left: -55px;top: -55px;content: "";background-size: cover; z-index: -2; mix-blend-mode: multiply;}
+.icon-links {display: grid; grid-template-columns: 1fr 1fr; gap: 15px;}
 }
