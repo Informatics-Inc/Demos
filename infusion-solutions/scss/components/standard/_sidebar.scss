@@ -1,4 +1,4 @@
-.sidebar.box {padding: 0; border-radius: 10px; overflow: hidden;}
+.sidebar.box {background:#fff;padding: 0; border-radius: 10px; overflow: hidden;}
 .sidebar.box + .sidebar.box {margin-top: 2rem;}
 .sidebar.box h4 {background: var(--primary);letter-spacing:0px; color: #fff; text-align: left; padding: var(--spacer); margin: 0; font-size: 1.25rem;}
 .sec-nav ul {list-style: none; padding: var(--spacer); margin: 0;}
@@ -8,7 +8,13 @@
 .sec-nav ul > .current_page_item > a {position: relative; padding: 10px 5px 10px 30px; color: var(--primary); font-weight: 700;}
 .sec-nav ul > .current_page_item > a:before {content: "\f054";font-family: FontAwesome; color: var(--primary); margin: 0 0 0 7px; text-decoration: none; position: absolute; left: 5px; top: calc(50% - 10px); font-size: .75rem;}
 .tag-list ul {display: flex; flex-wrap: wrap; list-style: none; padding: var(--spacer); gap: 5px; margin: 0;}
-.tag-list a {padding: 4px 6px; background: #fff; font-size: .85rem; border-radius: 4px; display: inline;}
+.tag-list a {padding: 4px 6px; background: #f8f7f7; font-size: .85rem; border-radius: 4px; display: inline;}
 .tag-list li a:hover {background: none;}
 
 .member-ad {padding: 15px;}
+.sidebar-ad {padding: 15px;}
+.sidebar-ad img{margin-bottom:20px}
+.sidebar-ad h5{font-size:1.2rem}
+.wp-block-cover, .wp-block-cover-image .sidebar-ad{min-height: 100px;}
+.sidebar-ad  .wp-block-buttons .wp-block-button__link{background:#fff;color:var(--primary);margin-bottom:-10px;}
+

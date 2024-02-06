@@ -4,7 +4,7 @@
   --primary: #517C90;
   --primary-dark: #344255;
   --accent-1: #517C90;
-  --accent-2: #797016;
+  --accent-2: #6E6F67;
   --light: #F4F2F0;
   --dark: #000000;
   --gray: #ccc;
@@ -54,6 +54,14 @@ ul {padding: 0 0 0 15px;}
 ul li::marker {color: var(--accent-2);}
 p.lead{font-size:1.3rem;line-height: 1.4;}
 
+li h5{display:flex;}
+li h5:before{margin-right:8px;}
+li h5:before {content:'\2714';  }
+ul li > h5 {
+  list-style: none;
+}
+
+
 /* Links */
 a {transition: var(--transition); color: var(--primary);}
 p a {font-weight: 700; text-decoration: underline;}
@@ -63,6 +71,13 @@ p a:hover {text-decoration: none;}
 .container {max-width: var(--max-width); margin: 0 auto; padding-left: var(--spacer);padding-right: var(--spacer); position: relative;}
 .container.skinny {max-width: 900px;}
 .box {padding: var(--spacer); border: 1px solid rgba(0,0,0,.1); box-shadow: 0 0 25px rgba(0,0,0,.05);}
+
+
+.wp-block-cover .has-background-dim:not([class*="-background-color"]), .wp-block-cover-image .has-background-dim:not([class*="-background-color"]), .wp-block-cover-image.has-background-dim:not([class*="-background-color"]), .wp-block-cover.has-background-dim:not([class*="-background-color"])
+{
+  background-color: var(--primary);
+}
+
 
 /* TABLET */
 @media (min-width: 768px) {
