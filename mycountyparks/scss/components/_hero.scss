@@ -33,12 +33,12 @@
 .search.sidebar-search {margin: 0; background: #fff; z-index: 5;}
 .search.sidebar-search .btn-theme {display: flex; margin: 0; text-align: center; font-size: 1rem; flex-direction: row; align-items: center;}
 .search.sidebar-search .btn-theme i {margin: 0 0 0 1rem;}
-.search.sidebar-search .item-details {display: flex; justify-content: space-between; align-items: center;}
-.search.sidebar-search .item-details p {font-size: .825rem; margin: 0;}
-.search.sidebar-search .item-details p strong {font-size: 1.15rem;}
-.search.sidebar-search .item-details a {font-weight: 400;}
+.item-details {display: flex; justify-content: space-between; align-items: center;}
+.item-details p {font-size: .825rem; margin: 0;}
+.item-details p strong {font-size: 1.15rem;}
+.item-details a {font-weight: 400;}
 .search.sidebar-search input {background: var(--light);}
-
+.search.sidebar-search hr {margin: .5rem 0;}
 /* TABLET */
 @media (min-width: 768px) {
 .search {padding: 25px;}

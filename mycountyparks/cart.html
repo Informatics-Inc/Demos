@@ -68,56 +68,128 @@
   
   <section>
     <div class="container">
-      <header class="detail-header no-img">
+      <header class="detail-header">
         <div class="hdr-row">
           <div class="col">
-            <h1>Careers</h1>
-            <p class="lead">Page Under Development</p>
+            <h1>Your Cart</h1>
           </div>
-         
+          <div class="col">
+            <a href="#.html" class="btn-theme btn-alt">Continue Shopping</a>
+            <a href="#.html" class="btn-theme">Checkout</a>
+          </div>
         </div>
       </header>
     </div>
   </section>
-  <!-- CONTENT -->
-  <div class="content-sections">
-  <section>
   
-      <!-- CONTENT -->
-      <section class="animate-in delay-1">
-        <div class="container after-dots">
-        <div class="full-img-content">
-          <figure>
-            <img src="img/hero-3.jpg" />
-          </figure>
-          <div class="text animate-in delay-2">
-            <p class="preheader">This will be content</p>
-            <h2>Lorem ipsum Lorem, ipsum dolor.sit amet.</h2>
-            <p class="lead">Unwind in County Cabins and Shelters Amidst Stunning Landscapes</p>
-            <p>Are you craving a vacation that’s all about reconnecting with nature? Look no further than Iowa, where you can explore the state’s 99 counties and their natural environs. From the lush greenery of Jackson County to the rugged bluffs of Lyon County, Iowa’s landscapes are as diverse as they are breathtaking.</p>
-            <a href="counties.html" class="btn-theme">Explore Our Counties</a>
-          </div>
-        </div>
-      </div>
-      </section>
-    
-  </section>
- 
-  <!-- CTA -->
   <section>
     <div class="container">
-      <div class="content-cta animate-in delay-3">
-        <figure><img src="img/hero-3.jpg"></figure>
-        <div class="text">
-          <h2>Search Near You!</h2>
-          <p>Turn on location services and get results within miles of your current location!</p>
-          <a href="book-now.html" class="btn-theme">Turn On Location Services</a>
+      <div class="grid grid-twocol">
+        <div class="col" id="sidebar-affix">
+          <div class="search grid sidebar-search">
+            <h3>Price Details</h3>
+            <div class="item-details">
+              <p>Facility Reservation</p>
+              <p>$210.56</p>
+            </div>
+            <div class="item-details">
+              <p>Event Registration</p>
+              <p>$5.00</p>
+            </div>
+            <div class="item-details">
+              <p>Processing Fees</p>
+              <p>$4.00</p>
+            </div>
+            <div class="item-details">
+              <p>Total</p>
+              <p><strong>$219.56</strong></p>
+            </div>
+            <hr />
+            <a href="checkout-1.html" class="btn-theme">Checkout</a>
+          </div>
+        </div>
+        <div class="col small-type">
+          <p class="alert alert-check">Your dates are available! You have <strong>10:00</strong> minutes to complete your booking before we return this facilty to our inventory.</p>
+          <div class="cart-item">
+            <header>
+              <h2>Facility Reservation</h2>
+            </header>
+            <p class="icon-text">
+              <i class="fa-solid fa-house-chimney"></i>
+              <strong>Facility</strong>
+              <a href="facility.html">Big Woods Lake Cabin</a>
+            </p>
+            <p class="icon-text">
+              <i class="fa-solid fa-map-location"></i>
+              <strong>County</strong>
+              Black Hawk
+            </p>
+            
+            <p class="icon-text">
+              <i class="fa-solid fa-calendar-check"></i>
+              <strong>Dates</strong>
+              3/28/2024 - 03/30/2024
+            </p>
+            
+            <p class="icon-text">
+              <i class="fa-solid fa-tag"></i>
+              <strong>Price</strong>
+              $105.00/night
+            </p>
+            <p class="icon-text">
+              <i class="fa-solid fa-receipt"></i>
+              <strong>Pricessing Fee</strong>
+              $4.00
+            </p>
+            <p class="icon-text">
+              <i class="fa-solid fa-bed"></i>
+              <strong>Nights</strong>
+              2
+            </p>
+            <div class="form-action">
+              <button class="btn-theme btn-alt">Edit</button>
+              <button class="btn-theme btn-alt" type="submit">Remove from Cart</button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <header>
+              <h2>Event Registration</h2>
+            </header>
+            <p class="icon-text">
+              <i class="fa-solid fa-question"></i>
+              <strong>What</strong>
+              Conservation Coffee Club - Symbols of Iowa 
+            </p>
+            <p class="icon-text">
+              <i class="fa-solid fa-map-marker"></i>
+              <strong>Where</strong>
+              Lime Creek Nature Center<br>
+              3501 Lime Creek Rd<br>
+              Mason City, IA 50401
+            </p>
+            
+            <p class="icon-text">
+              <i class="fa-solid fa-calendar-check"></i>
+              <strong>When</strong>
+              02/02/2024
+            </p>
+            
+            <p class="icon-text">
+              <i class="fa-solid fa-tag"></i>
+              <strong>Price</strong>
+              $5.00
+            </p>
+
+            <div class="form-action">
+              <button class="btn-theme btn-alt">Edit</button>
+              <button class="btn-theme btn-alt" type="submit">Remove from Cart</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  </div>
-</div>
 
 </main>
   
@@ -129,6 +201,7 @@
           <div class="col">
             <img src="img/logo.svg" />
             <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
+            
           </div>
           <div class="col">
             <h4>Links</h4>
@@ -289,7 +362,6 @@
       loop: true,
       autoplayVideos: true
     });
-
   </script>
   </body>
 </html>

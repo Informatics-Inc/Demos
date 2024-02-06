@@ -46,20 +46,30 @@ p.preheader {color: var(--primary); text-transform: uppercase; letter-spacing: 2
 p, ul, ol {margin-bottom: 1.25rem;}
 hr {margin: 25px 0; border: none; border-bottom: 1px solid #ddd;}
 p.preheader + h2 {margin-top: -1rem;}
+ol {padding: 0 0 0 15px;}
+ol li {margin: 0 0 .5rem 0;}
+
+.link-list {list-style: none; margin: 1rem 0; padding: 0;}
+.link-list li a {padding: 1rem; font-size: 1rem; font-weight: 400; text-decoration: none; display: block; border-bottom: 1px dotted #ccc; display: flex; align-content: center;}
+.link-list li a i {color: var(--primary); font-size: 1.5rem; width: 25px; text-align: left; margin: 0 10px 0 0;}
+.link-list li a:hover {background: var(--bkg);}
 
 /* Links & Buttons */
 a {transition: var(--transition); text-decoration: underline; text-decoration-color: var(--primary); font-weight: 600; color: var(--dark);}
-.btn-theme {background: var(--primary-light); color: var(--dark); padding: 10px 15px; border-radius: 4px; text-decoration: none; display: inline-block; @include right-arrow; display: inline-block;}
+.btn-theme {background: var(--primary-light); color: var(--dark); padding: 10px 15px; border-radius: 4px; text-decoration: none; display: inline-block; @include right-arrow; display: inline-block; border: none; font-weight: 600;}
 .btn-theme:hover {background: var(--primary);}
 .btn-theme:hover:after {margin-left: 10px;}
 input {accent-color: var(--primary);}
+button {transition: var(--transition);}
+button:hover {cursor: pointer;}
 
 .btn-theme.btn-alt:after {display: none;}
 .btn-theme.btn-alt {background: var(--light);}
 
-.icon-text {position: relative; padding: 0 0 0 50px;}
+.icon-text {position: relative; padding: 0 0 0 50px; font-size: .9rem;}
 .icon-text strong {display: block; font-weight: 600; font-size: 1.1rem;}
 .icon-text i {position: absolute; left: 15px; top: calc(50% - .65rem); font-size: 1.25rem;}
+
 /* Small Type */
 
 

@@ -1,51 +1,88 @@
 
+// -- MODAL --//
+document.querySelectorAll(".open-button").forEach((openButton) => {
+  openButton.addEventListener("click", () => {
+    const targetModalId = openButton.dataset.targetModal;
+    const modal = document.querySelector(targetModalId);
+
+    if (modal) {
+      modal.classList.add("show");
+      setTimeout(() => {
+        modal.showModal();
+      }, 0); // Wait for the animation to complete
+    }
+  });
+});
+
+document.querySelectorAll(".close-button").forEach((closeButton) => {
+  closeButton.addEventListener("click", () => {
+    const targetModalId = closeButton.dataset.closeModal;
+    const modal = document.querySelector(targetModalId);
+
+    if (modal) {
+      modal.close();
+      modal.classList.remove("show");
+    }
+  });
+});
+
 // -- Search Toggle -- //
-$("#user-menu-toggle").click(function(){
-	$("#user-menu-list").toggleClass("open");
+$("#user-menu-toggle").on("click", function() {
+  $("#user-menu-list").toggleClass("open");
 });
 
 // -- ADD CLASS ON SCROLL --//
-$(window).scroll(function() {    
-	var scroll = $(window).scrollTop();
-	if (scroll > 50) {
-		$("#site-header").addClass("scroll");
-	} else {
-		$("#site-header").removeClass("scroll");
-	}
-	var x = $(this).scrollTop();
-	   $(".page-header figure imgs").css("transform","scale(" +  (1 + '.' + (x/800)) );
-	   $(".page-header figure img").css("-webkit-transform","translateZ(" +  (x/8)  + "px)");
-  });
+window.addEventListener("scroll", function() {
+  var scroll = window.scrollY;
+  var siteHeader = document.getElementById("site-header");
+
+  if (siteHeader) {
+    if (scroll > 50) {
+      siteHeader.classList.add("scroll");
+    } else {
+      siteHeader.classList.remove("scroll");
+    }
+  }
+
+  var x = scroll;
+  var pageHeaderImgs = document.querySelector(".page-header figure imgs");
+  var pageHeaderImg = document.querySelector(".page-header figure img");
+
+  if (pageHeaderImgs && pageHeaderImg) {
+    pageHeaderImgs.style.transform = "scale(" + (1 + '.' + (x / 800)) + ")";
+    pageHeaderImg.style.webkitTransform = "translateZ(" + (x / 8) + "px)";
+  }
+});
 
 // -- ANIMATE IN TO VIEW -- //
 var $animation_elements = $('.animate-in, .btn-text, .fade-in');
 var $window = $(window);
 
 function check_if_in_view() {
-var window_height = $window.height();
-var window_top_position = $window.scrollTop();
-var window_bottom_position = (window_top_position + window_height);
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
 
-$.each($animation_elements, function() {
-	var $element = $(this);
-	var element_height = $element.outerHeight();
-	var element_top_position = $element.offset().top;
-	var element_bottom_position = (element_top_position + element_height);
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
 
-	//check to see if this current container is within viewport
-	if ((element_bottom_position >= window_top_position) &&
-	(element_top_position <= window_bottom_position)) {
-	$element.addClass('visible');
-	} else {
-	
-	}
-	});
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+      (element_top_position <= window_bottom_position)) {
+      $element.addClass('visible');
+    } else {
+      // You can add code for elements not in view if needed
+    }
+  });
 }
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
-// Swiper Sliders //
+// -- Swiper Sliders -- //
 var swiper = new Swiper(".scroll-list", {
   slidesPerView: 4,
   spaceBetween: 25,
@@ -80,49 +117,39 @@ var swiper = new Swiper(".scroll-list", {
   },
 });
 
-// Fix the Sec Nav //
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {navFix()};
+// -- Fix the Sec Nav -- //
+window.onscroll = function() {
+  navFix();
+};
 
-// Get the navbar
 var navbar = document.getElementById("sec-nav");
+var sticky = navbar ? navbar.offsetTop : 0;
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function navFix() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
-} 
+}
 
-
-
-// Date Picker //
+// -- Date Picker -- //
 var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 
 var checkin = $('#dp1').datepicker({
-
   beforeShowDay: function(date) {
     return date.valueOf() >= now.valueOf();
   },
   autoclose: true
-
 }).on('changeDate', function(ev) {
   if (ev.date.valueOf() > checkout.datepicker("getDate").valueOf() || !checkout.datepicker("getDate").valueOf()) {
-
     var newDate = new Date(ev.date);
     newDate.setDate(newDate.getDate() + 1);
     checkout.datepicker("update", newDate);
-
   }
   $('#dp2')[0].focus();
 });
-
 
 var checkout = $('#dp2').datepicker({
   beforeShowDay: function(date) {
@@ -133,12 +160,11 @@ var checkout = $('#dp2').datepicker({
     }
   },
   autoclose: true
-
 }).on('changeDate', function(ev) {});
 
-
-$(".swiper-button-pause").click(function(){
-  swiperHero.autoplay.stop();
+// -- Swiper Pause Button -- //
+$(".swiper-button-pause").click(function() {
+  swiper.autoplay.stop();
 });
 
 

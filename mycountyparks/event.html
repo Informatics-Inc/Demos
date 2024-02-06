@@ -45,10 +45,7 @@
             <i class="fa-regular fa-circle-user"></i>
             <i class="fa-solid fa-bars"></i>
           </a>
-          <a href="property.html" class="qr-scan">
-            <img src="img/qr-scan.png" />
-            QR <br>Scan
-          </a>
+
           <ul id="user-menu-list">
             <li><a href="#.html">My Account</a></li>
             <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
@@ -82,8 +79,39 @@
             </div>
           </div>
           <div class="col">
-            <a href="#.html" class="btn-theme btn-alt"><i class="fa-regular fa-heart"></i> Save</a>
-            <a href="#.html" class="btn-theme btn-alt"><i class="fa-solid fa-up-right-from-square"></i> Share</a>
+            <a data-target-modal="#modal-remind" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-regular fa-envelope"></i> Remind Me</a>
+            <a data-target-modal="#modal-share" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-up-right-from-square"></i> Share</a>
+
+            <!-- SHARE -->
+            <dialog class="modal" id="modal-share">
+              <h3>Share This Event <button class="button close-button" data-close-modal="#modal-share"><i class="fa fa-close"></i></button></h3>
+              <ul class="link-list">
+                <li><a href="#.html"><i class="fab fa-facebook"></i> Share to Facebook</a></li>
+                <li><a href="#.html"><i class="fab fa-twitter"></i> Share to Twitter</a></li>
+                <li><a href="#.html"><i class="fab fa-linkedin"></i> Share to LinkedIn</a></li>
+              </ul>
+            </dialog>
+
+            <!-- Remind -->
+            <dialog class="modal" id="modal-remind">
+              <h3>Remind Me <button class="button close-button" data-close-modal="#modal-remind"><i class="fa fa-close"></i></button></h3>
+              <form class="mcp-form" method="dialog">
+                <div class="fixed-label">
+                  <label>Your Name</label>
+                  <input type="text">
+                </div>
+                <div class="fixed-label">
+                  <label>Your Email</label>
+                  <input type="email">
+                </div>
+                <label><input type="checkbox">Remind me one week before this event.</label>
+                <label><input type="checkbox">Remind me one day before this event.</label>
+                <div class="form-action">
+                  <button class="btn-theme btn-alt close-button" data-close-modal="#modal-remind">Cancel</button>
+                  <button class="btn-theme btn-theme-alt " type="submit">Send Reminder</button>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
       </header>
@@ -125,7 +153,9 @@
           <hr />
           <h2>Additional Content</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magnam sequi tempore commodi iste pariatur suscipit. Provident maiores, aut sequi neque inventore eius at et nulla cumque quam quo, repudiandae laboriosam eveniet voluptatum optio nobis magni eaque incidunt exercitationem esse nam, sapiente quidem? Aut, odit.</p>
-          
+          <hr />
+          <h2>Special Regulations</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magnam sequi tempore commodi iste pariatur suscipit. Provident maiores, aut sequi neque inventore eius at et nulla cumque quam quo, repudiandae laboriosam eveniet voluptatum optio nobis magni eaque incidunt exercitationem esse nam, sapiente quidem? Aut, odit.</p>
         </div>
       </div>
     </div>

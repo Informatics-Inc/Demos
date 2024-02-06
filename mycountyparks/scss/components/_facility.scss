@@ -24,9 +24,9 @@
 
 /* TABLET */
 @media (min-width: 768px) {
-    .detail-header figure {grid-template-rows: 200px 200px;}
-    .detail-header .date {display: flex; align-items: center; border-right: 1px solid var(--gray); padding-right: 1rem;}
-    .features-flex {display: flex; padding: 10px 0; gap: 15px; align-items: center; margin: -1rem 0 0 0;}
+.detail-header figure {grid-template-rows: 200px 200px;}
+.detail-header .date {display: flex; align-items: center; border-right: 1px solid var(--gray); padding-right: 1rem;}
+.features-flex {display: flex; padding: 10px 0; gap: 15px; align-items: center; margin: -1rem 0 0 0; justify-content: center;}
 .features-flex > * {margin: 0; font-size: .9rem;}
 
 }
@@ -45,6 +45,7 @@ ul.two-col {list-style: none; padding: 0; display: grid; grid-template-columns: 
 ul.two-col li {font-size: .9rem; padding: 5px 5px 5px 0;}
 ul.two-col li i {width: 25px; text-align: center; font-size: 1rem;}
 
+.features-flex {justify-content: flex-start;}
 #sidebar-affix {padding-top: 2rem; position: relative; position: sticky; top: 0;}
 // #sidebar-affix.sticky {position: fixed; top: 0; right: var(--side-width); width: 350px;}
 }

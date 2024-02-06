@@ -10,20 +10,8 @@ Date: Feb 2023
 @import "abstracts/mixins";
 
 // Vendors 
-/* Bootstrap Reqs */
-@import "../bootstrap/scss/functions";
-@import "../bootstrap/scss/variables";
-@import "../bootstrap/scss/maps";
-@import "../bootstrap/scss/mixins";
-@import "../bootstrap/scss/root";
-@import "../bootstrap/scss/transitions";
-@import "../bootstrap/scss/forms/form-check";
-@import "../bootstrap/scss/forms/form-select";
 /* Swiper */
 @import "vendors/swiper/swiper";
-
-/* Bootstrap Components */
-@import "../bootstrap/scss/accordion";
 
 // Swiper
 @import "vendors/swiper/swiper";
@@ -34,6 +22,7 @@ Date: Feb 2023
 // Core
 @import "core/reset";
 @import "core/animations";
+@import "core/forms";
 @import "core/theme";
 
 // Layout
@@ -42,6 +31,8 @@ Date: Feb 2023
 @import "layout/layout";
 @import "layout/blog";
 @import "layout/wordpress";
+@import "layout/cart";
+@import "layout/account";
 
 // Components
 @import "components/alerts";
@@ -53,6 +44,7 @@ Date: Feb 2023
 @import "components/hero";
 @import "components/img-feature";
 @import "components/facility";
+@import "components/modal";
 
 
 
