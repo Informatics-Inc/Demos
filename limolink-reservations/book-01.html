@@ -102,21 +102,21 @@
         </div>
         
         <div class="collapsed hours-toggle">
-        <div class="grid grid-2">
-          <div class="form-group">
-            <div class="flex">
-              <label>Hours</label>
-              <input type="number" name="hours" min="1" max="10" value="1" />
+          <div class="grid grid-2">
+            <div class="form-group">
+              <div class="flex">
+                <label>Hours</label>
+                <input type="number" name="hours" min="1" max="10" value="1" />
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="flex">
-              <label>Minutes</label>
-              <input type="number" name="minutes" value="5" step="5" />
+            <div class="form-group">
+              <div class="flex">
+                <label>Minutes</label>
+                <input type="number" name="minutes" value="00" step="30" max="30" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
         <div class="grid grid-2">
           <div class="form-group">
@@ -191,7 +191,6 @@
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Commercial-Aviation')" data-tab="Commercial-Aviation">Commercial Airport</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Private-Aviation')" data-tab="Private-Aviation">Private Aviation</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Train')" data-tab="Train">Train</a></li>
-                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Pier')" data-tab="Pier">Pier</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Heliport')" data-tab="Heliport">Heliport</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Recents')" data-tab="Recents">Recents</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Address-Book')" data-tab="Address-Book">Address Book</a></li>
@@ -206,7 +205,6 @@
                   <div class="flex">
                     <input type="search" placeholder="Search Place">
                   </div>
-                  
                 </div>
 
                 <!-- Commercial Air -->
@@ -230,7 +228,7 @@
 
                 <!-- Private Air -->
                 <div data-content="Private-Aviation" class="tabcontent">
-                  <div class="flex">
+                  <div class="flex flex-five-box">
                     <div class="ico-input">
                       <i class="fa fa-search"></i>
                       <input type="search" placeholder="Search Airports">
@@ -269,24 +267,6 @@
                     <div class="ico-input">
                       <i class="fa fa-hashtag"></i>
                       <input type="text" placeholder="Train Number">
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Pier -->
-                <div data-content="Pier" class="tabcontent">
-                  <div class="flex">
-                    <div class="ico-input">
-                      <i class="fa fa-search"></i>
-                      <input type="search" placeholder="Pickup Location">
-                    </div>
-                    <div class="ico-input">
-                      <i class="fa fa-ship"></i>
-                      <input type="text" placeholder="Cruise Line">
-                    </div>
-                    <div class="ico-input">
-                      <i class="fa fa-id-badge"></i>
-                      <input type="text" placeholder="Ship Name">
                     </div>
                   </div>
                 </div>
@@ -387,7 +367,6 @@
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Commercial-Aviation')" data-tab="Commercial-Aviation">Commercial Airport</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Private-Aviation')" data-tab="Private-Aviation">Private Aviation</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Train')" data-tab="Train">Train</a></li>
-                  <li><a href="#.html" class="tablinks" onclick="locType(event, 'Pier')" data-tab="Pier">Pier</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Heliport')" data-tab="Heliport">Heliport</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Recents')" data-tab="Recents">Recents</a></li>
                   <li><a href="#.html" class="tablinks" onclick="locType(event, 'Address-Book')" data-tab="Address-Book">Address Book</a></li>
@@ -426,7 +405,7 @@
 
                 <!-- Private Air -->
                 <div data-content="Private-Aviation" class="tabcontent">
-                  <div class="flex">
+                  <div class="flex flex-five-box">
                     <div class="ico-input">
                       <i class="fa fa-search"></i>
                       <input type="search" placeholder="Search Airports">
@@ -465,24 +444,6 @@
                     <div class="ico-input">
                       <i class="fa fa-hashtag"></i>
                       <input type="text" placeholder="Train Number">
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Pier -->
-                <div data-content="Pier" class="tabcontent">
-                  <div class="flex">
-                    <div class="ico-input">
-                      <i class="fa fa-search"></i>
-                      <input type="search" placeholder="Pickup Location">
-                    </div>
-                    <div class="ico-input">
-                      <i class="fa fa-ship"></i>
-                      <input type="text" placeholder="Cruise Line">
-                    </div>
-                    <div class="ico-input">
-                      <i class="fa fa-id-badge"></i>
-                      <input type="text" placeholder="Ship Name">
                     </div>
                   </div>
                 </div>

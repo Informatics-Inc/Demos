@@ -31,6 +31,8 @@
 
 .location-input .flex {flex-wrap: wrap;}
 .location-input .flex .ico-input {flex: 150px 1 1;}
+.location-input .flex.flex-five-box {flex-wrap: wrap;}
+.location-input .flex.flex-five-box .ico-input {flex: 200px 1 1;}
 .location-input .tabcontent {padding: 0 15px 15px 15px; display: none; position: relative;}
 .location-input .tabcontent > i {position: absolute; left: 26px; top: 12px;}
 .location-input .tabcontent:first-of-type {display: block;}
@@ -42,7 +44,7 @@
 .ico-actions {position: absolute; right: 10px; bottom: 16px; display: flex; transition: var(--transition); }
 .ico-actions a {font-size: 1rem; font-weight: 600; padding: 7px 5px; text-decoration: none; height: 100%;}
 .stops {display: grid; gap: 10px;}
-.stops .location-item {max-height: 0; transition: max-height 0.25s ease-out;}
+.stops .location-item {min-height: 0; transition: all 0.25s ease-out;}
 .location-item .tabcontent .flex {padding-right: 25px;}
 
 .stops .location-item:before {content: "\f192";}
@@ -53,6 +55,8 @@
 
 .location-item .delete-stop {position: absolute; right: 0px; top: 0; padding: 10px; color: #c63030; opacity: .75; cursor: pointer; transition: var(--transition);}
 .location-item .delete-stop:hover {opacity: 1;}
+
+
 
 /* Ico Input */
 .ico-input {position: relative;}
@@ -110,6 +114,8 @@
 .checkbox-title {flex: 150px 1 1; font-size: .85rem;}
 .checkbox-options input {margin: 0 1rem 0 0;}
 .form-group-content {border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 15px;} 
+
+.form-group-no-label .checkbox-group {border: none; padding: 15px;}
 
 .checkbox-inline label {text-transform: none; font-weight: 400; font-size: .85rem; border: 0; padding: 0; width: auto !important;}
 .modal-item .long-label label {flex-basis: 250px;}

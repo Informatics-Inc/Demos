@@ -103,12 +103,6 @@
             </div>
             <div class="form-group">
               <div class="flex input-row">
-                <label>24 Hour Clock</label>
-                <input type="text">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="flex input-row">
                 <label>Clock</label>
                 <div class="checkbox-inline">
                   <input type="checkbox" name="notify">
@@ -139,21 +133,37 @@
                 <input type="text">
               </div>
             </div>
-          <div class="form-group checkbox-list">
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">Chauffer Name & Number</label>
-            </div>
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">Chauffer On Site</label>
-            </div>
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">MapLink</label>
-            </div>
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">Vehicle Information</label>
-            </div>
-            <div class="traditional-checkbox">
-              <label><input type="checkbox" name="notify">Confirmation</label>
+            <div class="form-group">
+            <div class="form-group-no-label flex">
+              <div class="checkbox-group">
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Chauffer Name & Number</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">Chauffer On Site</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" checked name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" checked name="notify">
+                  </div>
+                </div>
+                <div class="checkbox-item">
+                  <div class="checkbox-title">MapLink</div>
+                  <div class="checkbox-options">
+                    <label>Text</label>
+                    <input type="checkbox" name="notify">
+                    <label>Email</label>
+                    <input type="checkbox" name="notify">
+                  </div>
+                </div>
+              </div> 
             </div>
           </div>
         </form>

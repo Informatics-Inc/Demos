@@ -46,7 +46,6 @@ let stopCounter = 1;
             <li><a href="#.html" class="tablinks" onclick="locType(event, 'Commercial-Aviation')" data-tab="Commercial-Aviation">Commercial Airport</a></li>
             <li><a href="#.html" class="tablinks" onclick="locType(event, 'Private-Aviation')" data-tab="Private-Aviation">Private Aviation</a></li>
             <li><a href="#.html" class="tablinks" onclick="locType(event, 'Train')" data-tab="Train">Train</a></li>
-            <li><a href="#.html" class="tablinks" onclick="locType(event, 'Pier')" data-tab="Pier">Pier</a></li>
             <li><a href="#.html" class="tablinks" onclick="locType(event, 'Heliport')" data-tab="Heliport">Heliport</a></li>
             <li><a href="#.html" class="tablinks" onclick="locType(event, 'Recents')" data-tab="Recents">Recents</a></li>
             <li><a href="#.html" class="tablinks" onclick="locType(event, 'Address-Book')" data-tab="Address-Book">Address Book</a></li>
@@ -84,7 +83,7 @@ let stopCounter = 1;
 
         <!-- Private Air -->
         <div data-content="Private-Aviation" class="tabcontent">
-          <div class="flex">
+          <div class="flex flex-five-box">
             <div class="ico-input">
               <i class="fa fa-search"></i>
               <input type="search" placeholder="Search Airports">
@@ -93,9 +92,14 @@ let stopCounter = 1;
               <i class="fa fa-plane"></i>
               <input type="text" placeholder="FBO/Hanger">
             </div>
+            
             <div class="ico-input">
               <i class="fa fa-hashtag"></i>
               <input type="text" placeholder="Tail No.">
+            </div>
+            <div class="ico-input">
+              <i class="fa fa-plane-arrival"></i>
+              <input type="time">
             </div>
             <div class="ico-input">
               <i class="fa fa-headset"></i>
@@ -118,24 +122,6 @@ let stopCounter = 1;
             <div class="ico-input">
               <i class="fa fa-hashtag"></i>
               <input type="text" placeholder="Train Number">
-            </div>
-          </div>
-        </div>
-
-        <!-- Pier -->
-        <div data-content="Pier" class="tabcontent">
-          <div class="flex">
-            <div class="ico-input">
-              <i class="fa fa-search"></i>
-              <input type="search" placeholder="Pickup Location">
-            </div>
-            <div class="ico-input">
-              <i class="fa fa-ship"></i>
-              <input type="text" placeholder="Cruise Line">
-            </div>
-            <div class="ico-input">
-              <i class="fa fa-id-badge"></i>
-              <input type="text" placeholder="Ship Name">
             </div>
           </div>
         </div>
@@ -223,7 +209,7 @@ let stopCounter = 1;
     newStop.offsetHeight;
 
     // Set max-height to allow for CSS transition
-    newStop.style.maxHeight = newStop.scrollHeight + 'px';
+    newStop.style.minHeight = newStop.scrollHeight + 'px';
 
     // Add transitioning class
     newStop.classList.add('new-item');
