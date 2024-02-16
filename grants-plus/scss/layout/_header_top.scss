@@ -1,0 +1,25 @@
+/* GLOBAL */
+#hdr-top {text-align: center; color: var(--text-color-inverse); padding: .85rem 0  .25rem 0; font-size: 85%;border-top:10px solid var(--secondary)}
+#hdr-top p {margin: 0;}
+#hdr-top ul { list-style: none; padding: 0; margin: 0; display: flex; gap:0.5rem; justify-content: center;}
+#hdr-top ul li {position: relative;}
+#hdr-top ul li:last-of-type:after {display: none;}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+#hdr-top .container {display: flex; justify-content: space-between;}
+.hidden-lg{display: none;}
+
+}
+@media (min-width: 992px) {
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}

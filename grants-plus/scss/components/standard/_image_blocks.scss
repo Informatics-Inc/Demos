@@ -1,0 +1,129 @@
+.theme-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    position: relative;
+    margin: 0 0 1.5rem 0;
+    position: relative;
+    z-index: 5;
+  }
+        /* TABLET */
+@media (min-width: 768px) {
+  .theme-img {
+    margin: 0 0 2rem 0;
+  }
+  }
+  .theme-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius-lg);
+    box-shadow:var(--shadow)
+  }
+  
+  .theme-img.two-images {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 0;
+  }
+
+  .theme-img.three-images {
+    grid-template-columns:1fr 1fr 1fr;
+    padding-right: 0;
+  }
+
+  .theme-img.two-images-small {
+    position: relative;
+  }
+  
+  .theme-img.two-images-small img:nth-child(2) {
+    position: relative;
+    left: 0px;
+    width: 50%; /* Adjust the size as needed */
+    z-index: 1; /* Ensure the second image is on top */
+  }
+    /* TABLET */
+@media (min-width: 768px) {
+  .theme-img.two-images-small img:nth-child(2) {
+    bottom: -75px;    position: absolute;
+    left: -0px;
+  }
+  .theme-img.two-images-small {
+    position: relative;padding-left:50px
+  }
+} 
+  
+  .theme-img.dots:after {
+    background: url(../img/shapes/dots-side.svg);
+    width:40px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    background-size: cover;
+    z-index: -1;
+  }
+  .wp-block-embed{position: relative;margin:50px auto;box-shadow: var(--shadow);}
+  .theme-img.dots-bottom:after,.wp-block-embed.dots-bottom:after, .theme-img.three-images:after  {
+    background: url(../img/shapes/dots-bottom.svg);
+    width: 150px;
+    height:40px;
+    position: absolute;
+    left: 0px;
+    content: "";
+    background-size: cover;
+    z-index:0;
+  }
+.wp-block-embed.dots-bottom:after {
+    top:calc( 100% - -15px);
+  }
+  .theme-img.dots-bottom:after{
+    top:calc( 100% - -20px)
+  }
+  .theme-img.three-images:after {
+    top:calc( 100% - -20px)
+  }
+  .theme-img.quotes:before {
+    content: "";
+    position: absolute;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    background-image: url(../img/shapes/quotes-circle.svg);/* Replace 'path/to/your-svg.svg' with the path to your SVG */
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -20px;
+    left:calc(50% - -100px);
+    z-index:3333; /* Ensure the SVG is behind the image */
+  }
+  
+  .theme-img.lines:after {
+    background: url(../img/lines.png);
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    content: "";
+    background-size: cover;
+  }
+  
+  .theme-img.lines:before {
+    background: url(../img/circles.png);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -100px;
+    bottom: -100px;
+    content: "";
+    background-size: cover;
+  }
+  
+/* TABLET */
+@media (min-width: 768px) {
+
+} 
+
+@media (min-width: 1200px) {
+  .theme-img{padding-right: 4.5rem;}
+
+}

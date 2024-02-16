@@ -1,0 +1,78 @@
+/* GLOBAL */
+#hdr-site {position: relative; z-index: 10;}
+#logo {display: block;width:230px;position:relative;top:-10px;}
+#menu ul {list-style: none; padding: 0; margin: 0;}
+#menu ul a {color: var(--text); text-decoration: none; display: block; padding: 1rem; font-weight: 700; position: relative;}
+
+/* ONLY MOBILE */
+@media (max-width: 991px) {
+#hdr-main {display: grid; grid-template-columns: auto 35px; padding: 1rem 0;}
+
+/* Menu Toggle */
+#menu-toggle {font-size:.65rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 700; color: var(--text); width: 35px; height: 40px; position: relative;}
+#menu-toggle > div {position: absolute; width: 100%; height: 100%; top: 0; left: 0; transition: var(--transition);}
+#menu-toggle .closed {display: flex; flex-direction: column; gap: 4px;}
+#menu-toggle .closed .bar {width: 100%; height: 3px; background: var(--primary); display: block;}
+#menu-toggle .open .bar {width: 100%; height: 3px; transform: rotate(45deg); background: var(--primary); display: block; transform-origin: center;position: absolute;left: 0;top: 46%;}
+#menu-toggle .open .bar:nth-last-of-type(2) {transform: rotate(-45deg)}
+#menu-toggle.collapsed .open {opacity: 0; visibility: hidden; top: -5px;}
+#menu-toggle.collapsed .closed {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .open {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .closed {opacity: 0; visibility: hidden; top: 5px;}
+
+/* Menu Collapse */
+#menu .btn-expand {position: absolute; right: 0; top: 0; height: auto; border: none; background: none; color: var(--primary); padding: 1rem;}
+.collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
+.show {height: auto;}
+
+/* Menu Links */
+#menu ul a {border-top: 1px dotted var(--gray);}
+#menu ul a:hover, #menu ul a:focus {background: var(--light);}
+#menu .wp-block-button__link {margin: 1rem 0;}
+#menu li {position: relative;}
+#menu ul ul a {border: none; padding: 10px 20px 10px 30px; font-weight: 500;}
+#menu ul ul li:last-of-type {margin-bottom: 1rem;}
+} /* END ONLY MOBILE */
+
+/* DESKTOP */
+@media (min-width: 992px) {
+#hdr-site {position: fixed; top: 0; width: 100%; background: #fff;}
+#menu-toggle {display: none;}
+.hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
+#menu {display: flex; align-items: center;}
+#menu ul {display: flex;}
+#menu ul a {padding: 1.5rem 1rem;}
+#menu .wp-block-button__link {margin-left: 1rem;}
+#logo{display:block;width:320px;position:relative;top:-20px;}
+
+/* Dropdown */
+#menu .btn-expand {display: none;}
+#menu ul li {position: relative;}
+#menu ul ul {position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
+#menu ul ul a {font-weight: 400; padding: 10px;}
+#menu li:hover ul {opacity: 1; visibility: visible; top: 100%;}
+
+/* Hovers & Active */
+#menu > ul > li > a:after {width: 0; height: 3px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--accent-1); opacity: 0; transition: var(--transition);}
+#menu > ul > li:hover > a {background: var(--light);}
+#menu > ul > li:hover > a:after {width: 100%; left: 0; opacity: 1;}
+#menu ul ul a:hover {color: var(--dark); text-decoration: underline; padding: 10px 5px 10px 15px; background: var(--light);}
+}
+
+/* Wordpress Nav Active State */
+#menu ul .current-page-ancestor > a,
+#menu ul .current-menu-item a {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Add Class On Scroll */
+// #hdr-site.scroll {}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}

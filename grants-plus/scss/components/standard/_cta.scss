@@ -1,0 +1,23 @@
+.call-to-action {background: #fff; padding: 1rem; border-radius: var(--border-radius-lg); color: var(--darkgray);}
+.call-to-action h2 {color: #000;}
+.call-to-action .wp-block-button__link {font-size: 1.15rem;}
+.call-to-action .wp-block-group,.call-to-action .wp-block-columns{margin-top:30px;margin-bottom:30px;}
+.call-to-action .wp-block-columns.is-layout-flex{gap:30px}
+
+ .email-input{display:flex;flex-direction:column;align-items:center;margin-right:10px;}
+ .email-input input[type="email"]{padding:10px;border-radius:5px;border:1px solid #ccc;}
+ .email-input input[type="submit"]{padding:10px 20px;border:none;background-color:var(--primary-dark);color:#fff;margin-left:0px;margin-top:10px;border-radius:5px;font-weight:700;cursor:pointer;width:100%;}
+
+/* TABLET */
+@media (min-width:768px){
+    .call-to-action .wp-block-columns.is-layout-flex{gap:60px}
+
+ .email-input{flex-direction:row;}
+ .email-input input[type="submit"] {
+    margin-left:10px;max-width:130px;margin-top:0;
+  }
+
+}
+
+@media (min-width: 992px) {
+}

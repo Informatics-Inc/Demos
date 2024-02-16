@@ -1,0 +1,42 @@
+.footer {margin-top: -100px; background: var(--secondary);position: relative; z-index: 5;color: var(--text-color-inverse); background-position: -100px 150px; background-size: 400px auto;}
+.footer-callout{padding-bottom:150px;padding-top:35px}
+.footer-callout h2{font-size:2rem}
+.flex img{max-width: 150px!important;}
+
+.footer {
+    background: url(/img/shapes/logo-mark-footer.svg) no-repeat 0% 100% var(--secondary);
+  }
+
+.footer .call-to-action {position: relative; top: -50px; box-shadow: 0 10px 25px 15px rgba(0,0,0,.1);}
+.footer a {color: var(--text-color-inverse);}
+.ftr-cols {display: grid; gap: 25px;}
+.footer .col img {margin: 0 0 2rem 0; display: block; max-width: 274px;}
+.footer h3 {color: #fff; font-size: 1.25rem; letter-spacing: 1px;margin-bottom:10px;margin-top:25px}
+.footer ul {list-style: none; color: var(--text-inverse); margin: 0; padding: 0;}
+.footer ul li {display: flex; align-items: center; gap: 10px; margin: 0;}
+.footer ul li a {color: var(--text-color-inverse); text-decoration: none; display: block;}
+.footer ul li a:hover {color: #fff; text-decoration: underline;}
+.footer .ico-btn-group {grid-template-columns: 1fr;}
+
+.footer-copy {text-align: center; border-top: 1px solid rgba(255,255,255,.25); padding: 15px; margin: 2rem 0 0 0; font-size: .85rem; color: var(--text-color-inverse);}
+
+.ftr-ico-content > * {display: grid; grid-template-columns: 25px auto;}
+.ftr-ico-content > * .fa {color: var(--accent-2);margin: 5px 0 0 0;}
+.ftr-ico-content .nav-social {margin: 0 0 0 25px; gap: 15px;}
+
+.ftr-ico-content .flex{padding:0;gap:10px}
+ .footer ul li a:hover{text-decoration: none}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .footer{padding-top:-0px;}
+  .footer-callout{padding-bottom:120px;padding-top:20px;}
+  .footer .call-to-action {top: -20px;}
+.ftr-cols {grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );;}
+}
+
+@media (min-width: 992px) {
+  .footer{padding-top:-0px;}
+  .footer-callout{padding-bottom:120px;padding-top:20px;}
+  .footer .call-to-action {top: -70px;}
+}

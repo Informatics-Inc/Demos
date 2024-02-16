@@ -1,0 +1,50 @@
+.hero-content {padding: var(--side-padding);position: relative;}
+.hero{position: relative;}
+.wp-block-cover.hero-right{overflow:hidden;height:530px;background:#333;position:absolute;right:0;top:0;z-index:0;width:30%;border-bottom-left-radius:110px;min-height:40px}
+.wp-block-cover.hero-left{overflow:hidden;position:relative;border-top-right-radius:110px;width:60%;height:158px;background:#333;position:absolute;left:0;bottom:-100px;z-index:-1;min-height:40px}
+.hero-left img{ filter: grayscale(100%);position:absolute;left:0;top:0;right:0;bottom:0;height:100%;width:100%;object-fit:cover;object-position:center bottom;}
+.hero-right img{ filter: grayscale(100%);position:absolute;left:0;top:0;right:0;bottom:0;height:100%;width:100%;object-fit:cover;object-position:center center;}
+
+.hero h1 {padding-top:25px;font-size:2.5rem;line-height: 1.1;letter-spacing:-1px;color:var(--primary);margin-bottom:30x;padding-right:30%}
+.hero h1 strong{color:var(--dark);font-weight:400; font-size:1.8rem;line-height: 1.2;letter-spacing:-0.0px;display: block;margin-top:10px}
+
+.hero .theme-img:after{background:url(../img/shapes/dots.svg);width:130px;height:130px;position:absolute;right:-12px;bottom:0px;content:"";background-size:cover;z-index:-1;}
+.hero .theme-img{display:flex;justify-content:center;align-items:center;height:320px;width:320px;border-radius:50%;margin:0 auto;}
+.hero .theme-img img{border:solid #fff 15px;border-radius:50%;width:100%;position:absolute;left:0;top:0;right:0;bottom:0;height:100%;object-fit:cover;object-position:center center;box-shadow:var(--box-shadow-lg)}
+
+/* TABLET */
+@media (min-width: 768px) {
+.hero-content {padding: 40px 20px 100px 20px;}
+.hero .feed {padding: 75px 0;}
+.hero-tools .flex {flex-wrap: nowrap;}
+.hero h1 {font-size: 3.75rem; padding-right:30%;margin-bottom:40px;}
+.hero h1 strong{font-size:2rem; padding-right: 100px;}
+.hero .theme-img{height:540px;width:540px;margin-top:-70px}
+}
+
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+.hero {display: grid; grid-template-columns: var(--side-width) 1fr 1fr var(--side-width); align-items: center; padding-top: 4rem;}
+.hero .hero-content {grid-column: 2; padding: 0 0 0 50px; position: relative; z-index: 5;}
+.hero h1 strong,.hero h1{padding-right: 20px; }
+
+.hero-tools {width: calc(100% + 50px);}
+.hero-tools .flex {flex-wrap: nowrap; gap: 10px;}
+.hero .theme-img{height:540px;width:540px;margin-top:0}
+.wp-block-cover.hero-right{height:330px;}
+.hero-content p {padding-right: 100px;}
+}
+@media (min-width: 1100px) {
+.hero .hero-content {padding: 90px 0 120px 0;}
+.hero h1 {font-size: 3.3rem;margin-bottom:40px; padding-right: 20px;}
+.hero h1 strong{font-size:2rem; padding-right: 40px; }
+.hero .theme-img{height:460px;width:460px;margin-top:0}
+
+}
+/* WIDE DESKTOP */
+@media (min-width: 1500px) {
+    .hero .theme-img{height:460px;width:460px;margin-top:0; }
+
+}
+

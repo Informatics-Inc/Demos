@@ -1,0 +1,50 @@
+.card .wp-block-buttons{margin-bottom:20px;}
+.card {position: relative; box-shadow: 0 10px 25px rgba(0,0,0,.1);  transition: box-shadow .5s; border-radius: var(--border-radius-lg); overflow: hidden; background: #fff;display: flex;flex-direction:column;}
+
+.card figure {overflow: hidden; margin: 0; aspect-ratio: 1.5 / 1;}
+.card figure img {width: 100%; height: 100%; object-fit: cover;}
+.card .content {padding: var(--spacer);display:flex;flex-direction:column;}
+.card .content p:last-of-type {margin: 0;}
+
+/* Icon Cards */
+.icon-card{position:relative;background:#fff;display:grid;grid-template-columns:1fr;gap:10px;}
+.icon-holder{overflow:visible!important;width:66px;height:66px;display:flex;align-items:center;text-align:center;align-content:center;padding:0px;}
+.card.icon-card .content{gap:15px;}
+.icon-card .wp-block-buttons{margin-bottom:0;margin-top:auto;}
+.card.icon-card.icon-left .content{gap:0}
+.card.icon-left{margin-bottom:20px}
+
+.icon-left{padding: var(--spacer);grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(1,1fr);display:grid;gap:1rem;}
+.icon-left figure{ grid-area: 1 / 1 / 2 / 2; }
+.icon-left .content{ grid-area: 1 / 2 / 2 / 6; padding: 0px;}
+.icon-left .wp-block-buttons{ grid-area: 2 / 2 / 3 /6 ; } 
+
+.card.icon-left{display: grid}
+
+/* Bio Cards */
+.card.bio-card {position: relative; box-shadow: 0 10px 25px rgba(0,0,0,.1);  transition: box-shadow .5s; border-radius: var(--border-radius-lg); overflow: hidden; background: #fff;display: flex;flex-direction:column;}
+.card.bio-card  figure {overflow: hidden; margin: 0; aspect-ratio: 1 / 1;}
+
+h5.name{color:var(--secondary);margin-bottom:5px;font-size:1rem}
+.bio-card p{font-size:0.85rem}
+
+/* Hovers */
+.card:hover{box-shadow:var(--box-shadow-lg)}
+.card h3 a{color:var(--text);text-decoration: none;}
+.card:hover h3 a{color:var(--primary)}
+.card img{ transition:var(--transition)}
+.card:hover figure img{transition:var(--transition);transform:scale(1.08)}
+
+
+/* TABLET */
+@media (min-width:768px){
+.card-body{padding:30px}
+.card{height:100%;}
+
+}
+
+@media (min-width: 1200px) {
+    .card{height:100%;}
+    .icon-left{padding: var(--spacer);grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(1,1fr);display:grid;gap:1rem;}
+
+}
