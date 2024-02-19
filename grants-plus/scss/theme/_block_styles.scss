@@ -1,6 +1,7 @@
 .wp-block-column{z-index: 1;}
 .has-background-dim .is-style-eyebrow {color: #b4e1ff!important;}
 .has-background-dim .testimonial p{z-index: 99;}
+.is-style-bottom-margin-small .is-style-eyebrow{margin-top:50px;}
 
 .is-style-loud{font-size:3.25rem;margin-bottom:-5px;font-weight:800;color:var(--secondary)}
 .is-style-stat{font-size:1.4rem;margin-bottom:0px;}
@@ -107,4 +108,10 @@ background-color:var(--secondary)
 @media (min-width: 768px) {
 .wp-block-image .alignleft, .wp-block[data-align="left"] > .wp-block-image {float:left; margin: 0 2rem 2rem 0; max-width: 50%;}
 .wp-block-image .alignright, .wp-block[data-align="right"] > .wp-block-image {float:right; margin: 0 0 2rem 2rem; max-width: 50%;}
+.is-style-bottom-margin-small .is-style-eyebrow{margin-top:0px;}
+.is-style-bottom-margin-small .col{margin-bottom:-0px;margin-top:50px}
+}
+
+@media (min-width: 1200px) {
+  .is-style-bottom-margin-small .col{margin-bottom:-45px;}
 }
