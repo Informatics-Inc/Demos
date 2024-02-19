@@ -77,13 +77,14 @@ p a:hover {text-decoration: none;}
 #hdr-top a:hover,#hdr-top a,.footer a:hover .fa-brands,.footer a .fa-brands{ text-decoration: none!important;}
 #hdr-top .fa-brands:hover {background-color:var(--accent-1);color:#fff;border:solid 1px var(--accent-1)}
 .fa-brands{text-decoration: none!important;font-size:1.0rem;color:var(--accent-1);display:flex;flex-direction:column;justify-content:center;align-items:center;border:solid 1px var(--accent-1);width:32px;height:32px;border-radius:100%;background-color:#fff;transition:var(--transition)}
-.footer .fa-brands:hover {background-color:var(--accent-1);color:#fff;border:solid 1px var(--accent-1);}
-.footer .fa-brands{width:45px;height:45px;font-size:1.2rem;opacity:0.75;color:var(--secondary);border:solid 1px var(--accent-1);background-color:#fff;gap: 10px !important;}
+
 
 /* Layouts */
 .container {max-width: var(--max-width); margin: 0 auto; padding-left: var(--spacer);padding-right: var(--spacer); position: relative;}
 .container.skinny {max-width: 900px;}
-
+.has-text-align-center {
+  text-align:center;padding-left:15px;padding-right:15px
+}
 /* TABLET */
 @media (min-width: 768px) {
 

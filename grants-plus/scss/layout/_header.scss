@@ -38,7 +38,7 @@
 @media (min-width: 992px) {
 #hdr-site {position: fixed; top: 0; width: 100%; background: #fff;}
 #menu-toggle {display: none;}
-.hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
+.hdr-desktop {display: flex; justify-content: space-between; align-items: center;padding: 15px 0;}
 #menu {display: flex; align-items: center;}
 #menu ul {display: flex;}
 #menu ul a {padding: 1.5rem 1rem;}

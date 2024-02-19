@@ -2,7 +2,7 @@
 .page-hdr {position: relative; z-index: 5; overflow: hidden;}
 .page-hdr figure {position: absolute; inset: 0;margin: 0;}
 .page-hdr figure img {width: 100%; height: 100%;position:absolute;top:0;right:0;left:0;bottom:0; object-fit: cover; opacity: .3;}
-.page-hdr .content {padding: 100px var(--spacer) 65px var(--spacer) ; text-align: center; position: relative; z-index: 5;}
+.page-hdr .content {padding: 130px var(--spacer) 65px var(--spacer) ; text-align: center; position: relative; z-index: 5;}
 .page-hdr .content h1 {position: relative;letter-spacing: 0;color:#fff}
 
 /* Breadcrumb */

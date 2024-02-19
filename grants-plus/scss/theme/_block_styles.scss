@@ -50,7 +50,7 @@
 /* Main Background */
 .has-background-dim img{filter:grayscale(100%);}
 .wp-block-cover.has-background-dim:not([class*=-background-color]) {
-background-color:#0f66a4
+background-color:var(--secondary)
 }
 
 
