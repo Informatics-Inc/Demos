@@ -1,0 +1,18 @@
+.call-to-action div:nth-child(2){padding: 25px var(--spacer) 25px var(--spacer)}
+.call-to-action{background: var(--light-darker) url("../img/shapes/white-shape-lines.svg");position: relative;background-position:bottom right;background-repeat:no-repeat;background-size:250px auto;}
+.call-to-action figure img{max-width:100%;max-height:100%;height:100%;width:100%;object-fit:cover;margin:0}
+.call-to-action div:nth-child(2){grid-column:3;padding: 25px var(--spacer) 25px 25px;position:relative;}
+
+.call-to-action .scrolldown{display:block;position: relative;width:100%;height:90px;bottom:auto;left:auto;z-index: 6;text-align:left;font-size:1.1rem;font-family:var(--header);text-transform: uppercase;background:url("../img/shapes/arrow-down.svg")no-repeat;background-size:65px;background-position:top left 25px;}
+
+/* TABLET */
+@media (min-width:768px){
+    .call-to-action{display:grid;grid-template-columns:var(--side-width) 1fr 1fr var(--side-width);align-items:center}
+    .call-to-action div:nth-child(2){grid-column:3;padding: 50px var(--spacer) 50px 50px;position:relative;z-index:5}
+    .call-to-action div:first-child{grid-column:1/span 2;display:flex;justify-content:center;align-items:center;height:100%}
+    .call-to-action figure{margin:0;width:100vw;height:100%;display:flex;justify-content:center;align-items:center;overflow:hidden;}
+}
+
+@media (min-width: 992px) {
+    .call-to-action div:nth-child(2){grid-column:3;padding: 75px var(--spacer) 75px 50px;position:relative;z-index:5}
+}

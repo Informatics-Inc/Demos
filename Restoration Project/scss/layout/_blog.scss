@@ -1,0 +1,48 @@
+.is-style-bkg-right .blog-list-item{display: block; padding: 25px 0 0 0;}
+.blog-list-item:last-child{border-bottom: none}
+.blog-list-item {display: grid; gap: 15px; padding: 25px 0 10px 0; margin-bottom:10px; border-bottom: 1px solid #c1cac2;}
+.date {font-size: .8rem; font-weight: 700; color: var(--primary); text-transform: uppercase; margin: 0 0 1rem 0;}
+.blog-list-item .text {align-content: flex-start;}
+.blog-list-item h2 {font-size: 1.5rem; font-family: var(--main); line-height: 1.2; letter-spacing: normal; margin: 0 0 .5rem 0;font-weight: 700;}
+.blog-list-item h2 a {color: var(--text); text-decoration: none;}
+.blog-list-item h2 a:hover {color: var(--primary);}
+.blog-list-item .wp-block-buttons {margin: 0;}
+.blog-content figure img{margin-bottom:25px}
+
+#pagination {font-size: 1rem; justify-content: center; display: flex; margin: 2rem 0 0 0;}
+#pagination li:before {display: none;}
+#pagination a {color: var(--primary);}
+#pagination .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.blog-hdr {text-align: center; padding: var(--spacer-vert) 0; margin: 0px 0 var(--spacer-vert) 0; border-bottom: 1px solid #ccc;}
+.blog-hdr h1 {margin: 1rem 0 2rem 0;}
+.blog-content {font-size: 1.15rem; line-height: 1.6;}
+.blog-share {text-align: center; padding: var(--spacer-vert) 0; margin: var(--spacer-vert) 0 0 0; border-top: 1px solid #ccc;}
+.blog-share h3{font-family:var(--main);font-weight:700;}
+.social-share {
+  text-align:center;
+  list-style:none;
+  display:flex;
+  padding:0;
+  margin:1rem 0;
+  justify-content:center
+}
+.social-share i {
+  text-align:center;
+  font-size:2.15rem;
+  padding:5px
+}
+.social-share a:hover {color: var(--accent-1);}
+/* TABLET */
+@media (min-width: 768px) {
+  .blog-list-item {grid-template-columns: 1.5fr 3fr; gap: 2rem;}
+  .blog-list-item figure img{height:100%;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:100%;object-fit: cover;}
+  .blog-list-item figure {position: relative;height:180px}
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+}

@@ -1,0 +1,29 @@
+/* WP Button Styles */
+/* Primary */
+.wp-block-buttons {margin: var(--spacer) 0;}
+.wp-block-button__link{background: var(--primary); padding: .75rem 1.65rem; color: #fff; text-align: center; border-radius: 35px; text-decoration: none; font-weight: 700;position: relative; z-index: 5; }
+$color:#115448;
+.wp-block-button__link{transition:all .3s;overflow:hidden;z-index:1;
+&:before{content:'';position:absolute;bottom:0;left:0;width:0%;height:100%;background:darken($color,10%);transition:all .3s;border-radius:10rem;z-index:-1;}
+&:hover{color:#fff;&:before{width:100%;}
+}
+}
+
+/* Primary Light */
+.hero .wp-block-button__link {margin-top:10px;border:solid 1px #115448;background: var(--bkg); padding: .75rem 1.65rem; color: #115448; text-align: center; border-radius: 35px; text-decoration: none; font-weight: 700;position: relative; z-index: 5;transition:all .3s;overflow:hidden;z-index:1;
+&:before{content:'';position:absolute;bottom:0;left:0;width:0%;height:100%;background:#fff;transition:all .3s;border-radius:10rem;z-index:-1;}
+&:hover{color:#115448;&:before{width:100%;}
+}
+}
+
+/* Text */
+.is-style-btn-text .wp-block-button__link {background: none; padding: 1rem 0; color: var(--primary); box-shadow: none;}
+.is-style-btn-text .wp-block-button__link:before {display: none;}
+.is-style-btn-text .wp-block-button__link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);}
+.is-style-btn-text .wp-block-button__link:hover {color: var(--primary-dark);}
+.is-style-btn-text .wp-block-button__link:hover:after {margin: 0 0 0 10px;}
+
+/* Secondary */
+.is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
+.is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
+
