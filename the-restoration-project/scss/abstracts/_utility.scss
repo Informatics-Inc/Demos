@@ -12,6 +12,11 @@
 .grid + .grid {margin-top: 2rem;}
 }
 
+/* TABLET */
+@media (min-width: 550px) {
+    .grid-2x2-md {grid-template-columns: 1fr 1fr;}
+    }
+    
 @media (min-width: 992px) {
 .grid-3-lg {grid-template-columns: 1fr 1fr 1fr; gap: var(--spacer);}
    

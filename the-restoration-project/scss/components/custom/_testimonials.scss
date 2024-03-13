@@ -1,4 +1,4 @@
-.is-style-bkg-light.testimonials{padding:75px 0;position: relative;}
+.is-style-bkg-light.testimonials{padding:45px 0;position: relative;}
 .is-style-bkg-light.testimonials .theme-img{border:none;box-shadow:none}
 .testimonials .theme-img img{border:none;box-shadow:none}
 .testimonials .theme-img.two-images img:nth-last-of-type(2){display:none}
@@ -19,7 +19,7 @@
 .swiper-button-prev{padding-left:25px;}
 .swiper-button-next{padding-right:25px;}
 .swiper-pagination-bullet-active{background:var(--primary,var(--primary))!important;}
-.swiper-pagination{z-index:4!important;}
+.swiper-pagination{z-index:1!important;}
 
 .swiper-slide {display: grid; gap: var(--spacer);}
 .swiper-slide  {grid-template-columns: 1fr 1fr; gap: var(--spacer);}
