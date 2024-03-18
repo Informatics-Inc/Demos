@@ -1,0 +1,45 @@
+/* GLOBAL */
+#hdr-top {border-top:solid 10px var(--secondary);padding:0.7rem 0;text-align: center; color: var(--primary);font-size: 85%;}
+.hdr-desktop{border-top: 1px solid #ccc;
+}
+.hdr-top-left p{font-size:0;}
+.hdr-top-left p a{font-size:0.9rem;}
+.hdr-top-left{text-align: left;}
+
+#hdr-top p {margin: 0;}
+#hdr-top ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem; justify-content: center;}
+#hdr-top ul li {position: relative;}
+#hdr-top ul li:after {width: 1px; height: 0.8rem; display: block; position: absolute; right: -1.5rem; top: 4px; background: #ccc;  content: ""; margin: 0 1rem;}
+#hdr-top ul li:last-of-type:after {display: none;}
+#hdr-top ul a,#hdr-top a ,#hdr-top {text-decoration: none;color:var(--dark)}
+#hdr-top ul a:hover,#hdr-top a:hover  {color:var(--primary); text-decoration: none;}
+.hdr-top-left a{padding:1rem 0;margin-right:50px;position:relative;transition:all 0.5s ease;}
+
+.hdr-top-left a::after{font-size:1.25rem;bottom:-0.2rem;color:var(--secondary);content:"\f178";
+ font-family:"Font Awesome 5 Free";position:absolute;left:calc(100% + 10px);transform:translateY(-50%);transition:all 0.5s ease;}
+ .hdr-top-left a:hover:hover::after{left:calc(100% + 20px);}
+ 
+ #menu .hidden-lg ul li a{font-weight:400;padding-left:20px}
+ .hidden-sm{display: none !important}
+
+ 
+/* TABLET */
+@media (min-width: 768px) {
+.hdr-top-left a::after{left:calc(100% + 15px)}
+.hdr-top-left a:hover:hover::after{left:calc(100% + 25px);}
+.hdr-top-left p{font-size:0.9rem}
+.hdr-top-left p a{font-size:0.9rem;}
+#hdr-top .container {display: flex; justify-content: space-between;}
+}
+@media (min-width: 992px) {
+.hidden-sm{display: block !important;}
+.hidden-lg{display:none}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}

@@ -1,0 +1,46 @@
+/* Page Headers */
+.page-hdr {min-height:110px;position: relative; z-index: 5; overflow: hidden; background: rgb(0,123,128);
+  background: linear-gradient(32deg, rgba(0,123,128,1) 0%, rgba(0,123,128,1) 48%, rgba(141,71,170,1) 100%);}
+.page-hdr figure {position: absolute; inset: 0;border-top: 1px solid rgba(0,0,0,.085); margin: 0;}
+.page-hdr .content {text-align:center;margin: 0 auto;padding: 25px var(--spacer); position: relative; z-index: 5;max-width: var(--max-width);}
+.page-hdr .content h1 {position: relative;color:#fff;margin-bottom:9px}
+
+.page-hdr::before{
+background:url(../img/pineapple-pattern.svg);background-size: auto;
+width: 100%;   background-repeat: repeat;
+height:380%; 
+position: absolute;
+left: 0%;
+top: 0%;opacity: 0.2;
+content: "";
+}
+
+/* Breadcrumb */
+.breadcrumb-nav {display: flex; justify-content: left; padding: 0; margin: 0 0 .5rem 0; font-size:0.75rem;letter-spacing:0px; text-transform: uppercase; list-style: none; gap: 20px; font-family: var(--body); letter-spacing: 1px;font-weight: 700;}
+.breadcrumb-nav a {color: var(--dark);text-decoration: none;}
+.breadcrumb-nav a:hover {color:var(--primary)}
+.breadcrumb-nav li {position: relative;color:var(--primary)}
+.breadcrumb-nav li:after {content:"";width: 4px; height: 4px; background:var(--dark); position: absolute; right: -12px; top: 8px; margin: 0 0 0 .5rem; display: block; border-radius: 50%;}
+.breadcrumb-nav li:last-of-type:after {display: none;}
+.breadcrumb-nav span {display: flex; gap: 5px;} 
+
+/* Breadcrumb */
+.page-hdr .breadcrumb-nav {justify-content: center;}
+.page-hdr .breadcrumb-nav a {color: #fff;}
+.page-hdr .breadcrumb-nav a:hover {color:var(--accent-1)}
+.page-hdr .breadcrumb-nav li {color:var(--accent-1)}
+.page-hdr .breadcrumb-nav li:after {background: #fff;}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .page-hdr .content {display: flex;justify-content:space-between;align-items: center;padding: 30px var(--spacer);}
+    .page-hdr .content h1 {position: relative;margin:0;padding-bottom:10px}
+    .page-hdr .breadcrumb-nav {margin:0}
+
+  
+  } 
+  
+/* WIDE DESKTOP */
+@media (min-width:992px){
+
+}
