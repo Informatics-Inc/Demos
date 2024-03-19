@@ -1,0 +1,30 @@
+.clinic-detail .preheader{margin: 2rem 0 1rem 0;}
+.preheader + .wp-block-columns {margin: 3rem 0 3rem 0;}
+
+.clinic-detail ul {list-style: none; padding: 0;}
+.clinic-detail ul li {padding: 2px 0;}
+.clinic-detail ul strong {float: right;}
+.clinic-detail {gap: 50px;}
+.clinic-detail + .preheader {margin: 2rem 0;}
+
+.clinic-detail a {display: block; padding: 10px 15px 10px 18px; color: var(--text); text-decoration: none; margin:5px 0;border-radius:50px;background:#fff;}
+.clinic-detail figure{border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid var(--secondary-light-border);
+}
+.divider:after{width:calc(100% - 155px);content:"";height:1px;background:#ddd;position:absolute;right:0;top:10px;}
+
+  
+
+/* TABLET */
+@media (min-width: 768px) {
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}

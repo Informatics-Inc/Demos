@@ -1,0 +1,99 @@
+/* WP Paragraph Styles */
+.is-style-eyebrow {text-transform: uppercase; color: var(--secondary); letter-spacing: 2px;background:var(--light-gray);border-radius:20px;padding:5px 20px;font-weight:700;display: table;}
+.is-style-eyebrow.has-text-align-center{margin:0 auto 1.25rem auto}
+.has-text-align-center{padding-left:var(--spacer);padding-right:var(--spacer);}
+
+.is-style-lead {font-size: 1.35rem; font-weight: 400;}
+.is-style-callout {font-size: 1.25rem; border-left: 5px solid var(--accent-2); padding-left: 1.25rem;}
+.is-style-max-width {max-width: 650px; @include margin-auto;}
+
+/* WP Column Section Colors */
+/* Light background */
+.is-style-bkg-light {background: var(--light) url("../img/wave-line.svg");position: relative;background-position:center;background-repeat:no-repeat;background-size:100% auto; padding: 1px 0; }
+
+.is-style-bkg-wave {
+  background:var(--light) url(../img/large-wave-bottom.svg);
+  position:relative;
+ background-position: bottom center; 
+  background-repeat:no-repeat;
+  background-size:100% auto;
+  padding:1px 0 40px 0;margin-bottom:-40px;margin-top:80px;
+}
+.is-style-bkg-wave:before{   background:url(../img/large-wave.svg);
+  width: 100%;
+  height:300px;
+  top: -150px;
+  margin-top:-150px;
+  position: absolute;
+  right: 0;
+  content: "";
+  background-size: cover;}
+
+.is-style-bkg-left, .is-style-bkg-right {padding: 1px 0; position: relative; z-index: 5; overflow: hidden;}
+.is-style-bkg-left:after, .is-style-bkg-right:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--primary); border-radius: 0 10px 10px 0; content:""; z-index: -1; border-radius: 0 var(--border-radius-xl) var(--border-radius-xl) 0;}
+.is-style-bkg-right:after {left: auto; right: 0; border-radius: var(--border-radius-xl) 0 0 var(--border-radius-xl);}
+
+
+.is-style-linklist {list-style-type:none;padding-left:0;}
+.is-style-linklist li {list-style-type:none;position:relative;padding-left:24px;margin-bottom:15px;line-height:1.4} 
+.is-style-linklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--primary)}
+
+/* WP Block Separator */
+.wp-block-separator, hr {margin:40px auto; border: none; border-bottom: 1px solid #ccc; max-width: var(--max-width);} 
+
+/* WP File Block Styles */
+.wp-block-file:not(.wp-element-button) {
+    font-size: .85em;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+}
+.wp-block-file * + .wp-block-file__button {
+    margin-left: .75em;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+}
+
+/* WP Block Cover */
+.wp-block-cover, .wp-block-cover h2, .wp-block-cover h3,.is-style-bkg-left h2 {color: #fff;}
+.wp-block-cover .wp-block-cover__background {opacity: .65;}
+.wp-block-cover p.is-style-eyebrow, .wp-block-cover p.is-style-loud {color: var(--secondary);}
+.wp-block-cover + .wp-block-group {margin-top: calc(var(--spacer-vert) * -1);}
+.wp-block-cover .wp-block-columns{padding:15px}
+
+.wp-block-cover .has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image .has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
+.wp-block-cover.has-background-dim:not([class*=-background-color]) {
+  background-color:var(--primary)}
+
+
+/* Columns */
+.is-style-small-margin {margin-top: -2rem !important;}
+.is-style-large-gap {gap: 4rem !important;}
+.is-style-small-margin + .is-style-small-margin {margin-bottom: 3rem !important;}
+/* Social Media Links */
+.wp-block-social-links .wp-social-link {color: #fff;}
+.wp-block-social-links .wp-social-link a {color: #fff !important;}
+.wp-block-social-links .wp-social-link a:hover {color: var(--primary) !important;} 
+
+
+@media (min-width: 768px) {
+.wp-block-image .alignleft, .wp-block[data-align="left"] > .wp-block-image {float:left; margin: 0 2rem 2rem 0; max-width: 50%;}
+.wp-block-image .alignright, .wp-block[data-align="right"] > .wp-block-image {float:right; margin: 0 0 2rem 2rem; max-width: 50%;}
+}
+
+@media (min-width: 992px) {
+    
+  .is-style-bkg-wave {
+    padding:1px 0 250px 0;margin-bottom:-350px;margin-top:0px;
+  }
+  .is-style-bkg-wave {
+    margin-top:80px;
+      }
+
+  }

@@ -1,0 +1,35 @@
+.sidebar {overflow: hidden; }
+.sidebar.wp-block-cover{align-items: end;}
+.sidebar + .sidebar {margin-top: 25px;}
+.sidebar.testimonial h5  {font-family: var(--body);font-size:1.15rem;line-height:1.5;letter-spacing: 0;position: relative;padding-top:50px;}
+.sidebar.testimonial h5:after{background:url(../img/quotes.svg);width:65px;height:40px;position:absolute;left:0;top:0px;content:"";background-size:cover;z-index:1;}
+
+.sidebar h4 {background: none;padding:var(--spacer) 0; margin: 0;font-family:var(--body);font-weight: 700;font-size:1.5rem;}
+nav.tag-list,.sidebar .sec-nav ul {list-style: none; padding:18px; margin: 0;background:var(--light);border:solid #eee 2px;border-radius:20px}
+nav.tag-list ul li{margin:5px;}
+
+.sec-nav ul a {display: block; padding: 10px 15px 10px 18px; color: var(--text); text-decoration: none; margin:5px 0;border-radius:50px;background:#fff;}
+.sec-nav ul a:hover {color:#fff;background:var(--primary-dark);}
+.sec-nav ul a {position: relative; color:#fff;background:var(--primary);font-weight: 700;border-radius:50px;}
+.sec-nav ul a:after {content: "\f054";font-family: FontAwesome; color:#fff; margin: 0 0 0 7px; text-decoration: none; position: absolute; right: 15px; top: calc(50% - 8px); font-size: .75rem;;opacity:0.5}
+nav.sec-nav ul {list-style: none;padding:0}
+
+.sidebar .sec-nav ul a {color: var(--text);background:#fff;}
+.sidebar .sec-nav ul a:hover {color:#fff;background:var(--primary);}
+.sidebar .sec-nav ul > .current_page_item > a {color:#fff;background:var(--primary)}
+.sec-nav ul li:last-of-type a {border: none;}
+
+.tag-list ul {display: flex; flex-wrap: wrap; list-style: none; padding: var(--spacer); gap: 5px; margin: 0;}
+.tag-list a {padding: 4px 6px; background: #fff; font-size: .85rem; border-radius: 4px; display: inline;}
+.tag-list li a:hover {background: none;}
+
+.sidebar.wp-block-cover.has-background-dim:not([class*="-background-color"]) h3{font-family:var(--body);font-weight: 700;font-size:1.5rem}
+.sidebar.wp-block-cover.has-background-dim:not([class*="-background-color"]){border-radius: 20px;background-color:var(--secondary);}
+.sidebar.wp-block-cover.has-background-dim:not([class*="-background-color"]) .wp-block-cover__inner-container figure img{margin:18px auto 24px auto;max-width:75px}
+
+/* Button Light */
+.sidebar.wp-block-cover.has-background-dim:not([class*="-background-color"]) .wp-block-button a{border:solid 1px var(--primary);background:#fff; padding: .65rem 1.65rem; color: var(--primary); text-align: center; border-radius: 35px; text-decoration: none; font-weight: 700;position: relative; z-index: 5;transition:all .3s;overflow:hidden;z-index:1;
+    &:before{content:'';position:absolute;bottom:0;left:0;width:0%;height:100%;background:var(--primary);transition:all .3s;border-radius:10rem;z-index:-1;}
+    &:hover{color:#fff;&:before{width:100%;}
+    }
+    }
