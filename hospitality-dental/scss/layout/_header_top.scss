@@ -10,7 +10,7 @@
 #hdr-top ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem; justify-content: center;}
 #hdr-top ul li {position: relative;}
 #hdr-top ul li:after {width: 1px; height: 0.8rem; display: block; position: absolute; right: -1.5rem; top: 4px; background: #ccc;  content: ""; margin: 0 1rem;}
-#hdr-top ul li:last-of-type:after {display: none;}
+#hdr-top ul li:last-of-type:after {display: none;} 
 #hdr-top ul a,#hdr-top a ,#hdr-top {text-decoration: none;color:var(--dark)}
 #hdr-top ul a:hover,#hdr-top a:hover  {color:var(--primary); text-decoration: none;}
 .hdr-top-left a{padding:1rem 0;margin-right:50px;position:relative;transition:all 0.5s ease;}

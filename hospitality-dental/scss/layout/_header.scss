@@ -9,7 +9,7 @@ nav a:nth-last-child(2)  {border:solid 1px var(--primary);background:#fff; paddi
     &:before{content:'';position:absolute;bottom:0;left:0;width:0%;height:100%;background:var(--primary);transition:all .3s;border-radius:10rem;z-index:-1;}
     &:hover{color:#fff;&:before{width:100%;}
     }
-    }
+    } 
  nav a i{margin-right:8px}
 
 /* ONLY MOBILE */
