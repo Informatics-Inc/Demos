@@ -59,10 +59,10 @@ ul li::marker {color: var(--secondary);}
 background-color:var(--primary);}
 
 /* Checklist */
-ul.checklist li::before{content:"";font-family:FontAwesome;transition:var(--transition);color:var(--secondary);position:absolute;left:0px;}
-ul.checklist li::marker{content:""}
-ul.checklist li{position:relative;padding-left:25px;margin-bottom:10px}
-ul.checklist{padding-left:0px}
+ul.is-style-checklist li::before{content:"";font-family:FontAwesome;margin:0 8px 0 0px;transition:var(--transition);color:var(--secondary);position:absolute;left:0px}
+ul.is-style-checklist li::marker{content:""}
+ul.is-style-checklist li{list-style-type:none;position:relative;padding-left:22px;margin-bottom:10px}
+ul.is-style-checklist{padding-left:0px}
 
 /* SVG underline */
 h2 em{position:relative;}
