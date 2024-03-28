@@ -45,7 +45,6 @@ window.addEventListener("scroll", function() {
   }
 
   var x = scroll;
-  var pageHeaderImgs = document.querySelector(".page-header figure imgs");
   var pageHeaderImg = document.querySelector(".page-header figure img");
 
   if (pageHeaderImgs && pageHeaderImg) {

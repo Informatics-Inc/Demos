@@ -56,8 +56,8 @@
           </ul>
         </div>
         <ul class="menu-main">
-          <li><a href="book-now.html">Book Now</a></li>
-          <li class="active"><a href="counties.html">Counties</a></li>
+          <li class="active"><a href="book-now.html">Book Now</a></li>
+          <li><a href="counties.html">Counties</a></li>
           <li><a href="events.html">Events</a></li>
         </ul>
       </div>
@@ -67,118 +67,104 @@
   <main id="main-content">
     <header class="page-header fadeinup delay-1">
       <figure>
-        <img src="img/hero-3.jpg" />
+        <img src="img/hero-4.jpg" />
       </figure>
       <div class="text">
         <div class="container">
           <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li>Counties</li>
+            <li>Book Now</li>
           </ol>
-          <h1>Iowa Counties</h1>
+          <h1>Book Now</h1>
         </div>
       </div>
     </header>
     <div class="container grid grid-gap-md">
-      <div class="search fadeinup delay-2">
-        <div class="row">
-          <div class="col">
+      <div class="search grid fadeinup delay-2">
+        <div class="row flex-basis-25">
+          <div class="col flex-shrink-no">
             <div class="input-wrap">
               <i class="fa fa-location-dot"></i>
-              <input type="search" placeholder="Keyword Search">
+              <input type="search" placeholder="Try 'Linn County' or 'Lakeside'">
             </div>
           </div>
-          <div class="col">
+          <div class="col check-in-out">
             <div class="input-wrap">
-              <i class="fa-regular fa-calendar-check"></i>
-              <select class="form-select">
-                <option>Has Events</option>
-                <option>Yes</option>
-                <option>No</option>
-              </select>
+              <i class="fa-regular fa-calendar"></i>
+              <input id="datepicker1" placeholder="Check In" />
             </div>
-          </div>
-          <div class="col">
             <div class="input-wrap">
-              <i class="fa-solid fa-person-shelter"></i>
-              <select class="form-select">
-                <option>By Facility Type</option>
-                <option>Campgrounds</option>
-                <option>Shelter</option>
-                <option>Cabins</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-clock-rotate-left"></i>
-              <select class="form-select">
-                <option>Recently Updated</option>
-                <option>1 day</option>
-                <option>10 days</option>
-                <option>30 days</option>
-              </select>
+              <i class="fa-regular fa-calendar"></i>
+              <input id="datepicker2" placeholder="Check Out" />
             </div>
             <a href="book-now.html" class="btn-theme"><i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="row">
-          <div class="alpha-list">
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('A')">
-A                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('B')">
-B                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('C')">
-C                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('D')">
-D                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('E')">
-E                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('F')">
-F                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('G')">
-G                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('H')">
-H                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('I')">
-I                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('J')">
-J                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('K')">
-K                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('L')">
-L                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('M')">
-M                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('N')">
-N                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('O')">
-O                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('P')">
-P                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Q')">
-Q                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('R')">
-R                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('S')">
-S                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('T')">
-T                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('U')">
-U                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('V')">
-V                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('W')">
-W                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('X')">
-X                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Y')">
-Y                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Z')">
-Z                            </a>
-           </div>
+        <div class="row selects flex-basis-25">
+          <div class="col">
+            <div class="input-wrap">
+              <i class="fa-solid fa-tent"></i>
+                <select class="form-select">
+                  <option>Facility Type</option>
+                  <option selected>All Facilities</option>
+                  <option>Cabin</option>
+                  <option>Campsite</option>
+                  <option>Lodge</option>
+                  <option>Other</option>
+                  <option>Shelter</option>
+                </select>
+              </div>
+          </div>
+          <div class="col">
+            <div class="input-wrap">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <select class="form-select">
+                  <option >County</option>
+                  <option selected>Adair</option>
+                  <option>Allapoose</option>
+                  <option>Benton</option>
+                  <option>Iowa</option>
+                  <option>Eli</option>
+                  <option>Frester</option>
+                  <option>Gordon</option>
+                  <option>Genevieve</option>
+                  <option>Horatia</option>
+                  <option>Ilk</option>
+                  <option>Illingsburg</option>
+                  <option>The rest with go here</option>
+                </select>
+              </div>
+          </div>
+          <div class="col">
+            <div class="input-wrap">
+              <i class="fa-solid fa-person-hiking"></i>
+              <select class="form-select">
+                <option disabled>Activity</option>
+                  <option>Biking</option>
+                  <option>Boating</option>
+                  <option>Cabins</option>
+                  <option>Camping</option>
+                  <option>Fishing</option>
+                  <option>The rest...</option>
+                </select>
+              </div>
+          </div>
+          <div class="col">
+            <div class="input-wrap">
+              <i class="fa-regular fa-star"></i>
+              <select class="form-select">
+                  <option>Amenities</option>
+                  <option>A/C</option>
+                  <option>Campnig Winter</option>
+                  <option>Carry in/out refuse</option>
+                  <option>Dump Station</option>
+                  <option>EV Charger</option>
+                  <option>The rest...</option>
+                </select>
+              </div>
+          </div>
         </div>
+        
       </div>
       
       <div class="grid auto-grid grid-gap-xm fadeinup delay-3">
@@ -252,10 +238,10 @@ Z                            </a>
           </div>
           <div class="results-info">
             <ul>
-              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Search Criteria</a></li>
-              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Paramter</a></li>
+              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> All Facilities</a></li>
+              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Adair County</a></li>
             </ul>
-            <p>Showing 25 of 152 Results</p>
+            <p>Showing 25 of 375 Results</p>
           </div>
         </div>  
       </section>
@@ -263,289 +249,218 @@ Z                            </a>
       <!-- RESULTS LIST -->
       <section class="animate-in delay-3">
         <div class="container">
-          <div class="auto-grid-5 grid-gap-sm horizontal-items">
+          <div class="auto-grid-5 grid-gap-sm">
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
-                  <img src="img/feature-1.jpg" />
+                  <img src="img/feature-tall-1.jpg" />
                 </figure>
-                <h3>Adair</h3>
+                <h3>Chichaqua Longhouse</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
-                <figure>
-                  <img src="img/feature-tall-3.jpg" />
-                </figure>
-                <h3>Adams</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
                   <img src="img/feature-tall-2.jpg" />
                 </figure>
-                <h3>Allamakee</h3>
+                <h3>Easter Lake Shelter 1</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
-                  <img src="img/feature-discount.jpg" />
+                  <img src="img/feature-tall-3.jpg" />
                 </figure>
-                <h3>Appanoose</h3>
+                <h3>Fort Des Moines Shelter</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
-                <figure>
-                  <img src="img/feature-aud.png" />
-                </figure>
-                <h3>Audubon</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
                   <img src="img/feature-tall-4.jpg" />
                 </figure>
-                <h3>Benton</h3>
+                <h3>Jester Cabin 1</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
-                <figure>
-                  <img src="img/polk-profile.jpg" />
-                </figure>
-                <h3>Benton</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
                   <img src="img/feature-tall-5.jpg" />
                 </figure>
-                <h3>Benton</h3>
+                <h3>Thomas Mitchell Shelter</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
                   <img src="img/feature-tall-6.jpg" />
                 </figure>
-                <h3>Black Hawk</h3>
+                <h3>Morgan Creek Shelter</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
                   <img src="img/feature-tall-7.jpg" />
                 </figure>
-                <h3>Boone</h3>
+                <h3>Birxshire Cabin</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="county.html">
-                <figure>
-                  <img src="img/feature-tall-12.jpg" />
-                </figure>
-                <h3>Bremer</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="county.html">
-                <figure>
-                  <img src="img/feature-tall-17.jpg" />
-                </figure>
-                <h3>Buchanan</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="county.html">
-                <figure>
-                  <img src="img/feature-tall-18.jpg" />
-                </figure>
-                <h3>Buena Vista</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="county.html">
-                <figure>
-                  <img src="img/feature-tall-19.jpg" />
-                </figure>
-                <h3>Butler</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
-                  <img src="img/feature-tall-20.jpg" />
+                  <img src="img/feature-tall-1.jpg" />
                 </figure>
-                <h3>Cahoun</h3>
+                <h3>Chichaqua Longhouse</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-2.jpg" />
+                </figure>
+                <h3>Easter Lake Shelter 1</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-3.jpg" />
+                </figure>
+                <h3>Fort Des Moines Shelter</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-4.jpg" />
+                </figure>
+                <h3>Jester Cabin 1</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
                 <figure>
                   <img src="img/feature-tall-5.jpg" />
                 </figure>
-                <h3>Carroll</h3>
+                <h3>Thomas Mitchell Shelter</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
                   <img src="img/feature-tall-6.jpg" />
                 </figure>
-                <h3>Cass</h3>
+                <h3>Morgan Creek Shelter</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
                   <img src="img/feature-tall-7.jpg" />
                 </figure>
-                <h3>Cedar</h3>
+                <h3>Birxshire Cabin</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Book Now</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Check Availability</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="county.html">
+              <a href="facility.html">
                 <figure>
-                  <img src="img/feature-tall-8.jpg" />
+                  <img src="img/feature-tall-last.jpg" />
                 </figure>
-                <h3>Cerro Gordo</h3>
+                <h3>Still Can't Find What You Want?</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
+                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Advanced Search</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
                 </ul>
               </div>
             </div>
-            <div class="swiper-slide scroll-item">
-              <a href="county.html">
-                <figure>
-                  <img src="img/feature-tall-9.jpg" />
-                </figure>
-                <h3>Cherokee</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now-filtered.html"><i class="fa-solid fa-tent"></i> 34 Facilities</a></li>
-                  <li><a href="parks.html"><i class="fa-solid fa-tree"></i> 18 Parks</a></li>
-                </ul>
-              </div>
-            </div>
-            
           </div>
         </div>
       </section>

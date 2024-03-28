@@ -13,6 +13,7 @@ Date: Jan 2021
   --gray: #929295;
   --dark: #000;
   --allseason: #4c4f4c;
+  --allseason-green: #00452a;
   --spring: #005eb8;
   --springfall: #FEDB00;
   --summer: #E07907;
@@ -143,6 +144,14 @@ transition: all 300ms  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .system-item p {font-size: .85rem; min-height: 65px;}
 .system-item .btn-theme {font-size: .85rem;}
 .system-item:hover figure {transform: scale(1.05);}
+
+.complete-system .grid .col.system-item-wide {max-width: none;}
+.system-item-wide .system-item {padding: 0;}
+.system-item-wide .system-item .col-1 {padding: 2rem; background: var(--allseason-green);}
+.system-item-wide .system-item .col-2 {padding: 2rem; display: flex; justify-content: center; flex-direction: column;}
+.system-item-wide .system-item .col-2 p {text-align: left; min-height: auto; font-size: 1.25rem; margin: 0 0 5px 0;}
+.system-item-wide .system-item .col-2 p:has(strong) {margin-top: 1rem;}
+.system-item-wide .system-item .col-2 .btn-theme {margin-top: 2rem;}
 
 .product-allseason {background: var(--allseason); color: #fff;}
 .product-spring {background: var(--spring); color: #fff;}
@@ -298,12 +307,13 @@ figure.grass-package img {clip-path: polygon(100% 0%, 98% 50%, 97% 78%, 96% 96%,
 #simple-header .text {padding: 150px 0 60px 0; text-align: center;}
 #simple-header .text h1 {max-width: 900px; margin: 0 auto; text-align: center;}
 
-.complete-system .grid .col.system-item-wide {max-width: 600px; flex: 1;}
+.complete-system .grid .col.system-item-wide {max-width: 700px; flex: 1;}
 .system-item-wide .system-item {display: grid; grid-template-columns: 1fr 1fr; gap: 25px;}
 .system-item-wide .system-item figure {grid-column: 1; grid-row: 1;}
 .system-item-wide .system-item .content {text-align: left;}
 .system-item-wide .system-item .content h3 {font-size: 2.25rem;}
 .system-item-wide .system-item .content p {font-size: 1.1rem;}
+
 /* .system-item img, .system-item h3, .system-item p {grid-column: 2; grid-row: 1;} */
 /* .system-item-wide .system-item figure {position: absolute; left: 0; top: 0;} */
 }

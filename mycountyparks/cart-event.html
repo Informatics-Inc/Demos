@@ -41,16 +41,18 @@
         
         <div class="menu-user">
           <a href="#.html" id="user-menu-toggle">
+            <span class="menu-alert">2</span>
             <i class="fa-regular fa-circle-user"></i>
             <i class="fa-solid fa-bars"></i>
           </a>
 
           <ul id="user-menu-list">
-            <li><a href="account-info.html">My Account</a></li>
-            <li><a href="account-reservations.html">Reservations</a></li>
-            <li><a href="account-events.html">Event Registrations</a></li>
-            <li><a href="account-history.html">Order History</a></li>
-            <li><a href="login.html">Log out</a></li>
+            <li><a href="#.html">My Account</a></li>
+            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
+            <li><a href="#.html">Reservations</a></li>
+            <li><a href="#.html">Event Registrations</a></li>
+            <li><a href="#.html">Order History</a></li>
+            <li><a href="#.html">Log out</a></li>
           </ul>
         </div>
         <ul class="menu-main">
@@ -69,9 +71,11 @@
       <header class="detail-header">
         <div class="hdr-row">
           <div class="col">
-            <h1>My Account</h1>
+            <h1>Your Cart</h1>
           </div>
           <div class="col">
+            <a href="#.html" class="btn-theme btn-alt">Continue Shopping</a>
+            <a href="#.html" class="btn-theme">Checkout</a>
           </div>
         </div>
       </header>
@@ -83,88 +87,67 @@
       <div class="grid grid-twocol">
         <div class="col" id="sidebar-affix">
           <div class="search grid sidebar-search">
-            <nav class="sidebar-nav">
-              <ul>
-                <li><a href="account-info.html">Account Info</a></li>
-                <li><a href="account-reservations.html">Facility Reservations</a></li>
-                <li><a href="account-events.html">Event Registration</a></li>
-                <li class="active"><a href="account-history.html">Order History</a></li>
-              </ul>
-            </nav>
+            <h3>Price Details</h3>
+            <div class="item-details">
+              <p>Event Registration</p>
+              <p>$18.00</p>
+            </div>
+            <div class="item-details">
+              <p>Processing Fees</p>
+              <p>$4.00</p>
+            </div>
+            <div class="item-details">
+              <p>Total</p>
+              <p><strong>$22.00</strong></p>
+            </div>
+            <hr />
+            <a href="checkout-1.html" class="btn-theme">Checkout</a>
           </div>
         </div>
         <div class="col small-type">
           
-          <div class="list-group account-history">
-            <div class="list-item">
-              <span>Order ID</span>
-              <span>Park</span>
-              <span>Facility</span>
-              <span>Status</span>
-              <span>Order Date</span>
-              <span>Fee</span>
-              <span>Total</span>
-              <span>Code</span>
+
+          <div class="cart-item">
+            <header>
+              <h2>Event Registration</h2>
+            </header>
+            <p class="icon-text">
+              <i class="fa-solid fa-question"></i>
+              <strong>What</strong>
+              Geocaching Egg Hunt - Individual Rate 
+            </p>
+            <p class="icon-text">
+              <i class="fa-solid fa-map-marker"></i>
+              <strong>Where</strong>
+              Fontana Park<br>
+              Buchanan County
+            </p>
+            
+            <p class="icon-text">
+              <i class="fa-solid fa-calendar-check"></i>
+              <strong>When</strong>
+              02/02/2024<br>
+              9:00 AM - 11:00 AM
+            </p>
+            
+            <p class="icon-text">
+              <i class="fa-solid fa-tag"></i>
+              <strong>Price</strong>
+              $6.00 / child
+            </p>
+            <div class="cart-full-width">
+              <form class="mcp-form fixed-labels-xl" action="index.html">
+                <h2>Quantity</h2>
+                <div class="fixed-label">
+                  <label>Children</label>
+                  <input type="number">
+                </div>
+                <p class="helper">Helper text can go here if we need it</p>
+              </form>
             </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
+            <div class="form-action">
+              <button class="btn-theme btn-alt">Edit</button>
+              <button class="btn-theme btn-alt" type="submit">Remove from Cart</button>
             </div>
           </div>
         </div>
@@ -253,7 +236,6 @@
         <li><a href="county.html">Fremont</a></li>
         <li><a href="county.html">Greene</a></li>
         <li><a href="county.html">Grundy</a></li>
-        <li><a href="county.html">Guthrie</a></li>
         <li><a href="county.html">Hamilton</a></li>
         <li><a href="county.html">Hancock</a></li>
         <li><a href="county.html">Hardin</a></li>
@@ -344,7 +326,6 @@
       loop: true,
       autoplayVideos: true
     });
-
   </script>
   </body>
 </html>

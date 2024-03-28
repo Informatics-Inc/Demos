@@ -41,21 +41,23 @@
         
         <div class="menu-user">
           <a href="#.html" id="user-menu-toggle">
+            <span class="menu-alert">2</span>
             <i class="fa-regular fa-circle-user"></i>
             <i class="fa-solid fa-bars"></i>
           </a>
 
           <ul id="user-menu-list">
-            <li><a href="account-info.html">My Account</a></li>
-            <li><a href="account-reservations.html">Reservations</a></li>
-            <li><a href="account-events.html">Event Registrations</a></li>
-            <li><a href="account-history.html">Order History</a></li>
-            <li><a href="login.html">Log out</a></li>
+            <li><a href="#.html">My Account</a></li>
+            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
+            <li><a href="#.html">Reservations</a></li>
+            <li><a href="#.html">Event Registrations</a></li>
+            <li><a href="#.html">Order History</a></li>
+            <li><a href="#.html">Log out</a></li>
           </ul>
         </div>
         <ul class="menu-main">
           <li><a href="book-now.html">Book Now</a></li>
-          <li><a href="counties.html">Counties</a></li>
+          <li class="active"><a href="counties.html">Counties</a></li>
           <li><a href="events.html">Events</a></li>
         </ul>
       </div>
@@ -63,110 +65,91 @@
   </nav>
 
 <main id="main-content">
-  
+
   <section>
     <div class="container">
-      <header class="detail-header">
+      <header class="detail-header no-img">
         <div class="hdr-row">
           <div class="col">
-            <h1>My Account</h1>
+            <h1>Disc Golf and Lake Iowa Park</h1>
+            <!-- <div class="features features-flex">
+              <p class="date">May 13 <i class="fa-solid fa-circle"></i> 8:00 AM</p>
+              <p><i class="fa-solid fa-location-dot"></i> Starr's Cave Park and Preserve, Des Moines County </p>
+            </div> -->
           </div>
           <div class="col">
+            <a data-target-modal="#modal-remind" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-regular fa-envelope"></i> Remind Me</a>
+            <a data-target-modal="#modal-share" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-up-right-from-square"></i> Share</a>
+
+            <!-- SHARE -->
+            <dialog class="modal" id="modal-share">
+              <h3>Share This Event <button class="button close-button" data-close-modal="#modal-share"><i class="fa fa-close"></i></button></h3>
+              <ul class="link-list">
+                <li><a href="#.html"><i class="fab fa-facebook"></i> Share to Facebook</a></li>
+                <li><a href="#.html"><i class="fab fa-twitter"></i> Share to Twitter</a></li>
+                <li><a href="#.html"><i class="fab fa-linkedin"></i> Share to LinkedIn</a></li>
+              </ul>
+            </dialog>
+
+            <!-- Remind -->
+            <dialog class="modal" id="modal-remind">
+              <h3>Remind Me <button class="button close-button" data-close-modal="#modal-remind"><i class="fa fa-close"></i></button></h3>
+              <form class="mcp-form" method="dialog">
+                <div class="fixed-label">
+                  <label>Your Name</label>
+                  <input type="text">
+                </div>
+                <div class="fixed-label">
+                  <label>Your Email</label>
+                  <input type="email">
+                </div>
+                <label><input type="checkbox">Remind me one week before this event.</label>
+                <label><input type="checkbox">Remind me one day before this event.</label>
+                <div class="form-action">
+                  <button class="btn-theme btn-alt close-button" data-close-modal="#modal-remind">Cancel</button>
+                  <button class="btn-theme btn-theme-alt " type="submit">Send Reminder</button>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
       </header>
     </div>
   </section>
-  
   <section>
     <div class="container">
       <div class="grid grid-twocol">
         <div class="col" id="sidebar-affix">
           <div class="search grid sidebar-search">
-            <nav class="sidebar-nav">
-              <ul>
-                <li><a href="account-info.html">Account Info</a></li>
-                <li><a href="account-reservations.html">Facility Reservations</a></li>
-                <li><a href="account-events.html">Event Registration</a></li>
-                <li class="active"><a href="account-history.html">Order History</a></li>
-              </ul>
-            </nav>
+            <div class="small-type">
+              <h2>County:</h2>
+              <p><a href="county.html">Keokuk County</a></p>
+              
+              <!-- <img src="img/event-map.png" /> <br/> -->
+              <h2>Park:</h2>
+              <p><a href="county.html">Lake Iowa Park</a></p>
+                <p>
+                3592 Iowa Rd,<br>
+                Keokuk, IA 52632<br>
+                Starr's Cave Nature Center<br> 319-753-5808</p>
+                <hr />
+              <p><a href="#.html"><i class="fa-solid fa-location-dot"></i> Map This Location</a></p>
+            </div>
           </div>
         </div>
         <div class="col small-type">
-          
-          <div class="list-group account-history">
-            <div class="list-item">
-              <span>Order ID</span>
-              <span>Park</span>
-              <span>Facility</span>
-              <span>Status</span>
-              <span>Order Date</span>
-              <span>Fee</span>
-              <span>Total</span>
-              <span>Code</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-            <div class="list-item">
-              <span>110908</span>
-              <span>Jester Park</span>
-              <span>Shelter 5</span>
-              <span>Paid</span>
-              <span>03/24/24</span>
-              <span>$4.00</span>
-              <span>$94.00</span>
-              <span>111-000-1046-6110-56110</span>
-            </div>
-          </div>
+          <hr style="margin-top: 0;" />
+          <h2>Overview</h2>
+          <p>The Course (map can be found on our website - click here):
+            The 18-hole disc golf course starts at the beach parking lot and loops around to end at the beach parking lot. There is a halfway point at the turnaround, the furthest point you can drive on the far side of the lake. If attempting only the first nine, we’d suggest dropping a vehicle off at the turnaround to save your group the walk back., this is an ideal option when facing time constraints.</p>
+            <h3>Location</h3>
+            <p>Lake Iowa Park<br>
+              2550 G Ave<br>
+              Ladora, IA 52251<br>
+              319-655-8465</p>
+            <h3>Hours</h3>
+            <p>The course remains open year round; however, not all roads will be open in the winter.</p>
+            <p>In cases of snow and ice, currently, the pads are not cleared regularly, but you are still welcome to come play - just be careful. </p>
         </div>
       </div>
     </div>
@@ -182,7 +165,6 @@
           <div class="col">
             <img src="img/logo.svg" />
             <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
-            
           </div>
           <div class="col">
             <h4>Links</h4>
@@ -253,7 +235,6 @@
         <li><a href="county.html">Fremont</a></li>
         <li><a href="county.html">Greene</a></li>
         <li><a href="county.html">Grundy</a></li>
-        <li><a href="county.html">Guthrie</a></li>
         <li><a href="county.html">Hamilton</a></li>
         <li><a href="county.html">Hancock</a></li>
         <li><a href="county.html">Hardin</a></li>
@@ -332,19 +313,24 @@
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
-  <script src="js/datepicker.js"></script>
-  <script src="js/glightbox.js"></script>
   <script src="js/scripts.js"></script>
   <script>
-    
-    // Light Box //
-    const lightbox = GLightbox({
-      touchNavigation: true,
-      loop: true,
-      autoplayVideos: true
-    });
+    // -- SIMPLE GALLERY -- //
+    var imageThumbs = document.getElementById("image-thumbs");
+    var currentImage = document.getElementById("current-image");
 
+    for (var i = 1; i <= 5; i++) {
+      var thumb = document.createElement("img");
+      thumb.src = "img/gallery" + i + ".jpg";
+      thumb.alt = "Image " + i;
+      thumb.classList.add("thumb");
+      imageThumbs.appendChild(thumb);
+      thumb.addEventListener(
+        "click", function() {
+          currentImage.src = this.src;
+        }
+      );
+    }
   </script>
   </body>
 </html>

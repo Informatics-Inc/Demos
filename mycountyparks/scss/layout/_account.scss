@@ -15,6 +15,9 @@
 .list-group .list-item > * {flex: 75px 1 1; padding: 5px;}
 .list-group .list-item > *:nth-of-type(2) {flex-basis: 150px;}
 .list-group .list-item > *:nth-of-type(7) {flex-basis: 115px;}
+
+.list-group.account-history .list-item > * {flex-basis: 75px;}
+.list-group.account-history .list-item > *:last-of-type {flex-basis: 100px;}
 }
 
 /* DESKTOP */
