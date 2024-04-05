@@ -1,14 +1,23 @@
 /* Accordian */
-.accordion {margin: var(--spacer-vert) 0;border-radius: 15px; box-shadow:var(--shadow);}
+.accordion{padding:18px; margin: 0;border:solid #fff 2px;border-radius:20px}
+.accordion-item {margin:10px 0}
 
 .accordion-collapse.collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
-.accordion-collapse.show {height: auto;}
+.accordion-collapse.show {height: auto}
+.accordion-item h3{font-family:var(--body);padding:1.5rem 1.5rem 1.5rem 2rem;font-size:1.25rem;display:flex;justify-content:space-between;align-items:center;margin:0;gap:2rem;font-weight:700;background:var(--accent-1);border-radius:12px;border:solid #fff 1px;color:#fff;letter-spacing:0px;line-height:1.2}
 
-.accordion-item h3 {padding: 1.5rem 1rem 1.5rem 0; font-size: 1.15rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dotted #ccc; margin: 0; gap: 2rem; font-weight: 700; line-height: 1.4;}
-.accordion-item h3 .fa {color: var(--primary); font-size: 20px;transform: rotate(180deg); transition: var(--transition);}
+.accordion-item h3 .fa {color: #fff; font-size: 20px;transform: rotate(180deg); transition: var(--transition);}
 .accordion-item h3:hover {cursor: pointer;}
-.accordion-item .accordion-body {background: var(--light); padding: 2rem; border-bottom: 1px dotted #ccc;}
-.accordion .accordion-item:last-of-type h2 {border-bottom: none;}
-.accordion-item .accordion-body p:last-of-type {margin: 0;}
+.accordion-item .accordion-body {padding: 2rem;}
+.accordion .accordion-item:last-of-type h3 {border-bottom: none;}
+.accordion-item .accordion-body p:last-of-type {margin: 0;} 
 .accordion-item h3.collapsed .fa {transform: rotate(0deg);}
+h3.collapsed{height:auto;}
+
+.fa-chevron-circle-down::before,.fa-circle-chevron-down::before{content:"+";}
+
+ 
+@media (min-width: 992px) {
+    .accordion-item h3 {padding: 1.45rem 2rem 1.45rem 2rem;letter-spacing: 0;}
+ }
 

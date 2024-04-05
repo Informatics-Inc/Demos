@@ -1,31 +1,33 @@
-.footer {margin-top: 100px; background: var(--primary);position: relative; z-index: 5;color: var(--text-color-inverse); background-position: -100px 150px; background-size: 400px auto;padding-top:var(--spacer)}
+.footer {background: var(--primary);position: relative; z-index: 5;color: var(--text-color-inverse); background-position: -100px 150px; background-size: 400px auto; 
+    border-top:10px solid var(--secondary)
+}
+.footer .wp-block-columns{padding-top:50px;padding-bottom:60px;margin-bottom:0}
+.footer .container{padding:0}
+
 .footer::before{content:"";position:absolute;top:0;right:0;width:400px;height:100%;background:url("../img/itc-grid-bottom-right.svg") no-repeat 0% 100%;opacity:0.2;z-index:-1;pointer-events:none;}
 .footer::after{content:"";position:absolute;top:0;left:0;width:400px;height:100%;background:url("../img/itc-grid.svg") no-repeat 0% 0%;opacity:0.2;z-index:-1;pointer-events:none;}
 .footer #logo{max-width: 320px;margin-bottom:25px;}
-
-.footer .call-to-action {position: relative; top: -50px; box-shadow: 0 10px 25px 15px rgba(0,0,0,.1);}
 .footer a {color: var(--text-color-inverse);}
 
 .ftr-cols {display: grid; gap: 25px;}
-.footer h3 {color: #fff; font-size: 1.25rem; letter-spacing: 1px;}
+.footer h3 {color: #fff; font-size: 1.25rem; letter-spacing: 1px;text-transform: uppercase;}
+.footer p {font-size: 0.75rem;}
 .footer p:last-of-type {margin-bottom:0px;font-size:0.9rem; }
 
 .footer ul {list-style: none; color: var(--text-inverse); margin: 0; padding: 0;}
 .footer ul li {display: flex; align-items: center; gap: 10px; margin: 0;}
 .footer ul li a {color: var(--text-color-inverse); text-decoration: none; display: block;line-height: 1.2;margin-bottom:8px;}
-.footer ul li a:hover {color:var(--accent-1);}
+.footer ul li a:hover {color:var(--secondary);}
 
 /* Social Links */
 .footer a:hover .fa-brands,.footer a .fa-brands{ text-decoration: none!important;}
-.footer .fa-brands:hover {color:var(--accent-1);}
+.footer .fa-brands:hover {color:var(--secondary);}
 .footer .fa-brands{text-decoration: none!important;font-size:1.80rem;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:var(--transition)}
 .footer .is-style-social-icons{display: flex;gap:15px}
 
-.footer-copy {text-align: center; border-top: 1px solid rgba(255,255,255,.25); padding: 15px; margin: 2rem 0 0 0; font-size: .85rem; color: var(--text-color-inverse);}
-
-.ftr-ico-content > * {display: grid; grid-template-columns: 25px auto;}
-.ftr-ico-content > * .fa {color: var(--accent-2);margin: 5px 0 0 0;}
-.ftr-ico-content .nav-social {margin: 0 0 0 25px; gap: 15px;}
+.footer-copy {position:relative;text-align: center; border-top: 1px solid rgba(255,255,255,.25); padding: 15px;font-size: .85rem; color: var(--text-color-inverse);width:100%;}
+.footer-copy::before{content:"";content:"";background:url("../img/flare.webp") no-repeat 50%;position:absolute;width:85px;height:4px;animation:moveBackAndForth 9s linear infinite;mix-blend-mode:overlay;object-fit:cover;top:-2px;}
+@keyframes moveBackAndForth{0%,100%{left:0;}50%{left:calc(100% - 86px);}}
 
 /* TABLET */
 @media (min-width: 768px) {
@@ -35,6 +37,11 @@
 
 @media (min-width: 992px) {
     .footer::before,.footer::after{width:600px;}
+    .footer .wp-block-columns{padding-top:0px;padding-bottom:60px;margin-bottom:0}
+    .footer .wp-block-column:first-of-type {padding-right:80px }
+    .ftr-cols {display: flex; gap: 50px;}
+
+
 }
 
 

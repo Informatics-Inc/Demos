@@ -1,26 +1,31 @@
 .theme-img {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap:20px;
     position: relative;
     margin: 0 0 2rem 0;
     position: relative;
     z-index: 5;
-    padding-right: 4.5rem;
   }
   
-  .theme-img img {
+  .theme-img img{
     width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: var(--border-radius-sm);
   }
-  
-  .theme-img.two-images {
+
+  .theme-img.two-images,.theme-img.two-images-side img {
     grid-template-columns: 1fr 1fr;
     padding-right: 0;
+    min-height:240px;
   }
-  
+  .theme-img.two-images img ,.theme-img.two-images-side img{
+  width: 100%;height:100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--border-radius-sm);
+}
   .theme-img.dots:after {
     background: url(../img/dots.svg);
     width: 150px;
@@ -33,32 +38,46 @@
     z-index: -1;
   }
   
-  .theme-img.lines:after {
-    background: url(../img/lines.png);
-    width: 50px;
-    height: 150px;
+  .theme-img.two-images-side:after {
+    background: url(../img/icons/chev-shape.svg);
+    width:100px;
+    height: 100px;
     position: absolute;
     right: 0;
-    top: 15%;
+    bottom: -50px;
     content: "";
     background-size: cover;
   }
-  
-  .theme-img.lines:before {
-    background: url(../img/circles.png);
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: -100px;
-    bottom: -100px;
-    content: "";
-    background-size: cover;
-  }
-  
+  .theme-img.two-images-side{display:grid;grid-template-columns:repeat(2,1fr);}
+
+  .theme-img.text-combo .text{background:var(--primary) ;color:#fff;padding:35px 30px;border-radius:12px;z-index: 3;width:90%;margin:-80px auto 0 auto;box-shadow:var(--box-shadow-lg)}
+ .theme-img.text-combo .text p:last-child{margin-bottom:0}
+ .theme-img.text-combo .text .wp-block-button__link{color:#fff;border-bottom:0px;}
+ .theme-img.text-combo .text .wp-block-buttons{padding-top:15px;border-bottom:none;border-top:solid rgba(255, 255, 255, 0.35) 1px;margin-bottom:-15px}
+
 /* TABLET */
 @media (min-width: 768px) {
+ .theme-img.two-images{min-height:250px;}
+ .theme-img.text-combo  img:nth-last-child(2){ width:calc(100% + -50px);}
 
+ 
 } 
+
+/* WIDE DESKTOP */
+@media (min-width:992px){
+ .theme-img.two-images{margin-bottom:-80px;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(3,1fr);}
+ .theme-img.two-images img:nth-last-child(2){ grid-area: 1 / 1 / 3 / 3;width:calc(100% + -50px);}
+ .theme-img.two-images img:nth-last-child(1){  grid-area: 3 / 2 / 4 / 3;margin-top:-130px}
+
+ .theme-img.text-combo .text{position:absolute;bottom:-50px;width:55%;right:0px;margin:0px auto 0 auto}
+
+ .theme-img.two-images-side img:nth-last-child(2){min-height:440px}
+ .theme-img.two-images-side img:nth-last-child(1){height:calc(100% - 150px)}
+ .theme-img.two-images-side {padding-right:15px;}
+ .theme-img.two-images-side:after{background:url(../img/icons/chev-shape.svg);width:100px;height:100px;position:absolute;right:25px;bottom:100px;content:"";background-size:cover;}
+
+}
+
 
 @media (min-width: 1200px) {
 

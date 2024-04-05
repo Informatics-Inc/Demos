@@ -1,15 +1,15 @@
 /* GLOBAL */
-#hdr-site {position: relative; z-index: 10; box-shadow: var(--box-shadow-sm);}
-#logo {display: block; max-width: 150px;}
+#hdr-site {position: relative; z-index: 10;border-top:solid 10px var(--primary)}
+#logo {display: block;max-width: 200px;}
 #menu ul {list-style: none; padding: 0; margin: 0;}
-#menu ul a {color: var(--text); text-decoration: none; display: block; padding: 1rem; font-weight: 700; position: relative;}
+#menu ul a {font-size: 0.95rem;color: var(--text); text-decoration: none; display: block; padding: 1rem; font-weight: 700; position: relative;}
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
 #hdr-main {display: grid; grid-template-columns: auto 35px; padding: 1rem 0;}
 
 /* Menu Toggle */
-#menu-toggle {font-size:.65rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 700; color: var(--text); width: 35px; height: 40px; position: relative;}
+#menu-toggle {font-size:.65rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 700; color: var(--text); width: 35px; height: 40px; position: relative;align-self: center;}
 #menu-toggle > div {position: absolute; width: 100%; height: 100%; top: 0; left: 0; transition: var(--transition);}
 #menu-toggle .closed {display: flex; flex-direction: column; gap: 4px;}
 #menu-toggle .closed .bar {width: 100%; height: 3px; background: var(--primary); display: block;}
@@ -27,7 +27,7 @@
 
 /* Menu Links */
 #menu ul a {border-top: 1px dotted var(--gray);}
-#menu ul a:hover, #menu ul a:focus {background: var(--light);}
+#menu ul a:hover, #menu ul a:focus {background: var(--light);color: var(--primary);}
 #menu .wp-block-button__link {margin: 1rem 0;}
 #menu li {position: relative;}
 #menu ul ul a {border: none; padding: 10px 20px 10px 30px; font-weight: 500;}
@@ -36,12 +36,14 @@
 
 /* DESKTOP */
 @media (min-width: 992px) {
-#hdr-site {position: fixed; top: 0; width: 100%; background: #fff;}
+#logo {max-width: 220px;}
+#hdr-site {position: fixed; top: 0; width: 100%; background: #fff;padding:25px 0}
 #menu-toggle {display: none;}
 .hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
 #menu {display: flex; align-items: center;}
 #menu ul {display: flex;}
 #menu ul a {padding: 1.5rem 1rem;}
+#menu ul a:hover{color: var(--primary);}
 #menu .wp-block-button__link {margin-left: 1rem;}
 
 /* Dropdown */
@@ -49,13 +51,14 @@
 #menu ul li {position: relative;}
 #menu ul ul {position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
 #menu ul ul a {font-weight: 400; padding: 10px;}
-#menu li:hover ul {opacity: 1; visibility: visible; top: 100%;}
-
+#menu li:hover ul {opacity: 1; visibility: visible; top: 100%;background: var(--light);}
 /* Hovers & Active */
 #menu > ul > li > a:after {width: 0; height: 3px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--accent-1); opacity: 0; transition: var(--transition);}
-#menu > ul > li:hover > a {background: var(--light);}
-#menu > ul > li:hover > a:after {width: 100%; left: 0; opacity: 1;}
-#menu ul ul a:hover {color: var(--dark); text-decoration: underline; padding: 10px 5px 10px 15px; background: var(--light);}
+#menu > ul > li:hover > a:after {width: 100%; left: 0; opacity: 1;color: var(--primary);}
+#menu ul ul a:hover {color: var(--primary); text-decoration: none; padding: 10px 5px 10px 15px;background:var(--light) }
+#menu ul ul li {border-bottom:1px solid #eee}
+#menu ul ul li:last-of-type {border-bottom:none}
+
 }
 
 /* Wordpress Nav Active State */
@@ -70,6 +73,8 @@
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
+    #logo {max-width: 270px;}
+
 }
 
 /* SUPER WIDE DESKTOP */

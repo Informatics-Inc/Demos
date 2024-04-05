@@ -6,12 +6,45 @@
 .wp-block-button__link:hover:before {transform: scaleX(1);transform-origin: bottom left;}
 
 /* Text */
-.is-style-btn-text .wp-block-button__link {background: none; padding: 1rem 0; color: var(--primary); box-shadow: none;}
+.is-style-btn-text .wp-block-button__link {background: none; padding: 1rem 0 1rem 3rem; color: var(--primary); box-shadow: none;}
 .is-style-btn-text .wp-block-button__link:before {display: none;}
-.is-style-btn-text .wp-block-button__link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);}
-.is-style-btn-text .wp-block-button__link:hover {color: var(--primary-dark);}
-.is-style-btn-text .wp-block-button__link:hover:after {margin: 0 0 0 10px;}
+.is-style-btn-text .wp-block-button__link:after {content: "\f0a9";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);font-size:2rem;top: 0.25rem;left:0;position:absolute}
+.is-style-btn-text .wp-block-button__link:hover {color: var(--primary-dark); padding: 1rem 0 1rem 3.25rem; }
+.is-style-btn-text .wp-block-button__link:hover:after {margin: 0 0 0 15px;}
 
 /* Secondary */
 .is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
 .is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
+
+
+/* Sorting Buttons */
+.button-sort .wp-block-button__link {background:var(--primary); color: #fff;border:solid 1px var(--dark-gray);box-shadow:none;border-radius:33px;font-size:0.85rem;padding:10px 15px;margin-bottom:20px}
+.button-sort .wp-block-button__link:hover {color:#fff;background:var(--primary-dark);border:solid 1px var(--accent-1); }
+.button-sort .wp-block-button__link:hover:before {transform: scaleX(0);transform-origin: bottom left;}
+
+.button-sort .items-justified-space-between .wp-block-button__link {background: #fff; color: var(--dark-gray);border:solid 1px var(--dark-gray);box-shadow:none;border-radius:33px;font-size:0.85rem;padding:10px 15px}
+.button-sort .items-justified-space-between  .wp-block-button__link:hover {color:#fff;background:var(--accent-1);border:solid 1px var(--accent-1); }
+.button-sort .items-justified-space-between  .wp-block-button__link:hover:before {transform: scaleX(0);transform-origin: bottom left;}
+
+.button-sort .wp-block-button{
+    width: 100%;
+  }
+
+
+  /* TABLET */
+@media (min-width: 768px) {
+    .button-sort .wp-block-button{
+        width: auto;
+      }
+
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {
+ 
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+
+}

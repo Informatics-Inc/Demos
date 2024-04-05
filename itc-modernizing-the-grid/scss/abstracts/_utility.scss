@@ -2,9 +2,12 @@
 .hidden-sm {display: none;}
 .grid {display: grid; gap: var(--spacer);}
 .flex {display: flex; gap: var(--spacer);}
+.service-grid{margin-top:-2rem;}
+.service-grid .card{min-height:300px}
 
 /* TABLET */
 @media (min-width: 768px) {
+.service-grid{display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:2fr;}
 .hidden-sm {display: inline;}
 .grid-2 {grid-template-columns: 1fr 1fr; gap: var(--spacer);}
 .grid-3 {grid-template-columns: 1fr 1fr 1fr; gap: var(--spacer);}
@@ -13,8 +16,8 @@
 }
 
 @media (min-width: 992px) {
+.service-grid{min-height:350px;margin-top:-5rem;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr;grid-column-gap:0px;grid-row-gap:0px;}
 .grid-3-lg {grid-template-columns: 1fr 1fr 1fr; gap: var(--spacer);}
-   
 }
 
 /* WIDE DESKTOP */
