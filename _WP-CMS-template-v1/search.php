@@ -1,4 +1,4 @@
-<?php /* Template Name: Default */
+<?php /* Template Name: Search */
 get_header();
 ?>
 <?php

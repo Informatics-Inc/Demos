@@ -1,29 +1,14 @@
-.footer {margin-top: 100px; background: var(--dark);position: relative; z-index: 5;color: var(--text-color-inverse); background-position: -100px 150px; background-size: 400px auto;}
-.footer .call-to-action {position: relative; top: -50px; box-shadow: 0 10px 25px 15px rgba(0,0,0,.1);}
-.footer a {color: var(--text-color-inverse);}
+.footer {position: relative; z-index: 5; background: var(--primary); color: var(--text-color-inverse); padding: 1px 0;}
+.footer ul {padding: 00; list-style: none;}
+.footer ul a {color: var(--text-color-inverse); display: block; padding: 5px;}
+.footer h4 {color: #fff;}
+.ftr-cols {display: flex; flex-wrap: wrap; gap: var(--column-gap); margin: var(--spacer-vert) 0;}
+.ftr-cols .col {flex: 1 1 25%; max-width: 300px;}
 
-.ftr-cols {display: grid; gap: 25px;}
-.footer .col img {margin: 0 0 2rem 0; display: block; max-width: 250px;}
-.footer h3 {color: #fff; font-size: 1.25rem; letter-spacing: 1px;}
-.footer ul {list-style: none; color: var(--text-inverse); margin: 0; padding: 0;}
-.footer ul li {display: flex; align-items: center; gap: 10px; margin: 0;}
-.footer ul li a {color: var(--text-color-inverse); text-decoration: none; display: block;}
-.footer ul li a:hover {color: #fff; text-decoration: underline;}
-.footer .ico-btn-group {grid-template-columns: 1fr;}
-
-.footer-copy {text-align: center; border-top: 1px solid rgba(255,255,255,.25); padding: 15px; margin: 2rem 0 0 0; font-size: .85rem; color: var(--text-color-inverse);}
-
-.ftr-ico-content > * {display: grid; grid-template-columns: 25px auto;}
-.ftr-ico-content > * .fa {color: var(--accent-2);margin: 5px 0 0 0;}
-.ftr-ico-content .nav-social {margin: 0 0 0 25px; gap: 15px;}
-
-/* TABLET */
-@media (min-width: 768px) {
-.footer {margin-top: 150px;}
-.footer .call-to-action {top: -75px;}
-.ftr-cols {grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );;}
-}
+.ftr-copy {text-align: center; background: var(--primary-dark); padding: 15px; margin: 0; font-size: .85rem; color: var(--text-color-inverse);}
+.ftr-copy a {color: var(--text-color-inverse);}
+.ftr-copy a:hover {color: #fff;}
 
 @media (min-width: 992px) {
-
+.ftr-cols {flex-wrap: nowrap;}
 }

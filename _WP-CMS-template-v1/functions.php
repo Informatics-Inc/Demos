@@ -20,7 +20,6 @@ add_action('after_setup_theme', 'theme_features');
 
 $theme_inc_dir = 'inc';
 $theme_includes = array(
-    '/acf-blocks.php',                          // Register Blocks 
 	'/custom-post-types.php',                   // Register Custom Post types & Taxonomies
     '/nav-walker.php',                          // Register Menu Walkers 
 	'/enqueue.php',                             // Enqueue scripts and styles.
@@ -33,6 +32,13 @@ $theme_includes = array(
 foreach ( $theme_includes as $file ) {
 	require_once get_theme_file_path( $theme_inc_dir . $file );
 }
+// Register Standard Blocks
+require_once get_theme_file_path( $theme_inc_dir . '/acf-standard-blocks.php' );
+add_action( 'acf/init', 'hfm_acf_init_standard_blocks' );
+
+// Register Custom Blocks
+require_once get_theme_file_path( $theme_inc_dir . '/acf-custom-blocks.php' );
+add_action( 'acf/init', 'hfm_acf_init_custom_blocks' );
 
 @ini_set( 'upload_max_size' , '256M' );
 @ini_set( 'post_max_size', '256M');

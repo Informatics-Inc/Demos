@@ -23,11 +23,7 @@
               <?php
                   wp_nav_menu(array(
                     'theme_location'  => 'menu-utility',
-                    'menu_class'      => '',
-                    'menu_id'         => '',
-                    'container'				=> '',
-                    'container_id'		=> '',
-                    'container_class' => '',
+                    'menu_class'      => 'nav-mini',
                     'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                   ));
               ?>
@@ -61,21 +57,20 @@
           <?php
               wp_nav_menu(array(
                 'theme_location'  => 'menu-main',
-                'menu_class'      => '',
-                'menu_id'         => '',
-                'container'				=> '',
-                'container_id'		=> '',
-                'container_class' => '',
+                'menu_class'      => 'nav-main',
                 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                 'fallback_cb'     => false,
                 'walker' => new Main_Nav_Walker()
               ));
           ?>
+          <?php if ( is_active_sidebar( 'header_cta' ) ) : ?>
+              <?php dynamic_sidebar( 'header_cta' ); ?>
+          <?php endif; ?>
           <div class="hidden-lg">
             <?php
                 wp_nav_menu(array(
                   'theme_location'  => 'menu-utility',
-                  'menu_class'      => '',
+                  'menu_class'      => 'nav-mini',
                   'menu_id'         => '',
                   'container'				=> '',
                   'container_id'		=> '',
@@ -84,7 +79,7 @@
                 ));
             ?>
           </div>
-          <a href="https://familycrisiscenters.kindful.com/" target="_blank" class="btn-theme wp-block-button__link ">Donate Now</a>
+          
         </nav>
         </div>
     </div>

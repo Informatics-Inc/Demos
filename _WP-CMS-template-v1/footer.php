@@ -1,39 +1,32 @@
 <!-- Footer -->
+
 <footer class="footer">
-  <a href="https://www.google.com" id="quick-exit"><i class="fa fa-external-link"></i>Quick Exit</a>
-  <img src="<?php echo get_theme_file_uri() ?>/img/footer-bg.jpg" alt="Design Element" />
+<div class="ftr-cta">
+  <div class="wp-block-columns is-layout-flex">
+    <div class="wp-block-column is-layout-flow">
+  <?php if ( is_active_sidebar( 'footer_cta' ) ) : ?>
+      <?php dynamic_sidebar( 'footer_cta' ); ?>
+  <?php endif; ?>
+  </div>
+  </div>
+</div>
   <div class="container">
-
-    <div class="ftr-cta">
-      <div class="col">
-       <h2><strong>Free</strong> & <strong>Confidential</strong> Services 24/7</h2>
-      </div>
-      <div class="col text-help">
-        <p><a href="/get-help-now">Get Help Now</a></p>
-        <p class="phone">1-800-382-5603 <span>Text 'IOWAHELP' to 20121</span></p>
-      </div>
-    </div>
-
     <div class="ftr-cols">
       <div class="col">
-      <img src="<?php echo get_theme_file_uri() ?>/img/FCC-logo-white.png" alt="Our Savior's Logo in White" />
-        <div class="text">
-        <?php if ( is_active_sidebar( 'footer_info' ) ) : ?>
-          <?php dynamic_sidebar( 'footer_info' ); ?>
+        <h4>About Us</h4>
+        <?php if ( is_active_sidebar( 'footer_content' ) ) : ?>
+          <?php dynamic_sidebar( 'footer_content' ); ?>
         <?php endif; ?>
-        </div>
       </div>
+
       <div class="col">
         <h4>Contact Us</h4>
         <?php if ( is_active_sidebar( 'footer_contact' ) ) : ?>
           <?php dynamic_sidebar( 'footer_contact' ); ?>
         <?php endif; ?>
-        <?php if ( is_active_sidebar( 'footer_social' ) ) : ?>
-          <?php dynamic_sidebar( 'footer_social' ); ?>
-        <?php endif; ?>
       </div>
       <div class="col">
-        <h4>Quick Links</h4>
+        <h4>Navigate</h4>
         <nav>
           <?php
               wp_nav_menu(array(
@@ -49,16 +42,14 @@
         </nav>
       </div>
       <div class="col">
-        <h4>See the Impact of Giving</h4>
-        <div class="wp-block-button">
-            <a href="https://familycrisiscenters.kindful.com/" target="_blank" class="wp-block-button__link btn-theme" href="">Donate Now</a>
-        </div>
+        <h4>Connect</h4>
+        <?php if ( is_active_sidebar( 'social_links' ) ) : ?>
+          <?php dynamic_sidebar( 'social_links' ); ?>
+        <?php endif; ?>
       </div>
     </div>
-    
-    <p class="ftr-copy">©<?php echo date("Y"); ?> Family Crisis Center. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
   </div>
-  
+  <p class="ftr-copy">©<?php echo date("Y"); ?> <?php echo esc_html(get_bloginfo('name')); ?>. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
 </footer>
 
 <?php wp_footer(); ?>

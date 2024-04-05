@@ -63,6 +63,15 @@ if ( function_exists( 'register_block_style' ) ) {
     register_block_style(
         'core/group',
         array(
+            'name'         => 'bkg-dark',
+            'label'        => __( 'Dark', 'textdomain' ),
+            'is_default'   => false,
+            'inline_style' => '.bkg-dark',
+        ),
+    );
+    register_block_style(
+        'core/group',
+        array(
             'name'         => 'bkg-light',
             'label'        => __( 'Light', 'textdomain' ),
             'is_default'   => false,
@@ -72,19 +81,19 @@ if ( function_exists( 'register_block_style' ) ) {
     register_block_style(
         'core/group',
         array(
-            'name'         => 'lightleft',
+            'name'         => 'bkg-left',
             'label'        => __( 'Light Left', 'textdomain' ),
             'is_default'   => false,
-            'inline_style' => '.is-style-bkgleft',
+            'inline_style' => '.bkg-left',
         ),
     );
     register_block_style(
         'core/group',
         array(
-            'name'         => 'lightright',
+            'name'         => 'bkg-right',
             'label'        => __( 'Light Right', 'textdomain' ),
             'is_default'   => false,
-            'inline_style' => '.is-style-bkgright',
+            'inline_style' => '.bkg-right',
         ),
     );
     
@@ -133,6 +142,24 @@ if ( function_exists( 'register_block_style' ) ) {
             'label'        => __( 'Box', 'textdomain' ),
             'is_default'   => false,
             'inline_style' => '.box',
+        ),
+    );
+    register_block_style(
+        'core/image',
+        array(
+            'name'         => 'theme-img',
+            'label'        => __( 'Curved Corners', 'textdomain' ),
+            'is_default'   => false,
+            'inline_style' => '.theme-img',
+        ),
+    );
+    register_block_style(
+        'core/image',
+        array(
+            'name'         => 'curved-corners-with-lines',
+            'label'        => __( 'Curved Corners with Lines', 'textdomain' ),
+            'is_default'   => false,
+            'inline_style' => '.theme-img .lines',
         ),
     );
 }

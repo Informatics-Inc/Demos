@@ -1,13 +1,16 @@
 <?php get_header('scrolled'); ?>
 <?php $post_page_id = get_option('page_for_posts'); ?>
 
-<main id="content">
-    <div class="container skinny">
-    <div class="blog-hdr">
-      <p class="date"><?php the_date(); ?></p>
+<main id="content" class="header-space">
+
+<div class="wp-block-columns is-layout-flex">
+      <div class="wp-block-column" style="flex-basis: 75%;">
+
+      <div class="blog-hdr">
+      <p class="is-style-eyebrow date"><?php the_date(); ?></p>
       <h1><?php the_title(); ?></h1>
-      <p class="is-style-lead"><?php echo get_the_excerpt() ?></p>
-      <div class="wp-block-buttons is-style-btn-text is-layout-flex is-content-justification-center">
+      <p class="is-style-callout"><?php echo get_the_excerpt() ?></p>
+      <div class="wp-block-buttons is-style-btn-text is-layout-flex">
         <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/hear-us">Back to Listing</a></div>
       </div>
     </div>
@@ -15,7 +18,7 @@
       <?php the_content(); ?>
     </div>
     <section class="blog-share">
-      <h3>Share This Page</h3>
+      <h3>Share This Post</h3>
       <ul class="social-share">
       <?php $postUrl = 'http' . ( isset( $_SERVER['HTTPS'] ) ? 's' : '' ) . '://' . "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}"; ?>
           <li><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $postUrl; ?>&text=<?php echo the_title(); ?>&via=<?php the_author_meta( 'twitter' ); ?>" title="Tweet this"><i class="fab fa-twitter"></i></a></li>
@@ -35,7 +38,60 @@
         }
         ?>
   </section>
+
   </div>
+  
+  <div class="wp-block-column sidebar">
+        <div class="box">
+          <h4>Categories</h4>
+          <nav class="sec-nav">
+          <ul>
+              <?php
+              $current_category = get_queried_object(); // Get the current category object
+              $categories = get_terms(array(
+                  'taxonomy' => 'category',
+                  'hide_empty' => false,
+              ));
+
+              // Get the URL of the blog post list page
+              $blog_page_url = get_permalink(get_option('page_for_posts'));
+
+              // Output the "View All" link with the blog post list page URL
+              echo '<li><a href="' . esc_url($blog_page_url) . '">View All</a></li>';
+
+
+              foreach($categories as $category) {
+                  if ($category->name != 'Uncategorized') {
+                      // Check if the current category matches the iterated category
+                      $class = ($current_category && $current_category->term_id == $category->term_id) ? 'active' : '';
+                      echo '<li class="' . $class . '"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+                  }
+              }
+              ?>
+          </ul>
+          </nav>
+        </div>
+        <div class="box">
+          <h4>Tags</h4>
+          <nav class="tag-list">
+            <ul>
+                <?php $tags = get_tags(); ?>
+                <?php foreach($tags as $tag) { ?>
+                    <li><a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag"><?php echo $tag->name; ?></a></li>
+                <?php } ?>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Global Sidebar -->
+        <?php if ( is_active_sidebar( 'social_links' ) ) : ?>
+          <?php dynamic_sidebar( 'social_links' ); ?>
+        <?php endif; ?>
+        
+      </div>
+    </div>
+</div>
 </main>
+
 
 <?php get_footer(); ?>

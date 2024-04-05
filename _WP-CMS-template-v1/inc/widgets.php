@@ -1,7 +1,6 @@
 <?php
 /* Widgets  */
 function theme_widgets_init() {
-
   register_sidebar(array(
 		'name'          => 'Header Content',
 		'id'            => 'header_content',
@@ -9,8 +8,20 @@ function theme_widgets_init() {
         'after_widget' => '',
 	));
   register_sidebar(array(
-		'name'          => 'Footer Info',
-		'id'            => 'footer_info',
+		'name'          => 'Header CTA',
+		'id'            => 'header_cta',
+        'before_widget' => '',
+        'after_widget' => '',
+	));
+  register_sidebar(array(
+		'name'          => 'Footer CTA',
+		'id'            => 'footer_cta',
+        'before_widget' => '',
+        'after_widget' => '',
+	));
+  register_sidebar(array(
+		'name'          => 'Footer Content',
+		'id'            => 'footer_content',
         'before_widget' => '',
         'after_widget' => '',
 	));
@@ -21,8 +32,14 @@ function theme_widgets_init() {
         'after_widget' => '',
 	));
   register_sidebar(array(
-		'name'          => 'Footer Social',
-		'id'            => 'footer_social',
+		'name'          => 'Social Links',
+		'id'            => 'social_links',
+        'before_widget' => '',
+        'after_widget' => '',
+	));
+  register_sidebar(array(
+		'name'          => 'Global Sidebar',
+		'id'            => 'global_sidebar',
         'before_widget' => '',
         'after_widget' => '',
 	));

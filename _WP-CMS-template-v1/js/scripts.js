@@ -1,22 +1,40 @@
   // -- SCROLL EVENTS -- //
+
+  // Vanilla JavaScript scroll event
+  window.addEventListener("scroll", function () {
+    var image = document.getElementById("hero-img");
+    var scrollPosition = window.scrollY;
+    var scaleFactor = 1 + scrollPosition * 0.001;
+    var opacityFactor = Math.min(scrollPosition / 500, 1);
+
+    image.style.transform = "scale(" + scaleFactor + ")";
+    image.style.opacity = 1 - opacityFactor;
+  });
+
   // jQuery scroll event
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll > 50) {
-      $("#hdr-site").addClass("scroll");
-    } else {
-      $("#hdr-site").removeClass("scroll");
-    }
-    var x = $(this).scrollTop();
-    $(".page-hdr figure img").css(
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  if (scroll > 50) {
+      // Add class "scroll" if it's not already present
+      if (!$("#hdr-site").hasClass("scroll")) {
+          $("#hdr-site").addClass("scroll");
+      }
+  } else {
+      // Remove class "scroll" if it's not already removed
+      if ($("#hdr-site").hasClass("scroll")) {
+          $("#hdr-site").removeClass("scroll");
+      }
+  }
+  var x = $(this).scrollTop();
+  $(".page-header figure img").css(
       "-webkit-transform",
       "translateY(" + x / 6 + "px)"
-    );
-    $(".bkg-texture").css(
+  );
+  $(".bkg-texture").css(
       "-webkit-transform",
       "translateY(" + x / 8 + "px)"
-    );
-  });
+  );
+});
 
   // -- ANIMATE IN TO VIEW -- //
   var $animation_elements = $(".animate-in, .btn-text, .fade-in");

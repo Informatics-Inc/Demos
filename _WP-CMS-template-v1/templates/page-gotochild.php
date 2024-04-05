@@ -7,7 +7,7 @@ if ($pagekids) {
 $firstchild = $pagekids[0];
 wp_redirect(get_permalink($firstchild->ID));
 } else { ?>
-<?php /* Template Name: Default */
+<?php 
 get_header();
 ?>
 

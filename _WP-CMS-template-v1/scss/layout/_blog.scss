@@ -1,58 +1,45 @@
-.blog-list-item {display: grid; gap: 15px; padding: 25px 0; border-bottom: 1px dotted #ccc;}
-.date {font-size: .85rem; font-weight: 700; color: var(--accent-2); text-transform: uppercase; margin: 0 0 1rem 0; letter-spacing: 1px;}
-.blog-list-item .text {align-content: flex-start;}
-.blog-list-item h2 {font-size: 2rem; font-family: var(--body); line-height: 1.2; letter-spacing: normal; margin: 0 0 .5rem 0;}
-.blog-list-item h2 a {color: var(--text); text-decoration: none;}
-.blog-list-item h2 a:hover {text-decoration: underline;}
-.blog-list-item figure img {border-radius: 10px;}
-.blog-list-item .wp-block-buttons {margin: 0;}
-
-#pagination {font-size: 1rem; justify-content: center; display: flex; margin: 2rem 0 0 0;}
-#pagination li:before {display: none;}
-#pagination a {color: var(--primary);}
-#pagination .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-}
-
-.blog-hdr {text-align: center; padding: var(--spacer-vert) 0; margin: 0px 0 var(--spacer-vert) 0; border-bottom: 1px solid #ccc;}
-.blog-hdr h1 {margin: 1rem 0 2rem 0;}
-.blog-content {font-size: 1.15rem; line-height: 1.6;}
-.blog-share {text-align: center; padding: var(--spacer-vert) 0; margin: var(--spacer-vert) 0; border-top: 1px solid #ccc;}
+.blog-list-item {display: grid; gap: var(--column-gap);}
+.blog-hdr {border-bottom: 1px solid var(--gray); padding: 0 0 var(--spacer); margin-bottom: var(--spacer);}
+.blog-share {border-top: 1px solid var(--gray); padding: var(--spacer) 0; text-align: center;}
+.blog-share h3 {font-size: 1.25rem;}
 .social-share {
-  text-align:center;
-  list-style:none;
-  display:flex;
-  padding:0;
-  margin:1rem 0;
-  justify-content:center
+  margin: 0 0 3rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  gap: 10px
 }
-.social-share i {
-  text-align:center;
-  font-size:2.15rem;
-  padding:5px
+.social-share a {
+  font-size: 2.5rem;
+  margin: auto 2px
 }
-.social-share a:hover {color: var(--accent-2);}
 
-.sidebar.box {padding: 0; border-radius: 10px; overflow: hidden;}
-.sidebar.box + .sidebar.box {margin-top: 2rem;}
-.sidebar.box h4 {background: var(--primary); color: #fff; text-align: center; padding: var(--spacer); margin: 0; font-size: 1.25rem;}
-.sec-nav ul {list-style: none; padding: var(--spacer); margin: 0;}
-.sec-nav ul a {display: block; padding: 10px 15px 10px 10px; color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--gray);}
-.sec-nav ul li:last-of-type a {border: none;}
-.sec-nav ul a:hover {padding: 10px 10px 10px 15px; text-decoration: underline;}
-.sec-nav ul > .current_page_item > a {position: relative; padding: 10px 5px 10px 30px; color: var(--primary); font-weight: 700;}
-.sec-nav ul > .current_page_item > a:before {content: "\f054";font-family: FontAwesome; color: var(--primary); margin: 0 0 0 7px; text-decoration: none; position: absolute; left: 5px; top: calc(50% - 10px); font-size: .75rem;}
-.tag-list ul {display: flex; flex-wrap: wrap; list-style: none; padding: var(--spacer); gap: 5px; margin: 0;}
-.tag-list a {padding: 4px 6px; background: #fff; font-size: .85rem; border-radius: 4px; display: inline;}
-.tag-list li a:hover {background: none;}
-.sidebar.box img {padding: 15px;}
+.social-share a:hover {
+  color: var(--accent-1)
+}
+
+
+.sidebar-grid {margin: var(--spacer-vert) 0;}
+.sidebar-grid, .blog-item {display: grid; gap: var(--column-gap);}
+.post-detail .container {max-width: 800px;}
+.post-header {border-bottom: 1px solid #ccc; padding: 3rem 0; margin: 0 0 3rem 0; text-align: center;}
+
+.tag-list ul {list-style:none; padding:0; display: flex; flex-wrap: wrap; gap: 5px;}
+.tag-list li a {font-size: .85rem; padding: 3px 6px; background: var(--light); display: block;}
+.tag-list li a:hover {background: var(--none);}
+
 
 /* TABLET */
 @media (min-width: 768px) {
-  .blog-list-item {grid-template-columns: 1.5fr 3fr; gap: 2rem;}
+.blog-list-item {grid-template-columns: 1fr 2fr;}
+// .blog-item .blog-text {}
 } 
 
 /* WIDE DESKTOP */
 @media (min-width: 992px) {
+.sidebar-grid {display: grid; grid-template-columns: 3fr 1fr;}
+.post-header {margin-top: var(--fixed-header-height);}
 }

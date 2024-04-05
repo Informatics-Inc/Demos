@@ -1,43 +1,51 @@
 <?php
-/* Block Name: Sidebar Nav*/
-global $wp_query;
-    $post = $wp_query->post;
-    $ancestors = get_post_ancestors($post);
-    if( empty($post->post_parent) ) {
-        $parent = $post->ID;
-    } else {
-        $parent = end($ancestors);
-    } 
+/* Block Name: Sidebar Nav */
+
+// Get the current post object
+global $post;
+if (!$post || !isset($post->ID)) {
+    // If $post is null or doesn't have the ID property, return early
+    return;
+}
+
+// Get the parent ID based on the current post
+$parent_id = $post->post_parent ? end(get_post_ancestors($post->ID)) : $post->ID;
+
+// Get the top-level parent ID
+$top_parent_id = $parent_id;
+
+// Loop to get the top-level parent ID
+while ($parent_id) {
+    if ($parent_id > 0) {
+        $top_parent_id = $parent_id;
+    }
+    $parent_id = wp_get_post_parent_id($parent_id);
+}
+
+// Get the title of the top-level parent
+$parent_title = get_the_title($top_parent_id);
 ?>
-<div class="sidebar box">
-    <h4><?php echo get_the_title($parent); ?></h4>
+<div class="box sec-nav-title">
+    <h4><?php echo esc_html($parent_title); ?></h4>
     <nav class="sec-nav">
         <ul>
             <?php
-                global $post;
-                $parent_id = wp_get_post_parent_id( $post->ID );
-                $top_parent = $post->ID;
-                while( $parent_id ){
-                    if( $parent_id > 0 ){
-                        $top_parent = $parent_id;
-                    }
-                    $parent_id = wp_get_post_parent_id( $parent_id );
-                }
-                $args = array( 
-                    'sort_column' => 'menu_order', 
-                    'sort_order' => 'asc',
-                    'title_li' => '',
-                    'child_of' => $top_parent,
-                    'echo' => 1
-                );
-                $children = wp_list_pages($args);
-                $additional = get_field('additional_sidebar_navigation', get_post($top_parent));
-                if ($additional) {
-                    echo str_replace("</ul>", "", str_replace("<ul>", "", $additional));
-                }
+            // Arguments for wp_list_pages to list child pages
+            $args = array(
+                'sort_column' => 'menu_order',
+                'sort_order' => 'asc',
+                'title_li' => '',
+                'child_of' => $top_parent_id,
+                'echo' => 1
+            );
+            wp_list_pages($args);
+
+            // Additional sidebar navigation
+            $additional = get_field('additional_sidebar_navigation', $top_parent_id);
+            if ($additional) {
+                echo str_replace("</ul>", "", str_replace("<ul>", "", $additional));
+            }
             ?>
         </ul>
     </nav>
 </div>
-
-
