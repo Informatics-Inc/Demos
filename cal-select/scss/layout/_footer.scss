@@ -1,0 +1,39 @@
+.footer {margin-top: 100px; background:#fff;position: relative; z-index: 5;color: var(--dark);}
+
+.footer a {color: var(--dark);}
+.footer .wp-block-columns{margin:0 auto;}
+.footer #logo{max-width: 320px;margin-bottom:-10px}
+.rounded-bottom{width:100%;height:10px;background-color: var(--primary);border-radius:12px 12px 0 0;float:left}
+
+.ftr-cols {display: grid; gap: 25px;}
+.footer .col img {margin: 0 0 2rem 0; display: block; max-width: 250px;}
+.footer h3 {color:var(--primary);font-size: 1.25rem; margin-bottom:25px;margin-top:10px} 
+.footer ul {list-style: none; color: var(--text-inverse); margin: 0; padding: 0;}
+.footer ul li {display: flex; align-items: center; gap: 10px; margin: 0;}
+.footer ul li a {font-weight:700;color: var(--dark); text-decoration: none; display: block;}
+.footer ul li a:hover {color:var(--primary);}
+.footer .ico-btn-group {grid-template-columns: 1fr;}
+
+/* Social Links */
+.footer a:hover .fa-brands,.footer a .fa-brands{ text-decoration: none!important;}
+.footer .fa-brands:hover {background-color:var(--primary);color:#fff;border:solid 1px var(--primary)}
+.footer .fa-brands{text-decoration: none!important;font-size:1.0rem;color:var(--primary);display:flex;flex-direction:column;justify-content:center;align-items:center;border:solid 1px var(--primary);width:32px;height:32px;border-radius:100%;background-color:var(--bkg);transition:var(--transition)}
+.footer .is-style-social-icons{display: flex;gap:8px}
+
+.footer-copy {text-align: center;  padding: 15px; margin: 2rem 0 0 0; font-size: .85rem;}
+
+.ftr-ico-content > * {display: grid; grid-template-columns: 25px auto;}
+.ftr-ico-content > * .fa {color: var(--accent-2);margin: 5px 0 0 0;}
+.ftr-ico-content .nav-social {margin: 0 0 0 25px; gap: 15px;}
+
+/* TABLET */
+@media (min-width: 768px) {
+.footer #logo{max-width:230px;margin-bottom:-10px}
+.footer {margin-top: 150px;}
+.footer .call-to-action {top: -75px;}
+.ftr-cols {grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );;}
+}
+
+@media (min-width: 992px) {
+
+}
