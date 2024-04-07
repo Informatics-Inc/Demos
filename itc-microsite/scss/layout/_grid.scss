@@ -1,6 +1,0 @@
-.container {@include container;}
-.grid {display: grid; gap: 25px;}
-
-@media (min-width: 768px) {
-.grid-3-col {grid-template-columns: 1fr 1fr 1fr; gap: 15px;}
-}

@@ -1,7 +1,0 @@
-/* Accordian */
-.accordion-button::after {background-image:url(../img/plus-lg.svg)} 
-.accordion-button:not(.collapsed)::after {background-image:url(../img/minus-lg.svg)}  
-.accordion-button{font-weight:300;font-size:1.70rem;font-family:var(--body)}
-.accordion-button:not(.collapsed) {color: var(--primary);background-color:#F0F1F4}
-
-h2.accordion-header{font-size:1.75rem;font-family:var(--body)}
