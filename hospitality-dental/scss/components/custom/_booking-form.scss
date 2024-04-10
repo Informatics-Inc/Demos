@@ -1,7 +1,8 @@
 
 
+form.appointment-form{position:relative;margin:20px auto;border:solid 1px #ddd;background-color:#fff;padding:30px 20px;border-radius:var(--border-radius-lg);box-shadow:0 22px 65px rgba(0,0,0,0.07);}
+
 form.appointment-form:after{background:url(../img/dots2.svg);background-size:auto;width:30px;height:120px;position:absolute;left:-50px;top:4px;content:"";background-size:cover;z-index:-1;}
-form.appointment-form{position:relative;margin:20px auto;border:solid 1px #ddd;background-color:#fff;padding:60px 40px;border-radius:var(--border-radius-lg);box-shadow:0 22px 65px rgba(0,0,0,0.07);}
 
 .appointment-form label{display:block;margin-bottom:5px;color:#000;font-weight:400;}
 .appointment-form select{background-color:var(--primary-light);}
@@ -20,6 +21,7 @@ form.appointment-form{position:relative;margin:20px auto;border:solid 1px #ddd;b
 
 /* TABLET */
 @media (min-width: 768px) {
+form.appointment-form{padding:60px 40px;}
 .appointment-form .form-group label{width:calc(100% - 40px);}
 .appointment-form .form-row{display:flex;justify-content:space-between;}
 .appointment-form .form-name{width:calc(50% - 10px);}
