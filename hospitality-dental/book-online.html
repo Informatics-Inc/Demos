@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Book Online</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.typekit.net/xnq5kjf.css">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link--> 
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
+
+  <header id="hdr-site">
+    
+    <!-- HEADER TOP -->
+    <div id="hdr-top">
+        <div class="container">
+            <div class="hdr-top-left">
+                <p><a href="">BOOK ONLINE</a> Book online and schedule your appointment today!</p>
+            </div>
+            <div class="hdr-top-right hidden-sm">
+                <ul>
+                    <li><a href="#.html">About Us</a></li>
+                    <li><a href="#.html">Locations</a></li>
+                    <li><a href="#.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div id="hdr-main">
+            <a href="#.html" id="logo">
+                <img src="img/logo.svg" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+                <div class="closed">
+                    Menu
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <nav id="menu" class="collapsed">
+            <ul>
+              <li><a href="#.html">Services</a>
+                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                  <ul id="menu-1" class="collapsed">
+                    <li><a href="#.html">General Dentistry</a></li>
+                    <li><a href="#.html">Orthodontics</a></li>
+                    <li><a href="#.html">Pediatric Dentistry</a></li>
+                    <li><a href="#.html">Cosmetic Dentistry</a></li>
+                    <li><a href="#.html">Oral Surgery</a></li>
+                  </ul>
+                </li>
+                <li><a href="#.html">Insurance & Benefits</a>
+                  <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2" aria-expanded="false" aria-controls="menu-2"><i class="fa fa-chevron-down"></i></button>
+                    <ul id="menu-2" class="collapsed">
+                      <li><a href="#.html">Insurance</a></li>
+                      <li><a href="#.html">Financing Options</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#.html">New Patients</a>
+                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-3" aria-expanded="false" aria-controls="menu-3"><i class="fa fa-chevron-down"></i></button>
+                  <ul id="menu-3" class="collapsed">
+                    <li><a href="#.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li><a href="#.html">Locations</a></li>
+            </ul>
+            <div class="hidden-lg">
+              <ul>
+               <li><a href="#.html">About Us</a></li>
+               <li><a href="#.html">Locations</a></li>
+               <li><a href="#.html">Resources</a></li>
+             </ul> 
+           </div>
+
+          
+            <a href="#.html" class="btn-theme wp-block-button__link ">Contact Us</a>
+            <a href="#.html" class="btn-theme wp-block-button__link "><i class="fa-solid fa-calendar"></i>Book Online</a>
+        </nav>
+        </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hdr">
+        <figure>
+        </figure>
+        <div class="content">
+          <h1>Book Online</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb-nav">
+              <li><a href="#.html">Home</a></li>
+              <li>Book Online</li>
+            </ol>
+          </nav>
+        </div>
+    </section>
+
+     <!----------------- Form ------------------>
+    <div class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+      <div class="wp-block-column">
+
+        <form action="submit-appointment.php" method="POST" class="appointment-form">
+
+
+        <h2>Book Appointment</h2>
+        <p>Please fill out the form below to conveniently book your appointment online.</p><br>
+        
+
+      
+          <!-- Step 1: Select Location -->
+          <div class="form-row">
+            <div class="form-name form-icon-location">
+          <label for="location">Select Location:</label>
+          <select id="location" name="location" required>
+            <option class="select-value" value=""disabled selected>Choose a Location</option>
+            <option value="location1">San Bernardino</option>
+            <option value="location2">Rancho Mirage</option>
+            <option value="location3">Hesperia</option>
+            <option value="location4">Palm Desert</option>
+            <option value="location5">Rancho Cucamonga</option>
+        </select>
+        
+        
+        </div>
+          <!-- Step 2: Select Reason for Visit -->
+            <div class="form-name form-icon-reason">
+          <label for="reason">Reason for Visit:</label>
+          <select id="reason" name="reason" required>
+              <option value=""disabled selected>Choose a Reason</option>
+              <option value="reason1">Consultation</option>
+              <option value="reason2">New Patient Exam</option>
+              <option value="reason3">Orthodontics Consultation</option>
+              <option value="reason3">Returning Patient Treatment/Exam</option>
+
+          </select>
+      </div>
+    </div>
+  
+          <!-- Step 3: Choose Date -->
+          <div class="form-row">
+            <div class="form-name">
+          <label for="date">Choose Date:</label>
+          <input type="date" id="date" name="date" min="2024-04-09" max="2024-12-31" required>
+        </div>
+          <!-- Step 4: Choose Time Slot (Will be dynamically filled based on selection) -->
+          <div class="form-name">
+          <label for="time">Choose Time Slot:</label>
+          <select id="time" name="time" required>
+            <option value=""disabled selected>Select a Time</option>
+              <option value="09:00">09:00 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="15:00">1:00 PM</option>
+              <option value="15:00">2:00 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="15:00">4:00 PM</option>
+
+          </select>
+          </div>
+          </div>
+  
+          <hr>
+
+          <!-- Step 5: Appointment Details -->
+          <h3>Contact Information</h3>
+          <p id="appointment-details">Please fill out all the information below.</p><br>
+          <!-- Step 6: Fill Out Required Information -->
+          <div class="form-row">
+            <div class="form-name">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-name">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+        </div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <div class="form-row">
+            <div class="form-name">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+            </div>
+          <div class="form-name">
+          <label for="dob">Date of Birth:</label>
+          <input type="text" id="dob" name="dob" placeholder="mm/dd/yyyy" required>
+          </div>
+          </div>
+  
+              <!-- Step 7: Agreement Checkboxes -->
+              <div class="form-group">
+                <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                <label class="checkbox-label" for="privacy-policy"><p>I have read and agreed to the Privacy Policy and Terms of Use that I am at least 13 and have the authority to make this appointment.</p></label><br>
+            
+                <input type="checkbox" id="receive-texts" name="receive-texts" required>
+                <label class="checkbox-label" for="receive-texts"><p>I agree to receive text messages from this practice and understand that message frequency and data rates may apply</p>
+                </label><br>
+            </div>
+    
+          <!-- Step 8: Submission Button -->
+          <button type="submit">Submit Appointment</button>
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="call-to-action">
+    <div class="wp-block-columns is-layout-flex are-vertically-aligned-center">
+      <div class="wp-block-column">
+        <h2><strong>Smile Secure:</strong> Call or click for your next dental appointment</h2>
+        <figure><img src="img/arrow-yellow.svg" /></figure>
+      </div>
+      <div class="wp-block-column">
+        <div class="wp-block-column">
+          <div class="wp-block-buttons wp-block-buttons-is-layout-flex">
+           <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Contact Us</a></div>
+           <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#"><i class="fa-solid fa-calendar"></i>Book Online</a></div>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="wp-block-columns is-layout-flex">
+    <div class="wp-block-column is-vertically-aligned-top" style="flex-basis: 30%;">
+        <a href="/" id="logo">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+    </div>
+    <div class="wp-block-column is-vertically-aligned-top">
+    <div class="ftr-cols">
+      <div class="col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#.html">Services</a></li>
+          <li><a href="#.html">Insurance & Benefits</a></li>
+          <li><a href="#.html">New Patients</a></li>
+          <li><a href="#.html">About Us</a></li>
+          <li><a href="#.html">Resources</a></li>
+          <li><a href="#.html">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Our Locations</h3>
+        <ul>
+          <li><a href="#.html">San Bernardino, CA</a></li>
+          <li><a href="#.html">Rancho Mirage, CA</a></li>
+          <li><a href="#.html">Hesperia, CA</a></li>
+          <li><a href="#.html">Palm Desert, CA</a></li>
+          <li><a href="#.html">Rancho Cucamonga, CA</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Get Social</h3>
+        <ul class="is-style-social-icons">
+          <li><a href="#.html"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#.html"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#.html"><i class="fa-brands fa-pinterest"></i></a></li>
+            <li><a href="#.html"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <p class="footer-copy">© 2024 Hospitality Dental & Orthodontics. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
+    <span class="rounded-bottom"></span>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

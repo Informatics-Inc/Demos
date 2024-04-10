@@ -1,0 +1,35 @@
+
+
+form.appointment-form:after{background:url(../img/dots2.svg);background-size:auto;width:30px;height:120px;position:absolute;left:-50px;top:4px;content:"";background-size:cover;z-index:-1;}
+form.appointment-form{position:relative;margin:20px auto;border:solid 1px #ddd;background-color:#fff;padding:60px 40px;border-radius:var(--border-radius-lg);box-shadow:0 22px 65px rgba(0,0,0,0.07);}
+
+.appointment-form label{display:block;margin-bottom:5px;color:#000;font-weight:400;}
+.appointment-form select{background-color:var(--primary-light);}
+#location option[disabled]{color:#ccc;}
+
+.appointment-form select,.appointment-form input[type="text"],.appointment-form input[type="email"],.appointment-form input[type="tel"],.appointment-form input[type="date"]{width:100%;padding:15px 20px;margin-bottom:20px;border:1px solid #dcdbdd;border-radius:5px;box-sizing:border-box;}
+
+.appointment-form input[type="checkbox"]{margin-bottom:8px;margin-right:10px;vertical-align:middle;}
+.appointment-form .checkbox-label{font-size:0.9rem;display:inline-block;font-weight:400;vertical-align:top;margin-bottom:10px;}
+.appointment-form button[type="submit"]{background-color:var(--primary);color:#fff;padding:18px 30px;font-family:var(--body);font-weight:700;border:none;font-size:1.1rem !important;border-radius:35px;cursor:pointer;font-size:16px;transition:var(--transition);}
+.appointment-form button[type="submit"]:hover{background-color:var(--primary-dark);}
+.appointment-form .form-group{margin:35px 0;}
+
+
+
+
+/* TABLET */
+@media (min-width: 768px) {
+.appointment-form .form-group label{width:calc(100% - 40px);}
+.appointment-form .form-row{display:flex;justify-content:space-between;}
+.appointment-form .form-name{width:calc(50% - 10px);}
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}
