@@ -125,12 +125,17 @@
 
         <form action="submit-appointment.php" method="POST" class="appointment-form">
 
-
         <h2>Book Appointment</h2>
         <p>Please fill out the form below to conveniently book your appointment online.</p><br>
-        
+        <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+        <label class="checkbox-label" for="privacy-policy"><p>I'm a new patient at this practice </p></label>
 
-      
+                      <!-- In Person or Virtual (ADDS A CLASS of "VISIT-SELECTED when clicked)-->
+                  <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+                    <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href=""><i class="fa-solid fa-user"></i>In Person</a></div>
+                    <div class="wp-block-button"><a class="wp-block-button__link wp-element-button   visit-selected" href=""><i class="fa-solid fa-laptop"></i>Virtual Visit</a></div>
+                  </div>
+<hr>
           <!-- Step 1: Select Location -->
           <div class="form-row">
             <div class="form-name form-icon-location">
@@ -143,8 +148,6 @@
             <option value="location4">Palm Desert</option>
             <option value="location5">Rancho Cucamonga</option>
         </select>
-        
-        
         </div>
           <!-- Step 2: Select Reason for Visit -->
             <div class="form-name form-icon-reason">
@@ -155,37 +158,50 @@
               <option value="reason2">New Patient Exam</option>
               <option value="reason3">Orthodontics Consultation</option>
               <option value="reason3">Returning Patient Treatment/Exam</option>
-
           </select>
-      </div>
-    </div>
-  
-          <!-- Step 3: Choose Date -->
-          <div class="form-row">
-            <div class="form-name">
-          <label for="date">Choose Date:</label>
-          <input type="date" id="date" name="date" min="2024-04-09" max="2024-12-31" required>
         </div>
-          <!-- Step 4: Choose Time Slot (Will be dynamically filled based on selection) -->
-          <div class="form-name">
-          <label for="time">Choose Time Slot:</label>
-          <select id="time" name="time" required>
-            <option value=""disabled selected>Select a Time</option>
-              <option value="09:00">09:00 AM</option>
-              <option value="12:00">12:00 PM</option>
-              <option value="15:00">1:00 PM</option>
-              <option value="15:00">2:00 PM</option>
-              <option value="15:00">3:00 PM</option>
-              <option value="15:00">4:00 PM</option>
+                <!-- Step 2: Select Date for Visit -->
+                <div class="form-name form-icon-date">
+                  <label for="date">Choose Date:</label>
+                  <input type="date" id="date" name="date" min="2024-04-09" max="2024-12-31" required>
+              </div>
+    </div>
 
-          </select>
-          </div>
-          </div>
-  
+
+          <hr>
+    <!-- Step 4: Choose Time Slot (Will be dynamically filled based on selection) -->
+    <label for="time">Choose Time Slot:</label>
+    <div class="time-slots-container">
+        <div class="col">
+          <button class="availableu unavailable">9:00 AM</button>
+          <button class="availableu unavailable">9:30 AM</button>
+          <button class="available">10:00 AM</button>
+          <button class="available">10:30 AM</button>
+        </div>
+        <div class="col">
+          <button class="availableu unavailable">11:00 AM</button>
+          <button class="available">11:30 AM</button>
+          <button class="available">12:00 PM</button>
+          <button class="available">12:30 PM</button>
+        </div>
+        <div class="col">
+          <button class="available">1:00 PM</button>
+          <button class="availableu unavailable">1:30 PM</button>
+          <button class="available">2:00 PM</button>
+          <button class="availableu unavailable">2:30 PM</button>
+        </div>
+        <div class="col">
+          <button class="available">3:00 PM</button>
+          <button class="available">3:30 PM</button>
+          <button class="available">4:00 PM</button>
+          <button class="available">4:30 PM</button>
+          <!-- Add more buttons for Monday -->
+      </div>
+  </div>
           <hr>
 
           <!-- Step 5: Appointment Details -->
-          <h3>Contact Information</h3>
+          <h2>Contact Information</h2>
           <p id="appointment-details">Please fill out all the information below.</p><br>
           <!-- Step 6: Fill Out Required Information -->
           <div class="form-row">
@@ -225,11 +241,6 @@
           <!-- Step 8: Submission Button -->
           <button type="submit">Submit Appointment</button>
       </form>
-
-
-
-
-
 
 
 

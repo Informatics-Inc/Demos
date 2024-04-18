@@ -1,34 +1,55 @@
-
-
+form.appointment-form h2{font-size:2.5rem}
 form.appointment-form{position:relative;margin:20px auto;border:solid 1px #ddd;background-color:#fff;padding:30px 20px;border-radius:var(--border-radius-lg);box-shadow:0 22px 65px rgba(0,0,0,0.07);}
-
 form.appointment-form:after{background:url(../img/dots2.svg);background-size:auto;width:30px;height:120px;position:absolute;left:-50px;top:4px;content:"";background-size:cover;z-index:-1;}
 
-.appointment-form label{display:block;margin-bottom:5px;color:#000;font-weight:400;}
+
+ /* Select Buttons */
+ form.appointment-form .wp-block-button a {border:solid 1px var(--secondary);background:#fff; padding: .65rem 1.4rem; color: var(--secondary); text-align: center; border-radius: 35px; text-decoration: none; font-weight: 700;position: relative; z-index: 5;transition:all .3s;overflow:hidden;z-index:1;
+    &:before{content:'';position:absolute;bottom:0;left:0;width:0%;height:100%;background:var(--secondary);transition:all .3s;border-radius:10rem;z-index:-1;}
+    &:hover{color:#fff;&:before{width:100%;}
+    }
+    } 
+    form.appointment-form .wp-block-button a.visit-selected {background:var(--secondary); color:#fff;
+        } 
+ form.appointment-form .fa-solid {margin-right:10px}
+
+    
+.appointment-form label{display:block;margin-bottom:15px;color:#000;font-weight:700;}
 .appointment-form select{background-color:var(--primary-light);}
 #location option[disabled]{color:#ccc;}
-
 .appointment-form select,.appointment-form input[type="text"],.appointment-form input[type="email"],.appointment-form input[type="tel"],.appointment-form input[type="date"]{width:100%;padding:15px 20px;margin-bottom:20px;border:1px solid #dcdbdd;border-radius:5px;box-sizing:border-box;}
-
 .appointment-form input[type="checkbox"]{margin-bottom:8px;margin-right:10px;vertical-align:middle;}
-.appointment-form .checkbox-label{font-size:0.9rem;display:inline-block;font-weight:400;vertical-align:top;margin-bottom:10px;}
+.appointment-form .checkbox-label{font-size:0.9rem;display:inline-block;font-weight:400;vertical-align:top;}
 .appointment-form button[type="submit"]{background-color:var(--primary);color:#fff;padding:18px 30px;font-family:var(--body);font-weight:700;border:none;font-size:1.1rem !important;border-radius:35px;cursor:pointer;font-size:16px;transition:var(--transition);}
 .appointment-form button[type="submit"]:hover{background-color:var(--primary-dark);}
 .appointment-form .form-group{margin:35px 0;}
 
 
+.form-icon-location label:before{background:url(../img/icons/icons-form-map.svg);background-size:cover;width:50px;content:"";height:50px;margin-right:10px;display:inline-block;margin-bottom:-1px}
+.form-icon-reason label:before{background:url(../img/icons/icons-form-reason.svg);background-size:cover;width:32px;content:"";height:50px;margin-right:10px;display:inline-block;margin-bottom:-1px}
+ .form-icon-date label:before{background:url(../img/icons/icons-form-calendar.svg);background-size:cover;width:43px;content:"";height:50px;margin-right:10px;display:inline-block;margin-bottom:-1px}
 
+
+/* Add styles for time slots */
+ .appointment-form .time-slots-container button{width:100%;padding:13px;margin-bottom:15px;font-size:0.9rem;border:none;background-color:#fff;color:var(--secondary);cursor:pointer;border-radius:50px;border:solid 1px var(--secondary);transition:var(--transition);}
+  .appointment-form .time-slots-container button:hover{background:var(--secondary);color:#fff;}
+ .time-slots-container button.unavailable{background-color:#eee;color:#999;cursor:not-allowed;border:solid 1px #ddd;}
+ .time-slots-container button.unavailable:hover{background-color:#eee;color:#999;cursor:not-allowed;}
+ .time-slots-container{gap: var(--spacer);grid-template-columns: repeat(2, 1fr);display: grid;  }
 
 /* TABLET */
 @media (min-width: 768px) {
+    .time-slots-container{gap: var(--spacer);grid-template-columns: repeat(4, 1fr);display: grid;  }
+
 form.appointment-form{padding:60px 40px;}
 .appointment-form .form-group label{width:calc(100% - 40px);}
-.appointment-form .form-row{display:flex;justify-content:space-between;}
+.appointment-form .form-row{display:flex;justify-content:space-between;gap: var(--spacer)}
 .appointment-form .form-name{width:calc(50% - 10px);}
 } 
 
 /* WIDE DESKTOP */
 @media (min-width: 992px) {
+
 }
 
 /* WIDE DESKTOP */
