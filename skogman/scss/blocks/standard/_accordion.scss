@@ -1,0 +1,60 @@
+.accordion {
+    margin: var(--spacer) 0;
+    border-radius: 15px
+}
+
+.accordion-collapse.collapsed {
+    height: 0;
+    overflow: hidden;
+    transition-delay: .2s;
+    transition: height .2s ease
+}
+
+.accordion-collapse.show {
+    height: auto
+}
+
+.accordion-item h3 {
+    padding: 1.5rem 1rem 1.5rem 0;
+    font-size: 1.15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #ccc;
+    margin: 0;
+    gap: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: var(--body);
+    letter-spacing: normal;
+    font-weight: 600
+}
+
+.accordion-item h3 .fa {
+    color: var(--accent-1);
+    font-size: 20px;
+    transform: rotate(180deg);
+    transition: var(--transition)
+}
+
+.accordion-item h3:hover {
+    cursor: pointer
+}
+
+.accordion-item .accordion-body {
+    background: var(--light);
+    padding: 2rem;
+    border-bottom: 1px dotted #ccc
+}
+
+.accordion .accordion-item:last-of-type h2 {
+    border-bottom: none
+}
+
+.accordion-item .accordion-body p:last-of-type {
+    margin: 0
+}
+
+.accordion-item h3.collapsed .fa {
+    transform: rotate(0deg)
+}
