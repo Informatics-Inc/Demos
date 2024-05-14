@@ -1,10 +1,14 @@
 /* HDR TOP  */
-#hdr-top {background: var(--primary); text-align: center; color: var(--text-color-inverse); padding: .65rem 0; font-size: 85%;}
+#hdr-top {background: var(--primary); text-align: center; color: var(--text-color-inverse); padding: .45rem 0; font-size: 85%; z-index: 25; position: relative;}
 #hdr-top p {margin: 0;}
+.hdr-top-right {display: flex; align-items: center; justify-content: space-between; gap: 1rem;}
+.hdr-social {display: flex; align-items: center; gap: .5rem;}
+.hdr-social a {color: #fff; font-size: 1rem;}
+.hdr-phone a {color: #fff; text-decoration: none;}
 
 /* GLOBAL */
-#hdr-site {position: relative; z-index: 10; box-shadow: var(--box-shadow-sm);}
-#logo {display: block; max-width: 150px;}
+#hdr-site {position: relative; z-index: 25; box-shadow: var(--box-shadow-sm); background: var(--bkg);}
+#logo {display: block; max-width: 165px;}
 
 .nav-main, .nav-main ul {list-style: none; padding: 0; margin: 0;}
 .nav-main a {color: var(--text); text-decoration: none; display: block; padding: 1rem; font-weight: 700; position: relative;}
@@ -44,7 +48,7 @@
 
 /* TABLET */
 @media (min-width: 768px) {
-#hdr-top .container {display: flex; justify-content: space-between;}
+
 .nav-mini {margin: 0; gap: 0;}
 .nav-mini a {color: var(--text-color-inverse);}
 .nav-mini a:hover {color: #fff;}
@@ -55,13 +59,14 @@
 
 /* DESKTOP */
 @media (min-width: 992px) {
+    // #hdr-top .container {display: flex; justify-content: flex-end;}
 #menu-toggle {display: none;}
 #menu {display: flex; align-items: center;}
 .hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
 .nav-main {display: flex; align-items: center;}
 .nav-main {display: flex;}
 .nav-main a {padding: 2rem 1rem;}
-#menu .wp-block-buttons {margin-left: 1rem;}
+#menu .wp-block-buttons {margin-left: 1.25rem;}
 
 #hdr-site {box-shadow: none; position: fixed; top: 0; width: 100%; transition: var(--transition);}
 #hdr-site.scroll, #hdr-site.scrolled { box-shadow: var(--box-shadow-sm); background: #fff;}
@@ -84,9 +89,10 @@
 .nav-main .current-page-ancestor > a,
 .nav-main .current-menu-item > a {
     font-weight: 700;
-    color: var(--primary);
+    
+    background: var(--light);
 }
-
+.nav-main .current-menu-item > a:after {width: 100%; opacity: 1; left: 0;}
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
 }

@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>WP Starter Template v1</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
+
+  <header id="hdr-site">
+    <!-- HEADER TOP -->
+    <div id="hdr-top">
+        <div class="container">
+            <!-- <div class="hdr-top-left">
+                <p>This is the top info header</p>
+            </div> -->
+            <div class="hdr-top-right">
+                <div class="hdr-phone"><a href="#.html">319-363-8286</a></div>
+                <div class="hdr-social">
+                  Follow Us!
+                  <ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex">
+                    <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+                      <a href="#.html"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+                      <a href="#.html"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div id="hdr-main">
+            <a href="#.html" id="logo">
+                <img src="img/logo.svg" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+                <div class="closed">
+                    Menu
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <nav id="menu" class="collapsed">
+            <ul class="nav-main">
+                <li><a href="#.html">Search Properties</a>
+                  <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                    <ul id="menu-1" class="collapsed">
+                      <li><a href="#.html">For Lease</a></li>
+                      <li><a href="#.html">For Sale</a></li>
+                    </ul>
+                </li>
+                <li><a href="#.html">About Skogman</a>
+                    <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                      <ul id="menu-1" class="collapsed">
+                        <li><a href="#.html">Services</a></li>
+                        <li><a href="#.html">Offices</a></li>
+                        <li><a href="#.html">CCIM/SIOR</a></li>
+                      </ul>
+                </li>
+                <li><a href="#.html">Our Agents</a></li>
+            </ul>
+            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Contact Us</a></div>
+              </div>
+        </nav>
+        </div>
+    </div>
+  </header>
+
+  <main id="content">
+
+  <!-- Hero Search -->
+  <section class="page-hdr search-hero">
+    <figure>
+      <img src="img/hero-city.jpg" />
+    </figure>
+    <div class="content">
+      <div class="container">
+
+        <h1>Search Commercial Properties</h1>
+        <div class="search-box">
+          <form class="theme-form">
+            <!-- Select for "property subtype" -->
+            <div class="form-group">
+                <label for="propertySubtype" class="sr-only">Property Subtype:</label>
+                <select id="propertySubtype" name="propertySubtype">
+                    <option value="">Select Property Subtype</option>
+                    <option value="1">Business</option>
+                    <option value="2">Warehouse</option>
+                    <option value="3">Industrail</option>
+                    <option value="4">Manufacturing</option>
+                    <option value="5">Office</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            
+            <!-- Radios for "for lease" or "for sale" -->
+            <div class="form-group">
+                <label class="sr-only">Listing Type:</label>
+                <div class="form-flex">
+                  <div>
+                    <input type="radio" id="forLease" name="listingType" value="lease">
+                    <label for="forLease">For Lease</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="forSale" name="listingType" value="sale">
+                      <label for="forSale">For Sale</label>
+                  </div>
+                </div>
+            </div>
+            
+            <!-- Search button -->
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Carousel -->
+  <div class="wp-block-columns is-layout-flex">
+    <div class="wp-block-column">
+      <p class="has-text-align-center is-style-eyebrow">Featured Listings</p>
+      <h2 class="has-text-align-center">Our Top Choices</h2>
+
+      <!-- FEED -->
+      <div class="theme-carousel">
+        <div class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround": true, "cellAlign": "left" }'>
+          <div class="gallery-cell">
+            <div class="theme-card">
+              <figure>
+                <div class="label">Office</div>
+                <img src="img/property-1.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>730 West Main Rd.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Read More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-cell">
+            <div class="theme-card">
+              <figure>
+                <div class="label property-color-2">Retail</div>
+                <img src="img/property-2.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>430 West Main Rd.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Read More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell">
+            <div class="theme-card">
+              <figure>
+                <div class="label property-color-3">Warehouse</div>
+                <img src="img/property-3.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>730 North St.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Read More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell">
+            <div class="theme-card">
+              <figure>
+                <div class="label">Office</div>
+                <img src="img/property-4.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>1020 1 Ave SE.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Read More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- View All Button -->
+  <div class="wp-block-columns is-layout-flex">
+    <div class="wp-block-column">
+      <div class="wp-block-buttons is-content-justification-center is-layout-flex">
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">See All Listings</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Columns -->
+  <div class="wp-block-group is-style-bkg-left">
+    <div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+      <div class="wp-block-columns is-style-large-gap is-layout-flex">
+        <div class="wp-block-column is-vertically-aligned-center">.
+          <p class="is-style-eyebrow">About Skogman Commercial</p>
+          <h2 class="wp-block-heading">Secondary Section Title</h2>
+          <p class="is-style-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores tempore est, architecto quo quidem adipisci in? Deserunt, sit vero provident dolore ullam consectetur eos voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam delectus praesentium harum rem accusantium neque?</p>
+          <ul class="is-style-checklist">
+            <li>Unde, voluptates?</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem omnis.</li>
+          </ul>
+          <div class="wp-block-buttons is-layout-flex">
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Learn More About Skogman Commercial</a></div>
+          </div>
+        </div>
+        <div class="wp-block-column is-vertically-aligned-center">
+          <figure class="theme-img flair-one image-content">
+            <img src="img/property-3.jpeg">
+            <div class="theme-image-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, laudantium.</p>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Stats -->
+  <div class="wp-block-columns is-layout-flex">
+    <div class="wp-block-column">
+      <p class="has-text-align-center is-style-eyebrow">Commercial Market</p>
+      <h2 class="has-text-align-center">Skogman by the Numbers</h2>
+    </div>
+  </div>
+  <div class="wp-block-columns is-style-no-top-margin is-layout-flex">
+    <div class="wp-block-column">
+      <div class="theme-cards stats medium">
+        <div class="theme-card">
+          <div class="card-body">
+            <h3>$181,646,469</h3>
+            <p class="is-style-eyebrow">Lorem   sit amet,  adipisicing elit. Distinctio   aliquid iusto  vel maxime!</p>
+          </div>
+        </div>
+        <div class="theme-card">
+          <div class="card-body">
+          <h3>470</h3>
+          <p class="is-style-eyebrow">Lorem  elit. Distinctio voluptatum aliquid iusto consequuntur vel maxime!</p>
+        </div>
+        </div>
+        <div class="theme-card">
+          <div class="card-body">
+          <h3>$386,469</h3>
+          <p class="is-style-eyebrow">Wt amet,  adipisicing elit. Distinctio voluptatum aliquid maxime!</p>
+        </div>
+        </div>
+        <div class="theme-card">
+          <div class="card-body">
+          <h3>$386,469</h3>
+          <p class="is-style-eyebrow">Lorem consequuntur vel maxime!</p>
+        </div>
+        </div>
+        <div class="theme-card">
+          <div class="card-body">
+          <h3>$2191,205</h3>
+          <p class="is-style-eyebrow">Lorem ipsum dolor sitetur  elit aliquid iusto consequuntur vel maxime!</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- From the Blog -->
+  <div class="wp-block-group alignfull is-style-bkg-light">
+    <div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+      <div class="wp-block-columns is-style-large-gap is-layout-flex">
+        <div class="wp-block-column is-vertically-aligned-center" style="flex-basis: 35%;">
+          <p class="is-style-eyebrow">Recent News</p>
+          <h2>Stay up to date!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores voluptatem autem doloribus quo. Eveniet, necessitatibus ut! Est itaque consectetur voluptates voluptatum in voluptatibus doloremque.</p>
+          <div class="wp-block-buttons is-layout-flex">
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">See All News</a></div>
+          </div>
+        </div>
+        <div class="wp-block-column is-vertically-aligned-center">
+          <div class="post-wrapper">
+
+            <div class="theme-card">
+              <figure>
+                <div class="label">Aug 13, 2024</div>
+                <img src="img/property-2.jpeg" />
+              </figure>
+              <div class="card-body">
+                <h3>Record-breaking sales and lease activity predicted</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ullam quas, deleniti necessitatibus inventore expedita labore. Quia facere similique delectus!</p>
+                <div class="wp-block-buttons is-style-btn-text is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Read More</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label">May 23, 2024</div>
+                <img src="img/property-3.jpeg" />
+              </figure>
+              <div class="card-body">
+                <h3>Record-breaking sales and lease activity predicted</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ullam quas, deleniti necessitatibus inventore expedita labore. Quia facere similique delectus!</p>
+                <div class="wp-block-buttons is-style-btn-text is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Read More</a></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="ftr-bkg">
+    <img src="img/bkg-footer.jpg" alt="Design Element" />
+  </div>
+  <div class="container">
+
+    <div class="ftr-cols">
+      <div class="col">
+        <img src="img/logo-inverse.svg" />
+      </div>
+      <div class="col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Our Locations</h3>
+        <p><strong>Skogman Commercial</strong><br>123 Address Street<br>Cedar Rapids, IA 52402</p>
+        <p><strong>Iowa City Area Commercial</strong><br>123 Address Street<br>Cedar Rapids, IA 52402</p>
+      </div>
+      <div class="col">
+        <h3>Connect</h3>
+        <ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex">
+          <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+            <a href="#.html"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+            <a href="#.html"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="footer-copy">
+      <div class="container">
+      <div class="col">
+        <ul>
+          <li><a href="#.html">Agents Only</a></li>
+          <li><a href="#.html">Disclaimer</a></li>
+          <li><a href="#.html">Terms of Use</a></li>
+        </ul>
+        <p>Copyright © 2024 Skogman Commercial. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
+      </div>
+      <div class="col">
+        <div class="flex">
+          Pending
+          <img src="img/ftr-icons.svg" />
+        </div>
+      </div>
+    </div>
+    </div>
+  
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

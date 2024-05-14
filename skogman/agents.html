@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>WP Starter Template v1</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
+
+  <header id="hdr-site">
+    <!-- HEADER TOP -->
+    <div id="hdr-top">
+        <div class="container">
+            <!-- <div class="hdr-top-left">
+                <p>This is the top info header</p>
+            </div> -->
+            <div class="hdr-top-right">
+                <div class="hdr-phone"><a href="#.html">319-363-8286</a></div>
+                <div class="hdr-social">
+                  Follow Us!
+                  <ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex">
+                    <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+                      <a href="#.html"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+                      <a href="#.html"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div id="hdr-main">
+            <a href="#.html" id="logo">
+                <img src="img/logo.svg" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+                <div class="closed">
+                    Menu
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <nav id="menu" class="collapsed">
+            <ul class="nav-main">
+                <li><a href="#.html">Search Properties</a>
+                  <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                    <ul id="menu-1" class="collapsed">
+                      <li><a href="#.html">For Lease</a></li>
+                      <li><a href="#.html">For Sale</a></li>
+                    </ul>
+                </li>
+                <li><a href="#.html">About Skogman</a>
+                    <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                      <ul id="menu-1" class="collapsed">
+                        <li><a href="#.html">Services</a></li>
+                        <li><a href="#.html">Offices</a></li>
+                        <li><a href="#.html">CCIM/SIOR</a></li>
+                      </ul>
+                </li>
+                <li class="current-menu-item"><a href="#.html">Our Agents</a></li>
+            </ul>
+            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Contact Us</a></div>
+              </div>
+        </nav>
+        </div>
+    </div>
+  </header>
+
+  <main id="content">
+  
+  <!-- Page Header -->
+  <section class="page-hdr">
+    <figure>
+      <img src="img/hero-city.jpg" />
+    </figure>
+    <div class="content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb-nav">
+          <li><a href="#.html">Home</a></li>
+          <li>Our Agents</li>
+        </ol>
+      </nav>
+      <h1>Our Agents</h1>
+    </div>
+  </section>
+
+  <div class="wp-block-columns">
+    <div class="wp-block-column">
+      <div class="search-layout">
+
+        <div class="theme-form-filter">
+          <form class="theme-form input-medium">
+            <div class="mobile-filter-header hidden-lg">
+              <h3>Filter Agents</h3>
+              <button type="button" class="mobile-filter-close" id="mobile-filter-close">Close Menu <i class="fa fa-close"></i></button>
+            </div>
+            
+            <!-- Search Input -->
+            <div class="filter-item">
+              <label for="propertyKeyword" class="sr-only">Search</label>
+              <input type="search" id="propertyKeyword" placeholder="Any part of name...">
+            </div>
+    
+            <!-- Division -->
+            <div class="filter-item filter-item-collapse">
+              <button type="button" data-bs-toggle="collapse" data-bs-target="#search-type" aria-expanded="false" aria-controls="menu-1">Division</button>
+              <div class="input-collapse-content collapsed " id="search-type">
+                <div class="form-group form-flex form-checkbox">
+                  <input type="checkbox" id="check-business" name="propertyType" value="business">
+                  <label for="check-business">Item #1</label>
+                </div>
+                <div class="form-group form-flex form-checkbox">
+                  <input type="checkbox" id="check-warehouse" name="propertyType" value="warehouse">
+                  <label for="check-warehouse">Item #2</label>
+                </div>
+                <div class="form-group form-flex form-checkbox">
+                  <input type="checkbox" id="check-industrial" name="propertyType" value="industrial">
+                  <label for="check-industrial">Item #3</label>
+                </div>
+                <div class="form-group form-flex form-checkbox">
+                  <input type="checkbox" id="check-manufacturing" name="propertyType" value="manufacturing">
+                  <label for="check-manufacturing">Item #4</label>
+                </div>
+                <div class="filter-menu-actions">
+                  <a href="#.html" class="wp-block-button__link wp-element-button"><i class="fa fa-check"></i> Apply</a>
+                  <a href="#.html"><i class="fa fa-close"></i> Clear</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Price -->
+            <div class="filter-item filter-item-collapse">
+              <button type="button" data-bs-toggle="collapse" data-bs-target="#search-language" aria-expanded="false" aria-controls="menu-1">Language</button>
+              <div class="input-collapse-content collapsed " id="search-language">
+                <div class="form-group form-flex form-checkbox">
+                  <input type="checkbox" id="check-business" name="propertyType" value="business">
+                  <label for="check-business">Item #1</label>
+                </div>
+                <div class="form-group form-flex form-checkbox">
+                  <input type="checkbox" id="check-warehouse" name="propertyType" value="warehouse">
+                  <label for="check-warehouse">Item #2</label>
+                </div>
+                <div class="form-group form-flex form-checkbox">
+                  <input type="checkbox" id="check-industrial" name="propertyType" value="industrial">
+                  <label for="check-industrial">Item #3</label>
+                </div>
+                <div class="form-group form-flex form-checkbox">
+                  <input type="checkbox" id="check-manufacturing" name="propertyType" value="manufacturing">
+                  <label for="check-manufacturing">Item #4</label>
+                </div>
+                <div class="filter-menu-actions">
+                  <a href="#.html" class="wp-block-button__link wp-element-button"><i class="fa fa-check"></i> Apply</a>
+                  <a href="#.html"><i class="fa fa-close"></i> Clear</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Display -->
+            <div class="filter-item">
+              <div class="flex">
+                <div class="flex">
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                  <div>
+                    Show Map
+                  </div>
+                </div>
+                |
+                <a href="#.html"><i class="fa fa-arrow-rotate-right"></i> Reset</a>
+              </div>
+            </div>
+    
+          </form>
+        </div>
+    
+        <header class="hidden-lg">
+          <div class="flex">
+              <p class="info">Showing 62 agents</p>
+              <button class="mobile-filter-toggle"><i class="fa fa-sliders"></i> Filters</button>
+          </div>
+        </header>
+    
+        <div class="agent-grid">
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-1.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Layla Franklin</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-2.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Anderson Borne</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-3.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Lydia Sanchez</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-4.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Tim Mickerson</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-5.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Colin Mostt</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-6.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Brittany Drears</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-7.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Kelly Markson</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-8.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Lisa Standish</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-9.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Colin Mostt</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-10.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Brittany Drears</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-2.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Kelly Markson</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-card bio-card">
+            <figure>
+              <img src="img/profile-5.jpg" />
+            </figure>
+            <div class="card-body">
+              <h3><a href="agent-bio.html">Lisa Standish</a></h3>
+              <div class="wp-block-buttons is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">View Bio</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Send Email</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="theme-pagination">
+          <p>Viewing page 1 of 5</p>
+          <ul>
+            <li class="pagination-active">1</li>
+            <li><a href="#.html">2</a></li>
+            <li><a href="#.html">3</a></li>
+            <li><a href="#.html">4</a></li>
+            <li><a href="#.html">5</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="ftr-bkg">
+    <img src="img/bkg-footer.jpg" alt="Design Element" />
+  </div>
+  <div class="container">
+
+    <div class="ftr-cols">
+      <div class="col">
+        <img src="img/logo-inverse.svg" />
+      </div>
+      <div class="col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Our Locations</h3>
+        <p><strong>Skogman Commercial</strong><br>123 Address Street<br>Cedar Rapids, IA 52402</p>
+        <p><strong>Iowa City Area Commercial</strong><br>123 Address Street<br>Cedar Rapids, IA 52402</p>
+      </div>
+      <div class="col">
+        <h3>Connect</h3>
+        <ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex">
+          <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+            <a href="#.html"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+            <a href="#.html"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="footer-copy">
+      <div class="container">
+      <div class="col">
+        <ul>
+          <li><a href="#.html">Agents Only</a></li>
+          <li><a href="#.html">Disclaimer</a></li>
+          <li><a href="#.html">Terms of Use</a></li>
+        </ul>
+        <p>Copyright © 2024 Skogman Commercial. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
+      </div>
+      <div class="col">
+        <div class="flex">
+          Pending
+          <img src="img/ftr-icons.svg" />
+        </div>
+      </div>
+    </div>
+    </div>
+  
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

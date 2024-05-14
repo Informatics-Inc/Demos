@@ -1,3 +1,4 @@
+
 :where(.wp-block) {margin-top: 0; margin-bottom: 0;}
 .wp-block-columns {
     margin: var(--spacer-vert) auto;
@@ -25,7 +26,7 @@
     .wp-block-image .alignleft {float:left; margin: 0 2rem 2rem 0;}
     .wp-block-image .alignright {float:right; margin: 0 0 2rem 2rem;}
 }
- 
+
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
 }

@@ -1,18 +1,29 @@
 /* Variables */
 :root {
   /* Colors */
-  --primary: #4D417F;
-  --primary-dark: #342960;
-  --accent-1: #19B470;
+  --primary: #C20017;
+  --primary-dark: #790202;
+  --accent-1: #C20017;
   --accent-2: #F2FBF8;
   --accent-3: #87819D;
-  --light: #f4f4f4;
-  --dark: #111;
+  --light: #F1F1F1;
+  --dark: #000;
   --gray: #ccc;
+  --bkg: #fff;
+
+  /* Property Colors */
+  --property-color-1: #C20017;
+  --property-color-2: #17C2C0;
+  --property-color-3: #C27E17;
+  --property-color-4: #17C25D;
+  --property-color-5: #175DC2;
+  --property-color-6: #4C17C2;
+  --property-color-7: #175D17;
+  --property-color-8: #C24C17;
   
   /* Fonts */
-  --header: "itc-avant-garde-gothic-pro", sans-serif;
-  --body: "lato", sans-serif;
+  --header: "Spectral", serif;
+  --body: "Montserrat", sans-serif;
   --text-color: rgba(0,0,0,.85);
   --text-color-inverse: rgba(255,255,255,.85);
   
@@ -26,14 +37,14 @@
   --border-radius-xl: 50px;
 
   /* Spacing */
-  --max-width: 1180px;
+  --max-width: 1120px;
   --side-padding: 1.5rem;
   --spacer: 1.5rem;
   --spacer-lg: 3rem;
   --spacer-vert: 2rem;
   --column-gap: 2rem;
   --column-gap-lg: 4rem;
-  --fixed-header-height: 128px;
+  --fixed-header-height: 122px;
 }
 
 /* TABLET */
@@ -51,7 +62,7 @@
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
   :root {
-  --spacer-vert: 5rem;
+  --spacer-vert: 4rem;
   
   }  
 }

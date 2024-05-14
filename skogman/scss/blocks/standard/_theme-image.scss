@@ -27,19 +27,21 @@
   /* Flair One */
   .theme-img.flair-one:after {
     background: url(../img/flair-1.svg);
-    width: 150px;
-    height: 155px;
+    width: 50px;
+    height: 150px;
     position: absolute;
-    left: -50px;
-    top: -50px;
+    right: -15px;
+    top: calc(50% - 75px);
     content: "";
-    background-size: cover; 
+    background-size: contain; 
     z-index: -1;
   }
   /* Flair Two */
   .theme-img.flair-two img {
     box-shadow: 10px 10px 0 var(--accent-1);
   }
+
+  /* Design 2 */
   .theme-img.design_2 {padding-right: 2.5rem;}
   .theme-img.design_2:before {
     background: url(../img/circles.png);
@@ -55,7 +57,7 @@
 
   /* Image with Content */
   .theme-img.image-content {padding: 0 3rem 3rem 0;}
-  .theme-image-content {position: absolute; bottom: 0; right: 0; padding: 1.5rem; background: var(--primary); color: var(--text-color-inverse); font-size: 1.25rem; max-width: 70%; border-radius: var(--border-radius-sm); box-shadow: var(--box-shadow-sm);}
+  .theme-image-content {position: absolute; bottom: 0; right: 0; padding: 1.5rem; background: var(--primary); color: var(--text-color-inverse); font-size: 1.15rem; max-width: 70%; border-radius: var(--border-radius-sm); box-shadow: var(--box-shadow-sm); font-weight: 600;}
   .theme-image-content > *:last-of-type {margin: 0;}
 
   /* TABLET */

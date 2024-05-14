@@ -1,15 +1,5 @@
   // -- SCROLL EVENTS -- //
 
-  // Vanilla JavaScript scroll event
-  window.addEventListener("scroll", function () {
-    var image = document.getElementById("hero-img");
-    var scrollPosition = window.scrollY;
-    var scaleFactor = 1 + scrollPosition * 0.001;
-    var opacityFactor = Math.min(scrollPosition / 500, 1);
-
-    image.style.transform = "scale(" + scaleFactor + ")";
-    image.style.opacity = 1 - opacityFactor;
-  });
 
   // jQuery scroll event
 $(window).scroll(function () {
@@ -36,31 +26,70 @@ $(window).scroll(function () {
   );
 });
 
-  // -- ANIMATE IN TO VIEW -- //
-  var $animation_elements = $(".animate-in, .btn-text, .fade-in");
-  var $window = $(window);
+$(document).ready(function() {
+  // Toggle class and collapse content when button is clicked
+  $(document).on('click', '.filter-item-collapse button', function() {
+      var targetContent = $(this).siblings('.input-collapse-content');
+      $('.input-collapse-content').not(targetContent).removeClass('expanded');
+      targetContent.toggleClass('expanded');
 
-  function check_if_in_view() {
-    var window_height = $window.height();
-    var window_top_position = $window.scrollTop();
-    var window_bottom_position = window_top_position + window_height;
+      // Toggle "active" class on clicked button
+      $(this).toggleClass('active');
+      
+      // Remove "active" class from other buttons
+      $('.filter-item-collapse button').not($(this)).removeClass('active');
+  });
 
-    $.each($animation_elements, function () {
-      var $element = $(this);
-      var element_height = $element.outerHeight();
-      var element_top_position = $element.offset().top;
-      var element_bottom_position = element_top_position + element_height;
+  // Toggle collapse content when button is clicked again
+  $(document).on('click', '.filter-item-collapse .input-collapse-content', function(event) {
+      event.stopPropagation();
+  });
 
-      // Check to see if this current container is within the viewport
-      if (
-        element_bottom_position >= window_top_position &&
-        element_top_position <= window_bottom_position
-      ) {
-        $element.addClass("visible");
-      } else {
-        $element.removeClass("visible"); // Remove the "visible" class if out of view
+  // Remove class from input-collapse-content and button when anything outside is clicked
+  $(document).on('click', function(event) {
+      if (!$(event.target).closest('.filter-item-collapse').length) {
+          $('.input-collapse-content').removeClass('expanded');
+          $('.filter-item-collapse button').removeClass('active');
       }
+  });
+
+  // When the mobile-filter-toggle button is clicked
+  $(".mobile-filter-toggle").click(function(){
+    // Add the class 'open' to the div with class 'theme-form-filter'
+        $(".theme-form-filter").addClass("open");
     });
-  }
-  $window.on("scroll resize", check_if_in_view);
-  $window.trigger("scroll");
+
+    // When the mobile-filter-close button is clicked
+    $(".mobile-filter-close").click(function(){
+        // Remove the class 'open' from the div with class 'theme-form-filter'
+        $(".theme-form-filter").removeClass("open");
+    });
+
+    // Toggle the Map
+    $('.switch input[type="checkbox"]').change(function(){
+        if($(this).is(":checked")) {
+          $('.map-and-list').addClass('show-map');
+        } else {
+          $('.map-and-list').removeClass('show-map');
+        }
+      });
+    
+    // Tabs
+    $(".tab-btn").click(function(){
+        // Get the tab ID from the data attribute
+        var tabId = $(this).data('tab');
+
+        // Hide all tab contents with fade effect
+        $(".tab-content").fadeOut(200);
+
+        // Remove 'active' class from all tab buttons
+        $(".tab-btn").removeClass("active");
+
+        // Show the selected tab content with fade effect
+        $("#" + tabId).fadeIn(200);
+
+        // Add 'active' class to the clicked tab button
+        $(this).addClass("active");
+    });
+  
+});

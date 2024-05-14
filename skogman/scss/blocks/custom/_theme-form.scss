@@ -1,0 +1,95 @@
+/* Search Filters */
+
+/* Add labels to all fields but only for screen readers */
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.form-flex {display: flex; gap: 1rem;}
+
+.theme-form {display: flex; flex-wrap: wrap; gap: 1rem; accent-color: var(--accent-1); align-items: center;}
+.theme-form > * {flex: auto 1 1;}
+.theme-form label {font-weight: 700; display: block;}
+.theme-form select, .theme-form input {padding: 15px 10px; width: 100%;}
+
+.theme-form input[type="radio"] {padding: 0px; width: auto;}
+.theme-form input[type="radio"] + label {font-weight: 400; display: inline-block; padding: 0; width: auto;}
+.theme-form button[type="submit"] {background: var(--primary); color: #fff; font-weight: 700; padding: 15px 20px; border: none; border-radius: 3px; max-width: 150px; transition: var(--transition);}
+.theme-form button[type="submit"]:hover {background: var(--primary-dark);}
+.theme-form a {display: flex; align-items: center; gap: 5px; padding: 0; margin: 0; text-decoration: none;}
+.theme-form a.wp-block-button__link {padding: 10px 15px;}
+.form-group + .form-group {margin-top: .75rem;}
+.theme-form input[type="text"], .theme-form textarea {border: 1px solid #ccc; border-radius: 3px; width: 100%;}
+.theme-form.input-medium input[type="text"] {padding: 7px 10px;}
+
+/* Custom Radios & Select */
+.theme-form {
+input[type="radio"] {
+    -webkit-appearance: none; /* Remove default appearance */
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px; /* Adjust width and height as needed */
+    height: 20px;
+    border-radius: 50%; /* Ensure it's a circle */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    outline: none; /* Remove default focus outline */
+    cursor: pointer;
+}
+
+input[type="radio"]::before {
+    
+    content: "\f00c";font-family: FontAwesome;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    width: 20px; /* Adjust size of the dot */
+    height: 20px;
+    border-radius: 50%; /* Ensure it's a circle */
+    background-color: var(--accent-1); /* Color of the dot */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the dot */
+    opacity: 0; /* Hide the dot by default */
+}
+/* Hide the default arrow */
+select {
+    -webkit-appearance: none; /* Remove default appearance */
+    -moz-appearance: none;
+    appearance: none;
+    /* Add padding to create space for the custom arrow */
+    background-image: url(../../img/chevron-down.png);
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Position the arrow to the right */
+    background-size: 15px auto;
+    border: 1px solid #ccc; border-radius: var(--border-radius-sm);
+}
+input[type="checkbox"] {
+    width: auto;
+}
+.form-checkbox label {font-weight: 500;}
+.form-checkbox {gap: 5px; margin: 7px 0; align-items: center;}
+
+input[type="search"] {border-color: var(--primary); background: #fff;}
+}
+
+.filter-item-collapse button {height: auto;}
+
+/* Style radio buttons when checked */
+input[type="radio"]:checked::before {
+opacity: 1; /* Show the dot when checked */
+}
+
+@media (min-width:768px) {
+}
+
+/* WIDE DESKTOP */
+@media (min-width:992px){
+}

@@ -15,6 +15,10 @@ Date: Mar 2024
 @import "core/wpcols-for-demo"; // WordPress CSS for column layouts - can remove in final project
 @import "core/wp-layout-overrides"; // WordPress CSS overrides to emulate a Page Builder - do not remove
 
+// Vendors
+@import "vendors/flickity"; // Mobile friendly carousel
+@import "vendors/glightbox"; // Mobile friendly carousel
+
 // Theme
 @import "theme/variables";
 @import "theme/typography";
@@ -24,6 +28,9 @@ Date: Mar 2024
 @import "layout/footer";
 @import "layout/blog";
 @import "layout/contact-form";
+@import "layout/search";
+@import "layout/property-detail";
+@import "layout/agents";
 
 // Update WordPress Blocks to Match Theme
 @import "blocks/wp-overrides/buttons";
@@ -35,7 +42,7 @@ Date: Mar 2024
 @import "blocks/wp-overrides/paragraph";
 @import "blocks/wp-overrides/search";
 @import "blocks/wp-overrides/separator";
-@import "blocks/wp-overrides/social-links";
+@import "blocks/wp-overrides/social-links"; 
 
 // Standard Theme Blocks
 @import "blocks/standard/theme-cta";
@@ -48,4 +55,6 @@ Date: Mar 2024
 @import "blocks/standard/post-list";
 
 // Custom Theme Blocks
-@import "blocks/custom/home-hero";
+@import "blocks/custom/search-hero";
+@import "blocks/custom/theme-form";
+@import "blocks/custom/carousel";
