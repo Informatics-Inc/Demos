@@ -1,0 +1,5 @@
+/* Columns */
+.is-style-small-margin {margin-top: -2rem !important;}
+.is-style-large-gap {gap: 4rem !important;}
+.is-style-small-margin + .is-style-small-margin {margin-bottom: 3rem !important;}
+.is-style-no-top-margin {margin-top: calc(var(--spacer-vert) * -1) !important;}

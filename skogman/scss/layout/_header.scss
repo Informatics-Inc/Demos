@@ -1,0 +1,102 @@
+/* HDR TOP  */
+#hdr-top {background: var(--primary); text-align: center; color: var(--text-color-inverse); padding: .45rem 0; font-size: 85%; z-index: 25; position: relative;}
+#hdr-top p {margin: 0;}
+.hdr-top-right {display: flex; align-items: center; justify-content: space-between; gap: 1rem;}
+.hdr-social {display: flex; align-items: center; gap: .5rem;}
+.hdr-social a {color: #fff; font-size: 1rem;}
+.hdr-phone a {color: #fff; text-decoration: none;}
+
+/* GLOBAL */
+#hdr-site {position: relative; z-index: 25; box-shadow: var(--box-shadow-sm); background: var(--bkg);}
+#logo {display: block; max-width: 165px;}
+
+.nav-main, .nav-main ul {list-style: none; padding: 0; margin: 0;}
+.nav-main a {color: var(--text); text-decoration: none; display: block; padding: 1rem; font-weight: 700; position: relative;}
+.nav-mini {list-style: none; margin: 1rem 0; padding: 0; display: flex; gap: 1rem; justify-content: center;}
+
+/* ONLY MOBILE */
+@media (max-width: 992px) {
+#hdr-main {display: grid; grid-template-columns: auto 35px; padding: 1rem 0;}
+
+/* Menu Toggle */
+#menu-toggle {font-size:.65rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 700; color: var(--text); width: 35px; height: 40px; position: relative;}
+#menu-toggle > div {position: absolute; width: 100%; height: 100%; top: 0; left: 0; transition: var(--transition);}
+#menu-toggle .closed {display: flex; flex-direction: column; gap: 4px;}
+#menu-toggle .closed .bar {width: 100%; height: 3px; background: var(--primary); display: block;}
+#menu-toggle .open .bar {width: 100%; height: 3px; transform: rotate(45deg); background: var(--primary); display: block; transform-origin: center;position: absolute;left: 0;top: 46%;}
+#menu-toggle .open .bar:nth-last-of-type(2) {transform: rotate(-45deg)}
+#menu-toggle.collapsed .open {opacity: 0; visibility: hidden; top: -5px;}
+#menu-toggle.collapsed .closed {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .open {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .closed {opacity: 0; visibility: hidden; top: 5px;}
+
+#menu .wp-block-buttons > .wp-block-button {display: block; width: 100%; margin: 1rem 0;}
+
+/* Menu Collapse */
+.nav-main .btn-expand {position: absolute; right: 0; top: 0; height: auto; border: none; background: none; color: var(--primary); padding: 1rem;}
+.collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
+.show {height: auto;}
+
+/* Menu Links */
+.nav-main  a {border-top: 1px dotted var(--gray);}
+.nav-main  a:hover, .nav-mainul a:focus {background: var(--light);}
+.nav-main .wp-block-button__link {margin: 1rem 0;}
+.nav-main li {position: relative;}
+.nav-main ul a {border: none; padding: 10px 20px 10px 30px; font-weight: 500;}
+.nav-main ul li:last-of-type {margin-bottom: 1rem;}
+} /* END ONLY MOBILE */
+
+/* TABLET */
+@media (min-width: 768px) {
+
+.nav-mini {margin: 0; gap: 0;}
+.nav-mini a {color: var(--text-color-inverse);}
+.nav-mini a:hover {color: #fff;}
+.nav-mini li {position: relative; display: flex;}
+.nav-mini li:after {width: 1px; height: 1rem; display: block; background: #fff; opacity: .35; content: ""; margin: 0 .75rem; position: relative; top: 3px;}
+.nav-mini li:last-of-type:after {display: none;}
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    // #hdr-top .container {display: flex; justify-content: flex-end;}
+#menu-toggle {display: none;}
+#menu {display: flex; align-items: center;}
+.hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
+.nav-main {display: flex; align-items: center;}
+.nav-main {display: flex;}
+.nav-main a {padding: 2rem 1rem;}
+#menu .wp-block-buttons {margin-left: 1.25rem;}
+
+#hdr-site {box-shadow: none; position: fixed; top: 0; width: 100%; transition: var(--transition);}
+#hdr-site.scroll, #hdr-site.scrolled { box-shadow: var(--box-shadow-sm); background: #fff;}
+#content {margin-top: var(--fixed-header-height); padding: 1px 0;}
+/* Dropdown */
+.nav-main .btn-expand {display: none;}
+.nav-main li {position: relative;}
+.nav-main ul {position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
+.nav-main ul a {font-weight: 400; padding: 10px;}
+.nav-main li:hover ul {opacity: 1; visibility: visible; top: 100%;}
+
+/* Hovers & Active */
+.nav-main > li > a:after {width: 0; height: 3px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--accent-1); opacity: 0; transition: var(--transition);}
+.nav-main > li:hover > a {background: var(--light);}
+.nav-main > li:hover > a:after {width: 100%; left: 0; opacity: 1;}
+.nav-main a:hover {color: var(--dark); text-decoration: underline; background: var(--light); text-decoration: none;}
+}
+
+/* Wordpress Nav Active State */
+.nav-main .current-page-ancestor > a,
+.nav-main .current-menu-item > a {
+    font-weight: 700;
+    
+    background: var(--light);
+}
+.nav-main .current-menu-item > a:after {width: 100%; opacity: 1; left: 0;}
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}
