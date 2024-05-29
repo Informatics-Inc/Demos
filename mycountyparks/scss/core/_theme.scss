@@ -65,6 +65,7 @@ button:hover {cursor: pointer;}
 
 .btn-theme.btn-alt:after {display: none;}
 .btn-theme.btn-alt {background: var(--light);}
+.btn-theme.btn-alt:hover {background: #E6E1D2; text-decoration: underline;}
 
 .icon-text {position: relative; padding: 0 0 0 50px; font-size: .9rem;}
 .icon-text strong {display: block; font-weight: 600; font-size: 1.1rem;}
