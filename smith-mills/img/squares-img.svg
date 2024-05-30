@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7eba4a;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #f3e224;
+      }
+    </style>
+  </defs>
+  <g id="Group_5009" data-name="Group 5009">
+    <rect id="Rectangle_6011" data-name="Rectangle 6011" class="cls-2" x="46" y="46" width="26" height="26"/>
+    <rect id="Rectangle_6028" data-name="Rectangle 6028" class="cls-1" x="-.1" y="-.1" width="46.2" height="46.2"/>
+  </g>
+</svg>
