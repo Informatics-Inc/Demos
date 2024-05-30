@@ -71,7 +71,7 @@
       <header class="detail-header">
         <div class="hdr-row">
           <div class="col">
-            <h1>Facility Checkout</h1>
+            <h1>Checkout</h1>
           </div>
           <div class="col">
             <a href="#.html" class="btn-theme btn-alt">Cancel Purchase</a>
@@ -117,8 +117,17 @@
             </div>
           </div>
         </div>
-        <div class="col small-type">
-          <form class="mcp-form fixed-labels-xl" action="index.html">
+        <div class="col">
+          <form class="mcp-form fixed-labels-xl small-type" action="index.html">
+            <h2>Your Reservation</h2>
+            <div class="item-details">
+              <p class="icon-text">
+                <i class="fa-solid fa-calendar-check"></i>
+                <strong>Dates</strong>
+                3/28/2024 - 03/30/2024
+              </p>
+              <a data-target-modal="#modal-dates" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-up-right-from-square"></i> Edit</a>
+            </div>
             <h2>Facility Information</h2>
             <div class="fixed-label">
               <label>Occupants</label>
@@ -171,35 +180,21 @@
               <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil assumenda. Distinctio quidem nam nostrum soluta officia, aliquid repellat sint.</li>
             </ol>
             <h3>MyCountyParks.com Agreement</h3>
-            
             <label><input type="checkbox">I have read and understand the cancel policy</label>
             <label><input type="checkbox">I have read and understand the other policy</label>
             <label><input type="checkbox">I have read and understand the terms and conditions policy</label>
             <h2>Payment Checkout</h2>
-            <div class="fixed-label">
-              <label>Card Number</label>
-              <input type="text">
-            </div>
-            <div class="fixed-label">
-              <label>Expiration</label>
-              <input type="text">
-            </div>
-            <div class="flex">
-              <div class="fixed-label">
-                <label>CCV Code</label>
-                <input type="text">
-              </div>
-              <div class="fixed-label">
-                <label>Zip Code</label>
-                <input type="text">
-              </div>
-            </div>
-            
+            <p>To ensure your transaction is safe and secure, our payment process is handled via a trusted .NET payment gateway embedded within our system. You will be temporarily redirected to this secure environment to enter your payment details.</p>
+            <ul>
+              <li><strong>Security Assurance</strong>: Your payment information is encrypted and processed through a secure gateway.</li>
+              <li><strong>Privacy Protection</strong>: Your personal and payment information remains confidential and is not stored within our application.</li>
+            </ul>
+          </form>
+
             <div class="form-action">
               <button type="submit" class="btn-theme btn-alt">Continue Shopping</button>
-              <button type="submit" class="btn-theme">Confirm and Pay</button>
+                <a data-target-modal="#modal-pay" href="#.html" class="btn-theme open-button"><i class="fa-solid fa-up-right-from-square"></i> Confirm and Pay</a>
             </div>
-        </form>
         </div>
       </div>
     </div>
@@ -359,7 +354,19 @@
       </p>
   </div>
 </footer>
-  
+
+  <!-- Modal Pay -->
+  <dialog class="modal" id="modal-pay">
+    <h3>Share This Event <button class="button close-button" data-close-modal="#modal-pay"><i class="fa fa-close"></i></button></h3>
+    <p>Put the .NET thing here</p>
+  </dialog>
+
+  <!-- Modal Dates -->
+  <dialog class="modal modal-wide" id="modal-dates">
+    <h3>Dates <button class="button close-button" data-close-modal="#modal-dates"><i class="fa fa-close"></i></button></h3>
+    <img src="img/availability.png" />
+  </dialog>
+
   <!-- FOOTER SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
