@@ -11,6 +11,10 @@
 .auto-grid-4 {display: grid; grid-template-columns: repeat( auto-fill, minmax(225px, 1fr) );}
 
 .skinny {max-width: 900px;}
+
+.mcp-info-list .item-details {margin: .5rem 0;}
+.mcp-info-list .item-details strong {font-weight: 500;}
+.mcp-info-list h3 {font-weight: 600;}
 @media (min-width: 768px) {
 }
 
