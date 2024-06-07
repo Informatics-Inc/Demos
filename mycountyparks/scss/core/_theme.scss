@@ -67,6 +67,13 @@ button:hover {cursor: pointer;}
 .btn-theme.btn-alt {background: var(--light);}
 .btn-theme.btn-alt:hover {background: #E6E1D2; text-decoration: underline;}
 
+/* Gap on Mobile - when stacked */
+a[data-target-modal="#modal-email"].btn-theme,
+a[data-target-modal="#modal-remind"].btn-theme,
+a[data-target-modal="#modal-share"].btn-theme  {
+ margin-top:5px;margin-bottom:5px;
+}
+
 .icon-text {position: relative; padding: 0 0 0 50px; font-size: .9rem;}
 .icon-text strong {display: block; font-weight: 600; font-size: 1.1rem;}
 .icon-text i {position: absolute; left: 15px; top: calc(50% - .65rem); font-size: 1.25rem;}

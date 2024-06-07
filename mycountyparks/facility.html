@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class="col">
-            <a data-target-modal="#modal-remind" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-regular fa-envelope"></i> Remind Me</a>
+            <a data-target-modal="#modal-email" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-regular fa-envelope"></i> Email</a>
             <a data-target-modal="#modal-share" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-up-right-from-square"></i> Share</a>
 
             <!-- SHARE -->
@@ -90,27 +90,36 @@
                 <li><a href="#.html"><i class="fab fa-linkedin"></i> Share to LinkedIn</a></li>
               </ul>
             </dialog>
+                         <!-- Email -->
+                         <dialog class="modal" id="modal-email">
+                          <h3>Email to a friend <button class="button close-button" data-close-modal="#modal-email"><i class="fa fa-close"></i></button></h3>
+                          <form class="mcp-form" method="dialog">
+                            <div class="fixed-label">
+                              <label>Your Name</label>
+                              <input type="text">
+                            </div>
+                            <div class="fixed-label">
+                              <label>Your Email</label>
+                              <input type="email">
+                            </div>
+                           <hr>
+                            <p>Recipient's Email Address</p>
+                            <div class="fixed-label">
+                              <label>Email</label>
+                              <input type="email">
+                            </div>
+                            <small>Seperate multiple emails with a comma</small>
+                            <div class="fixed-label">
+                              <label>Message</label>
+                              <textarea></textarea>
+                            </div>
+                            <div class="form-action">
+                              <button class="btn-theme btn-alt close-button" data-close-modal="#modal-email">Cancel</button>
+                              <button class="btn-theme btn-theme-alt " type="submit">Send Email</button>
+                            </div>
+                          </form>
+                        </dialog>
 
-            <!-- Remind -->
-            <dialog class="modal" id="modal-remind">
-              <h3>Remind Me <button class="button close-button" data-close-modal="#modal-remind"><i class="fa fa-close"></i></button></h3>
-              <form class="mcp-form" method="dialog">
-                <div class="fixed-label">
-                  <label>Your Name</label>
-                  <input type="text">
-                </div>
-                <div class="fixed-label">
-                  <label>Your Email</label>
-                  <input type="email">
-                </div>
-                <label><input type="checkbox">Remind me one week before this event.</label>
-                <label><input type="checkbox">Remind me one day before this event.</label>
-                <div class="form-action">
-                  <button class="btn-theme btn-alt close-button" data-close-modal="#modal-remind">Cancel</button>
-                  <button class="btn-theme btn-theme-alt " type="submit">Send Reminder</button>
-                </div>
-              </form>
-            </dialog>
           </div>
         </div>
         <figure>
@@ -156,7 +165,7 @@
           <hr />
           <p class="icon-text">
             <i class="fa-solid fa-calendar-check"></i>
-            <strong>Self Check-in</strong>
+            <strong>Check-In / Out Availability</strong>
             Check-in is after 4:00 PM and check-out is before 11:00 AM.
           </p>
           <p class="icon-text">
