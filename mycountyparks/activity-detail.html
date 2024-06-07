@@ -153,61 +153,14 @@
       <div class="grid grid-twocol">
         <div class="col" id="sidebar-affix">
           <div class="search grid sidebar-search">
+            
+         <!--------------- SIDEBAR GALLERY ---------------->
           <div id="image-gallery">
               <img id="current-image" src="img/gallery1.jpg" alt="Image 1">
               <div id="left-arrow" class="arrow">&#9664;</div>
               <div id="right-arrow" class="arrow">&#9654;</div>
           </div>
-          <style>
-            #image-gallery {width: 100%;
-                position: relative;
-                margin: auto;
-            }
-            #current-image {
-                width: 100%;
-                height: auto;
-            }
-            .arrow {
-                position: absolute;
-               top:calc(50% + 0px);
-                transform: translateY(-50%);
-                color: #fff;
-                background: rgba(0, 0, 0, 0.25);
-                padding: 10px;
-                cursor: pointer;
-                user-select: none;border-radius:3px;
-            }
-            #left-arrow { top:calc(50% + -2px);
-              font-size:0.68rem;
-                left: 10px;
-            }
-            #right-arrow {font-size:0.9rem;
-                right: 10px;
-            }
-        </style>
-          <script>
-            // JavaScript for arrow-based image navigation
-            var currentImage = document.getElementById("current-image");
-            var imagePaths = [
-                "img/gallery1.jpg",
-                "img/gallery2.jpg",
-                "img/gallery3.jpg",
-                "img/gallery4.jpg",
-                "img/gallery5.jpg"
-            ];
-            var currentIndex = 0;
-    
-            document.getElementById("left-arrow").addEventListener("click", function() {
-                currentIndex = (currentIndex === 0) ? imagePaths.length - 1 : currentIndex - 1;
-                currentImage.src = imagePaths[currentIndex];
-            });
-    
-            document.getElementById("right-arrow").addEventListener("click", function() {
-                currentIndex = (currentIndex === imagePaths.length - 1) ? 0 : currentIndex + 1;
-                currentImage.src = imagePaths[currentIndex];
-            });
-        </script>
-
+         
             <div class="small-type">
               <h2>County:</h2>
               <p><a href="county.html">Keokuk County</a></p>
@@ -401,6 +354,47 @@
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/scripts.js"></script>
+
+  <!-- SDIEBAR GALLERY -->
+  <script>
+    // JavaScript for arrow-based image navigation
+    var currentImage = document.getElementById("current-image");
+    var imagePaths = [
+        "img/gallery1.jpg",
+        "img/gallery2.jpg",
+        "img/gallery3.jpg",
+        "img/gallery4.jpg",
+        "img/gallery5.jpg"
+    ];
+    var currentIndex = 0;
+    var leftArrow = document.getElementById("left-arrow");
+    var rightArrow = document.getElementById("right-arrow");
+
+    function updateArrows() {
+        if (imagePaths.length <= 1) {
+            leftArrow.style.display = 'none';
+            rightArrow.style.display = 'none';
+        } else {
+            leftArrow.style.display = 'block';
+            rightArrow.style.display = 'block';
+        }
+    }
+
+    document.getElementById("left-arrow").addEventListener("click", function() {
+        currentIndex = (currentIndex === 0) ? imagePaths.length - 1 : currentIndex - 1;
+        currentImage.src = imagePaths[currentIndex];
+    });
+
+    document.getElementById("right-arrow").addEventListener("click", function() {
+        currentIndex = (currentIndex === imagePaths.length - 1) ? 0 : currentIndex + 1;
+        currentImage.src = imagePaths[currentIndex];
+    });
+
+    // Initial check to hide/show arrows based on number of images
+    updateArrows();
+</script>
+
+
   <script>
     // -- SIMPLE GALLERY -- //
     var imageThumbs = document.getElementById("image-thumbs");

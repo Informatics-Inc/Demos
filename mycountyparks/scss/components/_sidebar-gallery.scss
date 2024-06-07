@@ -1,0 +1,30 @@
+.sidebar-search #image-gallery {margin-bottom:20px}
+
+#image-gallery {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+#current-image {
+    width: 100%;
+    height: auto;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px;
+}
+#left-arrow {
+    left: 10px;
+    font-size: 0.68rem;
+}
+#right-arrow {
+    right: 10px;
+    font-size: 0.9rem;
+}
