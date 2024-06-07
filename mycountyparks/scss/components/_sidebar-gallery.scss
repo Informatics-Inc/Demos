@@ -1,30 +1,36 @@
-.sidebar-search #image-gallery {margin-bottom:20px}
+.sidebar-search #image-gallery {
+    margin-bottom: 20px;
+}
 
 #image-gallery {
     width: 100%;
     position: relative;
     margin: auto;
 }
+
 #current-image {
     width: 100%;
     height: auto;
 }
+
 .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
-    background: rgba(0, 0, 0, 0.25);
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 10px; /* Adjusted padding to make it skinnier */
     cursor: pointer;
     user-select: none;
     border-radius: 3px;
+    /* Adjust font size as needed for visibility */
 }
+.arrow i{ font-size: 1.25rem;}
+
 #left-arrow {
     left: 10px;
-    font-size: 0.68rem;
 }
+
 #right-arrow {
     right: 10px;
-    font-size: 0.9rem;
 }

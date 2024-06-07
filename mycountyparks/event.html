@@ -155,12 +155,12 @@
         <div class="col" id="sidebar-affix">
           <div class="search grid sidebar-search">
 
-         <!--------------- SIDEBAR GALLERY ---------------->
-         <div id="image-gallery">
-          <img id="current-image" src="img/gallery1.jpg" alt="Image 1">
-          <div id="left-arrow" class="arrow">&#9664;</div>
-          <div id="right-arrow" class="arrow">&#9654;</div>
-        </div>
+              <!--------------- SIDEBAR GALLERY ---------------->
+              <div id="image-gallery">
+                <img id="current-image" src="img/gallery1.jpg" alt="Image 1">
+                <div id="left-arrow" class="arrow"><i class="fa-solid fa-chevron-left"></i></div>
+                <div id="right-arrow" class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+              </div>
       
             <div class="small-type">
               <h2>Location</h2>
@@ -436,43 +436,59 @@
   <script src="js/glightbox.js"></script>
   <script src="js/scripts.js"></script>
 
-   <!-- SDIEBAR GALLERY -->
-   <script>
-    // JavaScript for arrow-based image navigation
-    var currentImage = document.getElementById("current-image");
-    var imagePaths = [
-        "img/gallery1.jpg",
-        "img/gallery2.jpg",
-        "img/gallery3.jpg",
-        "img/gallery4.jpg",
-        "img/gallery5.jpg"
-    ];
-    var currentIndex = 0;
-    var leftArrow = document.getElementById("left-arrow");
-    var rightArrow = document.getElementById("right-arrow");
+   <!-- SIDEBAR GALLERY -->
+<script>
+  // JavaScript for arrow-based image navigation
+  var currentImage = document.getElementById("current-image");
+  var imagePaths = [
+      "img/gallery1.jpg",
+      "img/gallery2.jpg",
+      "img/gallery3.jpg",
+      "img/gallery4.jpg",
+      "img/gallery5.jpg"
+  ];
+  var currentIndex = 0;
+  var leftArrow = document.getElementById("left-arrow");
+  var rightArrow = document.getElementById("right-arrow");
 
-    function updateArrows() {
-        if (imagePaths.length <= 1) {
-            leftArrow.style.display = 'none';
-            rightArrow.style.display = 'none';
-        } else {
-            leftArrow.style.display = 'block';
-            rightArrow.style.display = 'block';
-        }
-    }
+  function updateArrows() {
+      if (imagePaths.length <= 1) {
+          leftArrow.style.display = 'none';
+          rightArrow.style.display = 'none';
+      } else {
+          leftArrow.style.display = 'block';
+          rightArrow.style.display = 'block';
+      }
+  }
 
-    document.getElementById("left-arrow").addEventListener("click", function() {
-        currentIndex = (currentIndex === 0) ? imagePaths.length - 1 : currentIndex - 1;
-        currentImage.src = imagePaths[currentIndex];
-    });
+  document.getElementById("left-arrow").addEventListener("click", function() {
+      currentIndex = (currentIndex === 0) ? imagePaths.length - 1 : currentIndex - 1;
+      currentImage.src = imagePaths[currentIndex];
+  });
 
-    document.getElementById("right-arrow").addEventListener("click", function() {
-        currentIndex = (currentIndex === imagePaths.length - 1) ? 0 : currentIndex + 1;
-        currentImage.src = imagePaths[currentIndex];
-    });
+  document.getElementById("right-arrow").addEventListener("click", function() {
+      currentIndex = (currentIndex === imagePaths.length - 1) ? 0 : currentIndex + 1;
+      currentImage.src = imagePaths[currentIndex];
+  });
 
-    // Initial check to hide/show arrows based on number of images
-    updateArrows();
+  // Function to add a new image to the gallery
+  function addImage(imagePath) {
+      imagePaths.push(imagePath);
+      updateArrows();
+  }
+
+  // Function to remove an image from the gallery
+  function removeImage(index) {
+      if (index >= 0 && index < imagePaths.length) {
+          imagePaths.splice(index, 1);
+          currentIndex = (currentIndex >= imagePaths.length) ? imagePaths.length - 1 : currentIndex;
+          currentImage.src = imagePaths[currentIndex] || '';
+          updateArrows();
+      }
+  }
+
+  // Initial check to hide/show arrows based on the number of images
+  updateArrows();
 </script>
 
 
