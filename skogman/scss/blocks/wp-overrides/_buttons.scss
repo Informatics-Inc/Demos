@@ -7,6 +7,13 @@
 .is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
 .is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
 
+/* Icon Button */
+.ico-btn-group{display:grid;gap:15px;justify-content:left;}
+.ico-btn{background:var(--primary);color:#fff;display:flex;align-items:center;line-height:1.1;font-weight:700;text-decoration:none;padding:15px 15px;border-radius:6px;transition:var(--transition);justify-content:space-between;min-width:200px;position:relative;}
+.ico-btn::after{content:"\2192";font-family:FontAwesome;margin-left:10px;transition:var(--transition);display:inline-block;position:absolute;right:20px;}
+.ico-btn:hover{background:var(--primary-dark);color:#fff;display:flex;align-items:center;line-height:1.1;font-weight:700;text-decoration:none;padding:15px 20px;border-radius:6px;}
+
+
 /* Text Button */
 .is-style-btn-text .wp-block-button__link {background: none; color: var(--primary); text-decoration: underline; font-size: .85rem; padding: 0;}
 .is-style-btn-text .wp-block-button__link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);}

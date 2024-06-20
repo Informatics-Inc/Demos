@@ -1,5 +1,13 @@
+.wp-block-cover .has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image .has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
+.wp-block-cover.has-background-dim:not([class*=-background-color]) {
+  background-color:var(--primary)
+}
+ .wp-block-cover h2::after{background:#fff;}
+ .wp-block-cover .theme-cards.stats{color:#000;}
 
-:where(.wp-block) {margin-top: 0; margin-bottom: 0;}
+ :where(.wp-block) {margin-top: 0; margin-bottom: 0;}
 .wp-block-columns {
     margin: var(--spacer-vert) auto;
     max-width: var(--max-width) !important;

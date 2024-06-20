@@ -1,0 +1,34 @@
+/* WP Button Styles */
+/* Primary */
+.wp-block-buttons {margin: var(--spacer) 0;}
+.wp-block-button__link{background:var(--primary);padding:1rem 1.65rem;color:#fff;display:block;text-align:center;border-radius:0;text-decoration:none;font-weight:500;position:relative;z-index:5;text-transform:uppercase;letter-spacing:1px;}
+
+.wp-block-button__link:before {content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 100%; top: 0;left: 0; background-color: rgba(0,0,0,.15);transform-origin: bottom right; transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); z-index: -1; }
+.wp-block-button__link:hover:before {transform: scaleX(1);transform-origin: bottom left;}
+.wp-block-button__link:hover:after{opacity:1}
+
+ /* Text */
+.is-style-btn-text .wp-block-button__link{font-weight:500;letter-spacing:1px;text-transform:uppercase;background:none;border-radius:0;padding:0.5rem 0;color:var(--primary);box-shadow:none;display:flex;justify-content:space-between;align-items:center;width:100%;border:none;border-bottom:1px solid var(--primary);text-align:left;}
+.is-style-btn-text .wp-block-button__link:before{display:none;}
+.is-style-btn-text .wp-block-button__link:after{content:"\2192";font-family:FontAwesome;margin-left:5px;transition:var(--transition);display:inline-block;transform:rotate(-45deg);}
+
+.is-style-btn-text .wp-block-button__link:hover {color: var(--primary-dark);padding-left:5px}
+.is-style-btn-text .wp-block-button__link:hover:after{transform:rotate(-0);}
+
+/* Icon Button */
+.ico-btn-group{display:grid;gap:15px}
+.ico-btn{background:var(--primary);color:#fff;display:inline-block;display:grid;grid-template-columns:50px auto;align-items:center;line-height:1.1;font-weight:700;text-decoration:none}
+ .ico-btn span{padding:15px 20px;font-weight:500;letter-spacing:1px;text-transform:uppercase;}
+ .ico-btn figure img{padding:5px;transition:var(--transition)}
+ .ico-btn figure{padding:5px;background:#004689;transition:var(--transition);height:100%;align-content: center;}
+ .ico-btn:hover, .ico-btn:hover figure{background:var(--primary-dark)}
+ .ico-btn:hover .fa,.ico-btn:hover figure img{transform:scale(1.1)}
+ .ico-btn span:after{content:"\2192";font-family:FontAwesome;margin-left:10px;transition:var(--transition);display:inline-block;transform:rotate(-45deg);}
+
+ .ico-btn:hover span:after{transform:rotate(-0);}
+
+
+/* Secondary */
+.is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
+.is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
+

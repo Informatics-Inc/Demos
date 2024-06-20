@@ -1,0 +1,20 @@
+.sidebar.box {padding: 0;overflow: hidden;background:#F1F1F1;border:solid #E3E7EA 1px}
+.sidebar.box + .sidebar.box {margin-top: 2rem;color:#fff}
+.sidebar.box h4 {color: var(--primary); text-align: left; padding: var(--spacer) var(--spacer) 0 var(--spacer); margin: 0; font-size: 1.5rem;font-weight:500}
+
+.sec-nav ul {list-style: none; padding: var(--spacer); margin: 0;}
+.sec-nav ul a{font-weight:500;background:#fff;border-radius:0;padding:15px;color:var(--primary-dark);box-shadow:none;display:flex;justify-content:space-between;align-items:center;width:100%;border:none;text-align:left;text-decoration: none;line-height:1.4}
+.sec-nav ul a:before{display:none;}
+.sec-nav ul a:after{content:"\2192";font-family:FontAwesome;transition:var(--transition);display:inline-block;transform:rotate(-45deg);}
+
+.sec-nav ul a:hover {color:#fff;background:var(--primary);text-decoration: none;}
+.sec-nav ul a:hover:after{transform:rotate(-0);}
+.sec-nav ul > .current_page_item > a {color:#fff;background:var(--primary);}
+
+.sidebar.box.wp-block-cover{padding:20px;align-items:end;text-align: center;}
+
+.tag-list ul {display: flex; flex-wrap: wrap; list-style: none; padding: var(--spacer); gap: 5px; margin: 0;}
+.tag-list a {padding: 4px 6px; background: #fff; font-size: .85rem; border-radius: 4px; display: inline;}
+.tag-list li a:hover {background: none;}
+
+.member-ad {padding: 15px;}
