@@ -1,0 +1,56 @@
+.card .wp-block-buttons{margin-top:auto;}
+.card {position: relative; box-shadow: 0 10px 25px rgba(0,0,0,.1);  transition: box-shadow .5s; border-radius: var(--border-radius-sm); overflow: hidden; background: #fff;display: flex;flex-direction:column;}
+
+.card figure {overflow: hidden; margin: 0; aspect-ratio: 1.5 / 1;}
+.card figure img {width: 100%; height: 100%; object-fit: cover;}
+.card .content {padding: var(--spacer);display:flex;flex-direction:column;flex-grow:1}
+.card .content p:last-of-type {margin: 0;}
+
+/* Icon Cards */
+.icon-card{position:relative;background:#fff;display:grid;grid-template-columns:1fr;gap:10px;}
+.icon-holder{width:66px;height:66px;background:var(--primary);display:flex;align-items:center;text-align:center;align-content:center;padding:10px;border-radius:12px;}
+.card.icon-card .content{gap:20px;}
+
+.card.icon-card.icon-left .content{gap:0}
+.icon-left{padding: var(--spacer);grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(2,1fr);display:grid;gap:1rem;}
+.icon-left figure{ grid-area: 1 / 1 / 2 / 2; }
+.icon-left .content{ grid-area: 1 / 2 / 2 / 6; padding: 0px;}
+.icon-left .wp-block-buttons{ grid-area: 2 / 2 / 3 / 6; } 
+
+
+/* Icon Cards */
+.icon-card{position:relative;background:#fff;display:grid;grid-template-columns:1fr;gap:10px;}
+.icon-holder{width:66px;height:66px;background:var(--primary);display:flex;align-items:center;text-align:center;align-content:center;padding:10px;border-radius:12px;}
+.card.icon-card .content{gap:20px;}
+
+.card.icon-card.icon-left .content{gap:0}
+.icon-left{padding: var(--spacer);grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(2,1fr);display:grid;gap:1rem;}
+.icon-left figure{ grid-area: 1 / 1 / 2 / 2; }
+.icon-left .content{ grid-area: 1 / 2 / 2 / 6; padding: 0px;}
+.icon-left .wp-block-buttons{ grid-area: 2 / 2 / 3 / 6; } 
+
+/* Text (stat) Cards */
+.card.stat-card{display:grid;grid-template-columns:repeat(5,1fr);gap:40px;
+ align-items:center;padding:20px;}
+.card.stat-card h3{grid-area: 1 / 1 / 2 / 2;text-align:center;position: relative;margin:0}
+.card.stat-card p{grid-area: 1 / 2 / 2 / 6;margin:0}
+/* Divider */
+.card.stat-card h3::after{content:"";position:absolute;right:-20px;width:1px;height:100%;background-color:black;}
+
+/* Hovers */
+.card:hover{box-shadow:var(--box-shadow-lg)}
+.card h3 a{color:var(--text);text-decoration: none;}
+.card:hover h3 a{color:var(--primary)}
+.card img{ transition:var(--transition)}
+.card:hover figure img{transition:var(--transition);transform:scale(1.08)}
+
+
+/* TABLET */
+@media (min-width:768px){
+.card-body{padding:30px}
+.card{height:100%;}
+}
+
+@media (min-width: 1200px) {
+    .card{height:100%;}
+}
