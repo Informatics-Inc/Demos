@@ -1,0 +1,9 @@
+.faq-items {display: grid; grid-template-columns: repeat( auto-fit, minmax(375px, 1fr) ); gap: 2rem; margin: 4rem 0;}
+.faq-item {padding: 2rem; box-shadow: 0 0 25px rgba(0,0,0,.1); border-radius: 5px;}
+@media(min-width:768px){
+
+}
+/* WIDE DESKTOP */
+@media (min-width:992px){
+
+}

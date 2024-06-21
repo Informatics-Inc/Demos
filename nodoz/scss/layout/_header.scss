@@ -74,17 +74,12 @@
 /* Hovers & Active */
 .nav-main > li > a:after {width: 0; height: 3px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--accent-1); opacity: 0; transition: var(--transition);}
 // .nav-main > li:hover > a {background: var(--light);}
-.nav-main > li:hover > a:after {width: 100%; left: 0; opacity: 1;}
+.nav-main > li:hover > a:after {width: 50px; left: calc(50% - 25px); opacity: 1;}
 // .nav-main a:hover {color: var(--dark); text-decoration: underline; background: var(--light); text-decoration: none;}
 }
 
 /* Wordpress Nav Active State */
-.nav-main .current-page-ancestor > a,
-.nav-main .current-menu-item > a {
-    font-weight: 700;
-    color: var(--primary);
-    background: var(--light);
-}
+.nav-main .nav-selected > a:after {width: 50px; left: calc(50% - 25px); opacity: 1;}
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {

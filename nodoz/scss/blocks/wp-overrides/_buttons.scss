@@ -1,5 +1,5 @@
-.btn-theme {background: var(--primary); padding: 10px 30px; color: #fff; display: inline-block; text-decoration: none; box-shadow: 5px 5px 0 rgba(0,0,0,.2); transform: skew(-10deg); font-weight: 700;}
-.btn-theme:hover {box-shadow: 10px 10px 0 var(--accent-1);;}
+.btn-theme, .form-actions button {background: var(--primary); padding: 10px 30px; color: #fff; display: inline-block; text-decoration: none; box-shadow: 5px 5px 0 rgba(0,0,0,.2); transform: skew(-10deg); font-weight: 700; transition: var(--transition);}
+.btn-theme:hover, .form-actions button:hover {box-shadow: 10px 10px 0 var(--accent-1); cursor: pointer;}
 /* Cool Button */
 .hdr-cta {
 .cta {

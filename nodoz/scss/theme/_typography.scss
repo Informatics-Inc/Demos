@@ -11,7 +11,7 @@ h5 {font-size: 1.25rem;}
 p, ul, ol {margin-bottom: 1.25rem;}
 h1 strong {color: var(--accent-1);}
 .hgroup {text-align: center;}
-
+.hgroup p {max-width: 750px; margin-inline: auto;}
 /* Links */
 a {transition: var(--transition); color: var(--primary);}
 p a {font-weight: 700; text-decoration: underline;}

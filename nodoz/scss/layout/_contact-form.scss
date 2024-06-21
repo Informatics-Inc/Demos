@@ -1,4 +1,15 @@
-.contact-form{padding-top:50px}
+.contact-form form {width: 100%;}
+.contact-form {width: 100%; background: var(--light); padding: 2rem; border-top: 5px solid var(--primary);}
+.contact-form fieldset {border: none; padding: 0; margin: 0; width: 100%;}
+.contact-form .form-group {margin: 0 0 10px 0;}
+.contact-form .form-group input, .contact-form .form-group textarea {display: block; width: 100%; border: 1px solid #ccc; padding: 5px; margin: 5px 0 15px 0;}
+.ccm-dashboard-express-form {width: 100%;}
+.contact-form {padding-top:50px}
+.contact-form label {font-weight: 700; margin: 0 0 10px 0;}
+.contact-form label .text-small {font-style: italic;}
+
+.form-actions button {border: none; background: var(--primary); padding: 10px 15px; color: #fff; border: none; transform: skew(-12deg); font-weight: 700;}
+
 .wpcf7-form-control.wpcf7-submit:hover {background: #06a3e6;border: solid 1px #06a3e6}
 .wpcf7-form-control.wpcf7-submit {transition: var(--transition);color: #fff;text-transform: uppercase;font-size: 0.85rem;padding: 10px 30px;background: var(--primary);letter-spacing: 1px;border-radius: 0px;border: solid 1px var(--primary)}
 .wpcf7-form label {width: 100% !important;font-size: 1;margin:20px auto; font-weight: 700;}
