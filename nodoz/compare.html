@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>NoDoz</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
+
+  <header id="hdr-site">
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div id="hdr-main">
+            <a href="/" id="logo">
+              <img src="img/logo.png" alt="NoDoz Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+                <div class="closed">
+                    Menu
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <nav id="menu" class="collapsed">
+          <ul class="nav-main">
+            <li><a href="#.html">Home</a></li>
+            <li><a href="#.html">Compare NoDoz</a></li>
+            <li><a href="#.html">Blog</a></li>
+            <li><a href="#.html">FAQs</a></li>
+          </ul>
+          <div class="hdr-cta">
+            <a class="cta" href="#">
+              <span>Buy Now</span>
+              <span>
+                <svg width="20px" height="15px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                    <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                    <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+              </span> 
+            </a>
+          </div>
+        </nav>
+        </div>
+    </div>
+  </header>
+  <main id="content">
+
+    <header class="page-header">
+      <ol class="breadcrumb">
+        <li><a href="#.html">Home</a></li>
+        <li>Compare NoDoz</li>
+      </ol>
+      <h1>Compare NoDoz</h1>
+    </header>
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="col">
+          <p class="is-style-eyebrow">Compare the Power of NoDoz</p>
+          <h2>Unleash Your Potential with NoDoz</h2>
+          <p>NoDoz gives you 200mg of caffeine that you need and none of the junk you don’t. See for yourself how just one NoDoz caffeine pill outdoes coffee, soda, and energy supplements every time.</p>
+        </div>
+        <div class="col">
+          <figure class="theme-image">
+            <div class="pill-clip"><img src="img/feature-1.jpg" /></div>
+            <div class="pill-clip"><img src="img/feature-2.jpg" /></div>
+          </figure>
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="compare">
+        <div id="compare-controls">
+          <h3>Select a product to compare to NoDoz</h3>
+          <ul role="tablist">
+            <li role="presentation" class="active">
+              <a href="#soda" aria-controls="soda" role="tab" data-toggle="tab">Soda</a>
+            </li>
+            <li role="presentation">
+              <a href="#drink" aria-controls="drink" role="tab" data-toggle="tab">Energy Drink</a>
+            </li>
+            <li role="presentation">
+              <a href="#shot" aria-controls="shot" role="tab" data-toggle="tab">Energy Shot</a>
+            </li>
+            <li role="presentation">
+              <a href="#coffee" aria-controls="coffee" role="tab" data-toggle="tab">Black Coffee</a>
+            </li>
+            <li role="presentation">
+              <a href="#latte" aria-controls="latte" role="tab" data-toggle="tab">Latte</a>
+            </li>
+          </ul>
+        </div>
+        <div id="compare-content">
+          <div class="col-beta">
+            <header>
+              <img src="img/ico-pill.png" alt="NoDoz Pill Icon">
+              <h2>NoDoz Pill</h2>
+              <p>Based on one caffeine pill</p>
+            </header>
+
+            <div class="compare-item">
+              <p>Calories</p>
+              <p class="data">0</p>
+            </div>
+            <div class="compare-item">
+              <p>Cost Per Pill</p>
+              <p class="data">$0.20</p>
+            </div>
+            <div class="compare-item">
+              <p>Active Ingredients</p>
+              <p class="data">1</p>
+            </div>
+            <div class="compare-item">
+              <p class="data">200<span>mg caffeine</span></p>
+              <p>Convenience</p>
+              <p>Keep it anywhere. Take it anytime. Couldn't be more convenient.</p>
+            </div>
+          </div>
+    
+          <div class="col-beta">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade active in" id="soda">
+                <header>
+                  <img src="img/ico-soda.png" alt="Soda Icon">
+                  <h2>Soda</h2>
+                  <p>Based on 12oz bottle of Coca Cola</p>
+                </header>
+                <div class="compare-item">
+                  <p>Calories</p>
+                  <p class="data">140</p>
+                </div>
+                <div class="compare-item">
+                  <p>Cost Per Bottle</p>
+                  <p class="data">$1.99</p>
+                </div>
+                <div class="compare-item">
+                  <p>Ingredients</p>
+                  <p class="data">6</p>
+                </div>
+                <div class="compare-item">
+                  <p class="data">34<span>mg caffeine</span></p>
+                  <p>Convenience</p>
+                  <p>Almost as convenient as an energy drink, but with even less caffeine.</p>
+                </div>
+              </div>
+    
+              <div role="tabpanel" class="tab-pane fade" id="drink">
+                <header>
+                  <img src="img/ico-can.png" alt="Soda Icon">
+                  <h2>Energy Drink</h2>
+                  <p>Based on one 12oz can of Red Bull</p>
+                </header>
+                <div class="compare-item">
+                  <p>Calories</p>
+                  <p class="data">168</p>
+                </div>
+                <div class="compare-item">
+                  <p>Cost Per Can</p>
+                  <p class="data">$2.59</p>
+                </div>
+                <div class="compare-item">
+                  <p>Ingredients</p>
+                  <p class="data">15</p>
+                </div>
+                <div class="compare-item">
+                  <p class="data">111<span>mg caffeine</span></p>
+                  <p>Convenience</p>
+                  <p>As long as you keep it cold, don't shake it up, and can drink it all in one sitting, you're good to go!</p>
+                </div>
+              </div>
+    
+              <div role="tabpanel" class="tab-pane fade" id="shot">
+                <header>
+                  <img src="img/ico-shot.png" alt="Soda Icon">
+                  <h2>Energy Shot</h2>
+                  <p>Based on original bottle of 5-Hour Energy</p>
+                </header>
+                <div class="compare-item">
+                  <p>Calories</p>
+                  <p class="data">4</p>
+                </div>
+                <div class="compare-item">
+                  <p>Cost Per Bottle</p>
+                  <p class="data">$2.09</p>
+                </div>
+                <div class="compare-item">
+                  <p>Ingredients</p>
+                  <p class="data">13</p>
+                </div>
+                <div class="compare-item">
+                  <p class="data">200<span>mg caffeine</span></p>
+                  <p>Convenience</p>
+                  <p>Arguably convenient (if you can stand the taste).</p>
+                </div>
+              </div>
+    
+              <div role="tabpanel" class="tab-pane fade" id="coffee">
+                <header>
+                  <img src="img/ico-coffee.png" alt="Coffee Icon">
+                  <h2>Black Coffee</h2>
+                  <p>Based on 12oz cup from Starbucks</p>
+                </header>
+                <div class="compare-item">
+                  <p>Calories</p>
+                  <p class="data">5</p>
+                </div>
+                <div class="compare-item">
+                  <p>Cost Per Cup</p>
+                  <p class="data">$1.85</p>
+                </div>
+                <div class="compare-item">
+                  <p>Ingredients</p>
+                  <p class="data">1</p>
+                </div>
+                <div class="compare-item">
+                  <p class="data">195<span>mg caffeine</span></p>
+                  <p>Convenience</p>
+                  <p>Totally convenient... if you don't mind the possibility of scalding hot coffee on your lap.</p>
+                </div>
+              </div>
+    
+              <div role="tabpanel" class="tab-pane fade" id="latte">
+                <header>
+                  <img src="img/ico-coffee.png" alt="Coffee Icon">
+                  <h2>Latte</h2>
+                  <p>Based on 12oz cup from Starbucks</p>
+                </header>
+                <div class="compare-item">
+                  <p>Calories</p>
+                  <p class="data">150</p>
+                </div>
+                <div class="compare-item">
+                  <p>Cost Per Cup</p>
+                  <p class="data">$2.95</p>
+                </div>
+                <div class="compare-item">
+                  <p>Ingredients</p>
+                  <p class="data">2</p>
+                </div>
+                <div class="compare-item">
+                  <p class="data">75<span>mg caffeine</span></p>
+                  <p>Convenience</p>
+                  <p>Five minutes in line, two more to order, another four to make it, yeah, not so much.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <a href="#compare-controls" class="mobile-only">Select another product <i class="fa fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container spacer-vert border-top">
+      <div class="hgroup">
+        <h2>Where to Buy</h2>
+        <p>NoDoz can be found in stores and online at these fine retailers.</p>
+        </div>
+        <div class="grid grid-3 buy-online">
+          <a href="#.html">
+            <img src="img/logo-amazon.jpg" />
+            <span><i class="fa fa-cart-shopping"></i> Buy Online</span>
+          </a>
+          <a href="#.html">
+            <img src="img/logo-walgreens.jpg" />
+            <span><i class="fa fa-cart-shopping"></i> Buy Online</span>
+          </a>
+          <a href="#.html">
+            <img src="img/logo-kroger.jpg" />
+            <span><i class="fa fa-cart-shopping"></i> Buy Online</span>
+          </a>
+          <a href="#.html">
+            <img src="img/logo-walmart.jpg" />
+            <span><i class="fa fa-cart-shopping"></i> Buy Online</span>
+          </a>
+          <a href="#.html">
+            <img src="img/logo-meijer.jpg" />
+            <span><i class="fa fa-cart-shopping"></i> Buy Online</span>
+          </a>
+          <a href="#.html">
+            <img src="img/logo-cvs.jpg" />
+            <span><i class="fa fa-cart-shopping"></i> Buy Online</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<footer class="footer">
+  <div class="footer-cta">
+    <div class="footer-cta-content">
+      <h2>How does NoDoz compare to coffee and energy drinks?</h2>
+      <a href="#.html" class="btn-theme">Compare NoDoz to Caffeine Drinks</a>
+    </div>
+    <figure>
+      <img src="img/feature-1.jpg" />
+    </figure>
+  </div>
+  <div class="container">
+    
+    <div class="footer-cols">
+      <div class="col">
+        <img src="img/logo.png" />
+      </div>
+      <div class="col">
+        <ul>
+          <li><a href="#.html">Home</a></li>
+          <li><a href="#.html">Compare NoDoz</a></li>
+          <li><a href="#.html">FAQs</a></li>
+          <li><a href="#.html">Where to Buy</a></li>
+          <li><a href="#.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <p>9300 Earhart Lane SW <br>
+          Cedar Rapids, IA 52404</p>
+        <p><a href="#.html">1-800-553-5022</a></p>
+      </div>
+      <div class="col">
+        <ul class="flex ftr-social">
+          <li><a href="#.html"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#.html"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#.html"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer-copy">
+      <a href="#.html">Drug Facts</a>
+      <a href="#.html">Terms of Use</a>
+      <a href="#.html">Privacy Policy</a>
+      <span>
+      © 2024 NoDoz. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></span></p>
+  </div>
+  
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

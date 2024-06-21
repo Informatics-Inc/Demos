@@ -1,0 +1,6 @@
+/* body {padding-top: 32px;} */
+.wp-core-ui #hdr-site {top: 0;}
+@media (min-width: 992px) {  
+    #hdr-site {top: 32px;}
+}
+
