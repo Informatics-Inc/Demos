@@ -1,3 +1,8 @@
 .git
 .DS_Store
-/abpros/bootstrap/package-lock.json
+abpros/bootstrap/package-lock.json
+shive-hattery/bootstrap/package-lock.json
+itc-placeholder/bootstrap/package-lock.json
+greatplains-casualty/bootstrap/package-lock.json
+folience/bootstrap/package-lock.json
+agrimaster/bootstrap/package-lock.json
