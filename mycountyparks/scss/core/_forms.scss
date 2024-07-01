@@ -24,11 +24,10 @@ input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
 
 /* Fixed Labels */
 .fixed-label {position: relative;}
-.fixed-label label {position: absolute; height: 100%; display: flex; justify-content: center; flex-direction: column; width: 125px; padding: 10px 15px; border-right: 1px solid var(--light); text-align: left;}
+.fixed-label label {position: absolute; height: 100%; display: flex; justify-content: center; flex-direction: column; width: 125px; padding: 10px 15px; border-right: 1px solid var(--light); text-align: left; z-index: 5;}
 .fixed-label input, .fixed-label select, .fixed-label textarea {padding: 10px 10px 10px 140px;}
 .fixed-labels-xl .fixed-label label {width: 165px; font-size: .75rem;}
 .fixed-labels-xl input, .fixed-labels-xl select, .fixed-labels-xl textarea {padding-left: 175px;}
-
 .fixed-labels-xl .helper {padding-left: 165px;}
 
 /* Login */
