@@ -1,4 +1,5 @@
-#textUsButton {font-weight: 700; background: var(--secondary); padding: 4px 8px; color: rgba(0,0,0,.8); border-radius: 4px; margin: 4px; text-decoration: none; text-transform: uppercase; font-weight: 800; box-shadow: 3px 3px 6px rgba(0,0,0,.2); border-top: 1px solid rgba(255,255,255,.25); font-size: .7rem;}
+/* .hdr-tools {justify-content: center;} */
+#textUsButton {font-weight: 700; background: var(--secondary); padding: 4px 8px; color: rgba(0,0,0,.8); border-radius: 4px; margin: 4px; text-decoration: none; text-transform: uppercase; font-weight: 800; box-shadow: 3px 3px 6px rgba(0,0,0,.2); border-top: 1px solid rgba(255,255,255,.25); font-size: .7rem; max-width: 100px;}
 #textUsButton .fa {color: var(--primary); margin: 0 5px 0 0;}
 
 .text-modal {position: fixed; inset: 0; z-index: 250; background: rgba(0,0,0,.5); display: grid; align-content: center; overflow: auto; visibility: hidden; opacity: 0; transition: visibility 0s, opacity 0.3s ease, transform 0.3s ease; padding: 25px;}
@@ -22,3 +23,4 @@
 body.no-scroll {
     overflow: hidden;
 }
+/* @media (min-width: 992px) {.hdr-tools {justify-content: space-between;}} */
