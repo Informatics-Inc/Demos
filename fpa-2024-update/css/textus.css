@@ -8,7 +8,7 @@
 .text-modal-inner h3 .close {padding: 12px 15px;}
 .text-grid {display: grid; grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) ); gap: 10px;}
 .text-modal a {color: var(--primary);}
-
+.text-modal p {font-size: .95rem; margin: -10px 0 25px 0;}
 .text-item {background: var(--light); padding: 15px; border-radius: 5px;}
 .text-item h4 {font-size: 1rem; margin: 0; font-weight: 700;}
 .text-item a {font-size: .8rem;}
@@ -24,3 +24,8 @@ body.no-scroll {
     overflow: hidden;
 }
 /* @media (min-width: 992px) {.hdr-tools {justify-content: space-between;}} */
+
+@media (min-width: 992px) {
+    #textUsButton {padding: 4px 10px; font-size: .85rem;}
+    #nav-mini {top: -32px;}
+}
