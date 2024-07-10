@@ -166,4 +166,3 @@ $(".swiper-button-pause").click(function() {
   swiper.autoplay.stop();
 });
 
-

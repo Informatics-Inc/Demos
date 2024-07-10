@@ -8,10 +8,10 @@
 .search .row {display: grid; gap: 15px;}
 .search .col {display: flex; flex-grow: 1; flex-shrink: 1;}
 .search .col.flex-shrink-no {flex-shrink: 0;}
-.search input {padding: 15px 10px 15px 45px; border: none; background: #fff; border-radius: 5px; width: 100%; font-family: var(--body); color: var(--text-color); font-size: .9rem; transition: var(--transition);}
+.search input {padding: 15px 10px 15px 35px; border: none; background: #fff; border-radius: 5px; width: 100%; font-family: var(--body); color: var(--text-color); font-size: .9rem; transition: var(--transition);}
 .search select {padding: 15px 10px 15px 45px; border: none; border-radius: 5px; width: 100%; font-family: var(--body); color: var(--text-color); font-size: .9rem; transition: var(--transition); height: 100%;}
-.search .input-wrap {position: relative; width: 100%;}
-.search .input-wrap i {font-size: 1.5rem; color: var(--primary); position: absolute; left: 12px; top: 15px;}
+.search .input-wrap {position: relative; width: 100%; background: #fff; border-radius: 5px;}
+.search .input-wrap i {font-size: 1.1rem; color: var(--primary); position: absolute; left: 12px; top: 18px;}
 .check-in-out {flex-basis: 350px;}
 .check-in-out #datepicker1 {border-radius: 5px 0 0 5px;}
 .check-in-out #datepicker2 {border-radius: 0 5px 5px 0; border-left: 1px solid var(--gray);}
@@ -19,8 +19,8 @@
 .search .btn-theme {font-size: 1.35rem; display: flex; justify-content: center; flex-direction: column; margin-left: 15px; padding: 15px 20px;}
 .search input:focus, .search input:hover {background: var(--light);}
 
-.selects select {padding: 10px 10px 10px 40px; height: 100%;}
-.selects .input-wrap i {font-size: 1.25rem; top: 10px;}
+.selects select {padding: 10px 10px 10px 35px; height: 100%;}
+.selects .input-wrap i {font-size: 1.1rem; top: 12px;}
 
 // .selects select:has(option:checked) {background: var(--light); font-weight: 700;}
 

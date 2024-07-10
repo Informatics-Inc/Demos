@@ -81,86 +81,88 @@
         <div class="row flex-basis-25">
           <div class="col flex-shrink-no">
             <div class="input-wrap">
-              <i class="fa fa-location-dot"></i>
-              <input type="search" placeholder="Try 'Linn County' or 'Lakeside'">
+              <i class="fa fa-location-dot" aria-hidden="true"></i>
+              <label for="searchInput" class="sr-only">Search Location</label>
+              <input id="searchInput" type="search" placeholder="Try 'Linn County' or 'Lakeside'">
             </div>
           </div>
           <div class="col check-in-out">
             <div class="input-wrap">
-              <i class="fa-regular fa-calendar"></i>
+              <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+              <label for="datepicker1" class="sr-only">Check In</label>
               <input id="datepicker1" placeholder="Check In" />
             </div>
             <div class="input-wrap">
-              <i class="fa-regular fa-calendar"></i>
+              <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+              <label for="datepicker2" class="sr-only">Check Out</label>
               <input id="datepicker2" placeholder="Check Out" />
             </div>
-            <a href="book-now.html" class="btn-theme"><i class="fa fa-arrow-right"></i></a>
+            <a href="book-now.html" class="btn-theme" aria-label="Book Now"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="row selects flex-basis-25">
           <div class="col">
             <div class="input-wrap">
-              <i class="fa-solid fa-tent"></i>
-                <select class="form-select">
-                  <span><option>Facility Type</option></span>
-                  <option>Cabin</option>
-                  <option>Campsite</option>
-                  <option>Lodge</option>
-                  <option>Other</option>
-                  <option>Shelter</option>
-                </select>
-              </div>
+              <i class="fa-solid fa-person-shelter" aria-hidden="true"></i>
+              <label for="facilityType" class="sr-only">Facility Type</label>
+              <select id="facilityType" class="form-select" multiple multiselect-max-items="3" aria-label="Facility Type" placeholder="Facility Type">
+                <option>Cabin</option>
+                <option>Campsite</option>
+                <option>Lodge</option>
+                <option>Other</option>
+                <option>Shelter</option>
+              </select>
+            </div>
           </div>
           <div class="col">
             <div class="input-wrap">
-              <i class="fa-solid fa-map-location-dot"></i>
-              <select class="form-select custom-select">
-                <option>County</option>
-                  <option>Adair</option>
-                  <option>Allapoose</option>
-                  <option>Benton</option>
-                  <option>Iowa</option>
-                  <option>Eli</option>
-                  <option>Frester</option>
-                  <option>Gordon</option>
-                  <option>Genevieve</option>
-                  <option>Horatia</option>
-                  <option>Ilk</option>
-                  <option>Illingsburg</option>
-                  <option>The rest with go here</option>
-                </select>
-              </div>
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              <label for="county" class="sr-only">County</label>
+              <select id="county" class="form-select" aria-label="County" multiple multiselect-max-items="3"  placeholder="County">
+                <option>Adair</option>
+                <option>Allapoose</option>
+                <option>Benton</option>
+                <option>Iowa</option>
+                <option>Eli</option>
+                <option>Frester</option>
+                <option>Gordon</option>
+                <option>Genevieve</option>
+                <option>Horatia</option>
+                <option>Ilk</option>
+                <option>Illingsburg</option>
+                <option>The rest with go here</option>
+              </select>
+            </div>
           </div>
           <div class="col">
             <div class="input-wrap">
-              <i class="fa-solid fa-person-hiking"></i>
-              <select class="form-select">
-                <option>Activity</option>
-                  <option>Biking</option>
-                  <option>Boating</option>
-                  <option>Cabins</option>
-                  <option>Camping</option>
-                  <option>Fishing</option>
-                  <option>The rest...</option>
-                </select>
-              </div>
+              <i class="fa-solid fa-person-hiking" aria-hidden="true"></i>
+              <label for="activity" class="sr-only">Activity</label>
+              <select id="activity" class="form-select" aria-label="Activity" multiple multiselect-max-items="3"  placeholder="Activity">
+                <option>Biking</option>
+                <option>Boating</option>
+                <option>Cabins</option>
+                <option>Camping</option>
+                <option>Fishing</option>
+                <option>The rest...</option>
+              </select>
+            </div>
           </div>
           <div class="col">
             <div class="input-wrap">
-              <i class="fa-solid fa-wheelchair"></i>
-              <select class="form-select">
-                <option>Amenities</option>
-                  <option>A/C</option>
-                  <option>Campnig Winter</option>
-                  <option>Carry in/out refuse</option>
-                  <option>Dump Station</option>
-                  <option>EV Charger</option>
-                  <option>The rest...</option>
-                </select>
-              </div>
+              <i class="fa-regular fa-star" aria-hidden="true"></i>
+              <label for="amenities" class="sr-only">Amenities</label>
+              <select id="amenities" class="form-select" aria-label="Amenities" multiple multiselect-max-items="3"  placeholder="Amenities">
+                <option>A/C</option>
+                <option>Camping Winter</option>
+                <option>Carry in/out refuse</option>
+                <option>Dump Station</option>
+                <option>EV Charger</option>
+                <option>The rest...</option>
+              </select>
+            </div>
           </div>
         </div>
-        
       </div>
       
       <div class="grid auto-grid grid-gap-xm fadeinup delay-3">
@@ -721,6 +723,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
   <script src="js/datepicker.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/multiselect-dropdown.js"></script>
   <script src="js/scripts.js"></script>
 
   </body>
