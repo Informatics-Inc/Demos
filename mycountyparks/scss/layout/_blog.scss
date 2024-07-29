@@ -7,7 +7,7 @@
 .blog-list-item h2 a {color: var(--text); text-decoration: none;}
 .blog-list-item h2 a:hover {text-decoration: underline;}
 .blog-list-item .author {margin: 0 0 1rem 0; font-style: italic;}
-.blog-list-item img {border-radius: 10px;}
+.blog-list-item img {border-radius: 10px; aspect-ratio: 1.5 / 1; object-fit: cover;}
 .blog-list-item:last-of-type {border: none;}
 .grid-blog aside {background: var(--light); padding: 20px; font-size: .825rem; border-radius: 15px;}
 .grid-blog aside h4 {font-size: 1rem;}

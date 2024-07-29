@@ -4,7 +4,7 @@
 #hero .text h1 {width: 70%; max-width: 500px;}
 
 .calendar > .days-grid > .day.selected {background: var(--primary) !important;}
-.search {background: var(--secondary); padding: 15px; border-radius: 15px; gap: 15px; margin: -50px 25px 0 25px; position: relative; z-index: 10; box-shadow: 5px 15px 25px rgba(0,0,0,.2);}
+.search {background: var(--secondary); padding: 15px; border-radius: 15px; gap: 15px; margin: -50px 15px 0 15px; position: relative; z-index: 10; box-shadow: 5px 15px 25px rgba(0,0,0,.2);}
 .search .row {display: grid; gap: 15px;}
 .search .col {display: flex; flex-grow: 1; flex-shrink: 1;}
 .search .col.flex-shrink-no {flex-shrink: 0;}
@@ -18,20 +18,27 @@
 .search .btn-theme:after {display: none;}
 .search .btn-theme {font-size: 1.35rem; display: flex; justify-content: center; flex-direction: column; margin-left: 15px; padding: 15px 20px;}
 .search input:focus, .search input:hover {background: var(--light);}
-
 .selects select {padding: 10px 10px 10px 35px; height: 100%;}
 .selects .input-wrap i {font-size: 1.1rem; top: 12px;}
 
-// .selects select:has(option:checked) {background: var(--light); font-weight: 700;}
+/* Filter Icons */
+.filter-icons {grid-template-columns: repeat(auto-fit, minmax(45px, 70px)); justify-content: center;}
+.filter-icons:hover .ico-feature {transition-delay: .1s;}
+.ico-feature {padding: 10px 0; border-radius: 5px; text-decoration: none; font-weight: 400; font-size: .65rem; text-align: center; letter-spacing: -.25px; line-height: 1.2; height: 100%; background: var(--light);}
+.ico-feature img {width: 30px; margin: 0 auto 8px auto; opacity: .8;transition: var(--transition);}
+.ico-feature p {margin: 0;}
+.ico-feature:hover, .ico-feature:active, .ico-feature:focus {background: none;}
+.ico-feature:hover img {transform: scale(1.1);}
 
-.alpha-list {display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin: 1rem 0 0 0;}
-.alpha-list a {display: block; padding: 5px 12px;; color: #fff; text-decoration: none; font-weight: 400; opacity: .8; border-radius: 4px;}
+.alpha-list {display: flex; flex-wrap: wrap; justify-content: center; width: 100%; margin: 1rem 0 0 0;}
+.alpha-list a {display: block; padding: 5px 12px;; color: #fff; text-decoration: none; font-weight: 400; opacity: .8; border-radius: 4px; flex: 35px 0 0;}
 .alpha-list a:hover {background: rgba(0,0,0,.2); cursor: pointer; opacity: 1;}
 
-.results-info {display: flex; justify-content: space-between; margin: -25px 0 25px 0;}
-.results-info ul {list-style: none; padding: 0; margin: 1rem 0; display: flex; gap: 15px;}
+.results-info {display: flex; justify-content: center; margin: -25px 0 25px 0; flex-wrap: wrap; align-items: center;}
+.results-info ul {list-style: none; padding: 0; margin: 1rem 0; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;}
 .results-info ul a {font-weight: 400; font-size: .825rem; text-decoration-color: var(--text);}
 .results-info ul a:hover {text-decoration: none;}
+.results-info p {margin: 0;}
 
 .search.sidebar-search {margin: 0; background: #fff; z-index: 5;}
 .search.sidebar-search .btn-theme {display: flex; margin: 0; text-align: center; font-size: 1rem; flex-direction: row; align-items: center;}
@@ -59,6 +66,15 @@
 .search .flex-basis-25 .col {flex-basis: 25%;}
 
 .row.event-search-grid {display: grid; grid-template-columns: 1fr 1fr 1.35fr;}
+
+/* Filter Icons */
+.filter-icons {grid-template-columns: repeat(auto-fit, minmax(55px, 80px)); }
+.ico-feature {background: none; font-size: .75rem;}
+.ico-feature:hover {background: var(--light);}
+
+/* Results */
+.results-info {display: flex; justify-content: space-between; margin: -25px 0 25px 0; flex-wrap: wrap;}
+.results-info ul {}
 }
 
 @media (min-width: 1200px) {

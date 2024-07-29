@@ -70,7 +70,6 @@
           <div class="col">
             <h1>My Account</h1>
           </div>
-
         </div>
       </header>
     </div>
@@ -99,13 +98,28 @@
               <input type="text">
             </div>
             <div class="fixed-label">
-              <label>Password</label>
-              <input type="text">
+              <label class="form-label label" for="IsAccountLocked">Account Locked?</label>
+              <select class="form-control" data-val="true" data-val-required="The Account Locked? field is required." id="IsAccountLocked" name="IsAccountLocked"><option value="true">Yes</option>
+              <option selected="selected" value="false">No</option>
+              </select>
             </div>
             <div class="fixed-label">
-              <label>Confirm Password</label>
-              <input type="text">
+              <label class="form-label label">Admin</label>
+              <select class="form-control">
+                <option selected="selected" value="true">System Admin</option>
+                <option value="false">Other</option>
+              </select>
             </div>
+            <div class="fixed-label">
+              <label class="form-label label">County</label>
+              <select class="form-control"><option value="true">Adair</option>
+              <option selected="selected" value="false">Other</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <button type="submit" class="btn-theme btn-alt">Update Password</button>
+            </div>
+
             <h2>Personal Information</h2>
             <div class="fixed-label">
               <label>First Name</label>

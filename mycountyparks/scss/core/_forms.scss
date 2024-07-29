@@ -8,6 +8,7 @@ h2 {font-size: 1.15rem; border-top: 1px solid rgb(0 0 0 / .1); padding-top: 2rem
 .btn-full {width :100%;}
 .helper {font-size: .75rem; margin: 0; padding: 0px 10px 5px 10px; font-style: italic; margin-top: -5px;}
 }
+
 .form-action {display: flex; justify-content: space-between; border-top: 1px solid #ccc; padding: 2rem 0 0 0; margin: 2rem 0 0 0; width: 100%;}
 input[type='checkbox'] {width: auto; text-align: left;}
 
@@ -28,7 +29,7 @@ input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
 .fixed-label input, .fixed-label select, .fixed-label textarea {padding: 10px 10px 10px 140px;}
 .fixed-labels-xl .fixed-label label {width: 165px; font-size: .75rem;}
 .fixed-labels-xl input, .fixed-labels-xl select, .fixed-labels-xl textarea {padding-left: 175px;}
-.fixed-labels-xl .helper {padding-left: 165px;}
+// .fixed-labels-xl .helper {padding-left: 165px;}
 
 /* Login */
 .login figure {display: none;}
