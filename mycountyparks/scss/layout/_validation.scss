@@ -1,0 +1,25 @@
+.validation-alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-align: left;
+    font-size: .85rem;
+}
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+.validation-alert div > *:last-child {margin-bottom: 0;}
+.validation-alert ul {padding: 0 0 0 1rem;}
+/* TABLET */
+@media (min-width: 768px) {
+
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+
+}
