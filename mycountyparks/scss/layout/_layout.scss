@@ -7,7 +7,7 @@
 .content-sections > * {margin: var(--spacer-vert) auto;}
 
 .auto-grid {display: grid; grid-template-columns: repeat( auto-fill, minmax(75px, 1fr) );}
-.auto-grid-5 {display: grid; grid-template-columns: repeat( auto-fill, minmax(175px, 1fr) );}
+.auto-grid-5 {display: grid; grid-template-columns: repeat( auto-fill, minmax(155px, 1fr) );}
 .auto-grid-4 {display: grid; grid-template-columns: repeat( auto-fill, minmax(225px, 1fr) );}
 
 .skinny {max-width: 800px;}
@@ -16,6 +16,7 @@
 .mcp-info-list .item-details strong {font-weight: 500;}
 .mcp-info-list h3 {font-weight: 600;}
 @media (min-width: 768px) {
+.auto-grid-5 {display: grid; grid-template-columns: repeat( auto-fill, minmax(175px, 1fr) );}
 }
 
 @media (min-width: 768px) {

@@ -83,7 +83,7 @@ $window.trigger('scroll');
 
 // -- Swiper Sliders -- //
 var swiper = new Swiper(".scroll-list", {
-  slidesPerView: 4,
+  slidesPerView: 1.5,
   spaceBetween: 25,
   grabCursor: true,
   pagination: {
@@ -95,24 +95,20 @@ var swiper = new Swiper(".scroll-list", {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    "@0.00": {
-      slidesPerView: 1.5,
-    },
-    "@0.5": {
+
+    550: {
       slidesPerView: 2.5,
     },
-    "@.75": {
+    650: {
       slidesPerView: 2.75,
     },
-    "@1": {
+    768: {
       slidesPerView: 3.75,
     },
-    "@1.25": {
+    992: {
       slidesPerView: 4.65,
-    },
-    "@1.75": {
-      slidesPerView: 5.5,
-    },
+    }
+
   },
 });
 
