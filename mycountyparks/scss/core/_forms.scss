@@ -32,7 +32,7 @@ input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
 // .fixed-labels-xl .helper {padding-left: 165px;}
 
 /* Login */
-.login figure {display: none;}
+.login figure {display: none;} 
 .login .promo {margin: 4rem 0 1rem 0;}
 
 
@@ -41,7 +41,7 @@ input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
     input, select {background: #fff;}
 }
 .form-page {
-    .content {padding: 25px 0; text-align: center;;}
+    .content {padding: 25px; text-align: center;;}
     #logo {margin: 1rem auto; width: 225px; max-width: none;}
     #logo img {width: 225px; margin: 0 auto;}
     header {margin: 0 0 2rem 0;}
