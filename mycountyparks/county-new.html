@@ -38,6 +38,7 @@
         <a href="index.html" id="logo">
           <img src="img/logo.svg" alt="My County Parks Logo" />
         </a>
+        
         <div class="menu-user">
           <a href="#.html" id="user-menu-toggle">
             <span class="menu-alert">2</span>
@@ -46,17 +47,16 @@
           </a>
 
           <ul id="user-menu-list">
-            <li><a href="#.html">My Account</a></li>
-            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
-            <li><a href="#.html">Reservations</a></li>
-            <li><a href="#.html">Event Registrations</a></li>
-            <li><a href="#.html">Order History</a></li>
-            <li><a href="#.html">Log out</a></li>
+            <li><a href="account-info.html">My Account</a></li>
+            <li><a href="account-reservations.html">Reservations</a></li>
+            <li><a href="account-events.html">Event Registrations</a></li>
+            <li><a href="account-history.html">Order History</a></li>
+            <li><a href="login.html">Log out</a></li>
           </ul>
         </div>
         <ul class="menu-main">
           <li><a href="book-now.html">Book Now</a></li>
-          <li><a href="counties.html">Counties</a></li>
+          <li class="active"><a href="counties.html">Counties</a></li>
           <li><a href="events.html">Events</a></li>
         </ul>
       </div>
@@ -64,256 +64,187 @@
   </nav>
 
 <main id="main-content">
-  
-  <section>
-    <div class="container">
-      <header class="detail-header">
-        <div class="hdr-row">
-          <div class="col">
-            <h1>Easter Lake Park</h1>
-            <div class="features">
-              <p><i class="fa fa-star"></i> 4.7 <a href="#.html">12 Reviews</a> | <a href="county.html">Polk County, IA</a></p>
-            </div>
-          </div>
-          <div class="col">
-            <a data-target-modal="#modal-email" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-regular fa-envelope"></i> Email</a>
-            <a data-target-modal="#modal-share" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-up-right-from-square"></i> Share</a>
-
-            <!-- SHARE -->
-            <dialog class="modal" id="modal-share">
-              <h3>Share This Event <button class="button close-button" data-close-modal="#modal-share"><i class="fa fa-close"></i></button></h3>
-              <ul class="link-list">
-                <li><a href="#.html"><i class="fab fa-facebook"></i> Share to Facebook</a></li>
-                <li><a href="#.html"><i class="fab fa-twitter"></i> Share to Twitter</a></li>
-                <li><a href="#.html"><i class="fab fa-linkedin"></i> Share to LinkedIn</a></li>
-              </ul>
-            </dialog>
-
-                        <!-- Email -->
-                        <dialog class="modal" id="modal-email">
-                          <h3>Email to a friend <button class="button close-button" data-close-modal="#modal-email"><i class="fa fa-close"></i></button></h3>
-                          <form class="mcp-form" method="dialog">
-                            <div class="fixed-label">
-                              <label>Your Name</label>
-                              <input type="text">
-                            </div>
-                            <div class="fixed-label">
-                              <label>Your Email</label>
-                              <input type="email">
-                            </div>
-                           <hr>
-                            <p>Recipient's Email Address</p>
-                            <div class="fixed-label">
-                              <label>Email</label>
-                              <input type="email">
-                            </div>
-                            <small>Seperate multiple emails with a comma</small>
-                            <div class="fixed-label">
-                              <label>Message</label>
-                              <textarea></textarea>
-                            </div>
-                            <div class="form-action">
-                              <button class="btn-theme btn-alt close-button" data-close-modal="#modal-email">Cancel</button>
-                              <button class="btn-theme btn-theme-alt " type="submit">Send Email</button>
-                            </div>
-                          </form>
-                        </dialog>
-
-          </div>
-        </div>
-        <figure>
-          <img src="img/park-1.jpg" class="glightbox" />
-          <img src="img/park-2.jpg" class="glightbox" />
-          <img src="img/park-3.jpg" class="glightbox" />
-          <img src="img/feature-tall-10.jpg" class="glightbox" />
-          <img src="img/feature-ragbrai.jpg" class="glightbox" />
-        </figure>
-      </header>
+  <header class="page-header fadeinup delay-1">
+    <figure>
+      <img src="img/hero-1.jpg" />
+    </figure>
+    <div class="text">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Counties</a></li>
+        <li>Polk County</li>
+      </ol>
+      <h1>Polk County</h1>
+      <p>Book cabins, shelters, and lodges in Polk County, Iowa.</p>
     </div>
-  </section>
-  
-  <section>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="content-sections">
+
+  <section class="sec-nav-grid">
     <div class="container">
-      <div class="grid grid-twocol">
-        <div class="col" id="sidebar-affix">
-          <div class="search grid sidebar-search">
-            <div class="icon-text">
-              <i class="fa-solid fa-location-dot"></i>
-              <div>
-                <p><strong>Location</strong> Southeast corner of Des Moines - east of SE 14th St. and north of Army Post Rd.</p>
-                <p><strong>Easter Lake Park</strong> 2830 Easter Lake Drive<br> Des Moines, IA 50320</p>
-                <p><strong>Athene North Shore Recreation Area</strong> 2816 Shoreline Rd<br> Des Moines, IA 50320</p>
-              </div>
-            </div>
-            <hr />
-            <p class="icon-text">
-              <i class="fa-solid fa-sun"></i>
-              <strong>Summer Hours</strong>
-              (April 1 -October 31) 6:30 a.m. - 10:30 p.m.<br>
-              The north side of Easter Lake Park is open sunrise to sunset year-round.<br>
-              Fort Des Moines Park is open 8 a.m. to sunset year-round.
-            </p>
-            <hr />
-            <p class="icon-text">
-              <i class="fa-solid fa-snowflake"></i>
-              <strong>Winter Hours</strong>
-              (November 1 - March 31) Sunrise to sunset
-            </p>
-          </div>
-          <div class="additional-links">
-            <p><a href="#.html"><i class="fa fa-file-pdf"></i> Easter Lake Park Map</a></p>
-            <p><a href="#.html"><i class="fa fa-file-pdf"></i> Easter Lake Park Information</a></p>
-            <p><a href="#.html"><i class="fa fa-file-pdf"></i> Easter Lake Park Rules</a></p>
+      <aside>
+
+        <!-- Profile Info -->
+        <div class="county-info">
+          <figure>
+            <img src="img/polk-profile.jpg" />
+          </figure>
+          <div class="text">
+            <p class="title">Polk County Conservation</p>
+            <p><a href="https://www.polkcountyiowa.gov/conservation/" target="_blank"><i class="fa fa-laptop"></i> Website</a> | <a href="mailto:contact@email.com"><i class="fa fa-mobile"></i> Contact Us</a></p>
           </div>
         </div>
-        <div class="col small-type">
-          <h2>Discover Easter Lake Park: Nature's Oasis in Des Moines</h2>
-          <p>The centerpiece of this beautiful park on the southside of Des Moines is its 165-acre lake. Five picnic shelters and three children's playgrounds overlook the lake. A boat ramp provides access for anglers trying to catch the walleye, bass, crappie, bluegill and catfish stocked by the Conservation Board into the lake every year. During the summer, enjoy the swimming beach, paddle boat, canoe and kayak rentals which provide wonderful ways to enjoy the lake. </p>
-          <p>The park opened in 1967 on the site of Polk County's last operating coal mine. After the strip mine shut down in 1959, the area was considered as a possible landfill site. However, neighborhood leaders joined together to form the South Town Lake and Development Society and promote the use of the site as a park. </p>
-          <p>The Owens Covered Bridge is the only covered bridge in Polk County. It was originally built in 1878 over the old North River channel on a road from Martin’s Ferry to Winterset. In 1939, the road and the North River channel were relocated north of the covered bridge site leaving the old bridge without a road and river. In 1968, Polk County Conservation Board promised to restore and move the bridge, board by board, nearly eight miles to Easter Lake Park. The bridge is located on the southern lake shore near Shelter #1. The Mark C. Ackelson Trail, which travels through this historic bridge and includes a loop around the lake, is approximately 6.2 miles of paved trail. The portion which encircles the lake is approximately 4 miles in length.</p>
-          <hr />
-          <h2>Features</h2>
-          <ul class="two-col">
-            <li><i class="fa-regular fa-snowflake"></i> A/C</li>
-            <li><i class="fa-solid fa-utensils"></i> Utensils</li>
-            <li><i class="fa-solid fa-bolt"></i> Electricity</li>
-            <li><i class="fa-solid fa-fire"></i> Fireplace</li>
-            <li><i class="fa-solid fa-cubes-stacked"></i> Firewood Available</li>
-            <li><i class="fa-brands fa-accessible-icon"></i> Handicap Accessible</li>
-            <li><i class="fa-solid fa-temperature-arrow-up"></i> Heating</li>
-            <li><i class="fa-solid fa-kitchen-set"></i> Kitchenette</li>
-            <li><i class="fa-solid fa-laptop"></i> Microwave</li>
-            <li><i class="fa-solid fa-dog"></i> Pet Friendly</li>
-            <li><i class="fa-solid fa-basket-shopping"></i> Picnic Table</li>
-            <li><i class="fa-solid fa-shower"></i> Showers</li>
-          </ul>
-          <hr />
-          <h2>Featured News</h2>
+
+        <!-- Secondary Navigation -->
+        <nav>
           <ul>
-            <li><a href="news-detail.html">Mark C. Ackelson Trail Bridge Plaques</a></li>
+            <li class="active"><a href="county.html">Discover</a></li>
+            <li><a href="#.html">Parks</a></li>
+            <li><a href="#.html">Cabins</a></li>
+            <li><a href="#.html">Announcements and Newsletter</a></li>
+            <li><a href="#.html">Equestrian Center</a></li>
+            <li><a href="#.html">Golf</a></li>
+            <li><a href="#.html">Cancellations and Reservation Modifications</a></li>
+            <li><a href="#.html">Facilities</a></li>
+            <li><a href="#.html">News</a></li>
+            <li><a href="#.html">Activities</a></li>
+            <li><a href="#.html">FAQ</a></li>
+            <li><a href="#.html">Donations</a></li>
           </ul>
+        </nav>
+      </aside>
+
+      <div class="col">
+        <p class="preheader">Welcome to Polk County!</p>
+          <h2>Explore the Great Outdoors with Polk County Conservation!</h2>
+          <p>Welcome to Polk County Conservation! We invite you to explore over 15,000 acres of prairie, wetlands, woodlands, trails and parkland. Polk County Conservation offers year-round educational programs, volunteer opportunities and trips to the public.</p>
+
+          <p>The Polk County Conservation Board's mission is to provide the citizens of Polk County with quality outdoor recreation, conservation education, and long term protection of Polk County's natural heritage.</p>
+          <p>Many exciting park and trail improvements are happening in Polk County thanks in part to the Polk County Water and Land Legacy bond referendum that was again supported by voters in November of 2022. This may result in closed recreation areas due to construction. </p>
           <hr />
-          <h2>Featured Events</h2>
-          <ul>
-            <li><a href="news-detail.html">Waterbugs Expeditions <span class="text-list-date">Aug 5 8:00 AM - 4:30 PM</span>
-            <li><a href="news-detail.html">Bike the Readlyn Grump Trail <span class="text-list-date">Aug 5-26 8:00 AM - 9:00 AM</span>
-            </a></li>
-          </ul>
-        </div>
+          <div id="image-gallery">
+            <img id="current-image" src="img/gallery1.jpg" alt="Image 1">
+            <div id="image-thumbs"></div>
+          </div>
+          <hr />
+          <h3>Polk County Conservation Administration Offices</h3>
+          <p>12130 NW 128th St.<br>
+          Granger, Iowa 50109</p>
+          <p><strong>Office hours:</strong><br>
+          Monday - Friday | 8:00 a.m. - 4:30 p.m.</p>
+          <p>Phone: (515) 323-5300<br>
+          Fax: (515) 323-5354<br>
+          Email: <a href="mailto:pccb_info@polkcountyiowa.gov">pccb_info@polkcountyiowa.gov</a><br>
+          Website: <a href="http://www.leadingyououtdoors.org">www.leadingyououtdoors.org</a></p>
+
+          <h3>Jester Park Nature Center</h3>
+          <p>12130 NW 128th St.<br>
+          Granger, Iowa 50109</p>
+          <p>Visit the website for current hours</p>
+          <p>Phone: (515) 323-5350<br>
+          Email: <a href="mailto:jpnc_info@polkcountyiowa.gov">jpnc_info@polkcountyiowa.gov</a><br>
+          Website: <a href="http://www.jesterparknaturecenter.com">www.jesterparknaturecenter.com</a></p>
+
+          <h3>Jester Park Lodge Rental Information:</h3>
+          <p>Food with Flair 515-277-7775 or visit their website.</p>
+
       </div>
     </div>
   </section>
-  
+
+
   <section class="animate-in delay-1">
     <div class="container">
       <div class="full-hdr">
-        <h3>Facilities at this Park</h3>
+        <h3>Popular Parks</h3>
         <hr />
-        <a href="book-now-filtered.html">View All Facilities</a>
+        <a href="parks.html">View All Parks</a>
       </div>
-
       <div class="scroll-item-wrapper">
         <div class="swiper scroll-list">
           <div class="swiper-wrapper">
             <div class="swiper-slide scroll-item">
               <a href="facility.html">
                 <figure>
-                  <img src="img/feature-tall-1.jpg" />
+                  <img src="img/feature-tall-8.jpg" />
                 </figure>
-                <h3>Chichaqua Longhouse</h3>
+                <h3>Beaver Creek Greenbelt</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
               <a href="facility.html">
                 <figure>
-                  <img src="img/feature-tall-2.jpg" />
+                  <img src="img/feature-tall-9.jpg" />
                 </figure>
-                <h3>Easter Lake Shelter 1</h3>
+                <h3>Carney Marsh</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
-
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
               <a href="facility.html">
                 <figure>
-                  <img src="img/feature-tall-3.jpg" />
+                  <img src="img/feature-tall-10.jpg" />
                 </figure>
-                <h3>Fort Des Moines Shelter</h3>
+                <h3>Fort Des Moines Park</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
-
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
               <a href="facility.html">
                 <figure>
-                  <img src="img/feature-tall-4.jpg" />
+                  <img src="img/feature-tall-11.jpg" />
                 </figure>
-                <h3>Jester Cabin 1</h3>
+                <h3>Jester Park</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
-
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
               <a href="facility.html">
                 <figure>
-                  <img src="img/feature-tall-5.jpg" />
+                  <img src="img/feature-tall-12.jpg" />
                 </figure>
-                <h3>Thomas Mitchell Shelter</h3>
+                <h3>High Trestle Park</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
-
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
               <a href="facility.html">
                 <figure>
-                  <img src="img/feature-tall-6.jpg" />
+                  <img src="img/feature-tall-13.jpg" />
                 </figure>
-                <h3>Morgan Creek Shelter</h3>
+                <h3>Krogan Overlook Park</h3>
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
-
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
               <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-7.jpg" />
-                </figure>
-                <h3>Birxshire Cabin</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
-
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="book-now.html">
                 <figure>
                   <img src="img/feature-tall-last.jpg" />
                 </figure>
@@ -321,106 +252,8 @@
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="animate-in delay-1">
-    <div class="container">
-      <div class="full-hdr">
-        <h3>Activites at this Park</h3>
-        <hr />
-        <a href="parks.html">View All Activites</a>
-      </div>
-
-      <div class="scroll-item-wrapper">
-        <div class="swiper scroll-list">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide scroll-item">
-              <a href="#.html">
-                <figure>
-                  <img src="img/activity-disc.jpg" />
-                </figure>
-                <h3>Disc Golf</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="#.html">
-                <figure>
-                  <img src="img/activity-bike.jpg" />
-                </figure>
-                <h3>Biking</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="#.html">
-                <figure>
-                  <img src="img/activity-hike.jpg" />
-                </figure>
-                <h3>Explore Hiking Trails</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="#.html">
-                <figure>
-                  <img src="img/activity-hunt.jpg" />
-                </figure>
-                <h3>Hunting</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="#.html">
-                <figure>
-                  <img src="img/activity-grill.jpg" />
-                </figure>
-                <h3>Cook Some Meat!</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="swiper-slide scroll-item">
-              <a href="#.html">
-                <figure>
-                  <img src="img/feature-tall-last.jpg" />
-                </figure>
-                <h3>Still Can't Find What You Want?</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
+                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
                 </ul>
               </div>
             </div>
@@ -529,19 +362,29 @@
       </div>
     </div>
   </section>
-
-
+  <section>
+    <div class="container">
+      <div class="content-cta animate-in delay-3">
+        <figure><img src="img/hero-2.jpg"></figure>
+        <div class="text">
+          <h2>Leading You Outdoors</h2>
+          <p>Polk County Conservation - Family of parks and trails. Learn more at the link below!</p>
+          <a href="https://www.polkcountyiowa.gov/conservation/" class="btn-theme">Polk County Conservation </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  </section>
 </main>
   
 <footer class="footer">
   <div class="container">
-    
       <div class="row">
         <div class="ftr-cols">
           <div class="col">
             <img src="img/logo.svg" />
             <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
-            
           </div>
           <div class="col">
             <h4>Links</h4>
@@ -612,6 +455,7 @@
         <li><a href="county.html">Fremont</a></li>
         <li><a href="county.html">Greene</a></li>
         <li><a href="county.html">Grundy</a></li>
+        <li><a href="county.html">Guthrie</a></li>
         <li><a href="county.html">Hamilton</a></li>
         <li><a href="county.html">Hancock</a></li>
         <li><a href="county.html">Hardin</a></li>
@@ -690,19 +534,24 @@
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
-  <script src="js/datepicker.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   <script src="js/scripts.js"></script>
   <script>
-    
-    // Light Box //
-    const lightbox = GLightbox({
-      touchNavigation: true,
-      loop: true,
-      autoplayVideos: true
-    });
+    // -- SIMPLE GALLERY -- //
+    var imageThumbs = document.getElementById("image-thumbs");
+    var currentImage = document.getElementById("current-image");
 
+    for (var i = 1; i <= 5; i++) {
+      var thumb = document.createElement("img");
+      thumb.src = "img/gallery" + i + ".jpg";
+      thumb.alt = "Image " + i;
+      thumb.classList.add("thumb");
+      imageThumbs.appendChild(thumb);
+      thumb.addEventListener(
+        "click", function() {
+          currentImage.src = this.src;
+        }
+      );
+    }
   </script>
   </body>
 </html>

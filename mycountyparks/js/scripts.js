@@ -1,4 +1,3 @@
-
 // -- MODAL --//
 document.querySelectorAll(".open-button").forEach((openButton) => {
   openButton.addEventListener("click", () => {
@@ -44,12 +43,11 @@ window.addEventListener("scroll", function() {
     }
   }
 
-  var x = scroll;
   var pageHeaderImg = document.querySelector(".page-header figure img");
 
-  if (pageHeaderImgs && pageHeaderImg) {
-    pageHeaderImgs.style.transform = "scale(" + (1 + '.' + (x / 800)) + ")";
-    pageHeaderImg.style.webkitTransform = "translateZ(" + (x / 8) + "px)";
+  if (pageHeaderImg) {
+    pageHeaderImg.style.transform = "scale(" + (1 + '.' + (scroll / 800)) + ")";
+    pageHeaderImg.style.webkitTransform = "translateZ(" + (scroll / 8) + "px)";
   }
 });
 
@@ -121,10 +119,12 @@ var navbar = document.getElementById("sec-nav");
 var sticky = navbar ? navbar.offsetTop : 0;
 
 function navFix() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
+  if (navbar) { // Check if navbar is not null
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
   }
 }
 
@@ -161,4 +161,3 @@ var checkout = $('#dp2').datepicker({
 $(".swiper-button-pause").click(function() {
   swiper.autoplay.stop();
 });
-

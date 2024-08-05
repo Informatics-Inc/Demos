@@ -75,9 +75,12 @@ a[data-target-modal="#modal-share"].btn-theme  {
  margin-top:5px;margin-bottom:5px;
 }
 
-.icon-text {position: relative; padding: 0 0 0 50px; font-size: .9rem;}
-.icon-text strong {display: block; font-weight: 600; font-size: 1.1rem;}
-.icon-text i {position: absolute; left: 15px; top: calc(50% - .65rem); font-size: 1.25rem;}
+.icon-text {position: relative; padding: 0 0 0 50px; font-size: .85rem;}
+.icon-text strong {display: block; font-weight: 600; font-size: 1rem; line-height: 1.2; margin: 0 0 5px 0;}
+.icon-text i {position: absolute; left: 5px; top: calc(50% - .65rem); font-size: 1.25rem;}
+.icon-text p {margin: 0 0 15px 0;}
+
+.text-list-date {display: inline-block; text-transform: uppercase; padding: 0 0 0 10px; text-decoration: none; font-size: .85rem; margin: 0 0 5px 0; color: #888; border-left: 1px solid #ccc; margin-left: 10px;}
 
 /* Small Type */
 
