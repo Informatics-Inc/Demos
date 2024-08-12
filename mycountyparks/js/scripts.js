@@ -1,3 +1,10 @@
+// -- Open / Close Filters -- //
+// Toggle the open class on the filters div when the toggle button is clicked
+$('.filter-toggle').click(function() {
+  $('#filters').toggleClass('open');
+});
+
+
 // -- MODAL --//
 document.querySelectorAll(".open-button").forEach((openButton) => {
   openButton.addEventListener("click", () => {
@@ -25,11 +32,14 @@ document.querySelectorAll(".close-button").forEach((closeButton) => {
   });
 });
 
-// -- Search Toggle -- //
+// -- User Toggle -- //
 $("#user-menu-toggle").on("click", function() {
   $("#user-menu-list").toggleClass("open");
 });
-
+// -- Sub Menu Toggle -- //
+$("#more-info-toggle").on("click", function() {
+  $("#more-info-list").toggleClass("open");
+});
 // -- ADD CLASS ON SCROLL --//
 window.addEventListener("scroll", function() {
   var scroll = window.scrollY;
@@ -160,4 +170,11 @@ var checkout = $('#dp2').datepicker({
 // -- Swiper Pause Button -- //
 $(".swiper-button-pause").click(function() {
   swiper.autoplay.stop();
+});
+
+
+
+// -- Expand Collapse Menu -- //
+$(document).ready(function(){
+  
 });

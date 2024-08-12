@@ -7,14 +7,15 @@ h2 {font-size: 1.15rem; border-top: 1px solid rgb(0 0 0 / .1); padding-top: 2rem
 .flex > * {flex: 1;}
 .btn-full {width :100%;}
 .helper {font-size: .75rem; margin: 0; padding: 0px 10px 5px 10px; font-style: italic; margin-top: -5px;}
+label:has(input[type='checkbox']) {text-align: left; text-transform: none; font-weight: 400; padding-left: 25px; position: relative; font-size: .85rem;}
+input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
+.check-list {display: grid; grid-template-columns: repeat( auto-fit, minmax(170px, 1fr) ); gap: 5px;}
 }
 
 .form-action {display: flex; justify-content: space-between; border-top: 1px solid #ccc; padding: 2rem 0 0 0; margin: 2rem 0 0 0; width: 100%;}
 input[type='checkbox'] {width: auto; text-align: left;}
 
-label:has(input[type='checkbox']) {text-align: left; text-transform: none; font-weight: 400; padding-left: 25px; position: relative; font-size: .85rem;}
-input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
-.check-list {display: grid; grid-template-columns: repeat( auto-fit, minmax(170px, 1fr) ); gap: 5px;}
+
 
 .mcp-form > * {margin: 0;}
 .mcp-form hr {margin: 1rem 0;}
