@@ -79,12 +79,13 @@
         </div>
       </div>
     </header>
+
     <div class="container">
       <div id="filter">
         <button type="button" class="filter-toggle">
-          Configure Your Search <i class="fa-solid fa-sliders"></i>
+          Configure Your Search... <i class="fa-solid fa-sliders"></i>
         </button>
-        <div id="filters" class="open">
+        <div id="filters">
           <div class="filter-mobile-header">
             Filter Your Search <button class="filter-toggle"><i class="fa fa-close"></i></button>
           </div>
@@ -97,7 +98,7 @@
             </ul>
             <span>Showing 75 results</span>
           </div>
-          <form>
+          <form class="grid-even-cols">
             <div class="form-group">
               <div class="icon-input">
                 <i class="fa fa-location-dot" aria-true="true"></i>
@@ -254,7 +255,7 @@
               </div>
             </div>
             <div class="form-actions">
-              <button class="btn-simple">Clear Filters</button>
+              <button class="btn-simple">Clear</button>
               <button class="btn-theme">Search</button>
             </div>
           </form>
@@ -263,6 +264,7 @@
 
       <div class="results">
         <ul>
+          <li class="filters-title">Filters:</li>
           <li><a href="#.html">Lodge</a></li>
           <li><a href="#.html">Buchanan</a></li>
           <li><a href="#.html">Keywords: Swimming</a></li>

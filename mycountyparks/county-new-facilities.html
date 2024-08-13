@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>My County Parks</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id='skip-nav' class='screenreader-text' href='#main-content'>
+    Skip to Content
+  </a>
+
+  <nav id="site-header" class="fadein">
+    <div class="hdr-top">
+      <div class="container">
+        <ul class="menu-utlity">
+          <li><a href="news.html">News</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="explore.html">Explore Iowa</a></li>
+        </ul>
+        <p class="menu-blurb">Book cabins, shelters, and lodges in Iowa.</p>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <a href="index.html" id="logo">
+          <img src="img/logo.svg" alt="My County Parks Logo" />
+        </a>
+        
+        <div class="menu-user">
+          <a href="#.html" id="user-menu-toggle">
+            <span class="menu-alert">2</span>
+            <i class="fa-regular fa-circle-user"></i>
+            <i class="fa-solid fa-bars"></i>
+          </a>
+
+          <ul id="user-menu-list">
+            <li><a href="account-info.html">My Account</a></li>
+            <li><a href="account-reservations.html">Reservations</a></li>
+            <li><a href="account-events.html">Event Registrations</a></li>
+            <li><a href="account-history.html">Order History</a></li>
+            <li><a href="login.html">Log out</a></li>
+          </ul>
+        </div>
+        <ul class="menu-main">
+          <li><a href="book-now.html">Book Now</a></li>
+          <li class="active"><a href="counties.html">Counties</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main id="main-content">
+  <header class="page-header fadeinup delay-1">
+    <figure>
+      <img src="img/hero-3.jpg" />
+    </figure>
+    <div class="text">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="counties.html">Counties</a></li>
+        <li><a href="county.html">Polk</a></li>
+        <li>Facilities</li>
+      </ol>
+      <h1>Facilities in Polk County</h1>
+      <p>Book cabins, shelters, and lodges in Polk County, Iowa.</p>
+    </div>
+  </header>
+  
+  <!-- SEC NAV 
+  <div id="sec-nav" class=" fadeinup delay-2">
+    <div class="container">
+      <div class="county-hdr">
+        <div class="profile-info">
+          <figure>
+            <img src="img/polk-profile.jpg" />
+          </figure>
+          <div class="text">
+            <p class="title">Polk County Conservation</p>
+            <p><a href="https://www.polkcountyiowa.gov/conservation/" target="_blank"><i class="fa fa-laptop"></i> Website</a> | <a href="mailto:contact@email.com"><i class="fa fa-mobile"></i> Contact Us</a></p>
+          </div>
+        </div>
+        <ul class="sec-nav" data-spy="affix" data-offset-top="235">
+          <li><a href="county.html">Discover</a></li>
+          <li><a href="book-now-filtered.html">Facilities</a></li>
+          <li class="active"><a href="parks.html">Parks</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#.html" id="more-info-toggle">More Info <i class="fa fa-caret-down"></i></a>
+            <ul id="more-info-list">
+              <li><a href="county-info.html">Announcements and newsletter</a></li>
+              <li><a href="county-info.html">Equestrian Center</a></li>
+              <li><a href="county-info.html">Golf</a></li>
+              <li><a href="county-info.html">Cancelations and Reservation Modifcations</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="county-info.html">Donations</a></li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+    </div>
+  </div>-->
+
+  <div class="container">
+    <div id="filter">
+      <button type="button" class="filter-toggle">
+        Configure Your Search... <i class="fa-solid fa-sliders"></i>
+      </button>
+      <div id="filters" class="grid-odd-cols">
+        <div class="filter-mobile-header">
+          Filter Your Search <button class="filter-toggle"><i class="fa fa-close"></i></button>
+        </div>
+        <div class="results">
+          <ul>
+            <li><a href="#.html">Lodge</a></li>
+            <li><a href="#.html">Keywords: Swimming</a></li>
+            <li><a href="#.html">Dates: 8/12/2024 - 8/15/2024</a></li>
+          </ul>
+          <span>Showing 75 results</span>
+        </div>
+        <form>
+          <div class="form-group">
+            <div class="icon-input">
+              <i class="fa fa-location-dot" aria-true="true"></i>
+              <label for="searchInput" class="sr-only">Keyword Search</label>
+              <input id="searchInput" type="search" placeholder="Keyword Search">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="icon-input">
+              <i class="fa fa-calendar" aria-true="true"></i>
+              <label for="daterange" class="sr-only">Check Out</label>
+              <input id="daterange" type="text" name="daterange" value="" placeholder="Choose Your Dates" />
+            </div>
+          </div>
+          <div class="form-group">
+            <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-facility" aria-expanded="false" aria-controls="#filter-facility"><i class="fa fa-tent" aria-true="true"></i> Facility Type</span>
+            <div class="form-group-options collapsed collapse" id="filter-facility">
+              <div class="checkbox-group">
+                <label for="cabin"><input type="checkbox" id="cabin" name="preferences" value="cabin">Cabin</label>
+                <label for="campsite"><input type="checkbox" id="campsite" name="preferences" value="cabin">Campsite</label>
+                <label for="lodge"><input type="checkbox" id="lodge" name="preferences" value="cabin">Lodge</label>
+                <label for="shelter"><input type="checkbox" id="shelter" name="preferences" value="shelter">Shelter</label>
+                <label for="other"><input type="checkbox" id="other" name="preferences" value="other">Other</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-activities" aria-expanded="false" aria-controls="#filter-activities"><i class="fa fa-hiking" aria-true="true"></i> Activities</span>
+            <div class="form-group-options collapsed collapse" id="filter-activities">
+              <div class="checkbox-group">
+                <label for="biking"><input type="checkbox" id="biking" name="preferences" value="biking">Biking</label>
+                <label for="boating"><input type="checkbox" id="boating" name="preferences" value="boating">Boating</label>
+                <label for="cabins"><input type="checkbox" id="cabins" name="preferences" value="cabins">Cabins</label>
+                <label for="camping"><input type="checkbox" id="camping" name="preferences" value="camping">Camping</label>
+                <label for="canoeing-kayaking"><input type="checkbox" id="canoeing-kayaking" name="preferences" value="canoeing-kayaking">Canoeing & Kayaking</label>
+                <label for="disc-golf"><input type="checkbox" id="disc-golf" name="preferences" value="disc-golf">Disc Golf</label>
+                <label for="education"><input type="checkbox" id="education" name="preferences" value="education">Education</label>
+                <label for="ev-charging"><input type="checkbox" id="ev-charging" name="preferences" value="ev-charging">EV Charging Station</label>
+                <label for="equestrian"><input type="checkbox" id="equestrian" name="preferences" value="equestrian">Equestrian Activities</label>
+                <label for="facility-rentals"><input type="checkbox" id="facility-rentals" name="preferences" value="facility-rentals">Facility Rentals</label>
+                <label for="fall-colors"><input type="checkbox" id="fall-colors" name="preferences" value="fall-colors">Fall Colors</label>
+                <label for="fishing"><input type="checkbox" id="fishing" name="preferences" value="fishing">Fishing</label>
+                <label for="geocaching"><input type="checkbox" id="geocaching" name="preferences" value="geocaching">Geocaching</label>
+                <label for="historic-visits"><input type="checkbox" id="historic-visits" name="preferences" value="historic-visits">Historic Visits</label>
+                <label for="hunting"><input type="checkbox" id="hunting" name="preferences" value="hunting">Hunting</label>
+                <label for="other-activities"><input type="checkbox" id="other-activities" name="preferences" value="other-activities">Other Activities</label>
+                <label for="para-gliding"><input type="checkbox" id="para-gliding" name="preferences" value="para-gliding">Para Gliding</label>
+                <label for="picnicking"><input type="checkbox" id="picnicking" name="preferences" value="picnicking">Picnicking</label>
+                <label for="swimming"><input type="checkbox" id="swimming" name="preferences" value="swimming">Swimming</label>
+                <label for="trails-hiking"><input type="checkbox" id="trails-hiking" name="preferences" value="trails-hiking">Trails & Hiking</label>
+                <label for="winter-activities"><input type="checkbox" id="winter-activities" name="preferences" value="winter-activities">Winter Activities</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-amenities" aria-expanded="false" aria-controls="#filter-amenities"><i class="fa fa-wheelchair" aria-true="true"></i> Amenities</span>
+            <div class="form-group-options collapsed collapse" id="filter-amenities">
+              <div class="checkbox-group">
+                <label for="ac"><input type="checkbox" id="ac" name="amenities" value="ac">A/C</label>
+                <label for="camping-winter"><input type="checkbox" id="camping-winter" name="amenities" value="camping-winter">Camping Winter</label>
+                <label for="carry-in-carry-out"><input type="checkbox" id="carry-in-carry-out" name="amenities" value="carry-in-carry-out">Carry in/carry out refuse</label>
+                <label for="cooking-utensils"><input type="checkbox" id="cooking-utensils" name="amenities" value="cooking-utensils">Cooking / eating utensils</label>
+                <label for="dump-station"><input type="checkbox" id="dump-station" name="amenities" value="dump-station">Dump station</label>
+                <label for="ev-charging"><input type="checkbox" id="ev-charging" name="amenities" value="ev-charging">EV Charging Station</label>
+                <label for="electricity"><input type="checkbox" id="electricity" name="amenities" value="electricity">Electricity</label>
+                <label for="fire-ring"><input type="checkbox" id="fire-ring" name="amenities" value="fire-ring">Fire ring</label>
+                <label for="fireplace"><input type="checkbox" id="fireplace" name="amenities" value="fireplace">Fireplace</label>
+                <label for="firewood-available"><input type="checkbox" id="firewood-available" name="amenities" value="firewood-available">Firewood available</label>
+                <label for="handicap-accessible"><input type="checkbox" id="handicap-accessible" name="amenities" value="handicap-accessible">Handicap Accessible</label>
+                <label for="heating"><input type="checkbox" id="heating" name="amenities" value="heating">Heating</label>
+                <label for="kitchenette"><input type="checkbox" id="kitchenette" name="amenities" value="kitchenette">Kitchenette</label>
+                <label for="microwave"><input type="checkbox" id="microwave" name="amenities" value="microwave">Microwave</label>
+                <label for="on-site-resident-host"><input type="checkbox" id="on-site-resident-host" name="amenities" value="on-site-resident-host">On-site resident host</label>
+                <label for="pet-friendly"><input type="checkbox" id="pet-friendly" name="amenities" value="pet-friendly">Pet Friendly</label>
+                <label for="pets-prohibited"><input type="checkbox" id="pets-prohibited" name="amenities" value="pets-prohibited">Pets prohibited</label>
+                <label for="picnic-table"><input type="checkbox" id="picnic-table" name="amenities" value="picnic-table">Picnic Table</label>
+                <label for="pressurized-water"><input type="checkbox" id="pressurized-water" name="amenities" value="pressurized-water">Pressurized water</label>
+                <label for="refuse-cans"><input type="checkbox" id="refuse-cans" name="amenities" value="refuse-cans">Refuse cans</label>
+                <label for="restroom"><input type="checkbox" id="restroom" name="amenities" value="restroom">Restroom</label>
+                <label for="sewer-connection"><input type="checkbox" id="sewer-connection" name="amenities" value="sewer-connection">Sewer Connection</label>
+                <label for="shower-facilities"><input type="checkbox" id="shower-facilities" name="amenities" value="shower-facilities">Shower facilities</label>
+                <label for="swimming-nearby"><input type="checkbox" id="swimming-nearby" name="amenities" value="swimming-nearby">Swimming nearby</label>
+                <label for="table-chairs"><input type="checkbox" id="table-chairs" name="amenities" value="table-chairs">Table with chairs</label>
+                <label for="wifi"><input type="checkbox" id="wifi" name="amenities" value="wifi">Wi-Fi</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn-simple">Clear</button>
+            <button class="btn-theme">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="results">
+      <ul>
+        <li class="filters-title">Filters:</li>
+        <li><a href="#.html">Lodge</a></li>
+        <li><a href="#.html">Keywords: Swimming</a></li>
+      </ul>
+      <span>Showing 53 results | View as <a href="#.html"><i class="fa fa-map-location"></i>Map</a><a href="#.html" class="active"><i class="fa fa-list"></i>List</a></span>
+    </div>
+  </div>
+
+
+  <!-- CONTENT -->
+  <div class="content-sections">
+    
+    <!-- RESULTS LIST -->
+    <section class="animate-in delay-3">
+      <div class="container">
+        <div class="auto-grid-5 grid-gap-sm">
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-1.jpg" />
+              </figure>
+              <h3>Beaver Creek Greenbelt</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-2.jpg" />
+              </figure>
+              <h3>Brown's Woods</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-3.jpg" />
+              </figure>
+              <h3>Carney Marsh</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-4.jpg" />
+              </figure>
+              <h3>Chichaqua Bottoms Greenbelt</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-5.jpg" />
+              </figure>
+              <h3>Chichaqua Valley Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-1.jpg" />
+              </figure>
+              <h3>Easter Lake Park</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-2.jpg" />
+              </figure>
+              <h3>Engeldinger Marsh</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-3.jpg" />
+              </figure>
+              <h3>Fort Des Moines Park</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-4.jpg" />
+              </figure>
+              <h3>Four Mile Creek Greenbelt</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-5.jpg" />
+              </figure>
+              <h3>Gay Lea Wilson Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-1.jpg" />
+              </figure>
+              <h3>Great Western Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-2.jpg" />
+              </figure>
+              <h3>High Trestle Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-3.jpg" />
+              </figure>
+              <h3>Jester Park</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-4.jpg" />
+              </figure>
+              <h3>Lauridsen Skatepark</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-5.jpg" />
+              </figure>
+              <h3>Mally's Weh-Weh-Neh-Kee Park</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-1.jpg" />
+              </figure>
+              <h3>Oralabor Gateway Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-2.jpg" />
+              </figure>
+              <h3>Polk County Education Programs</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-3.jpg" />
+              </figure>
+              <h3>Strasser Woods State Preserve</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+  
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+        <div class="ftr-cols">
+          <div class="col">
+            <img src="img/logo.svg" />
+            <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
+          </div>
+          <div class="col">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="#.html">Offers</a></li>
+              <li><a href="#.html">News</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#.html">Careers</a></li>
+              <li><a href="#.html">Contact Us</a></li>
+              <a href="#.html">MCP on Facebook</a>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#.html">Book a Facility</a></li>
+              <li><a href="#.html">Explore Events</a></li>
+              <li><a href="#.html">Discover Our Counties</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      
+      <h4 class="text-center">Explore Iowa's 99 Counties</h4>
+      <ul class="county-list">
+        <li><a href="county.html">Adair</a></li>
+        <li><a href="county.html">Adams</a></li>
+        <li><a href="county.html">Allamakee</a></li>
+        <li><a href="county.html">Appanoose</a></li>
+        <li><a href="county.html">Audubon</a></li>
+        <li><a href="county.html">Benton</a></li>
+        <li><a href="county.html">Black Hawk</a></li>
+        <li><a href="county.html">Boone</a></li>
+        <li><a href="county.html">Bremer</a></li>
+        <li><a href="county.html">Buchanon</a></li>
+        <li><a href="county.html">Buena Vista</a></li>
+        <li><a href="county.html">Butler</a></li>
+        <li><a href="county.html">Calhoun</a></li>
+        <li><a href="county.html">Carroll</a></li>
+        <li><a href="county.html">Cass</a></li>
+        <li><a href="county.html">Cedar</a></li>
+        <li><a href="county.html">Cerro Gordo</a></li>
+        <li><a href="county.html">Cherokee</a></li>
+        <li><a href="county.html">Chickasaw</a></li>
+        <li><a href="county.html">Clarke</a></li>
+        <li><a href="county.html">Clay</a></li>
+        <li><a href="county.html">Clayton</a></li>
+        <li><a href="county.html">Clinton</a></li>
+        <li><a href="county.html">Crawford</a></li>
+        <li><a href="county.html">Dallas</a></li>
+        <li><a href="county.html">Davis</a></li>
+        <li><a href="county.html">Decatur</a></li>
+        <li><a href="county.html">Delaware</a></li>
+        <li><a href="county.html">Des Moines</a></li>
+        <li><a href="county.html">Dickinson</a></li>
+        <li><a href="county.html">Dubuque</a></li>
+        <li><a href="county.html">Emmet</a></li>
+        <li><a href="county.html">Fayette</a></li>
+        <li><a href="county.html">Floyd</a></li>
+        <li><a href="county.html">Franklin</a></li>
+        <li><a href="county.html">Fremont</a></li>
+        <li><a href="county.html">Greene</a></li>
+        <li><a href="county.html">Grundy</a></li>
+        <li><a href="county.html">Guthrie</a></li>
+        <li><a href="county.html">Hamilton</a></li>
+        <li><a href="county.html">Hancock</a></li>
+        <li><a href="county.html">Hardin</a></li>
+        <li><a href="county.html">Harrison</a></li>
+        <li><a href="county.html">Henry</a></li>
+        <li><a href="county.html">Howard</a></li>
+        <li><a href="county.html">Humboldt</a></li>
+        <li><a href="county.html">Ida</a></li>
+        <li><a href="county.html">Iowa</a></li>
+        <li><a href="county.html">Jackson</a></li>
+        <li><a href="county.html">Jasper</a></li>
+        <li><a href="county.html">Jefferson</a></li>
+        <li><a href="county.html">Johnson</a></li>
+        <li><a href="county.html">Jones</a></li>
+        <li><a href="county.html">Keokuk</a></li>
+        <li><a href="county.html">Kossuth</a></li>
+        <li><a href="county.html">Lee</a></li>
+        <li><a href="county.html">Linn</a></li>
+        <li><a href="county.html">Louisa</a></li>
+        <li><a href="county.html">Lucas</a></li>
+        <li><a href="county.html">Lyon</a></li>
+        <li><a href="county.html">Madison</a></li>
+        <li><a href="county.html">Mahaska</a></li>
+        <li><a href="county.html">Marion</a></li>
+        <li><a href="county.html">Marshall</a></li>
+        <li><a href="county.html">Mills</a></li>
+        <li><a href="county.html">Mitchell</a></li>
+        <li><a href="county.html">Monona</a></li>
+        <li><a href="county.html">Monroe</a></li>
+        <li><a href="county.html">Montgomery</a></li>
+        <li><a href="county.html">Muscatine</a></li>
+        <li><a href="county.html">O'Brien</a></li>
+        <li><a href="county.html">Osceola</a></li>
+        <li><a href="county.html">Page</a></li>
+        <li><a href="county.html">Palo Alto</a></li>
+        <li><a href="county.html">Plymouth</a></li>
+        <li><a href="county.html">Pocahantas</a></li>
+        <li><a href="county.html">Polk</a></li>
+        <li><a href="county.html">Pottawattamie</a></li>
+        <li><a href="county.html">Poweshiek</a></li>
+        <li><a href="county.html">Ringgold</a></li>
+        <li><a href="county.html">Sac</a></li>
+        <li><a href="county.html">Scott</a></li>
+        <li><a href="county.html">Shelby</a></li>
+        <li><a href="county.html">Sioux</a></li>
+        <li><a href="county.html">Story</a></li>
+        <li><a href="county.html">Tama</a></li>
+        <li><a href="county.html">Taylor</a></li>
+        <li><a href="county.html">Union</a></li>
+        <li><a href="county.html">Van Buren</a></li>
+        <li><a href="county.html">Wapello</a></li>
+        <li><a href="county.html">Warren</a></li>
+        <li><a href="county.html">Washington</a></li>
+        <li><a href="county.html">Wayne</a></li>
+        <li><a href="county.html">Webster</a></li>
+        <li><a href="county.html">Winnebago</a></li>
+        <li><a href="county.html">Winneshiek</a></li>
+        <li><a href="county.html">Woodbury</a></li>
+        <li><a href="county.html">Worth</a></li>
+        <li><a href="county.html">Wright</a></li>
+      </ul>
+      <hr />
+      <div class="copy">
+        <p>© 2023 My County Parks | All Rights Reserved | Web Application by <a href="#.html">Informatics, Inc</a></p>
+        <ul>
+          <li><a href="#.html">Terms and Conditions</a></li>
+          <li><a href="#.html">Cookie Statement</a></li>
+          <li><a href="#.html">Privacy Policy</a></li>
+        </ul>
+        
+      </p>
+  </div>
+</footer>
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <!-- NEW DATE PICKER -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <!-- https://www.daterangepicker.com/ -->
+  <script>
+    $(function() {
+      $('input[name="daterange"]').daterangepicker({
+        opens: 'center'
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
+    </script>
+
+  <script src="js/scripts.js"></script>
+  <script>
+    // -- SIMPLE GALLERY -- //
+    var imageThumbs = document.getElementById("image-thumbs");
+    var currentImage = document.getElementById("current-image");
+
+    for (var i = 1; i <= 5; i++) {
+      var thumb = document.createElement("img");
+      thumb.src = "img/gallery" + i + ".jpg";
+      thumb.alt = "Image " + i;
+      thumb.classList.add("thumb");
+      imageThumbs.appendChild(thumb);
+      thumb.addEventListener(
+        "click", function() {
+          currentImage.src = this.src;
+        }
+      );
+    }
+  </script>
+  </body>
+</html>
