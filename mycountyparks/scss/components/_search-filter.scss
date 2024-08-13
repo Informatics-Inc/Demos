@@ -26,7 +26,7 @@
 #filter {background: var(--secondary); padding: 15px; border-radius: 15px;gap: 15px; margin: -50px 15px 0 15px;position: relative;z-index: 10; box-shadow: 5px 15px 25px rgba(0, 0, 0, .2);}
 .filter-toggle {border: none; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 1rem;}
 
-.results {text-align: center;}
+.results {text-align: center; position: relative; z-index: 15;}
 .results ul {list-style: none; padding: 0; margin: 1rem 0 .25rem 0; display: flex; flex-wrap: wrap; justify-content: center; font-size: .75rem; gap: 5px; align-items: center;}
 .results ul .filters-title {text-transform: uppercase; font-weight: 700;}
 .results ul a {background: var(--light); padding: 5px 8px; font-weight: 400; text-decoration: none; display: flex; gap: 5px; border-radius: 4px;}
@@ -64,7 +64,7 @@
 
 /* DESKTOP */
 @media (min-width: 992px) {
-#filter {margin: -50px 0 0 0;}
+#filter {margin: -40px 0 0 0;}
 #filters {position: relative; visibility: visible; opacity: 1; padding: 0; background: none; overflow: inherit; box-shadow: none;}
 .form-actions {position: relative; padding: 0; background: none; border: none;}
 .filter-mobile-header {display: none;}
@@ -98,7 +98,7 @@
 .form-actions .btn-theme:hover:after {margin: 0 0 0 .2rem;}
 .results {display: flex; justify-content: space-between; align-items: center; margin: 1rem 0 1rem 0; border-bottom: 1px solid #ccc; padding: 0 0 1rem 0;}
 .results ul {margin: 0; justify-content: flex-start;}
-.results span {margin: 0; min-width: 285px;}
+.results span {margin: 0; min-width: 285px; justify-content: flex-end;}
 
 .form-group {position: relative;}
 .form-group .form-group-options {height: auto; max-height: 250px; position: absolute; top: 100%; left: calc(50% - 150px); background: #fff; width: 300px; overflow-y: scroll; border-radius: 5px; opacity: 0; visibility: hidden; transition: var(--transition); box-shadow: 0 0 15px rgba(0, 0, 0, .2);}
