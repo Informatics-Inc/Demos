@@ -79,117 +79,202 @@
         </div>
       </div>
     </header>
-    <div class="container grid grid-gap-md">
-      <div class="search grid fadeinup delay-2">
-        <div class="row flex-basis-25">
-          <div class="col flex-shrink-no">
-            <div class="input-wrap">
-              <i class="fa fa-location-dot" aria-hidden="true"></i>
-              <label for="searchInput" class="sr-only">Search Location</label>
-              <input id="searchInput" type="search" placeholder="Try 'Linn County' or 'Lakeside'">
-            </div>
+
+    <div class="container">
+      <div id="filter">
+        <button type="button" class="filter-toggle">
+          Configure Your Search... <i class="fa-solid fa-sliders"></i>
+        </button>
+        <div id="filters">
+          <div class="filter-mobile-header">
+            Filter Your Search <button class="filter-toggle"><i class="fa fa-close"></i></button>
           </div>
-          <div class="col check-in-out">
-            <div class="input-wrap">
-              <i class="fa-regular fa-calendar" aria-hidden="true"></i>
-              <label for="datepicker1" class="sr-only">Check In</label>
-              <input id="datepicker1" placeholder="Check In" />
-            </div>
-            <div class="input-wrap">
-              <i class="fa-regular fa-calendar" aria-hidden="true"></i>
-              <label for="datepicker2" class="sr-only">Check Out</label>
-              <input id="datepicker2" placeholder="Check Out" />
-            </div>
-            <a href="book-now.html" class="btn-theme" aria-label="Book Now"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          <div class="results">
+            <ul>
+              <li><a href="#.html">Lodge</a></li>
+              <li><a href="#.html">Buchanan</a></li>
+              <li><a href="#.html">Keywords: Swimming</a></li>
+              <li><a href="#.html">Dates: 8/12/2024 - 8/15/2024</a></li>
+            </ul>
+            <span>Showing 75 results</span>
           </div>
-        </div>
-        <div class="row selects flex-basis-25">
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-person-shelter" aria-hidden="true"></i>
-              <label for="facilityType" class="sr-only">Facility Type</label>
-              <select id="facilityType" class="form-select" multiple multiselect-max-items="3" aria-label="Facility Type" placeholder="Facility Type">
-                <option>Cabin</option>
-                <option>Campsite</option>
-                <option>Lodge</option>
-                <option>Other</option>
-                <option>Shelter</option>
-              </select>
+          <form class="grid-even-cols">
+            <div class="form-group">
+              <div class="icon-input">
+                <i class="fa fa-location-dot" aria-true="true"></i>
+                <label for="searchInput" class="sr-only">Keyword Search</label>
+                <input id="searchInput" type="search" placeholder="Keyword Search">
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
-              <label for="county" class="sr-only">County</label>
-              <select id="county" class="form-select" aria-label="County" multiple multiselect-max-items="3"  placeholder="County">
-                <option>Adair</option>
-                <option>Allapoose</option>
-                <option>Benton</option>
-                <option>Iowa</option>
-                <option>Eli</option>
-                <option>Frester</option>
-                <option>Gordon</option>
-                <option>Genevieve</option>
-                <option>Horatia</option>
-                <option>Ilk</option>
-                <option>Illingsburg</option>
-                <option>The rest with go here</option>
-              </select>
+            
+            <div class="form-group">
+              <div class="icon-input">
+                <i class="fa fa-calendar" aria-true="true"></i>
+                <label for="daterange" class="sr-only">Check Out</label>
+                <input id="daterange" type="text" name="daterange" value="" />
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-person-hiking" aria-hidden="true"></i>
-              <label for="activity" class="sr-only">Activity</label>
-              <select id="activity" class="form-select" aria-label="Activity" multiple multiselect-max-items="3"  placeholder="Activity">
-                <option>Biking</option>
-                <option>Boating</option>
-                <option>Cabins</option>
-                <option>Camping</option>
-                <option>Fishing</option>
-                <option>The rest...</option>
-              </select>
+
+            <div class="form-group">
+              <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-facility" aria-expanded="false" aria-controls="#filter-facility"><i class="fa fa-tent" aria-true="true"></i> Facility Type</span>
+              <div class="form-group-options collapsed collapse" id="filter-facility">
+                <div class="checkbox-group">
+                  <label for="cabin"><input type="checkbox" id="cabin" name="preferences" value="cabin">Cabin</label>
+                  <label for="campsite"><input type="checkbox" id="campsite" name="preferences" value="cabin">Campsite</label>
+                  <label for="lodge"><input type="checkbox" id="lodge" name="preferences" value="cabin">Lodge</label>
+                  <label for="shelter"><input type="checkbox" id="shelter" name="preferences" value="shelter">Shelter</label>
+                  <label for="other"><input type="checkbox" id="other" name="preferences" value="other">Other</label>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-wheelchair" aria-hidden="true"></i>
-              <label for="amenities" class="sr-only">Amenities</label>
-              <select id="amenities" class="form-select" aria-label="Amenities" multiple multiselect-max-items="1"  placeholder="Amenities">
-                <option>Handicap Accesible</option>
-                <option>A/C</option>
-                <option>Camping Winter</option>
-                <option>Carry in/out refuse</option>
-                <option>Dump Station</option>
-                <option>EV Charger</option>
-                <option>The rest...</option>
-              </select>
+
+            <div class="form-group">
+              <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-county" aria-expanded="false" aria-controls="#filter-county"><i class="fa fa-map" aria-true="true"></i> County</span>
+              <div class="form-group-options collapsed collapse" id="filter-county">
+                <div class="checkbox-group grid-col-sm">
+                  <label for="ada"><input type="checkbox" id="ada" name="counties" value="ada">Ada</label>
+                  <label for="adams"><input type="checkbox" id="adams" name="counties" value="adams">Adams</label>
+                  <label for="allamakee"><input type="checkbox" id="allamakee" name="counties" value="allamakee">Allamakee</label>
+                  <label for="appanoose"><input type="checkbox" id="appanoose" name="counties" value="appanoose">Appanoose</label>
+                  <label for="audubon"><input type="checkbox" id="audubon" name="counties" value="audubon">Audubon</label>
+                  <label for="benton"><input type="checkbox" id="benton" name="counties" value="benton">Benton</label>
+                  <label for="black-hawk"><input type="checkbox" id="black-hawk" name="counties" value="black-hawk">Black Hawk</label>
+                  <label for="boone"><input type="checkbox" id="boone" name="counties" value="boone">Boone</label>
+                  <label for="bremer"><input type="checkbox" id="bremer" name="counties" value="bremer">Bremer</label>
+                  <label for="buchanan"><input type="checkbox" id="buchanan" name="counties" value="buchanan">Buchanan</label>
+                  <label for="buena-vista"><input type="checkbox" id="buena-vista" name="counties" value="buena-vista">Buena Vista</label>
+                  <label for="butler"><input type="checkbox" id="butler" name="counties" value="butler">Butler</label>
+                  <label for="calhoun"><input type="checkbox" id="calhoun" name="counties" value="calhoun">Calhoun</label>
+                  <label for="carroll"><input type="checkbox" id="carroll" name="counties" value="carroll">Carroll</label>
+                  <label for="cass"><input type="checkbox" id="cass" name="counties" value="cass">Cass</label>
+                  <label for="cedar"><input type="checkbox" id="cedar" name="counties" value="cedar">Cedar</label>
+                  <label for="cerro-gordo"><input type="checkbox" id="cerro-gordo" name="counties" value="cerro-gordo">Cerro Gordo</label>
+                  <label for="cherokee"><input type="checkbox" id="cherokee" name="counties" value="cherokee">Cherokee</label>
+                  <label for="chickasaw"><input type="checkbox" id="chickasaw" name="counties" value="chickasaw">Chickasaw</label>
+                  <label for="clarke"><input type="checkbox" id="clarke" name="counties" value="clarke">Clarke</label>
+                  <label for="clay"><input type="checkbox" id="clay" name="counties" value="clay">Clay</label>
+                  <label for="clayton"><input type="checkbox" id="clayton" name="counties" value="clayton">Clayton</label>
+                  <label for="clinton"><input type="checkbox" id="clinton" name="counties" value="clinton">Clinton</label>
+                  <label for="crawford"><input type="checkbox" id="crawford" name="counties" value="crawford">Crawford</label>
+                  <label for="dallas"><input type="checkbox" id="dallas" name="counties" value="dallas">Dallas</label>
+                  <label for="davis"><input type="checkbox" id="davis" name="counties" value="davis">Davis</label>
+                  <label for="decatur"><input type="checkbox" id="decatur" name="counties" value="decatur">Decatur</label>
+                  <label for="delaware"><input type="checkbox" id="delaware" name="counties" value="delaware">Delaware</label>
+                  <label for="des-moines"><input type="checkbox" id="des-moines" name="counties" value="des-moines">Des Moines</label>
+                  <label for="dickinson"><input type="checkbox" id="dickinson" name="counties" value="dickinson">Dickinson</label>
+                  <label for="dubuque"><input type="checkbox" id="dubuque" name="counties" value="dubuque">Dubuque</label>
+                  <label for="emmet"><input type="checkbox" id="emmet" name="counties" value="emmet">Emmet</label>
+                  <label for="fayette"><input type="checkbox" id="fayette" name="counties" value="fayette">Fayette</label>
+                  <label for="floyd"><input type="checkbox" id="floyd" name="counties" value="floyd">Floyd</label>
+                  <label for="franklin"><input type="checkbox" id="franklin" name="counties" value="franklin">Franklin</label>
+                  <label for="fremont"><input type="checkbox" id="fremont" name="counties" value="fremont">Fremont</label>
+                  <label for="greene"><input type="checkbox" id="greene" name="counties" value="greene">Greene</label>
+                  <label for="grundy"><input type="checkbox" id="grundy" name="counties" value="grundy">Grundy</label>
+                  <label for="guthrie"><input type="checkbox" id="guthrie" name="counties" value="guthrie">Guthrie</label>
+                  <label for="hamilton"><input type="checkbox" id="hamilton" name="counties" value="hamilton">Hamilton</label>
+                  <label for="hancock"><input type="checkbox" id="hancock" name="counties" value="hancock">Hancock</label>
+                  <label for="hardin"><input type="checkbox" id="hardin" name="counties" value="hardin">Hardin</label>
+                  <label for="harrison"><input type="checkbox" id="harrison" name="counties" value="harrison">Harrison</label>
+                  <label for="henry"><input type="checkbox" id="henry" name="counties" value="henry">Henry</label>
+                  <label for="howard"><input type="checkbox" id="howard" name="counties" value="howard">Howard</label>
+                  <label for="humboldt"><input type="checkbox" id="humboldt" name="counties" value="humboldt">Humboldt</label>
+                  <label for="ida"><input type="checkbox" id="ida" name="counties" value="ida">Ida</label>
+                  <label for="iowa"><input type="checkbox" id="iowa" name="counties" value="iowa">Iowa</label>
+                  <label for="jackson"><input type="checkbox" id="jackson" name="counties" value="jackson">Jackson</label>
+                  <label for="jasper"><input type="checkbox" id="jasper" name="counties" value="jasper">Jasper</label>
+                  <label for="jefferson"><input type="checkbox" id="jefferson" name="counties" value="jefferson">Jefferson</label>
+                  <label for="johnson"><input type="checkbox" id="johnson" name="counties" value="johnson">Johnson</label>
+                  <label for="jones"><input type="checkbox" id="jones" name="counties" value="jones">Jones</label>
+                  <label for="keokuk"><input type="checkbox" id="keokuk" name="counties" value="keokuk">Keokuk</label>
+                  <label for="kossuth"><input type="checkbox" id="kossuth" name="counties" value="kossuth">Kossuth</label>
+                  <label for="lee"><input type="checkbox" id="lee" name="counties" value="lee">Lee</label>
+                  <label for="linn"><input type="checkbox" id="linn" name="counties" value="linn">Linn</label>
+                </div>
+              </div>
             </div>
-          </div>
+
+            <div class="form-group">
+              <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-activities" aria-expanded="false" aria-controls="#filter-activities"><i class="fa fa-hiking" aria-true="true"></i> Activities</span>
+              <div class="form-group-options collapsed collapse" id="filter-activities">
+                <div class="checkbox-group">
+                  <label for="biking"><input type="checkbox" id="biking" name="preferences" value="biking">Biking</label>
+                  <label for="boating"><input type="checkbox" id="boating" name="preferences" value="boating">Boating</label>
+                  <label for="cabins"><input type="checkbox" id="cabins" name="preferences" value="cabins">Cabins</label>
+                  <label for="camping"><input type="checkbox" id="camping" name="preferences" value="camping">Camping</label>
+                  <label for="canoeing-kayaking"><input type="checkbox" id="canoeing-kayaking" name="preferences" value="canoeing-kayaking">Canoeing & Kayaking</label>
+                  <label for="disc-golf"><input type="checkbox" id="disc-golf" name="preferences" value="disc-golf">Disc Golf</label>
+                  <label for="education"><input type="checkbox" id="education" name="preferences" value="education">Education</label>
+                  <label for="ev-charging"><input type="checkbox" id="ev-charging" name="preferences" value="ev-charging">EV Charging Station</label>
+                  <label for="equestrian"><input type="checkbox" id="equestrian" name="preferences" value="equestrian">Equestrian Activities</label>
+                  <label for="facility-rentals"><input type="checkbox" id="facility-rentals" name="preferences" value="facility-rentals">Facility Rentals</label>
+                  <label for="fall-colors"><input type="checkbox" id="fall-colors" name="preferences" value="fall-colors">Fall Colors</label>
+                  <label for="fishing"><input type="checkbox" id="fishing" name="preferences" value="fishing">Fishing</label>
+                  <label for="geocaching"><input type="checkbox" id="geocaching" name="preferences" value="geocaching">Geocaching</label>
+                  <label for="historic-visits"><input type="checkbox" id="historic-visits" name="preferences" value="historic-visits">Historic Visits</label>
+                  <label for="hunting"><input type="checkbox" id="hunting" name="preferences" value="hunting">Hunting</label>
+                  <label for="other-activities"><input type="checkbox" id="other-activities" name="preferences" value="other-activities">Other Activities</label>
+                  <label for="para-gliding"><input type="checkbox" id="para-gliding" name="preferences" value="para-gliding">Para Gliding</label>
+                  <label for="picnicking"><input type="checkbox" id="picnicking" name="preferences" value="picnicking">Picnicking</label>
+                  <label for="swimming"><input type="checkbox" id="swimming" name="preferences" value="swimming">Swimming</label>
+                  <label for="trails-hiking"><input type="checkbox" id="trails-hiking" name="preferences" value="trails-hiking">Trails & Hiking</label>
+                  <label for="winter-activities"><input type="checkbox" id="winter-activities" name="preferences" value="winter-activities">Winter Activities</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-amenities" aria-expanded="false" aria-controls="#filter-amenities"><i class="fa fa-wheelchair" aria-true="true"></i> Amenities</span>
+              <div class="form-group-options collapsed collapse" id="filter-amenities">
+                <div class="checkbox-group">
+                  <label for="ac"><input type="checkbox" id="ac" name="amenities" value="ac">A/C</label>
+                  <label for="camping-winter"><input type="checkbox" id="camping-winter" name="amenities" value="camping-winter">Camping Winter</label>
+                  <label for="carry-in-carry-out"><input type="checkbox" id="carry-in-carry-out" name="amenities" value="carry-in-carry-out">Carry in/carry out refuse</label>
+                  <label for="cooking-utensils"><input type="checkbox" id="cooking-utensils" name="amenities" value="cooking-utensils">Cooking / eating utensils</label>
+                  <label for="dump-station"><input type="checkbox" id="dump-station" name="amenities" value="dump-station">Dump station</label>
+                  <label for="ev-charging"><input type="checkbox" id="ev-charging" name="amenities" value="ev-charging">EV Charging Station</label>
+                  <label for="electricity"><input type="checkbox" id="electricity" name="amenities" value="electricity">Electricity</label>
+                  <label for="fire-ring"><input type="checkbox" id="fire-ring" name="amenities" value="fire-ring">Fire ring</label>
+                  <label for="fireplace"><input type="checkbox" id="fireplace" name="amenities" value="fireplace">Fireplace</label>
+                  <label for="firewood-available"><input type="checkbox" id="firewood-available" name="amenities" value="firewood-available">Firewood available</label>
+                  <label for="handicap-accessible"><input type="checkbox" id="handicap-accessible" name="amenities" value="handicap-accessible">Handicap Accessible</label>
+                  <label for="heating"><input type="checkbox" id="heating" name="amenities" value="heating">Heating</label>
+                  <label for="kitchenette"><input type="checkbox" id="kitchenette" name="amenities" value="kitchenette">Kitchenette</label>
+                  <label for="microwave"><input type="checkbox" id="microwave" name="amenities" value="microwave">Microwave</label>
+                  <label for="on-site-resident-host"><input type="checkbox" id="on-site-resident-host" name="amenities" value="on-site-resident-host">On-site resident host</label>
+                  <label for="pet-friendly"><input type="checkbox" id="pet-friendly" name="amenities" value="pet-friendly">Pet Friendly</label>
+                  <label for="pets-prohibited"><input type="checkbox" id="pets-prohibited" name="amenities" value="pets-prohibited">Pets prohibited</label>
+                  <label for="picnic-table"><input type="checkbox" id="picnic-table" name="amenities" value="picnic-table">Picnic Table</label>
+                  <label for="pressurized-water"><input type="checkbox" id="pressurized-water" name="amenities" value="pressurized-water">Pressurized water</label>
+                  <label for="refuse-cans"><input type="checkbox" id="refuse-cans" name="amenities" value="refuse-cans">Refuse cans</label>
+                  <label for="restroom"><input type="checkbox" id="restroom" name="amenities" value="restroom">Restroom</label>
+                  <label for="sewer-connection"><input type="checkbox" id="sewer-connection" name="amenities" value="sewer-connection">Sewer Connection</label>
+                  <label for="shower-facilities"><input type="checkbox" id="shower-facilities" name="amenities" value="shower-facilities">Shower facilities</label>
+                  <label for="swimming-nearby"><input type="checkbox" id="swimming-nearby" name="amenities" value="swimming-nearby">Swimming nearby</label>
+                  <label for="table-chairs"><input type="checkbox" id="table-chairs" name="amenities" value="table-chairs">Table with chairs</label>
+                  <label for="wifi"><input type="checkbox" id="wifi" name="amenities" value="wifi">Wi-Fi</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn-simple">Clear</button>
+              <button class="btn-theme">Search</button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>    
+
+      <div class="results">
+        <ul>
+          <li class="filters-title">Filters:</li>
+          <li><a href="#.html">Lodge</a></li>
+          <li><a href="#.html">Buchanan</a></li>
+          <li><a href="#.html">Keywords: Swimming</a></li>
+        </ul>
+        <span>Showing 75 results | View as <a href="#.html"><i class="fa fa-map-location"></i>Map</a><a href="#.html" class="active"><i class="fa fa-list"></i>List</a></span>
+      </div>
+    </div>
+   
     <!-- CONTENT -->
     <div class="content-sections">
-
-      <!-- RESULTS -->
-      <section class="animate-in delay-2">
-        <div class="container">
-          <div class="full-hdr">
-            <h3>Results</h3>
-            <hr />
-            <a href="book-now.html">Reset Search</a>
-          </div>
-          <div class="results-info">
-            <ul>
-              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Search Criteria</a></li>
-              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Parameter</a></li>
-            </ul>
-            <p>Showing 25 of 375 Results</p>
-          </div>
-        </div>  
-      </section>
-
       <!-- RESULTS LIST -->
       <section class="animate-in delay-3">
         <div class="container">
@@ -671,11 +756,17 @@
   
   <!-- FOOTER SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
   <script src="js/datepicker.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/multiselect-dropdown.js"></script>
+
+  <!-- NEW DATE PICKER -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
   <script src="js/scripts.js"></script>
 
   </body>

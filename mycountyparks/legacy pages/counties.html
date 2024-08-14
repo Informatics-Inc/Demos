@@ -79,106 +79,108 @@
         </div>
       </div>
     </header>
-
-    <div class="container">
-      <div id="filter">
-        <button type="button" class="filter-toggle">
-          Configure Your Search... <i class="fa-solid fa-sliders"></i>
-        </button>
-        <div id="filters" class="grid-odd-cols">
-          <div class="filter-mobile-header">
-            Filter Your Search <button class="filter-toggle"><i class="fa fa-close"></i></button>
+    <div class="container grid grid-gap-md">
+      <div class="search fadeinup delay-2">
+        <div class="row">
+          <div class="col">
+            <div class="input-wrap">
+              <i class="fa fa-location-dot"></i>
+              <input type="search" placeholder="Keyword Search">
+            </div>
           </div>
-          <div class="results">
-            <ul>
-              <li><a href="#.html">Lodge</a></li>
-              <li><a href="#.html">Keywords: Swimming</a></li>
-              <li><a href="#.html">Dates: 8/12/2024 - 8/15/2024</a></li>
-            </ul>
-            <span>Showing 75 results</span>
+          <div class="col">
+            <div class="input-wrap">
+              <i class="fa-regular fa-calendar-check"></i>
+              <select class="form-select">
+                <option>Has Events</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
           </div>
-          <form>
-            <div class="form-group">
-              <div class="icon-input">
-                <i class="fa fa-location-dot" aria-true="true"></i>
-                <label for="searchInput" class="sr-only">Keyword Search</label>
-                <input id="searchInput" type="search" placeholder="Keyword Search">
-              </div>
+          <div class="col">
+            <div class="input-wrap">
+              <i class="fa-solid fa-person-shelter"></i>
+              <select class="form-select">
+                <option>By Facility Type</option>
+                <option>Campgrounds</option>
+                <option>Shelter</option>
+                <option>Cabins</option>
+              </select>
             </div>
-            <div class="form-group">
-              <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-facility" aria-expanded="false" aria-controls="#filter-facility"><i class="fa fa-tent" aria-true="true"></i> Facility Type</span>
-              <div class="form-group-options collapsed collapse" id="filter-facility">
-                <div class="checkbox-group">
-                  <label for="cabin"><input type="checkbox" id="cabin" name="preferences" value="cabin">Cabin</label>
-                  <label for="campsite"><input type="checkbox" id="campsite" name="preferences" value="cabin">Campsite</label>
-                  <label for="lodge"><input type="checkbox" id="lodge" name="preferences" value="cabin">Lodge</label>
-                  <label for="shelter"><input type="checkbox" id="shelter" name="preferences" value="shelter">Shelter</label>
-                  <label for="other"><input type="checkbox" id="other" name="preferences" value="other">Other</label>
-                </div>
-              </div>
+          </div>
+          
+          <div class="col">
+            <div class="input-wrap">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <select class="form-select">
+                <option>Recently Updated</option>
+                <option>1 day</option>
+                <option>10 days</option>
+                <option>30 days</option>
+              </select>
             </div>
-            <div class="alpha-list">
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('A')">
-  A                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('B')">
-  B                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('C')">
-  C                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('D')">
-  D                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('E')">
-  E                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('F')">
-  F                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('G')">
-  G                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('H')">
-  H                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('I')">
-  I                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('J')">
-  J                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('K')">
-  K                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('L')">
-  L                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('M')">
-  M                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('N')">
-  N                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('O')">
-  O                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('P')">
-  P                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('Q')">
-  Q                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('R')">
-  R                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('S')">
-  S                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('T')">
-  T                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('U')">
-  U                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('V')">
-  V                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('W')">
-  W                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('X')">
-  X                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('Y')">
-  Y                            </a>
-              <a class="btn btn-link alphabet-search " onclick="alphaSearch('Z')">
-  Z                            </a>
-             </div>
-            <div class="form-actions">
-              <button class="btn-simple">Clear</button>
-              <button class="btn-theme">Search</button>
-            </div>
-          </form>
+            <a href="book-now.html" class="btn-theme"><i class="fa fa-arrow-right"></i></a>
+          </div>
         </div>
-        
+        <div class="row">
+          <div class="alpha-list">
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('A')">
+A                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('B')">
+B                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('C')">
+C                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('D')">
+D                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('E')">
+E                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('F')">
+F                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('G')">
+G                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('H')">
+H                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('I')">
+I                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('J')">
+J                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('K')">
+K                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('L')">
+L                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('M')">
+M                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('N')">
+N                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('O')">
+O                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('P')">
+P                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Q')">
+Q                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('R')">
+R                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('S')">
+S                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('T')">
+T                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('U')">
+U                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('V')">
+V                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('W')">
+W                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('X')">
+X                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Y')">
+Y                            </a>
+            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Z')">
+Z                            </a>
+           </div>
+        </div>
       </div>
+      
       <div class="grid filter-icons grid-gap-xm fadeinup delay-3">
         <a href="book-now.html" class="ico-feature">
           <img src="img/icons/svgs/marker.svg" />
@@ -238,16 +240,9 @@
         </a> -->
         
       </div>
-      <div class="results">
-        <ul>
-          <li class="filters-title">Filters:</li>
-          <li><a href="#.html">Lodge</a></li>
-          <li><a href="#.html">Keywords: Swimming</a></li>
-        </ul>
-        <span>Showing 53 results | View as <a href="#.html"><i class="fa fa-map-location"></i>Map</a><a href="#.html" class="active"><i class="fa fa-list"></i>List</a></span>
-      </div>
+      
     </div>
-
+    
     <!-- CONTENT -->
     <div class="content-sections">
 

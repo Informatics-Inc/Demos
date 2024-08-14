@@ -47,16 +47,17 @@
           </a>
 
           <ul id="user-menu-list">
-            <li><a href="account-info.html">My Account</a></li>
-            <li><a href="account-reservations.html">Reservations</a></li>
-            <li><a href="account-events.html">Event Registrations</a></li>
-            <li><a href="account-history.html">Order History</a></li>
-            <li><a href="login.html">Log out</a></li>
+            <li><a href="#.html">My Account</a></li>
+            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
+            <li><a href="#.html">Reservations</a></li>
+            <li><a href="#.html">Event Registrations</a></li>
+            <li><a href="#.html">Order History</a></li>
+            <li><a href="#.html">Log out</a></li>
           </ul>
         </div>
         <ul class="menu-main">
           <li><a href="book-now.html">Book Now</a></li>
-          <li class="active"><a href="counties.html">Counties</a></li>
+          <li><a href="counties.html">Counties</a></li>
           <li><a href="events.html">Events</a></li>
         </ul>
       </div>
@@ -64,199 +65,226 @@
   </nav>
 
 <main id="main-content">
+  
+  <!-- <section>
+    <div class="container">
+      <header class="detail-header no-img">
+        <div class="hdr-row">
+          <div class="col">
+            <h1>Iowa County Parks News</h1>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section> -->
+
   <header class="page-header fadeinup delay-1">
     <figure>
-      <img src="img/hero-1.jpg" />
+      <img src="img/hero-4.jpg" />
     </figure>
     <div class="text">
-      <ol class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Counties</a></li>
-        <li>Polk County</li>
-      </ol>
-      <h1>Polk</h1>
-      <p>Book cabins, shelters, and lodges in Polk County, Iowa.</p>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>News</li>
+        </ol>
+        <h1>County News</h1>
+      </div>
     </div>
   </header>
-  
-  <!-- SEC NAV -->
-  <div id="sec-nav" class="fadeinup delay-2">
-    <div class="container">
-      <div class="county-hdr">
-
-        <div class="profile-info">
-          <figure>
-            <img src="img/polk-profile.jpg" />
-          </figure>
-          <div class="text">
-            <p class="title">Polk County Conservation</p>
-            <p><a href="https://www.polkcountyiowa.gov/conservation/" target="_blank"><i class="fa fa-laptop"></i> Website</a> | <a href="mailto:contact@email.com"><i class="fa fa-mobile"></i> Contact Us</a></p>
+  <div class="container grid grid-gap-md">
+    <div class="search fadeinup delay-2">
+      <div class="row">
+        <div class="col">
+          <div class="input-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Keyword Search">
           </div>
         </div>
-
-        <ul class="sec-nav" data-spy="affix" data-offset-top="205">
-          <li class="active"><a href="county.html">Discover</a></li>
-          <li><a href="book-now-filtered.html">Facilities</a></li>
-          <li><a href="parks.html">Parks</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="#.html" id="more-info-toggle">More Info <i class="fa fa-caret-down"></i></a>
-            <ul id="more-info-list">
-              <li><a href="county-info.html">Announcements and newsletter</a></li>
-              <li><a href="county-info.html">Equestrian Center</a></li>
-              <li><a href="county-info.html">Golf</a></li>
-              <li><a href="county-info.html">Cancelations and Reservation Modifcations</a></li>
-              <li><a href="news.html">News</a></li>
-              <li><a href="county-info.html">Donations</a></li>
-            </ul>
-          </li>
-        </ul>
+        <div class="col">
+          <div class="input-wrap">
+            <i class="fa-solid fa-list"></i>
+            <select class="form-select">
+              <option>Category</option>
+              <option>Programs</option>
+              <option>Special Events</option>
+              <option>Trips</option>
+              <option>Youth Camps</option>
+            </select>
+          </div>
         </div>
-    </div>
+        <div class="col">
+          <div class="input-wrap">
+            <i class="fa-solid fa-list"></i>
+            <select class="form-select">
+              <option>County</option>
+              <option>Adair</option>
+              <option>Allamoose</option>
+              <option>Altoona</option>
+              <option>... the rest ...</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <a href="book-now.html" class="btn-theme"><i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
     </div>
 
-  <!-- CONTENT -->
+  </div>
+
+
   <div class="content-sections">
-    <section>
+    <!-- RESULTS -->
+    <section class="animate-in delay-2">
       <div class="container">
-        <div class="grid grid-2">
-          <div class="col">
-            <div id="image-gallery">
-              <img id="current-image" src="img/gallery1.jpg" alt="Image 1">
-              <div id="image-thumbs"></div>
+        <div class="full-hdr">
+          <h3>Results</h3>
+          <hr />
+          <a href="book-now.html">Reset Search</a>
+        </div>
+        <div class="results-info">
+          <ul>
+            <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Keyword Item</a></li>
+            <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Category</a></li>
+          </ul>
+          <p>Showing 25 of 375 Results</p>
+        </div>
+      </div>  
+    </section>
+
+  <section>
+    <div class="container">
+      <div class="grid grid-blog">
+        <div class="col">
+          <div class="blog-entry-list">
+            <div class="blog-list-item">
+              <figure>
+                <img src="img/feature-1.jpg" alt="Filler Image">
+              </figure>
+              <div class="text">
+                <p class="preheader">May 25, 2022 | <a href="#.html">Category Title</a></p>
+                <h2><a href="news-detail.html">Lorem ipsum quis percipit at, in eum brute justo invidunt.</a></h2>
+                <p>Lorem ipsum dolor sit amet. Qui sint voluptate ut consequuntur repellat a quos nobis. Sit expedita officiis in voluptas. Lorem ipsum dolor sit amet.</p>
+                <a href="news-detail.html" class="btn-theme">Read Post</a>
+              </div>
+            </div>
+            <div class="blog-list-item">
+              <figure>
+                <img src="img/event-1.jpg" alt="Filler Image">
+              </figure>
+              <div class="text">
+                <p class="preheader">May 25, 2022 | <a href="#.html">Category Title</a></p>
+                <h2><a href="news-detail.html">Lorem ipsum quis percipit at, in eum brute justo invidunt.</a></h2>
+                <p>Lorem ipsum dolor sit amet. Qui sint voluptate ut consequuntur repellat a quos nobis. Sit expedita officiis in voluptas. Lorem ipsum dolor sit amet.</p>
+                <a href="news-detail.html" class="btn-theme">Read Post</a>
+              </div>
+            </div>
+            <div class="blog-list-item">
+              <figure>
+                <img src="img/event-2.jpg" alt="Filler Image">
+              </figure>
+              <div class="text">
+                <p class="preheader">May 25, 2022 | <a href="#.html">Category Title</a></p>
+                <h2><a href="news-detail.html">Lorem ipsum quis percipit at, in eum brute justo invidunt.</a></h2>
+                <p>Lorem ipsum dolor sit amet. Qui sint voluptate ut consequuntur repellat a quos nobis. Sit expedita officiis in voluptas. Lorem ipsum dolor sit amet.</p>
+                <a href="news-detail.html" class="btn-theme">Read Post</a>
+              </div>
+            </div>
+            <div class="blog-list-item">
+              <figure>
+                <img src="img/event-3.jpg" alt="Filler Image">
+              </figure>
+              <div class="text">
+                <p class="preheader">May 25, 2022 | <a href="#.html">Category Title</a></p>
+                <h2><a href="news-detail.html">Lorem ipsum quis percipit at, in eum brute justo invidunt.</a></h2>
+                <p>Lorem ipsum dolor sit amet. Qui sint voluptate ut consequuntur repellat a quos nobis. Sit expedita officiis in voluptas. Lorem ipsum dolor sit amet.</p>
+                <a href="news-detail.html" class="btn-theme">Read Post</a>
+              </div>
+            </div>
+            <div class="blog-list-item">
+              <figure>
+                <img src="img/event-5.jpg" alt="Filler Image">
+              </figure>
+              <div class="text">
+                <p class="preheader">May 25, 2022 | <a href="#.html">Category Title</a></p>
+                <h2><a href="news-detail.html">Lorem ipsum quis percipit at, in eum brute justo invidunt.</a></h2>
+                <p>Lorem ipsum dolor sit amet. Qui sint voluptate ut consequuntur repellat a quos nobis. Sit expedita officiis in voluptas. Lorem ipsum dolor sit amet.</p>
+                <a href="news-detail.html" class="btn-theme">Read Post</a>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <p class="preheader">Welcome to Polk County!</p>
-            <h2>Explore the Great Outdoors with Polk County Conservation!</h2>
-            <p>Dubuque County Conservation is located in far east-central Iowa along the Mississippi River and manages 20 individual parks, preserves and recreation areas encompassing some 2,673 acres. Home to the Swiss Valley Nature Center and Whitewater Canyon Wildlife Area, the Dubuque CCB provides many diverse opportunities for all interests. For additional information about the programs, areas and activities offered by the Dubuque CCB. </p>
+          <div class="pagination animate-in delay-2">
+            <a href="#.html" class="active btn-theme btn-alt">1</a>
+            <a href="#.html" class="btn-theme btn-alt">2</a>
+            <a href="#.html" class="btn-theme btn-alt">3</a>
+            <a href="#.html" class="btn-theme btn-alt">4</a>
           </div>
         </div>
+        <aside>
+          <h4>Categories</h4>
+          <ul class="category-list">
+            <li><a href="#.html">Category Title Goes Here</a></li>
+            <li><a href="#.html">Category Title Goes Here</a></li>
+            <li><a href="#.html">Category Title Goes Here</a></li>
+            <li><a href="#.html">Category Title Goes Here</a></li>
+            <li><a href="#.html">Category Title Goes Here</a></li>
+            <li><a href="#.html">Category Title Goes Here</a></li>
+            <li><a href="#.html">Category Title Goes Here</a></li>
+            <li><a href="#.html">Category Title Goes Here</a></li>
+          </ul>
+       
+          <h4>Tags</h4>
+          <ul class="tag-list">
+            <li><a href="#.html">Tag</a></li>
+            <li><a href="#.html">Tag Item</a></li>
+            <li><a href="#.html">Tag</a></li>
+            <li><a href="#.html">Tag Item</a></li>
+            <li><a href="#.html">Tag</a></li>
+            <li><a href="#.html">Tag Item</a></li>
+            <li><a href="#.html">Tag</a></li>
+            <li><a href="#.html">Tag Item</a></li>
+            <li><a href="#.html">Tag</a></li>
+            <li><a href="#.html">Tag Item</a></li>
+            <li><a href="#.html">Tag</a></li>
+            <li><a href="#.html">Tag Item</a></li>
+          </ul>
+        
+          <h4>Never miss a post!</h4>
+          <p>Sign up to receive our newsletters and updates as you pursue wellness.</p>
+          <a href="#.html" class="btn-theme">Sign Up</a>
+       
+        </aside>
       </div>
-    </section>
-  <section class="animate-in delay-1">
+    </div>
+  </section>
+ 
+  <!-- CTA -->
+  <section>
     <div class="container">
-      <div class="full-hdr">
-        <h3>Popular Parks</h3>
-        <hr />
-        <a href="parks.html">View All Parks</a>
-      </div>
-      <div class="scroll-item-wrapper">
-        <div class="swiper scroll-list">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-8.jpg" />
-                </figure>
-                <h3>Beaver Creek Greenbelt</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-9.jpg" />
-                </figure>
-                <h3>Carney Marsh</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-10.jpg" />
-                </figure>
-                <h3>Fort Des Moines Park</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-11.jpg" />
-                </figure>
-                <h3>Jester Park</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-12.jpg" />
-                </figure>
-                <h3>High Trestle Park</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-13.jpg" />
-                </figure>
-                <h3>Krogan Overlook Park</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="facility.html">
-                <figure>
-                  <img src="img/feature-tall-last.jpg" />
-                </figure>
-                <h3>Still Can't Find What You Want?</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
-                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
+      <div class="content-cta animate-in delay-3">
+        <figure><img src="img/hero-3.jpg"></figure>
+        <div class="text">
+          <h2>Search Near You!</h2>
+          <p>Turn on location services and get results within miles of your current location!</p>
+          <a href="book-now.html" class="btn-theme">Turn On Location Services</a>
         </div>
       </div>
     </div>
   </section>
-
   <section class="animate-in delay-1">
     <div class="container">
       <div class="full-hdr">
-        <h3>Nearby Amenities</h3>
+        <h3>Popular Searches</h3>
         <hr />
-        <!-- <a href="listing.html">View All Amenities</a> -->
+        <a href="listing.html">Explore Iowa</a>
       </div>
 
       <div class="scroll-item-wrapper">
         <div class="swiper scroll-list">
           <div class="swiper-wrapper">
             <div class="swiper-slide scroll-item">
-              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+              <a href="#.html">
                 <figure>
                   <img src="img/feature-tall-14.jpg" />
                 </figure>
@@ -264,12 +292,13 @@
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+              <a href="#.html">
                 <figure>
                   <img src="img/feature-tall-15.jpg" />
                 </figure>
@@ -277,12 +306,13 @@
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+              <a href="#.html">
                 <figure>
                   <img src="img/feature-tall-16.jpg" />
                 </figure>
@@ -290,12 +320,13 @@
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+              <a href="#.html">
                 <figure>
                   <img src="img/feature-tall-17.jpg" />
                 </figure>
@@ -303,12 +334,13 @@
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+              <a href="#.html">
                 <figure>
                   <img src="img/feature-tall-18.jpg" />
                 </figure>
@@ -316,12 +348,13 @@
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-location-dot"></i> Get Directions</a></li>
+                  <li><a href="#.html"><i class="fa-solid fa-person-hiking"></i> Find Trails</a></li>
                 </ul>
               </div>
             </div>
             <div class="swiper-slide scroll-item">
-              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+              <a href="#.html">
                 <figure>
                   <img src="img/feature-tall-last.jpg" />
                 </figure>
@@ -329,8 +362,8 @@
               </a>
               <div class="text">
                 <ul>
-                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
-                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
+                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Advanced Search</a></li>
+                  <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
                 </ul>
               </div>
             </div>
@@ -341,24 +374,13 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
-      <div class="content-cta animate-in delay-3">
-        <figure><img src="img/hero-2.jpg"></figure>
-        <div class="text">
-          <h2>Leading You Outdoors</h2>
-          <p>Polk County Conservation - Family of parks and trails. Learn more at the link below!</p>
-          <a href="https://www.polkcountyiowa.gov/conservation/" class="btn-theme">Polk County Conservation </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  </div>
-  </section>
+</div>
+
 </main>
   
 <footer class="footer">
   <div class="container">
+    
       <div class="row">
         <div class="ftr-cols">
           <div class="col">
@@ -434,7 +456,6 @@
         <li><a href="county.html">Fremont</a></li>
         <li><a href="county.html">Greene</a></li>
         <li><a href="county.html">Grundy</a></li>
-        <li><a href="county.html">Guthrie</a></li>
         <li><a href="county.html">Hamilton</a></li>
         <li><a href="county.html">Hancock</a></li>
         <li><a href="county.html">Hardin</a></li>
@@ -513,24 +534,19 @@
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+  <script src="js/datepicker.js"></script>
+  <script src="js/glightbox.js"></script>
   <script src="js/scripts.js"></script>
   <script>
-    // -- SIMPLE GALLERY -- //
-    var imageThumbs = document.getElementById("image-thumbs");
-    var currentImage = document.getElementById("current-image");
+    
+    // Light Box //
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true
+    });
 
-    for (var i = 1; i <= 5; i++) {
-      var thumb = document.createElement("img");
-      thumb.src = "img/gallery" + i + ".jpg";
-      thumb.alt = "Image " + i;
-      thumb.classList.add("thumb");
-      imageThumbs.appendChild(thumb);
-      thumb.addEventListener(
-        "click", function() {
-          currentImage.src = this.src;
-        }
-      );
-    }
   </script>
   </body>
 </html>

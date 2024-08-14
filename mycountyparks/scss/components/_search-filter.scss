@@ -1,6 +1,7 @@
-#filters {position: fixed; inset: 0; background: var(--light); padding: 2rem 2rem 8rem 2rem; z-index: 5; opacity: 0; visibility: hidden; box-shadow: 0 0 25px rgba(0,0,0,.25); transition: var(--transition); overflow-y: scroll;}
+#filters {position: fixed; inset: 0; background: var(--light); padding: 2rem 2rem 8rem 2rem; z-index: 25; opacity: 0; visibility: hidden; box-shadow: 0 0 25px rgba(0,0,0,.25); transition: var(--transition); overflow-y: scroll;}
 #filters form {display: grid; gap: 10px;}
 #filters.open {visibility: visible; opacity: 1;}
+body.no-scroll {overflow: hidden;}
 
 .filter-mobile-header {border-bottom: 1px solid #ccc; padding: 0 0 1rem 0; margin: 0 0 1rem 0; display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 1.25rem;}
 .filter-mobile-header button {width: 50px; height: 50px; background: none; border: 1px solid #ccc; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0,0,0,.1); background: #fff; padding: 18px}
@@ -21,9 +22,9 @@
 .checkbox-group label:has(input[type="checkbox"]:checked) {background: var(--primary-light);}
 
 .form-actions {position: fixed; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-between; padding: 2rem; background: #fff; border-top: 1px solid #ccc;}
-.btn-simple {background: rgba(0,0,0,.1); border: none; padding: 10px 15px; border-radius: 4px;}
+.btn-simple {background: rgba(0,0,0,.1); border: none; padding: 10px 15px; border-radius: 4px; text-decoration: none; text-align: center; font-weight: 400;}
 
-#filter {background: var(--secondary); padding: 15px; border-radius: 15px;gap: 15px; margin: -50px 15px 0 15px;position: relative;z-index: 10; box-shadow: 5px 15px 25px rgba(0, 0, 0, .2);}
+#filter {background: var(--secondary); padding: 15px; border-radius: 15px;gap: 15px; margin: -50px 15px 0 15px;position: relative;z-index: 50; box-shadow: 5px 15px 25px rgba(0, 0, 0, .2);}
 .filter-toggle {border: none; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 1rem;}
 
 .results {text-align: center; position: relative; z-index: 15;}
@@ -42,6 +43,9 @@
 #filter .results ul {justify-content: flex-start;}
 #filter .results a {background: rgba(0,0,0,.1);}
 #filter .results span {font-size: .75rem; justify-content: flex-start;}
+#filter .alpha-list {gap: 5px;}
+#filter .alpha-list a {background: rgba(0, 0, 0, .05); color: var(--text-color);}
+#filter + .filter-icons {margin: 1.5rem 0;}
 
 // Collapse Expand //
 .collapsed {
@@ -55,12 +59,20 @@
 .show {
     height: auto
 }
+/* Date Picker Overrides */
+.daterangepicker td.active, .daterangepicker td.active:hover {background-color: var(--primary-light) !important; color: #222 !important;}
+.daterangepicker td.in-range {background-color: var(--light) !important;}
+.daterangepicker .btn-simple, .daterangepicker .btn-theme {font-size: .85rem;}
+.daterangepicker .btn-theme {margin: 0 0 0 5px; background: var(--primary-light)}
+.daterangepicker .btn-theme:after {display: none;}
+.daterangepicker .btn-simple:hover {background: none;}
+.daterangepicker .btn-theme:hover {background: var(--primary);}
 
 /* TABLET */
 @media (min-width: 768px) {
 #filters {padding: 4rem 4rem 8rem 4rem;}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {height: auto; width: auto; padding: 8px 10px;}
 }
-
 
 /* DESKTOP */
 @media (min-width: 992px) {
@@ -90,6 +102,13 @@
 .grid-odd-cols .form-group:nth-of-type(5) {grid-column: span 2;}
 .grid-odd-cols .form-actions {grid-row: 1; grid-column: 5 / span 2;}
 
+.grid-counties .alpha-list {grid-column: span 6; margin: 0;}
+
+.grid-events {grid-template-columns: 1.15fr .85fr .85fr 1.25fr 160px;}
+
+#filter .alpha-list {gap: 0;}
+#filter .alpha-list a {color: #fff; background: none;}
+#filter .alpha-list a:hover {background: rgba(0,0,0,.25);}
 
 .form-actions {display: flex; gap: 10px;}
 .form-actions > * {flex: 1;}
@@ -101,10 +120,11 @@
 .results span {margin: 0; min-width: 285px; justify-content: flex-end;}
 
 .form-group {position: relative;}
-.form-group .form-group-options {height: auto; max-height: 250px; position: absolute; top: 100%; left: calc(50% - 150px); background: #fff; width: 300px; overflow-y: scroll; border-radius: 5px; opacity: 0; visibility: hidden; transition: var(--transition); box-shadow: 0 0 15px rgba(0, 0, 0, .2);}
+.form-group .form-group-options {height: auto; max-height: 250px; position: absolute; top: 100%; left: calc(50% - 150px); background: #fff; width: 300px; overflow-y: scroll; border-radius: 5px; opacity: 0; visibility: hidden; transition: var(--transition); box-shadow: 0 0 15px rgba(0, 0, 0, .2); z-index: 25;}
 .form-group-options .checkbox-group {grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); padding: 1rem;}
 .checkbox-group.grid-col-sm {grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );}
 .form-group-options .checkbox-group label {font-size: .75rem; background: var(--light);}
+.form-group-options .checkbox-group label:hover {cursor: pointer;}
 .form-group:hover .form-group-options {opacity: 1; visibility: visible;}
 .form-group:hover .form-group-label {background: var(--light);}
 }
@@ -116,7 +136,7 @@
     .grid-even-cols .form-actions {grid-row: 1; grid-column: 8 / span 1;}
 }
 
-/* Date Picker Overrides */
+
 // #filters {
 // .daterangepicker {width: 100%}
 // .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {padding: 5px; font-size: .85rem;}

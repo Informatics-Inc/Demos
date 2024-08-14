@@ -29,7 +29,7 @@
 
 .sec-nav ul.open, .sec-nav li:hover > ul {opacity: 1; top: 100%; visibility: visible;}
 // .sec-nav ul {opacity: 1; top: 100%; visibility: visible;}
-
+#sec-nav .results ul {display: none;}
 /* TABLET */
 @media (min-width: 768px) {
 .sec-nav {gap: 25px;}  
@@ -52,6 +52,9 @@
 .profile-info .text {padding: 0;}
 #sec-nav.sticky .profile-info figure {box-shadow: none;}
 #sec-nav.sticky .county-hdr {border: none;}
+
+#sec-nav .results ul {display: inline;}
+#sec-nav .results {border: 0; margin: .65rem 0 -50px 0;}
 }
 
 @media (min-width: 1200px) {

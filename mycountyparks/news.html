@@ -65,18 +65,6 @@
   </nav>
 
 <main id="main-content">
-  
-  <!-- <section>
-    <div class="container">
-      <header class="detail-header no-img">
-        <div class="hdr-row">
-          <div class="col">
-            <h1>Iowa County Parks News</h1>
-          </div>
-        </div>
-      </header>
-    </div>
-  </section> -->
 
   <header class="page-header fadeinup delay-1">
     <figure>
@@ -92,66 +80,112 @@
       </div>
     </div>
   </header>
-  <div class="container grid grid-gap-md">
-    <div class="search fadeinup delay-2">
-      <div class="row">
-        <div class="col">
-          <div class="input-wrap">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" placeholder="Keyword Search">
+  <div class="container">
+    <div id="filter">
+      <button type="button" class="filter-toggle">
+        Search County News... <i class="fa-solid fa-sliders"></i>
+      </button>
+      <div id="filters" class="grid-odd-cols">
+        <div class="filter-mobile-header">
+          Search County News... <button class="filter-toggle"><i class="fa fa-close"></i></button>
+        </div>
+        <div class="results">
+          <ul>
+            <li>No filters selected</li>
+          </ul>
+          <span>Showing 175 results</span>
+        </div>
+        <form>
+          <div class="form-group">
+            <div class="icon-input">
+              <i class="fa fa-location-dot" aria-true="true"></i>
+              <label for="searchInput" class="sr-only">Keyword Search</label>
+              <input id="searchInput" type="search" placeholder="Keyword Search">
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="input-wrap">
-            <i class="fa-solid fa-list"></i>
-            <select class="form-select">
-              <option>Category</option>
-              <option>Programs</option>
-              <option>Special Events</option>
-              <option>Trips</option>
-              <option>Youth Camps</option>
-            </select>
+          <div class="form-group">
+            <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-county" aria-expanded="false" aria-controls="#filter-county"><i class="fa fa-map" aria-true="true"></i> County</span>
+            <div class="form-group-options collapsed collapse" id="filter-county">
+              <div class="checkbox-group grid-col-sm">
+                <label for="ada"><input type="checkbox" id="ada" name="counties" value="ada">Ada</label>
+                <label for="adams"><input type="checkbox" id="adams" name="counties" value="adams">Adams</label>
+                <label for="allamakee"><input type="checkbox" id="allamakee" name="counties" value="allamakee">Allamakee</label>
+                <label for="appanoose"><input type="checkbox" id="appanoose" name="counties" value="appanoose">Appanoose</label>
+                <label for="audubon"><input type="checkbox" id="audubon" name="counties" value="audubon">Audubon</label>
+                <label for="benton"><input type="checkbox" id="benton" name="counties" value="benton">Benton</label>
+                <label for="black-hawk"><input type="checkbox" id="black-hawk" name="counties" value="black-hawk">Black Hawk</label>
+                <label for="boone"><input type="checkbox" id="boone" name="counties" value="boone">Boone</label>
+                <label for="bremer"><input type="checkbox" id="bremer" name="counties" value="bremer">Bremer</label>
+                <label for="buchanan"><input type="checkbox" id="buchanan" name="counties" value="buchanan">Buchanan</label>
+                <label for="buena-vista"><input type="checkbox" id="buena-vista" name="counties" value="buena-vista">Buena Vista</label>
+                <label for="butler"><input type="checkbox" id="butler" name="counties" value="butler">Butler</label>
+                <label for="calhoun"><input type="checkbox" id="calhoun" name="counties" value="calhoun">Calhoun</label>
+                <label for="carroll"><input type="checkbox" id="carroll" name="counties" value="carroll">Carroll</label>
+                <label for="cass"><input type="checkbox" id="cass" name="counties" value="cass">Cass</label>
+                <label for="cedar"><input type="checkbox" id="cedar" name="counties" value="cedar">Cedar</label>
+                <label for="cerro-gordo"><input type="checkbox" id="cerro-gordo" name="counties" value="cerro-gordo">Cerro Gordo</label>
+                <label for="cherokee"><input type="checkbox" id="cherokee" name="counties" value="cherokee">Cherokee</label>
+                <label for="chickasaw"><input type="checkbox" id="chickasaw" name="counties" value="chickasaw">Chickasaw</label>
+                <label for="clarke"><input type="checkbox" id="clarke" name="counties" value="clarke">Clarke</label>
+                <label for="clay"><input type="checkbox" id="clay" name="counties" value="clay">Clay</label>
+                <label for="clayton"><input type="checkbox" id="clayton" name="counties" value="clayton">Clayton</label>
+                <label for="clinton"><input type="checkbox" id="clinton" name="counties" value="clinton">Clinton</label>
+                <label for="crawford"><input type="checkbox" id="crawford" name="counties" value="crawford">Crawford</label>
+                <label for="dallas"><input type="checkbox" id="dallas" name="counties" value="dallas">Dallas</label>
+                <label for="davis"><input type="checkbox" id="davis" name="counties" value="davis">Davis</label>
+                <label for="decatur"><input type="checkbox" id="decatur" name="counties" value="decatur">Decatur</label>
+                <label for="delaware"><input type="checkbox" id="delaware" name="counties" value="delaware">Delaware</label>
+                <label for="des-moines"><input type="checkbox" id="des-moines" name="counties" value="des-moines">Des Moines</label>
+                <label for="dickinson"><input type="checkbox" id="dickinson" name="counties" value="dickinson">Dickinson</label>
+                <label for="dubuque"><input type="checkbox" id="dubuque" name="counties" value="dubuque">Dubuque</label>
+                <label for="emmet"><input type="checkbox" id="emmet" name="counties" value="emmet">Emmet</label>
+                <label for="fayette"><input type="checkbox" id="fayette" name="counties" value="fayette">Fayette</label>
+                <label for="floyd"><input type="checkbox" id="floyd" name="counties" value="floyd">Floyd</label>
+                <label for="franklin"><input type="checkbox" id="franklin" name="counties" value="franklin">Franklin</label>
+                <label for="fremont"><input type="checkbox" id="fremont" name="counties" value="fremont">Fremont</label>
+                <label for="greene"><input type="checkbox" id="greene" name="counties" value="greene">Greene</label>
+                <label for="grundy"><input type="checkbox" id="grundy" name="counties" value="grundy">Grundy</label>
+                <label for="guthrie"><input type="checkbox" id="guthrie" name="counties" value="guthrie">Guthrie</label>
+                <label for="hamilton"><input type="checkbox" id="hamilton" name="counties" value="hamilton">Hamilton</label>
+                <label for="hancock"><input type="checkbox" id="hancock" name="counties" value="hancock">Hancock</label>
+                <label for="hardin"><input type="checkbox" id="hardin" name="counties" value="hardin">Hardin</label>
+                <label for="harrison"><input type="checkbox" id="harrison" name="counties" value="harrison">Harrison</label>
+                <label for="henry"><input type="checkbox" id="henry" name="counties" value="henry">Henry</label>
+                <label for="howard"><input type="checkbox" id="howard" name="counties" value="howard">Howard</label>
+                <label for="humboldt"><input type="checkbox" id="humboldt" name="counties" value="humboldt">Humboldt</label>
+                <label for="ida"><input type="checkbox" id="ida" name="counties" value="ida">Ida</label>
+                <label for="iowa"><input type="checkbox" id="iowa" name="counties" value="iowa">Iowa</label>
+                <label for="jackson"><input type="checkbox" id="jackson" name="counties" value="jackson">Jackson</label>
+                <label for="jasper"><input type="checkbox" id="jasper" name="counties" value="jasper">Jasper</label>
+                <label for="jefferson"><input type="checkbox" id="jefferson" name="counties" value="jefferson">Jefferson</label>
+                <label for="johnson"><input type="checkbox" id="johnson" name="counties" value="johnson">Johnson</label>
+                <label for="jones"><input type="checkbox" id="jones" name="counties" value="jones">Jones</label>
+                <label for="keokuk"><input type="checkbox" id="keokuk" name="counties" value="keokuk">Keokuk</label>
+                <label for="kossuth"><input type="checkbox" id="kossuth" name="counties" value="kossuth">Kossuth</label>
+                <label for="lee"><input type="checkbox" id="lee" name="counties" value="lee">Lee</label>
+                <label for="linn"><input type="checkbox" id="linn" name="counties" value="linn">Linn</label>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="input-wrap">
-            <i class="fa-solid fa-list"></i>
-            <select class="form-select">
-              <option>County</option>
-              <option>Adair</option>
-              <option>Allamoose</option>
-              <option>Altoona</option>
-              <option>... the rest ...</option>
-            </select>
+
+          <div class="form-actions">
+            <button class="btn-simple">Clear</button>
+            <button class="btn-theme">Search</button>
           </div>
-        </div>
-        <div class="col">
-          <a href="book-now.html" class="btn-theme"><i class="fa fa-arrow-right"></i></a>
-        </div>
+        </form>
       </div>
     </div>
 
+    <div class="results">
+      <ul>
+        <li class="filters-title">Filters:</li>
+        <li>No Filters Selected</li>
+      </ul>
+      <span>Showing 175 results</span>
+    </div>
   </div>
 
-
   <div class="content-sections">
-    <!-- RESULTS -->
-    <section class="animate-in delay-2">
-      <div class="container">
-        <div class="full-hdr">
-          <h3>Results</h3>
-          <hr />
-          <a href="book-now.html">Reset Search</a>
-        </div>
-        <div class="results-info">
-          <ul>
-            <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Keyword Item</a></li>
-            <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Category</a></li>
-          </ul>
-          <p>Showing 25 of 375 Results</p>
-        </div>
-      </div>  
-    </section>
 
   <section>
     <div class="container">
@@ -532,7 +566,7 @@
   
   <!-- FOOTER SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>\
   <script src="js/swiper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
   <script src="js/datepicker.js"></script>

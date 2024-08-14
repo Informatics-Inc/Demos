@@ -1,0 +1,22 @@
+
+.item-details {display: flex; justify-content: space-between; align-items: center;}
+.item-details p {font-size: .825rem; margin: 0;}
+.item-details p strong {font-size: 1.15rem;}
+.item-details a {font-weight: 400;}
+.search.sidebar-search input {background: var(--light);}
+.search.sidebar-search hr {margin: .5rem 0;}
+.search.sidebar-search .btn-text {text-align: center; font-size: .85rem; font-weight: 400;}
+.search.sidebar-search .btn-text i {margin-right: 5px;}
+
+/* TABLET */
+@media (min-width: 768px) {
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

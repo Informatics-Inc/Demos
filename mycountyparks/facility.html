@@ -142,17 +142,13 @@
               <p><strong>$135</strong> /night</p>
               <p><a href="county.html">Adams County, IA</a></p>
             </div>
-            <div class="col check-in-out">
-              <div class="input-wrap">
-                <i class="fa-regular fa-calendar"></i>
-                <input id="datepicker1" placeholder="Check In" />
-              </div>
-              <div class="input-wrap">
-                <i class="fa-regular fa-calendar"></i>
-                <input id="datepicker2" placeholder="Check Out" />
-              </div>
+            <div class="icon-input">
+              <i class="fa fa-calendar" aria-true="true"></i>
+              <label for="daterange" class="sr-only">Date Range</label>
+              <input id="daterange" type="text" name="daterange" value="" placeholder="Please select a date" />
             </div>
-            <a href="cart.html" class="btn-theme">Book Now <i class="fa fa-arrow-right"></i></a>
+            <a href="cart.html" class="btn-theme">Add to Cart <i class="fa fa-arrow-right"></i></a>
+            <a href="cart.html" class="btn-text"> <i class="fa-regular fa-calendar-plus"></i>Add Another Date</a>
           </div>
           <div class="additional-links">
             <p><a href="#.html">View Special Regulations</a></p>
@@ -198,7 +194,123 @@
               <li class="cal-legend-selection">Your selection</li>
             </ul>
           </div>
-          <img src="img/availability.png" style="mix-blend-mode: multiply;" />
+          <div class="icon-input">
+            <i class="fa fa-calendar" aria-true="true"></i>
+            <label for="daterange" class="sr-only">Date Range</label>
+            <input id="daterange" type="text" name="daterange" value="" placeholder="Please select a date" />
+          </div>
+          <p>Ideally this shows the entire two month calendar with dates available, not available, and what must be purchased together. We will need your team to craft this functionality. I can return and generate CSS if needed.</p>
+          <div id="calendar">
+            
+          </div>
+          <!-- 
+          <div id="calendar">
+            <table>
+              <tr>
+                <td class="rcCalendar rcFirstCol"><table id="calEvent1_Top_4" class="rcMainTable" cellspacing="0" border="0" style="width:100%;">
+              <caption>
+                <span style="display:none;">May</span>
+              </caption>
+              <thead>
+                <tr>
+                  <td id="calEvent1_Top_4_hd" class="rcTitle" colspan="7" style="text-align:notset;">May</td>
+                </tr><tr class="rcWeek">
+                  <th id="calEvent1_Top_4_cs_0" title="Sunday" scope="col">S</th><th id="calEvent1_Top_4_cs_1" title="Monday" scope="col">M</th><th id="calEvent1_Top_4_cs_2" title="Tuesday" scope="col">T</th><th id="calEvent1_Top_4_cs_3" title="Wednesday" scope="col">W</th><th id="calEvent1_Top_4_cs_4" title="Thursday" scope="col">T</th><th id="calEvent1_Top_4_cs_5" title="Friday" scope="col">F</th><th id="calEvent1_Top_4_cs_6" title="Saturday" scope="col">S</th>
+                </tr>
+              </thead><tbody>
+                <tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="nonselectabledates nonselectabledates" title="Wednesday, May 01, 2024"><a href="#">1</a></td><td class="nonselectabledates nonselectabledates" title="Thursday, May 02, 2024"><a href="#">2</a></td><td class="ReservedDay ReservedDay" title="Friday, May 03, 2024"><a href="#">3</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, May 04, 2024" style="font-weight:bold;"><a href="#">4</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, May 05, 2024" style="font-weight:bold;"><a href="#">5</a></td><td class="nonselectabledates nonselectabledates" title="Monday, May 06, 2024"><a href="#">6</a></td><td class="nonselectabledates nonselectabledates" title="Tuesday, May 07, 2024"><a href="#">7</a></td><td class="nonselectabledates nonselectabledates" title="Wednesday, May 08, 2024"><a href="#">8</a></td><td class="nonselectabledates nonselectabledates" title="Thursday, May 09, 2024"><a href="#">9</a></td><td class="ReservedDay ReservedDay" title="Friday, May 10, 2024"><a href="#">10</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, May 11, 2024" style="font-weight:bold;"><a href="#">11</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, May 12, 2024" style="font-weight:bold;"><a href="#">12</a></td><td class="nonselectabledates nonselectabledates" title="Monday, May 13, 2024"><a href="#">13</a></td><td class="nonselectabledates nonselectabledates" title="Tuesday, May 14, 2024"><a href="#">14</a></td><td class="nonselectabledates nonselectabledates" title="Wednesday, May 15, 2024"><a href="#">15</a></td><td class="ReservedDay ReservedDay" title="Thursday, May 16, 2024"><a href="#">16</a></td><td class="ReservedDay ReservedDay" title="Friday, May 17, 2024"><a href="#">17</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, May 18, 2024" style="font-weight:bold;"><a href="#">18</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, May 19, 2024" style="font-weight:bold;"><a href="#">19</a></td><td class="nonselectabledates nonselectabledates" title="Monday, May 20, 2024"><a href="#">20</a></td><td class="nonselectabledates nonselectabledates" title="Tuesday, May 21, 2024"><a href="#">21</a></td><td class="nonselectabledates nonselectabledates" title="Wednesday, May 22, 2024"><a href="#">22</a></td><td class="nonselectabledates nonselectabledates" title="Thursday, May 23, 2024"><a href="#">23</a></td><td class="ReservedDay ReservedDay" title="Friday, May 24, 2024"><a href="#">24</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, May 25, 2024" style="font-weight:bold;"><a href="#">25</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, May 26, 2024" style="font-weight:bold;"><a href="#">26</a></td><td class="nonselectabledates nonselectabledates" title="Monday, May 27, 2024"><a href="#">27</a></td><td class="ReservedDay ReservedDay" title="Tuesday, May 28, 2024"><a href="#">28</a></td><td class="ReservedDay ReservedDay" title="Wednesday, May 29, 2024"><a href="#">29</a></td><td class="ReservedDay ReservedDay" title="Thursday, May 30, 2024"><a href="#">30</a></td><td class="ReservedDay ReservedDay" title="Friday, May 31, 2024"><a href="#">31</a></td><td class="rcOtherMonth">&nbsp;</td>
+                </tr><tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table></td><td class="rcCalendar"><table id="calEvent1_Top_5" class="rcMainTable" cellspacing="0" border="0" style="width:100%;">
+              <caption>
+                <span style="display:none;">June</span>
+              </caption><thead>
+                <tr>
+                  <td id="calEvent1_Top_5_hd" class="rcTitle" colspan="7" style="text-align:notset;">June</td>
+                </tr><tr class="rcWeek">
+                  <th id="calEvent1_Top_5_cs_0" title="Sunday" scope="col">S</th><th id="calEvent1_Top_5_cs_1" title="Monday" scope="col">M</th><th id="calEvent1_Top_5_cs_2" title="Tuesday" scope="col">T</th><th id="calEvent1_Top_5_cs_3" title="Wednesday" scope="col">W</th><th id="calEvent1_Top_5_cs_4" title="Thursday" scope="col">T</th><th id="calEvent1_Top_5_cs_5" title="Friday" scope="col">F</th><th id="calEvent1_Top_5_cs_6" title="Saturday" scope="col">S</th>
+                </tr>
+              </thead><tbody>
+                <tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 01, 2024" style="font-weight:bold;"><a href="#">1</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, June 02, 2024" style="font-weight:bold;"><a href="#">2</a></td><td class="ReservedDay ReservedDay" title="Monday, June 03, 2024"><a href="#">3</a></td><td class="ReservedDay ReservedDay" title="Tuesday, June 04, 2024"><a href="#">4</a></td><td class="ReservedDay ReservedDay" title="Wednesday, June 05, 2024"><a href="#">5</a></td><td class="ReservedDay ReservedDay" title="Thursday, June 06, 2024"><a href="#">6</a></td><td class="ReservedDay ReservedDay" title="Friday, June 07, 2024"><a href="#">7</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 08, 2024" style="font-weight:bold;"><a href="#">8</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, June 09, 2024" style="font-weight:bold;"><a href="#">9</a></td><td class="ReservedDay ReservedDay" title="Monday, June 10, 2024"><a href="#">10</a></td><td class="ReservedDay ReservedDay" title="Tuesday, June 11, 2024"><a href="#">11</a></td><td class="ReservedDay ReservedDay" title="Wednesday, June 12, 2024"><a href="#">12</a></td><td class="ReservedDay ReservedDay" title="Thursday, June 13, 2024"><a href="#">13</a></td><td class="ReservedDay ReservedDay" title="Friday, June 14, 2024"><a href="#">14</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 15, 2024" style="font-weight:bold;"><a href="#">15</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, June 16, 2024" style="font-weight:bold;"><a href="#">16</a></td><td class="ReservedDay ReservedDay" title="Monday, June 17, 2024"><a href="#">17</a></td><td class="ReservedDay ReservedDay" title="Tuesday, June 18, 2024"><a href="#">18</a></td><td class="ReservedDay ReservedDay" title="Wednesday, June 19, 2024"><a href="#">19</a></td><td class="ReservedDay ReservedDay" title="Thursday, June 20, 2024"><a href="#">20</a></td><td class="ReservedDay ReservedDay" title="Friday, June 21, 2024"><a href="#">21</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 22, 2024" style="font-weight:bold;"><a href="#">22</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, June 23, 2024" style="font-weight:bold;"><a href="#">23</a></td><td class="ReservedDay ReservedDay" title="Monday, June 24, 2024"><a href="#">24</a></td><td class="ReservedDay ReservedDay" title="Tuesday, June 25, 2024"><a href="#">25</a></td><td class="ReservedDay ReservedDay" title="Wednesday, June 26, 2024"><a href="#">26</a></td><td class="ReservedDay ReservedDay" title="Thursday, June 27, 2024"><a href="#">27</a></td><td class="ReservedDay ReservedDay" title="Friday, June 28, 2024"><a href="#">28</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 29, 2024" style="font-weight:bold;"><a href="#">29</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, June 30, 2024" style="font-weight:bold;"><a href="#">30</a></td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table></td><td class="rcCalendar"><table id="calEvent1_Top_6" class="rcMainTable" cellspacing="0" border="0" style="width:100%;">
+              <caption>
+                <span style="display:none;">July</span>
+              </caption><thead>
+                <tr>
+                  <td id="calEvent1_Top_6_hd" class="rcTitle" colspan="7" style="text-align:notset;">July</td>
+                </tr><tr class="rcWeek">
+                  <th id="calEvent1_Top_6_cs_0" title="Sunday" scope="col">S</th><th id="calEvent1_Top_6_cs_1" title="Monday" scope="col">M</th><th id="calEvent1_Top_6_cs_2" title="Tuesday" scope="col">T</th><th id="calEvent1_Top_6_cs_3" title="Wednesday" scope="col">W</th><th id="calEvent1_Top_6_cs_4" title="Thursday" scope="col">T</th><th id="calEvent1_Top_6_cs_5" title="Friday" scope="col">F</th><th id="calEvent1_Top_6_cs_6" title="Saturday" scope="col">S</th>
+                </tr>
+              </thead><tbody>
+                <tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="ReservedDay ReservedDay" title="Monday, July 01, 2024"><a href="#">1</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 02, 2024"><a href="#">2</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 03, 2024"><a href="#">3</a></td><td class="ReservedDay ReservedDay" title="Thursday, July 04, 2024"><a href="#">4</a></td><td class="ReservedDay ReservedDay" title="Friday, July 05, 2024"><a href="#">5</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, July 06, 2024" style="font-weight:bold;"><a href="#">6</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, July 07, 2024" style="font-weight:bold;"><a href="#">7</a></td><td class="ReservedDay ReservedDay" title="Monday, July 08, 2024"><a href="#">8</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 09, 2024"><a href="#">9</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 10, 2024"><a href="#">10</a></td><td class="ReservedDay ReservedDay" title="Thursday, July 11, 2024"><a href="#">11</a></td><td class="ReservedDay ReservedDay" title="Friday, July 12, 2024"><a href="#">12</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, July 13, 2024" style="font-weight:bold;"><a href="#">13</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, July 14, 2024" style="font-weight:bold;"><a href="#">14</a></td><td class="ReservedDay ReservedDay" title="Monday, July 15, 2024"><a href="#">15</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 16, 2024"><a href="#">16</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 17, 2024"><a href="#">17</a></td><td class="ReservedDay ReservedDay" title="Thursday, July 18, 2024"><a href="#">18</a></td><td class="ReservedDay ReservedDay" title="Friday, July 19, 2024"><a href="#">19</a></td><td class="rcWeekend nonselectabledates nonselectabledates" title="Saturday, July 20, 2024" style="font-weight:bold;"><a href="#">20</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, July 21, 2024" style="font-weight:bold;"><a href="#">21</a></td><td class="ReservedDay ReservedDay" title="Monday, July 22, 2024"><a href="#">22</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 23, 2024"><a href="#">23</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 24, 2024"><a href="#">24</a></td><td class="nonselectabledates nonselectabledates" title="Thursday, July 25, 2024"><a href="#">25</a></td><td class="ReservedDay ReservedDay" title="Friday, July 26, 2024"><a href="#">26</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, July 27, 2024" style="font-weight:bold;"><a href="#">27</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, July 28, 2024" style="font-weight:bold;"><a href="#">28</a></td><td class="ReservedDay ReservedDay" title="Monday, July 29, 2024"><a href="#">29</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 30, 2024"><a href="#">30</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 31, 2024"><a href="#">31</a></td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr><tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table></td><td class="rcCalendar rcLastCol"><table id="calEvent1_Top_7" class="rcMainTable" cellspacing="0" border="0" style="width:100%;">
+              <caption>
+                <span style="display:none;">August</span>
+              </caption><thead>
+                <tr>
+                  <td id="calEvent1_Top_7_hd" class="rcTitle" colspan="7" style="text-align:notset;">August</td>
+                </tr><tr class="rcWeek">
+                  <th id="calEvent1_Top_7_cs_0" title="Sunday" scope="col">S</th><th id="calEvent1_Top_7_cs_1" title="Monday" scope="col">M</th><th id="calEvent1_Top_7_cs_2" title="Tuesday" scope="col">T</th><th id="calEvent1_Top_7_cs_3" title="Wednesday" scope="col">W</th><th id="calEvent1_Top_7_cs_4" title="Thursday" scope="col">T</th><th id="calEvent1_Top_7_cs_5" title="Friday" scope="col">F</th><th id="calEvent1_Top_7_cs_6" title="Saturday" scope="col">S</th>
+                </tr>
+              </thead><tbody>
+                <tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="ReservedDay ReservedDay" title="Thursday, August 01, 2024"><a href="#">1</a></td><td class="ReservedDay ReservedDay" title="Friday, August 02, 2024"><a href="#">2</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, August 03, 2024" style="font-weight:bold;"><a href="#">3</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, August 04, 2024" style="font-weight:bold;"><a href="#">4</a></td><td class="ReservedDay ReservedDay" title="Monday, August 05, 2024"><a href="#">5</a></td><td class="ReservedDay ReservedDay" title="Tuesday, August 06, 2024"><a href="#">6</a></td><td class="ReservedDay ReservedDay" title="Wednesday, August 07, 2024"><a href="#">7</a></td><td class="ReservedDay ReservedDay" title="Thursday, August 08, 2024"><a href="#">8</a></td><td class="ReservedDay ReservedDay" title="Friday, August 09, 2024"><a href="#">9</a></td><td class="rcWeekend nonselectabledates nonselectabledates" title="Saturday, August 10, 2024" style="font-weight:bold;"><a href="#">10</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, August 11, 2024" style="font-weight:bold;"><a href="#">11</a></td><td class="ReservedDay ReservedDay" title="Monday, August 12, 2024"><a href="#">12</a></td><td class="ReservedDay ReservedDay" title="Tuesday, August 13, 2024"><a href="#">13</a></td><td class="ReservedDay ReservedDay" title="Wednesday, August 14, 2024"><a href="#">14</a></td><td class="ReservedDay ReservedDay" title="Thursday, August 15, 2024"><a href="#">15</a></td><td class="ReservedDay ReservedDay" title="Friday, August 16, 2024"><a href="#">16</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, August 17, 2024" style="font-weight:bold;"><a href="#">17</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, August 18, 2024" style="font-weight:bold;"><a href="#">18</a></td><td class="ReservedDay ReservedDay" title="Monday, August 19, 2024"><a href="#">19</a></td><td class="ReservedDay ReservedDay" title="Tuesday, August 20, 2024"><a href="#">20</a></td><td class="ReservedDay ReservedDay" title="Wednesday, August 21, 2024"><a href="#">21</a></td><td title="Thursday, August 22, 2024"><a href="#">22</a></td><td class="ReservedDay ReservedDay" title="Friday, August 23, 2024"><a href="#">23</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, August 24, 2024" style="font-weight:bold;"><a href="#">24</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend" title="Sunday, August 25, 2024" style="font-weight:bold;"><a href="#">25</a></td><td class="ReservedDay ReservedDay" title="Monday, August 26, 2024"><a href="#">26</a></td><td class="ReservedDay ReservedDay" title="Tuesday, August 27, 2024"><a href="#">27</a></td><td class="ReservedDay ReservedDay" title="Wednesday, August 28, 2024"><a href="#">28</a></td><td title="Thursday, August 29, 2024"><a href="#">29</a></td><td title="Friday, August 30, 2024"><a href="#">30</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, August 31, 2024" style="font-weight:bold;"><a href="#">31</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table></td>
+              </tr>
+              </tbody>
+            </table>
+            
+          </div>-->
+          <!-- <img src="img/availability.png" style="mix-blend-mode: multiply;" /> -->
           <hr />
           <h2>Where You'll Be</h2>
           <img src="img/location-map.png" style="mix-blend-mode: multiply;" />
@@ -564,6 +676,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
   <script src="js/datepicker.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- NEW DATE PICKER -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <script src="js/scripts.js"></script>
   <script>
     

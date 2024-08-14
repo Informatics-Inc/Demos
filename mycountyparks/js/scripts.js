@@ -2,8 +2,24 @@
 // Toggle the open class on the filters div when the toggle button is clicked
 $('.filter-toggle').click(function() {
   $('#filters').toggleClass('open');
+
+  // Check if the filters are now open
+  if ($('#filters').hasClass('open')) {
+    $('body').addClass('no-scroll');
+  } else {
+    $('body').removeClass('no-scroll');
+  }
 });
 
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'center',
+    buttonClasses: "btn-simple",
+    applyButtonClasses: "btn-theme"
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
 
 // -- MODAL --//
 document.querySelectorAll(".open-button").forEach((openButton) => {
