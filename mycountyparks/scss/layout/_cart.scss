@@ -10,13 +10,14 @@
 .facility-summary figure img {width: 100%; height: 100%; object-fit: cover;}
 
 .cart-full-width {grid-column: span 2;}
-
-.price-detail-group {}
+.item-details {margin: 0 0 1rem 0;}
+.cart-item .form-action {border-top-color: #ddd;}
 /* TABLET */
 @media (min-width: 768px) {
-.cart-item {display: grid; grid-template-columns: 1fr 1fr;}
+.cart-item {display: grid; grid-template-columns: 1fr 1fr; column-gap: 10px;}
 .cart-item header {grid-column: span 2; display: flex; justify-content: space-between; align-items: center;}
-.cart-item .form-action {grid-column: span 2;}
+.cart-item .form-action, .cart-item .alert, .cart-item .item-details, .cart-item hr {grid-column: span 2;}
+ 
 }
 
 /* DESKTOP */
