@@ -111,6 +111,63 @@
       </div>
     </div>
 
+    <div class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+      <div class="wp-block-column">
+        <div class="countdown-wrapper">
+          <style>
+            .countdown {background: var(--primary); display: flex; border-radius: 10px; flex-wrap: wrap; justify-content: center; margin: 1rem auto; box-shadow: 5px 10px 15px rgba(0,0,0,.15);}
+            .countdown .item {font-size: 3rem; padding: 1rem 2rem 2rem 2rem; color: #fff; text-align: center;}
+            .countdown .item span {font-size: 1rem; text-transform: uppercase; display: block; letter-spacing: 2px;}
+            .countdown .item.content {font-size: 1.75rem; line-height: 1.1; margin: 0; width: 100%; padding: 2rem 1rem 0 1rem;}
+          </style>
+          <div class="countdown">
+            <p class="item content">Days Until the Solid Waste Agency Landfill is Full:</p>
+            <div class="item" id="days"></div>
+            <div class="item" id="hours"></div>
+            <div class="item" id="minutes"></div>
+            <div class="item" id="seconds"></div>
+          </div>
+    
+          <script>
+              function countdownTimer(targetDate) {
+                  const countdown = document.querySelector('.countdown');
+                  const daysEl = document.getElementById('days');
+                  const hoursEl = document.getElementById('hours');
+                  const minutesEl = document.getElementById('minutes');
+                  const secondsEl = document.getElementById('seconds');
+      
+                  function updateCountdown() {
+                      const now = new Date().getTime();
+                      const timeLeft = targetDate - now;
+      
+                      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      
+                      daysEl.innerHTML = days + "<span>Days</span>";
+                      hoursEl.innerHTML = hours + "<span>Hours</span>";
+                      minutesEl.innerHTML = minutes + "<span>Minutes</span>";
+                      secondsEl.innerHTML = seconds + "<span>Seconds</span>";
+      
+                      if (timeLeft < 0) {
+                          clearInterval(timerInterval);
+                          countdown.innerHTML = "Event has started!";
+                      }
+                  }
+      
+                  updateCountdown();
+                  const timerInterval = setInterval(updateCountdown, 1000);
+              }
+      
+              const targetDate = new Date("February 1, 2026 00:00:00").getTime();
+
+              countdownTimer(targetDate);
+          </script>
+      </div>
+    </div>
+    
+    </div>
   </main>
 
 <footer class="footer">
