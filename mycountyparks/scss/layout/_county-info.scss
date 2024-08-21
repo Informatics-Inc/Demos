@@ -16,6 +16,8 @@
 .sec-nav-grid nav ul a:hover, .sec-nav-grid nav ul a:focus {padding: 10px 5px 10px 15px; color: #222;}
 .sec-nav-grid nav ul .active a::after {content: "\f0a9";font-family: FontAwesome;}
 
+.content-image {margin: 0 0 2rem 0;}
+
 /* TABLET */
 @media (min-width: 768px) {
 .sec-nav-grid .container {display: grid; grid-template-columns: .8fr 3fr; gap: 25px; align-items: flex-start;}
@@ -25,6 +27,8 @@
 @media (min-width: 992px) {
     .sec-nav-grid .container {display: grid; grid-template-columns: 1.15fr 2.5fr; gap: 50px;}
     .sec-nav-grid aside {z-index: 5; position: relative; position: sticky; top: 115px;}
+    .content-image {float: right; width: 300px; margin-left: 2rem;}
+    .content-image img {width: 100% !important; height: auto !important;}
 }
 
 /* WIDE DESKTOP */
