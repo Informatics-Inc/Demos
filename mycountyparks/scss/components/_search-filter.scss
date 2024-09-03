@@ -11,11 +11,14 @@ body.no-scroll {overflow: hidden;}
 .icon-input {position: relative;}
 .icon-input .fa, .form-group-label .fa {position: absolute; left: 10px; top: calc(50% - 9px); color: var(--primary); font-size: 1rem; width: 1.5rem; text-align: center;}
 .icon-input input, .icon-input select {border: none; background: none;border: 1px solid #ccc; border-radius: 5px; padding: .75rem 1rem .75rem 2.5rem; width: 100%; background: #fff; min-height: 50px;}
-
 .icon-input select {font-weight: 700; font-size: .75rem; letter-spacing: 1px; text-transform: uppercase;-moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */appearance:none;}
 .custom-select {position: relative;}
 .custom-select:after {content: "\f0d7";font-family: FontAwesome; position: absolute; right: .9rem; top: .9rem; font-size: .85rem;}
 
+.icon-input button .fa {position: relative; margin: 0 !important; left: auto; top: auto; color: var(--dark);}
+.icon-input-delete {display: flex; margin: .5rem 0;}
+.btn-delete {border: none; background: none; display: grid; align-content: center; opacity: .7;}
+.btn-delete:hover {cursor: pointer; opacity: 1;}
 
 .form-group-label {padding: 1rem 1rem 1rem 2.5rem; border: 1px solid #ccc; display: block; border-radius: 5px; font-weight: 700; font-size: .75rem; letter-spacing: 1px; text-transform: uppercase; display: flex; justify-content: space-between; position: relative; background: #fff;}
 .form-group-label::after {content: "\f0d7";font-family: FontAwesome;}
@@ -65,6 +68,7 @@ body.no-scroll {overflow: hidden;}
     height: auto
 }
 /* Date Picker Overrides */
+.daterangepicker {box-shadow: 0 0 25px rgba(0, 0, 0, .2);}
 .daterangepicker td.active, .daterangepicker td.active:hover {background-color: var(--primary-light) !important; color: #222 !important;}
 .daterangepicker td.in-range {background-color: var(--light) !important;}
 .daterangepicker .btn-simple, .daterangepicker .btn-theme {font-size: .85rem;}
@@ -72,6 +76,8 @@ body.no-scroll {overflow: hidden;}
 .daterangepicker .btn-theme:after {display: none;}
 .daterangepicker .btn-simple:hover {background: none;}
 .daterangepicker .btn-theme:hover {background: var(--primary);}
+
+// .group-date {background-color: var(--light); color: #222;}
 
 /* TABLET */
 @media (min-width: 768px) {
