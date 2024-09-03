@@ -1,10 +1,10 @@
 @mixin right-arrow {
  &:after {
-    content: "\f35a";
+    content: "\f061";
     font-family: 'Font Awesome 6 Free'; 
     margin-top: 4px;
     margin-left: .2rem;
-    font-size: 1rem;
+    
     transition: var(--transition);
     text-decoration: none;
  }

@@ -15,6 +15,13 @@
 .mcp-info-list .item-details {margin: .5rem 0;}
 .mcp-info-list .item-details strong {font-weight: 500;}
 .mcp-info-list h3 {font-weight: 600;}
+
+.email-receipt {background: #f4f4f4; padding: 1rem 0;}
+.email-receipt > div {max-width: 750px; padding: 0rem 1rem 1rem 1rem; background: #fff; font-size: 80%; margin: 0 auto; box-shadow: 0 0 15px rgba(0,0,0,.1);}
+.email-receipt header {display: flex; justify-content: space-between; background: Var(--light); padding: 1rem; margin: 0 -1rem 2rem -1rem;}
+
+.email-receipt header img {max-width: 150px;}
+
 @media (min-width: 768px) {
 .auto-grid-5 {display: grid; grid-template-columns: repeat( auto-fill, minmax(175px, 1fr) );}
 }

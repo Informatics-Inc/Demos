@@ -2,16 +2,18 @@
 .cart-item header {margin: 0 0 1rem 0;}
 .cart-item + .cart-item {margin-top: 2rem;}
 
-.facility-summary {padding: 0 0 1rem 0; margin: 0 0 1rem 0;}
-.facility-summary .features p {font-size: .825rem; margin: 0;}
-.facility-summary {display: grid; grid-template-columns: 1fr 1fr; gap: 15px;}
-.facility-summary h3 {font-size: 1.25rem; margin: 0 0 10px 0; font-weight: 500;}
+.facility-summary {padding: 0 0 1rem 0; margin: 0 0 .25rem 0;}
+.facility-summary .features p {font-size: .725rem; margin: 0;}
+.facility-summary {display: grid; grid-template-columns: 1fr 1.75fr; gap: 15px;}
+.facility-summary h3 {font-size: 1.25rem; margin: 0 0 10px 0; font-weight: 500; line-height: 1.3;}
 .facility-summary figure {border-radius: 5px; overflow: hidden;}
 .facility-summary figure img {width: 100%; height: 100%; object-fit: cover;}
 
 .cart-full-width {grid-column: span 2;}
 .item-details {margin: 0 0 1rem 0;}
 .cart-item .form-action {border-top-color: #ddd;}
+
+.item-details + .facility-summary {margin-top: 1rem; border-top: 1px solid #ddd; padding-top: 1rem;}
 /* TABLET */
 @media (min-width: 768px) {
 .cart-item {display: grid; grid-template-columns: 1fr 1fr; column-gap: 10px;}

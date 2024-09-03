@@ -74,7 +74,7 @@
             <h1>Checkout</h1>
           </div>
           <div class="col">
-            <a href="#.html" class="btn-theme btn-alt">Cancel Purchase</a>
+            <a href="cart.html" class="btn-theme btn-alt">Back to Cart</a>
           </div>
         </div>
       </header>
@@ -93,9 +93,9 @@
                 <img src="img/cabin-1.webp" />
               </figure>
               <div class="content">
-                <h3>Big Woods Lake Cabin</h3>
+                <h3>1 Cottage (10 Person)</h3>
                 <div class="features">
-                  <p><a href="county.html">Adams County, IA</a></p>
+                  <p>03/28/2024 - 03/30/2024</p>
                 </div>
               </div>
             </div>
@@ -111,6 +111,7 @@
               <p>Processing Fees</p>
               <p>$4.00</p>
             </div>
+            <hr />
             <div class="item-details">
               <p>Total</p>
               <p><strong>$219.56</strong></p>
@@ -119,15 +120,7 @@
         </div>
         <div class="col">
           <form class="mcp-form fixed-labels-xl small-type" action="index.html">
-            <h2>Your Reservation</h2>
-            <div class="item-details">
-              <p class="icon-text">
-                <i class="fa-solid fa-calendar-check"></i>
-                <strong>Dates</strong>
-                3/28/2024 - 03/30/2024
-              </p>
-              <a data-target-modal="#modal-dates" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-up-right-from-square"></i> Edit</a>
-            </div>
+            
             <h2>Facility Information</h2>
             <div class="fixed-label">
               <label>Occupants</label>
@@ -192,8 +185,8 @@
           </form>
 
             <div class="form-action">
-              <button type="submit" class="btn-theme btn-alt">Continue Shopping</button>
-                <a data-target-modal="#modal-pay" href="#.html" class="btn-theme open-button"><i class="fa-solid fa-up-right-from-square"></i> Confirm and Pay</a>
+              <button type="submit" class="btn-theme btn-alt">Back to Cart</button>
+                <a data-target-modal="#modal-pay" href="#.html" class="btn-theme open-button">Confirm and Pay</a>
             </div>
         </div>
       </div>
@@ -357,8 +350,12 @@
 
   <!-- Modal Pay -->
   <dialog class="modal" id="modal-pay">
-    <h3>Share This Event <button class="button close-button" data-close-modal="#modal-pay"><i class="fa fa-close"></i></button></h3>
-    <p>Put the .NET thing here</p>
+    <h3>Payment Information <button class="button close-button" data-close-modal="#modal-pay"><i class="fa fa-close"></i></button></h3>
+    <p>Put payment form here</p>
+    <div class="form-action">
+      <button class="button close-button btn-theme btn-alt" data-close-modal="#modal-pay">Cancel</button>
+        <a data-target-modal="#modal-pay" href="#.html" class="btn-theme open-button">Pay</a>
+    </div>
   </dialog>
 
   <!-- Modal Dates -->
