@@ -10,7 +10,7 @@
     <link href='css/icons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link href="css/app.min.css" rel="stylesheet">
@@ -47,12 +47,11 @@
           </a>
 
           <ul id="user-menu-list">
-            <li><a href="#.html">My Account</a></li>
-            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
-            <li><a href="#.html">Reservations</a></li>
-            <li><a href="#.html">Event Registrations</a></li>
-            <li><a href="#.html">Order History</a></li>
-            <li><a href="#.html">Log out</a></li>
+            <li><a href="account-info.html">My Account</a></li>
+            <li><a href="account-reservations.html">Reservations</a></li>
+            <li><a href="account-events.html">Event Registrations</a></li>
+            <li><a href="account-history.html">Order History</a></li>
+            <li><a href="login.html">Log out</a></li>
           </ul>
         </div>
         <ul class="menu-main">
@@ -64,529 +63,337 @@
     </div>
   </nav>
 
-  <main id="main-content">
-    <header class="page-header fadeinup delay-1">
-      <figure>
-        <img src="img/hero-location-couple.jpg" />
-      </figure>
-      <div class="text">
-        <div class="container">
-          <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Counties</a></li>
-            <li><a href="index.html">Adair</a></li>
-            <li>Parks</li>
-          </ol>
-          <h1>Adair County Parks</h1>
+<main id="main-content">
+  <header class="page-header fadeinup delay-1">
+    <figure>
+      <img src="img/hero-1.jpg" />
+    </figure>
+    <div class="text">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="counties.html">Counties</a></li>
+        <li><a href="county.html">Polk</a></li>
+        <li>Parks</li>
+      </ol>
+      <h1>Parks in Polk County</h1>
+      <p>Book cabins, shelters, and lodges in Polk County, Iowa.</p>
+    </div>
+  </header>
+  
+  <!-- SEC NAV -->
+  <div id="sec-nav" class=" fadeinup delay-2">
+    <div class="container">
+      <div class="county-hdr">
+        <div class="profile-info">
+          <figure>
+            <img src="img/polk-profile.jpg" />
+          </figure>
+          <div class="text">
+            <p class="title">Polk County Conservation</p>
+            <p><a href="https://www.polkcountyiowa.gov/conservation/" target="_blank"><i class="fa fa-laptop"></i> Website</a> | <a href="mailto:contact@email.com"><i class="fa fa-mobile"></i> Contact Us</a></p>
+          </div>
         </div>
+        <ul class="sec-nav" data-spy="affix" data-offset-top="235">
+          <li><a href="county.html">Discover</a></li>
+          <li><a href="book-now-filtered.html">Facilities</a></li>
+          <li class="active"><a href="parks.html">Parks</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#.html" id="more-info-toggle">More Info <i class="fa fa-caret-down"></i></a>
+            <ul id="more-info-list">
+              <li><a href="county-info.html">Announcements and newsletter</a></li>
+              <li><a href="county-info.html">Equestrian Center</a></li>
+              <li><a href="county-info.html">Golf</a></li>
+              <li><a href="county-info.html">Cancelations and Reservation Modifcations</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="county-info.html">Donations</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </header>
-    <div class="container grid grid-gap-md">
-      <div class="search fadeinup delay-2">
-        <div class="row">
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa fa-location-dot"></i>
-              <input type="search" placeholder="Keyword Search">
-            </div>
-          </div>
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-regular fa-calendar-check"></i>
-              <select class="form-select">
-                <option>Has Events</option>
-                <option>Yes</option>
-                <option>No</option>
-              </select>
-            </div>
-          </div>
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-person-shelter"></i>
-              <select class="form-select">
-                <option>By Facility Type</option>
-                <option>Campgrounds</option>
-                <option>Shelter</option>
-                <option>Cabins</option>
-              </select>
+
+      <div class="results">
+        <ul>
+          <li class="filters-title">Polk County Parks:</li>
+        </ul>
+        <span>Showing 53 results | View as <a href="#.html"><i class="fa fa-map-location"></i>Map</a><a href="#.html" class="active"><i class="fa fa-list"></i>List</a></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CONTENT -->
+  <div class="content-sections">
+
+    <!-- RESULTS LIST -->
+    <section class="animate-in delay-3">
+      <div class="container">
+        
+        <div class="auto-grid-5 grid-gap-sm">
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-1.jpg" />
+              </figure>
+              <h3>Beaver Creek Greenbelt</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
             </div>
           </div>
           
-          <div class="col">
-            <div class="input-wrap">
-              <i class="fa-solid fa-person-hiking"></i>
-              <select class="form-select">
-                <option>Activity</option>
-                  <option>Biking</option>
-                  <option>Boating</option>
-                  <option>Cabins</option>
-                  <option>Camping</option>
-                  <option>Fishing</option>
-                  <option>The rest...</option>
-                </select>
-              </select>
-            </div>
-            <a href="book-now.html" class="btn-theme"><i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="alpha-list">
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('A')">
-A                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('B')">
-B                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('C')">
-C                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('D')">
-D                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('E')">
-E                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('F')">
-F                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('G')">
-G                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('H')">
-H                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('I')">
-I                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('J')">
-J                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('K')">
-K                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('L')">
-L                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('M')">
-M                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('N')">
-N                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('O')">
-O                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('P')">
-P                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Q')">
-Q                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('R')">
-R                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('S')">
-S                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('T')">
-T                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('U')">
-U                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('V')">
-V                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('W')">
-W                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('X')">
-X                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Y')">
-Y                            </a>
-            <a class="btn btn-link alphabet-search " onclick="alphaSearch('Z')">
-Z                            </a>
-           </div>
-        </div>
-      </div>
-      
-      <div class="grid auto-grid grid-gap-xm fadeinup delay-3">
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/marker.svg" />
-          <p>Near Me</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/boot.svg" />
-          <p>Hiking</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/grill.svg" />
-          <p>Grills</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/fishing.svg" />
-          <p>Fishing</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/picnic.svg" />
-          <p>Picnic</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/compass.svg" />
-          <p>Geocaching</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/map.svg" />
-          <p>Trails</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/cabin.svg" />
-          <p>Cabins</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/signs.svg" />
-          <p>Signs</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/camper.svg" />
-          <p>Parking</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/canoe.svg" />
-          <p>Canoe</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/fire.svg" />
-          <p>Campfire</p>
-        </a>
-        <a href="book-now.html" class="ico-feature">
-          <img src="img/icons/svgs/tent.svg" />
-          <p>Camping</p>
-        </a>
-        
-      </div>
-      
-    </div>
-    
-    <!-- CONTENT -->
-    <div class="content-sections">
-
-      <!-- RESULTS -->
-      <section class="animate-in delay-2">
-        <div class="container">
-          <div class="full-hdr">
-            <h3>Results</h3>
-            <hr />
-            <a href="book-now.html">Reset Search</a>
-          </div>
-          <div class="results-info">
-            <ul>
-              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Search Criteria</a></li>
-              <li><a href="#.html"><i class="fa-solid fa-circle-xmark"></i> Paramter</a></li>
-            </ul>
-            <p>Showing 25 of 152 Results</p>
-          </div>
-        </div>  
-      </section>
-
-      <!-- RESULTS LIST -->
-      <section class="animate-in delay-3">
-        <div class="container">
-          <div class="auto-grid-5 grid-gap-sm">
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-1.jpg" />
-                </figure>
-                <h3>Chichaqua Longhouse</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-2.jpg" />
-                </figure>
-                <h3>Easter Lake Shelter 1</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-3.jpg" />
-                </figure>
-                <h3>Fort Des Moines Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-4.jpg" />
-                </figure>
-                <h3>Jester Cabin 1</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-5.jpg" />
-                </figure>
-                <h3>Thomas Mitchell Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-6.jpg" />
-                </figure>
-                <h3>Morgan Creek Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-7.jpg" />
-                </figure>
-                <h3>Birxshire Cabin</h3>
-              </a>
-              <div class="text">
-                  <ul>
-                    <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                  </ul>
-              </div>
-            </div>
-            
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-1.jpg" />
-                </figure>
-                <h3>Chichaqua Longhouse</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-2.jpg" />
-                </figure>
-                <h3>Easter Lake Shelter 1</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-3.jpg" />
-                </figure>
-                <h3>Fort Des Moines Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-4.jpg" />
-                </figure>
-                <h3>Jester Cabin 1</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-5.jpg" />
-                </figure>
-                <h3>Thomas Mitchell Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-6.jpg" />
-                </figure>
-                <h3>Morgan Creek Shelter</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-7.jpg" />
-                </figure>
-                <h3>Birxshire Cabin</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide scroll-item">
-              <a href="park.html">
-                <figure>
-                  <img src="img/feature-tall-last.jpg" />
-                </figure>
-                <h3>Still Can't Find What You Want?</h3>
-              </a>
-              <div class="text">
-                <ul>
-                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
-                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LOAD MORE -->
-      <section>
-        <div class="container">
-          <div class="load-more animate-in delay-2">
-            <a href="counties.html" class="btn-theme">Load More Results</a>
-          </div>
-        </div>
-      </section>
-       <!-- CTA -->
-       <section>
-        <div class="container">
-          <div class="content-cta animate-in delay-3">
-            <figure><img src="img/hero-location-couple.jpg"></figure>
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-2.jpg" />
+              </figure>
+              <h3>Brown's Woods</h3>
+            </a>
             <div class="text">
-              <h2>Search Near You!</h2>
-              <p>Turn on location services and get results within miles of your current location!</p>
-              <a href="book-now.html" class="btn-theme">Turn On Location Services</a>
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-3.jpg" />
+              </figure>
+              <h3>Carney Marsh</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-4.jpg" />
+              </figure>
+              <h3>Chichaqua Bottoms Greenbelt</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-5.jpg" />
+              </figure>
+              <h3>Chichaqua Valley Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-1.jpg" />
+              </figure>
+              <h3>Easter Lake Park</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-2.jpg" />
+              </figure>
+              <h3>Engeldinger Marsh</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-3.jpg" />
+              </figure>
+              <h3>Fort Des Moines Park</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-4.jpg" />
+              </figure>
+              <h3>Four Mile Creek Greenbelt</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-5.jpg" />
+              </figure>
+              <h3>Gay Lea Wilson Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-1.jpg" />
+              </figure>
+              <h3>Great Western Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-2.jpg" />
+              </figure>
+              <h3>High Trestle Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-3.jpg" />
+              </figure>
+              <h3>Jester Park</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-4.jpg" />
+              </figure>
+              <h3>Lauridsen Skatepark</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-5.jpg" />
+              </figure>
+              <h3>Mally's Weh-Weh-Neh-Kee Park</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-1.jpg" />
+              </figure>
+              <h3>Oralabor Gateway Trail</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-2.jpg" />
+              </figure>
+              <h3>Polk County Education Programs</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="swiper-slide scroll-item">
+            <a href="park.html">
+              <figure>
+                <img src="img/feature-tall-3.jpg" />
+              </figure>
+              <h3>Strasser Woods State Preserve</h3>
+            </a>
+            <div class="text">
+              <ul>
+                <li><a href="park.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- POPULAR SEARCHES-->
-      <section class="animate-in delay-1">
-        <div class="container">
-          <div class="full-hdr">
-            <h3>Popular Searches</h3>
-            <hr />
-          </div>
-    
-          <div class="scroll-item-wrapper">
-            <div class="swiper scroll-list">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide scroll-item">
-                  <a href="#.html">
-                    <figure>
-                      <img src="img/feature-tall-14.jpg" />
-                    </figure>
-                    <h3>Landmarks of Iowa</h3>
-                  </a>
-                 
-                </div>
-                <div class="swiper-slide scroll-item">
-                  <a href="#.html">
-                    <figure>
-                      <img src="img/feature-hike.jpg" />
-                    </figure>
-                    <h3>Parks with hiking trails in Black Hawk County</h3>
-                  </a>
-                </div>
-                <div class="swiper-slide scroll-item">
-                  <a href="#.html">
-                    <figure>
-                      <img src="img/feature-tall-15.jpg" />
-                    </figure>
-                    <h3>Am I close to Adventureland?</h3>
-                  </a>
-                  
-                </div>
-                <div class="swiper-slide scroll-item">
-                  <a href="#.html">
-                    <figure>
-                      <img src="img/feature-tall-6.jpg" />
-                    </figure>
-                    <h3>Facilities with a grill in Polk County</h3>
-                  </a>
-                  
-                </div>
-                <div class="swiper-slide scroll-item">
-                  <a href="#.html">
-                    <figure>
-                      <img src="img/feature-higwayhike.jpg" />
-                    </figure>
-                    <h3>Hiking Near Highways</h3>
-                  </a>
-                  
-                </div>
-                
-                <div class="swiper-slide scroll-item">
-                  <a href="#.html">
-                    <figure>
-                      <img src="img/feature-tall-last.jpg" />
-                    </figure>
-                    <h3>Still Can't Find What You Want?</h3>
-                  </a>
-                  <div class="text">
-                    <ul>
-                      <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Advanced Search</a></li>
-                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-     
-      
-    </div>
-    
-  </main>
-
+      </div>
+    </section>
+  </div>
+</main>
+  
 <footer class="footer">
   <div class="container">
-    
       <div class="row">
         <div class="ftr-cols">
           <div class="col">
             <img src="img/logo.svg" />
             <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
-            
           </div>
           <div class="col">
             <h4>Links</h4>
@@ -657,6 +464,7 @@ Z                            </a>
         <li><a href="county.html">Fremont</a></li>
         <li><a href="county.html">Greene</a></li>
         <li><a href="county.html">Grundy</a></li>
+        <li><a href="county.html">Guthrie</a></li>
         <li><a href="county.html">Hamilton</a></li>
         <li><a href="county.html">Hancock</a></li>
         <li><a href="county.html">Hardin</a></li>
@@ -733,11 +541,26 @@ Z                            </a>
   
   <!-- FOOTER SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
-  <script src="js/datepicker.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script>
+    // -- SIMPLE GALLERY -- //
+    var imageThumbs = document.getElementById("image-thumbs");
+    var currentImage = document.getElementById("current-image");
 
+    for (var i = 1; i <= 5; i++) {
+      var thumb = document.createElement("img");
+      thumb.src = "img/gallery" + i + ".jpg";
+      thumb.alt = "Image " + i;
+      thumb.classList.add("thumb");
+      imageThumbs.appendChild(thumb);
+      thumb.addEventListener(
+        "click", function() {
+          currentImage.src = this.src;
+        }
+      );
+    }
+  </script>
   </body>
 </html>
