@@ -10,7 +10,12 @@ body.no-scroll {overflow: hidden;}
 
 .icon-input {position: relative;}
 .icon-input .fa, .form-group-label .fa {position: absolute; left: 10px; top: calc(50% - 9px); color: var(--primary); font-size: 1rem; width: 1.5rem; text-align: center;}
-.icon-input input {border: none; background: none;border: 1px solid #ccc; border-radius: 5px; padding: .75rem 1rem .75rem 2.5rem; width: 100%; background: #fff;}
+.icon-input input, .icon-input select {border: none; background: none;border: 1px solid #ccc; border-radius: 5px; padding: .75rem 1rem .75rem 2.5rem; width: 100%; background: #fff; min-height: 50px;}
+
+.icon-input select {font-weight: 700; font-size: .75rem; letter-spacing: 1px; text-transform: uppercase;-moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */appearance:none;}
+.custom-select {position: relative;}
+.custom-select:after {content: "\f0d7";font-family: FontAwesome; position: absolute; right: .9rem; top: .9rem; font-size: .85rem;}
+
 
 .form-group-label {padding: 1rem 1rem 1rem 2.5rem; border: 1px solid #ccc; display: block; border-radius: 5px; font-weight: 700; font-size: .75rem; letter-spacing: 1px; text-transform: uppercase; display: flex; justify-content: space-between; position: relative; background: #fff;}
 .form-group-label::after {content: "\f0d7";font-family: FontAwesome;}
@@ -81,7 +86,7 @@ body.no-scroll {overflow: hidden;}
 .form-actions {position: relative; padding: 0; background: none; border: none;}
 .filter-mobile-header {display: none;}
 #filters .results {display: none;}
-#filters .icon-input input {border: none;}
+#filters .icon-input input, #filters .icon-input select {border: none;}
 .filter-toggle {display: none;}
 .form-group-label {border: none;}
 
