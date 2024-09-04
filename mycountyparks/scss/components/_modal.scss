@@ -5,8 +5,9 @@ border: none; border-radius: 5px; box-shadow: 0 0 2rem rgb(0 0 0 / .25);
 .modal.show {opacity: 1;}
 .modal h3 {display: flex; justify-content: space-between; border-bottom: 1px solid #ccc; padding: 0 0 1rem 0; align-items: center;}
 .modal h3 .close-button {background: var(--light); border: none; padding: 1rem; border-radius: 5px;}
-
 .modal-wide {width: 700px;}
+.modal .helper {padding: 0; margin: .25rem 0;}
+
 /* TABLET */
 @media (min-width: 768px) {
 

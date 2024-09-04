@@ -7,10 +7,13 @@
 .detail-header figure img:nth-of-type(3) {grid-row: 2; grid-column: 2;}
 .detail-header figure img {width: 100%; height: 100%; object-fit: cover;}
 .detail-header figure img:hover {cursor: pointer;}
+
+.detail-header figure.single {grid-template-columns: 1fr;}
+
 .gbtn {border: none; color: var(--primary);}
 .detail-header {display: grid; gap: 15px; margin: 0 0 2rem 0; text-align: center; border-top: 1px solid var(--gray); padding-top: 2rem;}
 .detail-header h1 {margin: 0 0 .5rem 0;}
-.detail-header .hdr-row {margin: 0 0 2rem 0;}
+.detail-header .hdr-row {margin: 0 0 1rem 0;}
 .detail-header.no-img {margin-bottom: 0;}
 .detail-header .hdr-row .btn-theme {font-size: .85rem;}
 .detail-header .features {font-size: .825rem;}
@@ -27,6 +30,10 @@
 .cal-legend ul li:before {display: block; content: "7"; width: 15px; height: 15px; background: #eee; border-radius: 3px; display: grid; align-content: center; text-align: center; text-decoration: line-through; color: #888;}
 .cal-legend ul li.cal-legend-selection:before {background: var(--primary-light); content: "";}
 .cal-legend ul li.cal-legend-together:before {background: #ababab; content: "";}
+
+ul.two-col {list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr;}
+ul.two-col li {font-size: .9rem; padding: 5px 5px 5px 0;}
+ul.two-col li i {width: 25px; text-align: center; font-size: 1rem;}
 
 /* TABLET */
 @media (min-width: 768px) {
@@ -47,9 +54,8 @@
 .grid-twocol {display: grid; grid-template-columns: 2fr 1fr; align-items: flex-start; margin: 0 0 3rem 0; position: relative;}
 .grid-twocol > .col:nth-of-type(2) {padding-top: 2rem;}
 .grid-twocol > .col:first-of-type {order: 2;}
-ul.two-col {list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr 1fr;}
-ul.two-col li {font-size: .9rem; padding: 5px 5px 5px 0;}
-ul.two-col li i {width: 25px; text-align: center; font-size: 1rem;}
+
+ul.two-col {grid-template-columns: 1fr 1fr 1fr;}
 
 .features-flex {justify-content: flex-start;}
 #sidebar-affix {padding-top: 2rem; position: relative; position: sticky; top: 0;}

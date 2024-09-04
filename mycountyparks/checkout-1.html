@@ -41,18 +41,20 @@
         
         <div class="menu-user">
           <a href="#.html" id="user-menu-toggle">
-            <span class="menu-alert">2</span>
-            <i class="fa-regular fa-circle-user"></i>
+            <span class="menu-alert">1</span>
+            <i class="fa-regular fa-cart-shopping"></i>
+            <!-- Login -->
             <i class="fa-solid fa-bars"></i>
           </a>
 
           <ul id="user-menu-list">
-            <li><a href="#.html">My Account</a></li>
-            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
-            <li><a href="#.html">Reservations</a></li>
-            <li><a href="#.html">Event Registrations</a></li>
-            <li><a href="#.html">Order History</a></li>
-            <li><a href="#.html">Log out</a></li>
+            <li><a href="account-info.html"><i class="fa fa-cart-shopping"></i> View My Cart</a></li>
+            <li><a href="account-info.html"><i class="fa fa-check-circle"></i> Checkout Now</a></li>
+            <li><a href="account-info.html">My Account</a></li>
+            <li><a href="account-reservations.html">Reservations</a></li>
+            <li><a href="account-events.html">Event Registrations</a></li>
+            <li><a href="account-history.html">Order History</a></li>
+            <li><a href="login.html">Log out</a></li>
           </ul>
         </div>
         <ul class="menu-main">
@@ -351,7 +353,23 @@
   <!-- Modal Pay -->
   <dialog class="modal" id="modal-pay">
     <h3>Payment Information <button class="button close-button" data-close-modal="#modal-pay"><i class="fa fa-close"></i></button></h3>
-    <p>Put payment form here</p>
+    
+    <form class="mcp-form fixed-labels-xl" action="index.html">
+      
+      <div class="fixed-label">
+        <label>Card Number</label>
+        <input type="text">
+      </div>
+      <div class="fixed-label">
+        <label>Exp. Date</label>
+        <input type="text">
+      </div>
+      <div class="fixed-label">
+        <label>Card Code</label>
+        <input type="text">
+      </div>
+      <p class="helper helper-long"><strong>Note:</strong> After clicking on the "Pay" Button, please wait for the payment to process. It may take several minutes. To avoid multiple charges, please do not hit the back button or close your browser.</p>
+
     <div class="form-action">
       <button class="button close-button btn-theme btn-alt" data-close-modal="#modal-pay">Cancel</button>
         <a data-target-modal="#modal-pay" href="#.html" class="btn-theme open-button">Pay</a>
