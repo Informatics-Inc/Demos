@@ -18,9 +18,12 @@
 
 .email-receipt {padding: 1rem 0;}
 .email-receipt > div {max-width: 750px; padding: 0rem 1rem 1rem 1rem; background: #fff; font-size: 75%; margin: 0 auto; box-shadow: 0 0 25px rgba(0,0,0,.05);}
-.email-receipt header {display: flex; justify-content: space-between; background: Var(--light); padding: 1rem; margin: 0 -1rem 2rem -1rem;}
-
-.email-receipt header img {max-width: 150px;}
+.email-receipt header, .email-receipt footer {display: flex; justify-content: space-between; background: Var(--light); padding: 1rem; margin: 1rem -1rem 2rem -1rem;}
+.email-receipt footer {margin: 0 -1rem -1rem -1rem;}
+.email-receipt header img, .email-receipt footer img {max-width: 150px;}
+.email-receipt footer img {max-height: 50px; mix-blend-mode: multiply;}
+.flex-row-img {display: flex; justify-content: space-between;}
+.flex-row-img img {max-width: 150px; max-height: 75px; mix-blend-mode: multiply;}
 
 @media (min-width: 768px) {
 .auto-grid-5 {display: grid; grid-template-columns: repeat( auto-fill, minmax(175px, 1fr) );}
