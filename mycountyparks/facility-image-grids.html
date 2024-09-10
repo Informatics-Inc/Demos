@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>My County Parks</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id='skip-nav' class='screenreader-text' href='#main-content'>
+    Skip to Content
+  </a>
+
+  <nav id="site-header" class="fadein">
+    <div class="hdr-top">
+      <div class="container">
+        <ul class="menu-utlity">
+          <li><a href="news.html">News</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="explore.html">Explore Iowa</a></li>
+        </ul>
+        <p class="menu-blurb">Book cabins, shelters, and lodges in Iowa.</p>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <a href="index.html" id="logo">
+          <img src="img/logo.svg" alt="My County Parks Logo" />
+        </a>
+        
+        <div class="menu-user">
+          <a href="#.html" id="user-menu-toggle">
+            <span class="menu-alert">2</span>
+            <i class="fa-regular fa-circle-user"></i>
+            <i class="fa-solid fa-bars"></i>
+          </a>
+
+          <ul id="user-menu-list">
+            <li><a href="#.html">My Account</a></li>
+            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
+            <li><a href="#.html">Reservations</a></li>
+            <li><a href="#.html">Event Registrations</a></li>
+            <li><a href="#.html">Order History</a></li>
+            <li><a href="#.html">Log out</a></li>
+          </ul>
+        </div>
+        <ul class="menu-main">
+          <li class="active"><a href="book-now.html">Book Now</a></li>
+          <li><a href="counties.html">Counties</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main id="main-content">
+  
+  <section>
+    <div class="container">
+      <header class="detail-header">
+        <div class="hdr-row">
+          <div class="col">
+            <h1>Lake Icaria Cottage</h1>
+            <div class="features">
+              <p><i class="fa-solid fa-tree"></i> <a href="#.html">Mill Creek Park</a> | <a href="county.html"><i class="fa-solid fa-tree"></i> Adams County, IA</a></p>
+            </div>
+          </div>
+          <div class="col">
+            <a data-target-modal="#modal-email" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-regular fa-envelope"></i> Email</a>
+            <a data-target-modal="#modal-share" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-up-right-from-square"></i> Share</a>
+
+            <!-- SHARE -->
+            <dialog class="modal" id="modal-share">
+              <h3>Share This Event <button class="button close-button" data-close-modal="#modal-share"><i class="fa fa-close"></i></button></h3>
+              <ul class="link-list">
+                <li><a href="#.html"><i class="fab fa-facebook"></i> Share to Facebook</a></li>
+                <li><a href="#.html"><i class="fab fa-twitter"></i> Share to Twitter</a></li>
+                <li><a href="#.html"><i class="fab fa-linkedin"></i> Share to LinkedIn</a></li>
+              </ul>
+            </dialog>
+                         <!-- Email -->
+                         <dialog class="modal" id="modal-email">
+                          <h3>Email to a friend <button class="button close-button" data-close-modal="#modal-email"><i class="fa fa-close"></i></button></h3>
+                          <form class="mcp-form" method="dialog">
+                            <div class="fixed-label">
+                              <label>Your Name</label>
+                              <input type="text">
+                            </div>
+                            <div class="fixed-label">
+                              <label>Your Email</label>
+                              <input type="email">
+                            </div>
+                           <hr>
+                            <p>Recipient's Email Address</p>
+                            <div class="fixed-label">
+                              <label>Email</label>
+                              <input type="email">
+                            </div>
+                            <small>Seperate multiple emails with a comma</small>
+                            <div class="fixed-label">
+                              <label>Message</label>
+                              <textarea></textarea>
+                            </div>
+                            <div class="form-action">
+                              <button class="btn-theme btn-alt close-button" data-close-modal="#modal-email">Cancel</button>
+                              <button class="btn-theme btn-theme-alt " type="submit">Send Email</button>
+                            </div>
+                          </form>
+                        </dialog>
+
+          </div>
+        </div>
+
+        <!-- Image Grids-->
+         <!-- 5 or More - note 6 and on images are in lightbox ONLY -->
+        <figure>
+          <img src="img/cabin-1.webp" class="glightbox" />
+          <img src="img/cabin-2.webp" class="glightbox" />
+          <img src="img/cabin-3.webp" class="glightbox" />
+          <img src="img/cabin-4.webp" class="glightbox" />
+          <img src="img/cabin-5.webp" class="glightbox" />
+        </figure>
+
+        <!-- Image Grids-->
+         <!-- 4 Images -->
+         <figure class="four">
+          <img src="img/cabin-1.webp" class="glightbox" />
+          <img src="img/cabin-2.webp" class="glightbox" />
+          <img src="img/cabin-3.webp" class="glightbox" />
+          <img src="img/cabin-4.webp" class="glightbox" />
+        </figure>
+
+        <!-- Image Grids-->
+         <!-- 3 Images -->
+         <figure class="three">
+          <img src="img/cabin-1.webp" class="glightbox" />
+          <img src="img/cabin-2.webp" class="glightbox" />
+          <img src="img/cabin-3.webp" class="glightbox" />
+        </figure>
+
+        <!-- Image Grids-->
+         <!-- 2 Images -->
+         <figure class="two">
+          <img src="img/cabin-1.webp" class="glightbox" />
+          <img src="img/cabin-2.webp" class="glightbox" />
+        </figure>
+
+        <!-- Image Grids-->
+         <!-- 2 Images -->
+         <figure class="single">
+          <img src="img/cabin-1.webp" class="glightbox" />
+        </figure>
+      </header>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container">
+      <div class="grid grid-twocol">
+        <div class="col" id="sidebar-affix">
+          <div class="search grid sidebar-search">
+            <div class="item-details">
+              <p><strong>$135</strong> /night</p>
+              <p><a href="county.html">Adams County, IA</a></p>
+            </div>
+            <div class="icon-input">
+              <i class="fa fa-calendar" aria-true="true"></i>
+              <label for="daterange" class="sr-only">Date Range</label>
+              <input id="daterange" type="text" name="daterange" value="" placeholder="Please select a date" />
+            </div>
+            <div class="icon-input icon-input-delete">
+              <i class="fa fa-calendar" aria-true="true"></i>
+              <label for="daterange" class="sr-only">Date Range</label>
+              <input id="daterange" type="text" name="daterange" value="" placeholder="Please select a date" />
+              <button class="btn-delete"><i class="fa fa-minus-circle"></i></button>
+            </div>
+            <a href="cart.html" class="btn-theme">Add to Cart <i class="fa fa-arrow-right"></i></a>
+            <a href="cart.html" class="btn-text"> <i class="fa-regular fa-calendar-plus"></i>Add Another Date</a>
+          </div>
+          <div class="additional-links">
+            <p><a href="#.html">View Special Regulations</a></p>
+            <p><a href="#.html">View Facility Contract</a></p>
+          </div>
+        </div>
+        <div class="col small-type">
+          <h2>Enjoy this Cozy Cottage in the Woods</h2>
+          <p>Lake Icaria Cottages have a variety of rates that accommodate any budget and can be reserved online up to two years in advance. All online reservations (2-night minimum) must be made a minimum of 5 days prior to arrival. You may call the office to make reservations for any openings within that 5-day window or to make a week-long reservation in the off season at the discount weekly rate. </p>
+          <hr />
+          <p class="icon-text">
+            <i class="fa-solid fa-calendar-check"></i>
+            <strong>Check-In / Out Availability</strong>
+            Check-in is after 4:00 PM and check-out is before 11:00 AM.
+          </p>
+          <p class="icon-text">
+            <i class="fa-solid fa-location-dot"></i>
+            <strong>Location</strong>
+            1735 Cottage Cove Rd - From Highway 148 go East on 183rd Street.
+          </p>
+          <hr/>
+          <h2>Amenities</h2>
+          <ul class="two-col">
+            <li><i class="fa-regular fa-wind"></i> A/C</li>
+            <li><i class="fa-solid fa-snowflake"></i> Camping Winter</li>
+            <li><i class="fa-solid fa-trash-can-arrow-up"></i> Carry in/Carry out refuse</li>
+            <li><i class="fa-solid fa-utensils"></i> Cooking / eating utensils</li>
+            <li><i class="fa-solid fa-circle"></i> Disc Golf</li>
+            <li><i class="fa-solid fa-dumpster"></i> Dump station</li>
+            <li><i class="fa-solid fa-charging-station"></i> EV Charging Station</li>
+            <li><i class="fa-solid fa-bolt"></i> Electricity</li>
+            <li><i class="fa-solid fa-fire-burner"></i> Fire ring</li>
+            <li><i class="fa-solid fa-fire"></i> Fireplace</li>
+            <li><i class="fa-solid fa-cubes-stacked"></i> Firewood available</li>
+            <li><i class="fa-solid fa-location-dot"></i> GEOCACHING</li>
+            <li><i class="fa-brands fa-accessible-icon"></i> Handicap Accessible</li>
+            <li><i class="fa-solid fa-temperature-arrow-up"></i> Heating</li>
+            <li><i class="fa-solid fa-kitchen-set"></i> Kitchenette</li>
+            <li><i class="fa-solid fa-rectangle-list"></i> Microwave</li>
+            <li><i class="fa-solid fa-house-user"></i> On-site resident host</li>
+            <li><i class="fa-solid fa-dog"></i> Pet Friendly</li>
+            <li><i class="fa-solid fa-ban"></i> Pets prohibited</li>
+            <li><i class="fa-solid fa-basket-shopping"></i> Picnic Table</li>
+            <li><i class="fa-solid fa-faucet-drip"></i> Pressurized water</li>
+            <li><i class="fa-solid fa-trash-can"></i> Refuse cans</li>
+            <li><i class="fa-solid fa-restroom"></i> Restroom</li>
+            <li><i class="fa-solid fa-toilet"></i> Sewer Connection</li>
+            <li><i class="fa-solid fa-shower"></i> Shower facilities</li>
+            <li><i class="fa-solid fa-person-swimming"></i> Swimming nearby</li>
+            <li><i class="fa-solid fa-table"></i> Table with chairs</li>
+            <li><i class="fa-solid fa-wifi"></i> Wi-Fi</li>
+            <li><i class="fa-solid fa-snowflake"></i> Winter Camping</li>
+          </ul>
+          <hr />
+          <h2>Availability</h2>
+          <div class="cal-legend">
+            <ul>
+              <li class="cal-legend-reserved">Reserved</li>
+              <li class="cal-legend-together">Must be purchased together</li>
+              <li class="cal-legend-selection">Your selection</li>
+            </ul>
+          </div>
+          <div class="icon-input">
+            <i class="fa fa-calendar" aria-true="true"></i>
+            <label for="daterange" class="sr-only">Date Range</label>
+            <input id="daterange" type="text" name="daterange" value="" placeholder="Please select a date" />
+          </div>
+          <div class="icon-input icon-input-delete">
+            <i class="fa fa-calendar" aria-true="true"></i>
+            <label for="daterange" class="sr-only">Date Range</label>
+            <input id="daterange" type="text" name="daterange" value="" placeholder="Please select a date" />
+            <button class="btn-delete"><i class="fa fa-minus-circle"></i></button>
+          </div>
+          
+          <p>Ideally this shows the entire two month calendar with dates available, not available, and what must be purchased together. We will need your team to craft this functionality. I can return and generate CSS if needed.</p>
+          <div id="calendar">
+            
+          </div>
+          <!-- 
+          <div id="calendar">
+            <table>
+              <tr>
+                <td class="rcCalendar rcFirstCol"><table id="calEvent1_Top_4" class="rcMainTable" cellspacing="0" border="0" style="width:100%;">
+              <caption>
+                <span style="display:none;">May</span>
+              </caption>
+              <thead>
+                <tr>
+                  <td id="calEvent1_Top_4_hd" class="rcTitle" colspan="7" style="text-align:notset;">May</td>
+                </tr><tr class="rcWeek">
+                  <th id="calEvent1_Top_4_cs_0" title="Sunday" scope="col">S</th><th id="calEvent1_Top_4_cs_1" title="Monday" scope="col">M</th><th id="calEvent1_Top_4_cs_2" title="Tuesday" scope="col">T</th><th id="calEvent1_Top_4_cs_3" title="Wednesday" scope="col">W</th><th id="calEvent1_Top_4_cs_4" title="Thursday" scope="col">T</th><th id="calEvent1_Top_4_cs_5" title="Friday" scope="col">F</th><th id="calEvent1_Top_4_cs_6" title="Saturday" scope="col">S</th>
+                </tr>
+              </thead><tbody>
+                <tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="nonselectabledates nonselectabledates" title="Wednesday, May 01, 2024"><a href="#">1</a></td><td class="nonselectabledates nonselectabledates" title="Thursday, May 02, 2024"><a href="#">2</a></td><td class="ReservedDay ReservedDay" title="Friday, May 03, 2024"><a href="#">3</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, May 04, 2024" style="font-weight:bold;"><a href="#">4</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, May 05, 2024" style="font-weight:bold;"><a href="#">5</a></td><td class="nonselectabledates nonselectabledates" title="Monday, May 06, 2024"><a href="#">6</a></td><td class="nonselectabledates nonselectabledates" title="Tuesday, May 07, 2024"><a href="#">7</a></td><td class="nonselectabledates nonselectabledates" title="Wednesday, May 08, 2024"><a href="#">8</a></td><td class="nonselectabledates nonselectabledates" title="Thursday, May 09, 2024"><a href="#">9</a></td><td class="ReservedDay ReservedDay" title="Friday, May 10, 2024"><a href="#">10</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, May 11, 2024" style="font-weight:bold;"><a href="#">11</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, May 12, 2024" style="font-weight:bold;"><a href="#">12</a></td><td class="nonselectabledates nonselectabledates" title="Monday, May 13, 2024"><a href="#">13</a></td><td class="nonselectabledates nonselectabledates" title="Tuesday, May 14, 2024"><a href="#">14</a></td><td class="nonselectabledates nonselectabledates" title="Wednesday, May 15, 2024"><a href="#">15</a></td><td class="ReservedDay ReservedDay" title="Thursday, May 16, 2024"><a href="#">16</a></td><td class="ReservedDay ReservedDay" title="Friday, May 17, 2024"><a href="#">17</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, May 18, 2024" style="font-weight:bold;"><a href="#">18</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, May 19, 2024" style="font-weight:bold;"><a href="#">19</a></td><td class="nonselectabledates nonselectabledates" title="Monday, May 20, 2024"><a href="#">20</a></td><td class="nonselectabledates nonselectabledates" title="Tuesday, May 21, 2024"><a href="#">21</a></td><td class="nonselectabledates nonselectabledates" title="Wednesday, May 22, 2024"><a href="#">22</a></td><td class="nonselectabledates nonselectabledates" title="Thursday, May 23, 2024"><a href="#">23</a></td><td class="ReservedDay ReservedDay" title="Friday, May 24, 2024"><a href="#">24</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, May 25, 2024" style="font-weight:bold;"><a href="#">25</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, May 26, 2024" style="font-weight:bold;"><a href="#">26</a></td><td class="nonselectabledates nonselectabledates" title="Monday, May 27, 2024"><a href="#">27</a></td><td class="ReservedDay ReservedDay" title="Tuesday, May 28, 2024"><a href="#">28</a></td><td class="ReservedDay ReservedDay" title="Wednesday, May 29, 2024"><a href="#">29</a></td><td class="ReservedDay ReservedDay" title="Thursday, May 30, 2024"><a href="#">30</a></td><td class="ReservedDay ReservedDay" title="Friday, May 31, 2024"><a href="#">31</a></td><td class="rcOtherMonth">&nbsp;</td>
+                </tr><tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table></td><td class="rcCalendar"><table id="calEvent1_Top_5" class="rcMainTable" cellspacing="0" border="0" style="width:100%;">
+              <caption>
+                <span style="display:none;">June</span>
+              </caption><thead>
+                <tr>
+                  <td id="calEvent1_Top_5_hd" class="rcTitle" colspan="7" style="text-align:notset;">June</td>
+                </tr><tr class="rcWeek">
+                  <th id="calEvent1_Top_5_cs_0" title="Sunday" scope="col">S</th><th id="calEvent1_Top_5_cs_1" title="Monday" scope="col">M</th><th id="calEvent1_Top_5_cs_2" title="Tuesday" scope="col">T</th><th id="calEvent1_Top_5_cs_3" title="Wednesday" scope="col">W</th><th id="calEvent1_Top_5_cs_4" title="Thursday" scope="col">T</th><th id="calEvent1_Top_5_cs_5" title="Friday" scope="col">F</th><th id="calEvent1_Top_5_cs_6" title="Saturday" scope="col">S</th>
+                </tr>
+              </thead><tbody>
+                <tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 01, 2024" style="font-weight:bold;"><a href="#">1</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, June 02, 2024" style="font-weight:bold;"><a href="#">2</a></td><td class="ReservedDay ReservedDay" title="Monday, June 03, 2024"><a href="#">3</a></td><td class="ReservedDay ReservedDay" title="Tuesday, June 04, 2024"><a href="#">4</a></td><td class="ReservedDay ReservedDay" title="Wednesday, June 05, 2024"><a href="#">5</a></td><td class="ReservedDay ReservedDay" title="Thursday, June 06, 2024"><a href="#">6</a></td><td class="ReservedDay ReservedDay" title="Friday, June 07, 2024"><a href="#">7</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 08, 2024" style="font-weight:bold;"><a href="#">8</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, June 09, 2024" style="font-weight:bold;"><a href="#">9</a></td><td class="ReservedDay ReservedDay" title="Monday, June 10, 2024"><a href="#">10</a></td><td class="ReservedDay ReservedDay" title="Tuesday, June 11, 2024"><a href="#">11</a></td><td class="ReservedDay ReservedDay" title="Wednesday, June 12, 2024"><a href="#">12</a></td><td class="ReservedDay ReservedDay" title="Thursday, June 13, 2024"><a href="#">13</a></td><td class="ReservedDay ReservedDay" title="Friday, June 14, 2024"><a href="#">14</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 15, 2024" style="font-weight:bold;"><a href="#">15</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, June 16, 2024" style="font-weight:bold;"><a href="#">16</a></td><td class="ReservedDay ReservedDay" title="Monday, June 17, 2024"><a href="#">17</a></td><td class="ReservedDay ReservedDay" title="Tuesday, June 18, 2024"><a href="#">18</a></td><td class="ReservedDay ReservedDay" title="Wednesday, June 19, 2024"><a href="#">19</a></td><td class="ReservedDay ReservedDay" title="Thursday, June 20, 2024"><a href="#">20</a></td><td class="ReservedDay ReservedDay" title="Friday, June 21, 2024"><a href="#">21</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 22, 2024" style="font-weight:bold;"><a href="#">22</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, June 23, 2024" style="font-weight:bold;"><a href="#">23</a></td><td class="ReservedDay ReservedDay" title="Monday, June 24, 2024"><a href="#">24</a></td><td class="ReservedDay ReservedDay" title="Tuesday, June 25, 2024"><a href="#">25</a></td><td class="ReservedDay ReservedDay" title="Wednesday, June 26, 2024"><a href="#">26</a></td><td class="ReservedDay ReservedDay" title="Thursday, June 27, 2024"><a href="#">27</a></td><td class="ReservedDay ReservedDay" title="Friday, June 28, 2024"><a href="#">28</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, June 29, 2024" style="font-weight:bold;"><a href="#">29</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, June 30, 2024" style="font-weight:bold;"><a href="#">30</a></td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table></td><td class="rcCalendar"><table id="calEvent1_Top_6" class="rcMainTable" cellspacing="0" border="0" style="width:100%;">
+              <caption>
+                <span style="display:none;">July</span>
+              </caption><thead>
+                <tr>
+                  <td id="calEvent1_Top_6_hd" class="rcTitle" colspan="7" style="text-align:notset;">July</td>
+                </tr><tr class="rcWeek">
+                  <th id="calEvent1_Top_6_cs_0" title="Sunday" scope="col">S</th><th id="calEvent1_Top_6_cs_1" title="Monday" scope="col">M</th><th id="calEvent1_Top_6_cs_2" title="Tuesday" scope="col">T</th><th id="calEvent1_Top_6_cs_3" title="Wednesday" scope="col">W</th><th id="calEvent1_Top_6_cs_4" title="Thursday" scope="col">T</th><th id="calEvent1_Top_6_cs_5" title="Friday" scope="col">F</th><th id="calEvent1_Top_6_cs_6" title="Saturday" scope="col">S</th>
+                </tr>
+              </thead><tbody>
+                <tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="ReservedDay ReservedDay" title="Monday, July 01, 2024"><a href="#">1</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 02, 2024"><a href="#">2</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 03, 2024"><a href="#">3</a></td><td class="ReservedDay ReservedDay" title="Thursday, July 04, 2024"><a href="#">4</a></td><td class="ReservedDay ReservedDay" title="Friday, July 05, 2024"><a href="#">5</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, July 06, 2024" style="font-weight:bold;"><a href="#">6</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, July 07, 2024" style="font-weight:bold;"><a href="#">7</a></td><td class="ReservedDay ReservedDay" title="Monday, July 08, 2024"><a href="#">8</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 09, 2024"><a href="#">9</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 10, 2024"><a href="#">10</a></td><td class="ReservedDay ReservedDay" title="Thursday, July 11, 2024"><a href="#">11</a></td><td class="ReservedDay ReservedDay" title="Friday, July 12, 2024"><a href="#">12</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, July 13, 2024" style="font-weight:bold;"><a href="#">13</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend nonselectabledates nonselectabledates" title="Sunday, July 14, 2024" style="font-weight:bold;"><a href="#">14</a></td><td class="ReservedDay ReservedDay" title="Monday, July 15, 2024"><a href="#">15</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 16, 2024"><a href="#">16</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 17, 2024"><a href="#">17</a></td><td class="ReservedDay ReservedDay" title="Thursday, July 18, 2024"><a href="#">18</a></td><td class="ReservedDay ReservedDay" title="Friday, July 19, 2024"><a href="#">19</a></td><td class="rcWeekend nonselectabledates nonselectabledates" title="Saturday, July 20, 2024" style="font-weight:bold;"><a href="#">20</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, July 21, 2024" style="font-weight:bold;"><a href="#">21</a></td><td class="ReservedDay ReservedDay" title="Monday, July 22, 2024"><a href="#">22</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 23, 2024"><a href="#">23</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 24, 2024"><a href="#">24</a></td><td class="nonselectabledates nonselectabledates" title="Thursday, July 25, 2024"><a href="#">25</a></td><td class="ReservedDay ReservedDay" title="Friday, July 26, 2024"><a href="#">26</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, July 27, 2024" style="font-weight:bold;"><a href="#">27</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, July 28, 2024" style="font-weight:bold;"><a href="#">28</a></td><td class="ReservedDay ReservedDay" title="Monday, July 29, 2024"><a href="#">29</a></td><td class="ReservedDay ReservedDay" title="Tuesday, July 30, 2024"><a href="#">30</a></td><td class="ReservedDay ReservedDay" title="Wednesday, July 31, 2024"><a href="#">31</a></td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr><tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table></td><td class="rcCalendar rcLastCol"><table id="calEvent1_Top_7" class="rcMainTable" cellspacing="0" border="0" style="width:100%;">
+              <caption>
+                <span style="display:none;">August</span>
+              </caption><thead>
+                <tr>
+                  <td id="calEvent1_Top_7_hd" class="rcTitle" colspan="7" style="text-align:notset;">August</td>
+                </tr><tr class="rcWeek">
+                  <th id="calEvent1_Top_7_cs_0" title="Sunday" scope="col">S</th><th id="calEvent1_Top_7_cs_1" title="Monday" scope="col">M</th><th id="calEvent1_Top_7_cs_2" title="Tuesday" scope="col">T</th><th id="calEvent1_Top_7_cs_3" title="Wednesday" scope="col">W</th><th id="calEvent1_Top_7_cs_4" title="Thursday" scope="col">T</th><th id="calEvent1_Top_7_cs_5" title="Friday" scope="col">F</th><th id="calEvent1_Top_7_cs_6" title="Saturday" scope="col">S</th>
+                </tr>
+              </thead><tbody>
+                <tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="ReservedDay ReservedDay" title="Thursday, August 01, 2024"><a href="#">1</a></td><td class="ReservedDay ReservedDay" title="Friday, August 02, 2024"><a href="#">2</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, August 03, 2024" style="font-weight:bold;"><a href="#">3</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, August 04, 2024" style="font-weight:bold;"><a href="#">4</a></td><td class="ReservedDay ReservedDay" title="Monday, August 05, 2024"><a href="#">5</a></td><td class="ReservedDay ReservedDay" title="Tuesday, August 06, 2024"><a href="#">6</a></td><td class="ReservedDay ReservedDay" title="Wednesday, August 07, 2024"><a href="#">7</a></td><td class="ReservedDay ReservedDay" title="Thursday, August 08, 2024"><a href="#">8</a></td><td class="ReservedDay ReservedDay" title="Friday, August 09, 2024"><a href="#">9</a></td><td class="rcWeekend nonselectabledates nonselectabledates" title="Saturday, August 10, 2024" style="font-weight:bold;"><a href="#">10</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, August 11, 2024" style="font-weight:bold;"><a href="#">11</a></td><td class="ReservedDay ReservedDay" title="Monday, August 12, 2024"><a href="#">12</a></td><td class="ReservedDay ReservedDay" title="Tuesday, August 13, 2024"><a href="#">13</a></td><td class="ReservedDay ReservedDay" title="Wednesday, August 14, 2024"><a href="#">14</a></td><td class="ReservedDay ReservedDay" title="Thursday, August 15, 2024"><a href="#">15</a></td><td class="ReservedDay ReservedDay" title="Friday, August 16, 2024"><a href="#">16</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, August 17, 2024" style="font-weight:bold;"><a href="#">17</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend ReservedDay ReservedDay" title="Sunday, August 18, 2024" style="font-weight:bold;"><a href="#">18</a></td><td class="ReservedDay ReservedDay" title="Monday, August 19, 2024"><a href="#">19</a></td><td class="ReservedDay ReservedDay" title="Tuesday, August 20, 2024"><a href="#">20</a></td><td class="ReservedDay ReservedDay" title="Wednesday, August 21, 2024"><a href="#">21</a></td><td title="Thursday, August 22, 2024"><a href="#">22</a></td><td class="ReservedDay ReservedDay" title="Friday, August 23, 2024"><a href="#">23</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, August 24, 2024" style="font-weight:bold;"><a href="#">24</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcWeekend" title="Sunday, August 25, 2024" style="font-weight:bold;"><a href="#">25</a></td><td class="ReservedDay ReservedDay" title="Monday, August 26, 2024"><a href="#">26</a></td><td class="ReservedDay ReservedDay" title="Tuesday, August 27, 2024"><a href="#">27</a></td><td class="ReservedDay ReservedDay" title="Wednesday, August 28, 2024"><a href="#">28</a></td><td title="Thursday, August 29, 2024"><a href="#">29</a></td><td title="Friday, August 30, 2024"><a href="#">30</a></td><td class="rcWeekend ReservedDay ReservedDay" title="Saturday, August 31, 2024" style="font-weight:bold;"><a href="#">31</a></td>
+                </tr><tr class="rcRow">
+                  <td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td><td class="rcOtherMonth">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table></td>
+              </tr>
+              </tbody>
+            </table>
+            
+          </div>-->
+          <!-- <img src="img/availability.png" style="mix-blend-mode: multiply;" /> -->
+          <hr />
+          <h2>Where You'll Be</h2>
+          <img src="img/location-map.png" style="mix-blend-mode: multiply;" />
+          <h3>Adams County</h3>
+          <p>Adams County Conservation maintains Lake Icaria Recreation Area which includes Timber Ridge Campground, Lake View Campground, six full-service Cabins (handicapped accessible), eight sleeper cabins, and two Cottages. <a href="county.html">Learn more about Adams County</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="animate-in delay-1">
+    <div class="container">
+      <div class="full-hdr">
+        <h3>Activites Nearby</h3>
+        <hr />
+        <a href="county-activities.html">View All Activites</a>
+      </div>
+
+      <div class="scroll-item-wrapper">
+        <div class="swiper scroll-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/activity-disc.jpg" />
+                </figure>
+                <h3>Disc Golf</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="activity-detail.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Learn More</a></li>                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/activity-bike.jpg" />
+                </figure>
+                <h3>Biking</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="activity-detail.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Learn More</a></li>                </ul>
+              </div>
+             
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/activity-hike.jpg" />
+                </figure>
+                <h3>Explore Hiking Trails</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="activity-detail.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Learn More</a></li>                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/activity-hunt.jpg" />
+                </figure>
+                <h3>Hunting</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="activity-detail.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Learn More</a></li>                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/activity-grill.jpg" />
+                </figure>
+                <h3>Cook Some Meat!</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="activity-detail.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Learn More</a></li>                </ul>
+              </div>
+            </div>
+            
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/feature-tall-last.jpg" />
+                </figure>
+                <h3>Still Can't Find What You Want?</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
+                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="animate-in delay-1">
+    <div class="container">
+      <div class="full-hdr">
+        <h3>Nearby Amenities</h3>
+        <hr />
+      </div>
+
+      <div class="scroll-item-wrapper">
+        <div class="swiper scroll-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/feature-tall-14.jpg" />
+                </figure>
+                <h3>Iowa State Capitol</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/feature-tall-15.jpg" />
+                </figure>
+                <h3>Adventureland Park</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/feature-tall-16.jpg" />
+                </figure>
+                <h3>Science Center of Iowa</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/feature-tall-17.jpg" />
+                </figure>
+                <h3>Greater Des Moines Botanical Garden</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/feature-tall-18.jpg" />
+                </figure>
+                <h3>Des Moines Art Center</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="#.html">
+                <figure>
+                  <img src="img/feature-tall-last.jpg" />
+                </figure>
+                <h3>Still Can't Find What You Want?</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
+                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+</main>
+  
+<footer class="footer">
+  <div class="container">
+    
+      <div class="row">
+        <div class="ftr-cols">
+          <div class="col">
+            <img src="img/logo.svg" />
+            <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
+            
+          </div>
+          <div class="col">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="#.html">Offers</a></li>
+              <li><a href="#.html">News</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#.html">Careers</a></li>
+              <li><a href="#.html">Contact Us</a></li>
+              <a href="#.html">MCP on Facebook</a>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#.html">Book a Facility</a></li>
+              <li><a href="#.html">Explore Events</a></li>
+              <li><a href="#.html">Discover Our Counties</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      
+      <h4 class="text-center">Explore Iowa's 99 Counties</h4>
+      <ul class="county-list">
+        <li><a href="county.html">Adair</a></li>
+        <li><a href="county.html">Adams</a></li>
+        <li><a href="county.html">Allamakee</a></li>
+        <li><a href="county.html">Appanoose</a></li>
+        <li><a href="county.html">Audubon</a></li>
+        <li><a href="county.html">Benton</a></li>
+        <li><a href="county.html">Black Hawk</a></li>
+        <li><a href="county.html">Boone</a></li>
+        <li><a href="county.html">Bremer</a></li>
+        <li><a href="county.html">Buchanon</a></li>
+        <li><a href="county.html">Buena Vista</a></li>
+        <li><a href="county.html">Butler</a></li>
+        <li><a href="county.html">Calhoun</a></li>
+        <li><a href="county.html">Carroll</a></li>
+        <li><a href="county.html">Cass</a></li>
+        <li><a href="county.html">Cedar</a></li>
+        <li><a href="county.html">Cerro Gordo</a></li>
+        <li><a href="county.html">Cherokee</a></li>
+        <li><a href="county.html">Chickasaw</a></li>
+        <li><a href="county.html">Clarke</a></li>
+        <li><a href="county.html">Clay</a></li>
+        <li><a href="county.html">Clayton</a></li>
+        <li><a href="county.html">Clinton</a></li>
+        <li><a href="county.html">Crawford</a></li>
+        <li><a href="county.html">Dallas</a></li>
+        <li><a href="county.html">Davis</a></li>
+        <li><a href="county.html">Decatur</a></li>
+        <li><a href="county.html">Delaware</a></li>
+        <li><a href="county.html">Des Moines</a></li>
+        <li><a href="county.html">Dickinson</a></li>
+        <li><a href="county.html">Dubuque</a></li>
+        <li><a href="county.html">Emmet</a></li>
+        <li><a href="county.html">Fayette</a></li>
+        <li><a href="county.html">Floyd</a></li>
+        <li><a href="county.html">Franklin</a></li>
+        <li><a href="county.html">Fremont</a></li>
+        <li><a href="county.html">Greene</a></li>
+        <li><a href="county.html">Grundy</a></li>
+        <li><a href="county.html">Hamilton</a></li>
+        <li><a href="county.html">Hancock</a></li>
+        <li><a href="county.html">Hardin</a></li>
+        <li><a href="county.html">Harrison</a></li>
+        <li><a href="county.html">Henry</a></li>
+        <li><a href="county.html">Howard</a></li>
+        <li><a href="county.html">Humboldt</a></li>
+        <li><a href="county.html">Ida</a></li>
+        <li><a href="county.html">Iowa</a></li>
+        <li><a href="county.html">Jackson</a></li>
+        <li><a href="county.html">Jasper</a></li>
+        <li><a href="county.html">Jefferson</a></li>
+        <li><a href="county.html">Johnson</a></li>
+        <li><a href="county.html">Jones</a></li>
+        <li><a href="county.html">Keokuk</a></li>
+        <li><a href="county.html">Kossuth</a></li>
+        <li><a href="county.html">Lee</a></li>
+        <li><a href="county.html">Linn</a></li>
+        <li><a href="county.html">Louisa</a></li>
+        <li><a href="county.html">Lucas</a></li>
+        <li><a href="county.html">Lyon</a></li>
+        <li><a href="county.html">Madison</a></li>
+        <li><a href="county.html">Mahaska</a></li>
+        <li><a href="county.html">Marion</a></li>
+        <li><a href="county.html">Marshall</a></li>
+        <li><a href="county.html">Mills</a></li>
+        <li><a href="county.html">Mitchell</a></li>
+        <li><a href="county.html">Monona</a></li>
+        <li><a href="county.html">Monroe</a></li>
+        <li><a href="county.html">Montgomery</a></li>
+        <li><a href="county.html">Muscatine</a></li>
+        <li><a href="county.html">O'Brien</a></li>
+        <li><a href="county.html">Osceola</a></li>
+        <li><a href="county.html">Page</a></li>
+        <li><a href="county.html">Palo Alto</a></li>
+        <li><a href="county.html">Plymouth</a></li>
+        <li><a href="county.html">Pocahantas</a></li>
+        <li><a href="county.html">Polk</a></li>
+        <li><a href="county.html">Pottawattamie</a></li>
+        <li><a href="county.html">Poweshiek</a></li>
+        <li><a href="county.html">Ringgold</a></li>
+        <li><a href="county.html">Sac</a></li>
+        <li><a href="county.html">Scott</a></li>
+        <li><a href="county.html">Shelby</a></li>
+        <li><a href="county.html">Sioux</a></li>
+        <li><a href="county.html">Story</a></li>
+        <li><a href="county.html">Tama</a></li>
+        <li><a href="county.html">Taylor</a></li>
+        <li><a href="county.html">Union</a></li>
+        <li><a href="county.html">Van Buren</a></li>
+        <li><a href="county.html">Wapello</a></li>
+        <li><a href="county.html">Warren</a></li>
+        <li><a href="county.html">Washington</a></li>
+        <li><a href="county.html">Wayne</a></li>
+        <li><a href="county.html">Webster</a></li>
+        <li><a href="county.html">Winnebago</a></li>
+        <li><a href="county.html">Winneshiek</a></li>
+        <li><a href="county.html">Woodbury</a></li>
+        <li><a href="county.html">Worth</a></li>
+        <li><a href="county.html">Wright</a></li>
+      </ul>
+      <hr />
+      <div class="copy">
+        <p>© 2023 My County Parks | All Rights Reserved | Web Application by <a href="#.html">Informatics, Inc</a></p>
+        <ul>
+          <li><a href="#.html">Terms and Conditions</a></li>
+          <li><a href="#.html">Cookie Statement</a></li>
+          <li><a href="#.html">Privacy Policy</a></li>
+        </ul>
+        
+      </p>
+  </div>
+</footer>
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+  <script src="js/datepicker.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- NEW DATE PICKER -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script src="js/scripts.js"></script>
+  <script>
+    
+    // Light Box //
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true
+    });
+
+  </script>
+  </body>
+</html>

@@ -98,61 +98,181 @@
             </ul>
             <span>Showing 75 results</span>
           </div>
-          <form class="grid-events">
+          <form action="/Event/Event" class="grid-events" id="eventSearchForm" method="post">
             <div class="form-group">
-              <div class="icon-input">
+            <div class="icon-input">
                 <i class="fa fa-magnifying-glass" aria-true="true"></i>
-                <label for="searchInput" class="sr-only">Keyword Search</label>
-                <input id="searchInput" type="search" placeholder="Keyword Search">
-              </div>
+                <input class="form-control" id="Keyword" maxlength="100" name="EventSearchModel.Keyword" placeholder="Keyword Search" type="search" value="">
             </div>
+        </div>
+        <div class="form-group">
+          <div class="icon-input">
+              <i class="fa fa-calendar" aria-true="true"></i>
+              <label for="daterange" class="sr-only">Check Out</label>
+              <input id="daterange" type="text" name="daterange" placeholder="Choose Your Dates" value="">
+          </div>
+      </div>
+        <div class="form-group">
+            <div class="icon-input custom-select">
+                <i class="fa fa-tent" aria-true="true"></i>
+                <select class="form-select" id="ddlCategory" name="EventSearchModel.Category"><option value="">Category</option>
+<option value="Other Location">Other Location</option>
+<option value="Programs">Programs</option>
+<option value="Special Events">Special Events</option>
+<option value="Trips">Trips</option>
+<option value="Youth Camps">Youth Camps</option>
+</select>
 
-            <!-- Category -->
-            <div class="form-group">
-              <span class="form-group-label" data-bs-toggle="collapse" data-bs-target="#filter-facility" aria-expanded="false" aria-controls="#filter-facility"><i class="fa fa-tent" aria-true="true"></i> Category</span>
-              <div class="form-group-options collapsed collapse" id="filter-facility">
-                <div class="checkbox-group">
-                  <label for="cabin"><input type="checkbox" id="cabin" name="preferences" value="cabin">Cabin</label>
-                  <label for="campsite"><input type="checkbox" id="campsite" name="preferences" value="cabin">Campsite</label>
-                  <label for="lodge"><input type="checkbox" id="lodge" name="preferences" value="cabin">Lodge</label>
-                  <label for="shelter"><input type="checkbox" id="shelter" name="preferences" value="shelter">Shelter</label>
-                  <label for="other"><input type="checkbox" id="other" name="preferences" value="other">Other</label>
-                </div>
-              </div>
             </div>
-
-            <!-- County -->
-            <div class="form-group">
-              <div class="icon-input custom-select">
+        </div>
+        <div class="form-group">
+            <div class="icon-input custom-select">
                 <i class="fa fa-map" aria-true="true"></i>
-                <label class="sr-only">County</label>
-                <select>
-                  <option value="" selected disabled hidden>County</option>
-                  <option>Ada</option>
-                  <option>Adams</option>
-                  <option>Allamakee</option>
-                  <option>Appanoose</option>
-                  <option>Audubon</option>
-                  <option>Benton</option>
-                  <option>Blackhawk</option>
-                  <option>...add the rest...</option>
-                </select>
-              </div>
+                <select class="form-select" id="ddlCounty" name="EventSearchModel.CountyName"><option value="">County</option>
+<option value="Adair">Adair</option>
+<option value="Adams">Adams</option>
+<option value="Allamakee">Allamakee</option>
+<option value="Appanoose">Appanoose</option>
+<option value="Audubon">Audubon</option>
+<option value="Benton">Benton</option>
+<option value="Black Hawk">Black Hawk</option>
+<option value="Boone">Boone</option>
+<option value="Bremer">Bremer</option>
+<option value="Buchanan">Buchanan</option>
+<option value="Buena Vista">Buena Vista</option>
+<option value="Butler">Butler</option>
+<option value="Calhoun">Calhoun</option>
+<option value="Carroll">Carroll</option>
+<option value="Cass">Cass</option>
+<option value="Cedar">Cedar</option>
+<option value="Cerro Gordo">Cerro Gordo</option>
+<option value="Cherokee">Cherokee</option>
+<option value="Chickasaw">Chickasaw</option>
+<option value="Clarke">Clarke</option>
+<option value="Clay">Clay</option>
+<option value="Clayton">Clayton</option>
+<option value="Clinton">Clinton</option>
+<option value="Crawford">Crawford</option>
+<option value="Dallas">Dallas</option>
+<option value="Davis">Davis</option>
+<option value="Decatur">Decatur</option>
+<option value="Delaware">Delaware</option>
+<option value="Des Moines">Des Moines</option>
+<option value="Dickinson">Dickinson</option>
+<option value="Dubuque">Dubuque</option>
+<option value="Emmet">Emmet</option>
+<option value="Fayette">Fayette</option>
+<option value="Floyd">Floyd</option>
+<option value="Franklin">Franklin</option>
+<option value="Fremont">Fremont</option>
+<option value="Greene">Greene</option>
+<option value="Grundy">Grundy</option>
+<option value="Guthrie">Guthrie</option>
+<option value="Hamilton">Hamilton</option>
+<option value="Hancock">Hancock</option>
+<option value="Hardin">Hardin</option>
+<option value="Harrison">Harrison</option>
+<option value="Henry">Henry</option>
+<option value="Howard">Howard</option>
+<option value="Humboldt">Humboldt</option>
+<option value="Ida">Ida</option>
+<option value="Iowa">Iowa</option>
+<option value="Jackson">Jackson</option>
+<option value="Jasper">Jasper</option>
+<option value="Jefferson">Jefferson</option>
+<option value="Johnson">Johnson</option>
+<option value="Jones">Jones</option>
+<option value="Keokuk">Keokuk</option>
+<option value="Kossuth">Kossuth</option>
+<option value="Lee">Lee</option>
+<option value="Linn">Linn</option>
+<option value="Louisa">Louisa</option>
+<option value="Lucas">Lucas</option>
+<option value="Lyon">Lyon</option>
+<option value="Madison">Madison</option>
+<option value="Mahaska">Mahaska</option>
+<option value="Marion">Marion</option>
+<option value="Marshall">Marshall</option>
+<option value="Mills">Mills</option>
+<option value="Mitchell">Mitchell</option>
+<option value="Monona">Monona</option>
+<option value="Monroe">Monroe</option>
+<option value="Montgomery">Montgomery</option>
+<option value="Muscatine">Muscatine</option>
+<option value="O'Brien">O'Brien</option>
+<option value="Osceola">Osceola</option>
+<option value="Page">Page</option>
+<option value="Palo Alto">Palo Alto</option>
+<option value="Plymouth">Plymouth</option>
+<option value="Pocahontas">Pocahontas</option>
+<option value="Polk">Polk</option>
+<option value="Pottawattamie">Pottawattamie</option>
+<option value="Poweshiek">Poweshiek</option>
+<option value="Ringgold">Ringgold</option>
+<option value="Sac">Sac</option>
+<option value="Scott">Scott</option>
+<option value="Shelby">Shelby</option>
+<option value="Sioux">Sioux</option>
+<option value="Story">Story</option>
+<option value="Tama">Tama</option>
+<option value="Taylor">Taylor</option>
+<option value="Union">Union</option>
+<option value="Van Buren">Van Buren</option>
+<option value="Wapello">Wapello</option>
+<option value="Warren">Warren</option>
+<option value="Washington">Washington</option>
+<option value="Wayne">Wayne</option>
+<option value="Webster">Webster</option>
+<option value="Winnebago">Winnebago</option>
+<option value="Winneshiek">Winneshiek</option>
+<option value="Woodbury">Woodbury</option>
+<option value="Worth">Worth</option>
+<option value="Wright">Wright</option>
+</select>
             </div>
+        </div>
+        <div class="form-group" id="parkContainer" style="display:none;">
+            <div class="icon-input custom-select">
+                <i class="fa fa-tent" aria-true="true"></i>
+                <select class="form-select" data-val="true" data-val-required="The ParkId field is required." id="ddlPark" name="EventSearchModel.ParkId"><option value="">Park</option>
+</select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="icon-input custom-select">
+                <i class="fa fa-hiking" aria-true="true"></i>
+                <select class="form-select" id="ddlActivity" name="EventSearchModel.ActivtyIcon"><option value="">Activity</option>
+<option value="Biking">Biking</option>
+<option value="Boating">Boating</option>
+<option value="Cabins">Cabins</option>
+<option value="Camping">Camping</option>
+<option value="Canoeing &amp; Kayaking">Canoeing &amp; Kayaking</option>
+<option value="Disc Golf">Disc Golf</option>
+<option value="Education">Education</option>
+<option value="Electric Vehicle Charging Station">Electric Vehicle Charging Station</option>
+<option value="Equestrian Activities">Equestrian Activities</option>
+<option value="Facility Rentals">Facility Rentals</option>
+<option value="FALL COLORS">FALL COLORS</option>
+<option value="Fishing">Fishing</option>
+<option value="Geocaching">Geocaching</option>
+<option value="Historic Visits">Historic Visits</option>
+<option value="Hunting">Hunting</option>
+<option value="Other Activities">Other Activities</option>
+<option value="Para Gliding">Para Gliding</option>
+<option value="Picnicking">Picnicking</option>
+<option value="Swimming">Swimming</option>
+<option value="Trails &amp; Hiking">Trails &amp; Hiking</option>
+<option value="Winter Activities">Winter Activities</option>
+</select>
 
-            <div class="form-group">
-              <div class="icon-input">
-                <i class="fa fa-calendar" aria-true="true"></i>
-                <label for="daterange" class="sr-only">Check Out</label>
-                <input id="daterange" type="text" name="daterange" value="" />
-              </div>
             </div>
-
-            <div class="form-actions">
-              <button class="btn-simple">Clear</button>
-              <button class="btn-theme">Search</button>
-            </div>
-          </form>
+        </div>
+       
+        <div class="form-actions">
+            <button type="button" class="btn-simple" id="clearEventFilter">Clear</button>
+            <button type="submit" class="btn-theme" id="searchButton">Search</button>
+        </div>
+<input id="hiddenParkId" name="EventSearchModel.ParkId" type="hidden" value="0"><input id="ActivtyIcon" name="EventSearchModel.ActivtyIcon" type="hidden" value=""><input data-val="true" data-val-required="The ActivtyIconId field is required." id="ActivtyIconId" name="EventSearchModel.ActivtyIconId" type="hidden" value="0"><input id="hiddenParkName" name="EventSearchModel.ParkName" type="hidden" value=""><input id="hiddenLatitude" name="EventSearchModel.Latitude" type="hidden" value=""><input id="hiddenLongitude" name="EventSearchModel.Longitude" type="hidden" value=""><input id="hdnStartDate" name="EventSearchModel.StartDate" type="hidden" value="2024-09-10"><input id="hdnEndDate" name="EventSearchModel.EndDate" type="hidden" value="2024-12-10"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8PbEUzs7ifdCnsB8iVvf63i3H_6P7k4MfDz-lQI_NOTh7IZTBllowhg80K7TTQ0MHoWgff16Jl71fXLqw-KU0dDrvLlSQWp94aVMxusZ_sskaax5jqJ4WwLW1f5AGcPpHof2lA0baOblxdHn9QWo8SM"></form>
         </div>
       </div>
 
