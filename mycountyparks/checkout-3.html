@@ -73,7 +73,7 @@
       <header class="detail-header">
         <div class="hdr-row">
           <div class="col">
-            <h1>Checkout</h1>
+            <h1>Payment</h1>
           </div>
           <div class="col">
             <a href="cart.html" class="btn-theme btn-alt">Back to Cart</a>
@@ -83,27 +83,32 @@
     </div>
   </section>
   <div class="container">
-          <ol class="progress-bar">
-            <li class="progress-bar__steps current">
-                <span class="progress-bar__steps--numbers"></span>
-                <span class="progress-bar__steps--text">Facility Checkout</span>
-            </li>
-            <li class="progress-bar__steps not-current">
-                <span class="progress-bar__steps--numbers"></span>
-                <span class="progress-bar__steps--text">Payment</span>
-            </li>
-            <li class="progress-bar__steps not-current">
-                <span class="progress-bar__steps--numbers"></span>
-                <span class="progress-bar__steps--text">Receipt</span>
-            </li>
-        </ol>
+    <ol class="progress-bar">
+      <li class="progress-bar__steps not-current">
+        <div class="progress-bar__steps--numbers"></div>
+        <div class="progress-bar__steps--text">Facility Checkout</div>
+      </li>
+      <li class="progress-bar__steps current">
+        <div class="progress-bar__steps--numbers"></div>
+        <div class="progress-bar__steps--text">Payment</div>
+      </li>
+      <li class="progress-bar__steps not-current">
+        <div class="progress-bar__steps--numbers"></div>
+        <div class="progress-bar__steps--text">Receipt</div>
+      </li>
+      <li class="progress-bar__steps not-current">
+        <div class="progress-bar__steps--numbers"></div>
+        <div class="progress-bar__steps--text">Tab Sample</div>
+      </li>
+    </ol>
+    
 </div>
   <section>
     <div class="container">
       <div class="grid grid-twocol">
         <div class="col" id="sidebar-affix">
           <div class="search grid sidebar-search">
-            
+            <p class="alert alert-check">Your dates are available!<br> You have <strong>7:32</strong> minutes to complete your booking before we return this facilty to our inventory.</p>
             <h3>Price Details</h3>
             <div class="facility-summary">
               <figure>
@@ -133,22 +138,22 @@
               <p>Total</p>
               <p><strong>$219.56</strong></p>
             </div>
+
           </div>
+          <form class="promo-form mcp-form fixed-labels-xl small-type" action="">
+            <label>Promo Code</label>
+          <div class="fixed-label">
+            <input type="text" required>
+            <a href=""class="btn-theme">Apply</a>
+          </div>
+          </form>
         </div>
         <div class="col">
           <form class="mcp-form fixed-labels-xl small-type" action="index.html">
             
-            <h2>Facility Information</h2>
-            <div class="fixed-label">
-              <label>Occupants</label>
-              <input type="number">
-            </div>
-            <p class="helper">Max Occupance at this Facilty: <strong>4</strong></p>
-            <div class="fixed-label">
-              <label>Lockbox Code</label>
-              <input type="number">
-            </div>
-            <p class="helper">Choose your door access code. This code will unlock the door upon arrival.</p>
+            <h2>Billing Information</h2>
+            <p>Please complete all fields below.</p>
+
             <div class="fixed-label">
               <label>First Name</label>
               <input type="text">
@@ -158,52 +163,106 @@
               <input type="text">
             </div>
             <div class="fixed-label">
-              <label>Check In</label>
-              <input type="time">
+              <label>Email</label>
+              <input type="text" required>
             </div>
-            <p class="helper">Earliest checkin is 3:00 PM</p>
             <div class="fixed-label">
-              <label>Check Out</label>
-              <input type="time">
+              <label>Confirm Email</label>
+              <input type="text" required>
             </div>
-            <p class="helper">Latest check out is 11:00 AM</p>
             <div class="fixed-label">
-              <label>Event Type</label>
+              <label>Address</label>
+              <input type="text" required>
+            </div>
+            <p class="helper">Street address, P.O. box, company name, c/o</p>
+            <div class="fixed-label">
+              <input type="text" required>
+            </div>
+            <p class="helper">Apartment, suite, unit, building, floor, etc.</p>
+            <div class="fixed-label">
+              <label>City</label>
+              <input type="text" required>
+            </div>
+            <div class="fixed-label">
+              <label for="text">State</label>
+              <select id="state" name="state" required>
+                <option value="" disabled selected>Select a state</option>
+                <option value="IA" selected>Iowa</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+            <div class="fixed-label">
+              <label>Cell Phone</label>
+              <input type="text" required>
+            </div>
+            <div class="fixed-label">
+              <label>Additional Phone</label>
               <input type="text">
             </div>
-            <p class="helper">Birthday Party, Church Event...</p>
+
+            <br>
+            
+            <h3>Special Needs / Accommodations / Comments</h3>
             <div class="fixed-label">
-              <label>Event Name</label>
-              <input type="text">
+              <label for="comments">Additional Comments</label>
+              <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
             </div>
-            <p class="helper">Smith Wedding, Quilters Guild Board Meeting...</p>
-            <h3>Additional Agreements for Big Woods Lake Cabin</h3>
-            <label><input type="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil qui distinctio expedita placeat doloremque! Modi eaque necessitatibus distinctio hic officia alias debitis quidem natus.</label>
-            <label><input type="checkbox">I am at least 21 years old.</label>
-            <label><input type="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil qui distinctio expedita placeat doloremque! Modi eaque necessitatibus distinctio hic officia alias debitis quidem natus.</label>
-            <label><input type="checkbox">If you cancel there will be a 50% restocking fee and it will only be returned if the cabin is re-rented out for these nights.</label>
-            <h3>Rental Contract Agreement</h3>
-            <ol>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil assumenda. Distinctio quidem nam nostrum soluta officia, aliquid repellat sint.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil assumenda. Distinctio quidem nam nostrum soluta officia, aliquid repellat sint.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil assumenda. Distinctio quidem nam nostrum soluta officia, aliquid repellat sint.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil assumenda. Distinctio quidem nam nostrum soluta officia, aliquid repellat sint.</li>
-            </ol>
-            <h3>MyCountyParks.com Agreement</h3>
-            <label><input type="checkbox">I have read and understand the cancel policy</label>
-            <label><input type="checkbox">I have read and understand the other policy</label>
-            <label><input type="checkbox">I have read and understand the terms and conditions policy</label>
-            <h2>Payment Checkout</h2>
-            <p>To ensure your transaction is safe and secure, our payment process is handled via a trusted .NET payment gateway embedded within our system. You will be temporarily redirected to this secure environment to enter your payment details.</p>
-            <ul>
-              <li><strong>Security Assurance</strong>: Your payment information is encrypted and processed through a secure gateway.</li>
-              <li><strong>Privacy Protection</strong>: Your personal and payment information remains confidential and is not stored within our application.</li>
-            </ul>
-          </form>
+            <p class="helper">Please enter any special needs, accommodations, or comments here.</p>
+
+
+</form>
 
             <div class="form-action">
               <button type="submit" class="btn-theme btn-alt">Back to Cart</button>
-                <a href="checkout-2.html" class="btn-theme open-button">Payment</a>
+                <a data-target-modal="#modal-pay" href="#.html" class="btn-theme open-button">Confirm and Pay</a>
             </div>
         </div>
       </div>
