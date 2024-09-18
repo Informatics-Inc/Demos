@@ -173,8 +173,12 @@ input[type='checkbox'] {width: auto; text-align: left;}
 
 
 
-  .promo-form{margin-top:35px;border:solid 1px var(--primary);padding:25px;border-radius:20px;}
-  .promo-form label{margin-bottom:10px}
- .promo-form.mcp-form{display:block;input,select,textarea{padding:10px;}
+
+  
+  .search.grid.sidebar-search.promo-form {margin-top:20px}
+  .search.grid.sidebar-search.promo-form {display:block;input,select,textarea{padding:10px;background:none;border:solid var(--light) 1px;}
 }
-  .promo-form .btn-theme{margin-top:20px}
+.search.grid.sidebar-search.promo-form label{display:block;margin-bottom:15px}
+.search.grid.sidebar-search.promo-form .btn-theme{margin-top:10px;}
+
+
