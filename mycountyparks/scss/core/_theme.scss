@@ -49,6 +49,8 @@ p.preheader + h2 {margin-top: -1rem;}
 ol {padding: 0 0 0 15px;}
 ol li {margin: 0 0 .5rem 0;}
 
+.content-image img {width: 100% !important; height: auto !important;}
+
 .link-list {list-style: none; margin: 1rem 0; padding: 0;}
 .link-list li a {padding: 1rem; font-size: 1rem; font-weight: 400; text-decoration: none; display: block; border-bottom: 1px dotted #ccc; display: flex; align-content: center;}
 .link-list li a i {color: var(--primary); font-size: 1.5rem; width: 25px; text-align: left; margin: 0 10px 0 0;}
@@ -82,7 +84,7 @@ a[data-target-modal="#modal-share"].btn-theme  {
 
 .text-list-date {display: inline-block; text-transform: uppercase; padding: 0 0 0 10px; text-decoration: none; font-size: .85rem; margin: 0 0 5px 0; color: #888; border-left: 1px solid #ccc; margin-left: 10px;}
 
-.table {width: 100%;}
+.table {width: 100%; margin-top: 1rem;}
 .table td, .table th {padding: 10px; text-align: left;}
 .table tr {border-bottom: 1px solid rgba(0,0,0,.25); background: var(--light);}
 .table tr:nth-of-type(2n) {background: var(--tertiary);}

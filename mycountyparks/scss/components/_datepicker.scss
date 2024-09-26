@@ -1,0 +1,142 @@
+/* Fix Height Layout */
+.default-calendar {
+    background-color: initial;
+    height: 520px;
+    position: relative;
+    
+}
+@media (max-width: 600px) {
+    .default-calendar {
+        background-color: initial;
+        height: 615px;
+        position: relative;
+    }
+}
+
+/* Show Calendar in Left Col */
+#dateRangeDiv {
+    visibility: hidden;
+    height: 0px !important;
+    width: 0px !important;
+}
+
+.daterangepicker .calendar-table td.off.ends {
+    visibility: hidden;
+}
+#append_datepicker_section:before {display: none;}
+#append_datepicker_section {
+    .daterangepicker {
+    display: block !important;
+    top: 0px !important;
+    width: 100%;
+    box-shadow: none;}
+    .daterangepicker:after, .daterangepicker:before {display: none;}
+    .drp-calendar {padding: 10px; max-width: none;}
+    .daterangepicker .calendar-table td {height: auto; width: auto; padding: 10px 5px; font-size: .85rem;}
+}
+
+/* Global Calendar Styles */
+.daterangepicker {font-family: var(--body) !important;}
+.daterangepicker .calendar-table th {line-height: inherit !important; padding: 0;}
+.daterangepicker td {border: 2px solid transparent !important;}
+.daterangepicker .month {padding: 0 !important;}
+.daterangepicker .month select {border: none; padding: 5px !important; font-size: 1rem !important; background: #f9f9f9; border-radius: 5px !important; border: 1px solid #ccc !important;}
+.daterangepicker thead {
+    .monthselect, .yearselect, .next span, .previous span {margin-bottom: 1rem !important;}
+}
+.daterangepicker thead tr:nth-of-type(2) th {font-weight: 700; opacity: .75;}
+
+.daterangepicker .nonselectabledates {background: none !important; opacity: .7;}
+.daterangepicker .available {color: #111; opacity: 1; font-weight: 500;}
+.daterangepicker .selected-date {text-decoration: none !important; color: #222 !important;}
+// .daterangepicker td.start-date {border: 2px solid var(--dark) !important;}
+// .daterangepicker td.in-range {background: var(--light) !important;}
+// .daterangepicker td.end-date {border: 2px solid var(--dark) !important; background: var(--primary-light) !important;}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {background: var(--light) !important; border-color: var(--dark);}
+.daterangepicker .group-date {background: var(--light) !important;}
+
+.cal-legend ul {list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1rem;}
+.cal-legend ul li {font-size: .8rem; display: flex; gap: .35rem; align-items: center;}
+.cal-legend ul li:before {display: block; content: "7"; width: 15px; height: 15px; background: #fff; border-radius: 3px; display: grid; align-content: center; text-align: center; text-decoration: line-through; color: #888; border: 1px solid #999;}
+.cal-legend ul li.cal-legend-selection:before {background: var(--primary-light); content: "";}
+.cal-legend ul li.cal-legend-together:before {background: var(--light); content: "";}
+
+/* TABLET */
+@media (min-width: 768px) {
+    #append_datepicker_section {
+        .drp-calendar {width: 50%; padding: 1.5rem;}
+        .daterangepicker .drp-calendar.left {margin: 0 !important;}
+        .daterangepicker .drp-calendar.right {margin: 0 !important;}
+    }
+}
+// #daterange001 .daterangepicker .drp-calendar.left {
+//     margin-left: 100px;
+// }
+
+// #daterange001 .drp-calendar right {
+//     margin-right: 10px;
+// }
+
+
+// #calendarModal .daterangepicker td.today {
+//     background-color: #fff !important;
+//     border-color: transparent !important;
+//     color: #999;
+// }
+
+// #calendarModal .daterangepicker td.active {
+//     background-color: #fff !important;
+//     border-color: transparent !important;
+//     color: #999;
+// }
+
+// .daterangepicker td.today {
+//     background-color: #fff !important;
+//     border-color: transparent !important;
+//     color: #999;
+// }
+
+// .no-hover:hover {
+//     background-color: transparent !important;
+//     color: inherit !important;
+// }
+
+// .no-hover.active, .no-hover.start-date {
+//     background-color: transparent !important;
+//     color: inherit !important;
+// }
+
+// .daterangepicker .calendar-table td.default-selected-date {
+//     background-color: transparent !important;
+//     color: inherit !important; 
+//     border: none !important; 
+// }
+
+// .default-selected-date {
+//     background-color: transparent !important; 
+//     color: inherit !important; 
+//     border: none !important; 
+// }
+
+// #daterange001 + .daterangepicker {
+//     display: block !important;
+// }
+
+// .date-input {
+//     visibility: hidden;
+//     height: 0px !important;
+//     width: 0px !important;
+// }
+
+
+//     #append_datepicker_section .daterangepicker .drp-calendar.left {
+//         margin: 0;
+//     }
+
+//     #append_datepicker_section .daterangepicker .drp-calendar.right {
+//         margin: 0;
+//     }
+
+// .hide-div {
+//     display: none;
+// }

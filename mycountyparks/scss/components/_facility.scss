@@ -29,11 +29,6 @@
 .additional-links p {margin: .25rem 0;}
 .additional-links a {font-weight: 400; font-size: .9rem;}
 
-.cal-legend ul {list-style: none; padding: 0; margin: 1rem 0; display: flex; flex-wrap: wrap; gap: 1rem;}
-.cal-legend ul li {font-size: .8rem; display: flex; gap: .35rem; align-items: center;}
-.cal-legend ul li:before {display: block; content: "7"; width: 15px; height: 15px; background: #eee; border-radius: 3px; display: grid; align-content: center; text-align: center; text-decoration: line-through; color: #888;}
-.cal-legend ul li.cal-legend-selection:before {background: var(--primary-light); content: "";}
-.cal-legend ul li.cal-legend-together:before {background: #ababab; content: "";}
 
 ul.two-col {list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr;}
 ul.two-col li {font-size: .9rem; padding: 5px 5px 5px 0;}

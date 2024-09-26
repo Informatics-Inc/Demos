@@ -23,7 +23,7 @@
 .menu-user {position: relative;justify-self: flex-end; display: flex; gap: 10px;}
 .menu-user > a { padding: 15px; background: var(--tertiary); border-radius: 50px; text-decoration: none; display: flex; gap: 10px; justify-self: flex-end; margin: 10px 0;}
 .menu-user > a i {font-size: 1.5rem;}
-.menu-user ul {list-style: none; padding: 0; margin: 0; position: absolute; top: 105%; right: 0; background: #fff; padding: 15px; box-shadow: 5px 5px 15px rgba(0,0,0,.15); z-index: 15; width: 200px; border-radius: 15px; opacity: 0; visibility: hidden; transition: var(--transition);} 
+.menu-user ul {list-style: none; padding: 0; margin: 0; position: absolute; top: 105%; right: 0; background: #fff; padding: 15px; box-shadow: 5px 5px 15px rgba(0,0,0,.15); z-index: 75; width: 200px; border-radius: 15px; opacity: 0; visibility: hidden; transition: var(--transition);} 
 .menu-user ul a {font-size: .9rem; padding: 10px; font-weight: 400; text-decoration: none; display: block; border-bottom: 1px dotted var(--gray);}
 .menu-user ul li:last-of-type a {border: 0;}
 .menu-user ul a:hover {padding: 10px 5px 10px 15px; text-decoration: underline; cursor: pointer;}

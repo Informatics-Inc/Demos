@@ -9,7 +9,7 @@ h2 {font-size: 1.15rem; border-top: 1px solid rgb(0 0 0 / .1); padding-top: 2rem
 .helper {font-size: .75rem; margin: 0; padding: 0px 10px 5px 10px; font-style: italic; margin-top: -5px;}
 label:has(input[type='checkbox']) {text-align: left; text-transform: none; font-weight: 400; padding-left: 25px; position: relative; font-size: .85rem;}
 input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
-.check-list {display: grid; grid-template-columns: repeat( auto-fit, minmax(170px, 1fr) ); gap: 5px;}
+.check-list {display: grid; grid-template-columns: repeat( auto-fit, minmax(165px, 1fr) ); gap: 5px;}
 }
 
 .form-action {display: flex; justify-content: space-between; border-top: 1px solid #ccc; padding: 2rem 0 0 0; margin: 2rem 0 0 0; width: 100%;}
@@ -25,9 +25,11 @@ input[type='checkbox'] {width: auto; text-align: left;}
 /* Fixed Labels */
 .fixed-label {position: relative;}
 .fixed-label label {position: absolute; height: 100%; display: flex; justify-content: center; flex-direction: column; width: 125px; padding: 10px 15px; border-right: 1px solid var(--light); text-align: left; z-index: 5;}
-.fixed-label input, .fixed-label select, .fixed-label textarea {padding: 10px 10px 10px 140px;}
+.fixed-label input, .fixed-label select, .fixed-label textarea {padding: 10px 10px 10px 140px; height: 100%;}
 .fixed-labels-xl .fixed-label label {width: 165px; font-size: .75rem;}
 .fixed-labels-xl input, .fixed-labels-xl select, .fixed-labels-xl textarea {padding-left: 175px;}
+.fixed-label label:has(+ input:focus-visible) {border-color: rgba(0,0,0,.1);}
+
 // .fixed-labels-xl .helper {padding-left: 165px;}
 
 /* Login */
@@ -40,7 +42,7 @@ input[type='checkbox'] {width: auto; text-align: left;}
     input, select {background: #fff;}
 }
 .form-page {
-    .content {padding: 25px; text-align: center;;}
+    .content {padding: 25px 0; text-align: center;;}
     #logo {margin: 1rem auto; width: 225px; max-width: none;}
     #logo img {width: 225px; margin: 0 auto;}
     header {margin: 0 0 2rem 0;}
@@ -50,7 +52,7 @@ input[type='checkbox'] {width: auto; text-align: left;}
     .content p + p {margin: 0;}
     h2:has(+ p) {margin-bottom: 0;}
     h2 + p {margin: 0 0 2rem 0;}
-    .lead {font-size: 1.25rem !important;}
+    .lead {font-size: 1rem !important;}
     .promo {margin-top: 2rem;}
 }
 
@@ -58,6 +60,7 @@ input[type='checkbox'] {width: auto; text-align: left;}
 @media (min-width: 768px) {
   .form-page {
     .content {padding: 50px;}
+    .lead {font-size: 1.25rem !important;}
   }
 } 
 
