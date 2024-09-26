@@ -47,6 +47,7 @@ ul.two-col li i {width: 25px; text-align: center; font-size: 1rem;}
 @media (min-width: 992px) {
 .detail-header {text-align: left;}
 .detail-header .hdr-row {display: flex; justify-content: space-between; align-items: center; margin: 0 0 0rem 0;}
+.detail-header .hdr-row .col:nth-of-type(2) {min-width: 200px; text-align: right;}
 .detail-header .hdr-row h1 {font-size: 3rem;}
 .detail-header figure {grid-template-rows: 250px 250px;}
 

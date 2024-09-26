@@ -30,6 +30,7 @@
 .sec-nav ul.open, .sec-nav li:hover > ul {opacity: 1; top: 100%; visibility: visible;}
 // .sec-nav ul {opacity: 1; top: 100%; visibility: visible;}
 #sec-nav .results ul {display: none;}
+
 /* TABLET */
 @media (min-width: 768px) {
 .sec-nav {gap: 25px;}  
@@ -41,7 +42,7 @@
 .sec-nav {gap: 30px; margin-right: 30px;}  
 .sec-nav a {padding: 30px 0; font-size: 1rem;}
 #sec-nav {transition: var(--transition);}
-#sec-nav.sticky {position: fixed; top: 0; left: 0; width: 100%; z-index: 15; box-shadow: 0 5px 15px rgba(0,0,0,.1); background: #fff;background: var(--bkg); }
+#sec-nav.sticky {position: fixed; top: 0; left: 0; width: 100%; z-index: 15; box-shadow: 0 5px 15px rgba(0,0,0,.025); background: #fff;background: var(--bkg); border-bottom: 38px solid var(--light);}
 #sec-nav.sticky + .content-sections {padding-top: 85px;}
 #sec-nav.sticky .sec-nav {border: none;}
 
@@ -54,7 +55,7 @@
 #sec-nav.sticky .county-hdr {border: none;}
 
 #sec-nav .results ul {display: inline;}
-#sec-nav .results {border: 0; margin: .65rem 0 -50px 0;}
+#sec-nav .results {border: 0; margin: .35rem 0 -50px 0;}
 }
 
 @media (min-width: 1200px) {
