@@ -10,7 +10,7 @@
 .hdr-top ul a {font-weight: 400; font-size: .775rem; text-decoration: none; color: #fff; opacity: .75; padding: 10px 0; display: block;}
 .hdr-top ul a:hover {opacity: 1;}
 .hdr-top .menu-blurb {margin: 0; font-size: .775rem; padding: 10px; color: rgba(255,255,255,.75); text-align: center;}
-
+.hdr-top .menu-blurb a {text-decoration: underline; display: inline-block; color: var(--text-color-inverse);}
 .menu .container {display: grid; grid-template-columns: 150px auto; grid-template-rows: auto auto; align-items: center;}
 .menu .menu-main {grid-column: span 2; display: flex; justify-content: center; align-content: center; list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--gray); border-bottom: 1px solid var(--gray);}
 .menu .menu-main a {text-decoration: none; font-size: 1rem; padding: 15px 15px; font-weight: 500; display: block; position: relative;}
