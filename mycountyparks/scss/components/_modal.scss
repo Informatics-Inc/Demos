@@ -7,7 +7,8 @@ border: none; border-radius: 5px; box-shadow: 0 0 2rem rgb(0 0 0 / .25);
 .modal h3 .close-button {background: var(--light); border: none; padding: 1rem; border-radius: 5px;}
 .modal-wide {width: 700px;}
 .modal .helper {padding: 0; margin: .25rem 0;}
-
+.modal .modal-links {text-align: center; font-size: .85rem;}
+.modal .modal-links p {margin: .5rem 0;}
 /* TABLET */
 @media (min-width: 768px) {
 
