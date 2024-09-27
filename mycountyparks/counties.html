@@ -97,7 +97,7 @@
             </ul>
             <span>Showing 75 results</span>
           </div>
-          <form class="grid-odd-cols grid-counties">
+          <form class="grid-even-cols grid-counties">
             <div class="form-group">
               <div class="icon-input">
                 <i class="fa fa-location-dot" aria-true="true"></i>
@@ -115,6 +115,16 @@
                   <label for="shelter"><input type="checkbox" id="shelter" name="preferences" value="shelter">Shelter</label>
                   <label for="other"><input type="checkbox" id="other" name="preferences" value="other">Other</label>
                 </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="icon-input custom-select">
+                  <i class="fa fa-calendar-check" aria-true="true"></i>
+                  <label class="sr-only">Has Events</label>
+                  <select data-val="true" data-val-required="The HasEvent field is required." id="HasEvent" name="CountySearchModel.HasEvent" placeholder="Has Events"><option value="">Has Events</option>
+                  <option value="2">Yes</option>
+                  <option value="1">No</option>
+                  </select>
               </div>
             </div>
             <div class="alpha-list">
