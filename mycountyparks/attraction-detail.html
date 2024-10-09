@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>My County Parks</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id='skip-nav' class='screenreader-text' href='#main-content'>
+    Skip to Content
+  </a>
+
+  <nav id="site-header" class="fadein">
+    <div class="hdr-top">
+      <div class="container">
+        <ul class="menu-utlity">
+          <li><a href="news.html">News</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="explore.html">Explore Iowa</a></li>
+        </ul>
+        <p class="menu-blurb">Book cabins, shelters, and lodges in Iowa.</p>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <a href="index.html" id="logo">
+          <img src="img/logo.svg" alt="My County Parks Logo" />
+        </a>
+        
+        <div class="menu-user">
+          <a href="#.html" id="user-menu-toggle">
+            <span class="menu-alert">2</span>
+            <i class="fa-regular fa-circle-user"></i>
+            <i class="fa-solid fa-bars"></i>
+          </a>
+
+          <ul id="user-menu-list">
+            <li><a href="#.html">My Account</a></li>
+            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
+            <li><a href="#.html">Reservations</a></li>
+            <li><a href="#.html">Event Registrations</a></li>
+            <li><a href="#.html">Order History</a></li>
+            <li><a href="#.html">Log out</a></li>
+          </ul>
+        </div>
+        <ul class="menu-main">
+          <li><a href="book-now.html">Book Now</a></li>
+          <li class="active"><a href="counties.html">Counties</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main id="main-content">
+
+  <section>
+    <div class="container">
+      <header class="detail-header no-img">
+        <div class="hdr-row">
+          <div class="col">
+            <h1>Adventure Land Park</h1>
+            <div class="features">
+              <p>
+                <!-- <i class="fa-solid fa-tree"></i> <a href="#.html">Jester Park</a> |  -->
+                <a href="county.html"><i class="fa-solid fa-map-marked-alt"></i> Polk County, IA</a></p>
+            </div>
+            <!-- <div class="features features-flex">
+              <p class="date">May 13 <i class="fa-solid fa-circle"></i> 8:00 AM</p>
+              <p><i class="fa-solid fa-location-dot"></i> Starr's Cave Park and Preserve, Des Moines County </p>
+            </div> -->
+          </div>
+          <div class="col">
+            <a data-target-modal="#modal-email" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-regular fa-envelope"></i> Email</a>
+            <a data-target-modal="#modal-remind" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-bell"></i> Remind Me</a>
+            <a data-target-modal="#modal-share" href="#.html" class="btn-theme btn-alt open-button"><i class="fa-solid fa-up-right-from-square"></i> Share</a>
+
+            <!-- SHARE -->
+            <dialog class="modal" id="modal-share">
+              <h3>Share This Event <button class="button close-button" data-close-modal="#modal-share"><i class="fa fa-close"></i></button></h3>
+              <ul class="link-list">
+                <li><a href="#.html"><i class="fab fa-facebook"></i> Share to Facebook</a></li>
+                <li><a href="#.html"><i class="fab fa-twitter"></i> Share to Twitter</a></li>
+                <li><a href="#.html"><i class="fab fa-linkedin"></i> Share to LinkedIn</a></li>
+              </ul>
+            </dialog>
+
+            <!-- Remind -->
+            <dialog class="modal" id="modal-remind">
+              <h3>Remind Me <button class="button close-button" data-close-modal="#modal-remind"><i class="fa fa-close"></i></button></h3>
+              <form class="mcp-form" method="dialog">
+                <div class="fixed-label">
+                  <label>Your Name</label>
+                  <input type="text">
+                </div>
+                <div class="fixed-label">
+                  <label>Your Email</label>
+                  <input type="email">
+                </div>
+                <label><input type="checkbox">Remind me one week before this event.</label>
+                <label><input type="checkbox">Remind me one day before this event.</label>
+                <div class="form-action">
+                  <button class="btn-theme btn-alt close-button" data-close-modal="#modal-remind">Cancel</button>
+                  <button class="btn-theme btn-theme-alt " type="submit">Send Reminder</button>
+                </div>
+              </form>
+            </dialog>
+                                 <!-- Email -->
+                                 <dialog class="modal" id="modal-email">
+                                  <h3>Email to a friend <button class="button close-button" data-close-modal="#modal-email"><i class="fa fa-close"></i></button></h3>
+                                  <form class="mcp-form" method="dialog">
+                                    <div class="fixed-label">
+                                      <label>Your Name</label>
+                                      <input type="text">
+                                    </div>
+                                    <div class="fixed-label">
+                                      <label>Your Email</label>
+                                      <input type="email">
+                                    </div>
+                                   <hr>
+                                    <p>Recipient's Email Address</p>
+                                    <div class="fixed-label">
+                                      <label>Email</label>
+                                      <input type="email">
+                                    </div>
+                                    <small>Seperate multiple emails with a comma</small>
+                                    <div class="fixed-label">
+                                      <label>Message</label>
+                                      <textarea></textarea>
+                                    </div>
+                                    <div class="form-action">
+                                      <button class="btn-theme btn-alt close-button" data-close-modal="#modal-email">Cancel</button>
+                                      <button class="btn-theme btn-theme-alt " type="submit">Send Email</button>
+                                    </div>
+                                  </form>
+                                </dialog>            
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+  <section>
+
+
+    <div class="container">
+      <div class="grid grid-twocol">
+        <div class="col" id="sidebar-affix">
+          <div class="search grid sidebar-search">
+            
+         <!--------------- SIDEBAR GALLERY ---------------->
+         <div id="image-gallery">
+          <img src="img/adventure-land.png" />
+        </div>
+         
+            <div class="small-type">
+              <h2>County:</h2>
+              <p><a href="county.html">Polk County</a></p>
+              
+              <!-- <img src="img/event-map.png" /> <br/> -->
+              <h2>Address:</h2>
+                <p>
+                1234 Iowa Rd,<br>
+                Polk, IA 52632<br>
+                </p>
+                <hr />
+              <p><a href="#.html"><i class="fa-solid fa-location-dot"></i> Map This Location</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col small-type">
+          <hr style="margin-top: 0;" />
+          <h2>Overview</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eros dui, facilisis in lacus nec, ultrices commodo ligula. Donec ultricies massa eget ipsum efficitur, at sollicitudin odio tristique. Vestibulum rhoncus eros eget ullamcorper euismod. Nullam sed varius arcu. Sed blandit, tortor sed faucibus pretium, tellus odio tincidunt risus, a congue arcu ipsum et urna. Fusce fermentum nisi at tellus hendrerit molestie. Morbi ut est id nibh pulvinar auctor at nec lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+          <h3>Another Header Goes Here</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eros dui, facilisis in lacus nec, ultrices commodo ligula. Donec ultricies massa eget ipsum efficitur, at sollicitudin odio tristique. Vestibulum rhoncus eros eget ullamcorper euismod. Nullam sed varius arcu. Sed blandit, tortor sed faucibus pretium, tellus odio tincidunt risus, a congue arcu ipsum et urna. Fusce fermentum nisi at tellus hendrerit molestie. Morbi ut est id nibh pulvinar auctor at nec lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+          <p><a href="#.html" class="btn-theme">Learn More at AdventureLand.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+  
+<footer class="footer">
+  <div class="container">
+    
+      <div class="row">
+        <div class="ftr-cols">
+          <div class="col">
+            <img src="img/logo.svg" />
+            <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
+          </div>
+          <div class="col">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="#.html">Offers</a></li>
+              <li><a href="#.html">News</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#.html">Careers</a></li>
+              <li><a href="#.html">Contact Us</a></li>
+              <a href="#.html">MCP on Facebook</a>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#.html">Book a Facility</a></li>
+              <li><a href="#.html">Explore Events</a></li>
+              <li><a href="#.html">Discover Our Counties</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      
+      <h4 class="text-center">Explore Iowa's 99 Counties</h4>
+      <ul class="county-list">
+        <li><a href="county.html">Adair</a></li>
+        <li><a href="county.html">Adams</a></li>
+        <li><a href="county.html">Allamakee</a></li>
+        <li><a href="county.html">Appanoose</a></li>
+        <li><a href="county.html">Audubon</a></li>
+        <li><a href="county.html">Benton</a></li>
+        <li><a href="county.html">Black Hawk</a></li>
+        <li><a href="county.html">Boone</a></li>
+        <li><a href="county.html">Bremer</a></li>
+        <li><a href="county.html">Buchanon</a></li>
+        <li><a href="county.html">Buena Vista</a></li>
+        <li><a href="county.html">Butler</a></li>
+        <li><a href="county.html">Calhoun</a></li>
+        <li><a href="county.html">Carroll</a></li>
+        <li><a href="county.html">Cass</a></li>
+        <li><a href="county.html">Cedar</a></li>
+        <li><a href="county.html">Cerro Gordo</a></li>
+        <li><a href="county.html">Cherokee</a></li>
+        <li><a href="county.html">Chickasaw</a></li>
+        <li><a href="county.html">Clarke</a></li>
+        <li><a href="county.html">Clay</a></li>
+        <li><a href="county.html">Clayton</a></li>
+        <li><a href="county.html">Clinton</a></li>
+        <li><a href="county.html">Crawford</a></li>
+        <li><a href="county.html">Dallas</a></li>
+        <li><a href="county.html">Davis</a></li>
+        <li><a href="county.html">Decatur</a></li>
+        <li><a href="county.html">Delaware</a></li>
+        <li><a href="county.html">Des Moines</a></li>
+        <li><a href="county.html">Dickinson</a></li>
+        <li><a href="county.html">Dubuque</a></li>
+        <li><a href="county.html">Emmet</a></li>
+        <li><a href="county.html">Fayette</a></li>
+        <li><a href="county.html">Floyd</a></li>
+        <li><a href="county.html">Franklin</a></li>
+        <li><a href="county.html">Fremont</a></li>
+        <li><a href="county.html">Greene</a></li>
+        <li><a href="county.html">Grundy</a></li>
+        <li><a href="county.html">Hamilton</a></li>
+        <li><a href="county.html">Hancock</a></li>
+        <li><a href="county.html">Hardin</a></li>
+        <li><a href="county.html">Harrison</a></li>
+        <li><a href="county.html">Henry</a></li>
+        <li><a href="county.html">Howard</a></li>
+        <li><a href="county.html">Humboldt</a></li>
+        <li><a href="county.html">Ida</a></li>
+        <li><a href="county.html">Iowa</a></li>
+        <li><a href="county.html">Jackson</a></li>
+        <li><a href="county.html">Jasper</a></li>
+        <li><a href="county.html">Jefferson</a></li>
+        <li><a href="county.html">Johnson</a></li>
+        <li><a href="county.html">Jones</a></li>
+        <li><a href="county.html">Keokuk</a></li>
+        <li><a href="county.html">Kossuth</a></li>
+        <li><a href="county.html">Lee</a></li>
+        <li><a href="county.html">Linn</a></li>
+        <li><a href="county.html">Louisa</a></li>
+        <li><a href="county.html">Lucas</a></li>
+        <li><a href="county.html">Lyon</a></li>
+        <li><a href="county.html">Madison</a></li>
+        <li><a href="county.html">Mahaska</a></li>
+        <li><a href="county.html">Marion</a></li>
+        <li><a href="county.html">Marshall</a></li>
+        <li><a href="county.html">Mills</a></li>
+        <li><a href="county.html">Mitchell</a></li>
+        <li><a href="county.html">Monona</a></li>
+        <li><a href="county.html">Monroe</a></li>
+        <li><a href="county.html">Montgomery</a></li>
+        <li><a href="county.html">Muscatine</a></li>
+        <li><a href="county.html">O'Brien</a></li>
+        <li><a href="county.html">Osceola</a></li>
+        <li><a href="county.html">Page</a></li>
+        <li><a href="county.html">Palo Alto</a></li>
+        <li><a href="county.html">Plymouth</a></li>
+        <li><a href="county.html">Pocahantas</a></li>
+        <li><a href="county.html">Polk</a></li>
+        <li><a href="county.html">Pottawattamie</a></li>
+        <li><a href="county.html">Poweshiek</a></li>
+        <li><a href="county.html">Ringgold</a></li>
+        <li><a href="county.html">Sac</a></li>
+        <li><a href="county.html">Scott</a></li>
+        <li><a href="county.html">Shelby</a></li>
+        <li><a href="county.html">Sioux</a></li>
+        <li><a href="county.html">Story</a></li>
+        <li><a href="county.html">Tama</a></li>
+        <li><a href="county.html">Taylor</a></li>
+        <li><a href="county.html">Union</a></li>
+        <li><a href="county.html">Van Buren</a></li>
+        <li><a href="county.html">Wapello</a></li>
+        <li><a href="county.html">Warren</a></li>
+        <li><a href="county.html">Washington</a></li>
+        <li><a href="county.html">Wayne</a></li>
+        <li><a href="county.html">Webster</a></li>
+        <li><a href="county.html">Winnebago</a></li>
+        <li><a href="county.html">Winneshiek</a></li>
+        <li><a href="county.html">Woodbury</a></li>
+        <li><a href="county.html">Worth</a></li>
+        <li><a href="county.html">Wright</a></li>
+      </ul>
+      <hr />
+      <div class="copy">
+        <p>© 2023 My County Parks | All Rights Reserved | Web Application by <a href="#.html">Informatics, Inc</a></p>
+        <ul>
+          <li><a href="#.html">Terms and Conditions</a></li>
+          <li><a href="#.html">Cookie Statement</a></li>
+          <li><a href="#.html">Privacy Policy</a></li>
+        </ul>
+        
+      </p>
+  </div>
+</footer>
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <!-- SDIEBAR GALLERY -->
+  <script>
+    // JavaScript for arrow-based image navigation
+    var currentImage = document.getElementById("current-image");
+    var imagePaths = [
+        "img/gallery1.jpg",
+        "img/gallery2.jpg",
+        "img/gallery3.jpg",
+        "img/gallery4.jpg",
+        "img/gallery5.jpg"
+    ];
+    var currentIndex = 0;
+    var leftArrow = document.getElementById("left-arrow");
+    var rightArrow = document.getElementById("right-arrow");
+
+    function updateArrows() {
+        if (imagePaths.length <= 1) {
+            leftArrow.style.display = 'none';
+            rightArrow.style.display = 'none';
+        } else {
+            leftArrow.style.display = 'block';
+            rightArrow.style.display = 'block';
+        }
+    }
+
+    document.getElementById("left-arrow").addEventListener("click", function() {
+        currentIndex = (currentIndex === 0) ? imagePaths.length - 1 : currentIndex - 1;
+        currentImage.src = imagePaths[currentIndex];
+    });
+
+    document.getElementById("right-arrow").addEventListener("click", function() {
+        currentIndex = (currentIndex === imagePaths.length - 1) ? 0 : currentIndex + 1;
+        currentImage.src = imagePaths[currentIndex];
+    });
+
+    // Initial check to hide/show arrows based on number of images
+    updateArrows();
+</script>
+
+
+  <script>
+    // -- SIMPLE GALLERY -- //
+    var imageThumbs = document.getElementById("image-thumbs");
+    var currentImage = document.getElementById("current-image");
+
+    for (var i = 1; i <= 5; i++) {
+      var thumb = document.createElement("img");
+      thumb.src = "img/gallery" + i + ".jpg";
+      thumb.alt = "Image " + i;
+      thumb.classList.add("thumb");
+      imageThumbs.appendChild(thumb);
+      thumb.addEventListener(
+        "click", function() {
+          currentImage.src = this.src;
+        }
+      );
+    }
+  </script>
+  </body>
+</html>

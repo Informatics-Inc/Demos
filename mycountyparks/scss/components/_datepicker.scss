@@ -56,11 +56,16 @@
 .daterangepicker .group-date {background: var(--light) !important;}
 
 .cal-legend ul {list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1rem;}
-.cal-legend ul li {font-size: .8rem; display: flex; gap: .35rem; align-items: center;}
+.cal-legend ul li {font-size: .70rem; display: flex; gap: .35rem; align-items: center;}
 .cal-legend ul li:before {display: block; content: "7"; width: 15px; height: 15px; background: #fff; border-radius: 3px; display: grid; align-content: center; text-align: center; text-decoration: line-through; color: #888; border: 1px solid #999;}
 .cal-legend ul li.cal-legend-selection:before {background: var(--primary-light); content: "";}
 .cal-legend ul li.cal-legend-together:before {background: var(--light); content: "";}
 
+/* Just Mobile Calendar Items */
+@media (max-width: 992px) {
+.daterangepicker .drp-calendar {max-width: none !important;}
+.color-heading p {font-size: 10px !important;}
+}
 /* TABLET */
 @media (min-width: 768px) {
     #append_datepicker_section {
@@ -68,75 +73,8 @@
         .daterangepicker .drp-calendar.left {margin: 0 !important;}
         .daterangepicker .drp-calendar.right {margin: 0 !important;}
     }
+
+#sidebar-affix .daterangepicker {width: 545px; left: auto !important; right: 0 !important;}
+.daterangepicker.opensright:before {left: auto !important; right: 241px !important;}
+.daterangepicker.opensright:after {left: auto !important; right: 242px !important;border-bottom-color: #f9f9f9 !important;}
 }
-// #daterange001 .daterangepicker .drp-calendar.left {
-//     margin-left: 100px;
-// }
-
-// #daterange001 .drp-calendar right {
-//     margin-right: 10px;
-// }
-
-
-// #calendarModal .daterangepicker td.today {
-//     background-color: #fff !important;
-//     border-color: transparent !important;
-//     color: #999;
-// }
-
-// #calendarModal .daterangepicker td.active {
-//     background-color: #fff !important;
-//     border-color: transparent !important;
-//     color: #999;
-// }
-
-// .daterangepicker td.today {
-//     background-color: #fff !important;
-//     border-color: transparent !important;
-//     color: #999;
-// }
-
-// .no-hover:hover {
-//     background-color: transparent !important;
-//     color: inherit !important;
-// }
-
-// .no-hover.active, .no-hover.start-date {
-//     background-color: transparent !important;
-//     color: inherit !important;
-// }
-
-// .daterangepicker .calendar-table td.default-selected-date {
-//     background-color: transparent !important;
-//     color: inherit !important; 
-//     border: none !important; 
-// }
-
-// .default-selected-date {
-//     background-color: transparent !important; 
-//     color: inherit !important; 
-//     border: none !important; 
-// }
-
-// #daterange001 + .daterangepicker {
-//     display: block !important;
-// }
-
-// .date-input {
-//     visibility: hidden;
-//     height: 0px !important;
-//     width: 0px !important;
-// }
-
-
-//     #append_datepicker_section .daterangepicker .drp-calendar.left {
-//         margin: 0;
-//     }
-
-//     #append_datepicker_section .daterangepicker .drp-calendar.right {
-//         margin: 0;
-//     }
-
-// .hide-div {
-//     display: none;
-// }

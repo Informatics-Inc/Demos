@@ -121,7 +121,6 @@ body.no-scroll {overflow: hidden;}
 .grid-counties .alpha-list {grid-column: span 8; margin: 0;}
 .grid-counties .form-actions {grid-row: 1; grid-column: 8;}
 
-
 .grid-events {grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr 1fr;}
 .grid-events .form-group:nth-of-type(1) {grid-column: span 2;}
 .grid-events .form-group:nth-of-type(2) {grid-column: span 2;}
@@ -152,7 +151,6 @@ body.no-scroll {overflow: hidden;}
 .form-group:hover .form-group-options {opacity: 1; visibility: visible;}
 .form-group:hover .form-group-label {background: var(--light);}
 
-#sidebar-affix .daterangepicker {width: 545px; left: auto !important; right: calc(50% - 200px) !important;}
 }
 
 @media (min-width: 1200px) {
