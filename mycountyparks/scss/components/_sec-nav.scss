@@ -42,9 +42,11 @@
 .sec-nav {gap: 30px; margin-right: 30px;}  
 .sec-nav a {padding: 30px 0; font-size: 1rem;}
 #sec-nav {transition: var(--transition);}
-#sec-nav.sticky {position: fixed; top: 0; left: 0; width: 100%; z-index: 15; box-shadow: 0 5px 15px rgba(0,0,0,.025); background: #fff;background: var(--bkg); border-bottom: 38px solid var(--light);}
+#sec-nav.sticky {position: fixed; top: 0; left: 0; width: 100%; z-index: 15; box-shadow: 0 5px 15px rgba(0,0,0,.025); background: #fff;background: var(--bkg);}
 #sec-nav.sticky + .content-sections {padding-top: 85px;}
 #sec-nav.sticky .sec-nav {border: none;}
+
+#sec-nav.sticky:has(.container .results) {border-bottom: 38px solid var(--light);}
 
 .county-hdr {display: flex; justify-content: space-between; border-bottom: 1px solid var(--gray);}
 .county-hdr .sec-nav {border: none;}

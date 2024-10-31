@@ -129,7 +129,7 @@ body.no-scroll {overflow: hidden;}
 .grid-events .form-group:nth-of-type(6) {grid-column: span 1;}
 .grid-events .form-group:nth-of-type(5) {grid-column: span 1;}
 
-#filter .alpha-list {gap: 0;}
+#filter .alpha-list {gap: 0; margin: 0;}
 #filter .alpha-list a {color: #fff; background: none;}
 #filter .alpha-list a:hover {background: rgba(0,0,0,.25);}
 
@@ -151,6 +151,7 @@ body.no-scroll {overflow: hidden;}
 .form-group:hover .form-group-options {opacity: 1; visibility: visible;}
 .form-group:hover .form-group-label {background: var(--light);}
 
+.grid-counties + .alpha-list {margin-top: 0;}
 }
 
 @media (min-width: 1200px) {

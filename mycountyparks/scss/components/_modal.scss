@@ -1,5 +1,5 @@
 .modal {padding: 2rem ; width: 500px; opacity: 1; transition: var(--transition);
-border: none; border-radius: 5px; box-shadow: 0 0 2rem rgb(0 0 0 / .25);
+border: none; border-radius: 5px; box-shadow: 0 0 2rem rgb(0 0 0 / .25); text-align: left;
 }
 .modal::backdrop {background: rgb(0 0 0 / .35)}
 .modal.show {opacity: 1;}
@@ -9,6 +9,7 @@ border: none; border-radius: 5px; box-shadow: 0 0 2rem rgb(0 0 0 / .25);
 .modal .helper {padding: 0; margin: .25rem 0;}
 .modal .modal-links {text-align: center; font-size: .85rem;}
 .modal .modal-links p {margin: .5rem 0;}
+
 /* TABLET */
 @media (min-width: 768px) {
 

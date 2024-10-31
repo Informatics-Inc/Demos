@@ -16,10 +16,15 @@
 
 #sidebar-affix {z-index: 3500;}
 @media (max-width: 992px) {
-    .bottom-affix {position: fixed; bottom: 10px; right: 10px; left: 10px; padding: 1.5rem; box-shadow: 0 0 25px rgba(0,0,0,.2);}
+    .bottom-affix {position: fixed; bottom: 10px; right: 10px; left: 10px; padding: .75rem; box-shadow: 0 0 25px rgba(0,0,0,.2);}
     .bottom-affix + .additional-links {padding: 0;}
 }
 
+/* Just Mobile */
+@media (max-width: 992px) {
+    .search.sidebar-search input {padding: 5px 5px 5px 40px; min-height: 40px;}
+    .search.sidebar-search .btn-theme {padding: 7px;}
+}
 
 /* TABLET */
 @media (min-width: 768px) {

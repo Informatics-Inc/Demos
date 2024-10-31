@@ -23,26 +23,23 @@ input[type='checkbox'] {width: auto; text-align: left;}
 .mcp-form .form-action {margin-top: 2rem;}
 
 /* Fixed Labels */
-.fixed-label {position: relative;}
-.fixed-label label {position: absolute; height: 100%; display: flex; justify-content: center; flex-direction: column; width: 125px; padding: 10px 15px; border-right: 1px solid var(--light); text-align: left; z-index: 5;}
-.fixed-label input, .fixed-label select, .fixed-label textarea {padding: 10px 10px 10px 140px; height: 100%;}
-.fixed-labels-xl .fixed-label label {width: 165px; font-size: .75rem;}
-.fixed-labels-xl input, .fixed-labels-xl select, .fixed-labels-xl textarea {padding-left: 175px;}
-.fixed-label label:has(+ input:focus-visible) {border-color: rgba(0,0,0,.1);}
-
-// .fixed-labels-xl .helper {padding-left: 165px;}
+.fixed-label {display: grid; grid-template-columns: 125px auto; background: #fff; border: 1px solid rgba(0,0,0,.1); border-radius: 4px;}
+.fixed-label label {height: 100%; display: flex; justify-content: center; flex-direction: column; padding: 10px 15px; border-right: 1px solid var(--light); text-align: left; font-size: .75rem;}
+.fixed-label {
+  input, select, textarea {border: none;}
+}
+.fixed-labels-xl .fixed-label {grid-template-columns: 165px auto;}
 
 /* Login */
 .login figure {display: none;} 
 .login .promo {margin: 4rem 0 1rem 0;}
-
 
 /* Form Pages */
 .form-page .mcp-form {
     input, select {background: #fff;}
 }
 .form-page {
-    .content {padding: 25px 0; text-align: center;;}
+    .content {padding: 25px; text-align: center;;}
     #logo {margin: 1rem auto; width: 225px; max-width: none;}
     #logo img {width: 225px; margin: 0 auto;}
     header {margin: 0 0 2rem 0;}
@@ -165,19 +162,11 @@ input[type='checkbox'] {width: auto; text-align: left;}
 }
 
   .multiselect-dropdown-list input[type=checkbox] {width: 12px; margin: 0 5px 0 0; position: relative; top: 1px;}
-
-  .multiselect-dropdown-list div.checked{
-  }
   .multiselect-dropdown-list div:hover{
     background-color: var(--light);
   }
   .multiselect-dropdown span.maxselected {width:100%;}
   .multiselect-dropdown-all-selector {border-bottom:solid 1px #999;}
-
-
-
-
-  
   .search.grid.sidebar-search.promo-form {margin-top:20px}
   .search.grid.sidebar-search.promo-form {display:block;input,select,textarea{padding:10px;background:none;border:solid var(--light) 1px;}
 }
