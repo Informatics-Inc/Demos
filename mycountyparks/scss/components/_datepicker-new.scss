@@ -1,0 +1,23 @@
+.date-details {display: grid; grid-template-columns: auto 150px; gap: 10px;}
+.date-details .btn-theme {padding: .75rem; font-size: .85rem; margin: .5rem 0; text-align: center;}
+.search.sidebar-search .date-details {grid-template-columns: auto; gap: 10px;}
+.search.sidebar-search .date-details .btn-theme {padding: .75rem; font-size: .85rem; margin: 0;}
+.btn-dates {display: flex; gap: 15px; justify-content: center; text-decoration: underline;}
+.btn-dates .fa {margin-left: auto; float: right;}
+
+/* Mobile Bottom Fix */
+@media(max-width: 992px) {
+    .search.sidebar-search .date-details {display: grid; grid-template-columns: auto 150px; gap: 10px;}
+    .bottom-affix {
+        position:fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 1.25rem;
+        box-shadow: 0 0 25px rgba(0,0,0,.2)
+    }
+
+    .bottom-affix+.additional-links {
+        padding: 0
+    }
+}
