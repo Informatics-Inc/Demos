@@ -24,7 +24,7 @@ input[type='checkbox'] {width: auto; text-align: left;}
 
 /* Fixed Labels */
 .fixed-label {display: grid; grid-template-columns: 125px auto; background: #fff; border: 1px solid rgba(0,0,0,.1); border-radius: 4px;}
-.fixed-label label {height: 100%; display: flex; justify-content: center; flex-direction: column; padding: 10px 15px; border-right: 1px solid var(--light); text-align: left; font-size: .75rem;}
+.fixed-label label {height: 100%; display: flex; padding: 10px 15px; border-right: 1px solid var(--light); text-align: left; font-size: .75rem;}
 .fixed-label {
   input, select, textarea {border: none;}
 }

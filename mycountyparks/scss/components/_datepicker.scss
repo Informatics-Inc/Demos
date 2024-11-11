@@ -20,6 +20,18 @@
 .daterangepicker thead .monthselect, .daterangepicker thead .yearselect, .daterangepicker thead .next span, .daterangepicker thead .previous span {margin-bottom: 1rem !important;}
 .daterangepicker thead tr:nth-of-type(2) th {font-weight: 700; opacity: .75;}
 
+/* Date Picker Overrides */
+.daterangepicker {box-shadow: 0 0 25px rgba(0, 0, 0, .2);}
+.daterangepicker td.active, .daterangepicker td.active:hover {background-color: var(--primary-light) !important; color: #222 !important;}
+.daterangepicker td.in-range {background-color: var(--primary-light) !important;}
+.daterangepicker .btn-simple, .daterangepicker .btn-theme {font-size: .85rem;}
+.daterangepicker .btn-theme {margin: 0 0 0 5px; background: var(--primary-light)}
+.daterangepicker .btn-theme:after {display: none;}
+.daterangepicker .btn-simple:hover {background: none;}
+.daterangepicker .btn-theme:hover {background: var(--primary);}
+
+.group-date {background-color: var(--light); color: #222;}
+
 .daterangepicker .nonselectabledates {background: none !important; opacity: .7;}
 .daterangepicker .available {color: #111; opacity: 1; font-weight: 500;}
 .daterangepicker .selected-date {text-decoration: none !important; color: #222 !important;}
@@ -29,7 +41,32 @@
 .cal-legend ul li {font-size: .70rem; display: flex; gap: .35rem; align-items: center;}
 .cal-legend ul li:before {display: block; content: "7"; width: 15px; height: 15px; background: #fff; border-radius: 3px; display: grid; align-content: center; text-align: center; text-decoration: line-through; color: #888; border: 1px solid #999;}
 .cal-legend ul li.cal-legend-selection:before {background: var(--primary-light); content: "";}
-.cal-legend ul li.cal-legend-together:before {background: var(--light); content: "";}
+.cal-legend ul li.cal-legend-together:before {background: linear-gradient(0deg, rgba(237,232,219,1) 0%, rgba(237,232,219,1) 50%, rgba(217,206,176,1) 51%); content: "";}
+.search.sidebar-search #calendarInput {padding: 10px; text-align: center;}
+.daterangepicker .group-date-1 {
+    background: var(--light) !important;
+    border: 2px solid #fff
+}
+ 
+.daterangepicker .group-date-2 {
+    background: var(--tertiary) !important;
+    border: 2px solid #fff
+}
+.daterangepicker .month:nth-child(2) {
+    padding-right: 6px !important;
+    padding-left: 4px !important;
+}
+ 
+.daterangepicker select.yearselect {
+    width: 45% !important;
+}
+
+.start-date {border-radius: 10px 0 0 10px !important;}
+.end-date {border-radius: 0 10px 10px 0 !important;}
+
+.drp-buttons {display: flex !important; justify-content: space-between; align-items: center;}
+.drp-buttons .dates {font-size: .85rem; padding-left: .5rem;}
+.drp-buttons .dates span + span:before {content: "|"; margin: 0 10px 0 0; color: #ccc;}
 
 /* Legend */
 .color-heading { padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd; display: flex; border-radius: 4px 4px 0 0; }
@@ -60,4 +97,29 @@
 #sidebar-affix .daterangepicker {width: 545px; left: auto !important; right: 0 !important;}
 .daterangepicker.opensright:before {left: auto !important; right: 241px !important;}
 .daterangepicker.opensright:after {left: auto !important; right: 242px !important; border-bottom-color: #f9f9f9 !important;}
+}
+
+/* New Calendar Updates */
+.date-details {display: grid; grid-template-columns: auto 150px; gap: 10px;}
+.date-details .btn-theme {padding: .75rem; font-size: .85rem; margin: .5rem 0; text-align: center;}
+.search.sidebar-search .date-details {grid-template-columns: auto; gap: 10px;}
+.search.sidebar-search .date-details .btn-theme {padding: .75rem; font-size: .85rem; margin: 0;}
+.btn-dates {display: flex; gap: 15px; justify-content: center; text-decoration: underline;}
+.btn-dates .fa {margin-left: auto; float: right;}
+
+/* Mobile Bottom Fix */
+@media(max-width: 992px) {
+    .search.sidebar-search .date-details {display: grid; grid-template-columns: auto 150px; gap: 10px;}
+    .bottom-affix {
+        position:fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 1.25rem;
+        box-shadow: 0 0 25px rgba(0,0,0,.2)
+    }
+
+    .bottom-affix+.additional-links {
+        padding: 0
+    }
 }

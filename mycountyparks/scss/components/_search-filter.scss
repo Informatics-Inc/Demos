@@ -68,17 +68,7 @@ body.no-scroll {overflow: hidden;}
 .collapsed.show {
     height: auto
 }
-/* Date Picker Overrides */
-.daterangepicker {box-shadow: 0 0 25px rgba(0, 0, 0, .2);}
-.daterangepicker td.active, .daterangepicker td.active:hover {background-color: var(--primary-light) !important; color: #222 !important;}
-.daterangepicker td.in-range {background-color: var(--light) !important;}
-.daterangepicker .btn-simple, .daterangepicker .btn-theme {font-size: .85rem;}
-.daterangepicker .btn-theme {margin: 0 0 0 5px; background: var(--primary-light)}
-.daterangepicker .btn-theme:after {display: none;}
-.daterangepicker .btn-simple:hover {background: none;}
-.daterangepicker .btn-theme:hover {background: var(--primary);}
 
-// .group-date {background-color: var(--light); color: #222;}
 
 /* TABLET */
 @media (min-width: 768px) {
