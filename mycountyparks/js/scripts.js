@@ -1,15 +1,11 @@
 // -- Open / Close Filters -- //
 // Toggle the open class on the filters div when the toggle button is clicked
-$('.filter-toggle').click(function() {
-  $('#filters').toggleClass('open');
-
-  // Check if the filters are now open
-  if ($('#filters').hasClass('open')) {
-    $('body').addClass('no-scroll');
-  } else {
-    $('body').removeClass('no-scroll');
-  }
+$('.filter-toggle, .map-modal-toggle').click(function() {
+  const target = $(this).hasClass('filter-toggle') ? '#filters' : '#map-modal';
+  $(target).toggleClass('open');
+  $('body').toggleClass('no-scroll', $(target).hasClass('open'));
 });
+
 
 $(function() {
   var options = {
