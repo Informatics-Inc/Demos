@@ -65,9 +65,11 @@
 // .end-date {border-radius: 0 10px 10px 0 !important;}
 .daterangepicker .group-date-1.selected-date, .daterangepicker .group-date-2.selected-date {background: var(--primary-light) !important;}
 
-.drp-buttons {display: flex !important; justify-content: space-between; align-items: center;}
-.drp-buttons .dates {font-size: .85rem; padding-left: .5rem;}
+.drp-buttons {display: flex !important; justify-content: flex-end; align-items: center; padding-left: .75rem;}
+.drp-buttons .dates {font-size: .85rem;}
 .drp-buttons .dates span + span:before {content: "|"; margin: 0 10px 0 0; color: #ccc;}
+.drp-buttons .drp-selected {margin-right: auto;}
+.drp-buttons .separator {color: #ccc; margin: 0 .25rem; display: inline-block;}
 
 /* Legend */
 .color-heading { padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd; display: flex; border-radius: 4px 4px 0 0; }
