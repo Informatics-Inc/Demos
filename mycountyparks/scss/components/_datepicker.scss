@@ -24,7 +24,7 @@
 .daterangepicker {box-shadow: 0 0 25px rgba(0, 0, 0, .2);}
 .daterangepicker td.active, .daterangepicker td.active:hover {background-color: var(--primary-light) !important; color: #222 !important;}
 .daterangepicker td.in-range {background-color: var(--primary-light) !important;}
-.daterangepicker .btn-simple, .daterangepicker .btn-theme {font-size: .85rem;}
+.daterangepicker .btn-simple, .daterangepicker .btn-theme {font-size: .85rem; margin-left: 5px;}
 .daterangepicker .btn-theme {margin: 0 0 0 5px; background: var(--primary-light)}
 .daterangepicker .btn-theme:after {display: none;}
 .daterangepicker .btn-simple:hover {background: none;}
