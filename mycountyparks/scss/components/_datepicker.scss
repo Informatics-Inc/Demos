@@ -14,7 +14,7 @@
 /* Global Calendar Styles */
 .daterangepicker {font-family: var(--body) !important;}
 .daterangepicker .calendar-table th {line-height: inherit !important; padding: 0;}
-.daterangepicker td {border: 2px solid #fff !important;}
+.daterangepicker td {border: 2px solid #fff !important; border-radius: 0 !important; position: relative;}
 .daterangepicker .month {padding: 0 !important;}
 .daterangepicker .month select {border: none; padding: 5px !important; font-size: .85rem !important; background: #f9f9f9; border-radius: 5px !important; border: 1px solid #ccc !important;}
 .daterangepicker thead .monthselect, .daterangepicker thead .yearselect, .daterangepicker thead .next span, .daterangepicker thead .previous span {margin-bottom: 1rem !important;}
@@ -35,7 +35,7 @@
 .daterangepicker .nonselectabledates {background: none !important; opacity: .7;}
 .daterangepicker .available {color: #111; opacity: 1; font-weight: 500;}
 .daterangepicker .selected-date {text-decoration: none !important; color: #222 !important;}
-.daterangepicker td.available:hover, .daterangepicker th.available:hover {background: #fff !important; border-color: var(--dark); box-shadow: inset 0 0 0 2px var(--primary);}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {background: #fff !important; box-shadow: inset 0 0 0 2px var(--primary);}
 .daterangepicker .group-date {background: var(--light) !important; border: 2px solid #fff;}
 .cal-legend ul {list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1rem;}
 .cal-legend ul li {font-size: .70rem; display: flex; gap: .35rem; align-items: center;}
@@ -63,6 +63,12 @@
 
 // .start-date {border-radius: 10px 0 0 10px !important;}
 // .end-date {border-radius: 0 10px 10px 0 !important;}
+.must-buy, .daterangepicker .group-date-1.must-buy, .daterangepicker .group-date-2.must-buy {
+    background: #fabb87 !important
+}
+.daterangepicker td.must-buy.available:hover {background: #fabb87 !important; box-shadow: inset 0 0 0 2px var(--primary);}
+// .start-date:before {content:"In"; position: absolute; bottom: -3px; left: 0; text-transform: uppercase; font-size: .6rem; opacity: .5; display: block; width: 100%;}
+
 .daterangepicker .group-date-1.selected-date, .daterangepicker .group-date-2.selected-date {background: var(--primary-light) !important;}
 
 .drp-buttons {display: flex !important; justify-content: flex-end; align-items: center; padding-left: .75rem;}
@@ -70,6 +76,9 @@
 .drp-buttons .dates span + span:before {content: "|"; margin: 0 10px 0 0; color: #ccc;}
 .drp-buttons .drp-selected {margin-right: auto;}
 .drp-buttons .separator {color: #ccc; margin: 0 .25rem; display: inline-block;}
+.drp-buttons .remove-date {text-decoration: underline;}
+// .drp-buttons .remove-date .fa-solid {color: #888;}
+.drp-buttons .remove-date:hover, .drp-buttons .remove-date:active {text-decoration: none; cursor: pointer;}
 
 /* Legend */
 .color-heading { padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd; display: flex; border-radius: 4px 4px 0 0; }
