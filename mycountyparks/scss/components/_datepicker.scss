@@ -30,6 +30,9 @@
 .daterangepicker .btn-simple:hover {background: none;}
 .daterangepicker .btn-theme:hover {background: var(--primary);}
 
+.daterangepicker td.disabled {color: #999 !important; background: none !important; text-decoration: none !important; position: relative;}
+.daterangepicker td.disabled:before {width: 16px; height: 1px; content: ""; background: red; position: absolute; bottom: 50%; left: calc(50% - 8px);}
+
 .group-date {background-color: var(--light); color: #222;}
 
 .daterangepicker .nonselectabledates {background: none !important; opacity: .7;}
@@ -37,12 +40,16 @@
 .daterangepicker .selected-date {text-decoration: none !important; color: #222 !important;}
 .daterangepicker td.available:hover, .daterangepicker th.available:hover {background: #fff !important; box-shadow: inset 0 0 0 2px var(--primary);}
 .daterangepicker .group-date {background: var(--light) !important; border: 2px solid #fff;}
-.cal-legend ul {list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1rem;}
-.cal-legend ul li {font-size: .70rem; display: flex; gap: .35rem; align-items: center;}
-.cal-legend ul li:before {display: block; content: "7"; width: 15px; height: 15px; background: #fff; border-radius: 3px; display: grid; align-content: center; text-align: center; text-decoration: line-through; color: #888; border: 1px solid #999;}
+.cal-legend ul {list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem;}
+.cal-legend ul li {font-size: .70rem; display: flex; gap: .35rem; align-items: center; position: relative;}
+.cal-legend ul li:before {display: block; content: "7"; width: 15px; height: 15px; background: #fff; border-radius: 3px; display: grid; align-content: center; text-align: center; color: #888; border: 1px solid #999;}
+.cal-legend ul li.cal-legend-reserved:after {width: 10px; height: 1px; content: ""; background: red; position: absolute; bottom: 50%; left: 3px;}
 .cal-legend ul li.cal-legend-selection:before {background: var(--primary-light); content: "";}
 .cal-legend ul li.cal-legend-together:before {background: linear-gradient(0deg, rgba(237,232,219,1) 0%, rgba(237,232,219,1) 50%, rgba(217,206,176,1) 51%); content: "";}
+.cal-legend ul li.cal-legend-sameday:before {content: "?";}
+
 .search.sidebar-search #calendarInput {padding: 10px; text-align: center;}
+
 .daterangepicker .group-date-1 {
     background: var(--light) !important;
     border: 2px solid #fff
@@ -71,6 +78,7 @@
 
 .daterangepicker .group-date-1.selected-date, .daterangepicker .group-date-2.selected-date {background: var(--primary-light) !important;}
 
+
 .drp-buttons {display: flex !important; justify-content: flex-end; align-items: center; padding-left: .75rem;}
 .drp-buttons .dates {font-size: .85rem;}
 .drp-buttons .dates span + span:before {content: "|"; margin: 0 10px 0 0; color: #ccc;}
@@ -93,6 +101,40 @@
 .validation-heading {display: none;}
 .validation-heading.active {display: block !important;}
 .validation-heading .invalid-dates i {margin-right: 2px;}
+
+/* Min Stay 2*/
+
+.minstay2 {
+    /* Highlight the immediate next day only */
+    .price-date.active.start-date + .price-date {
+        background: #fabb87 !important;
+    }
+
+    /* Highlight all sequential .group-date-1 elements following .active.start-date */
+    .price-date.active.start-date ~ .price-date.group-date-1 {
+        background: #fabb87 !important;
+    }
+
+    /* Ensure styles stop when a non-.group-date-1 is encountered */
+    .price-date.active.start-date ~ .price-date:not(.group-date-1) ~ .price-date.group-date-1 {
+        background: var(--light) !important;
+    }
+
+    /* Highlight all sequential .group-date-2 elements following .active.start-date */
+    .price-date.active.start-date ~ .price-date.group-date-2 {
+        background: #fabb87 !important;
+    }
+
+    /* Ensure styles stop when a non-.group-date-2 is encountered */
+    .price-date.active.start-date ~ .price-date:not(.group-date-2) ~ .price-date.group-date-2 {
+        background: var(--tertiary) !important;
+    }
+
+    /* Highlight the first <td> in the next row */
+    tr:has(.price-date.active.start-date:last-child) + tr td:first-child {
+        background: #fabb87 !important;
+    }
+}
 
 /* Just Mobile Calendar Items */
 @media (max-width: 992px) {
