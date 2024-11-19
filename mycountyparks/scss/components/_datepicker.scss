@@ -103,7 +103,6 @@
 .validation-heading .invalid-dates i {margin-right: 2px;}
 
 /* Min Stay 2*/
-
 .minstay2 {
     /* Highlight the immediate next day only */
     .price-date.active.start-date + .price-date {
@@ -130,8 +129,15 @@
         background: var(--tertiary) !important;
     }
 
-    /* Highlight the first <td> in the next row */
-    tr:has(.price-date.active.start-date:last-child) + tr td:first-child {
+    /* Highlight a .group-date-1 if it has a nearby .active.start-date */
+    td.group-date-1:has(.active.start-date),
+    td.group-date-1:has(~ .active.start-date) {
+        background: #fabb87 !important;
+    }
+
+    /* Highlight a .group-date-2 if it has a nearby .active.start-date */
+    td.group-date-2:has(.active.start-date),
+    td.group-date-2:has(~ .active.start-date) {
         background: #fabb87 !important;
     }
 }
