@@ -122,27 +122,28 @@
         background: var(--light) !important;
     }
 
-    /* Highlight all sequential .group-date-2 elements following .active.start-date */
-    .price-date.active.start-date ~ .price-date.group-date-2 {
+    // /* Highlight all sequential .group-date-2 elements following .active.start-date */
+    // .price-date.active.start-date ~ .price-date.group-date-2 {
+    //     background: #fabb87 !important;
+    // }
+
+    // /* Ensure styles stop when a non-.group-date-2 is encountered */
+    // .price-date.active.start-date ~ .price-date:not(.group-date-2) ~ .price-date.group-date-2 {
+    //     background: var(--tertiary) !important;
+    // }
+
+    /* Highlight the first group-date cell that directly follows an active.start-date */
+    tr td.price-date.active.start-date + td.group-date-1,
+    tr td.price-date.active.start-date + td.group-date-2 {
         background: #fabb87 !important;
     }
 
-    /* Ensure styles stop when a non-.group-date-2 is encountered */
-    .price-date.active.start-date ~ .price-date:not(.group-date-2) ~ .price-date.group-date-2 {
-        background: var(--tertiary) !important;
-    }
-
-    /* Highlight a .group-date-1 if it has a nearby .active.start-date */
-    td.group-date-1:has(.active.start-date),
-    td.group-date-1:has(~ .active.start-date) {
+    /* Highlight all subsequent group-date cells in the same row, but only if they follow an active.start-date */
+    tr td.price-date.active.start-date + td.group-date-1 ~ td.group-date-1,
+    tr td.price-date.active.start-date + td.group-date-2 ~ td.group-date-2 {
         background: #fabb87 !important;
     }
 
-    /* Highlight a .group-date-2 if it has a nearby .active.start-date */
-    td.group-date-2:has(.active.start-date),
-    td.group-date-2:has(~ .active.start-date) {
-        background: #fabb87 !important;
-    }
     /* Highlight the first <td> in the next row if the last <td> in the current row is active.start-date */
     tr:has(.price-date.active.start-date:last-child) + tr td:first-child {
         background: #fabb87 !important;
@@ -153,6 +154,7 @@
     tr:has(.price-date.active.start-date:last-child) + tr td.group-date-2:first-of-type {
         background: #fabb87 !important;
     }
+
 }
 
 /* Just Mobile Calendar Items */
