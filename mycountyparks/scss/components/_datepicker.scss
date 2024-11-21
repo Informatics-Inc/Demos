@@ -33,6 +33,9 @@
 .daterangepicker td.disabled {color: #999 !important; background: none !important; text-decoration: none !important; position: relative;}
 .daterangepicker td.disabled:before {width: 16px; height: 1px; content: ""; background: red; position: absolute; bottom: 50%; left: calc(50% - 8px);}
 
+.daterangepicker td.selected-date {background-color: var(--primary-light) !important; color: #222 !important;}
+.daterangepicker td.selected-date:before {display: none !important;}
+
 .group-date {background-color: var(--light); color: #222;}
 
 .daterangepicker .nonselectabledates {background: none !important; opacity: .7;}
@@ -140,6 +143,16 @@
     td.group-date-2:has(~ .active.start-date) {
         background: #fabb87 !important;
     }
+    /* Highlight the first <td> in the next row if the last <td> in the current row is active.start-date */
+    tr:has(.price-date.active.start-date:last-child) + tr td:first-child {
+        background: #fabb87 !important;
+    }
+
+    /* Highlight the first .group-date-1 or .group-date-2 in the next row if active.start-date is the last <td> */
+    tr:has(.price-date.active.start-date:last-child) + tr td.group-date-1:first-of-type,
+    tr:has(.price-date.active.start-date:last-child) + tr td.group-date-2:first-of-type {
+        background: #fabb87 !important;
+    }
 }
 
 /* Just Mobile Calendar Items */
@@ -152,7 +165,7 @@
 /* Tablet */
 @media (min-width: 654px) {
 #append_datepicker_section .drp-calendar {width: 50%; padding: 1.5rem;}
-.daterangepicker .drp-calendar.left, .daterangepicker .drp-calendar.right {margin: 0 !important; padding: 1rem .5rem 1rem 1rem !important;}
+.daterangepicker .drp-calendar.left, .daterangepicker .drp-calendar.right {margin: 0 !important; padding: 1rem .5rem 1rem 1rem !important; width: 50% !important; max-width: inherit !important;}
 .daterangepicker .drp-calendar.right {padding: 1rem 1rem 1rem .5rem !important;}
 #sidebar-affix .daterangepicker {width: 545px; left: auto !important; right: 0 !important;}
 .daterangepicker.opensright:before {left: auto !important; right: 241px !important;}
