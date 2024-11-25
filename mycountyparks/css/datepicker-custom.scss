@@ -85,7 +85,7 @@
 .drp-buttons {display: flex !important; justify-content: flex-end; align-items: center; padding-left: .75rem;}
 .drp-buttons .dates {font-size: .85rem;}
 .drp-buttons .dates span + span:before {content: "|"; margin: 0 10px 0 0; color: #ccc;}
-.drp-buttons .drp-selected {margin-right: auto;}
+.drp-buttons .drp-selected {margin-right: auto; display: flex; flex-wrap: wrap; gap: 5px; row-gap: 10px;}
 .drp-buttons .separator {color: #ccc; margin: 0 .25rem; display: inline-block;}
 .drp-buttons .remove-date {text-decoration: underline;}
 // .drp-buttons .remove-date .fa-solid {color: #888;}
