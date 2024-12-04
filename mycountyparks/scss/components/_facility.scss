@@ -14,7 +14,10 @@
 .detail-header figure.three img:nth-of-type(3) {grid-column: 2 / 4;}
 .detail-header figure.two img:nth-of-type(2) {grid-column: 2 / 4; grid-row: 1 / 3;}
 
-.gbtn {border: none; color: var(--primary);}
+.gbtn {border: none;}
+.gbtn svg {display: none;}
+
+
 .detail-header {display: grid; gap: 15px; margin: 0 0 2rem 0; text-align: center; border-top: 1px solid var(--gray); padding-top: 2rem;}
 .detail-header h1 {margin: 0 0 .5rem 0;}
 .detail-header .hdr-row {margin: 0 0 1rem 0;}
@@ -28,7 +31,6 @@
 .additional-links {text-align: center; padding: 25px 0;}
 .additional-links p {margin: .25rem 0;}
 .additional-links a {font-weight: 400; font-size: .9rem;}
-
 
 ul.two-col {list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr;}
 ul.two-col li {font-size: .9rem; padding: 5px 5px 5px 0;}

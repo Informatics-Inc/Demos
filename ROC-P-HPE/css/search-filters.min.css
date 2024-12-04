@@ -1,0 +1,1 @@
+#search-filters{background:var(--light);padding:1rem;margin:var(--spacer-vert) auto;border-radius:var(--border-radius-sm)}#filters{display:grid}.input-group-trigger{font-weight:600}.input-group-panel{height:0;overflow:hidden;transition:var(--transition);interpolate-size:allow-keywords}.input-group-panel.open{height:auto}

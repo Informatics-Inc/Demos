@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Hewlett Packard Certification</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content 
+  </a>
+
+  <header id="hdr-site">
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div class="hdr-wrapper">
+          <a href="#.html" id="logo">
+            <img src="img/hpe-logo.svg" alt="Logo" />
+          </a>
+          <button id="menu-toggle" class="" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+              <div class="closed">
+                  Menu
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+              <div class="open">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+          </button>
+          <!-- MAIN NAVIGATION -->
+        </div>
+          <nav id="menu" class="">
+              <ul>
+                  <li class="active"><a href="certifications.html">Certifications</a></li>
+                  <li><a href="create.html">Create an Account</a></li>
+                  <li><a href="login.html">Login</a>
+              </ul>
+          </nav>
+        </div>
+        </div>
+      
+  </header>
+
+  <main id="content">
+    <section>
+
+      <div class="container">
+        <div id="search-filters">
+          <div class="input-group input-search">
+            <label class="group-title">Search</label>
+            <div class="search-row">
+              <i class="fa fa-search"></i>
+              <input type="text" />
+              <button class="btn-secondary">Search</button>
+            </div>
+          </div>
+          <div id="filters">
+            <label class="group-title">Filters</label>
+            <div class="input-group">
+              <div class="input-group-trigger">
+                Certification View <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="input-group-panel">
+                <div class="input-group-panel-grid">
+                  <label><input type="checkbox" value="category1"> All</label>
+                  <label><input type="checkbox" value="categorynew"> New Only</label>
+                  <label><input type="checkbox" value="categorysales"> Sales Certifications <span class="badge">2 New!</span></label>
+                  <label><input type="checkbox" value="categorytech"> Technology Certifications</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-group-trigger">
+                Technologies <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="input-group-panel">
+                <div class="input-group-panel-grid">
+                  <label><input type="checkbox" value="categoryall"> All</label>
+                  <label><input type="checkbox" value="categorycompute"> Compute</label>
+                  <label><input type="checkbox" value="categoryhpe"> High Performance Computing</label>
+                  <label><input type="checkbox" value="categoryhybrid"> Hybrid Cloud <span class="badge">3 New!</span></label>
+                  <label><input type="checkbox" value="category6"> HPE GreenLake Cloud Services</label>
+                  <label><input type="checkbox" value="category6"> Software <span class="badge">1 New!</span></label>
+                  <label><input type="checkbox" value="category6"> Storage</label>
+                  <label><input type="checkbox" value="category6"> Networking</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-group-trigger">
+                Status <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="input-group-panel">
+                <div class="input-group-panel-grid">
+                  <label><input type="checkbox" value="category4"> Active</label>
+                  <label><input type="checkbox" value="category5"> Going Inactive</label>
+                  <label><input type="checkbox" value="category6"> Expiring</label>
+                  <label><input type="checkbox" value="category6"> Expired</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="reload" class="btn-text">Reset</button>
+        </div>
+        <div id="cert-grid">
+          <div class="grid-item" data-category="categorysales">
+            <figure>
+              <img src="img/badge-sales-1.png" />
+            </figure>
+            
+              <h3>HPE Sales Certified - AI and As-a-Service Solutions [2025]</h3>
+              <div class="buttons">
+                <a href="detail.html" class="btn-secondary">Learn More</a>
+              </div>
+            
+          </div>
+          <div class="grid-item" data-category="categorysales">
+            <figure>
+              <img src="img/badge-sales-2.png" />
+            </figure>
+           
+              <h3>HPE Sales Certified - Aruba Networking Solutions</h3>
+              <div class="buttons">
+                <a href="detail.html" class="btn-secondary">Learn More</a>
+              </div>
+           
+          </div>
+          <div class="grid-item" data-category="categorysales">
+            <figure>
+              <img src="img/badge-sales-3.png" />
+            </figure>
+           
+              <h3>HPE Sales Certified - Compute and Storage Solutions [2025]</h3>
+              <div class="buttons">
+                <a href="detail.html" class="btn-secondary">Learn More</a>
+              </div>
+           
+          </div>
+          <div class="grid-item" data-category="categorytech">
+            <figure>
+              <img src="img/badge-compute-1.png" />
+            </figure>
+           
+              <h3>HPE Master ASE - Compute Solutions</h3>
+              <div class="buttons">
+                <a href="detail.html" class="btn-secondary">Learn More</a>
+              </div>
+            
+          </div>
+          <div class="grid-item" data-category="categorytech">
+            <figure>
+              <img src="img/badge-compute-2.png" />
+            </figure>
+            
+              <h3>HPE ASE - Compute Solutions</h3>
+              <div class="buttons">
+                <a href="detail.html" class="btn-secondary">Learn More</a>
+              </div>
+            
+          </div>
+          <div class="grid-item" data-category="categorytech">
+            <figure>
+              <img src="img/badge-compute-3.png" />
+            </figure>
+              <h3>HPE ATP - Hybrid Cloud</h3>
+              <div class="buttons">
+                <a href="detail.html" class="btn-secondary">Learn More</a>
+              </div>
+          </div>
+          <div class="grid-item" data-category="categorytech">
+            <figure>
+              <img src="img/badge-compute-3.png" />
+            </figure>
+              <h3>HPE ATP - Hybrid Cloud</h3>
+              <div class="buttons">
+                <a href="detail.html" class="btn-secondary">Learn More</a>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    
+  </main>
+
+
+<footer class="footer">
+  
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

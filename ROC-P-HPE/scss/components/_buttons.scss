@@ -1,0 +1,20 @@
+.btn-theme {background: var(--primary); color: #fff; border-radius: var(--border-radius-sm); border: none; padding: .5rem 1rem; font-weight: 600; font-family: var(--header); transition: var(--transition); cursor: pointer; font-size: .85rem; text-decoration: none;}
+.btn-theme:hover {background: var(--primary-dark);}
+
+.btn-secondary {background: var(--primary-light); color: var(--primary); border: none; transition: var(--transition); cursor: pointer;padding: .5rem 1rem; border-radius: var(--border-radius-sm); font-weight: 600; font-family: var(--header); font-size: .85rem;}
+.btn-secondary:hover {background: var(--primary-light);}
+
+.btn-text {border: none; background: var(--light);padding: .5rem 1rem; border-radius: 4px; font-size: .85rem;}
+
+/* TABLET */
+@media (min-width: 768px) {
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}

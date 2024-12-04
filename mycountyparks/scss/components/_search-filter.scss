@@ -29,7 +29,7 @@ body.no-scroll {overflow: hidden;}
 .checkbox-group label {padding: 4px; background: rgba(0,0,0,.05); border-radius: 4px; display: flex; align-items: center; line-height: 1.2;}
 .checkbox-group label:has(input[type="checkbox"]:checked) {background: var(--primary-light);}
 
-.form-actions {position: fixed; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-between; padding: 2rem; background: #fff; border-top: 1px solid #ccc;}
+.form-actions {position: fixed; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-between; padding: 1rem; background: #fff; border-top: 1px solid #ccc; z-index: 50;}
 .btn-simple {background: rgba(0,0,0,.1); border: none; padding: 10px 15px; border-radius: 4px; text-decoration: none; text-align: center; font-weight: 400;}
 
 #filter {background: var(--secondary); padding: 15px; border-radius: 15px;gap: 15px; margin: -50px 15px 0 15px;position: relative;z-index: 50; box-shadow: 5px 15px 25px rgba(0, 0, 0, .2);}
