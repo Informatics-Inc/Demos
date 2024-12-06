@@ -18,6 +18,8 @@
 @media (max-width: 992px) {
     .bottom-affix {position: fixed; bottom: 10px; right: 10px; left: 10px; padding: .75rem; box-shadow: 0 0 25px rgba(0,0,0,.2);}
     .bottom-affix + .additional-links {padding: 0;}
+    /* fix footer spacing on mobile*/
+    .fixed-calendar footer.footer {padding-bottom: 150px;}
 }
 
 /* Just Mobile */
