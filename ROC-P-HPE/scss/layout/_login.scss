@@ -9,11 +9,12 @@
 .login .form input {display: block; padding: 10px; width: 100%; border-radius: 5px; border: 1px solid #ccc; background: var(--light);}
 .login .form-actions {display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; font-size: .85rem;}
 
-.info-item {max-width: 425px; margin: 0 auto; padding: 1.5rem 1rem 1.5rem 125px; position: relative; font-size: .9rem; border-radius: 5px; background: rgba(255,255,255,.95);}
+.info-item {max-width: 425px; margin: 0 auto; padding: 1.5rem 1rem 1.5rem 125px; position: relative; font-size: .9rem; border-radius: 5px; background: rgba(255,255,255,.9); transition: var(--transition);}
 .info-item img {position: absolute; left: 0; top: 0; width: 95px; height: 100%; object-fit: contain; padding: 1rem;mix-blend-mode: multiply;}
 .info-item h3 {font-size: 1.15rem;}
 .info-item .btn-text {background: var(--light-2);}
 .info > img {position: absolute; width: 100%; height: 100%; object-fit: cover; left: 0; top: 0; opacity: .85; }
+.info-item .btn-text:hover {background: var(--light);}
 
 /* TABLET */
 @media (min-width: 768px) {
