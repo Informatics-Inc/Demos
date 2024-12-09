@@ -1,0 +1,19 @@
+.card {background: #fff; box-shadow: var(--box-shadow-sm); border-radius: var(--border-radius-sm); overflow: hidden;}
+.card figure {aspect-ratio: 2.5 / 1; background: var(--primary); display: grid; align-items: center; text-align: center;}
+.card figure .fa {color: #fff; font-size: 2rem; width: 4rem; height: 4rem; background: rgba(0,0,0,.2); border-radius: 50%; margin: 0 auto; line-height: 4rem;}
+.card .card-text {padding: 1rem; font-size: .85rem;}
+.card .card-text ul {display: grid; gap: 5px; list-style: square;}
+.card .card-text > *:last-child {margin-bottom: 0;}
+
+/* TABLET */
+@media (min-width: 768px) {
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}

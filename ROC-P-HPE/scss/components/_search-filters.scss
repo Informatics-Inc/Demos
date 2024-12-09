@@ -1,4 +1,4 @@
-#search-filters {background: var(--light); padding: 1rem; margin: var(--spacer-vert) auto; border-radius: var(--border-radius-sm); display: grid; gap: 10px; font-size: .85rem;}
+#search-filters {background: var(--light-2); padding: 1rem; margin: var(--spacer-vert) auto; border-radius: var(--border-radius-sm); display: grid; gap: 10px; font-size: .85rem;}
 
 #filters {display: grid; gap: 10px;}
 
@@ -26,9 +26,11 @@
 #cert-grid {display: grid; grid-template-columns: repeat( auto-fill, minmax(150px, 1fr) ); gap: 1rem;}
 .grid-item {text-align: center; padding: 1rem 1rem 1.5rem 1rem; border-radius: var(--border-radius-sm); box-shadow: 0 0 15px rgba(0,0,0,.075); display: flex; justify-content: center; flex-direction: column;}
 .grid-item h3 {font-size: 1.15rem; line-height: 1.2;}
-.grid-item img {max-width: 125px; margin: 1rem auto;}
+.grid-item img {max-width: 125px; margin: 1rem auto; transition: var(--transition);}
 .grid-item .btn-secondary {background: none;}
 .grid-item .buttons {margin-top: auto;}
+.grid-item:hover img {transform: scale(1.05);}
+
 /* TABLET */
 @media (min-width: 768px) {
 #search-filters {display: flex; align-items: flex-end;}

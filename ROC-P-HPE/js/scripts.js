@@ -7,16 +7,34 @@
     } else {
       $("#hdr-site").removeClass("scroll");
     }
-    var x = $(this).scrollTop();
-    $(".page-header figure img").css(
-      "-webkit-transform",
-      "translateY(" + x / 6 + "px)"
-    );
+    // var x = $(this).scrollTop();
+    // $(".page-header figure img").css(
+    //   "-webkit-transform",
+    //   "translateY(" + x / 6 + "px)"
+    // );
     $(".bkg-texture").css(
       "-webkit-transform",
       "translateY(" + x / 8 + "px)"
     );
   });
+  
+  document.querySelectorAll('.read-more-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const contentId = button.getAttribute('aria-controls');
+        const content = document.getElementById(contentId);
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Toggle aria-expanded attribute
+        button.setAttribute('aria-expanded', !isExpanded);
+
+        // Toggle 'expanded' class for the animation
+        content.classList.toggle('expanded');
+
+        // // Update button text based on expanded state
+        // button.textContent = isExpanded ? 'Read More' : 'Read Less';
+    });
+});
+
 
   $('#menu-toggle').on('click', function() {
     $('#menu, #menu-toggle').toggleClass('active');

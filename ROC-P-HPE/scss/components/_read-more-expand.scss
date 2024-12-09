@@ -1,0 +1,14 @@
+.read-more-expand {background: var(--light);  border-radius: 5px; overflow: hidden; margin: 0 0 1rem 0;}
+.read-more-content {height: 0; interpolate-size: allow-keywords; overflow: clip; visibility: hidden; transition: var(--transition);}
+.read-more-expand + h2 {margin-top: 3rem;}
+
+.read-more-button {display: block; width: 100%; border: none; padding: 1rem; font-weight: 400; text-align: left; font-size: 1.35rem; background: var(--light-2); cursor: pointer; display: flex; justify-content: space-between; color: var(--primary-dark);}
+.read-more-button[aria-expanded="true"] + .read-more-content {height: auto; visibility: visible;}
+.read-more-button .fa {text-decoration: none; font-size: 12px; margin: 8px 0 0 0;}
+.read-more-button:hover {text-decoration: underline;}
+.read-more-expand .expand-text {padding: 1rem;}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .read-more-expand .expand-text {padding: 2rem;}
+}
