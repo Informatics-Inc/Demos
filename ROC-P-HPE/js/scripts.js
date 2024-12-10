@@ -7,14 +7,11 @@
     } else {
       $("#hdr-site").removeClass("scroll");
     }
-    // var x = $(this).scrollTop();
-    // $(".page-header figure img").css(
-    //   "-webkit-transform",
-    //   "translateY(" + x / 6 + "px)"
-    // );
-    $(".bkg-texture").css(
+    var x = $(this).scrollTop();
+    
+    $(".page-header > img").css(
       "-webkit-transform",
-      "translateY(" + x / 8 + "px)"
+      "translateY(" + x / 4 + "px)"
     );
   });
   
