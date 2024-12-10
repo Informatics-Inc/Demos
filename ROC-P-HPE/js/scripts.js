@@ -34,7 +34,10 @@
         // button.textContent = isExpanded ? 'Read More' : 'Read Less';
     });
 });
-
+$('.menu-toggle').on('click', function() {
+  // Toggle the "open" class on the element with the ID "dash-menu"
+  $('#dash-menu').toggleClass('open');
+});
 
   $('#menu-toggle').on('click', function() {
     $('#menu, #menu-toggle').toggleClass('active');
