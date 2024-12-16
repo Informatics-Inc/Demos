@@ -1,0 +1,33 @@
+.footer {font-size: .95rem;position: relative; z-index: 5; background: url(../img/footer-bg.webp) no-repeat; color: var(--text-color-inverse); padding-top:4rem;background-size:cover;}
+.footer h3 {color: #fff; letter-spacing: -.25px;margin-top:30px}
+.footer ul {padding: 00; list-style: none;}
+.footer ul a {color: var(--text-color-inverse); display: block; padding: 5px 5px 15px 0;text-decoration: none;font-weight:700}
+.footer ul a::before{content:"\f054";font-family:"Font Awesome 5 Free";font-weight:900;margin-right:8px;font-size:0.5rem;}
+.footer ul li{border-bottom:solid 0.5px rgba(255,255,255,.5)}
+.footer ul a:hover {color:#fff;padding-left:5px}
+
+.footer-cta{margin-top: 4rem; display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:1fr;gap:0;}
+.footer-cta figure{margin:0;display:flex;justify-content:center;align-items:center;}
+.footer-cta img{width:100%;height:100%;object-fit:cover;}
+
+.footer .call-today{color:#f3f3f3;}
+.footer .phone-number{font-size:1.5rem;color:var(--accent-2);text-decoration: none;}
+.footer-cols #logo {display: block; width:210px;margin-bottom:25px}
+.footer .phone-details{margin-left:0}
+
+.footer-copy {text-align: center; padding: 15px; margin: 2rem 0 0 0; font-size: .85rem; color: var(--text-color-inverse); border-top: 1px solid rgba(255,255,255,.25);}
+.footer-copy a {color: var(--text-color-inverse);}
+.footer-copy a:hover {color: #fff;}
+
+.hidden-link a {color: var(--text-color-inverse); text-decoration: none; font-weight: 400;}
+
+/* TABLET */
+@media (min-width:768px){
+
+}
+
+@media (min-width: 992px) {
+.footer-cols {display:grid;grid-template-columns: 3fr 2fr 2fr 2.2fr; gap: 2rem;}
+.footer-cols .col:first-of-type {grid-column: span 1; padding-right: 50px;}
+.footer h3 {margin-top:0}
+}

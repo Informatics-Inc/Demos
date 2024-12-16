@@ -1,0 +1,9 @@
+.call-to-action{background:var(--primary);padding:3rem;border-radius:var(--border-radius-sm);color:var(--text-color-inverse);display:grid;gap:var(--spacer);}
+.call-to-action h2{color:#fff;}
+.call-to-action .wp-block-button__link{font-size:1.15rem;}
+.call-to-action .wp-block-button__link:after{content:"\f061";font-family:FontAwesome;margin:0 0 0 5px;transition:var(--transition);}
+.call-to-action .wp-block-button__link:hover:after{margin:0 0 0 10px;}
+/* TABLET */
+@media (min-width:768px){}
+@media (min-width:992px){.call-to-action{grid-template-columns:auto 175px;align-items:center;}
+}

@@ -1,0 +1,101 @@
+/* GLOBAL */
+#hdr-site {position: relative; z-index: 10; box-shadow: var(--box-shadow-sm);}
+#logo {display: block; width:220px;}
+#menu ul {list-style: none; padding: 0; margin: 0;}
+#menu ul li{margin-bottom: 0px;}
+#menu ul a {font-family:var(--header);color: var(--primary-dark); text-decoration: none; display: block; font-weight: 700; position: relative;font-size:1.2rem;padding:1rem}
+#hdr-site .btn-theme{font-family:var(--header);font-size:1.2rem}
+#hdr-main {padding:15px 0;}
+
+.phone-info{display:flex;align-items:center;gap:10px;}
+.phone-icon{width:40px;height:40px;background-image:url('../img/icons/icon-contact-headset.svg');background-size:contain;background-repeat:no-repeat;background-position:center;}
+.phone-details{display:flex;flex-direction:column;align-items:flex-start;margin-right:10px;}
+.call-today{font-size:0.8rem;margin-left:2px;margin-bottom:-3px;color:#777;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;}
+.phone-number{font-size:1.3rem;letter-spacing:-0.75px;font-weight:800;color:var(--primary);}
+.hide-sm{display:none}
+
+/* ONLY MOBILE */
+@media (max-width: 991px) {
+.show-sm{display:none}
+.hide-sm{display:block;position: relative;}
+.phone-icon{width:40px;height:45px;position:absolute;}
+.phone-details{margin-left:50px;margin-top:20px}
+#hdr-main {display: grid; grid-template-columns: auto 35px; padding: 1rem 0;}
+#logo {width: 210px;}
+
+/* Menu Toggle */
+#menu-toggle {font-size:.65rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 700; color: var(--text); width: 35px; height: 40px; position: relative;align-self: center;}
+#menu-toggle > div {position: absolute; width: 100%; height: 100%; top: 0; left: 0; transition: var(--transition);}
+#menu-toggle .closed {display: flex; flex-direction: column; gap: 4px;}
+#menu-toggle .closed .bar {width: 100%; height: 3px; background: var(--primary); display: block;}
+#menu-toggle .open .bar {width: 100%; height: 3px; transform: rotate(45deg); background: var(--primary); display: block; transform-origin: center;position: absolute;left: 0;top: 46%;}
+#menu-toggle .open .bar:nth-last-of-type(2) {transform: rotate(-45deg)}
+#menu-toggle.collapsed .open {opacity: 0; visibility: hidden; top: -5px;}
+#menu-toggle.collapsed .closed {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .open {opacity: 1; visibility: visible; top: 0;}
+#menu-toggle .closed {opacity: 0; visibility: hidden; top: 5px;}
+
+/* Menu Collapse */
+#menu .btn-expand {position: absolute; right: 0; top: 0; height: auto; border: none; background: none; color: var(--primary); padding: 1rem;}
+.collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
+.show {height: auto;}
+
+/* Menu Links */
+#menu ul a {border-top: 1px dotted #ccc;}
+#menu ul a:hover, #menu ul a:focus {background: #f3f3f3;color:var(--accent-1)}
+#menu .wp-block-button__link {margin: 1rem 0;}
+#menu li {position: relative;}
+#menu ul ul a {border: none; padding: 10px 20px 10px 30px; ;font-weight: 500;}
+#menu ul ul li:last-of-type {margin-bottom: 1rem;}
+} /* END ONLY MOBILE */
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    
+#hdr-site {position: fixed; top: 0; width: 100%; background: #fff;}
+#menu-toggle {display: none;}
+.hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
+#menu {display: flex; align-items: center;}
+#menu ul {display: flex;}
+#menu ul a {padding: 1.5rem 0.70rem;font-size:1rem;}
+#menu .wp-block-button__link {margin-left: 1rem;}
+#hdr-site .btn-theme{font-size:1rem}
+
+
+/* Dropdown */
+#menu .btn-expand {display: none;}
+#menu ul li {position: relative;}
+#menu ul ul {position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
+#menu ul ul a {font-weight: 700; padding: 10px;}
+#menu li:hover ul {opacity: 1; visibility: visible; top: 100%;}
+
+/* Hovers & Active */
+#menu > ul > li > a:after {width: 0; height: 3px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--accent-1); opacity: 0; transition: var(--transition);}
+#menu > ul > li:hover > a {color:var(--accent-1)}
+#menu > ul > li:hover > a:after {width: 100%; left: 0; opacity: 1;}
+#menu ul ul a:hover {color: var(--accent-1); text-decoration: none; padding: 10px 5px 10px 15px; background: #f3f3f3}
+}
+
+/* Wordpress Nav Active State */
+#menu ul .current-page-ancestor > a,
+#menu ul .current-menu-item a {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Add Class On Scroll */
+// #hdr-site.scroll {}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+#menu ul a {font-size:1.3rem}
+#hdr-site .btn-theme{font-family:var(--header);font-size:1.3rem}
+
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}
+
+
+

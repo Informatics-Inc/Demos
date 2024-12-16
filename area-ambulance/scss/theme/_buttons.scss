@@ -1,0 +1,21 @@
+/* WP Button Styles */
+/* Primary */
+.wp-block-buttons {margin: var(--spacer) 0;}
+.wp-block-button__link {background: var(--primary); padding: .65rem 1.75rem; color: #fff; display: block; text-align: center; border-radius: var(border-radius-xl); text-decoration: none; font-weight: 700;position: relative; z-index: 5;}
+.wp-block-button__link:hover{background:var(--accent-1)}
+/* Text */
+.is-style-btn-text .wp-block-button__link {background: none; padding: 1rem 0; color: var(--primary); box-shadow: none;}
+.is-style-btn-text .wp-block-button__link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);}
+.is-style-btn-text .wp-block-button__link:hover {color: var(--accent-1);background: none;}
+.is-style-btn-text .wp-block-button__link:hover:after {margin: 0 0 0 10px;}
+
+/* Secondary */
+.is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
+.is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
+
+/* General styles for the icon button */
+.icon-button .wp-block-button__link{line-height:1;display:flex;align-items:center;gap:1rem;padding:0.65rem 1.75rem 0.65rem 0.75rem;background:var(--accent-1);}
+.icon-button .wp-block-button__link figure{width:50px;height:50px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#f1f1f1;flex-shrink:0;}
+.icon-button .wp-block-button__link figure img{width:calc(100% - 20px);height:calc(100% - 20px);object-fit:cover;scale:1;transition:scale 0.3s ease;}
+.icon-button:hover .wp-block-button__link figure img{scale:1.2;}
+.icon-button .wp-block-button__link:hover{background-color:var(--accent-2);}
