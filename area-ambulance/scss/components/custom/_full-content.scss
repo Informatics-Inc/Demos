@@ -1,6 +1,8 @@
 .full-content {position: relative; margin: var(--spacer-vert) auto;}
 .full-content-text {padding: 2rem; background: url(../img/wave-bg.webp) center right var(--primary) no-repeat; color: var(--text-color-inverse); background-size:100%; }
 .full-content-text h2, .full-content-text h3 {color: #fff;}
+.full-content-image::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(6,0,91,0.5),transparent);pointer-events:none;/* Ensures it doesn't interfere with clicks */
+}
 
 .full-content-image {position: relative; width: 100%; height: 100%; object-fit: cover;}
 .full-content-image img {width: 100%; height: 100%; object-fit: cover;}
