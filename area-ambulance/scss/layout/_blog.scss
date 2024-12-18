@@ -5,7 +5,7 @@
 .blog-list-item h2 a {color: var(--text); text-decoration: none;}
 .blog-list-item h2 a:hover {text-decoration: underline;}
 .blog-list-item figure img {border-radius: 10px;}
-.blog-list-item .wp-block-buttons {margin: 0;}
+.blog-list-item .wp-block-buttons {margin: 0; }
 
 #pagination {font-size: 1rem; justify-content: center; display: flex; margin: 2rem 0 0 0;}
 #pagination li:before {display: none;}
