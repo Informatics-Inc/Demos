@@ -1,7 +1,7 @@
 /* GLOBAL */
 #hdr-site {position: relative; z-index: 10; box-shadow: var(--box-shadow-sm);}
 #logo {display: block; width:150px;}
-#menu ul {list-style: none; padding: 0; margin: 0;}
+#menu ul {list-style: none; padding: 0; margin: 5px 0 0 0;}
 #menu ul a {font-family:var(--header);color: var(--primary-dark); text-decoration: none; display: block; font-weight: 700; position: relative;font-size:1.3rem;padding:1rem }
 #menu li a i{margin-right:7px;font-size:1.1rem}
 #hdr-site .btn-theme{font-family:var(--header);font-size:1.2rem;margin-bottom: 5px;}
@@ -57,15 +57,21 @@
 /* Dropdown */
 #menu .btn-expand {display: none;}
 #menu ul li {position: relative;}
-#menu ul ul {position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
-#menu ul ul a {font-weight: 400; padding: 10px;}
+#menu ul ul {border-radius:12px;position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
+#menu ul ul a {font-weight: 700; padding:5px;border-bottom:2px dotted #eee;}
 #menu li:hover ul {opacity: 1; visibility: visible; top: 100%;}
 
 /* Hovers & Active */
 #menu > ul > li > a:after {width: 0; height: 3px; position: absolute; left: 50%; bottom: 0; content: ""; background: var(--primary-light); opacity: 0; transition: var(--transition);}
 #menu > ul > li:hover > a:after {width: 100%; left: 0; opacity: 1;}
-#menu ul ul a:hover {color: var(--accent-1); padding: 10px 5px 10px 15px; background: var(--light);}
+#menu ul ul a:hover {color: var(--accent-1); padding: 5px 0px 5px 10px; background: var(--light);}
 #menu ul a:hover {color: var(--primary-light)}
+
+// #hdr-site.scroll {}
+#hdr-site.scroll #logo {
+    width: 180px; /* Shrinks the logo when scrolled */
+    transition: width 0.3s ease; /* Smooth transition */
+}
 
 }
 
@@ -76,8 +82,7 @@
     color: var(--primary);
 }
 
-/* Add Class On Scroll */
-// #hdr-site.scroll {}
+
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {

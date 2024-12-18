@@ -64,7 +64,6 @@ p{color:#fff;font-size:1.1rem;line-height: 1.1;}
 p:last-child {margin-bottom:-10px}
 h4 + p, h3 + p, h2 + p, h5 + p{margin-top:5px}
 }
-.theme-img.text-image{padding-bottom:40px}
 
 /* Overlap Images */
 .theme-img.overlap-img{position:relative;padding:0 0 100px 0;}
@@ -82,14 +81,16 @@ img:nth-of-type(2){border-radius:12px 12px 122px 12px;margin-top:40px}
 
 /* TABLET */
 @media (min-width: 768px) {
+.theme-img.text-image{padding-bottom:40px;padding-right:40px}
 .theme-img.overlap-img img{width:70%;left:20%;padding-left:0}
 .theme-img.overlap-img img:nth-of-type(2){left:0;bottom:0;width:60%;aspect-ratio:1.35 / 1;border:15px solid var(--bkg);z-index:6;}
 .theme-img.cirlce-img{min-height:350px;}
-.theme-img.text-image figcaption{position:absolute;z-index:2;width:225px;background-size:auto;padding:20px 18px 30px 18px;bottom:0px;right:0px;margin:0 }
+
 }
 
 /* DESKTOP */
 @media (min-width: 992px) {
+  .theme-img.text-image figcaption{position:absolute;z-index:2;width:225px;background-size:auto;padding:20px 18px 30px 18px;bottom:0px;right:0px;margin:0 }
 .theme-img{padding-right:4.5rem;}
 .theme-img.cirlce-img{min-height:400px;}
 .theme-img.dots::after{width:50px;height:130px;left:-60px;top:0px;}

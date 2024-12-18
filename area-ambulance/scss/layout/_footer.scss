@@ -1,11 +1,11 @@
 .footer {font-size: .95rem;position: relative; z-index: 5; background: var(--primary-dark) url(../img/shapes/footer-bg.webp) no-repeat; color: var(--text-color-inverse); padding-top:4rem;background-size:cover;}
-.footer h3 {color: #fff; letter-spacing: -.25px;margin-top:30px}
+.footer h3 {color: #fff; letter-spacing: -.25px;margin-top:60px}
 .footer ul {padding: 00; list-style: none;}
 .footer ul a {color: var(--text-color-inverse); display: block; padding: 5px 5px 15px 0;text-decoration: none;font-weight:700}
 .footer ul a::before{content:"\f054";font-family:"Font Awesome 5 Free";font-weight:900;margin-right:8px;font-size:0.5rem;}
 .footer ul li{border-bottom:solid 0.5px rgba(255,255,255,.5)}
 .footer ul a:hover {color:#fff;padding-left:5px}
-
+.footer p{max-width: 450px;}
 
 .footer-cta{display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(2,minmax(auto,100px));/* Limit row height */
  grid-column-gap:0px;grid-row-gap:0px;margin-top:4rem;}

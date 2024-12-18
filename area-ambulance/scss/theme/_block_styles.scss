@@ -46,7 +46,6 @@
 
 /* Columns */
 .is-style-small-margin {margin-top: -2rem !important;}
-.is-style-large-gap {gap: 4rem !important;}
 .is-style-small-margin + .is-style-small-margin {margin-bottom: 3rem !important;}
 /* Social Media Links */
 .wp-block-social-links .wp-social-link {color: #fff;}
@@ -60,4 +59,6 @@
 @media (min-width: 768px) {
 .wp-block-image .alignleft, .wp-block[data-align="left"] > .wp-block-image {float:left; margin: 0 2rem 2rem 0; max-width: 50%;}
 .wp-block-image .alignright, .wp-block[data-align="right"] > .wp-block-image {float:right; margin: 0 0 2rem 2rem; max-width: 50%;}
+.is-style-large-gap {gap: 4rem !important;}
+
 }

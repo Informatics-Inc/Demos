@@ -1,35 +1,31 @@
-.full-content {position: relative; margin: var(--spacer-vert) auto;}
-.full-content-text {padding: 2rem; background: url(../img/shapes/wave-bg-dark.webp) center right var(--primary) no-repeat; color: var(--text-color-inverse); background-size:100% 100%; }
-.full-content-text h2, .full-content-text h3 {color: #fff;}
-.full-content-image::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(6,0,91,0.65),transparent);pointer-events:none;}
+.full-content{position:relative;margin:var(--spacer-vert) auto;}
+.full-content-text{padding:2rem;background:url(../img/shapes/wave-bg-dark.webp) center right var(--primary) no-repeat;color:var(--text-color-inverse);background-size:100% 100%;}
+.full-content-text h2,.full-content-text h3{color:#fff;}
 
-.full-content-image {position: relative; width: 100%; height: 100%; object-fit: cover;}
-.full-content-image img {width: 100%; height: 100%; object-fit: cover;}
-.full-content .image-content {box-shadow:var(--box-shadow-sm);border:solid 1px rgba(255, 255, 255, .35);color:#fff;position: relative;  background: rgba(222, 222, 222, 0.25);backdrop-filter: blur(20px);padding: 2rem; border-radius: var(--border-radius-sm); font-size: .85rem; box-shadow:var(--box-shadow-lg)}
-.full-content .image-content p{font-size:1rem}
-.image-content ul {list-style: none; padding: 0 0 0 0;}
-.image-content ul li { font-weight: 600;  display: flex; gap: 5px;}
-.image-content li:before {content: "\f058";font-family: FontAwesome; color:var(--accent-2); margin: 0 0 0 5px;}
-.image-content a{color:var(--primary-light)}
-.is-style-linklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--light);}
+.full-content-image{position:relative;width:100%;height:100%;padding:50px 0;}
+.full-content-image img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;}
+.full-content-image::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(6,0,91,0.35),transparent);pointer-events:none;z-index:1;}
 
-.image-content a:hover{color:#000}
-.full-content .full-content-text ul.is-style-linklist li {color: #fff !important;}
+.image-content{box-shadow:var(--box-shadow-sm);border:solid 1px rgba(255,255,255,0.35);color:#fff;position:relative;background:rgba(222,222,222,0.25);backdrop-filter:blur(20px);padding:2rem;border-radius:var(--border-radius-sm);font-size:0.85rem;box-shadow:var(--box-shadow-lg);margin:0px auto 0px auto;width:calc(100% - 50px);z-index:2}
+.image-content p{font-size:1rem;}
+.image-content ul{list-style:none;padding:0;}
+.image-content ul li{font-weight:600;display:flex;gap:5px;}
+.image-content li:before{content:"\f058";font-family:FontAwesome;color:var(--accent-2);margin-left:5px;}
+.image-content a{color:var(--primary-light);}
+.image-content a:hover{color:#000;}
 
-.full-content-text {
-    .wp-block-button__link {background: var(--accent-1)}
-    .wp-block-button__link:hover {background: var(--accent-2)}
-}
-.full-content .image-content{width:calc(100% - 50px);margin:-40px auto 20px auto;}
-  
-@media(min-width:768px){
-.full-content {display: grid; grid-template-columns: 1fr 1fr;}
-.full-content-text {padding: 4rem;}
-.full-content-image {position: absolute; right: 0; width: 50%;}
-.full-content .image-content {position: absolute; bottom: 25px; left: 25px; width: 70%; max-width: 350px;}
+.full-content-text .wp-block-button__link{background:var(--accent-1);}
+.full-content-text .wp-block-button__link:hover{background:var(--accent-2);}
+.full-content-text .is-style-linklist li::before{color:var(--secondary);}
+
+@media (min-width:768px){.full-content{display:grid;grid-template-columns:1fr 1fr;}
+.full-content-image::before{background:linear-gradient(to top,rgba(6,0,91,0.65),transparent);}
+.full-content-text{padding:4rem;}
+.full-content-image{position:absolute;right:0;width:50%;height:100%;}
+.image-content{position:absolute;bottom:50px;left:50px;width:70%;max-width:350px;}
 }
 
-/* WIDE DESKTOP */
 @media (min-width:992px){
-.full-content-text {padding-left: calc(((100vw - var(--max-width)) / 2) + 1.5rem);}
+    .full-content-text{padding-left:calc(((100vw - var(--max-width)) / 2) + 1.5rem);}
 }
+
