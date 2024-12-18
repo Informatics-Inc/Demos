@@ -4584,7 +4584,7 @@ select {
 /* Variables */
 :root {
   /* Colors */
-  --primary: #00df3f;
+  --primary: #0D1282;
   --primary-dark: #020439;
   --primary-light: #0e1598;
   --secondary: #D71313;
@@ -4599,7 +4599,6 @@ select {
   --body: "Source Sans 3", sans-serif;
   --text-color: rgba(46,60,85,.9);
   --text-color-inverse: rgba(255,255,255,.85);
-  /* 0D1282 */
   /* Globals */
   --transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --box-shadow-sm: 0 0 15px rgba(0,0,0,.1);
