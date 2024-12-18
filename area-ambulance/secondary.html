@@ -1,549 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Informatics, Inc" />
-    <title>Secondary</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>NSCA</title>
 
     <!-- FONTS -->
-    <link href="css/icons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.typekit.net/zwk2xsz.css" />
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Fancybox CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-
+    <!-- CSS -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="css/app.min.css" rel="stylesheet" />
+    <link href="css/app.min.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Skip Nav Link-->
-    <a id="skip-nav" class="screenreader-text" href="#content">
-      Skip to Content
-    </a>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
 
-    <header id="hdr-site">
-      <!-- HEADER TOP -->
-      <div id="hdr-top">
+  <header id="hdr-site">
+
+    <!-- LOGO AND MOBILE -->
+    
+      <div class="hdr-top">
         <div class="container">
-          <div class="hdr-top-left"></div>
-          <div class="hdr-top-right">
-            <ul>
-              <li><a href="#.html">Join Our Team!</a></li>
-              <li>
-                <strong>
-                  <a
-                    href="https://www.facebook.com/AreaAmbulanceService"
-                    target="blank">Follow Us<i
-                      class="fa-brands fa-facebook-f"></i></a></strong>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- LOGO AND MOBILE -->
-      <div class="container">
-        <div class="hdr-desktop">
-          <div id="hdr-main">
-            <a href="#.html" id="logo">
-              <img src="img/logo.svg" alt="Logo" />
-            </a>
-            <button
-              id="menu-toggle"
-              class="collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#menu"
-              aria-expanded="false"
-              aria-controls="menu">
+          <a href="#.html" id="logo">
+            <img src="img/logo.png" alt="Logo" />
+          </a>
+          <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
               <div class="closed">
-                Menu
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                  Menu
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
               </div>
               <div class="open">
-                <span class="bar"></span>
-                <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
               </div>
-            </button>
-          </div>
-
-          <!-- MAIN NAVIGATION -->
-          <nav id="menu" class="collapsed">
-            <ul>
-              <li><a href="#.html">About Us</a></li>
-              <li>
-                <a href="#.html">How We Work</a>
-                <button
-                  class="btn-expand collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#menu-1"
-                  aria-expanded="false"
-                  aria-controls="menu-1">
-                  <i class="fa fa-chevron-down"></i>
-                </button>
-                <ul id="menu-1" class="collapsed">
-                  <li><a href="#.html">Inside the Ride</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#.html">EMT Training</a>
-                <button
-                  class="btn-expand collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#menu-1"
-                  aria-expanded="false"
-                  aria-controls="menu-1">
-                  <i class="fa fa-chevron-down"></i>
-                </button>
-                <ul id="menu-1" class="collapsed">
-                  <li><a href="#.html">AAS Training Program</a></li>
-                  <li><a href="#.html">For Area Students</a></li>
-                </ul>
-              </li>
-              <li><a href="#.html">Work with Us</a></li>
-            </ul>
-
-            <!-- PHONE SECTION -->
-            <div class="phone-info hide-sm">
-              <div class="phone-icon"></div>
-              <div class="phone-details">
-                <small class="call-today">Call Now</small>
-                <span class="phone-number">(319) 366-2300</span>
-              </div>
-              <a href="#.html" class="btn-theme wp-block-button__link">Contact
-                Us</a>
-            </div>
-          </nav>
-
-          <!-- PHONE SECTION -->
-          <div class="phone-info show-sm">
-            <div class="phone-icon"></div>
-            <div class="phone-details">
-              <small class="call-today">Call Now</small>
-              <span class="phone-number">(319) 366-2300</span>
-            </div>
-            <a href="#.html" class="btn-theme wp-block-button__link">Contact
-              Us</a>
-          </div>
+          </button>
         </div>
       </div>
-    </header>
 
-    <main id="content">
+      <!-- MAIN NAVIGATION -->
+      <nav id="menu" class="collapsed">
+        <div class="container">
+          <ul class="nav-main">
+              <li><a href="#.html">Our Impact</a>
+              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                <ul id="menu-1" class="collapsed">
+                  <li><a href="#.html">Dropdown Link</a></li>
+                  <li><a href="#.html">Dropdown Link</a></li>
+                  <li><a href="#.html">Dropdown Link</a></li>
+                </ul>
+              </li>
+              <li><a href="#.html">Membership</a>
+                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2" aria-expanded="false" aria-controls="menu-2"><i class="fa fa-chevron-down"></i></button>
+                  <ul id="menu-2" class="collapsed">
+                    <li><a href="#.html">Dropdown Link</a></li>
+                    <li><a href="#.html">Dropdown Link</a></li>
+                    <li><a href="#.html">Dropdown Link</a></li>
+                  </ul>
+              </li>
+              <li class="current-menu-item"><a href="#.html">Resources</a>
+                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-3" aria-expanded="false" aria-controls="menu-3"><i class="fa fa-chevron-down"></i></button>
+                  <ul id="menu-3" class="collapsed">
+                    <li><a href="#.html">Dropdown Link</a></li>
+                    <li><a href="#.html">Dropdown Link</a></li>
+                    <li><a href="#.html">Dropdown Link</a></li>
+                  </ul>
+              </li>
+              <li><a href="#.html">Training Solutions</a>
+                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4" aria-expanded="false" aria-controls="menu-4"><i class="fa fa-chevron-down"></i></button>
+                  <ul id="menu-4" class="collapsed">
+                    <li><a href="#.html">Dropdown Link</a></li>
+                    <li><a href="#.html">Dropdown Link</a></li>
+                    <li><a href="#.html">Dropdown Link</a></li>
+                  </ul>
+              </li>
+              <li><a href="#.html">Events</a>
+                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-5" aria-expanded="false" aria-controls="menu-5"><i class="fa fa-chevron-down"></i></button>
+                  <ul id="menu-5" class="collapsed">
+                    <li><a href="#.html">Dropdown Link</a></li>
+                    <li><a href="#.html">Dropdown Link</a></li>
+                    <li><a href="#.html">Dropdown Link</a></li>
+                  </ul>
+              </li>
+              <li><a href="#.html">Advocacy</a></li>
+          </ul>
+          <div class="hdr-tools">
+            <ul class="nav-social">
+              <li><a href="#.html"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#.html"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="#.html"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <ul class="nav-mini">
+              <li><a href="#.html">Member Login</a></li>
+              <li><a href="#.html">Integrate Magazine</a></li>
+              <li><a href="#.html">Industry Insights</a></li>
+              <li><a href="#.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <a href="#.html" class="btn-theme wp-block-button__link ">Become a Member</a>
+        </div>
+      </nav>
+   
+  </header>
 
-      <section class="page-hdr">
+  <main id="content">
+    <section class="page-hdr">
+      
         <figure>
-          <img
-            src="https://www.shoalsambulance.com/wp-content/uploads/sites/7/2022/06/Shoals-Ambulance-TEAM-OPTION-3-FORMATTED-scaled.jpg" />
+          <img src="img/hero-1.jpg" />
         </figure>
         <div class="content">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb-nav">
               <li><a href="#.html">Home</a></li>
-              <li>Overview</li>
+              <li><a href="#.html">Resources</a></li>
+              <li>Essentials Library</li>
             </ol>
           </nav>
-          <h1>Overview</h1>
+          <h1>Essentials Library</h1>
         </div>
-      </section>
+      
+    </section>
 
-      <!--------------------------------- Top Section --------------------------------->
-      <div
-        class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+    <div class="wp-block-columns is-layout-flex is-style-large-gap">
+      <div class="wp-block-column" style="flex-basis: 66%">
+        <h2>Your #1 Resource for System Integration Docs</h2>
+        <p>NSCA is proud to offer this members-only database of 650+ business forms, templates and standards designed specifically for the commercial integration industry. Accelerate and protect your business with our comprehensive library.</p>
+      </div>
+      <div class="wp-block-column">
+        <div class="sidebar box">
+          <h4>Resources</h4>
+          <nav class="sec-nav">
+            <ul>
+              <li><a href="#.html">Secondary Page Link</a></li>    
+              <li class="current_page_item"><a href="#.html">Secondary Page Link</a></li>    
+              <li><a href="#.html">Secondary Page Link</a></li>    
+            </ul>
+          </nav>
+      </div>
+      </div>
+    </div>
+    
+    <div class="wp-block-group alignfull is-style-bkg-left">
+      <div class="wp-block-columns">
         <div class="wp-block-column">
-          <figure class="theme-img two-images">
-            <img
-              src="img/placeholder/placeholder-tall.jpg" />
-            <img
-              src="https://c8.alamy.com/comp/E6KJM4/group-of-emergency-medical-service-team-in-front-of-ambulance-E6KJM4.jpg" />
+          <div class="call-to-action">
+            <div class="col">
+              <h2>Help us fight for the next generation of integrators</h2>
+            </div>
+            <div class="col">
+              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Button Text</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+      
+      <div class="wp-block-column">
+        <h2>Our 2024 Association Agenda</h2>
+        <p>Whether you are an integrator, a supplier or a product manufacturer, you can count on NSCA to <strong>advocate for the best business climate possible</strong> for your company. That’s why the NSCA board has set the following policy and program focuses for 2024:</p>
+        <div class="accordion-item">
+          <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
+          </h3>
+          <div id="collapseThree" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+          <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.crsaviors.org/about-us/history/">See Our History</a></div>
+        </div>
+      </div>
+
+      <div class="wp-block-column">
+        <figure class="theme-img two-images dots">
+          <img src="img/tall-2.jpg" />
+          <img src="img/tall-3.jpg" />
+        </figure>
+      </div>
+    </div>
+
+    <div class="wp-block-columns is-layout-flex wp-block-columns-is-layout-flex">
+      <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+        <h2 class="wp-block-heading has-text-align-center">Track Legislation Impacting <br>the
+          Integration Industry</h2>      
+        <p class="has-text-align-center is-style-max-width">ENSCA monitors legislation and regulations that impact the commercial integration industry at all levels of government, from licensure laws to code conflicts, all on behalf of our members. You can find specific information on proposed legislation in your city, county or state, and help us take action by contacting your local officials and representatives.</p>
+      </div>
+    </div>
+
+    <div class="wp-block-group alignfull is-style-bkg-blue">
+      <div class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
+        <div class="wp-block-column" style="flex-basis: 45%;">
+          <figure class="theme-img dots">
+            <img src="img/story-1.jpg" />
           </figure>
         </div>
         <div class="wp-block-column">
-          <h2>Main Title Example Goes Here
-            Area Ambulance</h2>
-          <p class="is-style-lead">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et
-          </p>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            <strong>Bolded Text Sample:</strong></p>
-
-          <div class="stats-block">
-            <div class="col">
-              <h4><span class="counter" data-target="20">0</span> +</h4>
-              <p>Years of Experience</p>
-            </div>
-            <div class="col">
-              <h4><span class="counter" data-target="50">0</span> +</h4>
-              <p>Happy Clients</p>
-            </div>
-            <div class="col">
-              <h4><span class="counter" data-target="986">0</span> +</h4>
-              <p>Projects Completed</p>
-            </div>
-          </div>
-          <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const counters = document.querySelectorAll('.counter');
-
-  const counterObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const counter = entry.target;
-
-          const updateCounter = () => {
-            const target = +counter.getAttribute('data-target'); // Get target number
-            const current = +counter.innerText; // Get current number
-            
-            const increment = Math.ceil(target / 100); // Set increment value
-
-            if (current < target) {
-              counter.innerText = current + increment; // Increment counter
-              setTimeout(updateCounter, 20); // Call again after delay
-            } else {
-              counter.innerText = target; // Ensure final value is exact
-              observer.unobserve(counter); // Stop observing once done
-            }
-          };
-
-          counter.classList.add('active'); // Optional: Add an "active" class
-          updateCounter(); // Start the counter animation
-        }
-      });
-    },
-    {
-      threshold: 0.5, // Trigger when 50% of the element is in view
-    }
-  );
-
-  counters.forEach(counter => counterObserver.observe(counter)); // Observe each counter
-});
-
-            </script>
-
+          <p class="is-style-lead">We take great pride in earning the right to be the
+            voice for integrators. This means that we speak with
+            authority on your behalf regarding many issues
+            impacting your livelihood and business success. It is
+            our pleasure to represent you nationally on issues of
+            concern for this industry, and to promote us collectively
+            as we define an even greater future for ourselves.</p>
+          <p class="is-style-callout"><strong>Chuck Wilson</strong><br>CEO (Chief Excecutive Officer)</p>
         </div>
       </div>
-
-      <!--------------------------------- FULL IMAGE with CARDES  ---------------------------------------->
-      <div class="wp-block-cover">
-        <span class="wp-block-cover__background"></span>
-        <img class="wp-block-cover__image-background"
-          src="https://ccr.net/wp-content/uploads/2024/06/hero-2.jpg">
-        <div class="wp-block-cover__inner-container">
-          <h2 class="has-text-align-center"> Our Sample Title</h2>
-          <p class="has-text-align-center is-style-max-width">Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. A harum repudiandae,
-            temporibus nemo eaque eos ipsum odit aspernatur modi eius excepturi
-            nobis vitae mollitia commodi labore iste aut rem praesentium!</p>
-
-          <div class="theme-cards large">
-            <div class="card icon-card slide-in">
-              <div class="content">
-                <figure class="icon-holder">
-                  <img
-                    decoding="async"
-                    src="img/icons/icons-student-resources.png"
-                    alt="Icon Research" />
-                </figure>
-                <div class="text">
-                  <h3 class="wp-block-heading">
-                    Student Training & Resources</h3>
-                  <p>
-                    Discover our cutting-edge training center, explore
-                    student
-                    FAQs, scheduling information, forms, and
-                    more.tting-edtting-ed
-                  </p>
-                </div>
-
-                <div
-                  class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                  <div class="wp-block-button"><a
-                      class="wp-block-button__link wp-element-button"
-                      href>Get
-                      Resources</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="card icon-card slide-in">
-              <div class="content">
-                <figure class="icon-holder">
-                  <img
-                    decoding="async"
-                    src="img/icons/icons-forms.png"
-                    alt="Icon Research" />
-                </figure>
-                <div class="text">
-                  <h3 class="wp-block-heading">Download Forms</h3>
-                  <p>
-                    Access forms for financial aid, employment application,
-                    special events, medical release information and more.
-                  </p>
-                </div>
-                <div
-                  class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                  <div class="wp-block-button"><a
-                      class="wp-block-button__link wp-element-button"
-                      href>Get
-                      Forms</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="card icon-card slide-in">
-              <div class="content">
-                <figure class="icon-holder">
-                  <img
-                    decoding="async"
-                    src="img/icons/icons-patient-resources.png"
-                    alt="Icon Research" />
-                </figure>
-                <div class="text">
-                  <h3 class="wp-block-heading">Patient Resources</h3>
-                  <p>
-                    Learn more about billing, payment methods, financial
-                    assistance, giving feedback, and more.
-                  </p>
-                </div>
-                <div
-                  class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                  <div class="wp-block-button"><a
-                      class="wp-block-button__link wp-element-button"
-                      href>Get
-                      Resources</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!------------------------------------- Horizontal Cards ------------------------------------->
-      <div
-        class="wp-block-columns is-layout-flex">
-
-        <div class="wp-block-column">
-
-          <h2 class="wp-block-heading">Title About The Area Ambulance</h2>
-          <p class="is-style-default">f you're looking to build a fulfilling
-            and
-            rewarding career with opportunities for growth and development,
-            we’d
-            love to connect and explore how you can be a part of our team.</p>
-          <div
-            class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-            <div class="wp-block-button"><a
-                class="wp-block-button__link wp-element-button"
-                href>Say Hello</a></div>
-          </div>
-          </div>
-          
-        <div class="wp-block-column">
-          <div class="horizontal-cards">
-          <div class="card icon-card icon-card-horizontal slide-in">
-            <div class="content">
-              <figure class="icon-holder">
-                <img
-                  src="img/icons/icons-student-resources.png"
-                  alt="Icon Research" />
-              </figure>
-              <div class="text">
-                <h3 class="wp-block-heading">
-                  Basic Title Here</h3>
-                <p>
-                  Discover our cutting-edge training center, explore
-                  student
-                  FAQs, scheduling information, forms, and
-                  more.tting-edtting-ed
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card icon-card icon-card-horizontal slide-in">
-            <div class="content">
-              <figure class="icon-holder">
-                <img
-                  src="img/icons/icons-forms.png"
-                  alt="Icon Research" />
-              </figure>
-              <div class="text">
-                <h3 class="wp-block-heading">Title About Things</h3>
-                <p>
-                  Access forms for financial aid, employment application,
-                  special events, medical release information and more.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card icon-card icon-card-horizontal slide-in">
-            <div class="content">
-              <figure class="icon-holder">
-                <img
-                  decoding="async"
-                  src="img/icons/icons-patient-resources.png"
-                  alt="Icon Research" />
-              </figure>
-              <div class="text">
-                <h3 class="wp-block-heading">Another Tile Here</h3>
-                <p>
-                  Learn more about billing, payment methods, financial
-                  assistance, giving feedback, and more.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
-
-    
-
-
-     
-
-      
-
-    </main>
-
-    <!------------------------------------- CTA ------------------------------------->
-    <div class="footer-cta">
-      <figure>
-        <img
-          src="https://www.themorningsun.com/wp-content/uploads/2021/11/MSN-L-EMSworkers-1114-1.jpg?w=978"
-          alt="Placeholder 1" />
-      </figure>
-      <figure>
-        <img
-          src="https://images.stockcake.com/public/e/8/b/e8beb42b-1ab6-473e-8b40-65641a9c9091_large/paramedics-at-work-stockcake.jpg"
-          alt="Placeholder 2" />
-      </figure>
-      <figure>
-        <img
-          src="https://www.powerdms.com/hubfs/powerdms-assets-photos-817-uniform-ambulance.jpg"
-          alt="Placeholder 3" />
-      </figure>
-      <figure>
-        <img
-          src="https://cdn.powa.com/www.johnfoy.com/images/wp-content/uploads/2023/06/paramedics-loading-patient-into-ambulance-300x169-354-critical-mobile.jpg.webp"
-          alt="Placeholder 4" />
-      </figure>
-      <figure>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Armstrong_Ambulance_P17.jpg/1200px-Armstrong_Ambulance_P17.jpg"
-          alt="Placeholder 4" />
-      </figure>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <!-- FOOTER CONTENT -->
-        <div class="footer-cols">
-          <div class="col">
-            <a href="#.html" id="logo">
-              <img src="img/logo-white.svg" alt="Logo" />
-            </a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do
-              eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.</p>
+    <div class="wp-block-group alignfull is-style-bkg-left">
+      <div class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
+        <div class="wp-block-column" style="flex-basis: 50%;">
+          <h2>Codes & Compliance FAQ</h2>
+          <p>As a leading authority on compliance in the built environment, NSCA’s Codes & Compliance Committee provides a forum to ask questions and find answers to the toughest compliance issues. <strong>Members can ask the committee a question and get an answer from a subject-matter expert on topics including:</strong></p>
+          <ul>
+            <li>List item themed for client</li>
+            <li>List item themed for client</li>
+            <li>List item themed for client</li>
+            <li>List item themed for client</li>
+            <li>List item themed for client</li>
+            <li>List item themed for client</li>
+          </ul>
+          <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.crsaviors.org/about-us/history/">Learn More</a></div>
           </div>
-          <div class="col">
-            <h3>Quick Links</h3>
-            <nav>
-              <ul>
-                <li><a href="#.html">About Us</a></li>
-                <li><a href="#.html">How We Work</a></li>
-                <li><a href="#.html">EMT Training</a></li>
-                <li><a href="#.html">Work With Us</a></li>
-                <li><a href="#.html">Contact Us</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="col">
-            <h3>Reach Out</h3>
-            <p>2730 12th St SW,<br>
-              Cedar Rapids, IA 52404</p>
-            <div class="phone-details">
-              <small class="call-today">Call Now</small>
-              <span><a href="tel:3193662300" class="phone-number">(319)
-                  366-2300</a></span>
-            </div>
-          </div>
-
-          <div class="col">
-            <h3>Resources</h3>
-            <div
-              class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-              <div class="wp-block-button icon-button ">
-                <a
-                  class="wp-block-button__link wp-element-button"
-                  href="#">
-                  <figure>
-                    <img
-                      decoding="async"
-                      src="img/icons/icons-patient-resources.png"
-                      alt="Icon Research" />
-                  </figure>
-                  Patient Resources
-                </a>
-              </div>
-            </div>
-            <div
-              class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-              <div class="wp-block-button icon-button ">
-                <a
-                  class="wp-block-button__link wp-element-button"
-                  href="#">
-                  <figure>
-                    <img
-                      decoding="async"
-                      src="img/icons/icons-student-resources.png"
-                      alt="Icon Research" />
-                  </figure>
-                  Student Resources
-                </a>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-
-        <!-- FOOTER COPY -->
-        <p class="footer-copy">
-          © Area Ambulance Service. All Rights Reserved.
-          <a href="/privacy-policy/">Privacy Policy.</a> Web Application by
-          <a target="_blank"
-            href="https://www.informaticsinc.com/">Informatics,
-            Inc</a>
-        </p>
+        <div class="wp-block-column">
+          <div class="wp-block-columns is-layout-flex">
+            <figure class="theme-img two-images dots">
+              <img src="img/tall-2.jpg" />
+              <img src="img/tall-3.jpg" />
+            </figure>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/scrolled.js"></script>
-    <script src="js/swiper.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <div class="wp-block-columns is-layout-flex wp-block-columns-is-layout-flex">
+      <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+        <h2 class="wp-block-heading has-text-align-center">Track Legislation Impacting <br>the
+          Integration Industry</h2>      
+        <p class="has-text-align-center is-style-max-width">ENSCA monitors legislation and regulations that impact the commercial integration industry at all levels of government, from licensure laws to code conflicts, all on behalf of our members. You can find specific information on proposed legislation in your city, county or state, and help us take action by contacting your local officials and representatives.</p>
+        <div class="ico-btn-group three-col">
+          <a class="ico-btn" href="#.html"><i class="fa fa-link"></i>Partner Alliance for Safer Schools (PASS)</a>
+          <a class="ico-btn" href="#.html"><i class="fa fa-book"></i>The National Fire Protection Association (NFPA)</a>
+          <a class="ico-btn" href="#.html"><i class="fa fa-user"></i>Connected Technologies Industry Consortium</a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  </body>
-</html>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="call-to-action">
+      <div class="col">
+        <h2>Help us fight for the next generation of integrators</h2>
+      </div>
+      <div class="col">
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Button Text</a></div>
+      </div>
+    </div>
+
+    <div class="ftr-cols">
+      <div class="col">
+        <img src="img/logo-inverse.png" />
+        <ul>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+        </ul>
+      </div>
+      <div class="col ftr-ico-content">
+        <div class="location">
+          <i class="fa fa-map-marker-alt"></i>
+          <p>National Systems Contractors Association (NSCA)<br> 3950 River Ridge DR NE,<br>Cedar Rapids, IA 52402</p>
+        </div>
+        <div class="phone">
+          <i class="fa fa-phone"></i>
+          <p><a href="#.html">(800) 446-6722</a><br><a href="#.html">(319) 446-6722</a></p>
+          <!-- in WordPress Use the Same Social PHP as Header -->
+          <ul class="nav-social">
+            <li><a href="#.html"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#.html"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#.html"><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="ico-btn-group">
+          <a class="ico-btn" href="#.html"><i class="fa fa-link"></i>Join NSCA</a>
+          <a class="ico-btn" href="#.html"><i class="fa fa-book"></i>Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2024 NSCA. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

@@ -2,19 +2,21 @@
 :root {
   /* Colors */
   --primary: #0D1282;
-  --primary-dark: #00034E;
-  --primary-light: #f4ffff;
+  --primary-dark: #020439;
+  --primary-light: #0e1598;
   --secondary: #D71313;
   --accent-1: #3C1AFF;
   --accent-2: #FD0000;
   --light: #F9F9F9;
   --dark: #2E3C55;
   --gray: #EEEDED;
+  --bkg: #f4f4f4;
+
 
   /* Fonts */
   --header: "rift", sans-serif;
   --body: "Source Sans 3", sans-serif;
-  --text-color: rgba(46,60,85,.85);
+  --text-color: rgba(46,60,85,.9);
   --text-color-inverse: rgba(255,255,255,.85);
   
   /* Globals */
@@ -43,8 +45,8 @@ body {font-family: var(--body); font-weight: 400; font-size: 1rem; background: v
 
 h1, h2, h3, h4, h5 {font-family: var(--header); line-height:0.9; margin: 0 0 1rem 0; letter-spacing: -1px;font-style:italic;}
 h1 {font-size: 3.5rem; letter-spacing: -2px;}
-h2 {font-size: 3.75rem;position: relative;font-style:italic;color:var(--primary);margin-bottom: calc(1rem + 40px)}
-h2::after{position:absolute;left:0;bottom:-35px;width:220px;height:28px;background:url(../img/underline.svg) no-repeat;content:"";}
+h2 {font-size: 3.75rem;position: relative;font-style:italic;color:var(--primary-dark);margin-bottom: calc(1rem + 40px)}
+h2::after{position:absolute;left:0;bottom:-35px;width:220px;height:28px;background:url(../img/shapes/underline.svg) no-repeat;content:"";}
 h2.has-text-align-center::after{left:calc(50% - 110px)}
 h3 {font-size: 1.75rem;letter-spacing: 0px;line-height: 1.1;}
 h4 {font-size: 1.5rem;}
@@ -52,7 +54,7 @@ h5 {font-size: 1.4rem;}
 p, ul, ol {margin-bottom: 1.25rem;}
 p strong {color: var(--primary);}
 ul {padding: 0 0 0 15px;}
-ul li::marker {color: var(--accent-2);}
+ul li::marker {color: var(--primary);}
 ul {padding: 0 0 0 15px;}
 ul li {margin-bottom:9px;line-height:1.2}
 

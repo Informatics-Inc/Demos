@@ -1,4 +1,4 @@
-.footer {font-size: .95rem;position: relative; z-index: 5; background: url(../img/footer-bg.webp) no-repeat; color: var(--text-color-inverse); padding-top:4rem;background-size:cover;}
+.footer {font-size: .95rem;position: relative; z-index: 5; background: var(--primary-dark) url(../img/shapes/footer-bg.webp) no-repeat; color: var(--text-color-inverse); padding-top:4rem;background-size:cover;}
 .footer h3 {color: #fff; letter-spacing: -.25px;margin-top:30px}
 .footer ul {padding: 00; list-style: none;}
 .footer ul a {color: var(--text-color-inverse); display: block; padding: 5px 5px 15px 0;text-decoration: none;font-weight:700}
@@ -6,12 +6,21 @@
 .footer ul li{border-bottom:solid 0.5px rgba(255,255,255,.5)}
 .footer ul a:hover {color:#fff;padding-left:5px}
 
-.footer-cta{margin-top: 4rem; display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:1fr;gap:0;}
-.footer-cta figure{margin:0;display:flex;justify-content:center;align-items:center;}
-.footer-cta img{width:100%;height:100%;object-fit:cover;}
+
+.footer-cta{display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(2,minmax(auto,100px));/* Limit row height */
+ grid-column-gap:0px;grid-row-gap:0px;margin-top:4rem;}
+ .footer-cta img{width:100%;height:100%;object-fit:cover;transition:opacity 1s ease-in-out;}
+.footer-cta figure:nth-of-type(1) { grid-area: 1 / 7 / 2 / 9; }
+.footer-cta figure:nth-of-type(2) { grid-area: 2 / 7 / 3 / 9; }
+.footer-cta figure:nth-of-type(3) { grid-area: 1 / 1 / 3 / 3; }
+.footer-cta figure:nth-of-type(4) { grid-area: 1 / 3 / 2 / 5; }
+.footer-cta figure:nth-of-type(5) { grid-area: 1 / 5 / 3 / 7; }
+.footer-cta figure:nth-of-type(6) { grid-area: 2 / 4 / 3 / 5; }
+.footer-cta figure:nth-of-type(7) { grid-area: 2 / 3 / 3 / 4; }
+      
 
 .footer .call-today{color:#f3f3f3;}
-.footer .phone-number{font-size:1.5rem;color:var(--accent-2);text-decoration: none;}
+.footer .phone-number{font-size:1.35rem;color:#e5e8fb;text-decoration: none;font-weight:700}
 .footer-cols #logo {display: block; width:210px;margin-bottom:25px}
 .footer .phone-details{margin-left:0}
 
@@ -27,6 +36,7 @@
 }
 
 @media (min-width: 992px) {
+.footer-cta{grid-template-rows:repeat(2,minmax(auto,200px))}
 .footer-cols {display:grid;grid-template-columns: 3fr 2fr 2fr 2.2fr; gap: 2rem;}
 .footer-cols .col:first-of-type {grid-column: span 1; padding-right: 50px;}
 .footer h3 {margin-top:0}

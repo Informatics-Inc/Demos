@@ -1,21 +1,20 @@
 .full-content {position: relative; margin: var(--spacer-vert) auto;}
-.full-content-text {padding: 2rem; background: url(../img/wave-bg.webp) center right var(--primary) no-repeat; color: var(--text-color-inverse); background-size:100%; }
+.full-content-text {padding: 2rem; background: url(../img/shapes/wave-bg-dark.webp) center right var(--primary) no-repeat; color: var(--text-color-inverse); background-size:100% 100%; }
 .full-content-text h2, .full-content-text h3 {color: #fff;}
-.full-content-image::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(6,0,91,0.5),transparent);pointer-events:none;/* Ensures it doesn't interfere with clicks */
-}
+.full-content-image::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(6,0,91,0.65),transparent);pointer-events:none;}
 
 .full-content-image {position: relative; width: 100%; height: 100%; object-fit: cover;}
 .full-content-image img {width: 100%; height: 100%; object-fit: cover;}
-.full-content .image-content {border:solid 1px rgba(255, 255, 255, .35);color:#fff;position: relative;  background: rgba(255, 255, 255, .25);backdrop-filter: blur(20px);padding: 2rem; border-radius: var(--border-radius-sm); font-size: .85rem; box-shadow:var(--box-shadow-lg)}
+.full-content .image-content {box-shadow:var(--box-shadow-sm);border:solid 1px rgba(255, 255, 255, .35);color:#fff;position: relative;  background: rgba(222, 222, 222, 0.25);backdrop-filter: blur(20px);padding: 2rem; border-radius: var(--border-radius-sm); font-size: .85rem; box-shadow:var(--box-shadow-lg)}
 .full-content .image-content p{font-size:1rem}
 .image-content ul {list-style: none; padding: 0 0 0 0;}
 .image-content ul li { font-weight: 600;  display: flex; gap: 5px;}
 .image-content li:before {content: "\f058";font-family: FontAwesome; color:var(--accent-2); margin: 0 0 0 5px;}
 .image-content a{color:var(--primary-light)}
-.is-style-linklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--accent-2);}
+.is-style-linklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--light);}
 
 .image-content a:hover{color:#000}
-.full-content-text ul.is-style-linklist li {color: #fff !important;}
+.full-content .full-content-text ul.is-style-linklist li {color: #fff !important;}
 
 .full-content-text {
     .wp-block-button__link {background: var(--accent-1)}

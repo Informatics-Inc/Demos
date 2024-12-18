@@ -6,16 +6,16 @@
 
 /* WP Column Section Colors */
 /* Light background */
+.is-style-bkg-light {background:var(--light); padding: 1px 0; }
 .is-style-bkg-left, .is-style-bkg-right {padding: 1px 0; position: relative; z-index: 5; overflow: hidden;}
 .is-style-bkg-left:after, .is-style-bkg-right:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--light); border-radius: 0 10px 10px 0; content:""; z-index: -1; border-radius: 0 var(--border-radius-xl) var(--border-radius-xl) 0;}
 .is-style-bkg-right:after {left: auto; right: 0; border-radius: var(--border-radius-xl) 0 0 var(--border-radius-xl);}
-.is-style-bkg-light {background:var(--light); padding: 1px 0; }
 
 .is-style-bkg-blue {background: url(../img/bkg-logomark.png) no-repeat var(--primary-dark); background-size: 600px auto; background-position: 5% center; padding: 1px 0; color: var(--text-color-inverse);}
 .is-style-bkg-blue strong {color: #fff;}
 
 .is-style-linklist {list-style-type:none;padding-left:0;}
-.is-style-linklist li {list-style-type:none;position:relative;padding-left:24px;margin-bottom:10px;line-height:1.3}
+.is-style-linklist li {list-style-type:none;position:relative;padding-left:24px;margin-bottom:15px;line-height:1.4}
 .is-style-linklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--primary)}
 
 /* WP Block Separator */
@@ -38,48 +38,26 @@
     padding: 10px;
 }
 
+/* WP Block Cover */
+.wp-block-cover, .wp-block-cover h2, .wp-block-cover h3 {color: #fff;}
+.wp-block-cover .wp-block-cover__background {opacity: .65;}
+.wp-block-cover p.is-style-eyebrow, .wp-block-cover p.is-style-loud {color: var(--secondary);}
+.wp-block-cover + .wp-block-group {margin-top: calc(var(--spacer-vert) * -1);}
+
 /* Columns */
 .is-style-small-margin {margin-top: -2rem !important;}
 .is-style-large-gap {gap: 4rem !important;}
 .is-style-small-margin + .is-style-small-margin {margin-bottom: 3rem !important;}
+/* Social Media Links */
+.wp-block-social-links .wp-social-link {color: #fff;}
+.wp-block-social-links .wp-social-link a {color: #fff !important;}
+.wp-block-social-links .wp-social-link a:hover {color: var(--primary) !important;} 
 
-/* WP Block Cover */
-.wp-block-cover {margin: var(--spacer-vert) auto; min-height: 350px; padding: 4rem 0;
-   }
+/* WP Block Group */
+// .wp-block-group.is-style-bkg-light {max-width: calc(var(--max-width) - (var(--side-padding) * 2)); padding: var(--side-padding) calc(var(--side-padding) * 2); margin-left: auto !important; margin-right: auto !important;}
+// .wp-block-group.is-style-bkg-light {}
 
-.wp-block-cover{
-    h2{ color: #fff;}
-    h3{ color: #fff;}
-    h4{ color: #fff;}
+@media (min-width: 768px) {
+.wp-block-image .alignleft, .wp-block[data-align="left"] > .wp-block-image {float:left; margin: 0 2rem 2rem 0; max-width: 50%;}
+.wp-block-image .alignright, .wp-block[data-align="right"] > .wp-block-image {float:right; margin: 0 0 2rem 2rem; max-width: 50%;}
 }
-
-.wp-block-cover .wp-block-cover__inner-container {@include container;}
-.wp-block-cover__background {
-    opacity: 0.85 !important;
-    background: var(--primary);
-    background-size: 100% 100%; /* Stretch to fully cover the container */
-}
-
-#content {
-    .wp-block-cover h2, .wp-block-cover h3 {color: #fff;}
-    .wp-block-cover p {color: var(--text-color-inverse);}
-    }
-    .wp-block-cover:has(+ .overlap-top-element) {
-        padding: 2rem 0 4rem 0;
-    }
-
-    #content {
-        .wp-block-cover h2, .wp-block-cover h3 {color: #fff;}
-        .wp-block-cover p {color: var(--text-color-inverse);}
-        .wp-block-cover .card h3{color: var(--text-color)}
-        .wp-block-cover .card p{color: var(--text-color)}
-        .wp-block-cover .card:hover h3{color: #fff;}
-        .wp-block-cover .card:hover p{color: #fff;}
-
-        }
-    
-    @media (min-width: 768px) {
-        .wp-block-image .alignleft, .wp-block[data-align="left"] > .wp-block-image {float:left; margin: 0 2rem 2rem 0; max-width: 50%;}
-        .wp-block-image .alignright, .wp-block[data-align="right"] > .wp-block-image {float:right; margin: 0 0 2rem 2rem; max-width: 50%;}
-        }
-        
