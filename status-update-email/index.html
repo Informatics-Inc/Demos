@@ -82,9 +82,8 @@
     .footer {
       text-align: center;
       font-size: .85rem;
-      color: #777777;
-      padding: 1rem;
-      background: #eee;
+      padding: 1.25rem 1rem;
+      background: #fff;
       border-top: 1px solid #ddd;
     }
     a {
@@ -95,6 +94,10 @@
     a:visited {
         color: #800080;
     }
+    a:hover, a:focus {text-decoration: none;}
+    .stars {display: block; font-size: 1.25rem; text-decoration: none;}
+    
+
     /* Responsive Styles */
     @media only screen and (max-width: 600px) {
       table {
@@ -176,7 +179,18 @@
     <!-- Footer -->
     <tr>
       <td class="footer">
-        <p>How are we doing? <a href="https://survey.survicate.com/19b71465a37d27ed/">Let us know!</a></p>
+        <h2>How Are We Doing?</h2>
+        <p><a href="https://survey.survicate.com/19b71465a37d27ed/">
+            Let us know!
+            <span class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </span>
+          </a>
+        </p>
       </td>
     </tr>
   </table>
