@@ -1,11 +1,9 @@
 // -- Slide in From Left //
-const observer = new IntersectionObserver((entries) => {  
+const observer = new IntersectionObserver((entries, observer) => {  
   entries.forEach((entry) => {
-    console.log(entry)
     if (entry.isIntersecting) {
       entry.target.classList.add('slide-show');
-    } else {
-      entry.target.classList.remove('slide-show');
+      observer.unobserve(entry.target); // Stop observing once animation is applied
     }
   });
 });
