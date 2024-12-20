@@ -1,6 +1,6 @@
 .sidebar.box {padding: 0; border-radius: 5px;position: relative;}
 .sidebar.box + .sidebar.box {margin-top: 2rem;}
-.sidebar.box h4 {background: var(--primary-dark); color: #fff; text-align: center; padding: var(--spacer); margin: 0; font-size: 1.75rem; font-family: var(--header); font-weight: 700; letter-spacing: normal;}
+.sidebar.box h4 {background: var(--primary-dark); color: #fff; text-align: center; padding: var(--spacer); margin: 0; font-size: 1.75rem; font-family: var(--header); font-weight: 700; letter-spacing: normal;border-radius:6px 6px 0 0}
 .sec-nav ul {list-style: none; padding: var(--spacer); margin: 0;}
 .sec-nav ul a {display: block; padding: 10px 15px 10px 10px; color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--dark);}
 .sec-nav ul li:last-of-type a {border: none;}
