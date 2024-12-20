@@ -115,278 +115,135 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb-nav">
             <li><a href="#.html">Home</a></li>
-            <li>Secondary</li>
+            <li>Student Training & Resources</li>
           </ol>
         </nav>
-        <h1>Secondary</h1>
+        <h1>Student Training & Resources</h1>
       </div>
     </section>
 
 
-
      <!--------------------------------- Top Section --------------------------------->
-     <div
-     class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
-     <div class="wp-block-column">
-       <figure class="theme-img two-images">
-         <img
-           src="img/placeholder/placeholder-tall.jpg" />
-         <img
-           src="https://c8.alamy.com/comp/E6KJM4/group-of-emergency-medical-service-team-in-front-of-ambulance-E6KJM4.jpg" />
-       </figure>
-     </div>
-     <div class="wp-block-column">
-       <h2>Main Title Example Goes Here
-         Area Ambulance</h2>
-       <p class="is-style-lead">
-         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-         diam nonumy eirmod tempor invidunt ut labore et
-       </p>
-       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-         diam nonumy eirmod tempor invidunt ut labore et dolore magna
-         aliquyam erat, sed diam voluptua. At vero eos et accusam et
-         justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-         <strong>Bolded Text Sample:</strong></p>
+     <div class="wp-block-columns is-layout-flex is-style-large-gap">
+      <div class="wp-block-column" style="flex-basis: 66%">
+        <h2>cutting-edge training center</h2>
+        <p class="is-style-lead">Discover our cutting-edge training center, explore student FAQs, scheduling information, forms, and more.tting-edtting-ed</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quia fugit cum, totam, nemo praesentium accusamus unde quidem ex, iste esse cumque! Modi accusantium quasi perferendis! Ad ducimus pariatur assumenda!</p>
+      </div>
+      <div class="wp-block-column">
+        <div class="sidebar box">
+          <h4>Resources</h4>
+          <nav class="sec-nav">
+            <ul>
+              <li><a href="#.html">Download Forms</a></li>    
+              <li class="current_page_item"><a href="#.html">Student Training & Resources</a></li>    
+              <li><a href="#.html">Patient Resources</a></li>    
+            </ul>
+          </nav>
+      </div>
+      </div>
+    </div>
 
-       <div class="stats-block">
-         <div class="col">
-           <h4><span class="counter" data-target="20">0</span> +</h4>
-           <p>Years of Experience</p>
-         </div>
-         <div class="col">
-           <h4><span class="counter" data-target="50">0</span> +</h4>
-           <p>Happy Clients</p>
-         </div>
-         <div class="col">
-           <h4><span class="counter" data-target="986">0</span> +</h4>
-           <p>Projects Completed</p>
-         </div>
-       </div>
-       <script>
-document.addEventListener('DOMContentLoaded', () => {
-const counters = document.querySelectorAll('.counter');
+    
 
-const counterObserver = new IntersectionObserver(
- (entries, observer) => {
-   entries.forEach(entry => {
-     if (entry.isIntersecting) {
-       const counter = entry.target;
 
-       const updateCounter = () => {
-         const target = +counter.getAttribute('data-target'); // Get target number
-         const current = +counter.innerText; // Get current number
-         
-         const increment = Math.ceil(target / 100); // Set increment value
-
-         if (current < target) {
-           counter.innerText = current + increment; // Increment counter
-           setTimeout(updateCounter, 20); // Call again after delay
-         } else {
-           counter.innerText = target; // Ensure final value is exact
-           observer.unobserve(counter); // Stop observing once done
-         }
-       };
-
-       counter.classList.add('active'); // Optional: Add an "active" class
-       updateCounter(); // Start the counter animation
-     }
-   });
- },
- {
-   threshold: 0.5, // Trigger when 50% of the element is in view
- }
-);
-
-counters.forEach(counter => counterObserver.observe(counter)); // Observe each counter
-});
-
-         </script>
-
-     </div>
-   </div>
 
    <!--------------------------------- FULL IMAGE with CARDES  ---------------------------------------->
    <div class="wp-block-cover">
-     <span class="wp-block-cover__background"></span>
-     <img class="wp-block-cover__image-background"
-       src="https://ccr.net/wp-content/uploads/2024/06/hero-2.jpg">
-     <div class="wp-block-cover__inner-container">
-       <h2 class="has-text-align-center"> Our Sample Title</h2>
-       <p class="has-text-align-center is-style-max-width">Lorem, ipsum dolor
-         sit amet consectetur adipisicing elit. A harum repudiandae,
-         temporibus nemo eaque eos ipsum odit aspernatur modi eius excepturi
-         nobis vitae mollitia commodi labore iste aut rem praesentium!</p>
+    <span class="wp-block-cover__background"></span>
+    <img class="wp-block-cover__image-background"
+      src="https://ccr.net/wp-content/uploads/2024/06/hero-2.jpg">
+    <div class="wp-block-cover__inner-container">
+      <h2 class="has-text-align-center"> Our Sample Title</h2>
+      <p class="has-text-align-center is-style-max-width">Lorem, ipsum dolor
+        sit amet consectetur adipisicing elit. A harum repudiandae,
+        temporibus nemo eaque eos ipsum odit aspernatur modi eius excepturi
+        nobis vitae mollitia commodi labore iste aut rem praesentium!</p>
 
-       <div class="theme-cards large">
-         <div class="card icon-card slide-in">
-           <div class="content">
-             <figure class="icon-holder">
-               <img
-                 decoding="async"
-                 src="img/icons/icons-student-resources.png"
-                 alt="Icon Research" />
-             </figure>
-             <div class="text">
-               <h3 class="wp-block-heading">
-                 Student Training & Resources</h3>
-               <p>
-                 Discover our cutting-edge training center, explore
-                 student
-                 FAQs, scheduling information, forms, and
-                 more.tting-edtting-ed
-               </p>
-             </div>
+      <div class="theme-cards large">
 
-             <div
-               class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-               <div class="wp-block-button"><a
-                   class="wp-block-button__link wp-element-button"
-                   href>Get
-                   Resources</a></div>
-             </div>
-           </div>
-         </div>
-         <div class="card icon-card slide-in">
-           <div class="content">
-             <figure class="icon-holder">
-               <img
-                 decoding="async"
-                 src="img/icons/icons-forms.png"
-                 alt="Icon Research" />
-             </figure>
-             <div class="text">
-               <h3 class="wp-block-heading">Download Forms</h3>
-               <p>
-                 Access forms for financial aid, employment application,
-                 special events, medical release information and more.
-               </p>
-             </div>
-             <div
-               class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-               <div class="wp-block-button"><a
-                   class="wp-block-button__link wp-element-button"
-                   href>Get
-                   Forms</a></div>
-             </div>
-           </div>
-         </div>
-         <div class="card icon-card slide-in">
-           <div class="content">
-             <figure class="icon-holder">
-               <img
-                 decoding="async"
-                 src="img/icons/icons-patient-resources.png"
-                 alt="Icon Research" />
-             </figure>
-             <div class="text">
-               <h3 class="wp-block-heading">Patient Resources</h3>
-               <p>
-                 Learn more about billing, payment methods, financial
-                 assistance, giving feedback, and more.
-               </p>
-             </div>
-             <div
-               class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-               <div class="wp-block-button"><a
-                   class="wp-block-button__link wp-element-button"
-                   href>Get
-                   Resources</a></div>
-             </div>
-           </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div
+  class="wp-block-columns is-layout-flex are-vertically-aligned-center ">
+  <div class="wp-block-column slide-in">
+    <figure class="theme-img shape">
+      <img
+      src="img/placeholders/placeholder-3.jpg" />
+    </figure>
+  </div>
+  <div class="wp-block-column slide-in">
+    <h2>Main Title Example Goes Here
+      Area Ambulance</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+      diam nonumy eirmod tempor invidunt ut labore et dolore magna
+      aliquyam erat, sed diam voluptua. At vero eos et accusam et
+      justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+      <strong>Bolded Text Sample:</strong></p>
+
+      <div class="accordion">
+     <div class="accordion-item">
+       <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
+       </h3>
+       <div id="collapseOne" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
+         <div class="accordion-body">
+           <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
          </div>
        </div>
      </div>
-
-   </div>
-
-
-
-
-   <!------------------------------------- Horizontal Cards ------------------------------------->
-   <div
-   class="wp-block-columns is-layout-flex">
-
-   <div class="wp-block-column">
-
-     <h2 class="wp-block-heading">Title About The Area Ambulance</h2>
-     <p class="is-style-default">f you're looking to build a fulfilling
-       and
-       rewarding career with opportunities for growth and development,
-       we’d
-       love to connect and explore how you can be a part of our team.</p>
-     <div
-       class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-       <div class="wp-block-button"><a
-           class="wp-block-button__link wp-element-button"
-           href>Say Hello</a></div>
-     </div>
-     </div>
-     
-   <div class="wp-block-column">
-     <div class="horizontal-cards">
-     <div class="card icon-card icon-card-horizontal slide-in">
-       <div class="content">
-         <figure class="icon-holder">
-           <img
-             src="img/icons/icons-student-resources.png"
-             alt="Icon Research" />
-         </figure>
-         <div class="text">
-           <h3 class="wp-block-heading">
-             Basic Title Here</h3>
-           <p>
-             Discover our cutting-edge training center, explore
-             student
-             FAQs, scheduling information, forms, and
-             more.tting-edtting-ed
-           </p>
+     <div class="accordion-item">
+       <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+         This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
+       </h3>
+       <div id="collapseTwo" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
+         <div class="accordion-body">
+           <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
          </div>
        </div>
      </div>
-     <div class="card icon-card icon-card-horizontal slide-in">
-       <div class="content">
-         <figure class="icon-holder">
-           <img
-             src="img/icons/icons-forms.png"
-             alt="Icon Research" />
-         </figure>
-         <div class="text">
-           <h3 class="wp-block-heading">Title About Things</h3>
-           <p>
-             Access forms for financial aid, employment application,
-             special events, medical release information and more.
-           </p>
-         </div>
-       </div>
-     </div>
-     <div class="card icon-card icon-card-horizontal slide-in">
-       <div class="content">
-         <figure class="icon-holder">
-           <img
-             decoding="async"
-             src="img/icons/icons-patient-resources.png"
-             alt="Icon Research" />
-         </figure>
-         <div class="text">
-           <h3 class="wp-block-heading">Another Tile Here</h3>
-           <p>
-             Learn more about billing, payment methods, financial
-             assistance, giving feedback, and more.
-           </p>
+     <div class="accordion-item">
+       <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+         This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
+       </h3>
+       <div id="collapseThree" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
+         <div class="accordion-body">
+           <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
          </div>
        </div>
      </div>
    </div>
- </div>
-   </div>
- </div>
-
-
-
-
+  </div>
+</div>
 
 
   </main>
+
+
+
+   <!------------------------------------- CTA ------------------------------------->
+   <div class="footer-cta">
+    <figure><img src="img/placeholders/placeholder-1.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-2.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-3.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-4.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-5.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-6.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-7.jpg"
+        alt="placeholder" /></figure>
+  </div>
+
+
 
     <!-- Footer -->
     <footer class="footer">

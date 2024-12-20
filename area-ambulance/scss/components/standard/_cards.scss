@@ -1,15 +1,62 @@
-.card {position: relative; box-shadow: 0 10px 25px rgba(0,0,0,.1); border-radius: var(--border-radius-sm); overflow: hidden; background: #fff;}
-.card figure {overflow: hidden; margin: 0; aspect-ratio: 1.75 / 1;}
+.theme-cards{max-width:var(--max-width);margin:var(--spacer-vert) auto;display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;position:relative;z-index:5;}
+.theme-cards.small .card{flex:180px 0 1;}
+.theme-cards.medium .card{flex:250px 0 1;}
+.theme-cards.large .card{flex:320px 0 1;}
+.theme-cards.tall-image figure{aspect-ratio:1 / 1.5;}
+.theme-cards.overlap-top-element{margin-top:-90px;margin-bottom:0px}
+.theme-cards.flex-grow .card{flex-grow:1 !important;}
+
+/* Normal Cards */
+.card .wp-block-buttons{margin-top:auto;margin-bottom:0;}
+.card .is-style-btn-text .wp-block-button__link{padding:0 0;}
+.card .wp-block-button{margin-top:20px}
+
+.card {position: relative; box-shadow: 0 10px 25px rgba(0,0,0,.1);border-radius: var(--border-radius-sm); overflow: hidden; background: #fff;display: flex;flex-direction:column;height:auto;}
+.card figure {overflow: hidden; margin: 0; aspect-ratio: 1.5 / 1;}
 .card figure img {width: 100%; height: 100%; object-fit: cover;}
-.card .content {padding: var(--spacer);}
+.card .content {padding: 30px;display:flex;flex-direction:column;flex:1;}
+.card .content .text{flex-grow:0;}
 .card .content p:last-of-type {margin: 0;}
 
+/* Icon Cards */
+.card.icon-card {background:#fff;transition:var(--transition);}
+.card.icon-card:hover {transform:translateY(-20px);box-shadow:var(--box-shadow-lg);background:var(--primary) url('/img/grid-bg.webp') no-repeat;background-size:contain;background-position:top;}
+.card.icon-card:hover .wp-block-button__link{background:rgb(0,72,255);}
+.card.icon-card:hover .wp-block-button__link:hover{background:var(--accent-2);}
+.card.icon-card:hover .is-style-btn-text .wp-block-button__link{background:none;color:var(--accent-2);}
+.card.icon-card h3,.card.icon-card p{transition:var(--transition)}
+.card.icon-card:hover h3,.card.icon-card:hover p{color:#fff}
+.card.icon-card figure{overflow:hidden;margin:30px 30px 0 30px;aspect-ratio:1 / 1;width:90px;height:90px;border-radius:50%;background-color:#f8f8f8;display:flex;align-items:center;justify-content:center;padding:10px;}
+.card.icon-card figure img{width:calc(100% - 20px);height:calc(100% - 20px);object-fit:cover;scale:1;transition:scale 0.3s ease;transition:var(--transition)}
+
+/* Horizontal Card (ICON CARDS) */
+.card.icon-card-horizontal{background: none;box-shadow: none;overflow: visible;position: relative;}
+.card.icon-card-horizontal:hover{background: none;box-shadow: none;transform:translateY(0px)}
+.card.icon-card-horizontal figure{overflow:hidden;margin:0 0 0 0;aspect-ratio:1 / 1;width:130px;height:130px;border-radius:50%;background-color:#f8f8f8;display:flex;align-items:center;justify-content:center;padding:10px;margin-bottom:25px;}
+.card.icon-card-horizontal .content{display:flex;flex-direction:row;align-items:start;gap:20px;flex:1;padding:0px;}
+.card.icon-card-horizontal figure{width:100px;height:100px;flex-shrink:0;border:solid #ddd 1px;background:#fff}
+.card.icon-card-horizontal:hover h3,.card.icon-card-horizontal:hover p{color:var(--text)}
+.card.icon-card-horizontal:not(:last-child){margin-bottom:60px}
+.card.icon-card-horizontal .content{display:flex;flex-direction:column;align-items:start;gap:0px;flex:1;padding:0px;}
+
+/* Hovers */
+.card h3 a{color:var(--text);text-decoration: none;}
+.card:hover h3 a{color:var(--primary)}
+.card figure img,.card.icon-card .icon-holder img{transition:var(--transition)}
+.card:hover figure img{transition:var(--transition);transform:scale(1.25)}
 
 /* TABLET */
-@media (min-width:768px){.card-body{padding:30px}
+@media (min-width:768px){
+.card.icon-card-horizontal .content{flex-direction:row;gap:30px}
+.card.icon-card-horizontal:not(:last-child){margin-bottom:50px}
+.card.icon-card-horizontal:not(:last-child)::before{content:"";display:block;position:absolute;left:50px;bottom:-100px;background:#ddd;width:1px;height:100%;z-index:0;}
 
+.card-body{padding:30px}
+.card.icon-card-horizontal figure{width:100px;height:100px;}
 }
- 
+
 @media (min-width: 1200px) {
+.card.icon-card-horizontal:not(:last-child){margin-bottom:30px}
 
 }
+

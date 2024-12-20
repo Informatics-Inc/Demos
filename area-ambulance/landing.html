@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Informatics, Inc" />
-    <title>Landing Page</title>
+    <title>Landing</title>
 
     <!-- FONTS -->
     <link href="css/icons.min.css" rel="stylesheet" />
@@ -106,24 +106,267 @@
   </header>
 
   <main id="content">
-    <main id="content">
-      <section class="page-hdr">
-        <figure>
-          <img
-            src="https://www.shoalsambulance.com/wp-content/uploads/sites/7/2022/06/Shoals-Ambulance-TEAM-OPTION-3-FORMATTED-scaled.jpg" />
-        </figure>
-        <div class="content">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb-nav">
-              <li><a href="#.html">Home</a></li>
-              <li>Landing Page</li>
-            </ol>
-          </nav>
-          <h1>Landing Page</h1>
-        </div>
-      </section>
+    <section class="page-hdr">
+      <figure>
+        <img
+          src="https://www.shoalsambulance.com/wp-content/uploads/sites/7/2022/06/Shoals-Ambulance-TEAM-OPTION-3-FORMATTED-scaled.jpg" />
+      </figure>
+      <div class="content">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb-nav">
+            <li><a href="#.html">Home</a></li>
+            <li>Overview Page</li>
+          </ol>
+        </nav>
+        <h1>Overview Page</h1>
+      </div>
+    </section>
 
-    </main>
+
+     <!--------------------------------- Top Section --------------------------------->
+     <div
+     class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+     <div class="wp-block-column">
+       <figure class="theme-img two-images">
+         <img
+         src="img/placeholders/placeholder-3.jpg" />
+         <img
+           src="img/placeholders/placeholder-2.jpg" />
+       </figure>
+     </div>
+     <div class="wp-block-column">
+       <h2>Main Title Example Goes Here
+         Area Ambulance</h2>
+       <p class="is-style-lead">
+         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+         diam nonumy eirmod tempor invidunt ut labore et
+       </p>
+       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+         diam nonumy eirmod tempor invidunt ut labore et dolore magna
+         aliquyam erat, sed diam voluptua. At vero eos et accusam et
+         justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+         <strong>Bolded Text Sample:</strong></p>
+
+       <div class="stats-block">
+         <div class="col">
+           <h4><span class="counter" data-target="20">0</span> +</h4>
+           <p>Years of Experience</p>
+         </div>
+         <div class="col">
+           <h4><span class="counter" data-target="50">0</span> +</h4>
+           <p>Happy Clients</p>
+         </div>
+         <div class="col">
+           <h4><span class="counter" data-target="986">0</span> +</h4>
+           <p>Projects Completed</p>
+         </div>
+       </div>
+       <script>
+document.addEventListener('DOMContentLoaded', () => {
+const counters = document.querySelectorAll('.counter');
+
+const counterObserver = new IntersectionObserver(
+ (entries, observer) => {
+   entries.forEach(entry => {
+     if (entry.isIntersecting) {
+       const counter = entry.target;
+
+       const updateCounter = () => {
+         const target = +counter.getAttribute('data-target'); // Get target number
+         const current = +counter.innerText; // Get current number
+         
+         const increment = Math.ceil(target / 100); // Set increment value
+
+         if (current < target) {
+           counter.innerText = current + increment; // Increment counter
+           setTimeout(updateCounter, 20); // Call again after delay
+         } else {
+           counter.innerText = target; // Ensure final value is exact
+           observer.unobserve(counter); // Stop observing once done
+         }
+       };
+
+       counter.classList.add('active'); // Optional: Add an "active" class
+       updateCounter(); // Start the counter animation
+     }
+   });
+ },
+ {
+   threshold: 0.5, // Trigger when 50% of the element is in view
+ }
+);
+
+counters.forEach(counter => counterObserver.observe(counter)); // Observe each counter
+});
+
+         </script>
+
+     </div>
+   </div>
+
+
+
+   <!--------------------------------- FULL IMAGE with CARDES  ---------------------------------------->
+   <div class="wp-block-cover">
+    <span class="wp-block-cover__background"></span>
+    <img class="wp-block-cover__image-background"
+      src="https://ccr.net/wp-content/uploads/2024/06/hero-2.jpg">
+    <div class="wp-block-cover__inner-container">
+      <h2 class="has-text-align-center"> Our Sample Title</h2>
+      <p class="has-text-align-center is-style-max-width">Lorem, ipsum dolor
+        sit amet consectetur adipisicing elit. A harum repudiandae,
+        temporibus nemo eaque eos ipsum odit aspernatur modi eius excepturi
+        nobis vitae mollitia commodi labore iste aut rem praesentium!</p>
+
+      <div class="theme-cards large">
+        <div class="card icon-card slide-in">
+          <figure>
+            <img decoding="async" src="img/icons/icons-door-open.png" alt="Icon Grant Writing">
+          </figure>
+          <div class="content">
+            <h3 class="wp-block-heading">Insights Title Two Lines Going Right Here</h3>
+            <p>Lorem ipsum  consectetur adipiscing elit, abore et dolore magna aliqabore et dolore magna aliqabore et dolore magna aliqabore et dolore magna aliqsed do eiusmod tempor iscing elit, sed do eiusmod tempor incididunt ut laborut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button is-style-btn-text">
+              <a class="wp-block-button__link wp-element-button" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card icon-card slide-in">
+          <figure>
+            <img decoding="async" src="img/icons/icons-door-open.png" alt="Icon Grant Writing">
+          </figure>
+          <div class="content">
+            <h3 class="wp-block-heading">Insights Title Two Lines Going Right Here</h3>
+            <p>Lorem ipsum  consectetur adipiscing elit, abore et dolore magna aliqabore et dolore magna aliqabore et dolore magna aliqabore et dolore magna aliqsed do eiusmod tempor iscing elit, sed do eiusmod tempor incididunt ut laborut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button is-style-btn-text">
+              <a class="wp-block-button__link wp-element-button" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card icon-card slide-in">
+          <figure>
+            <img decoding="async" src="img/icons/icons-door-open.png" alt="Icon Grant Writing">
+          </figure>
+          <div class="content">
+            <h3 class="wp-block-heading">Insights Title Two Lines Going Right Here</h3>
+            <p>Lorem ipsum  consectetur adipiscing elit, abore et dolore magna aliqabore et dolore magna aliqabore et dolore magna aliqabore et dolore magna aliqsed do eiusmod tempor iscing elit, sed do eiusmod tempor incididunt ut laborut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button is-style-btn-text">
+              <a class="wp-block-button__link wp-element-button" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+      <!------------------------------------- Bottom Content ------------------------------------->
+      <div class="wp-block-columns is-layout-flex">
+        <div class="wp-block-column">
+          <h2 class="wp-block-heading">Title About The Area Ambulance</h2>
+          <p class="is-style-default">f you're looking to build a fulfilling
+            and
+            rewarding career with opportunities for growth and development,
+            we’d
+            love to connect and explore how you can be a part of our team.</p>
+          <div
+            class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button"><a
+                class="wp-block-button__link wp-element-button"
+                href>Say Hello</a></div>
+          </div>
+          </div>
+          
+<div class="wp-block-column">
+  <div class="card icon-card icon-card-horizontal slide-in">
+    <div class="content">
+      <figure>
+        <img
+          src="img/icons/icons-student-resources.png"
+          alt="Icon Research" />
+      </figure>
+      <div class="text">
+        <h3 class="wp-block-heading">
+          aaBasic Title Here</h3>
+        <p>
+        Discover our cutting-edge training center,explore student FAQs,scheduling information,forms,and more.tting-edtting-ed
+        </p>
+        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+          <div class="wp-block-button">
+            <a class="wp-block-button__link wp-element-button" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="card icon-card icon-card-horizontal slide-in">
+  <div class="content">
+    <figure>
+      <img
+        src="img/icons/icons-student-resources.png"
+        alt="Icon Research" />
+    </figure>
+    <div class="text">
+      <h3 class="wp-block-heading">
+        aaBasic Title Here</h3>
+      <p>
+ Discover our cutting-edge training center,explore FAQs,schQs,scheduling Qs,scheduling Qs,scheduling Qs,scheduling Qs,scheduling Qs,scheduling eduling information,forms,and more.tting-edtting-ed
+      </p>
+    </div>
+  </div>
+</div>
+<div class="card icon-card icon-card-horizontal slide-in">
+  <div class="content">
+    <figure>
+      <img
+        src="img/icons/icons-student-resources.png"
+        alt="Icon Research" />
+    </figure>
+    <div class="text">
+      <h3 class="wp-block-heading">
+        aaBasic Title Here</h3>
+      <p>
+ Discover our cutting-edge training center,explore studentiscover our cutting-edge training center,explore student FAQs,scheduling iniscover our cutting-edge training center,explore student FAQs,scheduling in FAQs,scheduling information,forms,and more.tting-edtting-ed
+      </p>
+    </div>
+  </div>
+</div>
+</div><!-- theme cards -->
+</div><!-- wp-block-column -->
+</div><!-- wp-block-columns -->
+
+
+  </main>
+
+
+
+   <!------------------------------------- CTA ------------------------------------->
+   <div class="footer-cta">
+    <figure><img src="img/placeholders/placeholder-1.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-2.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-3.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-4.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-5.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-6.jpg"
+        alt="placeholder" /></figure>
+    <figure><img src="img/placeholders/placeholder-7.jpg"
+        alt="placeholder" /></figure>
+  </div>
 
     <!-- Footer -->
     <footer class="footer">
