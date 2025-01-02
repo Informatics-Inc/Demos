@@ -1,4 +1,4 @@
-.sidebar-nav ul {list-style: none; padding: 0; margin: 0;}
+.sidebar-nav ul {list-style: none; padding: 0 !important; margin: 0;}
 .sidebar-nav a {font-weight: 400; text-decoration: none; display: block; padding: 1rem; border-bottom: 1px dotted var(--gray);}
 .sidebar-nav li:last-of-type a {border: none;}
 .sidebar-nav .active a {font-weight: 700;}

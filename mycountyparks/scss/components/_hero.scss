@@ -24,7 +24,7 @@
 #sec-nav + .container .search {margin-top: 0;}
 
 /* Filter Icons */
-.filter-icons {grid-template-columns: repeat(auto-fit, minmax(45px, 70px)); justify-content: center;}
+.filter-icons {grid-template-columns: repeat(auto-fit, minmax(45px, 62px)); justify-content: center;}
 .filter-icons:hover .ico-feature {transition-delay: .1s;}
 .ico-feature {padding: 10px 0; border-radius: 5px; text-decoration: none; font-weight: 400; font-size: .65rem; text-align: center; letter-spacing: -.25px; line-height: 1.2; height: 100%; background: var(--light);}
 .ico-feature img {width: 30px; margin: 0 auto 8px auto; opacity: .8;transition: var(--transition);}

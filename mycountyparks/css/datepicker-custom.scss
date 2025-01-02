@@ -1,6 +1,6 @@
 /* Fix Height Layout */
-.default-calendar {background-color: initial; height: 540px; position: relative;}
-@media (max-width: 600px) {.default-calendar {background-color: initial; height: 615px; position: relative;}}
+.default-calendar {background-color: initial; height: 470px; position: relative;}
+@media (max-width: 600px) {.default-calendar {background-color: initial; height: 815px; position: relative;}}
 
 /* Show Calendar in Left Col */
 #dateRangeDiv {visibility: hidden; height: 0px !important; width: 0px !important;}
@@ -162,6 +162,7 @@
 .daterangepicker {width: calc(100% - 45px);}
 .daterangepicker .drp-calendar {max-width: none !important; width: auto;}
 .color-heading p {font-size: 10px !important;}
+
 }
 
 /* Tablet */

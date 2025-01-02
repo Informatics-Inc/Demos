@@ -7,7 +7,7 @@
 .facility-summary {display: grid; grid-template-columns: 1fr 1.75fr; gap: 15px;}
 .facility-summary h3 {font-size: 1.25rem; margin: 0 0 10px 0; font-weight: 500; line-height: 1.3;}
 .facility-summary figure {border-radius: 5px; overflow: hidden;}
-.facility-summary figure img {width: 100%; height: 100%; object-fit: cover;}
+.facility-summary figure img {width: 100% !important; height: 100% !important; object-fit: cover;}
 
 .cart-full-width {grid-column: span 2;}
 .item-details {margin: 0 0 1rem 0;}

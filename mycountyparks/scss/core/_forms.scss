@@ -12,7 +12,9 @@ input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
 .check-list {display: grid; grid-template-columns: repeat( auto-fit, minmax(165px, 1fr) ); gap: 5px;}
 }
 
-.form-action {display: flex; justify-content: space-between; border-top: 1px solid #ccc; padding: 2rem 0 0 0; margin: 2rem 0 0 0; width: 100%;}
+.form-action {display: flex; justify-content: flex-start; border-top: 1px solid #ccc; padding: 2rem 0 0 0; margin: 2rem 0 0 0; width: 100%; gap: 10px;}
+.form-action .btn-theme {font-size: .8rem; line-height: 1.1; text-align: center; padding: 1rem .6rem}
+.form-action > *:last-child {margin-left: auto;}
 input[type='checkbox'] {width: auto; text-align: left;}
 
 .mcp-form > * {margin: 0;}

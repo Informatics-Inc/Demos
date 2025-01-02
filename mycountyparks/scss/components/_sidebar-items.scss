@@ -13,6 +13,8 @@
 .search.sidebar-search ul {padding: 0 0 0 1rem;}
 .search.sidebar-search ul strong {font-size: .85rem; display: inline;}
 .search.sidebar-search .icon-text p strong:first-of-type {display: block;}
+.search.sidebar-search h4 {font-size: .9rem;}
+.search.sidebar-search + .search.sidebar-search {margin-top: 2rem;}
 
 #sidebar-affix {z-index: 3500;}
 @media (max-width: 992px) {
