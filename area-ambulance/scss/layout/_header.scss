@@ -1,7 +1,7 @@
 /* GLOBAL */
-#hdr-site {position: relative; z-index: 10; box-shadow: var(--box-shadow-sm);}
+#hdr-site {background:#fff;position: relative; z-index: 20; box-shadow: var(--box-shadow-sm);}
 #logo {display: block; width:150px;}
-#menu ul {list-style: none; padding: 0; margin: 5px 0 0 0;}
+#menu ul {list-style: none; padding: 0;margin: 0px 0 0 0; }
 #menu ul a {font-family:var(--header);color: var(--primary-dark); text-decoration: none; display: block; font-weight: 700; position: relative;font-size:1.3rem;padding:1rem }
 #menu li a i{margin-right:7px;font-size:1.1rem}
 #hdr-site .btn-theme{font-family:var(--header);font-size:1.2rem;margin-bottom: 5px;}
@@ -28,14 +28,14 @@
 .collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
 .show {height: auto;}
 
-
 /* Menu Links */
 #menu ul a {border-top:2px dotted #ccc;}
 #menu ul a:hover, #menu ul a:focus {background: #f3f3f3;color:var(--accent-1);padding-left:30px}
 #menu ul li ul li a:hover{color:var(--accent-1);padding-left:40px}
 #menu li {position: relative;}
 #menu ul ul a {border: none; padding: 10px 20px 10px 30px; font-weight: 700;}
-#menu ul ul li:last-of-type {margin-bottom: 1rem;}
+#menu ul ul li{border-top:dotted 2px #ccc}
+
 #menu .wp-block-button__link {margin: 1rem 0;padding:1rem}
 #menu ul li{margin-bottom:0;}
 
@@ -50,7 +50,7 @@
 #menu-toggle {display: none;}
 .hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
 #menu {display: flex; align-items: center;}
-#menu ul {display: flex;}
+#menu ul {display: flex;margin: 5px 0 0 0;}
 #menu ul a {padding: 1.5rem 1rem;}
 #menu .wp-block-button__link {margin-left: 1rem;}
 
@@ -58,7 +58,8 @@
 #menu .btn-expand {display: none;}
 #menu ul li {position: relative;}
 #menu ul ul {border-radius:12px;position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
-#menu ul ul a {font-weight: 700; padding:5px;border-bottom:2px dotted #eee;}
+#menu ul ul a {font-weight: 700; padding:5px;border-bottom:2px dotted #ccc;}
+
 #menu li:hover ul {opacity: 1; visibility: visible; top: 100%;}
 
 /* Hovers & Active */

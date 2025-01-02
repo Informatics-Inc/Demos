@@ -11,7 +11,7 @@
 .cta-card .is-style-btn-text .wp-block-button__link:after {content: "";display: none;}
 .cta-card .is-style-btn-text .wp-block-button__link {margin-top:25px;padding: 0 0 0 0;color:#777;}
 .cta-card .is-style-btn-text .wp-block-button__link i{color:var(--secondary);margin-right:7px;transition: var(--transition);}
-.cta-card:hover .is-style-btn-text .wp-block-button__link i{margin-left:10px;margin-right:4px}
+.cta-card .is-style-btn-text:hover .wp-block-button__link i{margin-left:10px;}
 
 .cta-card.important-cta{border-left:0px;background-color:#b91010;color:white;}
 .cta-card.important-cta h3{font-size:2.2rem;font-family:var(--header)}

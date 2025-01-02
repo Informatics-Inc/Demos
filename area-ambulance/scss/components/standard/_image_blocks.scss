@@ -60,27 +60,26 @@ h4 + p, h3 + p, h2 + p, h5 + p{margin-top:5px}
 
 /* Overlap Images */
 .theme-img.overlap-img{position:relative;padding:0 0 100px 0;}
-
-.theme-img.overlap-img img{aspect-ratio:1/1.25;width:100%;padding-left:50px;position:relative;}
 .theme-img.overlap-img img:nth-of-type(2){position:absolute;left:0;bottom:0;width:70%;aspect-ratio:1.35 / 1;border:15px solid var(--bkg);z-index:6;padding-left:0}
+
+/* Shape Overlay */
+.shape::before{animation: hover-up-down 6s ease-in-out infinite;background:url(../img/shapes/wave.png);width:200px;height:100px;position:absolute;left:-100px;bottom:25px;content:"";background-size:cover;z-index:1;}
+.shape::after{background:url(../img/shapes/squares.svg);background-size:auto;width:111px;height:111px;position:absolute;right:5px;top:0;content:"";background-size:cover;z-index:-1;}
+
 
 /* Two Images Circles */
 .theme-img.two-circle-images{position:relative;display:grid;grid-template-columns:1fr;gap:25px;margin:0 0 2rem 0;z-index:5;padding-right:0;}
 .theme-img.two-circle-images{
-img:nth-of-type(1){width:100%;aspect-ratio:1 / 1;object-fit:cover;object-position:center;border-radius:50%;position:relative;}
+img:nth-of-type(1){  border: solid 12px #fff;width:100%;aspect-ratio:1 / 1;object-fit:cover;object-position:center;border-radius:50%;position:relative;}
 img:nth-of-type(2){ animation: hover-up-down 6s ease-in-out infinite; width:160px;height:160px;box-shadow:var(--box-shadow-lg);border:solid 6px #2a2733;position:absolute;top:0;right:-20px;border-radius:var(--border-radius-sm);object-fit:cover;object-position:center;border-radius:50%;}
 }
-
-/* Shape Overlay */
-.shape::before{animation: hover-up-down 6s ease-in-out infinite;background:url(../img/shapes/wave.png);width:200px;height:100px;position:absolute;left:-25px;bottom:25px;content:"";background-size:cover;z-index:1;}
-.shape::after{background:url(../img/shapes/squares.svg);background-size:auto;width:111px;height:111px;position:absolute;right:0;top:0;content:"";background-size:cover;z-index:-1;opacity:0.5;}
+.theme-img.two-circle-images.shape::before{left:-50px;}
 
 /* Keyframes for up-and-down motion */
 @keyframes hover-up-down{0%{transform:translateY(0);}
 50%{transform:translateY(-10px);}
 100%{transform:translateY(0);}
 }
-
 
 
  /* Two Images */
@@ -101,7 +100,6 @@ img:nth-of-type(2){ animation: hover-up-down 6s ease-in-out infinite; width:160p
 
 /* DESKTOP */
 @media (min-width: 992px) {
-.theme-img.shape{padding-left:50px}
 .theme-img.text-image figcaption{position:absolute;z-index:2;width:225px;background-size:auto;padding:20px 18px 30px 18px;bottom:0px;right:0px;margin:0 }
 .theme-img{padding-right:4.5rem;}
 .theme-img.dots::after{width:50px;height:130px;left:-60px;top:0px;}

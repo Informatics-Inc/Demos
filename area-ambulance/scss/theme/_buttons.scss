@@ -3,6 +3,7 @@
 .wp-block-buttons {margin: var(--spacer) 0;}
 .wp-block-button__link {background: var(--primary); padding: .65rem 1.75rem; color: #fff; display: block; text-align: center; border-radius: var(border-radius-xl); text-decoration: none; font-weight: 700;position: relative; z-index: 5;}
 .wp-block-button__link:hover{background:var(--accent-1)}
+
 /* Text */
 .is-style-btn-text .wp-block-button__link {background: none; padding: 1rem 0; color: var(--primary); box-shadow: none;}
 .is-style-btn-text .wp-block-button__link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);}
@@ -13,14 +14,12 @@
 .is-style-btn-secondary .wp-block-button__link {background: var(--secondary);}
 .is-style-btn-secondary .wp-block-button__link:hover {background: var(--hover);}
 
-
 /* General styles for the icon button */
 .icon-button .wp-block-button__link{line-height:1;display:flex;align-items:center;gap:1rem;padding:0.65rem 1.75rem 0.65rem 0.75rem;background:var(--accent-1);}
 .icon-button .wp-block-button__link figure{width:50px;height:50px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#f1f1f1;flex-shrink:0;}
 .icon-button .wp-block-button__link figure img{width:calc(100% - 20px);height:calc(100% - 20px);object-fit:cover;scale:1;transition:scale 0.3s ease;}
 .icon-button:hover .wp-block-button__link figure img{scale:1.2;}
 .icon-button .wp-block-button__link:hover{background-color:var(--accent-2);}
-
 
 /* Video Play Button */
 .video-play{display:flex;align-items:center;gap:12px;position:relative}
@@ -37,31 +36,26 @@
 .hero .video-play-container{color:#fff;}
 .video-play .wc-btn-circle:hover{background-color:var(--accent-2);color:#fff}
 
-
-/* Special Download Button */
-.btn-slide2{position:relative;display:inline-flex;align-items:center;min-height:55px;width:calc(50% - 20px);border-radius:50px;background:#fdfdfd;border:2px solid var(--primary);margin:5px;transition:.5s;line-height:1;}
-.btn-slide2:hover{background-color:var(--primary)}
-.btn-slide2:hover span.circle2{left:100%;margin-left:-45px;background-color:#fdfdfd;color:#0099cc;color:var(--primary);text-align:center;align-content: center;}
-.btn-slide2:hover span.title2{left:40px;opacity:0;}
-.btn-slide2:hover span.title-hover2{opacity:1;left:10px;}
-.btn-slide2 span.circle2{background-color:var(--primary);display:block;color:#fff;position:absolute;float:left;margin:5px;line-height:42px;height:40px;width:40px;top:0;left:0;transition:.5s;border-radius:50%;text-align:center;align-content: center;}
-.btn-slide2 span.title2,.btn-slide2 span.title-hover2{position:absolute;left:90px;text-align:center;margin:0 auto;font-size:1rem;font-weight:bold;transition:.5s;color:var(--primary);left:55px;margin-right:10px;}
-.btn-slide2 span.title-hover2{left:40px;opacity:0;color:#fff;}
-
-
+/* Special Download Button*/
+.special-btn{border:solid var(--primary) 1px;transition:var(--transition);background:var(--accent-1);color:#fff;padding:20px;grid-template-columns:30px auto;align-items:center;border-radius:5px;line-height:1.1;font-weight:700;text-decoration:none;display:grid;}
+.special-btn:hover{background:var(--light);transform:translateY(-5px);color:var(--dark);box-shadow:var(--box-shadow-sm)}
+.flex.btn-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:15px;justify-content:center;}
 
 
 /* TABLET */
-@media (min-width: 768px) {
+@media (min-width: 420px) {
+    .flex.btn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;justify-content:center;}
 
 }
 
 /* DESKTOP */
 @media (min-width: 992px) {
+    .flex.btn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;justify-content:center;}
 
 }
 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
-
 }
+
+

@@ -5,23 +5,25 @@
     background-color: #17172a; 
     background-size: 350px 350px, 350px 350px;
     position: relative;
+    padding-bottom:140px
 }
+.hero .col .theme-img{padding: var(--side-padding)}
 
 .hero-content {padding: var(--side-padding);color:#fff;position:relative;padding-top:50px;padding-bottom:50px;}
 .hero p{font-size:1.3rem;line-height: 1.4;}
 .hero h1 {font-size: 4rem;line-height:0.95;}
 .hero strong{color:#fff}
-
 .hero .wp-block-button__link {background: var(--accent-1); padding: .65rem 1.75rem; color: #fff; display: block; text-align: center; border-radius: var(border-radius-xl); text-decoration: none; font-weight: 700;position: relative; }
 .hero .wp-block-button__link:hover{background:var(--accent-2)}
-
-.hero .wp-block-buttons{display:flex;align-items:center;gap:30px;margin-top:40px}
+.hero .wp-block-buttons{display:flex;align-items:center;gap:30px;margin-top:40px;flex-wrap: wrap;}
 .hero video{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;opacity:0.2;object-position:center center;}
 
 /* TABLET */
 @media (min-width: 768px) {
 .hero h1 {font-size: 6rem;line-height:0.85;}
 .hero-content {grid-column: 2; position: relative; z-index: 5;padding:100px}
+.hero .col .theme-img{padding: 0px 100px}
+
 }
 
 /* WIDE DESKTOP */
@@ -29,6 +31,9 @@
 .hero {display: grid; grid-template-columns: var(--side-width) 1fr 1fr var(--side-width); align-items: center;}
 .hero-content {grid-column: 2; position: relative; z-index: 5;padding:100px 50px 100px 25px}
 .hero h1 {font-size: 6.75rem;line-height:0.85;}
+.hero .col .theme-img{padding: 0px}
+.hero { padding-bottom:0px}
+
 }
 
 @media (min-width: 1100px) {
@@ -39,8 +44,8 @@
 50%{top:16px;opacity:0.5;}
 100%{top:24px;opacity:0;}
 }
-.hero-content {padding:100px 50px 100px 0px}
 
+.hero-content {padding:100px 50px 100px 0px}
 .paragraph-container{padding-left:40px}
 .hero {grid-template-columns: var(--side-width)650px auto var(--side-width);}
 .hero-content {padding-right: 90px;padding-top:120px;padding-bottom:120px;}

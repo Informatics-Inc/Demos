@@ -1,7 +1,6 @@
 /* Accordian */
 .accordion{padding:18px; margin: 0;background:var(--light);border:solid #eee 2px;border-radius:20px}
 .accordion-item {margin:10px 0}
-
 .accordion-collapse.collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
 .accordion-collapse.show {height: auto;}
 
@@ -15,8 +14,4 @@
 h3.collapsed{height:auto;}
 
 .fa-chevron-circle-down::before,.fa-circle-chevron-down::before{content:"+";}
-
-
-@media (min-width: 992px) {
- }
 

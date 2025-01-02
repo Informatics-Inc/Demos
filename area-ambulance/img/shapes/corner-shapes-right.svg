@@ -1,271 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 2718 3000">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="37.8in" height="41.7in" version="1.1" viewBox="0 0 2718 3000">
   <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
   <defs>
     <style>
       .st0 {
-        mask: url(#mask);
-      }
-
-      .st1 {
-        filter: url(#luminosity-noclip);
-      }
-
-      .st2 {
-        filter: url(#luminosity-noclip6);
-      }
-
-      .st3 {
-        filter: url(#luminosity-noclip2);
-      }
-
-      .st4 {
-        filter: url(#luminosity-noclip4);
-      }
-
-      .st5 {
-        filter: url(#luminosity-noclip8);
-      }
-
-      .st6 {
-        fill: url(#linear-gradient11);
-      }
-
-      .st6, .st7, .st8, .st9, .st10 {
-        mix-blend-mode: multiply;
-      }
-
-      .st11 {
-        isolation: isolate;
-      }
-
-      .st12 {
-        mask: url(#mask-2);
-      }
-
-      .st13 {
-        mask: url(#mask-3);
-      }
-
-      .st14 {
-        mask: url(#mask-4);
-      }
-
-      .st15 {
-        mask: url(#mask-5);
-      }
-
-      .st16 {
-        mask: url(#mask-7);
-      }
-
-      .st17 {
-        mask: url(#mask-6);
-      }
-
-      .st18 {
-        mask: url(#mask-1);
-      }
-
-      .st19 {
-        mask: url(#mask-9);
-      }
-
-      .st20 {
-        mask: url(#mask-8);
-      }
-
-      .st7 {
-        fill: url(#linear-gradient);
-      }
-
-      .st21 {
-        opacity: .15;
-      }
-
-      .st8 {
-        fill: url(#linear-gradient2);
-      }
-
-      .st9 {
-        fill: url(#linear-gradient6);
-      }
-
-      .st10 {
-        fill: url(#linear-gradient4);
-      }
-
-      .st22 {
-        fill: url(#linear-gradient9);
-      }
-
-      .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29 {
-        mix-blend-mode: overlay;
-        opacity: .37;
-      }
-
-      .st23 {
-        fill: url(#linear-gradient3);
-      }
-
-      .st24 {
-        fill: url(#linear-gradient8);
-      }
-
-      .st25 {
-        fill: url(#linear-gradient5);
-      }
-
-      .st26 {
-        fill: url(#linear-gradient7);
-      }
-
-      .st27 {
-        fill: url(#linear-gradient1);
-      }
-
-      .st28 {
-        fill: url(#linear-gradient12);
-      }
-
-      .st29 {
-        fill: url(#linear-gradient10);
+        fill: #fff;
+        opacity: .1;
       }
     </style>
-    <filter id="luminosity-noclip" x="2704.91" y="361.48" width="1249.46" height="1249.46" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <filter id="luminosity-noclip1" x="2704.91" y="-9692" width="1249.46" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <mask id="mask-1" x="2704.91" y="-9692" width="1249.46" height="32766" maskUnits="userSpaceOnUse"/>
-    <linearGradient id="linear-gradient" x1="1806.44" y1="-6871.31" x2="2689.95" y2="-6871.31" gradientTransform="translate(1081.47 7857.46)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset="1" stop-color="#000"/>
-    </linearGradient>
-    <mask id="mask" x="2704.91" y="361.48" width="1249.46" height="1249.46" maskUnits="userSpaceOnUse">
-      <g class="st1">
-        <g class="st18">
-          <rect class="st7" x="2887.89" y="544.46" width="883.5" height="883.5" transform="translate(1672.59 -2065.56) rotate(45)"/>
-        </g>
-      </g>
-    </mask>
-    <linearGradient id="linear-gradient1" x1="1806.44" y1="-6871.31" x2="2689.95" y2="-6871.31" gradientTransform="translate(1081.47 7857.46)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f1f2f2"/>
-      <stop offset="1" stop-color="#bcbec0"/>
-    </linearGradient>
-    <filter id="luminosity-noclip2" x="134.66" y="1496.49" width="2182.25" height="2182.25" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <filter id="luminosity-noclip3" x="134.66" y="-9692" width="2182.25" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <mask id="mask-3" x="134.66" y="-9692" width="2182.25" height="32766" maskUnits="userSpaceOnUse"/>
-    <linearGradient id="linear-gradient2" x1="-217.77" y1="-2752.66" x2="1325.32" y2="-2752.66" gradientTransform="translate(672.01 5340.25)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset="1" stop-color="#000"/>
-    </linearGradient>
-    <mask id="mask-2" x="134.66" y="1496.49" width="2182.25" height="2182.25" maskUnits="userSpaceOnUse">
-      <g class="st3">
-        <g class="st13">
-          <rect class="st8" x="454.24" y="1816.08" width="1543.08" height="1543.08" transform="translate(262.82 5284.1) rotate(-135)"/>
-        </g>
-      </g>
-    </mask>
-    <linearGradient id="linear-gradient3" x1="-217.77" y1="-2752.66" x2="1325.32" y2="-2752.66" gradientTransform="translate(672.01 5340.25)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f1f2f2"/>
-      <stop offset="1" stop-color="#bcbec0"/>
-    </linearGradient>
-    <filter id="luminosity-noclip4" x="971.03" y="1868.04" width="2182.25" height="2182.25" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <filter id="luminosity-noclip5" x="971.03" y="-9692" width="2182.25" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <mask id="mask-5" x="971.03" y="-9692" width="2182.25" height="32766" maskUnits="userSpaceOnUse"/>
-    <linearGradient id="linear-gradient4" x1="-1071.91" y1="-2423.98" x2="471.19" y2="-2423.98" gradientTransform="translate(2362.51 5383.12)" xlink:href="#linear-gradient2"/>
-    <mask id="mask-4" x="971.03" y="1868.04" width="2182.25" height="2182.25" maskUnits="userSpaceOnUse">
-      <g class="st4">
-        <g class="st15">
-          <rect class="st10" x="1290.61" y="2187.62" width="1543.08" height="1543.08" transform="translate(1427.87 6509.77) rotate(-135)"/>
-        </g>
-      </g>
-    </mask>
-    <linearGradient id="linear-gradient5" x1="-1071.91" y1="-2423.98" x2="471.19" y2="-2423.98" gradientTransform="translate(2362.51 5383.12)" xlink:href="#linear-gradient3"/>
-    <filter id="luminosity-noclip6" x="1672.58" y="1496.5" width="2182.25" height="2182.25" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <filter id="luminosity-noclip7" x="1672.58" y="-9692" width="2182.25" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <mask id="mask-7" x="1672.58" y="-9692" width="2182.25" height="32766" maskUnits="userSpaceOnUse"/>
-    <linearGradient id="linear-gradient6" x1="2208.84" y1="-5338.75" x2="3751.94" y2="-5338.75" gradientTransform="translate(-216.66 7926.32)" xlink:href="#linear-gradient2"/>
-    <mask id="mask-6" x="1672.58" y="1496.5" width="2182.25" height="2182.25" maskUnits="userSpaceOnUse">
-      <g class="st2">
-        <g class="st16">
-          <rect class="st9" x="1992.16" y="1816.08" width="1543.08" height="1543.08" transform="translate(2639.19 -1196.34) rotate(45)"/>
-        </g>
-      </g>
-    </mask>
-    <linearGradient id="linear-gradient7" x1="2208.84" y1="-5338.75" x2="3751.94" y2="-5338.75" gradientTransform="translate(-216.66 7926.32)" xlink:href="#linear-gradient3"/>
-    <linearGradient id="linear-gradient8" x1="1274.89" y1="-6524.34" x2="2817.99" y2="-6524.34" gradientTransform="translate(895.22 7613.17)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f1f2f2"/>
-      <stop offset="1" stop-color="#bcbec0"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient9" x1="892.17" y1="-5544.94" x2="1769.58" y2="-5544.94" gradientTransform="translate(412.27 6820.34)" xlink:href="#linear-gradient8"/>
-    <linearGradient id="linear-gradient10" x1="2499" y1="-5932.38" x2="3376.42" y2="-5932.38" gradientTransform="translate(215.6 8070.01)" xlink:href="#linear-gradient8"/>
-    <filter id="luminosity-noclip8" x="1603.6" y="1552.93" width="1249.46" height="1249.46" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <filter id="luminosity-noclip9" x="1603.6" y="-9692" width="1249.46" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#fff" result="bg"/>
-      <feBlend in="SourceGraphic" in2="bg"/>
-    </filter>
-    <mask id="mask-9" x="1603.6" y="-9692" width="1249.46" height="32766" maskUnits="userSpaceOnUse"/>
-    <linearGradient id="linear-gradient11" x1="1870.18" y1="-5250.07" x2="2753.69" y2="-5250.07" gradientTransform="translate(-83.58 7427.68)" xlink:href="#linear-gradient"/>
-    <mask id="mask-8" x="1603.6" y="1552.93" width="1249.46" height="1249.46" maskUnits="userSpaceOnUse">
-      <g class="st5">
-        <g class="st19">
-          <rect class="st6" x="1786.58" y="1735.91" width="883.5" height="883.5" transform="translate(2192.5 -937.84) rotate(45)"/>
-        </g>
-      </g>
-    </mask>
-    <linearGradient id="linear-gradient12" x1="1870.18" y1="-5250.07" x2="2753.69" y2="-5250.07" gradientTransform="translate(-83.58 7427.68)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#bcbec0"/>
-      <stop offset="1" stop-color="#f1f2f2"/>
-    </linearGradient>
   </defs>
-  <g class="st11">
-    <g id="LAYER_1">
-      <g class="st21">
-        <g class="st0">
-          <rect class="st27" x="2887.89" y="544.46" width="883.5" height="883.5" transform="translate(1672.59 -2065.56) rotate(45)"/>
-        </g>
-        <g class="st12">
-          <rect class="st23" x="454.24" y="1816.08" width="1543.08" height="1543.08" transform="translate(262.82 5284.1) rotate(-135)"/>
-        </g>
-        <g class="st14">
-          <rect class="st25" x="1290.61" y="2187.62" width="1543.08" height="1543.08" transform="translate(1427.87 6509.77) rotate(-135)"/>
-        </g>
-        <g class="st17">
-          <rect class="st26" x="1992.16" y="1816.08" width="1543.08" height="1543.08" transform="translate(2639.19 -1196.34) rotate(45)"/>
-        </g>
-        <rect class="st24" x="2170.1" y="317.35" width="1543.08" height="1543.08" transform="translate(1631.55 -1761.12) rotate(45)"/>
-        <rect class="st22" x="1304.42" y="836.75" width="877.41" height="877.41" transform="translate(1412.43 -859.01) rotate(45)"/>
-        <rect class="st29" x="2714.57" y="1698.98" width="877.41" height="877.41" transform="translate(2435.15 -1603.59) rotate(45)"/>
-        <g class="st20">
-          <rect class="st28" x="1786.58" y="1735.91" width="883.5" height="883.5" transform="translate(2192.5 -937.84) rotate(45)"/>
-        </g>
-      </g>
-    </g>
-  </g>
+  <rect class="st0" x="4830" y="2779" width="195.8" height="195.8" transform="translate(9855.8 5753.8) rotate(180)"/>
+  <rect class="st0" x="4595" y="2779" width="195.8" height="195.8" transform="translate(9385.8 5753.8) rotate(180)"/>
+  <rect class="st0" x="4830" y="2544" width="195.8" height="195.8" transform="translate(9855.8 5283.8) rotate(180)"/>
+  <rect class="st0" x="4595" y="2544" width="195.8" height="195.8" transform="translate(9385.8 5283.8) rotate(180)"/>
+  <rect class="st0" x="4595" y="2309.1" width="195.8" height="195.8" transform="translate(9385.8 4813.9) rotate(180)"/>
+  <rect class="st0" x="4595" y="2074.1" width="195.8" height="195.8" transform="translate(9385.8 4343.9) rotate(180)"/>
+  <rect class="st0" x="4830" y="2309.1" width="195.8" height="195.8" transform="translate(9855.8 4813.9) rotate(180)"/>
+  <rect class="st0" x="4830" y="2074.1" width="195.8" height="195.8" transform="translate(9855.8 4343.9) rotate(180)"/>
+  <rect class="st0" x="4830" y="1839.1" width="195.8" height="195.8" transform="translate(9855.8 3873.9) rotate(180)"/>
+  <rect class="st0" x="4595" y="1839.1" width="195.8" height="195.8" transform="translate(9385.8 3873.9) rotate(180)"/>
+  <rect class="st0" x="4830" y="1604.1" width="195.8" height="195.8" transform="translate(9855.8 3404.1) rotate(180)"/>
+  <rect class="st0" x="4595" y="1604.1" width="195.8" height="195.8" transform="translate(9385.8 3404.1) rotate(180)"/>
+  <rect class="st0" x="4595" y="1369.1" width="195.8" height="195.8" transform="translate(9385.8 2934.1) rotate(180)"/>
+  <rect class="st0" x="4595" y="1134.1" width="195.8" height="195.8" transform="translate(9385.8 2464.1) rotate(180)"/>
+  <rect class="st0" x="4830" y="1369.1" width="195.8" height="195.8" transform="translate(9855.8 2934.1) rotate(180)"/>
+  <rect class="st0" x="4830" y="1134.1" width="195.8" height="195.8" transform="translate(9855.8 2464.1) rotate(180)"/>
+  <rect class="st0" x="4830" y="899.2" width="195.8" height="195.8" transform="translate(9855.8 1994.2) rotate(180)"/>
+  <rect class="st0" x="4595" y="899.2" width="195.8" height="195.8" transform="translate(9385.8 1994.2) rotate(180)"/>
+  <rect class="st0" x="4830" y="664.2" width="195.8" height="195.8" transform="translate(9855.8 1524.2) rotate(180)"/>
+  <rect class="st0" x="4595" y="664.2" width="195.8" height="195.8" transform="translate(9385.8 1524.2) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="2779" width="195.8" height="195.8" transform="translate(8914.7 5753.8) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="2779" width="195.8" height="195.8" transform="translate(8444.7 5753.8) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="2544" width="195.8" height="195.8" transform="translate(8914.7 5283.8) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="2544" width="195.8" height="195.8" transform="translate(8444.7 5283.8) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="2309.1" width="195.8" height="195.8" transform="translate(8444.7 4813.9) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="2074.1" width="195.8" height="195.8" transform="translate(8444.7 4343.9) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="2309.1" width="195.8" height="195.8" transform="translate(8914.7 4813.9) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="2074.1" width="195.8" height="195.8" transform="translate(8914.7 4343.9) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="1839.1" width="195.8" height="195.8" transform="translate(8914.7 3873.9) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="1839.1" width="195.8" height="195.8" transform="translate(8444.7 3873.9) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="1604.1" width="195.8" height="195.8" transform="translate(8914.7 3404.1) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="1604.1" width="195.8" height="195.8" transform="translate(8444.7 3404.1) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="1369.1" width="195.8" height="195.8" transform="translate(8444.7 2934.1) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="1134.1" width="195.8" height="195.8" transform="translate(8444.7 2464.1) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="1369.1" width="195.8" height="195.8" transform="translate(8914.7 2934.1) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="1134.1" width="195.8" height="195.8" transform="translate(8914.7 2464.1) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="899.2" width="195.8" height="195.8" transform="translate(8914.7 1994.2) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="899.2" width="195.8" height="195.8" transform="translate(8444.7 1994.2) rotate(180)"/>
+  <rect class="st0" x="4359.4" y="664.2" width="195.8" height="195.8" transform="translate(8914.7 1524.2) rotate(180)"/>
+  <rect class="st0" x="4124.4" y="664.2" width="195.8" height="195.8" transform="translate(8444.7 1524.2) rotate(180)"/>
+  <rect class="st0" x="3888.9" y="2779" width="195.8" height="195.8" transform="translate(7973.6 5753.8) rotate(180)"/>
+  <rect class="st0" x="3654" y="2779" width="195.8" height="195.8" transform="translate(7503.7 5753.8) rotate(180)"/>
+  <rect class="st0" x="3888.9" y="2544" width="195.8" height="195.8" transform="translate(7973.6 5283.8) rotate(180)"/>
+  <rect class="st0" x="3654" y="2544" width="195.8" height="195.8" transform="translate(7503.7 5283.8) rotate(180)"/>
+  <rect class="st0" x="3654" y="2309.1" width="195.8" height="195.8" transform="translate(7503.7 4813.9) rotate(180)"/>
+  <rect class="st0" x="3654" y="2074.1" width="195.8" height="195.8" transform="translate(7503.7 4343.9) rotate(180)"/>
+  <rect class="st0" x="3888.9" y="2309.1" width="195.8" height="195.8" transform="translate(7973.6 4813.9) rotate(180)"/>
+  <rect class="st0" x="3888.9" y="2074.1" width="195.8" height="195.8" transform="translate(7973.6 4343.9) rotate(180)"/>
+  <rect class="st0" x="3654" y="1839.1" width="195.8" height="195.8" transform="translate(7503.7 3873.9) rotate(180)"/>
+  <rect class="st0" x="3888.9" y="1604.1" width="195.8" height="195.8" transform="translate(7973.6 3404.1) rotate(180)"/>
+  <rect class="st0" x="3654" y="1604.1" width="195.8" height="195.8" transform="translate(7503.7 3404.1) rotate(180)"/>
+  <rect class="st0" x="3654" y="1369.1" width="195.8" height="195.8" transform="translate(7503.7 2934.1) rotate(180)"/>
+  <rect class="st0" x="3654" y="1134.1" width="195.8" height="195.8" transform="translate(7503.7 2464.1) rotate(180)"/>
+  <rect class="st0" x="3888.9" y="1369.1" width="195.8" height="195.8" transform="translate(7973.6 2934.1) rotate(180)"/>
+  <rect class="st0" x="3888.9" y="899.2" width="195.8" height="195.8" transform="translate(7973.6 1994.2) rotate(180)"/>
+  <rect class="st0" x="3654" y="899.2" width="195.8" height="195.8" transform="translate(7503.7 1994.2) rotate(180)"/>
+  <rect class="st0" x="3654" y="664.2" width="195.8" height="195.8" transform="translate(7503.7 1524.2) rotate(180)"/>
+  <rect class="st0" x="3418.4" y="2779" width="195.8" height="195.8" transform="translate(7032.6 5753.8) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="2779" width="195.8" height="195.8" transform="translate(6562.6 5753.8) rotate(180)"/>
+  <rect class="st0" x="3418.4" y="2544" width="195.8" height="195.8" transform="translate(7032.6 5283.8) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="2544" width="195.8" height="195.8" transform="translate(6562.6 5283.8) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="2309.1" width="195.8" height="195.8" transform="translate(6562.6 4813.9) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="2074.1" width="195.8" height="195.8" transform="translate(6562.6 4343.9) rotate(180)"/>
+  <rect class="st0" x="3418.4" y="2309.1" width="195.8" height="195.8" transform="translate(7032.6 4813.9) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="1839.1" width="195.8" height="195.8" transform="translate(6562.6 3873.9) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="1604.1" width="195.8" height="195.8" transform="translate(6562.6 3404.1) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="1369.1" width="195.8" height="195.8" transform="translate(6562.6 2934.1) rotate(180)"/>
+  <rect class="st0" x="3418.4" y="1369.1" width="195.8" height="195.8" transform="translate(7032.6 2934.1) rotate(180)"/>
+  <rect class="st0" x="3418.4" y="1134.1" width="195.8" height="195.8" transform="translate(7032.6 2464.1) rotate(180)"/>
+  <rect class="st0" x="3418.4" y="899.2" width="195.8" height="195.8" transform="translate(7032.6 1994.2) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="899.2" width="195.8" height="195.8" transform="translate(6562.6 1994.2) rotate(180)"/>
+  <rect class="st0" x="3183.4" y="664.2" width="195.8" height="195.8" transform="translate(6562.6 1524.2) rotate(180)"/>
+  <rect class="st0" x="2947.8" y="2779" width="195.8" height="195.8" transform="translate(6091.5 5753.8) rotate(180)"/>
+  <rect class="st0" x="2006.7" y="2779" width="195.8" height="195.8" transform="translate(4209.2 5753.8) rotate(180)"/>
+  <rect class="st0" x="1065.7" y="2779" width="195.8" height="195.8" transform="translate(2327.1 5753.8) rotate(180)"/>
+  <rect class="st0" x="2947.8" y="2309.1" width="195.8" height="195.8" transform="translate(6091.5 4813.9) rotate(180)"/>
+  <rect class="st0" x="2947.8" y="1839.1" width="195.8" height="195.8" transform="translate(6091.5 3873.9) rotate(180)"/>
+  <rect class="st0" x="2947.8" y="1369.1" width="195.8" height="195.8" transform="translate(6091.5 2934.1) rotate(180)"/>
+  <rect class="st0" x="2712.3" y="2779" width="195.8" height="195.8" transform="translate(5620.3 5753.8) rotate(180)"/>
+  <rect class="st0" x="2477.3" y="2779" width="195.8" height="195.8" transform="translate(5150.3 5753.8) rotate(180)"/>
+  <rect class="st0" x="2477.3" y="2544" width="195.8" height="195.8" transform="translate(5150.3 5283.8) rotate(180)"/>
+  <rect class="st0" x="2477.3" y="2074.1" width="195.8" height="195.8" transform="translate(5150.3 4343.9) rotate(180)"/>
+  <rect class="st0" x="2712.3" y="2074.1" width="195.8" height="195.8" transform="translate(5620.3 4343.9) rotate(180)"/>
+  <rect class="st0" x="2712.3" y="1839.1" width="195.8" height="195.8" transform="translate(5620.3 3873.9) rotate(180)"/>
+  <rect class="st0" x="2477.3" y="1604.1" width="195.8" height="195.8" transform="translate(5150.3 3404.1) rotate(180)"/>
+  <rect class="st0" x="2712.3" y="1369.1" width="195.8" height="195.8" transform="translate(5620.3 2934.1) rotate(180)"/>
+  <rect class="st0" x="2006.7" y="2309.1" width="195.8" height="195.8" transform="translate(4209.2 4813.9) rotate(180)"/>
+  <rect class="st0" x="2006.7" y="1839.1" width="195.8" height="195.8" transform="translate(4209.2 3873.9) rotate(180)"/>
+  <rect class="st0" x="1575.3" y="1839.1" width="195.8" height="195.8" transform="translate(3346.5 3873.9) rotate(180)"/>
+  <rect class="st0" x="2241.7" y="1604.1" width="195.8" height="195.8" transform="translate(4679.2 3404.1) rotate(180)"/>
+  <rect class="st0" x="2241.7" y="899.2" width="195.8" height="195.8" transform="translate(4679.2 1994.2) rotate(180)"/>
 </svg>
