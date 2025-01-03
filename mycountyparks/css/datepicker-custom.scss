@@ -16,7 +16,7 @@
 .daterangepicker .calendar-table th {line-height: inherit !important; padding: 0;}
 .daterangepicker td {border: 2px solid #fff !important; border-radius: 0 !important; position: relative;}
 .daterangepicker .month {padding: 0 !important;}
-.daterangepicker .month select {border: none; padding: 5px !important; font-size: .85rem !important; background: #f9f9f9; border-radius: 5px !important; border: 1px solid #ccc !important;}
+.daterangepicker .month select {border: none; padding: 5px !important; font-size: .85rem !important; background: #f9f9f9; border-radius: 5px !important; border: 1px solid #ccc !important; color: var(--text-color) !important;}
 .daterangepicker thead .monthselect, .daterangepicker thead .yearselect, .daterangepicker thead .next span, .daterangepicker thead .previous span {margin-bottom: 1rem !important;}
 .daterangepicker thead tr:nth-of-type(2) th {font-weight: 700; opacity: .75;}
 
