@@ -1,0 +1,136 @@
+/* Variables */
+:root {
+  /* Colors */
+  --primary: #006450;
+  --primary-dark: #294640;
+  --secondary: #7A6F4A;
+  --secondary-light: #dad1c4;
+  --accent-1: #82AD48;
+  --accent-2: #BCABAE;
+  --light: #f2f2f2;
+  --dark: #383839;
+  --gray: #333;
+  --tan: #efede9;
+  --bkg-accent: #CACEC6;
+  --bkg-accent-dark: #26312c;
+  --bkg: #F5F4F4;
+
+  
+  /* Fonts */
+  --header: "ivyora-display", sans-serif;
+  --body: "europa", sans-serif;
+  --header-accent: "parlare", sans-serif;
+
+  --text-color: rgba(43,46,52,1);
+  --text-color-inverse: rgba(255,255,255,.85);
+
+  /* Globals */
+  --transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --box-shadow-sm: 0 0 15px rgba(0,0,0,.1);
+  --box-shadow-lg: 0 7px 83px rgba(40,40,40,.17);
+  --box-shadow-cards: 0 7px 83px rgba(53, 53, 51, 0.37);
+  --box-shadow-cards-light: 0px 5px 93px rgba(65, 65, 98, 0.09);
+  --box-shadow-cards-dark:  0px 15px 80px -6px rgba(0,0,0,0.3);
+  --shadow: 0 5px 25px rgba(255,161,0,.15);
+  --border-radius-xl: 50px;
+  --border-radius-lg: 25px;
+  --border-radius-sm: 10px;
+  --border-radius-cards:3px;
+  
+  /* Spacing */
+  --max-width: 1120px;
+  --side-padding: 1.5rem;
+  --spacer: 1.5rem;
+  --spacer-vert: 2rem;
+  --column-gap: 2rem;
+  --column-gap-lg: 4rem;
+  --fixed-header-height: 115px;
+  --side-width: calc(((100vw - var(--max-width))/2) + var(--spacer));
+}
+
+/* TYPOGRAPHY */
+html {font-size: 100%;}
+body {font-family: var(--body); font-weight: 400; font-size: 1rem; background: var(--bkg); color: var(--text-color); padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
+
+h1, h2, h3, h4, h5 {font-weight: 400;font-family: var(--header); line-height: 1; margin: 0 0 1rem 0; letter-spacing: -1px;}
+h1 {font-size: 4rem; letter-spacing: -2px;}
+h2 {font-size: 3.25rem;}
+h3 {font-size: 1.75rem;line-height:1.3;letter-spacing:0px}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.4rem;}
+h1:not(figcaption h2) em,h2:not(figcaption h2) em,h3:not(figcaption h3) em,h4:not(figcaption h4) em{font-family:var(--header-accent);color:var(--secondary);}
+h1 em{font-size: 3.5rem;}
+h2 em{font-size: 2rem;}
+h3 em{font-size: 1.5rem;}
+h4 em{font-size: 1.325rem;}
+
+p, ul, ol {margin-bottom: 1.25rem;}
+ul {padding: 0 0 0 15px;}
+ul li::marker {color: var(--secondary);}
+ul li{line-height:1.2;margin-bottom:0.3rem}
+
+
+/* Links */
+a {transition: var(--transition); color: var(--primary);}
+p a {font-weight: 700; text-decoration: underline;}
+p a:hover {text-decoration: none;}
+
+/* Layouts */
+.container {max-width: var(--max-width); margin: 0 auto; padding-left: var(--spacer);padding-right: var(--spacer); position: relative;}
+.container.skinny {max-width: 900px;}
+.box {padding: var(--spacer); border: 1px solid rgba(0,0,0,.1); box-shadow: 0 0 25px rgba(0,0,0,.05);}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  h1 {font-size: 5rem; letter-spacing: -2px;}
+  h2 {font-size: 4.35rem;}
+  h1 em{font-size: 4.5rem;}
+  h2 em{font-size: 2.625rem;}
+
+  :root {
+  --spacer-vert: 4rem;
+  }
+  #content {margin-top: var(--fixed-header-height);}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+  :root {
+  --spacer-vert: 5rem;
+  }  
+}
+
+
+
+.circleWrap {z-index:1;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  svg {
+    animation: rotate 35s linear infinite;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+
+    .circle-text {
+      font-size:calc(0px + 90px);
+      font-family:var(--body);
+      letter-spacing:10px;
+      width: 100%;
+      fill: var(--secondary);
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(-360deg);
+  }
+}

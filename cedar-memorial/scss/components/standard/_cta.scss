@@ -1,0 +1,27 @@
+.call-to-action { background: var(--dark) url(../img/shapes/paper-texture.webp) no-repeat;background-size:cover;padding:1px 0}
+.call-to-action .container {display: grid; gap: var(--spacer); display: grid; gap: var(--spacer); padding: 3rem;}
+
+/* Newsletter */
+.newsletter-box{max-width:100%;margin:0 auto;}
+.newsletter-form{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.call-to-action .email-input{padding:15px 20px;flex:1;font-size:1.25rem;border:1px solid #ccc;border-radius:4px;color:#333;}
+.call-to-action .email-input::placeholder{color:grey;font-size:1rem}
+.call-to-action .wp-block-columns{margin:50px auto}
+.call-to-action h3{ margin-top: -10px;font-size: 1.95rem;line-height:1.3;letter-spacing:1px;margin:0;font-weight:500;  margin-bottom: 0; }
+
+
+
+/* TABLET */
+@media (min-width:768px){
+}
+
+@media (min-width: 992px) {
+    .call-to-action .container {grid-template-columns: auto 50%; align-items: center;}
+}
+
+@media (max-width: 768px) {
+    .newsletter-form{flex-direction:column;align-items:flex-start;gap:10px;}
+    .newsletter-form .wp-block-button{width:auto;}
+    
+}
+
