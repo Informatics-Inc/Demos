@@ -1,6 +1,6 @@
 /* Fix Height Layout */
-.default-calendar {background-color: initial; height: 470px; position: relative;}
-@media (max-width: 600px) {.default-calendar {background-color: initial; height: 815px; position: relative;}}
+.default-calendar {background-color: initial; height: 500px; position: relative;}
+@media (max-width: 600px) {.default-calendar {background-color: initial; height: 900px; position: relative;}}
 
 /* Show Calendar in Left Col */
 #dateRangeDiv {visibility: hidden; height: 0px !important; width: 0px !important;}
