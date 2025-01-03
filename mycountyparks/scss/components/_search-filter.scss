@@ -34,7 +34,7 @@ body.no-scroll {overflow: hidden;}
 
 #filter {background: var(--secondary); padding: 15px; border-radius: 15px;gap: 15px; margin: -50px 15px 0 15px;position: relative;z-index: 50; box-shadow: 5px 15px 25px rgba(0, 0, 0, .2);}
 #filter button {color: var(--text-color);}
-.filter-toggle {border: none; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 1rem;}
+.filter-toggle {border: none; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 1rem; background: #fff;}
 
 .results {text-align: center; position: relative; z-index: 15;}
 .results ul {list-style: none; padding: 0; margin: 1rem 0 .25rem 0; display: flex; flex-wrap: wrap; justify-content: center; font-size: .75rem; gap: 5px; align-items: center;}
