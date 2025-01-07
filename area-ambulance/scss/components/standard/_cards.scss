@@ -27,7 +27,7 @@
 .card.icon-card h3,.card.icon-card p{transition:var(--transition)}
 .card.icon-card:hover h3,.card.icon-card:hover p{color:#fff}
 .card.icon-card figure{overflow:hidden;margin:30px 30px 0 30px;aspect-ratio:1 / 1;width:90px;height:90px;border-radius:50%;background-color:#f8f8f8;display:flex;align-items:center;justify-content:center;padding:10px;}
-.card.icon-card figure img{width:calc(100% - 20px);height:calc(100% - 20px);object-fit:cover;scale:1;transition:scale 0.3s ease;transition:var(--transition)}
+.card.icon-card figure img{width:calc(100% - 20px);height:calc(100% - 20px);object-fit:contain;scale:1;transition:scale 0.3s ease;transition:var(--transition)}
 
 /* Horizontal Card (ICON CARDS) */
 .card.icon-card-horizontal{background: none;box-shadow: none;overflow: visible;position: relative;}

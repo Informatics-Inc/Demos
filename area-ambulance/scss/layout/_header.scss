@@ -1,15 +1,16 @@
 /* GLOBAL */
 #hdr-site {background:#fff;position: relative; z-index: 20; box-shadow: var(--box-shadow-sm);}
 #logo {display: block; width:150px;}
-#menu ul {list-style: none; padding: 0;margin: 0px 0 0 0; }
+#menu ul {list-style: none; padding: 0; }
 #menu ul a {font-family:var(--header);color: var(--primary-dark); text-decoration: none; display: block; font-weight: 700; position: relative;font-size:1.3rem;padding:1rem }
 #menu li a i{margin-right:7px;font-size:1.1rem}
-#hdr-site .btn-theme{font-family:var(--header);font-size:1.2rem;margin-bottom: 5px;}
+#hdr-site .btn-theme{font-family:var(--header);font-size:1.2rem;}
 #hdr-site .btn-theme i {margin-right:10px;font-size:1rem;}
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
 #hdr-main {display: grid; grid-template-columns: auto 35px; padding: 1rem 0;}
+#menu ul {margin: 0px 0 0 0;}
 
 /* Menu Toggle */
 #menu-toggle {font-size:.79rem; letter-spacing: 0.5px; text-transform: uppercase; background: none; padding: 0; margin: 0; border: none;  font-weight: 700; color: var(--text); width: 35px; height: 40px; position: relative;align-self: center;}
@@ -34,7 +35,7 @@
 #menu ul li ul li a:hover{color:var(--accent-1);padding-left:40px}
 #menu li {position: relative;}
 #menu ul ul a {border: none; padding: 10px 20px 10px 30px; font-weight: 700;}
-#menu ul ul li{border-top:dotted 2px #ccc}
+#menu ul ul li{border-top:dotted 2px #ccc;}
 
 #menu .wp-block-button__link {margin: 1rem 0;padding:1rem}
 #menu ul li{margin-bottom:0;}
@@ -50,15 +51,16 @@
 #menu-toggle {display: none;}
 .hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
 #menu {display: flex; align-items: center;}
-#menu ul {display: flex;margin: 5px 0 0 0;}
+#menu ul {display: flex;margin: 0px 0 0 0;}
 #menu ul a {padding: 1.5rem 1rem;}
 #menu .wp-block-button__link {margin-left: 1rem;}
 
 /* Dropdown */
 #menu .btn-expand {display: none;}
-#menu ul li {position: relative;}
+#menu ul li {position: relative;margin-bottom:0}
 #menu ul ul {border-radius:12px;position: absolute; flex-direction: column; background: #fff; box-shadow: var(--box-shadow-sm); width: 250px; padding: 1rem; left: calc(50% - 125px); top: 105%; transition: var(--transition); opacity: 0; visibility: hidden;}
-#menu ul ul a {font-weight: 700; padding:5px;border-bottom:2px dotted #ccc;}
+#menu ul ul a {font-weight: 700; padding:5px;border-bottom:dotted 2px #ccc}
+#menu ul ul li:last-of-type a{border-bottom:none}
 
 #menu li:hover ul {opacity: 1; visibility: visible; top: 100%;}
 
