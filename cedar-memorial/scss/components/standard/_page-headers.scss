@@ -1,7 +1,7 @@
 /* Page Headers */
 .page-hdr {position: relative; z-index: 5; overflow: hidden;}
-.page-hdr figure {position: absolute; inset: 0; background: var(--light); border-top: 1px solid rgba(0,0,0,.085); margin: 0;}
-.page-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .1;}
+.page-hdr figure {position: absolute; inset: 0; background: var(--accent-3); border-top: 1px solid rgba(0,0,0,.085); margin: 0;}
+.page-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .1; filter: grayscale(100%);}
 .page-hdr .content {padding: 65px var(--spacer); text-align: center; position: relative; z-index: 5;}
 .page-hdr .content h1 {position: relative;font-size: 3.5rem;letter-spacing: 0;}
 
@@ -18,3 +18,8 @@
 @media (min-width:992px){
 
 }
+
+
+
+
+

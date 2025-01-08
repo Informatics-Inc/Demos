@@ -1,105 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Informatics, Inc">
-    <title>WP Starter Template v1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Informatics, Inc" />
+    <title>Blog Listing</title>
 
     <!-- FONTS -->
-    <link href='css/icons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/mgk5doc.css">
 
-    <!-- CSS -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="css/app.min.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet" />
   </head>
   <body>
-  
-  <!-- Skip Nav Link-->
-  <a id="skip-nav" class="screenreader-text" href="#content">
-    Skip to Content
-  </a>
+    <!-- Skip Nav Link-->
+    <a id="skip-nav" class="screenreader-text" href="#content">
+      Skip to Content
+    </a>
 
-  <header id="hdr-site">
-    
-    <!-- HEADER TOP -->
-    <div id="hdr-top">
+    <header id="hdr-site">
+
+      
+      <!-- HEADER TOP -->
+      <div id="hdr-top">
         <div class="container">
-            <div class="hdr-top-left">
-                <p>This is the top info header</p>
-            </div>
-            <div class="hdr-top-right hidden-sm">
-                <ul>
-                    <li><a href="#.html">News & Events</a></li>
-                    <li><a href="#.html">Careers</a></li>
-                    <li><a href="#.html">Utility Nav</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- LOGO AND MOBILE -->
-    <div class="container">
-        <div class="hdr-desktop">
-        <div id="hdr-main">
-            <a href="#.html" id="logo">
-                <img src="img/logo.svg" alt="Logo" />
+          <div class="hdr-top-left">
+            <span><em>We are here for you.</em></span>
+            <a class="phone" href="tel:+8002752332">(800) 275-2332
             </a>
-            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
-                <div class="closed">
-                    Menu
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <div class="open">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </button>
-        </div>
-
-        <!-- MAIN NAVIGATION -->
-        <nav id="menu" class="collapsed">
+          </div>
+          <div class="hdr-top-right hidden-sm">
             <ul>
-                <li><a href="#.html">Main Nav Link</a></li>
-                <li><a href="#.html">Main Nav Link</a></li>
-                <li><a href="#.html">Main Nav Link</a>
-                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
-                  <ul id="menu-1" class="collapsed">
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                  </ul>
-                </li>
-                <li><a href="#.html">Main Nav Link</a></li>
-                <li><a href="#.html">Main Nav Link</a></li>
+              <li><a href="#.html">Locate a Grave</a></li>
+              <li><a href="#.html">The Flower Shop</a></li>
+              <li><a href="#.html">Contact Us</a></li>
+              <li style="cursor:pointer" onclick="openNav()"><i class="fa fa-search"></i> Search Site</li>
+              <!-- Fullscreen search overlay -->
+              <div id="myNav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div class="overlay-content">
+                      <div id="logo">
+                          <img src="img/cedar-memorial-logo-mark.webp" alt="Logo" />
+                      </div>
+                      <div class="search-box">
+                          <input type="text" placeholder="Type A Search.." aria-label="Search"/>
+                          <button class="submit-search" type="button"> <i class="fa fa-search"></i></button>
+                      </div>
+                  </div>
+              </div>
+              
+              <script>
+              function openNav() {
+                document.getElementById("myNav").classList.add("open");
+              }
+              function closeNav() {
+                document.getElementById("myNav").classList.remove("open");
+              }
+              </script>
             </ul>
-            <a href="#.html" class="btn-theme wp-block-button__link ">Call To Action</a>
-        </nav>
+          </div>
         </div>
-    </div>
-  </header>
+      </div>
+      
+      
+
+      <!-- LOGO AND MOBILE -->
+      <div class="container">
+        <div class="hdr-desktop">
+          <div id="hdr-main">
+            <a href="#.html" id="logo">
+              <img src="img/cedar-memorial-logo-horizontal.svg" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button"
+              data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-expanded="false" aria-controls="menu">
+              <div class="closed">
+                Menu
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <div class="open">
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </button>
+          </div>
+
+          <!-- MAIN NAVIGATION -->
+          <nav id="menu" class="collapsed">
+            <ul>
+              <li><a href="#.html">Obituaries</a>
+                <button class="btn-expand collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#menu-1"
+                  aria-expanded="false" aria-controls="menu-1"><i
+                    class="fa fa-chevron-down"></i></button>
+                <ul id="menu-1" class="collapsed">
+                  <li><a href="#.html">Obituary Detail Pages</a></li>
+                </ul>
+              </li>
+              <li><a href="#.html">Our Services</a>
+                <button class="btn-expand collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#menu-2"
+                  aria-expanded="false" aria-controls="menu-2"><i
+                    class="fa fa-chevron-down"></i></button>
+                <ul id="menu-2" class="collapsed">
+                  <li><a href="#.html">Pre-Planning Services</a></li>
+                  <li><a href="#.html">Memorial Services</a></li>
+                  <li><a href="#.html">Facilities & Chapels</a></li>
+                  <li><a href="#.html">Flowers & More</a></li>
+
+                  <li><a href="#.html">Pet Cremation</a></li>
+                </ul>
+              </li>
+              <li><a href="#.html">Grief & Healing</a>
+                <button class="btn-expand collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#menu-3"
+                  aria-expanded="false" aria-controls="menu-3"><i
+                    class="fa fa-chevron-down"></i></button>
+                <ul id="menu-3" class="collapsed">
+                  <li><a href="#.html">What to Say</a></li>
+                  <li><a href="#.html">Grief Resources</a></li>
+                  <li><a href="#.html">After Care</a></li>
+                </ul>
+              </li>
+              <li><a href="#.html">Who We Are</a>
+                <button class="btn-expand collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#menu-4"
+                  aria-expanded="false" aria-controls="menu-4"><i
+                    class="fa fa-chevron-down"></i></button>
+                <ul id="menu-4" class="collapsed">
+                  <li><a href="#.html">Our Story</a></li>
+                  <li><a href="#.html">Our Staff</a></li>
+                  <li><a href="#.html">News & Blog</a></li>
+                  <li><a href="#.html">Careers</a></li>
+                </ul>
+              </li>
+              <li><a href="#.html">Programs & Events</a>
+                <button class="btn-expand collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#menu-5"
+                  aria-expanded="false" aria-controls="menu-5"><i
+                    class="fa fa-chevron-down"></i></button>
+                <ul id="menu-5" class="collapsed">
+                  <li><a href="#.html">Events Listing</a></li>
+                  <li><a href="#.html">Special Programs</a></li>
+                </ul>
+              </li>
+
+            <span class="hidden-lg">
+                <li><a href="#.html">Locate a Grave</a></li>
+                <li><a href="#.html">The Flower Shop</a></li>
+                <li><a href="#.html">Contact Us</a></li>
+                <li>
+                  <li>
+                    <form action="search.html" method="get" class="search-form">
+                        <div class="search-box">
+                            <input type="text" name="q" placeholder="Search">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </form>
+                </li>
+              </li>
+            </span>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
   <main id="content">
     <div class="container skinny">
     <div class="blog-hdr">
       <p class="date">January 12, 2023</p>
       <h1>Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor</h1>
+      </h1>
       <p class="is-style-lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas mollitia sunt quam quis corporis voluptatibus iure! Fuga, magni dolorum?</p>
       <div class="wp-block-buttons is-style-btn-text is-layout-flex is-content-justification-center">
         <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Back to Listing</a></div>
       </div>
     </div>
     <div class="blog-content">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis enim sint quia minus cumque dignissimos quos, ea architecto aut incidunt inventore tempore quas. Iste alias quae aliquam voluptatum excepturi assumenda blanditiis delectus deserunt officia sunt?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis enim sint quia minus cumque dignissimos quos, ea architecto aut incidunt inventore tempore quas. Iste alias quae aliquam voluptatum excepturi assumenda blanditiis delectus deserunt officia sunt?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis enim sint quia minus cumque dignissimos quos, ea architecto aut incidunt inventore tempore quas. Iste alias quae aliquam voluptatum excepturi assumenda blanditiis delectus deserunt officia sunt?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis enim sint quia minus cumque dignissimos quos, ea architecto aut incidunt inventore tempore quas. Iste alias quae aliquam voluptatum excepturi assumenda blanditiis delectus deserunt officia sunt?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lorem id urna malesuada dictum. Integer tincidunt purus at tortor elementum, vel congue eros vulputate. Curabitur a vpretium, turpis sapien efficitur purus, id bibendum justo elit id risus. Fusce eget ligula ut ex condimentum tincidunt et sed nulla. Quisque suscipit felis nec libero interdum, vel aliquet felis fermentum. Mauris tincidunt sem vitae luctus aliquet.</p>
+      </p>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse auctor urna id neque luctus, nec tristique mauris pharetra. Mmentum, lacus purus dignissim eros, nec tristique felis dolor non velit. Curabitur lacinia condimentum sem, a cursus massa semper sit amet.
+      </p><p>
+        Nullam ut lectus nec nisi maximus vestibulum. Phasellus et magna lorem. Proin mollis sem et tellus tincidunt, ac condimentum elit sagittis. Donec sollicitudin felis libero, at malesuada justo suscipit eget. Phasellus id sapien gravida, consequat nulla eget, feugiat sem. Aenean eget magna velit. Vestibulum non posuere erat. Aenean tristique sapien lectus, non sodales odio tincidunt at. Etiam placerat velit at urna pulvinar, non consequat turpis sodales. Praesent sed purus vehicula, varius ipsum sed, ultricies risus.
+        </p>
     </div>
     <section class="blog-share">
       <h3>Share This Page</h3>
@@ -115,76 +203,85 @@
   </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      
-      <div class="call-to-action">
-        <div class="col">
-          <h2>Call To Action!</h2>
-        </div>
-        <div class="col">
-          <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Button Text</a></div>
-        </div>
-      </div>
   
+ 
+  <footer class="footer">
+    <div class="call-to-action">
+      <div class="container">
+      <div class="col">
+        <h3><em>Stay up to date</em></h3>
+        <h3>JOIN THE NEWSLETTER</h3>
+      </div>
+      <div class="col">
+        <div class="newsletter-box">
+          <form action="#" class="newsletter-form">
+              <input type="email" class="email-input" placeholder="Email Address" required>
+              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Yes Please!</a></div>
+          </form>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="image-collage">
+      <figure><img src="img/placeholders/images-facility.webp"
+          alt="placeholder" /></figure>
+      <figure><img src="img/placeholders/images-couple.webp"
+          alt="placeholder" /></figure>
+      <figure><img src="img/placeholders/images-flower.webp"
+          alt="placeholder" /></figure>
+      <figure><img src="img/placeholders/images-support.webp"
+          alt="placeholder" /></figure>
+      <figure><img src="img/placeholders/images-facility-inside.webp"
+          alt="placeholder" /></figure>
+      <figure><img src="img/placeholders/images-wild-flowers.webp"
+          alt="placeholder" /></figure>
+    </div>
+    <div class="container has-text-align-center">
+      <figure class="footer-logo"><img  src="img/cedar-memorial-logo-mark.webp" alt="Logo"></figure>
+      <a href="https://www.facebook.com/CedarMemorial" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+     </div> 
+    <div class="container has-text-align-center">
       <div class="ftr-cols">
         <div class="col">
-          <h3>Column Title</h3>
-          <ul>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-          </ul>
+          <h3>Cedar Memorial Westside Chapel</h3>
+            <p>1221 First Avenue SW<br>
+              Cedar Rapids IA 52405</p>
+            <p><a href="tel:+13193621135">(319) 362-1135</a><br>
+             <p><strong><a href="#.html">Get Directions</a></strong></p>
         </div>
         <div class="col">
-          <h3>Column Title</h3>
-          <ul>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-          </ul>
+          <h3>Cedar Memorial Park Cemetery Funeral Home</h3>
+          <p><em>Chapel of Memories, Mausoleum, Family Center and Library, Cremation Center, and Flower Shop</em></p>
+            <p>4200 First Avenue NE<br>
+              Cedar Rapids IA 52402</p>
+            <p><a href="tel:+1319393-8000">(319) 393-8000</a><br>
+             <a href="tel:+131927523320">(800) 275-23320</a></p>
+             <p><strong><a href="#.html">Get Directions</a></strong></p>
         </div>
         <div class="col">
-          <h3>Column Title</h3>
-          <ul>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-            <li><a href="#.html">Footer Link</a></li>
-          </ul>
+          <h3>Cedar Memorial Flower Shop</h3>
+            <p>4361 1st Avenue SE<br>
+              Cedar Rapids IA 52402</p>
+            <p><a href="tel:+13193938004">(319) 393-8004</a><br>
+             <a href="tel:+18776382622">(877) 638-2622</a></p>
+             <p><strong><a href="#.html">Get Directions</a></strong></p>
         </div>
-        <div class="col">
-          <h3>Column Title</h3>
-          <div class=" ftr-ico-content">
-            <div class="location">
-              <i class="fa fa-map-marker-alt"></i>
-              <p>123 Address Street<br>Cedar Rapids, IA 52402</p>
-            </div>
-            <div class="phone">
-              <i class="fa fa-phone"></i>
-              <p><a href="#.html">(800) 446-6722</a><br><a href="#.html">(319) 446-6722</a></p>
-              <!-- in WordPress Use the Same Social PHP as Header -->
-              <ul class="flex">
-                <li><a href="#.html"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#.html"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="#.html"><i class="fa-brands fa-twitter"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
+
       </div>
-      <p class="footer-copy">© 2024 NSCA. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
+      <p class="footer-copy">© 2024 Cedar Memorial. All Rights Reserved. Web
+        Application
+        by <a target="_blank"
+          href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
     </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.js"></script>
   <script src="js/scripts.js"></script>
-
-</body>
-</html>
+</main>

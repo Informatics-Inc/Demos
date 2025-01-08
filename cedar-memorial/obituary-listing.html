@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Informatics, Inc" />
-    <title>Blog Listing</title>
+    <title>Obituary Listing</title>
 
     <!-- FONTS -->
     <link href="css/icons.min.css" rel="stylesheet" />
@@ -181,82 +181,283 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb-nav">
             <li><a href="#.html">Home</a></li>
-            <li>Industry Insights</li>
+            <li>Obituaries</li>
           </ol>
         </nav>
-        <h1>Industry Insights</h1>
+        <h1>Obituaries</h1>
       </div>
     </section>
 
-    <div class="wp-block-columns is-layout-flex">
-      <div class="wp-block-column" style="flex-basis: 75%;">
-        <div class="blog-list-item">
-          <figure>
-            <img src="img/placeholders/placeholder-3.jpg" />
-          </figure>
-          <div class="text">
-            
-            <h2><a href="#.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h2>
-            <p class="date">January 12, 2023</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas mollitia sunt quam quis corporis voluptatibus iure! Fuga, magni dolorum?</p>
-            <div class="wp-block-buttons is-style-btn-text is-layout-flex">
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Read Article</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="blog-list-item">
-          <figure>
-            <img src="img/placeholders/placeholder-5.jpg" />
-          </figure>
-          <div class="text">
-            
-            <h2><a href="#.html">Lorem ipsum dolor sit amet adipisicing elit. Totam, beatae.</a></h2>
-            <p class="date">January 12, 2023</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas mollitia sunt quam quis corporis voluptatibus iure! Fuga, magni dolorum?</p>
-            <div class="wp-block-buttons is-style-btn-text is-layout-flex">
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Read Article</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="blog-list-item">
-          <figure>
-            <img src="img/placeholders/placeholder-1.jpg" />
-          </figure>
-          <div class="text">
-            <h2><a href="#.html">Lorem ipsum amet consectetur adipisicing elit. Totam, beatae.</a></h2>
-            <p class="date">January 12, 2023</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas mollitia sunt quam quis corporis voluptatibus iure! Fuga, magni dolorum?</p>
-            <div class="wp-block-buttons is-style-btn-text is-layout-flex">
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Read Article</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="wp-block-columns is-layout-flex  obit-listing">
       <div class="wp-block-column">
-        <div class="sidebar box">
-          <h4>Categories</h4>
-          <nav class="sec-nav">
-            <ul>
-              <li><a href="#.html">People</a></li>
-              <li><a href="#.html">Places</a></li>
-              <li><a href="#.html">Events</a></li>
-              <li><a href="#.html">Projects</a></li>
-              <li><a href="#.html">Products</a></li>
-            </ul>
-          </nav>
+
+   <h2>Obituary Listings & Search</h2>
+   <p class="is-style-lead">Honoring Memories and Celebrating Lives</p>
+        <p>Our most recent obituaries are listed below. Can’t find your loved one’s obituary? Looking for a past listing? 
+          <br>Enter a name, city, text and/or date below to search our records.</p>
+
+
+        <form class="obituary-search-form">
+          <div class="search-field">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+          </div>
+          <div class="search-field">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+          </div>
+          <div class="search-field">
+            <label for="date-of-death">Date of Death</label>
+            <select id="date-of-death" name="date-of-death">
+              <option selected="selected" value="">All Dates</option>
+              <option value="LW">Last 7 Days</option>
+              <option value="L14">Last 14 Days</option>
+              <option value="Month">Last 30 Days</option>
+              <option value="L60">Last 60 Days</option>
+              <option value="L90">Last 90 Days</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label for="keyword">Keyword Search</label>
+            <input type="text" id="keyword" name="keyword" placeholder="Keyword Search">
+          </div>
+          <div class="wp-block-buttons">
+            <div class="wp-block-button">
+              <a class="wp-block-button__link wp-element-button"
+                href="#"><i class="fa fa-search"></i> Search</a>
+            </div>
+            <div class="wp-block-button is-style-btn-secondary">
+              <a class="wp-block-button__link wp-element-button"
+                href="#">View All</a>
+            </div>
         </div>
-        <div class="sidebar box">
-          <h4>Tags</h4>
-          <nav class="tag-list">
-            <ul>
-              <li><a href="#.html">Category #3</a></li>
-              <li><a href="#.html">Category #4</a></li>
-              <li><a href="#.html">Category #5</a></li>
-            </ul>
-          </nav>
+        </form>
+        
+        <!--------------------------------- Insight CARDS  ---------------------------------------->
+        <div class="theme-cards medium">
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit2.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Kara Larsy</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit7.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Smithy Watts</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit5.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Jerry Barbara</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit9.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Ann Carry</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit4.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Alice Shanes</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit10.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Harry Kanne</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit8.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>John Simmons</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit1.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Mark Smith</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit7.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Arnold Zegler</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit3.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Steff Harry</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit6.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Kerri Ann</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-obit9.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading"><a href>Susan Jones</a></h3>
+              <p class="date">1934 - 2025<br>
+                Cedar Rapids, Iowa</p>
+              <div class="wp-block-buttons">
+                <div class="wp-block-button">
+                  <a class="wp-block-button__link wp-element-button"
+                    href="#">Visit Obituary</a>
+                </div>
+            </div>
+            </div>
+          </div>
         </div>
+
+        <div class="ccm-pagination-wrapper" id="pagination">
+          <nav class="navigation pagination" aria-label="Post navigation">
+            <h2 class="screen-reader-text">Post navigation</h2>
+            <div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+        <a class="page-numbers" href="">2</a>
+        <a class="next page-numbers" href="">Next →</a></div>
+          </nav>            <div></div><div></div></div>
+
       </div>
     </div>
+
+
+       
+        </div>
+      </div>
+
+
   </main>
 
  

@@ -3,11 +3,13 @@
 .date {color:var(--secondary)}
 
 .blog-list-item .text {align-content: flex-start;}
-.blog-list-item h2 {font-size: 2rem; font-family: var(--body); line-height: 1.2; letter-spacing: normal; margin: 0 0 .5rem 0;}
+.blog-list-item h2 {font-size: 2rem; font-family: var(--header); line-height: 1.2; letter-spacing: normal; margin: 0 0 .5rem 0;}
 .blog-list-item h2 a {color: var(--text); text-decoration: none;}
-.blog-list-item h2 a:hover {text-decoration: underline;}
-.blog-list-item figure img {border-radius: 10px;}
+.blog-list-item h2 a:hover {text-decoration: underline;color:var(--primary)}
+
 .blog-list-item .wp-block-buttons {margin: 0;}
+.blog-list-item figure img{width:100%;border-radius:6px;object-fit:cover;max-height:420px;}
+
 
 #pagination {font-size: 1rem; justify-content: center; display: flex; margin: 2rem 0 0 0;}
 #pagination li:before {display: none;}
@@ -32,14 +34,19 @@
 .social-share i {
   text-align:center;
   font-size:2.15rem;
-  padding:5px
+  padding:10px
 }
-.social-share a:hover {color: var(--accent-2);}
+.social-share a:hover {color: var(--primary-dark);}
 /* TABLET */
 @media (min-width: 768px) {
   .blog-list-item {grid-template-columns: 1.5fr 3fr; gap: 2rem;}
+
 } 
 
 /* WIDE DESKTOP */
 @media (min-width: 992px) {
+  .blog-list-item figure img {width: 100%;
+    height: 230px;
+    object-fit: cover;}
 }
+

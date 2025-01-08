@@ -1,12 +1,12 @@
 .sidebar.box {padding: 0; border-radius: 5px; overflow: hidden;}
 .sidebar.box + .sidebar.box {margin-top: 2rem;}
-.sidebar.box h4 {background: var(--dark); color: #fff; text-align: center; padding: var(--spacer); margin: 0; font-size: 1.25rem; font-family: var(--body); font-weight: 600; letter-spacing: normal;}
+.sidebar.box h4 {background: var(--primary-dark); color: #fff; text-align: center; padding: var(--spacer); margin: 0; font-size: 1.25rem; font-family: var(--body); font-weight: 600; letter-spacing: normal;}
 .sec-nav ul {list-style: none; padding: var(--spacer); margin: 0;}
 .sec-nav ul a {display: block; padding: 10px 15px 10px 10px; color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--gray);}
 .sec-nav ul li:last-of-type a {border: none;}
 .sec-nav ul a:hover {padding: 10px 10px 10px 15px; text-decoration: underline;}
 .sec-nav ul > .current_page_item > a {position: relative; padding: 10px 5px 10px 25px; color: var(--dark); font-weight: 700;}
-.sec-nav ul > .current_page_item > a:before {content: "\f0d9";font-family: FontAwesome; color: var(--primary); margin: 0 0 0 7px; text-decoration: none; position: absolute; left: 5px; top: calc(50% - 10px); font-size: .75rem;}
+.sec-nav ul > .current_page_item > a:before {content: "\f0d9";font-family: FontAwesome; color: var(--primary); margin: 0 0 0 7px; text-decoration: none; position: absolute; left: 5px; top: calc(50% - 6px); font-size: .75rem;}
 
 .sec-nav ul ul {display: none; padding: 15px 0 15px 0px;}
 .sec-nav ul > .current_page_ancestor > ul {display: block; border-bottom: 1px dotted var(--gray);}
@@ -16,3 +16,8 @@
 .tag-list ul {display: flex; flex-wrap: wrap; list-style: none; padding: var(--spacer); gap: 5px; margin: 0;}
 .tag-list a {padding: 4px 6px; background: #fff; font-size: .85rem; border-radius: 4px; display: inline;}
 .tag-list li a:hover {background: none;}
+
+.sidebar.box.cta-side{padding:25px;background: var(--light) url(../img/shapes/paper-texture.webp) no-repeat; background-size: cover; background-position: 0 center; }
+.sidebar.box.cta-side .wp-block-buttons {
+    margin: var(--spacer) 0 0 0;
+  }

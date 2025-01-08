@@ -21,22 +21,49 @@
 
     <header id="hdr-site">
 
+      
       <!-- HEADER TOP -->
       <div id="hdr-top">
         <div class="container">
           <div class="hdr-top-left">
-            <p>This is the top info header</p>
+            <span><em>We are here for you.</em></span>
+            <a class="phone" href="tel:+8002752332">(800) 275-2332
+            </a>
           </div>
           <div class="hdr-top-right hidden-sm">
             <ul>
               <li><a href="#.html">Locate a Grave</a></li>
               <li><a href="#.html">The Flower Shop</a></li>
-              <li><a href="#.html">Newsletter Signup</a></li>
-              <li><a href="#.html">Find & Contact Us</a></li>
+              <li><a href="#.html">Contact Us</a></li>
+              <li style="cursor:pointer" onclick="openNav()"><i class="fa fa-search"></i> Search Site</li>
+              <!-- Fullscreen search overlay -->
+              <div id="myNav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div class="overlay-content">
+                      <div id="logo">
+                          <img src="img/cedar-memorial-logo-mark.webp" alt="Logo" />
+                      </div>
+                      <div class="search-box">
+                          <input type="text" placeholder="Type A Search.." aria-label="Search"/>
+                          <button class="submit-search" type="button"> <i class="fa fa-search"></i></button>
+                      </div>
+                  </div>
+              </div>
+              
+              <script>
+              function openNav() {
+                document.getElementById("myNav").classList.add("open");
+              }
+              function closeNav() {
+                document.getElementById("myNav").classList.remove("open");
+              }
+              </script>
             </ul>
           </div>
         </div>
       </div>
+      
+      
 
       <!-- LOGO AND MOBILE -->
       <div class="container">
@@ -64,7 +91,7 @@
           <!-- MAIN NAVIGATION -->
           <nav id="menu" class="collapsed">
             <ul>
-              <li><a href="#.html">Obituaries & Search</a>
+              <li><a href="#.html">Obituaries</a>
                 <button class="btn-expand collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#menu-1"
                   aria-expanded="false" aria-controls="menu-1"><i
@@ -80,27 +107,10 @@
                     class="fa fa-chevron-down"></i></button>
                 <ul id="menu-2" class="collapsed">
                   <li><a href="#.html">Pre-Planning Services</a></li>
-                  <ul>
-                    <li><a href="#.html">Pre-Planning Organizer</a></li>
-                    <li><a href="#.html">Counselors</a></li>
-                  </ul>
                   <li><a href="#.html">Memorial Services</a></li>
-                  <ul>
-                    <li><a href="#.html">Traditional Services</a></li>
-                    <li><a href="#.html">Cremation Services</a></li>
-                    <li><a href="#.html">Caskets, Urns & Vaults</a></li>
-                    <li><a href="#.html">Visitations & Gatherings</a></li>
-                    <li><a href="#.html">Directors & Celebrants</a></li>
-                  </ul>
                   <li><a href="#.html">Facilities & Chapels</a></li>
-                  <ul>
-                    <li><a href="#.html">The Park Cemetery</a></li>
-                    <li><a href="#.html">Mausoleum</a></li>
-                  </ul>
                   <li><a href="#.html">Flowers & More</a></li>
-                  <ul>
-                    <li><a href="#.html">Floral Tributes</a></li>
-                  </ul>
+
                   <li><a href="#.html">Pet Cremation</a></li>
                 </ul>
               </li>
@@ -134,25 +144,26 @@
                     class="fa fa-chevron-down"></i></button>
                 <ul id="menu-5" class="collapsed">
                   <li><a href="#.html">Events Listing</a></li>
-                  <ul>
-                    <li><a href="#.html">Event Detail Pages</a></li>
-                  </ul>
                   <li><a href="#.html">Special Programs</a></li>
-                  <ul>
-                    <li><a href="#.html">Memorial Day</a></li>
-                    <li><a href="#.html">Hospite</a></li>
-                    <li><a href="#.html">Easter Sunrise Service</a></li>
-                    <li><a href="#.html">Celebrate the Holidays</a></li>
-                    <li><a href="#.html">Coping with the Holidays</a></li>
-                    <li><a href="#.html">Flower Shop Holiday Showcase</a></li>
-                    <li><a href="#.html">Remembering Our Children</a></li>
-                    <li><a href="#.html">Holiday Music Legacy Program</a></li>
-                    <li><a href="#.html">Camp Embracing Memories</a></li>
-                    <li><a href="#.html">Veterans Memorialization
-                        Project</a></li>
-                  </ul>
                 </ul>
               </li>
+
+            <span class="hidden-lg">
+                <li><a href="#.html">Locate a Grave</a></li>
+                <li><a href="#.html">The Flower Shop</a></li>
+                <li><a href="#.html">Contact Us</a></li>
+                <li>
+                  <li>
+                    <form action="search.html" method="get" class="search-form">
+                        <div class="search-box">
+                            <input type="text" name="q" placeholder="Search">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </form>
+                </li>
+              </li>
+            </span>
+
             </ul>
           </nav>
         </div>
@@ -164,31 +175,28 @@
 <!--------------------------------- Background Side Image LEFT ---------------------------------------->
 <section class="hero">
 <div class="wp-block-group alignfull is-style-bkg-light">
+  <div class="splash"></div>
   <div class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
       <div class="wp-block-column is-vertically-aligned-center">
-          <div class="wp-block-columns is-layout-flex">
               <figure class="theme-img  animate-in delay-1">
                 <img src="img/placeholders/images-daughter-dad.webp" alt="Brooke conducts a meeting with a businessman and both are engaged in conversation">
                </figure>
               <figure class="theme-img image-background bkg-left">
                  <img src="img/placeholders/images-flower-field.webp" alt="close up of a hand with a pen and notepad">
               </figure>
-          </div>
       </div>
       <div class="wp-block-column animate-in delay-2">
-       
-        <h1>Serving you and yours <em>together</em> </h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-          amet excepturi iste deserunt aliquid em essoluta?  <strong>How help we service you?</strong></p>
+        <h1>Here When You Need Us <em>most</em></h1>
+        <p>At Cedar Memorial, we help you honor your loved one’s life with dignity and care. <br>  <strong>Expect everything for your family.</strong></p>
 
            <div class="wp-block-buttons">
             <div class="wp-block-button">
               <a class="wp-block-button__link wp-element-button"
-                href="#">Planning Ahead</a>
+                href="#">Start Planning Today</a>
             </div>
             <div class="wp-block-button is-style-btn-secondary">
               <a class="wp-block-button__link wp-element-button"
-                href="#">Flowers and More</a>
+                href="#">View Obituaries</a>
             </div>
         </div>
 
@@ -202,28 +210,28 @@
 
       <div
         class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+
         <div class="wp-block-column">
-          <figure class="theme-img text-image">
+          <h2>Pre-Planning Services</h2>
+          <p class="is-style-lead">Preplanning your funeral lifts the burden from your family and secures your wishes.</p>
+          <p>By preplanning your funeral or memorial, you take the pressure off your family and allow your wishes to be documented. Let our experienced and certified counselors guide you through the process, or get started with our free Preplanning Organizer. 
+          </p>
+          <div class="wp-block-buttons">
+            <div class="wp-block-button">
+              <a class="wp-block-button__link wp-element-button"
+                href="#">Learn More</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="wp-block-column">
+          <figure class="theme-img text-image text-left">
             <img src="img/placeholders/images-mom-daughter-tall.webp" />
             <figcaption>
               <figure><img src="img/shapes/quote-marks-color.svg"></figure>
               <h4><em>Guiding you through the challenges and uncertainties during this difficult time.</em></h4>
             </figcaption>
           </figure>
-        </div>
-        <div class="wp-block-column">
-          <p class="is-style-eyebrow">Subtitle nueve levan</p>
-          <h2>Sample Lorem<br>
-            <em>right</em> HERE.</h2>
-          <p class="is-style-lead">Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-          <p><strong>Bold Type Print Here</strong>Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, en the diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua.
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          </p>
-
         </div>
       </div>
 
@@ -233,24 +241,50 @@
         <img class="wp-block-cover__image-background"
           src="img/placeholders/flower-bg.webp">
         <div class="wp-block-cover__inner-container animate-in visible">
-          <p class="is-style-eyebrow has-text-align-center ">We Are Here For You</p>
-          <h2 class="has-text-align-center">Compassionate Care</h2>
+          <p class="is-style-eyebrow has-text-align-center ">Cedar Memorial</p>
+          <h2 class="has-text-align-center">Our Memorial Services</h2>
           <p class="has-text-align-center is-style-max-width">
-            We are dedicated to providing compassionate and personalized services, thoughtfully designed to honor and celebrate the lives of your loved ones with care and respect.
+            From traditional funeral services that embrace time-honored customs to innovative cremation services tailored to your family’s wishes, we are here to help you create meaningful moments and find comfort. Trust in our three generations of expertise and local service. 
           </p>
-          <!--------------------------------- Service CARDS  ---------------------------------------->
-          <div class="theme-cards large animate-in visible">
+          <!------------------------------ Service CARDS ----------------------------------->
+          <div class="theme-cards medium animate-in visible">
+
             <div class="card icon-card">
               <figure>
                 <img decoding="async" src="img/icons/icons-bouque.webp" alt="Icon Grant Writing">
               </figure>
               <div class="content">
                 <h3 class="wp-block-heading">Flowers and More</h3>
-                <p>Explore our flower arrangements and plants, thoughtfully designed for any occasion.</p>
                 <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
                   <div class="wp-block-button"><a
                       class="wp-block-button__link wp-element-button"
-                      href="#">Order Now</a></div>
+                      href="#">Learn More</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="card icon-card">
+              <figure>
+                <img decoding="async" src="img/icons/icons-notes.webp" alt="Icon Grant Writing">
+              </figure>
+              <div class="content">
+                <h3 class="wp-block-heading">Memorial Options</h3>
+                <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+                  <div class="wp-block-button"><a
+                      class="wp-block-button__link wp-element-button"
+                      href="#">View Options</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="card icon-card">
+              <figure>
+                <img decoding="async" src="img/icons/icons-dove.webp" alt="Icon Grant Writing">
+              </figure>
+              <div class="content">
+                <h3 class="wp-block-heading">Our Facilities</h3>
+                <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+                  <div class="wp-block-button"><a
+                      class="wp-block-button__link wp-element-button"
+                      href="#">See Facilities</a></div>
                 </div>
             </div>
             </div>
@@ -259,26 +293,11 @@
                 <img decoding="async" src="img/icons/icons-photo.webp" alt="Icon Grant Writing">
               </figure>
               <div class="content">
-                <h3 class="wp-block-heading">Find Obituaries</h3>
-                <p>Find and search obituaries on our website to honor and remember loved ones.</p>
+                <h3 class="wp-block-heading">Our Staff</h3>
                 <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
                   <div class="wp-block-button"><a
                       class="wp-block-button__link wp-element-button"
-                      href="#">Find Obituary</a></div>
-                </div>
-            </div>
-            </div>
-            <div class="card icon-card">
-              <figure>
-                <img decoding="async" src="img/icons/icons-certificate.webp" alt="Icon Grant Writing">
-              </figure>
-              <div class="content">
-                <h3 class="wp-block-heading">Planning Ahead</h3>
-                <p>Preplanning helps to ease the burden of financial decisions through difficult times.</p>
-                <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                  <div class="wp-block-button"><a
-                      class="wp-block-button__link wp-element-button"
-                      href="#">Learn More</a></div>
+                      href="#">The Staff</a></div>
                 </div>
             </div>
             </div>
@@ -364,8 +383,8 @@ autoplay: {
         <div
           class="wp-block-columns is-layout-flex are-vertically-aligned-center">
           <div class="wp-block-column animate-in visible">
-            <p class="is-style-eyebrow has-text-align-center">Resources and Stories</p>
-            <h2 class="has-text-align-center">Our Latest Stories </h2>
+            <p class="is-style-eyebrow has-text-align-center">Get the Latest</p>
+            <h2 class="has-text-align-center">News & Announcements </h2>
           </div>
         </div>
       </div>
@@ -410,6 +429,59 @@ autoplay: {
         </div>
       </div>
     </div>
+
+
+
+    
+<!----------------- EVENTS ------------------>
+  <div class="wp-block-group alignfull is-style-bkg-right">
+    <div class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
+      <div class="wp-block-column">
+          <figure class="theme-img">
+            <img src="img/placeholders/placeholder-9.jpg" />
+          </figure>
+      </div>
+      <div class="wp-block-column">
+        <h2>Our Programs & Events</h2>
+        <p>We hope you'll join us soon for our special programming and community events in Cedar Rapids. </p>
+
+        <div class="wp-block-buttons">
+          <div class="wp-block-button">
+            <a class="wp-block-button__link wp-element-button"
+              href="#">See All Events</a>
+          </div>
+      </div>
+
+        <div class="card card-horizontal">
+          <div class="content">
+            <div class="text">
+              <p class="date">December 28th, 2024<br>
+                Location Of Event Goes Here</p>
+              <h3><a href>Event Title Lorem Ipsum Never Leam Into The Next</a></h3>
+              <div class="wp-block-buttons is-style-btn-text is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Read More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-horizontal">
+          <div class="content">
+            <div class="text">
+              <p class="date">December 28th, 2024<br>
+                Location Of Event Goes Here</p>
+              <h3><a href>Event Title Lorem Ipsum Never Leam Into The Next</a></h3>
+              <div class="wp-block-buttons is-style-btn-text is-layout-flex">
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Read More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
   </main>
 
@@ -458,7 +530,7 @@ autoplay: {
           <h3>Cedar Memorial Westside Chapel</h3>
             <p>1221 First Avenue SW<br>
               Cedar Rapids IA 52405</p>
-            <p><a href="#.html">(319) 362-1135</a><br>
+            <p><a href="tel:+13193621135">(319) 362-1135</a><br>
              <p><strong><a href="#.html">Get Directions</a></strong></p>
         </div>
         <div class="col">
@@ -466,16 +538,16 @@ autoplay: {
           <p><em>Chapel of Memories, Mausoleum, Family Center and Library, Cremation Center, and Flower Shop</em></p>
             <p>4200 First Avenue NE<br>
               Cedar Rapids IA 52402</p>
-            <p><a href="#.html">(319) 393-8000</a><br>
-             <a href="#.html">(800) 275-23320</a></p>
+            <p><a href="tel:+1319393-8000">(319) 393-8000</a><br>
+             <a href="tel:+131927523320">(800) 275-23320</a></p>
              <p><strong><a href="#.html">Get Directions</a></strong></p>
         </div>
         <div class="col">
           <h3>Cedar Memorial Flower Shop</h3>
             <p>4361 1st Avenue SE<br>
               Cedar Rapids IA 52402</p>
-            <p><a href="#.html">(319) 393-8004</a><br>
-             <a href="#.html">(877) 638-2622</a></p>
+            <p><a href="tel:+13193938004">(319) 393-8004</a><br>
+             <a href="tel:+18776382622">(877) 638-2622</a></p>
              <p><strong><a href="#.html">Get Directions</a></strong></p>
         </div>
 
