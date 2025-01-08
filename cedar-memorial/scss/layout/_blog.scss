@@ -11,13 +11,13 @@
 .blog-list-item figure img{width:100%;border-radius:6px;object-fit:cover;max-height:420px;}
 
 
-#pagination {font-size: 1rem; justify-content: center; display: flex; margin: 2rem 0 0 0;}
-#pagination li:before {display: none;}
-#pagination a {color: var(--primary);}
-#pagination .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-}
+#pagination{display:flex;justify-content:center;margin:1rem 0;}
+#pagination .nav-links{display:flex;gap:8px;}
+#pagination .page-numbers{transition:var(--transition);font-size:1.25rem;padding:0.5rem 1rem;border-radius:4px;background-color:var(--tan);color:var(--primary);text-decoration:none;display:inline-block;}
+#pagination .page-numbers.current{background-color:var(--primary);color:var(--tan);}
+#pagination .page-numbers:hover{background-color:var(--primary-dark);color:#fff;}
+#pagination .next,#pagination .prev{padding:0.5rem 1rem;border-radius:4px;font-size:1.25rem;}
+
 
 .blog-hdr {text-align: center; padding: var(--spacer-vert) 0; margin: 0px 0 var(--spacer-vert) 0; border-bottom: 1px solid #ccc;}
 .blog-hdr h1 {margin: 1rem 0 2rem 0;}

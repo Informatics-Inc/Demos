@@ -58,7 +58,7 @@
 /* Dropdown */
 #menu .btn-expand {display: none;}
 #menu ul li {position: relative;margin-bottom:0}
-#menu ul ul{position:absolute;flex-direction:column;background:#fff;box-shadow:var(--box-shadow-lg);width:250px;padding:1rem;left:calc(50% - 125px);top:105%;transition:var(--transition);opacity:0;visibility:hidden;border-radius:6px;border:solid var(--bkg) 12px;}
+#menu ul ul{position:absolute;flex-direction:column;background:#fff;box-shadow:var(--box-shadow-lg);width:250px;padding:1rem;left:calc(50% - 125px);top:105%;transition:var(--transition);opacity:0;visibility:hidden;border-radius:6px;border:solid #EAEAEA 12px;}
 #menu ul ul a {font-weight: 400; padding: 10px;border-bottom:dotted 1px #444}
 #menu li:hover ul {opacity: 1; visibility: visible; top: 100%;}
 #menu ul ul li:last-of-type a{border-bottom:none}
