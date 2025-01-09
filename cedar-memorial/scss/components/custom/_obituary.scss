@@ -30,14 +30,13 @@
 .is-style-btn-special .wp-block-button__link{padding:15px;border-radius:0;color:var(--dark);background:#ddddd4 url(../img/shapes/pattern.svg) repeat;right:0px;bottom:0px;content:"";background-size:200px;}
 .is-style-btn-special .wp-block-button__link:hover{background:var(--primary) url(../img/shapes/pattern.svg) repeat;background-size:200px;;color:var(--light)}
 .obit-listing .date{letter-spacing: 1px;}
-.obituary-search-form{display:flex;flex-wrap:wrap;gap:16px;background:var(--tan);padding:25px;margin-top:50px}
+.obituary-search-form{display:flex;flex-wrap:wrap;gap:16px;background:var(--tan);padding:25px;}
 .obituary-search-form .wp-block-buttons{margin:20px 0 0 0;align-content:end;}
 .search-field{flex:1;min-width:220px;}
 .search-field label{display:block;margin-bottom:8px;font-weight:bold;}
 .search-field input,.search-field select{width:100%;padding:8px;font-size:1rem;border:1px solid #ccc;border-radius:4px;}
 @media (max-width:768px){.search-field{flex:1 1 50%;}
 }
-
 
 /* WIDE DESKTOP */
 @media (min-width:992px){
