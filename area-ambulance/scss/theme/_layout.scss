@@ -29,6 +29,7 @@
 .wp-block-group.alignfull {max-width: 100%;}
 .wp-block-group + .footer {margin-top: calc(var(--spacer-vert) * -1);}
 
+.wp-block-cover .wp-block-cover__inner-container .wp-block-columns {margin-top: 0; margin-bottom: 0;}
 @media (min-width: 768px) {
 .wp-block-image .alignleft {float:left; margin: 0 2rem 2rem 0;}
 .wp-block-image .alignright {float:right; margin: 0 0 2rem 2rem;}

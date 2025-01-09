@@ -89,7 +89,7 @@ img:nth-of-type(2){ animation: hover-up-down 6s ease-in-out infinite; width:160p
  img:nth-of-type(1){border-radius:100px 12px 12px 12px;margin-bottom:40px}
  img:nth-of-type(2){border-radius:12px 12px 100px 12px;margin-top:40px}
  }
-
+ .theme-img.two-images img {aspect-ratio: 1 / 1.65;}
 /* TABLET */
 @media (min-width: 768px) {
 .theme-img.text-image{padding-bottom:40px;padding-right:40px}

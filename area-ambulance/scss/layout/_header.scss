@@ -25,7 +25,7 @@
 #menu-toggle .closed {opacity: 0; visibility: hidden; top: 5px;}
 
 /* Menu Collapse */
-#menu .btn-expand {position: absolute; right: 0; top: 0; height: auto; border: none; background: none; color: var(--primary); padding: 1rem;}
+#menu .btn-expand {position: absolute; right: 0; top: 0; height: auto; border: none; background: none; color: var(--primary); padding: 1.3rem 1rem;}
 .collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
 .show {height: auto;}
 
@@ -34,7 +34,7 @@
 #menu ul a:hover, #menu ul a:focus {background: #f3f3f3;color:var(--accent-1);padding-left:30px}
 #menu ul li ul li a:hover{color:var(--accent-1);padding-left:40px}
 #menu li {position: relative;}
-#menu ul ul a {border: none; padding: 10px 20px 10px 30px; font-weight: 700;}
+#menu ul ul a {border: none; padding: 10px 20px 10px 30px;}
 #menu ul ul li{border-top:dotted 2px #ccc;}
 
 #menu .wp-block-button__link {margin: 1rem 0;padding:1rem}
@@ -72,7 +72,7 @@
 
 // #hdr-site.scroll {}
 #hdr-site.scroll #logo {
-    width: 180px; /* Shrinks the logo when scrolled */
+    width: 150px; /* Shrinks the logo when scrolled */
     transition: width 0.3s ease; /* Smooth transition */
 }
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Informatics, Inc" />
-    <title>Landing</title>
+    <title>About Us</title>
 
     <!-- FONTS -->
     <link href="css/icons.min.css" rel="stylesheet" />
@@ -70,7 +70,7 @@
           <!-- MAIN NAVIGATION -->
           <nav id="menu" class="collapsed">
             <ul>
-              <li><a href="about-us.html">About Us</a></li>
+              <li class="current-menu-item"><a href="about-us.html">About Us</a></li>
               <li>
                 <a href="how-we-work.html">How We Work</i></a>
               <button
@@ -84,7 +84,7 @@
               </ul>
             </li>
             <li>
-              <a href="EMT-training.html">EMT Training</a>
+              <a href="EMS-training.html">EMS Training</a>
               <button
                 class="btn-expand collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#menu-2"
@@ -124,8 +124,7 @@
 
 
      <!--------------------------------- Top Section --------------------------------->
-     <div
-     class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+     <div class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
      <div class="wp-block-column">
        <figure class="animate-in delay-2 theme-img two-images">
          <img
@@ -136,23 +135,23 @@
      </div>
      <div class="wp-block-column animate-in delay-1">
        <h2>Proudly Serving Linn County Since 1971</h2>
-       <p class="is-style-lead">Area Ambulance Service (AAS) is the regional 9-1-1 Emergency Medical Services provider for Cedar Rapids, Marion and 15 surrounding communities.</p>
+       <p class="is-style-lead">Area Ambulance Service (AAS) is the regional 9-1-1 Emergency Medical Services provider for Cedar Rapids, Marion and 15 surrounding communities.  </p>
        <p>AAS is a community based, not-for-profit organization governed by a board including representatives from St. Luke’s Unity Point Hospital, Mercy Medical Center, the City of Cedar Rapids, the City of Marion, and Linn County. The service is funded solely by user fees, and receives no tax subsidy or funding from any other source. </p>
 
-       <div class="stats-block">
-         <div class="col">
-           <h4><span class="counter" data-target="20">75</span></h4>
-           <p>Staff Medics</p>
-         </div>
-         <div class="col">
-           <h4><span class="counter" data-target="50">250</span></h4>
-           <p>Square Miles Covered</p>
-         </div>
-         <div class="col">
-           <h4><span class="counter" data-target="986">50</span> +</h4>
-           <p>Years of Service</p>
-         </div>
-       </div>
+         <div class="stats-block">
+          <div class="col">
+            <h4><span class="counter" data-target="75">75</span></h4>
+            <p>Staff Medics</p>
+          </div>
+          <div class="col">
+            <h4><span class="counter" data-target="250">250</span></h4>
+            <p>Square Miles Covered</p>
+          </div>
+          <div class="col">
+            <h4><span class="counter" data-target="50">50</span> +</h4>
+            <p>Years of Service</p>
+          </div>
+        </div>
        <script>
 document.addEventListener('DOMContentLoaded', () => {
 const counters = document.querySelectorAll('.counter');
@@ -167,7 +166,7 @@ const counterObserver = new IntersectionObserver(
          const target = +counter.getAttribute('data-target'); // Get target number
          const current = +counter.innerText; // Get current number
          
-         const increment = Math.ceil(target / 100); // Set increment value
+         const increment = Math.ceil(target / 20); // Set increment value
 
          if (current < target) {
            counter.innerText = current + increment; // Increment counter
@@ -204,11 +203,8 @@ counters.forEach(counter => counterObserver.observe(counter)); // Observe each c
     <img class="wp-block-cover__image-background"
       src="img/images/image-bg-2.webp">
     <div class="wp-block-cover__inner-container">
-      <h2 class="has-text-align-center"> Our Sample Title</h2>
-      <p class="has-text-align-center is-style-max-width">Lorem, ipsum dolor
-        sit amet consectetur adipisicing elit. A harum repudiandae,
-        temporibus nemo eaque eos ipsum odit aspernatur modi eius excepturi
-        nobis vitae mollitia commodi labore iste aut rem praesentium!</p>
+      <h2 class="has-text-align-center"> Services We Provide</h2>
+      <p class="has-text-align-center is-style-max-width">Area Ambulance Service is proud to offer a range of transport services and on-site care to Linn County. From emergencies to planned events, our team delivers exceptional care with speed and professionalism. </p>
 
       <div class="theme-cards large">
         <div class="card icon-card">
@@ -216,11 +212,11 @@ counters.forEach(counter => counterObserver.observe(counter)); // Observe each c
             <img decoding="async" src="img/icons/icons-heart.png" alt="Icon Grant Writing">
           </figure>
           <div class="content">
-            <h3 class="wp-block-heading">Insights Title Two Lines Going Right Here</h3>
-            <p>Lorem ipsum  consectetur adipiscing elit, abore et dolore magna aliqabore et dolore magna aliqabore et dolore magna aliqabore et dolore ma veniam</p>
+            <h3 class="wp-block-heading">Emergency Ambulance Service </h3>
+            <p>When seconds matter, our Advanced Life Support ambulances and expert paramedics respond quickly to 9-1-1 calls in Cedar Rapids, Marion, and beyond. Expect skilled pre-hospital care, arriving fast. </p>
           <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
             <div class="wp-block-button is-style-btn-text">
-              <a class="wp-block-button__link wp-element-button" href="">Read More</a>
+              <a class="wp-block-button__link wp-element-button" href="how-we-work.html">Read More</a>
             </div>
           </div>
         </div>
@@ -230,11 +226,11 @@ counters.forEach(counter => counterObserver.observe(counter)); // Observe each c
             <img decoding="async" src="img/icons/icons-ambulance.png" alt="Icon Grant Writing">
           </figure>
           <div class="content">
-            <h3 class="wp-block-heading">Insights Title Two Lines Going Right Here</h3>
-            <p>Lorem ipsmagna aliqab magna aliqsed do eiusmod tempor iscing elit, sed do eiusmod tempor incididunt ut laborut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <h3 class="wp-block-heading">Hospital & Medical Transfers </h3>
+            <p>We are the region’s trusted choice for inter-hospital and facility transfers, as well as for transportation to state medical facilities in Central Iowa. Our fleet of ambulances and rapid response SUVs allow us to serve without compromising local readiness. </p>
           <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
             <div class="wp-block-button is-style-btn-text">
-              <a class="wp-block-button__link wp-element-button" href="">Read More</a>
+              <a class="wp-block-button__link wp-element-button" href="how-we-work.html">Read More</a>
             </div>
           </div>
         </div>
@@ -244,11 +240,11 @@ counters.forEach(counter => counterObserver.observe(counter)); // Observe each c
             <img decoding="async" src="img/icons/icons-bed.png" alt="Icon Grant Writing">
           </figure>
           <div class="content">
-            <h3 class="wp-block-heading">Insights Title Two Lines Going Right Here</h3>
-            <p>Lorem ore et dolore magna aliqabore et dolore magna aliqse incididunt ut laborut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <h3 class="wp-block-heading">On-Call Event Service </h3>
+            <p>From Corridor festivals to sporting events, our paramedics and EMSs stand ready to serve. Linn County can request on-call service at no cost, as part of our salute to their work. </p>
           <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
             <div class="wp-block-button is-style-btn-text">
-              <a class="wp-block-button__link wp-element-button" href="">Read More</a>
+              <a class="wp-block-button__link wp-element-button" href="how-we-work.html">Read More</a>
             </div>
           </div>
         </div>
@@ -258,83 +254,133 @@ counters.forEach(counter => counterObserver.observe(counter)); // Observe each c
 
   </div>
 
-
-
-
-
       <!------------------------------------- Bottom Content ------------------------------------->
       <div class="wp-block-columns is-layout-flex">
         <div class="wp-block-column">
-          <h2 class="wp-block-heading">Title About The Area Ambulance</h2>
-          <p class="is-style-default">f you're looking to build a fulfilling
-            and
-            rewarding career with opportunities for growth and development,
-            we’d
-            love to connect and explore how you can be a part of our team.</p>
-          <div
-            class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-            <div class="wp-block-button"><a
-                class="wp-block-button__link wp-element-button"
-                href>Say Hello</a></div>
+          <h2 class="wp-block-heading">The Communities We Serve</h2>
+          <p class="is-style-default">We serve <strong>all of Linn County and beyond</strong> from our home base in southwest Cedar Rapids, with a new satellite facility coming to Marion in 2026. </p>
+          <p>We proudly serve the communities of <strong>Bertram</strong>, <strong>Cedar Rapids</strong>, <strong>Ely</strong>, <strong>Fairfax</strong>, <strong>Marion</strong>, <strong>Robins</strong>, <strong>Springville</strong>, and <strong>Walford</strong>.</p>
+          <figure class="animate-in delay-2 theme-img">
+            <img src="img/images/coverage-map.png" />
+          </figure>
+        </div>
+        
+        <div class="wp-block-column">
+            <h2>What Drives Us</h2>
+            <div class="card icon-card icon-card-horizontal">
+              <div class="content">
+                <figure>
+                  <img
+                    src="img/icons/icons-med-hands.png"
+                    alt="Icon Research" />
+                </figure>
+                <div class="text">
+                  <h3 class="wp-block-heading">Mission</h3>
+                  <p>Striving to make a significant impact on the community we serve, providing exceptional care to every patient, every time.</p>
+                </div>
+              </div>
+            </div>
+          <div class="card icon-card icon-card-horizontal">
+            <div class="content">
+              <figure>
+                <img
+                  src="img/icons/icons-siren-round.png"
+                  alt="Icon Research" />
+              </figure>
+              <div class="text">
+                <h3 class="wp-block-heading">Vision</h3>
+                <p>Area Ambulance Service is determined to become the high performance regional emergency medical services provider of choice. </p>
+              </div>
+            </div>
           </div>
+          <div class="card icon-card icon-card-horizontal">
+            <div class="content">
+              <figure>
+                <img
+                  src="img/icons/icons-heart.png"
+                  alt="Icon Research" />
+              </figure>
+              <div class="text">
+                <h3 class="wp-block-heading">Values</h3>
+                <p>We are guided by <strong>Honesty & Trust</strong>, <strong>Leadership & Loyalty</strong>, <strong>Integrity & Honor</strong>, <strong>Compassion & Empathy</strong>, <strong>Service & Sacrifice</strong>, and the joy of <strong>Celebration</strong>.</p>
+              </div>
+            </div>
           </div>
-          
-<div class="wp-block-column">
-  <div class="card icon-card icon-card-horizontal">
-    <div class="content">
-      <figure>
-        <img
-          src="img/icons/icons-emergency-time.png"
-          alt="Icon Research" />
-      </figure>
-      <div class="text">
-        <h3 class="wp-block-heading">
-          Basic Title Here</h3>
-        <p>
-        Discover our cutting-edge training center,explore student FAQs,scheduling information,forms,and more.tting-edtting-ed
-        </p>
+        </div>
+        <!-- theme cards -->
+      </div><!-- wp-block-columns -->
+
+      
+      <div class="wp-block-cover">
+        <span class="wp-block-cover__background"></span>
+        <img class="wp-block-cover__image-background"
+          src="img/images/image-bg-2.webp">
+        <div class="wp-block-cover__inner-container">
+          <h2 class="has-text-align-center"> Our Leadership Team</h2>
+          <div class="theme-cards medium has-text-align-center">
+
+            <div class="card icon-card">
+              <div class="content">
+                <h3 class="wp-block-heading">Keith Rippy</h3>
+                <p>President + CEO <br /><a href="#.html">first.last@email.com</a></p>
+              </div>
+            </div>
+            <div class="card icon-card">
+              <div class="content">
+                <h3 class="wp-block-heading">Jen Peden</h3>
+                <p>Vice President + COO <br /><a href="#.html">first.last@email.com</a></p>
+              </div>
+            </div>
+            <div class="card icon-card">
+              <div class="content">
+                <h3 class="wp-block-heading">Amber</h3>
+                <p>Director of Operations <br /><a href="#.html">first.last@email.com</a></p>
+              </div>
+            </div>
+            <div class="card icon-card">
+              <div class="content">
+                <h3 class="wp-block-heading">Tanner Wilson</h3>
+                <p>Quality Assurance, Compliance, and Training/Education Manager <br /><a href="#.html">first.last@email.com</a></p>
+              </div>
+            </div>
+            <div class="card icon-card">
+              <div class="content">
+                <h3 class="wp-block-heading">Doug</h3>
+                <p>Equipment & IT <br /><a href="#.html">first.last@email.com</a></p>
+              </div>
+            </div>
+            <div class="card icon-card">
+              <div class="content">
+                <h3 class="wp-block-heading">Terran</h3>
+                <p>AAS Training Directo <br /><a href="#.html">first.last@email.com</a></p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+    
+      </div>
+
+      <div class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+        <div class="wp-block-column">
+          <figure class="animate-in delay-2 theme-img two-images">
+            <img
+            src="img/images/image-main.webp" />
+            <img
+              src="img/images/image-secondary.webp" />
+          </figure>
+        </div>
+      <div class="wp-block-column">
+        <h2>Financial Assistance</h2>
+        <p>Area Ambulance Service has an established charitable financial assistance program. This program is calculated on a sliding scale based upon family size and annual income. Qualified applicants may receive 10%-100% reduction in their ambulance bill.</p>
+        <p><strong>To learn more about this program and apply, visit the AAS forms hub. </strong></p>
         <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+          <div class="wp-block-button">
+            <a class="wp-block-button__link wp-element-button" href="forms.html">AAS Forms Hub</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-<div class="card icon-card icon-card-horizontal">
-  <div class="content">
-    <figure>
-      <img
-        src="img/icons/icons-fireout.png"
-        alt="Icon Research" />
-    </figure>
-    <div class="text">
-      <h3 class="wp-block-heading">
-        List Title Here</h3>
-      <p>
- Discover our cutting-edge training center,explore FAQs,schQs,scheduling Qs,scheduling Qs,scheduling Qs,scheduling Qs,scheduling Qs,scheduling eduling information,forms,and more.tting-edtting-ed
-      </p>
-    </div>
-  </div>
-</div>
-<div class="card icon-card icon-card-horizontal">
-  <div class="content">
-    <figure>
-      <img
-        src="img/icons/icons-finger-press.png"
-        alt="Icon Research" />
-    </figure>
-    <div class="text">
-      <h3 class="wp-block-heading">
-        Another Title Here</h3>
-      <p>
- Discover our cutting-edge training center,explore studentiscover our cutting-edge training center,explore student FAQs,scheduling iniscover our cutting-edge training center,explore student FAQs,scheduling in FAQs,scheduling information,forms,and more.tting-edtting-ed
-      </p>
-    </div>
-  </div>
-</div>
-</div><!-- theme cards -->
-</div><!-- wp-block-column -->
-</div><!-- wp-block-columns -->
-
-
   </main>
 
 
@@ -378,7 +424,7 @@ counters.forEach(counter => counterObserver.observe(counter)); // Observe each c
               <ul>
                 <li><a href="#.html">About Us</a></li>
                 <li><a href="#.html">How We Work</a></li>
-                <li><a href="#.html">EMT Training</a></li>
+                <li><a href="#.html">EMS Training</a></li>
                 <li><a href="#.html">Work With Us</a></li>
                 <li><a href="#.html">Contact Us</a></li>
               </ul>
