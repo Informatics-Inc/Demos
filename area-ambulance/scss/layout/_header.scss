@@ -80,7 +80,7 @@
 
 /* Wordpress Nav Active State */
 #menu ul .current-page-ancestor > a,
-#menu ul .current-menu-item a {
+#menu ul .current-menu-item > a {
     font-weight: 700;
     color: var(--primary);
 }
