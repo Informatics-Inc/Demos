@@ -1,0 +1,25 @@
+/* Accordian */
+.accordion-collapse.collapsed {height: 0;overflow: hidden;transition: height 0.4s ease;}
+.accordion-collapse.show {height: auto;transition:var(--transition); }
+.accordion-item.collapsed{background:var(--primary);margin-bottom:10px;border-radius:6px;transition:var(--transition);}
+.accordion-item{background:var(--light);margin-bottom:10px;border-radius:6px}
+
+.accordion-item h3 {transition:0.4s ease; letter-spacing:0;line-height:1.2; font-weight: 700;font-size: 1.35rem;padding: 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.2); margin: 0;border-radius:6px 6px 0 0}
+.accordion-item .accordion-body {color:var(--text-color-inverse);background: var(--primary-dark); padding: 2rem; border-bottom: 12px solid var(--gray-dark);border-radius:0px 0px 6px 6px}
+.accordion-item:last-of-type h3 {border-bottom: none;}
+
+.accordion-item h3 .fa {color: var(--primary); font-size: 20px;transform: rotate(90deg); transition: var(--transition);}
+.accordion-item h3:hover {cursor: pointer;}
+.accordion-item .accordion-body p:last-of-type {margin: 0;} 
+.accordion-item h3.collapsed .fa {transform: rotate(0deg);}
+h3.collapsed{height:auto;}
+
+.accordion-item .fa-chevron-circle-down::before{content:"\f061";font-family:FontAwesome;position:relative;display:inline-block;font-size:0.9rem;line-height:1;}
+.accordion-item .fa-chevron-circle-down{display:inline-flex;justify-content:center;align-items:center;border:1px solid currentColor;border-radius:50%;width:2em;height:2em;padding:0;}
+.accordion-item .fa{background:#fff}
+.accordion-item .collapsed .fa{background:none}
+
+.accordion-item h3:not(.collapsed) {
+    background: var(--primary-dark); color:var(--light);
+}
+

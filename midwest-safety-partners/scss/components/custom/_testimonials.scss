@@ -1,0 +1,18 @@
+.testimonial-slider{max-width:900px;margin:0 auto;position:relative;margin-top:75px}
+.testimonial-item{text-align:center;padding:20px 50px 50px 50px;}
+.quote-icon{display:flex;justify-content:center;align-items:center;width:100px;height:100px;margin:0 auto 15px;background-image:url('../img/shapes/speech-bubble.svg');background-size:cover;background-position:center;background-repeat:no-repeat;}
+.testimonial-text{font-size:1.75rem;line-height:2rem;margin-bottom:15px;font-family:var(--accent-text)}
+.testimonial-name{font-weight:bold;}
+.swiper-pagination{margin-top:15px;}
+.swiper-button-next,.swiper-button-prev{color:var(--primary-dark)!important}
+.swiper-button-next::after,.swiper-button-prev::after{font-size:2rem!important;margin-top: 0px!important;}
+
+/* TABLET */
+@media (min-width:768px){
+.swiper-button-next::after,.swiper-button-prev::after{margin-top: 20px!important;}
+.testimonial-item{text-align:center;padding:20px 100px 50px 100px;}
+}
+
+
+
+

@@ -1,0 +1,71 @@
+.theme-cards{max-width:var(--max-width);margin:var(--spacer-vert) auto;display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;position:relative;z-index:5;}
+.theme-cards.small .card{flex:180px 0 1;}
+.theme-cards.medium .card{flex:250px 0 1;}
+.theme-cards.large .card{flex:320px 0 1;}
+.theme-cards.tall-image figure{aspect-ratio:1 / 1.5;}
+.theme-cards.overlap-top-element{margin-top:-90px;margin-bottom:0px}
+.theme-cards.flex-grow .card{flex-grow:1 !important;}
+
+.stacked-cards{flex-wrap:wrap;gap:2rem;}
+
+/* Buttons Cards */
+.card .is-style-btn-text .wp-block-button__link{padding:0 0;}
+.card{.is-style-btn-text{padding:25px 30px;transition:var(--transition);}
+.is-style-btn-text .wp-block-button__link{margin-top:-20px;position:relative;text-align:left;}
+.is-style-btn-text .wp-block-button__link::before{content:none;}
+.is-style-btn-text::before{transition:var(--transition);content:"";display:block;width:70px;height:70px;background:var(--accent-1) url("../img/shapes/thin-arrow.svg");position:absolute;right:0;bottom:0;border-radius:45px 0 0 0;background-position:center center;background-repeat:no-repeat;background-size:20px;}
+}
+.card:hover{box-shadow:var(--box-shadow-lg);.is-style-btn-text .wp-block-button__link:hover{color:var(--primary-dark);}
+.is-style-btn-text::before{content:"";display:block;width:70px;height:70px;background:var(--primary-dark) url("../img/shapes/thin-arrow.svg");;position:absolute;right:0;bottom:0;border-radius:45px 0 0 0;background-position:center center;background-repeat:no-repeat;background-size:20px;}
+}
+.card {transition:var(--transition);position: relative; box-shadow: 0 10px 25px rgba(0,0,0,.1);border-radius: var(--border-radius-sm); overflow: hidden; background: #fff;display: flex;flex-direction:column;height:auto;}
+.card figure {overflow: hidden; margin: 0; aspect-ratio: 1.25 / 1;}
+.card figure img {width: 100%; height: 100%; object-fit: cover;}
+.card .content {padding: 30px;display:flex;flex-direction:column;flex:1;}
+.card .content p:last-of-type {margin: 0;}
+
+/* Icon Cards */
+.card.icon-card h3,.card.icon-card p{transition:var(--transition)}
+.card.icon-card figure{overflow:hidden;margin:30px 30px 0 30px;aspect-ratio:1 / 1;width:90px;height:90px;border-radius:6px;background-color:#f8f8f8;display:flex;align-items:center;justify-content:center;padding:10px;}
+.card.icon-card figure img{width:calc(100% - 15px);height:calc(100% - 15px);object-fit:contain;transition:scale 0.3s ease;transition:var(--transition)}
+
+/* Horizontal Card (ICON CARDS) */
+.card.icon-card-horizontal{border-radius:0;background: none;box-shadow: none;overflow: visible;position: relative;padding:20px 0}
+.card.icon-card-horizontal:not(:last-child){border-bottom: 1px dotted #999;}
+.card.icon-card-horizontal:hover{background: none;box-shadow: none;}
+.card.icon-card-horizontal figure{background:#fff;flex-shrink:0;border:solid #ddd 1px;overflow:hidden;margin:0 0 0 0;aspect-ratio:1 / 1;width:75px;height:75px;border-radius:6px;background-color:none;display:flex;align-items:center;justify-content:center;padding:5px;margin-bottom:25px;}
+.card.icon-card-horizontal .content{display:flex;flex-direction:column;align-items:start;flex:1;padding:0px;}
+.card.icon-card-horizontal h3{font-size:1.35rem;font-weight:900;letter-spacing:0;line-height:1.2}
+.card.icon-card-horizontal p{font-size:0.95rem}
+.card.icon-card-horizontal:first-of-type{padding-top:5px}
+
+/* Horizontal Card (ICON CARDS) */
+.stacked-cards .card.icon-card-horizontal{border-bottom:0}
+.stacked-cards .icon-card-horizontal:first-of-type{padding-top:25px}
+.stacked-cards .card.icon-card-horizontal .content{flex-direction:column;}
+.stacked-cards .card.icon-card-horizontal{padding:20px}
+
+/* Hovers */
+.card h3 a{color:var(--text);text-decoration: none;}
+.card:hover h3 a{color:var(--primary)}
+.card figure img,.card.icon-card .icon-holder img{transition:var(--transition);transform:scale(1.1)}
+.card:hover figure img{transition:var(--transition);transform:scale(1)}
+
+/* TABLET */
+@media (min-width:768px){
+.card.icon-card-horizontal .content{flex-direction:row;gap:20px}
+.card-body{padding:30px}
+.card.icon-card-horizontal figure{width:65px;height:65px;margin-bottom:0;}
+}
+
+@media (min-width: 1200px) {
+.stacked-cards{display:flex;flex-wrap:wrap;gap:2rem;}
+.stacked-cards .card{flex:220px 0 1;}
+.stacked-cards .card.icon-card-horizontal{padding:0}
+
+}
+
+@media (max-width: 500px) {
+.stacked-cards .card.icon-card-horizontal{padding:20px 0px}
+
+}
