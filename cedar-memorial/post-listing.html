@@ -20,7 +20,7 @@
     </a>
 
     <header id="hdr-site">
-      
+
       <!-- HEADER TOP -->
       <div id="hdr-top">
         <div class="container">
@@ -35,21 +35,25 @@
               <li><a href="#.html">The Flower Shop</a></li>
               <li><a href="#.html">Careers</a></li>
               <li><a href="#.html">Contact Us</a></li>
-              <li style="cursor:pointer" onclick="openNav()"><i class="fa fa-search"></i> Search Site</li>
+              <li style="cursor:pointer" onclick="openNav()"><i
+                  class="fa fa-search"></i> Search Site</li>
               <!-- Fullscreen search overlay -->
               <div id="myNav" class="overlay">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <div class="overlay-content">
-                      <div id="logo">
-                          <img src="img/cedar-memorial-logo-mark.webp" alt="Logo" />
-                      </div>
-                      <div class="search-box">
-                          <input type="text" placeholder="Type A Search.." aria-label="Search"/>
-                          <button class="submit-search" type="button"> <i class="fa fa-search"></i></button>
-                      </div>
+                <a href="javascript:void(0)" class="closebtn"
+                  onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <div id="logo">
+                    <img src="img/cedar-memorial-logo-mark.webp" alt="Logo" />
                   </div>
+                  <div class="search-box">
+                    <input type="text" placeholder="Type A Search.."
+                      aria-label="Search" />
+                    <button class="submit-search" type="button"> <i
+                        class="fa fa-search"></i></button>
+                  </div>
+                </div>
               </div>
-              
+
               <script>
               function openNav() {
                 document.getElementById("myNav").classList.add("open");
@@ -62,14 +66,12 @@
           </div>
         </div>
       </div>
-      
-      
 
       <!-- LOGO AND MOBILE -->
       <div class="container">
         <div class="hdr-desktop">
           <div id="hdr-main">
-            <a href="#.html" id="logo">
+            <a href="/index.html" id="logo">
               <img src="img/cedar-memorial-logo-horizontal.svg" alt="Logo" />
             </a>
             <button id="menu-toggle" class="collapsed " type="button"
@@ -91,16 +93,17 @@
           <!-- MAIN NAVIGATION -->
           <nav id="menu" class="collapsed">
             <ul>
-              <li><a href="#.html">Obituaries</a>
+              <li><a href="/obituary-listing.html">Obituaries</a>
                 <button class="btn-expand collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#menu-1"
                   aria-expanded="false" aria-controls="menu-1"><i
                     class="fa fa-chevron-down"></i></button>
                 <ul id="menu-1" class="collapsed">
-                  <li><a href="#.html">Obituary Detail Pages</a></li>
+                  <li><a href="/obituary-detail.html">Obituary Detail
+                      Pages</a></li>
                 </ul>
               </li>
-              <li><a href="#.html">Tailored Services</a>
+              <li><a href="/who-we-are.html">Tailored Services</a>
                 <button class="btn-expand collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#menu-2"
                   aria-expanded="false" aria-controls="menu-2"><i
@@ -117,17 +120,18 @@
                   <li><a href="#.html">Flowers & More</a></li>
                 </ul>
               </li>
-              <li><a href="#.html">Planning Ahead</a>
+              <li><a href="/who-we-are.html">Planning Ahead</a>
                 <button class="btn-expand collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#menu-3"
                   aria-expanded="false" aria-controls="menu-3"><i
                     class="fa fa-chevron-down"></i></button>
                 <ul id="menu-3" class="collapsed">
-                  <li><a href="#.html">Preplanning Organizer</a></li>
+                  <li><a href="preplanning-organizer.html">Preplanning
+                      Organizer</a></li>
                   <li><a href="#.html">Counselors</a></li>
                 </ul>
               </li>
-              <li><a href="#.html">Our Commitment</a>
+              <li><a href="/who-we-are.html">Our Commitment</a>
                 <button class="btn-expand collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#menu-4"
                   aria-expanded="false" aria-controls="menu-4"><i
@@ -136,13 +140,13 @@
                   <li><a href="#.html">Grief & Healing</a></li>
                   <li><a href="#.html">History</a></li>
                   <li><a href="#.html">Community Support</a></li>
-                  <li><a href="#.html">News & Blog</a></li>
+                  <li><a href="/post-listing.html">News & Blog</a></li>
                   <li><a href="#.html">Our Associates</a></li>
                   <li><a href="#.html">Our Locations</a></li>
                 </ul>
               </li>
-              <li><a href="#.html">Events</a></li>
-            <span class="hidden-lg">
+              <li><a href="/who-we-are.html">Events</a></li>
+              <span class="hidden-lg">
                 <li><a href="#.html">Locate a Grave</a></li>
                 <li><a href="#.html">The Flower Shop</a></li>
                 <li><a href="#.html">Careers</a></li>
@@ -150,14 +154,14 @@
                 <li>
                   <li>
                     <form action="search.html" method="get" class="search-form">
-                        <div class="search-box">
-                            <input type="text" name="q" placeholder="Search">
-                            <i class="fa fa-search"></i>
-                        </div>
+                      <div class="search-box">
+                        <input type="text" name="q" placeholder="Search">
+                        <i class="fa fa-search"></i>
+                      </div>
                     </form>
+                  </li>
                 </li>
-              </li>
-            </span>
+              </span>
 
             </ul>
           </nav>
@@ -167,171 +171,203 @@
 
     <main id="content">
 
-
-    <section class="page-hdr">
-      <figure>
-        <img src="img/placeholders/page-header.webp" />
-      </figure>
-      <div class="content">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb-nav">
-            <li><a href="#.html">Home</a></li>
-            <li>Industry Insights</li>
-          </ol>
-        </nav>
-        <h1>Industry Insights</h1>
-      </div>
-    </section>
-
-    <div class="wp-block-columns is-layout-flex">
-      <div class="wp-block-column" style="flex-basis: 75%;">
-        <div class="blog-list-item">
-          <figure>
-            <img src="img/placeholders/placeholder-3.jpg" />
-          </figure>
-          <div class="text">
-            
-            <h2><a href="#.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h2>
-            <p class="date">January 12, 2023</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas mollitia sunt quam quis corporis voluptatibus iure! Fuga, magni dolorum?</p>
-            <div class="wp-block-buttons is-style-btn-text is-layout-flex">
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Read Article</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="blog-list-item">
-          <figure>
-            <img src="img/placeholders/placeholder-5.jpg" />
-          </figure>
-          <div class="text">
-            
-            <h2><a href="#.html">Lorem ipsum dolor sit amet adipisicing elit. Totam, beatae.</a></h2>
-            <p class="date">January 12, 2023</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas mollitia sunt quam quis corporis voluptatibus iure! Fuga, magni dolorum?</p>
-            <div class="wp-block-buttons is-style-btn-text is-layout-flex">
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Read Article</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="blog-list-item">
-          <figure>
-            <img src="img/placeholders/placeholder-1.jpg" />
-          </figure>
-          <div class="text">
-            <h2><a href="#.html">Lorem ipsum amet consectetur adipisicing elit. Totam, beatae.</a></h2>
-            <p class="date">January 12, 2023</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas mollitia sunt quam quis corporis voluptatibus iure! Fuga, magni dolorum?</p>
-            <div class="wp-block-buttons is-style-btn-text is-layout-flex">
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Read Article</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="wp-block-column">
-        <div class="sidebar box">
-          <h4>Categories</h4>
-          <nav class="sec-nav">
-            <ul>
-              <li><a href="#.html">People</a></li>
-              <li><a href="#.html">Places</a></li>
-              <li><a href="#.html">Events</a></li>
-              <li><a href="#.html">Projects</a></li>
-              <li><a href="#.html">Products</a></li>
-            </ul>
+      <section class="page-hdr">
+        <figure>
+          <img src="img/placeholders/page-header.webp" />
+        </figure>
+        <div class="content">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb-nav">
+              <li><a href="#.html">Home</a></li>
+              <li>News and Blog</li>
+            </ol>
           </nav>
+          <h1>News and Blog</h1>
         </div>
-        <div class="sidebar box">
-          <h4>Tags</h4>
-          <nav class="tag-list">
-            <ul>
-              <li><a href="#.html">Category #3</a></li>
-              <li><a href="#.html">Category #4</a></li>
-              <li><a href="#.html">Category #5</a></li>
-            </ul>
-          </nav>
+      </section>
+
+      <div class="wp-block-columns is-layout-flex">
+        <div class="wp-block-column" style="flex-basis: 75%;">
+          <div class="blog-list-item">
+            <figure>
+              <img src="img/placeholders/placeholder-3.jpg" />
+            </figure>
+            <div class="text">
+
+              <h2><a href="/post-detail.html">Lorem ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.</a></h2>
+              <p class="date">January 12, 2023</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae voluptas mollitia sunt quam quis corporis
+                voluptatibus iure! Fuga, magni dolorum?</p>
+              <div class="wp-block-buttons is-style-btn-text is-layout-flex">
+                <div class="wp-block-button"><a
+                    class="wp-block-button__link wp-element-button"
+                    href="/post-detail.html">Read Article</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-list-item">
+            <figure>
+              <img src="img/placeholders/placeholder-5.jpg" />
+            </figure>
+            <div class="text">
+
+              <h2><a href="/post-detail.html">Lorem ipsum dolor sit amet
+                  adipisicing elit.
+                  Totam, beatae.</a></h2>
+              <p class="date">January 12, 2023</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae voluptas mollitia sunt quam quis corporis
+                voluptatibus iure! Fuga, magni dolorum?</p>
+              <div class="wp-block-buttons is-style-btn-text is-layout-flex">
+                <div class="wp-block-button"><a
+                    class="wp-block-button__link wp-element-button"
+                    href="/post-detail.html">Read Article</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-list-item">
+            <figure>
+              <img src="img/placeholders/placeholder-1.jpg" />
+            </figure>
+            <div class="text">
+              <h2><a href="/post-detail.html">Lorem ipsum amet consectetur
+                  adipisicing
+                  elit. Totam, beatae.</a></h2>
+              <p class="date">January 12, 2023</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae voluptas mollitia sunt quam quis corporis
+                voluptatibus iure! Fuga, magni dolorum?</p>
+              <div class="wp-block-buttons is-style-btn-text is-layout-flex">
+                <div class="wp-block-button"><a
+                    class="wp-block-button__link wp-element-button"
+                    href="/post-detail.html">Read Article</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ccm-pagination-wrapper" id="pagination">
+            <nav class="navigation pagination" aria-label="Post navigation">
+              <h2 class="screen-reader-text">Post navigation</h2>
+              <div class="nav-links"><span aria-current="page"
+                  class="page-numbers current">1</span>
+                <a class="page-numbers" href>2</a>
+                <a class="next page-numbers" href>Next →</a></div>
+            </nav> <div></div><div></div></div>
+
+        </div>
+        <div class="wp-block-column">
+          <div class="sidebar box">
+            <h4>Categories</h4>
+            <nav class="sec-nav">
+              <ul>
+                <li><a href="#.html">People</a></li>
+                <li><a href="#.html">Places</a></li>
+                <li><a href="#.html">Events</a></li>
+                <li><a href="#.html">Projects</a></li>
+                <li><a href="#.html">Products</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar box">
+            <h4>Tags</h4>
+            <nav class="tag-list">
+              <ul>
+                <li><a href="#.html">Category #3</a></li>
+                <li><a href="#.html">Category #4</a></li>
+                <li><a href="#.html">Category #5</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
- 
-  <footer class="footer">
-    <div class="call-to-action">
-      <div class="container">
-      <div class="col">
-        <h3><em>Stay up to date</em></h3>
-        <h3>JOIN THE NEWSLETTER</h3>
+    <footer class="footer">
+      <div class="call-to-action">
+        <div class="container">
+          <div class="col">
+            <h3><em>Stay up to date</em></h3>
+            <h3>JOIN THE NEWSLETTER</h3>
+          </div>
+          <div class="col">
+            <div class="newsletter-box">
+              <form action="#" class="newsletter-form">
+                <input type="email" class="email-input"
+                  placeholder="Email Address" required>
+                <div class="wp-block-button"><a
+                    class="wp-block-button__link wp-element-button" href="#">Yes
+                    Please!</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col">
-        <div class="newsletter-box">
-          <form action="#" class="newsletter-form">
-              <input type="email" class="email-input" placeholder="Email Address" required>
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Yes Please!</a></div>
-          </form>
-      </div>
-      </div>
-    </div>
-    </div>
 
-    <div class="image-collage">
-      <figure><img src="img/placeholders/images-facility.webp"
-          alt="placeholder" /></figure>
-      <figure><img src="img/placeholders/images-couple.webp"
-          alt="placeholder" /></figure>
-      <figure><img src="img/placeholders/images-flower.webp"
-          alt="placeholder" /></figure>
-      <figure><img src="img/placeholders/images-support.webp"
-          alt="placeholder" /></figure>
-      <figure><img src="img/placeholders/images-facility-inside.webp"
-          alt="placeholder" /></figure>
-      <figure><img src="img/placeholders/images-wild-flowers.webp"
-          alt="placeholder" /></figure>
-    </div>
-    <div class="container has-text-align-center">
-      <figure class="footer-logo"><img  src="img/cedar-memorial-logo-mark.webp" alt="Logo"></figure>
-      <a href="https://www.facebook.com/CedarMemorial" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-     </div> 
-    <div class="container has-text-align-center">
-      <div class="ftr-cols">
-        <div class="col">
-          <h3>Cedar Memorial Westside Chapel</h3>
+      <div class="image-collage">
+        <figure><img src="img/placeholders/images-facility.webp"
+            alt="placeholder" /></figure>
+        <figure><img src="img/placeholders/images-couple.webp"
+            alt="placeholder" /></figure>
+        <figure><img src="img/placeholders/images-flower.webp"
+            alt="placeholder" /></figure>
+        <figure><img src="img/placeholders/images-support.webp"
+            alt="placeholder" /></figure>
+        <figure><img src="img/placeholders/images-facility-inside.webp"
+            alt="placeholder" /></figure>
+        <figure><img src="img/placeholders/images-wild-flowers.webp"
+            alt="placeholder" /></figure>
+      </div>
+      <div class="container has-text-align-center">
+        <figure class="footer-logo"><img src="img/cedar-memorial-logo-mark.webp"
+            alt="Logo"></figure>
+        <a href="https://www.facebook.com/CedarMemorial" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </div>
+      <div class="container has-text-align-center">
+        <div class="ftr-cols">
+          <div class="col">
+            <h3>Cedar Memorial Westside Chapel</h3>
             <p>1221 First Avenue SW<br>
               Cedar Rapids IA 52405</p>
             <p><a href="tel:+13193621135">(319) 362-1135</a><br>
-             <p><strong><a href="#.html">Get Directions</a></strong></p>
-        </div>
-        <div class="col">
-          <h3>Cedar Memorial Park Cemetery Funeral Home</h3>
-          <p><em>Chapel of Memories, Mausoleum, Family Center and Library, Cremation Center, and Flower Shop</em></p>
-            <p>4200 First Avenue NE<br>
-              Cedar Rapids IA 52402</p>
-            <p><a href="tel:+1319393-8000">(319) 393-8000</a><br>
-             <a href="tel:+131927523320">(800) 275-23320</a></p>
-             <p><strong><a href="#.html">Get Directions</a></strong></p>
-        </div>
-        <div class="col">
-          <h3>Cedar Memorial Flower Shop</h3>
-            <p>4361 1st Avenue SE<br>
-              Cedar Rapids IA 52402</p>
-            <p><a href="tel:+13193938004">(319) 393-8004</a><br>
-             <a href="tel:+18776382622">(877) 638-2622</a></p>
-             <p><strong><a href="#.html">Get Directions</a></strong></p>
-        </div>
+              <p><strong><a href="#.html">Get Directions</a></strong></p>
+            </div>
+            <div class="col">
+              <h3>Cedar Memorial Park Cemetery Funeral Home</h3>
+              <p><em>Chapel of Memories, Mausoleum, Family Center and Library,
+                  Cremation Center, and Flower Shop</em></p>
+              <p>4200 First Avenue NE<br>
+                Cedar Rapids IA 52402</p>
+              <p><a href="tel:+1319393-8000">(319) 393-8000</a><br>
+                <a href="tel:+131927523320">(800) 275-23320</a></p>
+              <p><strong><a href="#.html">Get Directions</a></strong></p>
+            </div>
+            <div class="col">
+              <h3>Cedar Memorial Flower Shop</h3>
+              <p>4361 1st Avenue SE<br>
+                Cedar Rapids IA 52402</p>
+              <p><a href="tel:+13193938004">(319) 393-8004</a><br>
+                <a href="tel:+18776382622">(877) 638-2622</a></p>
+              <p><strong><a href="#.html">Get Directions</a></strong></p>
+            </div>
 
-      </div>
-      <p class="footer-copy">© 2024 Cedar Memorial. All Rights Reserved. Web
-        Application
-        by <a target="_blank"
-          href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
-    </div>
-  </footer>
+          </div>
+          <p class="footer-copy">© 2024 Cedar Memorial. All Rights Reserved. Web
+            Application
+            by <a target="_blank"
+              href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
+        </div>
+      </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-    crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/flickity.js"></script>
-  <script src="js/scripts.js"></script>
-</main>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/flickity.js"></script>
+      <script src="js/scripts.js"></script>
+    </main>
