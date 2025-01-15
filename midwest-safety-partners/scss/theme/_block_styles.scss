@@ -2,8 +2,8 @@
 
 /* WP Paragraph Styles */
 .is-style-eyebrow {font-size:0.9rem;text-transform: uppercase; color: var(--primary-dark); letter-spacing: 2px; margin: 0 0 1.5rem 0;font-weight:900}
-.is-style-lead {font-size: 1.35rem; font-weight: 400;font-family:var(--accent-text)}
-.is-style-eyebrow::before{content:'';display:inline-block;margin-bottom:4px;width:20px;height:20px;background:url(../img/shapes/eyebrow-shape-light.svg) no-repeat center/cover,;margin-right:10px;vertical-align:middle;}
+.is-style-lead {font-size: 1.65rem; line-height:1.2;font-weight: 400;font-family:var(--accent-text)}
+.is-style-eyebrow::before{content:'';display:inline-block;margin-bottom:4px;width:20px;height:20px;background:url(../img/shapes/eyebrow-shape.svg) no-repeat center/cover,;margin-right:10px;vertical-align:middle;}
 .is-style-callout {font-size: 1.25rem; border-left: 5px solid var(--primary); padding-left: 1.25rem;}
 .is-style-max-width {max-width: 800px; @include margin-auto;}
 .box{padding:var(--spacer);border:1px solid rgba(0,0,0,.1);background-color:#f9f9f9}
@@ -35,7 +35,7 @@
 .wp-block-cover.has-background-dim:not([class*=-background-color]) {
   background-color:#08002d;
 }
-.wp-block-cover .card.icon-card-horizontal h3{color:var(--accent-3)}
+.wp-block-cover .card.icon-card-horizontal h3{color:#d5e9f4} 
 
 
 /* Columns */
@@ -62,7 +62,7 @@
 .is-style-bkg-left img, .is-style-bkg-right img{box-shadow:var(--box-shadow-cards-dark)}
 
 /* Background Colors */
-.is-style-bkg-dark{background-color:var(--primary-dark);background-image:url("../img/shapes/lines-bg.svg");background-position:center center;background-repeat:no-repeat;background-size:cover;position:relative;padding:1px 0;}
+.is-style-bkg-dark{background-color:#00255b;background-image:url("../img/shapes/lines-bg.svg");background-position:center center;background-repeat:no-repeat;background-size:cover;position:relative;padding:1px 0;}
 .is-style-bkg-light {position: relative;background: var(--light); background-size: 100% auto; background-position: 5% center; padding: 1px 0; }
 .is-style-bkg-dark,.left-dark,.right-dark, .right-dark strong,.left-dark strong,.is-style-bkg-dark strong,.is-style-bkg-dark p{color: #fff}
 

@@ -5,12 +5,6 @@
 #menu ul a {font-size:1rem;font-family:var(--header);color: var(--dark); text-decoration: none; display: block;font-weight: 900; position: relative;padding:1rem }
 .hidden-sm{display:none}
 
-#menu .hidden-lg {
- display:flex;justify-content:space-between;align-items:center;width:100%;border-top:1px solid #ccc;padding:20px 0;
- .menu-phone{width:50%;margin:0;}
- .btn-theme{width:50%;margin:0;}
-}
-
 /* ONLY MOBILE */
 @media (max-width: 991px) {
 #hdr-main {display: grid; grid-template-columns: auto 35px; padding: 1rem 0;}
@@ -41,8 +35,17 @@
 #menu ul ul a {border: none; padding: 10px 20px 10px 30px; font-weight: 700;}
 #menu ul ul li{border-top:solid 1px #ccc;}
 
+/* WP Button Styles */
+.collapsed .wp-block-buttons{display:flex;flex-wrap:wrap;gap:10px; margin:0 0 var(--spacer) 0;}
+.collapsed .wp-block-buttons .wp-block-button{flex:1;}
+.collapsed .wp-block-button__link {padding: 0.7rem 1.2rem}
 
-#menu .wp-block-button__link {margin: 1rem 0;padding:1rem}
+@media (max-width: 420px) {
+.collapsed .wp-block-buttons{display:block;margin:var(--spacer) 0;}
+.collapsed .wp-block-buttons .wp-block-button{width:100%;margin-bottom:10px;}
+.collapsed .wp-block-buttons .wp-block-button:last-child{margin-bottom:0;}
+}
+
 #menu ul li{margin-bottom:0;}
 
 } /* END ONLY MOBILE */
@@ -61,7 +64,7 @@
 #menu {display: flex; align-items: center;}
 #menu ul {display: flex;margin: 0px 0 0 0;}
 #menu ul a{padding:1.5rem 0rem;margin:auto 1rem;}
-#menu .wp-block-button__link {margin-left: 1rem;}
+.collapsed .wp-block-button__link{margin-left:15px;}
 
 /* Dropdown */
 #menu .btn-expand {display: none;}
@@ -76,12 +79,6 @@
 #menu > ul > li:hover > a:after {width: 100%; left: 0; opacity: 1;}
 #menu ul ul a:hover {color: var(--primary); padding: 5px 0px 5px 10px; background: var(--light);}
 #menu ul a:hover {color: var(--primary)}
-
-// #hdr-site.scroll {}
-#hdr-site.scroll #logo {
-    width: 240px; /* Shrinks the logo when scrolled */
-    transition: width 0.3s ease; /* Smooth transition */
-}
 }
 
 /* Wordpress Nav Active State */

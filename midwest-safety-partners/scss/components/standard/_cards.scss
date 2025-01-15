@@ -2,6 +2,8 @@
 .theme-cards.small .card{flex:180px 0 1;}
 .theme-cards.medium .card{flex:250px 0 1;}
 .theme-cards.large .card{flex:320px 0 1;}
+.theme-cards.extra-large .card{flex:500px 0 1;}
+
 .theme-cards.tall-image figure{aspect-ratio:1 / 1.5;}
 .theme-cards.overlap-top-element{margin-top:-90px;margin-bottom:0px}
 .theme-cards.flex-grow .card{flex-grow:1 !important;}
@@ -44,6 +46,11 @@
 .stacked-cards .icon-card-horizontal:first-of-type{padding-top:25px}
 .stacked-cards .card.icon-card-horizontal .content{flex-direction:column;}
 .stacked-cards .card.icon-card-horizontal{padding:20px}
+
+.card figure.yellow{background:var(--accent-1);border:0}
+.card figure.red{background:var(--accent-2);border:0}
+.card figure.blue{background:var(--accent-5);border:0}
+.card figure.green{background:var(--accent-4);border:0}
 
 /* Hovers */
 .card h3 a{color:var(--text);text-decoration: none;}

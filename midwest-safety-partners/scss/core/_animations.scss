@@ -44,4 +44,15 @@ animation-fill-mode: forwards;
 .animation-delay-8 {animation-delay: 1.20s;}
 .animation-delay-9 {animation-delay: 1.35s;}
 
+/* Move up and down (animation:moveShapes 10s infinite ease-in-out;)*/
+@keyframes moveShapes{0%{background-position:0px 0px,calc(100% - 0px) calc(100% - 0px);}
+25%{background-position:0px 10px,calc(100% - 0px) calc(100% - 10px);}
+50%{background-position:0px -10px,calc(100% - 0px) calc(100% + 10px);}
+75%{background-position:0px 5px,calc(100% - 0px) calc(100% - 5px);}
+100%{background-position:0px 0px,calc(100% - 0px) calc(100% - 0px);}
+}
 
+@keyframes floatUpDown{0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}

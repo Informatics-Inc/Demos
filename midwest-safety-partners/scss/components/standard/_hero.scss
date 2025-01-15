@@ -1,6 +1,6 @@
-.hero{position:relative;background:#1a1731;padding:50px 25px}
 .hero .col .theme-img{padding: var(--side-padding)}
-.hero{background:url('../img/shapes/shape-left.svg') no-repeat 0px 0px,url('../img/shapes/shape-right.svg') no-repeat calc(100% - 0px) calc(100% - 0px);background-color:#17172a;background-size:350px 350px,350px 350px;position:relative;}
+.hero{padding:30px 25px;background:url('../img/shapes/shape-left.svg') no-repeat 0px 0px,url('../img/shapes/shape-right.svg') no-repeat calc(100% - 0px) calc(100% - 0px);background-color:#160100;background-size:350px 350px,350px 350px;position:relative;animation:moveShapes 10s infinite ease-in-out;}
+
 .hero-content {text-align:center;padding: var(--side-padding);color:#fff;position:relative;}
 .hero p{font-size:1.3rem;line-height: 1.4;margin-bottom:30px}
 .hero p::after{content:'';display:block;border-bottom:3px solid var(--accent-1);margin-top:20px;width:80px;margin-left:auto;margin-right:auto}
@@ -15,8 +15,8 @@
 
 /* WIDE DESKTOP */
 @media (min-width: 992px) {
-.hero {padding:100px 25px 100px 25px;display: grid;grid-template-columns: var(--side-width) 1fr 1fr var(--side-width); align-items: center;}
-.hero-content {grid-column: 2; position: relative; z-index: 5;text-align:left;}
+.hero {padding:80px 25px 100px 25px;display: grid;grid-template-columns: var(--side-width) 1fr 1fr var(--side-width); align-items: center;}
+.hero-content {grid-column: 2; position: relative; z-index: 5;text-align:left;padding:0}
 .hero h1 {font-size: 6.5rem;line-height:0.85;}
 .hero p::after{margin-left:0;margin-right:0}
 
@@ -25,12 +25,11 @@
 @media (min-width: 1100px) {
 .hero .col .theme-img{padding: 0px}
 .paragraph-container{padding-left:40px}
-.hero {grid-template-columns: var(--side-width)650px auto var(--side-width);padding:100px 0px 100px 0px;}
-.hero-content p{padding:0;padding-right:70px;}
+.hero {grid-template-columns: var(--side-width)650px auto var(--side-width);padding:70px 0px 70px 0px;}
+.hero-content p{padding:0;padding-right:100px;}
 }
 
 /* Default body */
 .hero figure.bg-hero{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;opacity: 0.2;}
 .hero figure.bg-hero img{width:100%;height:100%;object-fit:cover;transform:scale(1.25);transition:transform 6.5s ease;}
 .loaded .hero figure.bg-hero img{transform:scale(1);}
-
