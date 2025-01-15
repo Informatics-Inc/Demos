@@ -5154,7 +5154,7 @@ p a:hover {
   top: 5px;
   width: 70px;
   height: 70px;
-  background-image: url("/img/shapes/arrow-point.png");
+  background-image: url("../img/shapes/arrow-point.png");
   background-size: cover;
   background-position: center;
   z-index: 5;
@@ -5891,6 +5891,13 @@ p a:hover {
   animation: moveShapes 10s infinite ease-in-out;
 }
 
+.hero .wp-block-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .hero-content {
   text-align: center;
   padding: var(--side-padding);
@@ -5937,6 +5944,9 @@ p a:hover {
 }
 /* WIDE DESKTOP */
 @media (min-width: 992px) {
+  .hero .wp-block-buttons {
+    justify-content: left;
+  }
   .hero {
     padding: 80px 25px 100px 25px;
     display: grid;

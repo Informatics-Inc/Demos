@@ -16,9 +16,7 @@
 
 .wp-block-button__link i{margin-right:5px}
 
-
-
 .special-button{position:relative;}
-.special-button::after{content:'';position:absolute;right:-60px;top:5px;width:70px;height:70px;background-image:url('/img/shapes/arrow-point.png');background-size:cover;background-position:center;z-index:5;animation:floatUpDown 4s ease-in-out infinite;}
+.special-button::after{content:'';position:absolute;right:-60px;top:5px;width:70px;height:70px;background-image:url('../img/shapes/arrow-point.png');background-size:cover;background-position:center;z-index:5;animation:floatUpDown 4s ease-in-out infinite;}
 .special-button .wp-block-button__link{margin-top:20px;box-shadow:var(--box-shadow-lg);position:relative;font-size:1.4rem;display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.5rem 1.5rem 0.5rem 0.5rem;color:var(--primary-dark);border-radius:6px;}
 .special-button .wp-block-button__link i{font-size:2rem;display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:6px;background:#ffe8c6;box-shadow:0 1px 3px rgba(0,0,0,0.1);margin-right:0.5rem;}
