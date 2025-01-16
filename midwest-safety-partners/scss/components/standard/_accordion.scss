@@ -4,9 +4,10 @@
 .accordion-item.collapsed{background:var(--primary);margin-bottom:10px;border-radius:6px;transition:var(--transition);}
 .accordion-item{background:var(--light-gray);margin-bottom:10px;border-radius:6px; transition: var(--transition);}
 .accordion-item:hover{background:#f5f5fb}
+.accordion-item strong{font-weight:900}
 
 .accordion-item h3 {transition:0.4s ease; letter-spacing:0;line-height:1.2; font-weight: 700;font-size: 1.35rem;padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.2); margin: 0;border-radius:6px 6px 0 0}
-.accordion-item .accordion-body {color:var(--text-color-inverse);background: var(--primary-dark); padding: 2rem; border-bottom: 12px solid var(--gray-dark);border-radius:0px 0px 6px 6px}
+.accordion-item .accordion-body {color:var(--text-color-inverse);background: var(--primary-dark); padding: 1.25rem 2rem; border-bottom: 12px solid var(--gray-dark);border-radius:0px 0px 6px 6px}
 .accordion-item:last-of-type h3 {border-bottom: none;}
 .accordion-item ul li::marker{color:var(--accent-3);}
 
