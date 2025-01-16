@@ -2,10 +2,11 @@
 #hdr-site {background:#fff;position: relative; z-index: 20; box-shadow: var(--box-shadow-sm);}
 #logo {display: block; width:150px;}
 #menu ul {list-style: none; padding: 0; }
-#menu ul a {font-family:var(--header);color: var(--primary-dark); text-decoration: none; display: block; font-weight: 700; position: relative;font-size:1.3rem;padding:1rem }
+#menu ul a {font-family:var(--header);color: var(--primary-dark); text-decoration: none; display: block; font-weight: 700; position: relative;font-size:1.3rem;padding:1rem ;}
 #menu li a i{margin-right:7px;font-size:1.1rem}
 #hdr-site .btn-theme{font-family:var(--header);font-size:1.2rem;}
 #hdr-site .btn-theme i {margin-right:10px;font-size:1rem;}
+.hdr-desktop .container{display: flex; justify-content: space-between; align-items: center;}
 
 /* ONLY MOBILE */
 @media (max-width: 991px) {
@@ -49,7 +50,6 @@
 #logo {display: block; width:230px;}
 
 #menu-toggle {display: none;}
-.hdr-desktop {display: flex; justify-content: space-between; align-items: center;}
 #menu {display: flex; align-items: center;}
 #menu ul {display: flex;margin: 0px 0 0 0;}
 #menu ul a {padding: 1.5rem 1rem;}
@@ -90,7 +90,6 @@
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
     #hdr-site .btn-theme{font-family:var(--header);font-size:1.3rem}
-
 }
 
 /* SUPER WIDE DESKTOP */
