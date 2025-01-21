@@ -1,6 +1,6 @@
-.call-to-action { background: var(--dark) url(../img/shapes/paper-texture.webp) no-repeat;background-size:cover;padding:1px 0}
+.call-to-action { box-shadow:var(--box-shadow-lg);background: var(--dark) url(../img/shapes/paper-texture.webp) no-repeat;background-size:cover;padding:1px 0}
 .call-to-action .container {display: grid; gap: var(--spacer); display: grid; gap: var(--spacer); padding: 3rem;}
-
+footer .call-to-action { box-shadow:none}
 /* Newsletter */
 .newsletter-box{max-width:100%;margin:0 auto;}
 .newsletter-form{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}

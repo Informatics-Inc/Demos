@@ -17,7 +17,6 @@
 /* WP File Block Styles */
 .wp-block-file:not(.wp-element-button){font-size:.85em;background:var(--light);padding:15px;border-radius:5px;display:inline-block;font-weight:700;}
 .wp-block-file * + .wp-block-file__button{margin-left:.75em;background:var(--primary);color:#fff;font-weight:700;padding:10px;}
-
 .wp-block-cover .wp-block-cover__background {opacity: .65;}
 .wp-block-cover + .wp-block-group {margin-top: calc(var(--spacer-vert) * -1);}
 .wp-block-cover.has-background-dim:not([class*=-background-color]) {
@@ -90,6 +89,7 @@ li strong{color:var(--secondary-light)}
 .wp-block-group.overlap-bottom-element .theme-cards .card,.wp-block-cover.overlap-bottom-element .theme-cards .card{box-shadow:var(--box-shadow-cards-dark)}
 .wp-block-group.overlap-bottom-element,.wp-block-cover.overlap-bottom-element {margin-bottom:10rem}
 
+
 /* TABLET */
 @media (min-width:768px){
 .is-style-large-gap {gap: 4rem !important;}
@@ -110,4 +110,3 @@ li strong{color:var(--secondary-light)}
  .wp-block-group:has(+.theme-cards.overlap-top-element){padding:2rem 0 120px 0}
  .theme-cards.overlap-top-element{margin-top:-240px;}
   }
-
