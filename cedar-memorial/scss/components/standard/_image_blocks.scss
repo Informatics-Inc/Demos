@@ -97,8 +97,8 @@ h4{position:absolute;right:100px;top:100px;background:#999}
 .wp-block-group .theme-img{margin-bottom:0}
 
 /* Full Side Image - Video Background */
-.image-background figure {background:var(--tan); position: absolute; inset: 0; border-top: 1px solid rgba(0,0,0,.085); margin: 0;}
-.image-background video{opacity: 0.75;width: 100%; height: 100%; object-fit: cover;}
+.image-background figure {background:#bcb195; position: absolute; inset: 0; border-top: 1px solid rgba(0,0,0,.085); margin: 0;}
+.image-background video{opacity: 0.35;width: 100%; height: 100%; object-fit: cover;}
 
 @media(min-width: 782px) {
 .image-background img{width:100%;height:100%;top:0;border:none;box-shadow:none;position:absolute}
