@@ -17,6 +17,12 @@
 .detail-callout h3{display: block;margin-bottom:10px;color:var(--primary)}
 .detail-callout .wp-block-buttons {margin-bottom:0}
 
+.obituary{
+  .social-share{margin-bottom:35px}
+  .social-share a{margin:0 auto 5px auto}
+  .social-share {font-size:1rem;text-align: center;}
+  }
+
 .condolences h2{font-size:2.6rem;letter-spacing:3px;position:relative;margin-bottom:20px;}
 .condolences h2:before{opacity:0.2;background:url(../img/shapes/quote-marks.svg);width:48px;height:40px;content:"";position:absolute;background-size:cover;margin-left: -30px;top:-20px}
 .condolences blockquote p{font-size:1.1rem;line-height: 1.3;margin-bottom:10px}

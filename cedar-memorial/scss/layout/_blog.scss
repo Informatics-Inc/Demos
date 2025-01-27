@@ -23,20 +23,15 @@
 .blog-hdr h1 {margin: 1rem 0 2rem 0;}
 .blog-content {font-size: 1.15rem; line-height: 1.6;}
 .blog-share {text-align: center; padding: var(--spacer-vert) 0; margin: var(--spacer-vert) 0; border-top: 1px solid #ccc;}
-.social-share {
-  text-align:center;
-  list-style:none;
-  display:flex;
-  padding:0;
-  margin:1rem 0;
-  justify-content:center
-}
-.social-share i {
-  text-align:center;
-  font-size:2.15rem;
-  padding:10px
-}
-.social-share a:hover {color: var(--primary-dark);}
+
+
+.social-share{text-align:center;list-style:none;display:flex;padding:0;margin:1rem 0;justify-content:center;}
+.social-share li{margin:0 0.5rem;}
+.social-share a{display:flex;justify-content:center;align-items:center;width:60px;height:60px;border:2px solid var(--primary-dark);border-radius:50%;text-align:center;transition:background-color 0.3s,color 0.3s;text-decoration:none;}
+.social-share i{transition:var(--transition);font-size:2rem;color:var(--primary-dark)}
+.social-share a:hover{background-color:var(--primary-dark);}
+.social-share a:hover i{color:#fff}
+
 /* TABLET */
 @media (min-width: 768px) {
   .blog-list-item {grid-template-columns: 1.5fr 3fr; gap: 2rem;}
