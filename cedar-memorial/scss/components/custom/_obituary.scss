@@ -30,6 +30,7 @@
 .condolences blockquote .date{letter-spacing: 1px;display: block;margin-bottom:0}
 .condolences blockquote{border-bottom:dotted var(--secondary) 2px;padding:25px }
 .condolences blockquote:last-of-type{border-bottom:none }
+.condolences blockquote .mosaic-gallery{display:grid;margin-top:0px;margin-bottom:15px;grid-template-columns:repeat(4,1fr);gap:10px;}
 
 
 /* Obit Listings Page */
@@ -53,10 +54,9 @@
 .obituary .page-hdr{padding-bottom:350px;padding-top:50px}
 .theme-img.obit-img{margin:-375px auto 50px auto;}
 .detail_information{display:flex;gap:40px;margin-bottom:30px}
+.condolences blockquote .mosaic-gallery{grid-template-columns:repeat(10,1fr);gap:10px;}
+
 }
-
-
-
 
 .mosaic-gallery{display:grid;margin-top:50px;grid-template-columns:repeat(4,1fr);gap:15px;}
 .gallery-item{position:relative;overflow:hidden;aspect-ratio:1;}
