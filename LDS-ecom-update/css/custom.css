@@ -17,8 +17,16 @@
 .bkg-dark > img {position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .15; z-index: -1;}
 .grid-item .number {font-size: 4rem; color: rgb(244, 177, 19); margin: 0;}
 .grid-item h3 {font-size: 1.5rem; margin: 1rem 0;}
-    @media (min-width: 992px) {
+
+.link-grid {display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;}
+.link-grid a {background: rgb(244, 177, 19); color: #000; position: relative; text-align: center; display: grid; grid-template-columns: 80px auto; padding: 1rem; line-height: 1; justify-content: flex-start; align-items: center; gap: 2rem; border-radius: 4px; transition: all 0.3s ease-in-out;}
+.link-grid h3 {margin-top: auto; order: 2; margin: 0; text-align: left; font-size: 1.35rem; font-weight: 400;}
+.link-grid img {width: 80px; height: 80px; border-radius: 50%; order: 1; margin: 1rem auto; background :#fff; border: 5px solid #000; box-shadow: 5px 5px 10px rgba(0,0,0,.2); aspect-ratio: 1 / 1;transition: all 0.3s ease-in-out;}
+.link-grid a:hover {background: rgb(255, 200, 50);}
+.link-grid a:hover img {scale: 1.05;}
+
+@media (min-width: 992px) {
 .custom-content {display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;}
 .grid-4 {display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;}
-
+.grid-layout {grid-template-columns: 1fr 1.25fr; gap: 5rem;}
 }
