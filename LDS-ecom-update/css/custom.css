@@ -1,7 +1,8 @@
 .bkg-light {background: #f4f4f4; padding: 2rem 0;}
-.custom-content h2 {font-size: 3rem; margin: .5rem 0 1.5rem 0; line-height: 1;}
+.custom-content h2 {font-size: 2.15rem; margin: 0 0 .5rem 0 !important; line-height: 1; letter-spacing: -.5px;}
 .custom-content .eyebrow {margin: 0; text-transform: uppercase; letter-spacing: 1px;}
-.custom-content p {font-size: 1.15rem;}
+.custom-content p {font-size: 1rem;}
+.custom-content h2 + p {margin: 0 0 2rem 0 !important;}
 .custom-content .btn-link {align-content: center; padding: 1rem 2rem; display: inline-block; font-weight: 700;background: rgb(244, 177, 19); color: #000;}
 .custom-content .btn-link:hover {opacity: .85;}
 .custom-content ul {display: grid; grid-template-columns: 1fr 1fr; max-width: 400px; padding: 0 0 0 1rem; margin: 1.5rem 0;}
@@ -18,10 +19,12 @@
 .grid-item .number {font-size: 4rem; color: rgb(244, 177, 19); margin: 0;}
 .grid-item h3 {font-size: 1.5rem; margin: 1rem 0;}
 
-.link-grid {display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;}
-.link-grid a {background: rgb(244, 177, 19); color: #000; position: relative; text-align: center; display: grid; grid-template-columns: 80px auto; padding: 1rem; line-height: 1; justify-content: flex-start; align-items: center; gap: 2rem; border-radius: 4px; transition: all 0.3s ease-in-out;}
+.link-grid {display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0;}
+.link-grid a {background: rgb(244, 177, 19); color: #000; position: relative; text-align: center; display: grid;
+    grid-template-columns: 50px auto;
+    padding: 1rem; line-height: 1; justify-content: flex-start; align-items: center; gap: 1rem; border-radius: 4px; transition: all 0.3s ease-in-out;}
 .link-grid h3 {margin-top: auto; order: 2; margin: 0; text-align: left; font-size: 1.35rem; font-weight: 400;}
-.link-grid img {width: 80px; height: 80px; border-radius: 50%; order: 1; margin: 1rem auto; background :#fff; border: 5px solid #000; box-shadow: 5px 5px 10px rgba(0,0,0,.2); aspect-ratio: 1 / 1;transition: all 0.3s ease-in-out;}
+.link-grid img {width: 100%; height: auto; border-radius: 50%; order: 1; margin: 1rem auto; background :#fff; border: 5px solid #000; box-shadow: 5px 5px 10px rgba(0,0,0,.2); aspect-ratio: 1 / 1;transition: all 0.3s ease-in-out;}
 .link-grid a:hover {background: rgb(255, 200, 50);}
 .link-grid a:hover img {scale: 1.05;}
 
@@ -29,4 +32,6 @@
 .custom-content {display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;}
 .grid-4 {display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;}
 .grid-layout {grid-template-columns: 1fr 1.25fr; gap: 5rem;}
+
+.link-grid a {grid-template-columns: 70px auto;}
 }
