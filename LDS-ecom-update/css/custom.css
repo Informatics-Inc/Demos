@@ -1,4 +1,5 @@
 .bkg-light {background: #f4f4f4; padding: 2rem 0;}
+.custom-content {display: grid; gap: 2rem;}
 .custom-content h2 {font-size: 2.15rem; margin: 0 0 .5rem 0 !important; line-height: 1; letter-spacing: -.5px;}
 .custom-content .eyebrow {margin: 0; text-transform: uppercase; letter-spacing: 1px;}
 .custom-content p {font-size: 1rem;}
@@ -31,20 +32,27 @@
 .link-grid a:hover {background: rgb(255, 200, 50);}
 .link-grid a:hover img {scale: 1.05;}
 
-.max-width {max-width: 1050px; margin: 0 auto;}
-.max-width-sm {max-width: 800px; margin: 1rem auto;}
+.max-width {max-width: 1050px; margin: 0 auto; padding: 0 2rem;}
+.max-width-sm {max-width: 800px; margin: 1rem auto; padding: 0 2rem;}
 .faq h3 {font-size: 1.75rem; font-weight: 400; margin: 0 0 1rem 0 !important;}
 .faq h3 + p {margin: 0 0 2rem 0 !important; font-size: 1.15rem; border-left: 5px solid #eee; padding-left: 1.5rem;}
-.faq h2 {font-size: 3rem;}
+.faq h2 {font-size: 3rem; line-height: 1;}
 
 .cta {text-align: center; border-top: 1px solid #ccc; padding-top: 2rem;}
 .cta h2 {margin: 0 0 1rem 0 !important;}
 .cta h2 + p {font-size: 1.5rem;}
 
+.grid-4 {display: grid; gap: 1rem;}
+
 @media (min-width: 992px) {
 .custom-content {display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;}
 .grid-4 {display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;}
-.grid-layout {grid-template-columns: 1fr 1.25fr; gap: 5rem;}
+.grid-layout {grid-template-columns: 1fr 1; gap: 3rem;}
 
-.link-grid a {grid-template-columns: 70px auto;}
+.link-grid a {grid-template-columns: 50px auto;}
+}
+
+@media (min-width: 1150px) {
+    .grid-layout {grid-template-columns: 1fr 1.25fr; gap: 5rem;}
+    .link-grid a {grid-template-columns: 70px auto;}
 }
