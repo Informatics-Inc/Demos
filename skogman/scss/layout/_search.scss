@@ -96,6 +96,11 @@
 .map-and-list .search-map {display: none;}
 .map-and-list.show-map .search-map {display: block;}
 
+.search-box .wp-block-buttons {gap: 2rem;}
+.search-box .wp-block-buttons > .wp-block-button {flex-grow: 1;}
+.search-box .wp-block-button__link {padding: 1rem; font-size: 1rem; background: Var(--light); color: var(--text-color); text-decoration: none; text-underline-offset: 3px; border: 1px solid #ccc; box-shadow: 5px 5px 5px rgba(0,0,0,.05);}
+.search-box .wp-block-button__link:hover {background: var(--primary); color: #fff; border-color: var(--primary);}
+
 @media (min-width: 450px) {
     .search-list-grid {grid-template-columns: 1fr 1fr;}
 } 
@@ -131,6 +136,7 @@
 .map-and-list.show-map {grid-template-columns: 1fr 1fr;}
 .map-and-list.show-map .search-list { height: calc(100vh - 123px); overflow-y: scroll;}
 .search-layout header {padding-bottom: .5rem;}
+
 }
 @media (min-width:1200px){
   // .map-and-list {display: grid; grid-template-columns: 1fr 1.15fr;}
