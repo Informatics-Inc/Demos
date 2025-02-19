@@ -3,16 +3,16 @@
 
 /* FADE IN */
 /* -- Fade In Up -- */
-@keyframes fadeInUp {
-  0% {opacity: 0;transform: translate3d(0, 4%, 0) scale(1);}
-  100% {opacity: 1;transform: none;}
-}
+// @keyframes fadeInUp {
+//   0% {opacity: 0;transform: translate3d(0, 50px, 0) scale(1);}
+//   100% {opacity: 1;transform: translate3d(0, 50px, 0) scale(1);}
+// }
 .fadeinup {
 opacity: 0;
 animation-name: fadeInUp;
 animation-delay: none;
 animation-timing-function: ease-in-out;
-animation-duration: .45s;
+animation-duration: 1.45s;
 animation-fill-mode: forwards;
 }
 

@@ -33,7 +33,7 @@
   
   /* Spacing */
   --max-width: 1120px;
-  --side-padding: 1.5rem;
+  --side-padding: 5vw;
   --spacer: 1.5rem;
   --spacer-vert: 2rem;
   --column-gap: 2rem;
@@ -63,7 +63,7 @@ a {transition: var(--transition); color: var(--theme-primary); text-underline-of
 p a {font-weight: 700; text-decoration: underline;}
 p a:hover {text-decoration: none;}
 
-.is-style-eyebrow {text-transform: uppercase; font-weight: 300; color: var(--theme-primary); letter-spacing: 4px;}
+.is-style-eyebrow {text-transform: uppercase; font-weight: 300; color: var(--theme-primary); letter-spacing: 2px; font-size: .85rem; border-left: 3px solid var(--theme-primary); display: inline-block; padding: 0 8px; display: inline-block; align-self: flex-start;}
 .lead {font-size: 1.5rem; line-height: 1.2; font-weight: 300; font-family: var(--header); font-weight: 400; border-left: 4px solid var(--theme-primary); padding-left: 2rem; margin: 2.5rem 0;}
 .cta-list {list-style: none; padding: 0; display: grid; gap: 1rem;}
 .cta-list a {font-family: var(--header); font-size: 1.25rem; color: var(--text-color);}
