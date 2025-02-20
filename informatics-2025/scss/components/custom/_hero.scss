@@ -1,10 +1,14 @@
 
-.hero {padding: 0 var(--side-padding); position: relative; z-index: 5; min-height: 100vh;}
+.hero {padding: 0 var(--side-padding); position: relative; z-index: 5; min-height: 100vh; margin-bottom: var(--spacer-vert);
+}
 
-.hero .text {text-align: left; display: flex; justify-content: center; flex-direction: column; padding: 50px 25vw 0 0; height: calc(100vh - (100px + 10vh));}
+.hero .text {text-align: left; display: flex; justify-content: center; flex-direction: column; padding: 50px 28vw 0 0; height: calc(100vh - (100px + 10vh));}
 .hero .text p {display: inline-block; justify-self: flex-start;}
-.hero .text h1 {font-size: clamp(2.5rem, 5vw, 6rem); margin: 0 0 2rem 0;}
+.hero .text strong {color: #fff;}
+.hero .text h1 {font-size: clamp(2.5rem, 4.75vw, 5rem); margin: 0 0 2rem 0;}
+.hero .text h1 em {color: var(--accent-1);}
 .hero .text .blurb p {font-size: 1.4rem; color: var(--text-color-inverse); margin: 0; font-weight: 300; max-width: 600px;}
+
 
 @keyframes spin {
   0% {
@@ -18,13 +22,15 @@
   }
 }
 
-.hero .text .blurb p .fa {
+.hero .text .blurb p .fa, .spin-arrow {
   animation: spin 2.5s ease-in-out 6s infinite;
   margin-left: .5rem;
 }
 
-.hero-bkg {position: absolute; inset: 0; z-index: -1; background: #111; overflow: hidden; height: 90vh;}
-.hero-bkg > * {width: 100%; height: 100%; object-fit: cover; opacity: .25;}
+.hero-bkg {position: absolute; inset: 0; z-index: -1; background: #111; overflow: hidden; height: 90vh;
+  
+}
+.hero-bkg > * {width: 100%; height: 100%; object-fit: cover; opacity: .25; position: absolute;}
 .ani-pan {
     animation: panImage 25s ease-in-out infinite alternate;
     width: 3000px;
@@ -32,11 +38,15 @@
     max-width: none;
     object-fit: cover;
 }
+.floaty {mix-blend-mode: overlay; opacity: .85;
+  animation: panImage 20s ease-in-out infinite alternate;
+}
+
 .dots-after:after {width: 100px; height: 100px; display: block; content: ""; background: url(../img/dots.svg); display: block; position: absolute; right: -55px; top: -50px; background-size: cover; z-index: -1;}
 
 .hero video {width: 100%;}
 
-.hero-grid {display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(4, 1fr); aspect-ratio: 16 / 9; padding: 1rem; gap: 1rem; background: var(--bkg); position: relative;
+.hero-grid {display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(4, 1fr); aspect-ratio: 16 / 9; padding: 1rem; gap: 1rem; background: var(--bkg); position: relative; z-index: 5;
   // border-radius: var(--border-radius-sm);
   // box-shadow: var(--box-shadow);
 }
@@ -48,9 +58,20 @@
 .hero-grid-item-5 { grid-column: 2 / 3; grid-row: 4 / 5; }
 .hero-grid-item-6 { grid-column: 4 / 5; grid-row: 2 / 3; }
 .hero-grid a {position: absolute; background: var(--bkg); padding: 1.5rem 3rem; right: 0; bottom: 1rem; text-transform: uppercase; font-weight: 600;}
+
 .hero-grid {
   cursor: url('../img/watch-video.png'), auto;
 }
+.hero-smashup:hover {cursor: url('../img/watch-video.png'), auto;}
+
+
+
+.hero-overlap .overlap {display: grid; grid-template-columns: 1fr 1fr; gap: var(--column-gap-lg);}
+
+.hero-message .is-style-eyebrow {margin: 0 0 20vh 0;}
+.hero-message {padding-right: 5vw;}
+.overlap .image img {box-shadow: 10px 10px 25px rgba(0,0,0,.15); margin-top: 50px;}
+
 // /* Hero */
 // .hero {color: var(--text-color-inverse); position: relative; z-index: 5; min-height: 100vh; display: flex; justify-content: center; flex-direction: column; padding: 100px 4rem 150px 4rem; background: var(--light); display: grid; grid-template-columns: 1.25fr 1fr; align-items: center; gap: 4rem;}
 // // .hero .text {max-width: 750px;}

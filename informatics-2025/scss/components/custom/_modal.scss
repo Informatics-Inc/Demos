@@ -50,6 +50,7 @@ display: none;
         clip-path: inset(0 0 0 0); /* Fully revealed */
     }
 }
+
 .revealing-image {
     view-timeline-name: --revealing-image;
     view-timeline-axis: block;
@@ -57,19 +58,18 @@ display: none;
     animation-timeline: --revealing-image;
     animation-range: entry 70% cover 45%;
 }
-
 @keyframes parallax {
     from {
-        transform: translateY(-100px); /* Start position */
+        transform: translateY(-150px); /* Start position */
     }
     to {
-        transform: translateY(100px); /* Moves up by 150px */
+        transform: translateY(150px); /* Moves up by 150px */
     }
 }
 .parallax-image {
-    view-timeline-name: --parallax;
+    view-timeline-name: --revealing-image;
     view-timeline-axis: block;
     animation: ease-in parallax both;
-    animation-timeline: --parallax;
-    animation-range: entry 0% exit 100%; /* Full scroll duration */
+    animation-timeline: --revealing-image;
+    animation-range: entry 0% exit 110%; /* Full scroll duration */
 }
