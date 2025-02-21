@@ -42,34 +42,34 @@ display: none;
     
 }
 
-@keyframes reveal {
-    from {
-        clip-path: inset(0 100% 0 0); /* Fully hidden (right side fully clipped) */
-    }
-    to {
-        clip-path: inset(0 0 0 0); /* Fully revealed */
-    }
-}
-.revealing-image {
-    view-timeline-name: --revealing-image;
-    view-timeline-axis: block;
-    animation: linear reveal both;
-    animation-timeline: --revealing-image;
-    animation-range: entry 70% cover 45%;
-}
+// @keyframes reveal {
+//     from {
+//         clip-path: inset(0 100% 0 0); /* Fully hidden (right side fully clipped) */
+//     }
+//     to {
+//         clip-path: inset(0 0 0 0); /* Fully revealed */
+//     }
+// }
+// .revealing-image {
+//     view-timeline-name: --revealing-image;
+//     view-timeline-axis: block;
+//     animation: linear reveal both;
+//     animation-timeline: --revealing-image;
+//     animation-range: entry 70% cover 45%;
+// }
 
-@keyframes parallax {
-    from {
-        transform: translateY(-100px); /* Start position */
-    }
-    to {
-        transform: translateY(100px); /* Moves up by 150px */
-    }
-}
-.parallax-image {
-    view-timeline-name: --parallax;
-    view-timeline-axis: block;
-    animation: ease-in parallax both;
-    animation-timeline: --parallax;
-    animation-range: entry 0% exit 100%; /* Full scroll duration */
-}
+// @keyframes parallax {
+//     from {
+//         transform: translateY(-100px); /* Start position */
+//     }
+//     to {
+//         transform: translateY(100px); /* Moves up by 150px */
+//     }
+// }
+// .parallax-image {
+//     view-timeline-name: --parallax;
+//     view-timeline-axis: block;
+//     animation: ease-in parallax both;
+//     animation-timeline: --parallax;
+//     animation-range: entry 0% exit 100%; /* Full scroll duration */
+// }

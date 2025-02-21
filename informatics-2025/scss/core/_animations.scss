@@ -1,6 +1,6 @@
 /* ANIMATIONS */
 @charset "UTF-8";
-
+@media (prefers-reduced-motion: no-preference) {
 /* FADE IN */
 /* -- Fade In Up -- */
 @keyframes fadeInUp1 {
@@ -45,23 +45,24 @@ animation-fill-mode: forwards;
 .animation-delay-9 {animation-delay: 1.35s;}
 
 /* Timeline Scroll Animations */
+
 @keyframes fadein {
-  from {
-      opacity: 0;
-      translate: 0 15px; /* Fully hidden (right side fully clipped) */
-  }
-  to {
-      opacity: 1;
-      translate: 0 0 ;
-  }
+  from {}
+  to {opacity: 1; translate: 0 0 ;}
 }
 
 .icon-text > *, .fadin-items > * {
-  view-timeline-name: --fadein;
-  view-timeline-axis: block;
-  animation: linear fadein both;
-  animation-timeline: --fadein;
-  animation-range: entry 30% cover 25%;
+  animation: fadein ease-in forwards;
+  animation-timeline: view();
+  animation-range: 100px 250px;
+  opacity: 0;
+  translate: 0 15px;
+
+  // view-timeline-name: --fadein;
+  // view-timeline-axis: block;
+  // animation: linear fadein both;
+  // animation-timeline: --fadein;
+  // animation-range: entry 30% cover 25%;
 }
 
 @keyframes reveal {
@@ -96,4 +97,6 @@ animation-fill-mode: forwards;
   animation: linear cliptwist both;
   animation-timeline: --cliptwist;
   animation-range: entry 100% cover 100%;
+}
+
 }
