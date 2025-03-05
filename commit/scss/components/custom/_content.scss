@@ -1,12 +1,33 @@
 /* Content */
 .content {padding: var(--spacer-vert) var(--side-padding);}
 
+/* Layouts */
+.container {max-width: var(--max-width); margin: 0 auto; padding-left: var(--spacer);padding-right: var(--spacer); position: relative;}
+.container.skinny {max-width: 900px;}
+.content-section {margin: var(--spacer-vert) auto;}
+.content-section.is-style-bkg-light {padding: var(--spacer-vert) 0; margin: 0 auto;}
+
+.feature-text-img {display: grid; grid-template-columns: 2fr 1fr; gap: var(--column-gap-lg); position: relative;}
+figure figcaption {background: #ccc; font-size: .85rem; padding: 1.5rem 1.5rem 2rem 1.5rem; color: #111; font-style: italic;}
+.img-callout {position: relative;}
+.img-callout:after {position: absolute; inset: 5px; content: ""; border: 2px solid #ccc; z-index: 1; mix-blend-mode: hard-light;}
+
+
 .grid {display: grid; gap: var(--column-gap-lg);}
 .grid-3 {grid-template-columns: 1fr 1fr 1fr;}
 
 .cta-list {display: flex; gap: 1rem; font-size: 1rem;}
 .cta-list a {font-size: 1rem;}
 .cta-list li:last-of-type {margin-left: auto; color: rgba(0,0,0,.35); text-transform: uppercase; letter-spacing: 1px;}
+
+/* Sections */
+.take-over {position: relative; padding: var(--spacer-vert) 0; z-index: 1;margin: 0; background: var(--dark); min-height: 65vh; display: flex; justify-content: center; flex-direction: column; overflow: clip;}
+.take-over figure {position: absolute; inset: 0; z-index: -1;}
+.take-over-text {color: #fff; text-align: center;}
+.take-over-text h2 {font-size: 5rem;}
+.take-over-text p {max-width: 800px; margin: 1rem auto 2rem auto;}
+.take-over-text p strong {color: #fff;}
+
 
 /* TABLET */
 @media (min-width: 768px) {

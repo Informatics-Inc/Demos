@@ -23,14 +23,14 @@ Date: Jan 2024
 @import "components/custom/hero";
 @import "components/custom/feature";
 @import "components/custom/content";
-@import "components/custom/modal";
+@import "components/standard/cards";
 
 
 // Wordpress Theme
 // @import "theme/layout"; // enhance WP layout ux
 // @import "theme/brand"; // fonts, colors, typography
 // @import "theme/block_styles"; // extend WP core blocks
-// @import "theme/buttons"; // style WP buttons
+@import "theme/buttons"; // style WP buttons
 
 // // Theme Layouts
 // @import "layout/header_top";

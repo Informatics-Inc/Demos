@@ -13,7 +13,7 @@ $('.menu-toggle').on('click', function() {
       $("#hdr-site").removeClass("scroll");
     }
     var x = $(this).scrollTop();
-    $(".page-header figure img").css(
+    $(".hero-bkg video").css(
       "-webkit-transform",
       "translateY(" + x / 6 + "px)"
     );
