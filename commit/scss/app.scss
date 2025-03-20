@@ -11,26 +11,33 @@ Date: Jan 2024
 
 // Vendors 
 // @import "vendors/flickity";
-// @import "vendors/wpcols-for-demo";  // can delete once in WP
+@import "vendors/wpcols-for-demo";  // can delete once in WP
 
 // Core
 @import "core/reset";
 @import "core/animations";
 @import "theme/brand"; // fonts, colors, typography
+
+// Layout
 @import "layout/header";
 
-// Informatics Theme
 @import "components/custom/hero";
-@import "components/custom/feature";
 @import "components/custom/content";
-@import "components/standard/cards";
+@import "components/standard/theme-img";
+@import "components/standard/theme-cards";
+@import "components/wp-overrides/list";
+@import "components/wp-overrides/buttons";
 
 
-// Wordpress Theme
+
+// @import "components/standard/cards";
+
+
+// Wordpress Theme 
 // @import "theme/layout"; // enhance WP layout ux
 // @import "theme/brand"; // fonts, colors, typography
 // @import "theme/block_styles"; // extend WP core blocks
-@import "theme/buttons"; // style WP buttons
+// @import "theme/buttons"; // style WP buttons
 
 // // Theme Layouts
 // @import "layout/header_top";

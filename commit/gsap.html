@@ -1,0 +1,93 @@
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+
+<style>
+  /* Reusable Classes */
+  .fade-in { opacity: 0; }
+  .parallax { transform: translateY(0); }
+  .button { transition: transform 0.3s ease; }
+  .hero-text { opacity: 0; color: #fff;}
+  /* Adjusting Parallax */
+  .parallax img { transition: transform 0.5s ease-in-out; }
+  .hero {background: #111; padding: 10rem;}
+  body {height: 150rem;}
+</style>
+
+<!-- HTML Structure -->
+<div class="hero">
+  <h1 class="hero-text">We help high-potential leaders find their <em>purpose,</em> <em>identity,</em> and <em>community.</em></h1>
+</div>
+
+<div class="section fade-in">
+  <h2>Our Approach</h2>
+  <p>We provide expert guidance to help leaders grow.</p>
+</div>
+
+<div class="section parallax">
+  <img src="your-image.jpg" alt="Parallax Image">
+</div>
+
+<button class="button">Learn More</button>
+
+<script>
+  // GSAP Animations
+
+  // Hero Text Animation (Text Amplification)
+  gsap.from('.hero-text', {
+    opacity: 1,
+    y: 100,
+    duration: 2,
+    delay: 0.5,
+    ease: 'power3.out',
+    stagger: 0.2,
+    onComplete: () => console.log('Hero text animation complete')
+  });
+
+  // Scroll Animations for Fade-In Sections
+  gsap.utils.toArray('.fade-in').forEach((section) => {
+    gsap.from(section, {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 80%',
+        end: 'top 30%',
+        scrub: true,
+      }
+    });
+  });
+
+  // Parallax Image Effect
+  gsap.utils.toArray('.parallax').forEach((section) => {
+    gsap.to(section.querySelector('img'), {
+      y: -50,
+      scrollTrigger: {
+        trigger: section,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true,
+      }
+    });
+  });
+
+  // Button Hover Animation
+  gsap.to('.button', {
+    scale: 1.1,
+    duration: 0.3,
+    ease: 'ease-in-out',
+    paused: true,
+    onStart: function() { this.target.style.cursor = 'pointer'; },
+    onReverseComplete: function() { this.target.style.cursor = 'auto'; }
+  });
+
+  // Button Hover Event
+  document.querySelector('.button').addEventListener('mouseenter', () => {
+    gsap.to('.button', { scale: 1.1 });
+  });
+
+  document.querySelector('.button').addEventListener('mouseleave', () => {
+    gsap.to('.button', { scale: 1 });
+  });
+</script>

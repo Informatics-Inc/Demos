@@ -21,10 +21,11 @@
   --gray: #ccc;
   
   /* Fonts */
-  --header: "schwager-sans", sans-serif;
+  // --header: "schwager-sans", sans-serif;
+  --header: "Platypi", serif;
   --body: -apple-system, BlinkMacSystemFont, Roboto, roboto slab, droid serif, segoe ui, system-ui, Arial, sans-serif;
   --serif: "Times New Roman", Georgia, serif;
-  --text-color: rgba(0,0,0,.85);
+  --text-color: rgba(0,0,0,.9);
   --text-color-inverse: rgba(255,255,255,.85);
 
   /* Globals */
@@ -45,18 +46,19 @@
   --column-gap-lg: 4rem;
   --fixed-header-height: 115px;
   --side-width: calc(((100vw - var(--max-width))/2) + var(--spacer));
-}
+} 
 
 /* TYPOGRAPHY */
 html {font-size: 100%;}
-body {font-family: var(--body); font-weight: 400; font-size: 1rem; background: var(--bkg); color: var(--text-color); padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
+body {font-family: var(--body); font-weight: 400; font-size: 1rem; background: var(--bkg); color: var(--text-color); padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; overflow-x: hidden;}
 
-h1, h2, h3, h4, h5 {font-family: var(--header); line-height: 1.1; margin: 0 0 1rem 0; font-weight: 700; letter-spacing: -1.5px;}
-h1 {font-size: 4.5rem;}
-h2 {font-size: 2.75rem;}
+h1, h2, h3, h4, h5 {font-family: var(--header); line-height: 1.1; margin: 0 0 1rem 0; font-weight: 400; letter-spacing: -1.5px;}
+h1 {font-size: 4.5rem; font-weight: 300;}
+h2 {font-size: 2.75rem; font-weight: 400;}
 h3 {font-size: 1.65rem;}
 h4 {font-size: 1.5rem;}
 h5 {font-size: 1.4rem;}
+p {letter-spacing: -.25px;}
 p, ul, ol {margin-bottom: 1.25rem;}
 p strong {color: #222;}
 ul {padding: 0 0 0 15px;}
@@ -73,13 +75,17 @@ p a:hover {color: #222;}
 a:focus {outline: 2px dashed var(--primary); /* High contrast for accessibility */outline-offset: 2px;text-decoration: underline;}
 
 /* Paragraphs */
-.is-style-eyebrow {text-transform: uppercase; font-weight: 300; color: var(--theme-primary); letter-spacing: 2px; font-size: .85rem; border-left: 3px solid var(--theme-primary); display: inline-block; padding: 0 8px; display: inline-block; align-self: flex-start; font-weight: 500;}
-.lead, .is-style-lead {font-size: 1.65rem; line-height: 1.4; font-weight: 300; font-weight: 300; margin: 2.5rem 0;}
+.is-style-eyebrow {text-transform: uppercase; font-weight: 300; color: var(--theme-primary); letter-spacing: 2px; font-size: .85rem; display: inline-block; padding: 0; display: inline-block; align-self: flex-start; font-weight: 500; display: flex; align-items: center;}
+.is-style-eyebrow:before {width: 50px; height: 2px; background: var(--theme-primary); content: ""; display: block; margin: 0 1rem 0 0;}
+.lead, .is-style-lead {font-size: 1.65rem; line-height: 1.4; font-weight: 300; font-weight: 300; margin: 2rem 0;}
 .is-style-label {background: var(--theme-primary); padding: 5px 8px; font-size: .65rem; text-transform: uppercase; font-weight: 600; letter-spacing: 1px; display: inline-block;}
 
 /* Utility Classes */
 .box {padding: var(--spacer); border: 1px solid rgba(0,0,0,.1); box-shadow: 0 0 25px rgba(0,0,0,.05);}
 .is-style-bkg-light {background: #fff;}
+
+.dgn-flair {position: relative;}
+.dgn-flair-box:after {display: block; content: "";width: 150px; height: 150px; border: 25px solid var(--theme-accent-2); position: absolute; right: -25px; bottom: -75px; box-shadow: 10px 10px 15px rgba(0,0,0,.05);}
 
 /* Basic Header */
 .basic-header {padding: 10rem var(--side-padding); background: var(--theme-dark); text-align: center;}
@@ -91,8 +97,6 @@ a:focus {outline: 2px dashed var(--primary); /* High contrast for accessibility 
 
 .basic-header .breadcrumb {color: var(--text-color-inverse); justify-content: center;}
 .basic-header .breadcrumb a {color: var(--accent-1); display: flex;}
-
-
 
 /* Fixed Two Col */
 .sticky-twocol {display: grid;grid-template-columns: 1fr 1fr;gap: 2rem;align-items: start;}
@@ -117,6 +121,8 @@ a:focus {outline: 2px dashed var(--primary); /* High contrast for accessibility 
 /* WIDE DESKTOP */
 @media (min-width: 1200px) {
   :root {
-  --spacer-vert: 6rem;
-  }  
+  --spacer-vert: 8rem;
+  }
+  h2 {font-size: 3rem;}
+  h3 {font-size: 1.75rem;}
 }

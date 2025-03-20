@@ -9,15 +9,14 @@
     <!-- FONTS -->
     <link href='css/icons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.typekit.net/bqb0pav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link href="css/app.min.css" rel="stylesheet">
     <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
-    <!-- Animate CDN -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
   </head>
   <body class="jts">
   
@@ -31,10 +30,52 @@
     <a href="index.html" class="logo"><img src="img/commit-logo.svg" /></a>
     <div class="site-menu">
       <ul class="menu-main">
-        <li><a href="solutions.html">Programs & Workshops</a></li>
-        <li><a href="#.html">Our Impact</a></li>
-        <li><a href="#.html">Our Community</a></li>
-        <li><a href="#.html">Insights & Resources</a></li>
+        <li><a href="solutions.html">Programs & Workshops</a>
+          <button class="menu-expand" aria-expanded="false">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+          </button>
+          <ul>
+            <li><a href="overview.html">1-on-1 Coaching</a></li>
+            <li><a href="overview.html">Family Support</a></li>
+            <li><a href="overview.html">Workshops</a></li>
+            <li><a href="overview.html">Digital Resources</a></li>
+          </ul>
+        </li>
+        <li><a href="#.html">Our Impact</a>
+          <button class="menu-expand" aria-expanded="false">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+          </button>
+          <ul>
+            <li><a href="overview.html">Mission & Purpose</a></li>
+            <li><a href="overview.html">Our Coaches</a></li>
+            <li><a href="overview.html">Our Leadership</a></li>
+          </ul>
+        </li>
+        <li><a href="#.html">Our Community</a>
+          <button class="menu-expand" aria-expanded="false">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+          </button>
+          <ul>
+            <li><a href="overview.html">COMMunITy Hub</a></li>
+            <li><a href="overview.html">Networking & Mentorship</a></li>
+            <li><a href="overview.html">The COMMIT Store</a></li>
+          </ul>
+        </li>
+        <li><a href="#.html">Insights & Resources</a>
+          <button class="menu-expand" aria-expanded="false">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+          </button>
+          <ul>
+            <li><a href="overview.html">Insights</a></li>
+            <li><a href="overview.html">COMMIT News</a></li>
+            <li><a href="overview.html">Resource Library</a></li>
+            <li><a href="overview.html">Success Stories</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     <a href="#.html" class="btn-theme">Donate Today</a>
@@ -45,179 +86,223 @@
 </nav>
 
 <main id="content">
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero dgn-flair ">
     <div class="text">
-      <img src="img/swoosh-full.svg" class="h1-topper">
-      <h1 class="fadeinup delay-1">We help high-potential leaders find their <em>purpose,</em> <em>identity,</em> and <em>community.</em> </h1>
-      <p class="lead fadeinup delay-2">Your support builds the networks they need to thrive. <a href="#.html">Donate Today.</a></p>
+      <p class="is-style-eyebrow fadeinup">Our Mission</p>
+      <h1 class="split-text">We help high-potential leaders find their <em>purpose,</em> <em>identity,</em> and <em>community.</em> </h1>
+      <p class="lead fadeinup delay-4">We need on your support to build the networks that help them thrive. <a href="#.html">Join Us.</a></p>
       <!-- <div class="wp-buttons fadeinup delay-3">
         <a href="#.html">Support The Cause</a>
         <a href="#.html" class="btn-secondary">Learn Our Story</a>
       </div> -->
     </div>
-    <div class="container">
+    
       <div class="up-next fadein delay-5">
         <div class="col">
-          <!-- <p class="is-style-label">Workshops</p> -->
+          <p class="is-style-label">Workshops</p>
           <h3>Up Next:</h3>
         </div>
         <div class="col">
-          <!-- <p class="is-style-label">Virtual Webinar Series</p> -->
           <h4>Resiliency in Times of Uncertainty</h4>
-          
-        </div>
-        <div class="col">
           <div class="detail-list">
             <p><i class="fa fa-calendar-days"></i>March 6, 2025</p>
             <p><i class="fa fa-clock"></i>7:00 PM EST</p>
             <a href="#.html">View Event Info <i class="fa fa-arrow-right-long"></i></a>
           </div>
         </div>
-        <!-- <div class="col">
+        <div class="col">
           <h4>Spouses Workshop</h4>
           <div class="detail-list">
             <p><i class="fa fa-calendar-days"></i>April 9, 2025 — May 22, 2025</p>
             <p><i class="fa fa-clock"></i>7:00 PM EST</p>
             <a href="#.html">Learn More <i class="fa fa-arrow-right-long"></i></a>
           </div>
-        </div> -->
+        </div>
       </div>
-    </div>
-    <!-- <img src="img/clients.jpeg" /> -->
+
     <figure class="hero-bkg">
-      <!-- <img src="img/bkg-leads.jpg" /> -->
-      <video autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted" source src="img/hero-1.mp4" type="video/webm" class="fadein-25"></video>
+      <img src="img/hero-1.jpg" />
+      <!-- <video autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted" source src="img/hero-1.mp4" type="video/webm" class="fadein-25"></video> -->
     </figure>
-
-
   </section>
-  <!-- <section class="feature feature-hero">
-    <div class="feature-3">
-      <div class="card fadeinup delay-1">
-        <h3>Generate Leads</h3>
-        <p>We specialize in driving high-quality leads for your business through targeted marketing strategies.</p>
-        <a href="generate-leads.html">Find Leads</a>
-      </div>
-      <div class="card fadeinup delay-2">
-          <h3>Find Talent</h3>
-          <p>Need top talent? We help connect you with the right candidates to grow your team.</p>
-          <a href="find-talent.html">Find Talent</a>
-      </div>
-      <div class="card fadeinup delay-3">
-          <h3>Grow Your Brand</h3>
-          <p>Build a strong, recognizable brand with our strategic branding and digital marketing expertise.</p>
-          <a href="grow-your-brand.html">Grow Your Brand</a>
-      </div>
-    </div>
-  </section> -->
-  <div class="feature">
-    <div class="feature-2">
+
+  <!-- Content 1 -->
+  <section class="cf-section">
+    <div class="grid grid-content-1">
       <div class="col">
-        <figure class="img-overlap wide">
-          <img src="img/feature-1.jpg" class="revealing-image" />
-          <img src="img/feature-2.jpg" />
+        <figure class="theme-img fit-height scroll-in">
+          <img src="img/video-still.jpg" /> 
+          <!-- <p class="img-text-large">What We Do</p> -->
+
         </figure>
       </div>
-      <div class="col text">
-        <p class="is-style-eyebrow">Let's Roll</p>
-        <h2>We are the agency that other agencies dream about.</h2>
-        <p class="lead">We will not be mincing words. We are better than the other people you are considering.</p>
-        <p>As a full-service digital marketing agency based in the Midwest, our talented team of marketers, web developers, and graphic designers will partner with you to deliver cutting-edge solutions that make your company or organization more profitable, efficient, and visible online.</p>
-        
-        <ul class="cta-list">
-          <li><a href="#.html">Generate Leads<i class="lni lni-arrow-angular-top-right"></i></a></li>
-          <li><a href="#.html">Find Talent<i class="lni lni-arrow-angular-top-right"></i></a></li>
-          <li><a href="#.html">Grow Your Brand<i class="lni lni-arrow-angular-top-right"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!--
-  <section class="feature">
-    <div class="feature-3">
-      <div class="card fadeinup delay-1">
-        <h3>Generate Leads</h3>
-        <p>We specialize in driving high-quality leads for your business through targeted marketing strategies.</p>
-        <a href="generate-leads.html">Find Leads</a>
-      </div>
-      <div class="card fadeinup delay-2">
-          <h3>Find Talent</h3>
-          <p>Need top talent? We help connect you with the right candidates to grow your team.</p>
-          <a href="find-talent.html">Find Talent</a>
-      </div>
-      <div class="card fadeinup delay-3">
-          <h3>Grow My Brand</h3>
-          <p>Build a strong, recognizable brand with our strategic branding and digital marketing expertise.</p>
-          <a href="grow-your-brand.html">Grow Your Brand</a>
-      </div>
-    </div>
-  </section>
-  -->
-  <section class="feature feature-inverse">
-    <div class="text">
-      <p class="is-style-eyebrow">Social Proof</p>
-      <h2>Real Results. Proven Success.</h2>
-    </div>
-    <div class="feature-2">
-      <div class="card">
-        <p class="is-style-eyebrow">Case Study</p>  
-        <h3>How Our Client Grew Leads 150% in One Quarter</h3>
-        <p>Build a strong, recognizable brand with our strategic branding and digital marketing expertise.</p>
-        <a href="grow-your-brand.html">See the Full Story</a>
-      </div>
-      <div class="card">
-        <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ea vel nisi at facilis sed enim est, culpa sint reprehenderit?"
-        </blockquote>
-        <p><strong>- Tim</strong></p>
+      <div class="col scroll-in-children">
+        <p class="is-style-eyebrow">How We Do It</p>
+        <h2>Make a strong and bold statement with the titles of each section.</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odit suscipit vel voluptatibus officiis assumenda.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, exercitationem. Magni, et! Quae delectus a repellendus optio est labore repellat consectetur reprehenderit unde. Possimus deserunt alias quae quasi ducimus distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est, cupiditate dignissimos atque odio vero.</p>
+        <div class="grid grid-3 grid-gap-sm scroll-in-children">
+          <div class="col">
+            <div class="stat">
+              <h3>1k+</h3>
+              <p>Service members and veterans supported through our programs.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="stat">
+              <h3>3.5k+</h3>
+              <p>Executive coaching sessions provided.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="stat">
+              <h3>86%</h3>
+              <p>Would recommend COMMIT to friends and colleagues.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="info-list">
-    <div class="text">
-      <div style="max-width: 700px">
-        <p class="is-style-eyebrow">Industry Focus</p>
-        <h2>We partner with creatively-minded groups from diverse industries.</h2>
+  <!-- Content Feature Story -->
+   <section class="cf-section bkg-color bkg-color-right bkg-color-dark">
+    <div class="featured-story">
+      <figure>
+        <img src="img/feature-story.jpg" />
+      </figure>
+      <div class="featured-story-text">
+        <h2>This is the story</h2>
       </div>
-      <a href="#.html">View Our Process</a>
     </div>
-    <ul>
-      <li>B2B</li>
-      <li>B2C</li>
-      <li>Healthcare</li>
-      <li>Government</li>
-      <li>Local Startups</li>
-      <li>Marketing Growth</li>
-      <li>Finance</li>
-      <li>Audio & Tech</li>
-      <li>Digital Items</li>
-      <li>Botany</li>
-      <li>Bowls and Cuttlery</li>
-      <li>Electric Suppliers</li>
-    </ul>
+   </section>
+  <!-- Content 2 Cards -->
+  <section class="cf-section bkg-color bkg-color-right">
+    <header class="cf-header is-text-centered">
+      <p class="is-style-eyebrow">Build the Future</p>
+      <h2>How to Get Involved</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, iure.</p>
+    </header>
+    <div class="theme-cards flow-in">
+      <div class="theme-card">
+        <figure>
+          <img src="img/feature-1.jpg" />
+        </figure>
+        <div class="text">
+          <h3>Donate & Support</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat odit maxime id velit. Qui, totam.</p>
+          <div class="wp-block-buttons is-style-btn-text">
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">How You Can Help</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="theme-card">
+        <figure>
+          <img src="img/feature-2.jpg" />
+        </figure>
+        <div class="text">
+          <h3>Become a Mentor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat odit maxime id velit. Qui, totam.</p>
+          <div class="wp-block-buttons is-style-btn-text">
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Explore Mentorship</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="theme-card">
+        <figure>
+          <img src="img/clients.jpeg" />
+        </figure>
+        <div class="text">
+          <h3>Apply for Fellowship</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat odit maxime id velit. Qui, totam.</p>
+          <div class="wp-block-buttons is-style-btn-text">
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#"">Become a Member</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-<section class="hero">
-  <div class="text">
-    <h1>Find <strong>solutions</strong> to your digital struggles</h1>
-    <p class="lead">You have a problem now. Our quick proposals, fast response, and guaranteed results will elevate your digital initiatives.</p>
-  </div>
-  <figure class="hero-bkg">
-    <video autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted" poster="https://static.vecteezy.com/system/resources/thumbnails/004/827/668/large/technology-network-background-free-video.jpg" class="plyr__video" data-video-player-target="player" data-poster="https://static.vecteezy.com/system/resources/thumbnails/004/827/668/large/technology-network-background-free-video.jpg"><source src="https://static.vecteezy.com/system/resources/previews/004/827/668/mp4/technology-network-background-free-video.mp4" type="video/mp4"><source src="https://static.vecteezy.com/system/resources/previews/004/827/668/technology-network-background-free-video.webm" type="video/webm"></video>
-  </figure> 
-</section>
+  <!-- Content 3 -->
+   <section class="cf-section">
+    <header class="cf-header wide-row">
+      <div class="col">
+        <p class="is-style-eyebrow">Build the Future</p>
+        <h2>What We Offer</h2>
+      </div>
+      <div class="col">
+        <p class="lead">The COMMIT Foundation empowers veterans with personalized support, mentorship, and career resources to navigate civilian life with confidence and purpose.</p>
+      </div>
+    </header>
+    <div class="wide-row flow-in">
+      <div class="col">
+        <img src="img/feature-6.jpg" />
+      </div>
+      <div class="col wide-row-content">
+        <h3>Workshops</h3>
+        <p>COMMIT connects top-tier veterans with industry professionals to create meaningful career opportunities. <a href="#.html" class="text-link">Learn More.</a></p>
+      </div>
+    </div>
+    <div class="wide-row flow-in">
+      <div class="col">
+        <img src="img/feature-5.jpg" />
+      </div>
+      <div class="col wide-row-content">
+        <h3>1 on 1 Coaching</h3>
+        <p>COMMIT meets you where you are in transition. Let us help you build a plan tailored to your individual needs. <a href="#.html" class="text-link">Learn More.</a></p>
+      </div>
+    </div>
+    <div class="wide-row flow-in">
+      <div class="col">
+        <img src="img/feature-4.jpg" />
+      </div>
+      <div class="col wide-row-content">
+        <h3>Resource Library</h3>
+        <p>The Digital Library offers essential videos to help veterans and employers navigate transition challenges. <a href="#.html" class="text-link">View Library.</a></p>
+      </div>
+    </div>
+    <div class="wide-row flow-in">
+      <div class="col">
+        <img src="img/feature-3.jpg" />
+      </div>
+      <div class="col wide-row-content">
+        <h3>Online Courses</h3>
+        <p>COMMIT’s online platform helps you gain self-awareness, set transition priorities, and craft an authentic message. <a href="#.html" class="text-link">Learn More.</a></p>
+      </div>
+    </div>
+   </section>
+  <!-- Content CTA -->
+  <section class="cf-section">
+    <div class="cta">
+      <h2>Support Our Efforts</h2>
+      <p>We need on your support to build the networks that allow veterans to thrive.</p>
+      <div class="wp-block-buttons is-layout-flex">
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.pattiseda.com/meet-patti-ashley/">Donate Today</a>
+        </div>
+        <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="https://www.pattiseda.com/meet-patti-ashley/">Explore Corporate Partnerships</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
-<div id="modal-interupt">
-  <div class="modal-body">
-    <h3>Hey You!</h3>
-    <p>Sorry to yell but you've been here for 60 seconds already. If you really are that interested, let's talk. It's way faster to guage your project over the phone or via a quick Teams clal.</p>
-    <a href="contact.html">Let's Get Started!</a>
-  </div>
-</div>
+<!-- LOAD SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-</main>
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="js/gsap.js"></script>
+
+
+</body>
+</html>

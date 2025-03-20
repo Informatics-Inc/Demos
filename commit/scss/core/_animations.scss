@@ -1,17 +1,50 @@
-/* ANIMATIONS */
 @media (prefers-reduced-motion: no-preference) {
+
+/* Split Word */
+.split-text .word {
+  transform: translateY(100px);
+  transition: transform .5s;
+  opacity: 0;
+  
+}
+.split-text .line {clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
+
+/* ANIMATIONS */
 /* ----------- TIMELINE SCROLL ----------- */
-.scroll-in, .scroll-in-children > * {
+.scroll-in,.scroll-in-children>* {
   animation: scroll-in ease-in forwards;
   animation-timeline: view();
-  animation-range: 100px 250px;
+  animation-range: 50px 150px;
   opacity: 0;
-  translate: 0 15px;
+  translate: 0 15px
 }
-@keyframes scroll-in {to {opacity: 1; translate: 0;}}
+
+@keyframes scroll-in {
+  to {
+      opacity: 1;
+      translate: 0
+  }
+}
+/* Reveal Image on Scroll */
+@keyframes reveal {
+  from {
+      clip-path: inset(0 100% 0 0); /* Fully hidden (right side fully clipped) */
+      opacity: .5;
+    }
+  to {
+      clip-path: inset(0 0 0 0); /* Fully revealed */
+      opacity: 1;
+  }
+}
+.revealing-image {
+  animation: reveal ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 70% cover 45%;
+  clip-path: inset(0 100% 0 0);
+  opacity: .5;
+} 
 
 /* Parallax Effect on Scroll */
-@media (prefers-reduced-motion: no-preference) {
   .parallax-scroll {
     position: relative;
     z-index: 1;
@@ -48,13 +81,13 @@
   10% { transform: rotate(-1deg) scale(1.05); opacity: 1; }
   15% { transform: rotate(0deg) scale(1); }
 }
-
-.lead em, .make-it-pop {
+.curious-wiggle {
   display: inline-block; /* Ensures transform works properly */
   animation: curious-wiggle 2s ease-in-out infinite;
   animation-delay: 7s;
 }
 
+/* ON LOAD FADE UP AND INS */
 /* Fade In - Simple Opacity Animation */
 @keyframes fadein {
   from {
@@ -104,7 +137,42 @@
 .delay-2 { animation-delay: 0.3s; }
 .delay-3 { animation-delay: 0.45s; }
 .delay-4 { animation-delay: 0.6s; }
-.delay-5 { animation-delay: 3s; animation-duration: 1.5s;}
+.delay-6 { animation-delay: .75s;}
+.delay-7 { animation-delay: 3s;}
+.delay-8 { animation-delay: 3s;}
+.delay-9 { animation-delay: 3s;}
+.delay-10 { animation-delay: 3s;}
+
+/* Animate Highlight */
+.hero .text h1 em, .ani-highlight {
+  position: relative;
+  font-style: normal;
+  display: inline-block;
+  z-index: 5;
+}
+
+.hero .text h1 em::after, .ani-highlight:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px; /* Moves underline slightly behind the text */
+  width: 0;
+  height: 50px; /* Adjust thickness here */
+  background: var(--theme-accent-2); /* Matches text color */
+  z-index: 5; /* Puts underline behind text */
+  opacity: 1;
+  mix-blend-mode: overlay;
+  /* Animation */
+  animation: underline-animation 0.8s ease-in-out forwards;
+  display: none;
+}
+
+/* Stagger the animation delay on the ::after pseudo-element */
+.hero .text h1 em:nth-of-type(1)::after { animation-delay: 1.25s; }
+.hero .text h1 em:nth-of-type(2)::after { animation-delay: 2s; }
+.hero .text h1 em:nth-of-type(3)::after { animation-delay: 2.75s; }
+
+
 
 // /* ----------- FADE IN ----------- */
 // @keyframes fadeInUp1 {
@@ -169,22 +237,7 @@
 //   // animation-range: entry 30% cover 25%;
 // }
 
-// @keyframes reveal {
-//   from {
-//       clip-path: inset(0 100% 0 0); /* Fully hidden (right side fully clipped) */
-//   }
-//   to {
-//       clip-path: inset(0 0 0 0); /* Fully revealed */
-//   }
-// }
 
-// .revealing-image {
-//   view-timeline-name: --revealing-image;
-//   view-timeline-axis: block;
-//   animation: linear reveal both;
-//   animation-timeline: --revealing-image;
-//   animation-range: entry 70% cover 45%;
-// }
 
 // @keyframes cliptwist {
 //   from {
@@ -202,5 +255,3 @@
 //   animation-timeline: --cliptwist;
 //   animation-range: entry 100% cover 100%;
 // }
-
-}

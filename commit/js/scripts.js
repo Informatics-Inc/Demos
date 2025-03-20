@@ -1,5 +1,4 @@
 // -- SCROLL EVENTS -- //
-
 $('.menu-toggle').on('click', function() {
   $('.site-menu').toggleClass('active');
 });
@@ -13,7 +12,7 @@ $('.menu-toggle').on('click', function() {
       $("#hdr-site").removeClass("scroll");
     }
     var x = $(this).scrollTop();
-    $(".hero-bkg video").css(
+    $(".hero-bkg video, .hero-bkg img").css(
       "-webkit-transform",
       "translateY(" + x / 6 + "px)"
     );
@@ -51,3 +50,16 @@ $('.menu-toggle').on('click', function() {
   }
   $window.on("scroll resize", check_if_in_view);
   $window.trigger("scroll");
+
+  document.querySelectorAll('button.menu-expand').forEach(button => {
+    button.addEventListener('click', () => {
+        const submenu = button.nextElementSibling;
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Toggle aria-expanded attribute
+        button.setAttribute('aria-expanded', !isExpanded);
+
+        // Toggle 'expanded' class for animation
+        submenu.classList.toggle('expanded');
+    });
+});
