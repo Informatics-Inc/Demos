@@ -55,6 +55,7 @@
 .bkg-color-right-sm:after {background: var(--theme-accent); content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 48%; z-index: -1;}
 .bkg-color-full-accent {background: var(--theme-accent); padding: var(--spacer-vert) var(--side-padding);}
 .bkg-sm-2:after {width: 35%;}
+.bkg-light {background: #fff;}
 
 .bkg-dark {background: var(--theme-dark); padding: var(--spacer-vert) var(--side-padding); color: var(--text-color-inverse);}
 .bkg-dark h2, .bkg-dark h3 {color: #fff;}

@@ -1,5 +1,5 @@
 .blog-list-item {display: grid; gap: 15px; padding: 25px 0; border-bottom: 1px dotted #ccc;}
-.date {font-size: .85rem; font-weight: 700; color: var(--accent-2); text-transform: uppercase; margin: 0 0 1rem 0; letter-spacing: 1px;}
+.date {font-size: .85rem; font-weight: 700; color: var(--theme-primary); text-transform: uppercase; margin: 0 0 1rem 0; letter-spacing: 1px;}
 .blog-list-item .text {align-content: flex-start;}
 .blog-list-item h2 {font-size: 2rem; font-family: var(--body); line-height: 1.2; letter-spacing: normal; margin: 0 0 .5rem 0;}
 .blog-list-item h2 a {color: var(--text); text-decoration: none;}
@@ -15,10 +15,12 @@
     border-color: var(--primary);
 }
 
-.blog-hdr {text-align: center; padding: var(--spacer-vert) 0; margin: 0px 0 var(--spacer-vert) 0; border-bottom: 1px solid #ccc;}
-.blog-hdr h1 {margin: 1rem 0 2rem 0;}
+.blog-hdr {text-align: center; padding: 0; margin: 150px 0 50px 0;}
+.blog-hdr h1 {margin: 1rem 0 2rem 0; font-size: 3rem;}
 .blog-content {font-size: 1.15rem; line-height: 1.6;}
-.blog-share {text-align: center; padding: var(--spacer-vert) 0; margin: var(--spacer-vert) 0; border-top: 1px solid #ccc;}
+.blog-img {margin-bottom: 2rem;}
+
+.blog-share {text-align: center; padding: 75px 0; margin: 100px 0 25px 0; border-top: 1px solid #ccc;}
 .social-share {
   text-align:center;
   list-style:none;
