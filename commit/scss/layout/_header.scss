@@ -1,8 +1,8 @@
 .navbar {position: fixed; top: 0; width: 100%; padding: 1rem var(--side-padding); z-index: 15; display: flex; align-items: center; transition: var(--transition);}
-.navbar.scroll, .navbar.is-small {padding: 1rem var(--side-padding); background: var(--theme-dark);}
+.navbar.scroll, .navbar.is-scrolled {padding: 1rem var(--side-padding); background: var(--theme-dark); box-shadow: 0 5px 10px rgba(0,0,0,.15);}
 .navbar .logo {display: block; min-width: 150px; position: relative; z-index: 15; margin-right: auto
     ;}
-.navbar .btn-theme {margin-left: 1rem; font-size: .85rem; padding: .6rem .9rem; text-decoration: none; background: var(--theme-primary); color: #fff; font-weight: 700; box-shadow: 7px 7px 0 rgba(0,0,0,.5); position: relative; position: relative; z-index: 15; text-transform: uppercase;}
+.navbar .btn-theme {margin-left: 1rem; font-size: .85rem; padding: .6rem .9rem; text-decoration: none; background: var(--theme-primary); color: #fff; font-weight: 700; box-shadow: 7px 7px 0 rgba(0,0,0,.5); position: relative; position: relative; z-index: 15; text-transform: uppercase; border-radius: 3px;}
 .btn-theme:after {position: absolute; inset: -3px; border: 1.5px solid #222; content: ""; z-index: 1; transition: var(--transition); background: #222; background-size: cover; opacity: 0; z-index: -1;}
 .btn-theme:hover:after {inset: 3px; opacity: .35;}
 
@@ -39,7 +39,7 @@
 @media (min-width: 992px) {
 .menu-expand {display: none;}
 .navbar {padding: 1.5rem var(--side-padding);}
-.navbar.scroll, .navbar.is-small {padding: 0 var(--side-padding);}
+.navbar.scroll, .navbar.is-scrolled {padding: 0 var(--side-padding);}
 
 .site-menu {visibility: visible; opacity: 1; background: none; position: relative; height: auto; padding: 0;}
 .site-menu .menu-info {display: none;}
@@ -54,4 +54,9 @@
 .site-menu ul ul a:hover {color: #fff; opacity: 1; text-decoration: none;}
 .menu-toggle {display: none;}
 
+.site-menu > ul > li.nav-active > a::after  {left: calc(50% - 25px); width: 50px;}
+.site-menu > ul > li.nav-active > a {font-weight: 700; opacity: 1;}
+
+.navbar.light-bkg {background: none; color: var(--text-color); box-shadow: none;}
+.navbar.light-bkg .site-menu ul li a {color: var(--text-color);}
 }

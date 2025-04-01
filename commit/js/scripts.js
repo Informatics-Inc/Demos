@@ -22,44 +22,24 @@ $('.menu-toggle').on('click', function() {
     );
   });
 
-  // -- ANIMATE IN TO VIEW -- //
-  var $animation_elements = $(".animate-in, .btn-text, .fade-in");
-  var $window = $(window);
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true, // Allows users to click pagination dots
+    },
+    autoplay: {
+      delay: 3000, // 3 seconds per slide
+      disableOnInteraction: false, // Keeps autoplay running after user interaction
+    },
+    effect: "fade", // Enables fade transition
+    fadeEffect: {
+      crossFade: true, // Ensures smooth fading
+    },
+    speed: 1000, // 1-second transition speed
+  });
 
-  function check_if_in_view() {
-    var window_height = $window.height();
-    var window_top_position = $window.scrollTop();
-    var window_bottom_position = window_top_position + window_height;
-
-    $.each($animation_elements, function () {
-      var $element = $(this);
-      var element_height = $element.outerHeight();
-      var element_top_position = $element.offset().top;
-      var element_bottom_position = element_top_position + element_height;
-
-      // Check to see if this current container is within the viewport
-      if (
-        element_bottom_position >= window_top_position &&
-        element_top_position <= window_bottom_position
-      ) {
-        $element.addClass("visible");
-      } else {
-        $element.removeClass("visible"); // Remove the "visible" class if out of view
-      }
-    });
-  }
-  $window.on("scroll resize", check_if_in_view);
-  $window.trigger("scroll");
-
-  document.querySelectorAll('button.menu-expand').forEach(button => {
-    button.addEventListener('click', () => {
-        const submenu = button.nextElementSibling;
-        const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-        // Toggle aria-expanded attribute
-        button.setAttribute('aria-expanded', !isExpanded);
-
-        // Toggle 'expanded' class for animation
-        submenu.classList.toggle('expanded');
-    });
-});
+  $(".modal-video-button").modalVideo({
+    vimeo: {
+      
+    }
+  });

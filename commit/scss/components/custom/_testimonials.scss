@@ -1,0 +1,79 @@
+.gsap-slider {position: relative;width: 100%;min-height: 400px;overflow: hidden;}
+
+.slide-wrap {display: grid; grid-template-columns: 1fr 2fr; gap: 50px;}
+.slides {position: relative;width: 100%;height: 100%;}
+.slide-wrap figure {aspect-ratio: 1 / 2;}
+.slide-wrap figure img {width: 100%; height: 100%; object-fit: cover;}
+.slide-wrap p {margin: 0;}
+.slide-wrap p .fa {color: var(--theme-accent-2); display: block; font-size: 3rem; margin: 0 0 1rem 0;}
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    display: none; /* Hidden by default */
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  /* Controls at the Bottom */
+  .slider-controls {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Buttons */
+  .prev, .next {
+    background: none;
+    border: 1px solid #bbb;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Pagination (Dots) */
+  .pagination {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background: var(--theme-accent-2); /* Active dot color */
+  }
+  
+/* TABLET */
+@media (min-width: 768px) {
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+
+.testimonials {display: grid; grid-template-columns: 1fr 2.5fr; gap: 100px;}
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}

@@ -14,35 +14,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="css/app.min.css" rel="stylesheet">
     <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
 
   </head>
-  <body class="jts">
+  <body>
   
   <!-- Skip Nav Link-->
   <a id="skip-nav" class="screenreader-text" href="#content">
     Skip to Content
   </a>
 
-
 <nav id="hdr-site" class="navbar">
     <a href="index.html" class="logo"><img src="img/commit-logo.svg" /></a>
     <div class="site-menu">
       <ul class="menu-main">
-        <li><a href="solutions.html">Programs & Workshops</a>
+        <li><a href="landing.html">Programs</a>
           <button class="menu-expand" aria-expanded="false">
             <i class="fa fa-chevron-down"></i>
             <i class="fa fa-chevron-up"></i>
           </button>
           <ul>
+            <li><a href="overview.html">Pursue Your Purpose</a></li>
             <li><a href="overview.html">1-on-1 Coaching</a></li>
-            <li><a href="overview.html">Family Support</a></li>
-            <li><a href="overview.html">Workshops</a></li>
+            <li><a href="overview.html">Workshops Events</a></li>
+            <li><a href="overview.html">On-Purpose</a></li>
+            <li><a href="overview.html">Insights in Action</a></li>
+            <li><a href="overview.html">Special Events</a></li>
             <li><a href="overview.html">Digital Resources</a></li>
           </ul>
         </li>
-        <li><a href="#.html">Our Impact</a>
+        <li><a href="landing.html">Our Impact</a>
           <button class="menu-expand" aria-expanded="false">
             <i class="fa fa-chevron-down"></i>
             <i class="fa fa-chevron-up"></i>
@@ -53,7 +56,7 @@
             <li><a href="overview.html">Our Leadership</a></li>
           </ul>
         </li>
-        <li><a href="#.html">Our Community</a>
+        <li><a href="landing.html">Our Community</a>
           <button class="menu-expand" aria-expanded="false">
             <i class="fa fa-chevron-down"></i>
             <i class="fa fa-chevron-up"></i>
@@ -64,7 +67,7 @@
             <li><a href="overview.html">The COMMIT Store</a></li>
           </ul>
         </li>
-        <li><a href="#.html">Insights & Resources</a>
+        <li><a href="insights.html">Insights & Resources</a>
           <button class="menu-expand" aria-expanded="false">
             <i class="fa fa-chevron-down"></i>
             <i class="fa fa-chevron-up"></i>
@@ -87,15 +90,12 @@
 
 <main id="content">
   <!-- HERO -->
-  <section class="hero dgn-flair ">
+  <section class="hero">
     <div class="text">
       <p class="is-style-eyebrow fadeinup">Our Mission</p>
       <h1 class="split-text">We help high-potential leaders find their <em>purpose,</em> <em>identity,</em> and <em>community.</em> </h1>
-      <p class="lead fadeinup delay-4">We need on your support to build the networks that help them thrive. <a href="#.html">Join Us.</a></p>
-      <!-- <div class="wp-buttons fadeinup delay-3">
-        <a href="#.html">Support The Cause</a>
-        <a href="#.html" class="btn-secondary">Learn Our Story</a>
-      </div> -->
+      <p class="lead fadeinup delay-4">We need on your support to build the networks that help them thrive.</p>
+
     </div>
     
       <div class="up-next fadein delay-5">
@@ -116,7 +116,7 @@
           <div class="detail-list">
             <p><i class="fa fa-calendar-days"></i>April 9, 2025 — May 22, 2025</p>
             <p><i class="fa fa-clock"></i>7:00 PM EST</p>
-            <a href="#.html">Learn More <i class="fa fa-arrow-right-long"></i></a>
+            <a href="#.html">View Event Info <i class="fa fa-arrow-right-long"></i></a>
           </div>
         </div>
       </div>
@@ -131,18 +131,16 @@
   <section class="cf-section">
     <div class="grid grid-content-1">
       <div class="col">
-        <figure class="theme-img fit-height scroll-in">
+        <figure class="theme-img overlap flair-one">
           <img src="img/video-still.jpg" /> 
-          <!-- <p class="img-text-large">What We Do</p> -->
-
+          <img src="img/feature-5.jpg" /> 
         </figure>
       </div>
-      <div class="col scroll-in-children">
+      <div class="col">
         <p class="is-style-eyebrow">How We Do It</p>
         <h2>Make a strong and bold statement with the titles of each section.</h2>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odit suscipit vel voluptatibus officiis assumenda.</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, exercitationem. Magni, et! Quae delectus a repellendus optio est labore repellat consectetur reprehenderit unde. Possimus deserunt alias quae quasi ducimus distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est, cupiditate dignissimos atque odio vero.</p>
-        <div class="grid grid-3 grid-gap-sm scroll-in-children">
+        <div class="grid grid-3 grid-gap-sm flow-in">
           <div class="col">
             <div class="stat">
               <h3>1k+</h3>
@@ -166,17 +164,20 @@
     </div>
   </section>
 
-  <!-- Content Feature Story -->
-   <section class="cf-section bkg-color bkg-color-right bkg-color-dark">
-    <div class="featured-story">
+  <!-- Large Dark Content 
+  <section class="cf-section bkg-color bkg-color-left-sm bkg-sm-2">
+    <div class="feature-quote dgn-flair flair-top-right">
       <figure>
-        <img src="img/feature-story.jpg" />
+        <img src="img/feature-8.jpg" />
       </figure>
-      <div class="featured-story-text">
-        <h2>This is the story</h2>
+      <div class="text">
+        <p class="is-style-eyebrow">Success Stories</p>
+        <p class="lead">The anxiety I was feeling about my civilian career transition has been replaced with excitement and enthusiasm thanks to COMMIT and its mentors. I can't wait to see where my journey after the military takes me.</p>
+        <p class="author">- Dana - CDR U.S. Navy | <a href="#.html">View Success Stories</a></p>
       </div>
     </div>
-   </section>
+  </section>-->
+
   <!-- Content 2 Cards -->
   <section class="cf-section bkg-color bkg-color-right">
     <header class="cf-header is-text-centered">
@@ -230,70 +231,210 @@
   </section>
 
   <!-- Content 3 -->
-   <section class="cf-section">
-    <header class="cf-header wide-row">
-      <div class="col">
-        <p class="is-style-eyebrow">Build the Future</p>
-        <h2>What We Offer</h2>
-      </div>
-      <div class="col">
-        <p class="lead">The COMMIT Foundation empowers veterans with personalized support, mentorship, and career resources to navigate civilian life with confidence and purpose.</p>
-      </div>
-    </header>
-    <div class="wide-row flow-in">
-      <div class="col">
-        <img src="img/feature-6.jpg" />
-      </div>
-      <div class="col wide-row-content">
-        <h3>Workshops</h3>
-        <p>COMMIT connects top-tier veterans with industry professionals to create meaningful career opportunities. <a href="#.html" class="text-link">Learn More.</a></p>
-      </div>
-    </div>
-    <div class="wide-row flow-in">
-      <div class="col">
-        <img src="img/feature-5.jpg" />
-      </div>
-      <div class="col wide-row-content">
-        <h3>1 on 1 Coaching</h3>
-        <p>COMMIT meets you where you are in transition. Let us help you build a plan tailored to your individual needs. <a href="#.html" class="text-link">Learn More.</a></p>
-      </div>
-    </div>
-    <div class="wide-row flow-in">
-      <div class="col">
-        <img src="img/feature-4.jpg" />
-      </div>
-      <div class="col wide-row-content">
-        <h3>Resource Library</h3>
-        <p>The Digital Library offers essential videos to help veterans and employers navigate transition challenges. <a href="#.html" class="text-link">View Library.</a></p>
-      </div>
-    </div>
-    <div class="wide-row flow-in">
-      <div class="col">
-        <img src="img/feature-3.jpg" />
-      </div>
-      <div class="col wide-row-content">
-        <h3>Online Courses</h3>
-        <p>COMMIT’s online platform helps you gain self-awareness, set transition priorities, and craft an authentic message. <a href="#.html" class="text-link">Learn More.</a></p>
-      </div>
-    </div>
-   </section>
-  <!-- Content CTA -->
   <section class="cf-section">
+  <header class="cf-header wide-row">
+    <div class="col">
+      <p class="is-style-eyebrow">Build the Future</p>
+      <h2>What We Offer</h2>
+    </div>
+    <div class="col">
+      <p class="lead">The COMMIT Foundation empowers veterans with personalized support, mentorship, and career resources to navigate civilian life with confidence and purpose.</p>
+    </div>
+  </header>
+  <div class="wide-row flow-in">
+    <div class="col">
+      <img src="img/feature-6.jpg" />
+    </div>
+    <div class="col wide-row-content">
+      <h3>Workshops</h3>
+      <p>COMMIT connects top-tier veterans with industry professionals to create meaningful career opportunities. <a href="#.html" class="text-link">Learn More.</a></p>
+    </div>
+  </div>
+  <div class="wide-row flow-in">
+    <div class="col">
+      <img src="img/feature-5.jpg" />
+    </div>
+    <div class="col wide-row-content">
+      <h3>1 on 1 Coaching</h3>
+      <p>COMMIT meets you where you are in transition. Let us help you build a plan tailored to your individual needs. <a href="#.html" class="text-link">Learn More.</a></p>
+    </div>
+  </div>
+  <div class="wide-row flow-in">
+    <div class="col">
+      <img src="img/feature-4.jpg" />
+    </div>
+    <div class="col wide-row-content">
+      <h3>Resource Library</h3>
+      <p>The Digital Library offers essential videos to help veterans and employers navigate transition challenges. <a href="#.html" class="text-link">View Library.</a></p>
+    </div>
+  </div>
+  <div class="wide-row flow-in">
+    <div class="col">
+      <img src="img/feature-3.jpg" />
+    </div>
+    <div class="col wide-row-content">
+      <h3>Online Courses</h3>
+      <p>COMMIT’s online platform helps you gain self-awareness, set transition priorities, and craft an authentic message. <a href="#.html" class="text-link">Learn More.</a></p>
+    </div>
+  </div>
+  </section>
+  
+  <!-- Filter -->
+  <section class="cf-section bkg-color bkg-color-right-sm">
+    <div class="grid grid-1-2">
+      <div class="col">
+        <p class="is-style-eyebrow">Explore Our Resources</p>
+        <h2>Insights & Resources</h2>
+        <p class="lead">Explore expert insights, success stories, and practical resources to support veterans in their transition and career growth.</p>
+        <ul class="filter-menu">
+          <li><a href="#.html">Career Transformation</a></li>
+          <li><a href="#.html">Leadership & Growth</a></li>
+          <li><a href="#.html">Networking & Mentorship</a></li>
+          <li><a href="#.html">Entrepreneurship</a></li>
+          <li><a href="#.html">Work-Life Balance</a></li>
+          <li><a href="#.html">Community Engagement</a></li>
+          <li><a href="#.html">Family & Spouse Support</a></li>
+          <li><a href="#.html">Investing in America</a></li>
+        </ul>
+        <div class="wp-block-buttons is-style-btn-text">
+          <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="insights.html">View Insights & Resources</a></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="resource-item-list flow-in">
+          <div class="resource-item">
+            <figure><img src="img/feature-story.jpg" /></figure>
+            <div class="text">
+            <p><a href="#.html">Success Stories</a> | <i class="fa fa-play"></i>Success Story</p>
+            <h3><a href="#.html">From Military to Tech: A Veteran's Success Story</a></h3>
+            <p>Watch how one veteran made the leap from active duty to a thriving career in cybersecurity. Gain insights into the certifications and mindset shifts that made all the difference.</p>
+            </div>
+          </div>
+          <div class="resource-item">
+            <figure><img src="img/story-1.webp" /></figure>
+            <div class="text">
+            <p><a href="#.html">Investing in America</a> | <i class="fa fa-play"></i>Video</p>
+            <h3><a href="#.html">Fueling Growth Through Veteran Talent & Innovation</a></h3>
+            <p>Discover how supporting veteran-led businesses and workforce initiatives drives economic growth, fosters innovation, and builds a stronger future for all Americans.</p>
+          </div>
+          </div>
+          <div class="resource-item">
+            <figure><img src="img/feature-4.jpg" /></figure>
+            <div class="text">
+            <p><a href="#.html">Workshops</a> | <i class="fa fa-calendar-days"></i>Event</p>
+            <h3><a href="#.html">Virtual Workshop: Resume Writing for Veterans</a></h3>
+            <p>Join our live session with career coaches who specialize in helping veterans translate military experience into compelling resumes. Get personalized feedback and tips.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA & Logos -->
+  <section class="cf-section bkg-color bkg-color-full-light">
     <div class="cta">
       <h2>Support Our Efforts</h2>
-      <p>We need on your support to build the networks that allow veterans to thrive.</p>
+      <p>Join others to build the networks that allow veterans to thrive.</p>
       <div class="wp-block-buttons is-layout-flex">
-        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.pattiseda.com/meet-patti-ashley/">Donate Today</a>
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Donate Today</a>
         </div>
-        <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="https://www.pattiseda.com/meet-patti-ashley/">Explore Corporate Partnerships</a>
+        <div class="wp-block-button is-style-btn-text"><a class="wp-block-button__link wp-element-button" href="overview">Explore Corporate Partnerships</a>
+        </div>
+      </div>
+      <div class="logo-wrapper">
+        <div class="logos">
+          <img src="img/logos/abc-news.png" />
+          <img src="img/logos/navy-seal-foundation.png" />
+          <img src="img/logos/NYT - The New York Times logo - Brandlogos.net.svg" />
+          <img src="img/logos/fox.png" />
+          <img src="img/logos/goldman.png" />
+          <img src="img/logos/amazon.png" />
+        </div>
+        <div class="logos duplicate">
+          <img src="img/logos/abc-news.png" />
+          <img src="img/logos/navy-seal-foundation.png" />
+          <img src="img/logos/NYT - The New York Times logo - Brandlogos.net.svg" />
+          <img src="img/logos/fox.png" />
+          <img src="img/logos/goldman.png" />
+          <img src="img/logos/amazon.png" />
         </div>
       </div>
     </div>
   </section>
 </main>
 
+<footer class="cf-footer">
+  <img src="img/dc-wide.jpg" />
+  <div class="footer-grid">
+    <div class="col col-centered">
+      <a href="index.html" class="logo"><img src="img/commit-logo.svg" /></a>
+      <p>+1 571 306 1323<br>
+      info@commitfoundation.org</p>
+      <ul class="social-links">
+        <li><a href="#.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#.html" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#.html" aria-label="Vimeo"><i class="fab fa-vimeo-v"></i></a></li>
+      </ul>
+      <div class="wp-block-buttons is-style-btn-secondary">
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Login</a></div>
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Apply</a></div>
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Contact</a></div>
+      </div>
+    </div>
+    <div class="col">
+      <ul class="ftr-menu">
+        <li><a href="landing.html">Programs</a>
+          <ul>
+            <li><a href="overview.html">Pursue Your Purpose</a></li>
+            <li><a href="overview.html">1-on-1 Coaching</a></li>
+            <li><a href="overview.html">Workshops Events</a></li>
+            <li><a href="overview.html">On-Purpose</a></li>
+            <li><a href="overview.html">Insights in Action</a></li>
+            <li><a href="overview.html">Special Events</a></li>
+            <li><a href="overview.html">Digital Resources</a></li>
+          </ul>
+        </li>
+        <li><a href="landing.html">Our Impact</a>
+          <ul>
+            <li><a href="overview.html">Mission & Purpose</a></li>
+            <li><a href="overview.html">Our Coaches</a></li>
+            <li><a href="overview.html">Our Leadership</a></li>
+          </ul>
+        </li>
+        <li><a href="landing.html">Our Community</a>
+          <ul>
+            <li><a href="overview.html">COMMunITy Hub</a></li>
+            <li><a href="overview.html">Networking & Mentorship</a></li>
+            <li><a href="overview.html">The COMMIT Store</a></li>
+          </ul>
+        </li>
+        <li><a href="insights.html">Insights & Resources</a>
+          <ul>
+            <li><a href="post-listing.html">Insights</a></li>
+            <li><a href="post-listing.html">COMMIT News</a></li>
+            <li><a href="post-listing.html">Resource Library</a></li>
+            <li><a href="post-listing.html">Success Stories</a></li>
+          </ul>
+        </li>
+        <li><a href="landing.html">Support Us</a>
+          <ul>
+            <li><a href="overview.html">Donate Now</a></li>
+            <li><a href="overview.html">Corporate Partneships</a></li>
+            <li><a href="overview.html">Other Ways to Give</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="ftr-copy">©2025 The COMMIT Foundation. All rights reservered. Cookie Policy. Web application by Informatics, Inc.</div>
+</footer>
+
 <!-- LOAD SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 
 <!-- GSAP -->
@@ -301,6 +442,7 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
 <script src="https://unpkg.com/split-type"></script>
+
 <script src="js/gsap.js"></script>
 
 

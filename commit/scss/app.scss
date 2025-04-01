@@ -20,11 +20,19 @@ Date: Jan 2024
 
 // Layout
 @import "layout/header";
+@import "layout/footer";
+@import "layout/blog";
 
 @import "components/custom/hero";
 @import "components/custom/content";
+@import "components/custom/testimonials";
+@import "components/custom/resources";
+@import "components/custom/video-hero";
+
 @import "components/standard/theme-img";
 @import "components/standard/theme-cards";
+@import "components/standard/theme-headers";
+
 @import "components/wp-overrides/list";
 @import "components/wp-overrides/buttons";
 
