@@ -2,12 +2,12 @@
 
 /* Split Word */
 .split-text .word {
-  transform: translateY(100px);
+  transform: translateY(130px);
   transition: transform .5s;
   opacity: 0;
   
 }
-.split-text .line {clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
+.split-text .line {clip-path: polygon(0 0, 100% 0, 100% 120%, 0% 120%);}
 
 /* ANIMATIONS */
 /* ----------- TIMELINE SCROLL ----------- */
