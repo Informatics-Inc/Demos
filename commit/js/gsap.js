@@ -64,17 +64,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Logo Scroll Animation
     gsap.to(".logo-wrapper", {
         x: "-50%",
         ease: "none",
-        scrollTrigger: {
-            trigger: ".logo-slider",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1,
-        }
-    });
+        duration: 20, // adjust speed here
+        repeat: -1,   // infinite loop
+      });
+      
 
     // Scroll Padding Adjustment
     const element = document.querySelector(".scroll-to-full");
