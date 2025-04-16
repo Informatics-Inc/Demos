@@ -38,7 +38,7 @@
     font-size: 18px;
     transition: all 0.3s ease;
   }
-  
+  .social-links a img {max-width: 20px; height: auto;}
   .social-links a:hover {
     background: var(--theme-primary);
     color: #fff;
