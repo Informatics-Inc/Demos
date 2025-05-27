@@ -1,0 +1,57 @@
+/* Content */
+.content {padding: var(--spacer-vert) var(--side-padding);}
+
+.grid {display: grid; gap: var(--column-gap-lg);}
+.grid-3 {grid-template-columns: 1fr 1fr 1fr;}
+
+.cta-list {display: flex; gap: 1rem; font-size: 1rem;}
+.cta-list a {font-size: 1rem;}
+.cta-list li:last-of-type {margin-left: auto; color: rgba(0,0,0,.35); text-transform: uppercase; letter-spacing: 1px;}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}
+
+// @keyframes reveal {
+//     from {
+//         clip-path: inset(0 100% 0 0); /* Fully hidden (right side fully clipped) */
+//     }
+//     to {
+//         clip-path: inset(0 0 0 0); /* Fully revealed */
+//     }
+// }
+
+// .revealing-image {
+//     view-timeline-name: --revealing-image;
+//     view-timeline-axis: block;
+//     animation: linear reveal both;
+//     animation-timeline: --revealing-image;
+//     animation-range: entry 70% cover 45%;
+// }
+
+// @keyframes parallax {
+//     from {
+//         transform: translateY(-150px); /* Start position */
+//     }
+//     to {
+//         transform: translateY(150px); /* Moves up by 150px */
+//     }
+// }
+// .parallax-image {
+//     view-timeline-name: --revealing-image;
+//     view-timeline-axis: block;
+//     animation: ease-in parallax both;
+//     animation-timeline: --revealing-image;
+//     animation-range: entry 0% exit 110%; /* Full scroll duration */
+// }

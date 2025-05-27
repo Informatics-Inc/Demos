@@ -1,0 +1,29 @@
+.navbar {position: fixed; top: 0; width: 100%; padding: 1rem var(--side-padding); z-index: 15; display: flex; align-items: center;}
+.navbar .logo {display: block; min-width: 150px; position: relative; z-index: 15; margin-right: auto;}
+.navbar .menu-cta {margin-left: 1rem; font-size: 1rem;}
+
+.menu-main {position: absolute; inset: 0; background: var(--blue); padding: 3rem; height: 100vh; margin: 0; list-style: none; z-index: 15; opacity: 0; visibility: hidden; transition: var(--transition);}
+.menu-main ul {display: none;}
+.menu-main a {font-size: 2rem; color: #fff; text-decoration: none;}
+.menu-main.active {opacity: 1; visibility: visible;}
+
+/* Menu Toggle */
+.menu-toggle {display: grid; gap: 5px; justify-content: flex-end; padding: 1rem; position: relative; z-index: 20;}
+.menu-line {display: block; width: 30px; height: 3px; background: var(--green);}
+.menu-line + .menu-line {width: 20px; margin-left: auto; transition: var(--transition);}
+.menu-toggle:hover .menu-line + .menu-line {width: 30px;}
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+.navbar {padding: 2.5rem var(--side-padding); transition: var(--transition);}
+.navbar.scroll {padding: 1rem var(--side-padding); background: var(--light); box-shadow: 0 15px 15px -20px rgba(0,0,0,.1);}
+
+.menu-toggle {display: none;}
+.menu-main {visibility: visible; opacity: 1; background: none; padding: 0; margin: 0; position: relative; display: flex; height: auto; gap: 1.5rem;}
+.menu-main a {font-size: 1rem; color: var(--blue);}
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1200px) {
+.navbar .logo {min-width: 200px;}
+}
