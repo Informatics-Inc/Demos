@@ -1,6 +1,66 @@
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
 
+    // Split Header 
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+  // create the smooth scroller FIRST!
+    const smoother = ScrollSmoother.create({
+    wrapper: "#wrapper",
+    content: "#content",
+    smooth: 2,
+    speed: 3,
+    effects: true
+    });
+
+    smoother.effects(".hero__image-cont", {
+    speed: () => gsap.utils.random(0.55, 0.85, 0.05)
+    });
+
+    gsap.to(".anim-swipe", {
+    yPercent: 300,
+    delay: 0.2,
+    duration: 3,
+    stagger: {
+      from: "random",
+      each: 0.1
+    },
+    ease: "sine.out"
+    });
+
+    gsap.to(".hero__image-cont > img", {
+    scale: 1.5,
+    xPercent: 20,
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top top",
+      end: "+=3000px",
+      scrub: true
+    }
+    });
+
+
+    gsap.delayedCall(2, () => {
+    gsap.to(".shrink", {
+      height: "75vh",
+      duration: 5,
+      ease: "slow(0.7, 0.7)" // ultra-smooth
+    });
+  });
+    // gsap.fromTo(".hero1 .bkg-media video",
+    //   { opacity: ".25" },
+    //   {
+    //     opacity: "1",
+    //     ease: "none",
+    //     scrollTrigger: {
+    //       trigger: ".hero-wide",
+    //       start: "top top",
+    //       end: "bottom middle",
+    //       scrub: true
+    //     }
+    //   }
+    // );
+
     // Split Text Animation
     new SplitType('.split-text');
     gsap.from('.split-text .char', {
@@ -108,7 +168,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
       
-
+    gsap.to(".hero-wide img", {
+    y: -100, // adjust for stronger/weaker parallax
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".hero-wide",
+      start: "top bottom",   // when top of figure hits bottom of viewport
+      end: "bottom top",     // when bottom of figure hits top of viewport
+      scrub: true            // smooth parallax effect
+    }
+  });
 
 // Set up timeline that scrolls the panels in one by one
 // let panels = gsap.utils.toArray(".panel");
