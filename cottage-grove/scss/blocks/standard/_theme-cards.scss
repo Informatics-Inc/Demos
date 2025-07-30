@@ -1,0 +1,71 @@
+
+.cards-4 .col {grid-column: span 2;}
+.card {position: relative;}
+.card figure {aspect-ratio: 1 / 1.35; margin: 0; overflow: hidden;transition: var(--transition);}
+.card figure img {width: 100%; height: 100%; object-fit: cover; transition: var(--transition); transition-duration: .7s;}
+.card h3 {position: absolute; bottom: 0; left: 0; font-family: var(--body); color: #fff; background: rgba(25,65,80,.85); width: 100%; padding: 1.35rem; font-size: 1.25rem; margin: 0; font-weight: 400; transition: var(--transition);
+background: rgba(25, 65, 80, 0.85) url('../img/green-arrow-right.svg') no-repeat right 1rem center;
+  background-size: 15px; /* adjust as needed */
+}
+.card:hover figure {box-shadow: 0 0 25px rgba(0,0,0,.2);}
+.card:hover figure img {scale: 1.1;}
+.card:hover h3 {padding: 1.65rem 1.35rem; text-decoration: underline;}
+
+
+.card-quote {background: var(--blue); padding: 75px 50px 50px 50px; color: #fff; text-align: center; position: relative; margin: 25px 0; box-shadow: 10px 10px 15px rgba(0,0,0,.15);}
+.card-quote h3 {font-family: var(--body); font-size: 1.5rem;}
+.card-quote figure {width: 80px; height: 80px; position: absolute; left: calc(50% - 40px); top: -40px; border-radius: 50%; border: 5px solid var(--green); overflow: hidden;}
+.card-quote figure img {width: 100%; height: 100%; object-fit: cover;}
+.card-quote .text img {height: 20px; margin: 0 auto;}
+
+/* Base Styles */
+.theme-cards {max-width: var(--max-width); margin: var(--spacer) auto; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; position: relative; z-index: 5; padding-left: var(--side-padding); padding-right: var(--side-padding);}
+.theme-card {position: relative; box-shadow: 0 10px 25px rgba(0,0,0,.1); border-radius: var(--border-radius-sm); overflow: hidden; background: #fff; flex: 215px 0 1; margin: 0 !important;}
+.theme-card figure {overflow: hidden; margin: 0; aspect-ratio: 1.75 / 1;}
+.theme-card figure img {width: 100%; height: 100%; max-width: none; object-fit: cover;}
+.theme-card .card-body {padding: 2rem; font-size: .9rem;}
+.theme-card .card-body h3 {font-size: 1.35rem;}
+.theme-card .fa {background: var(--accent-1); transition: var(--transition); color: #fff; width: 50px; height: 50px; border-radius: 5px; text-align: center; display: grid; align-items: center; font-size: 1.5rem; margin: 2rem 0 0 2rem;}
+.theme-card:hover .fa {transform: scale(1.1);}
+
+/* Size Variants */
+.theme-cards.small .theme-card {flex: 180px 0 1;}
+.theme-cards.medium .theme-card {flex: 250px 0 1;}
+.theme-cards.large .theme-card {flex: 350px 0 1;}
+
+/* Aspect Ratio Variants */
+.theme-cards.tall-image figure {aspect-ratio: 1 / 1.5;}
+
+/* Dark Box Variant */
+.theme-cards.dark-box .card-body {background: var(--primary); color: #fff; padding: 2rem;}
+.theme-cards.dark-box .card-body p {color: #fff;}
+
+/* Center Alignment */
+.theme-cards.center-text {text-align: center;}
+.theme-cards.center-text .fa {margin: 2rem auto 0 auto;}
+.theme-cards.center-text .wp-block-buttons {justify-content: center;}
+
+/* Overlapping and Image Containment */
+.theme-cards.overlap-top-element {margin-top: -150px;}
+.theme-cards.contain-image img {object-fit: contain; padding: .25rem;}
+.theme-cards.flex-grow .theme-card {flex-grow: 1 !important;}
+
+/* Text Over Image */
+.theme-cards.text-over-image .theme-card {position: relative;}
+.theme-cards.text-over-image .theme-card figure {position: absolute; z-index: 1; aspect-ratio: auto; height: 100%; width: 100%; background: var(--primary-dark);}
+.theme-cards.text-over-image .theme-card figure img {width: 100%; height: 100%; opacity: .2;}
+.theme-cards.text-over-image .theme-card .card-body {background: none; z-index: 5; position: relative; color: #fff;}
+.theme-cards.text-over-image .theme-card .card-body a {padding: 10px 15px; background: var(--accent-1); color: #fff; text-decoration: none; border-radius: 5px; display: block; text-align: center;}
+
+.theme-cards.text-over-image.theme-cards.tall-image .theme-card .card-body {min-height: 300px; display: flex; justify-content: center; flex-direction: column;}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    /* Add tablet-specific styles here */
+  
+}
+
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  .grid-2 {display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;}  /* Add desktop-specific styles here */
+}

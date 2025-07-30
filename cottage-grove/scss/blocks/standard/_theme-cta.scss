@@ -1,0 +1,14 @@
+.theme-cta {background: var(--primary-dark); padding: var(--spacer-lg); color: #fff; border-radius: var(--border-radius-sm); align-items: center; gap: var(--spacer);display: grid; gap: var(--column-gap);}
+.cta-content *:last-child {margin-bottom: 0;}
+
+.cta-vertical {display: flex; justify-content: center; flex-direction: column; padding: var(--spacer);}
+
+.theme-cta p a {color: #fff; font-weight: 700;}
+/* TABLET */
+@media (min-width:768px) {
+.theme-cta {grid-template-columns: auto 150px;}
+}
+
+@media (min-width: 992px) {
+
+}

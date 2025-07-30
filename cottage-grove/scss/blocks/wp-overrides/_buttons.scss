@@ -1,0 +1,16 @@
+/* WP Button Styles */
+.wp-block-buttons + * {margin-top: 1rem;}
+.wp-block-buttons.is-layout-flex {gap: .5rem; display: flex; justify-content: center;}
+
+/* Primary Button */
+.wp-block-button__link {background: var(--green); padding:  .65rem 1.15rem; color: var(--blue); display: block; text-align: center; border-radius: 3px; font-weight: 700;}
+.wp-block-button__link:hover {background: #fff; box-shadow: 0 0 0 3px var(--green);}
+
+/* Secondary Button */
+.is-style-btn-secondary .wp-block-button__link {background: var(--tan);}
+.is-style-btn-secondary .wp-block-button__link:hover {background: #fff;}
+
+/* Text Button */
+.is-style-btn-text .wp-block-button__link {background: none; color: var(--blue); text-decoration: underline; padding: 0;}
+.is-style-btn-text .wp-block-button__link:after {content: "\f061";font-family: FontAwesome; margin: 0 0 0 5px; transition: var(--transition);}
+.is-style-btn-text .wp-block-button__link:hover:after {margin: 0 0 0 10px;}

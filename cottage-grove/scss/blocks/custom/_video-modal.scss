@@ -1,0 +1,83 @@
+.video-modal {
+  position: relative;
+  display: inline-block;
+  background-color: var(--dark);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.15);
+}
+
+.video-modal img:not(.icon) {
+  display: block;
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+
+.video-modal .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px;
+  background: rgba(0,0,0,.4); padding: 5px; border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.video-modal span {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  font-size: 0.9rem;
+  width: 100%;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 2;
+  text-align: center;
+}
+.video-modal span h3 {margin: 0 0 1rem 0;}
+
+/* Dark overlay using a pseudo-element */
+.video-modal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--dark);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+/* Hover effects */
+.video-modal:hover::before {
+  opacity: 0.5;
+}
+
+.video-modal:hover img:not(.icon) {
+  opacity: 0.6;
+}
+
+.video-modal:hover span {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+.goverlay {background: rgba(25,65,80,.85) !important;}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width:992px){
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width:1200px){
+
+}
+

@@ -1,0 +1,3 @@
+/* WP Block Separator */
+.wp-block-separator, hr {margin: var(--spacer-vert) auto; border: none; border-bottom: 1px solid #ccc;
+    max-width: calc(var(--max-width) - (var(--side-padding) * 2));} 

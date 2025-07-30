@@ -1,0 +1,7 @@
+.sidebar > * + * {margin-top: 2rem;}
+.sec-nav ul {list-style: none; padding: 0;}
+.sec-nav ul a {display: block; padding: 15px; border-radius: var(--border-radius-sm); font-size: 1.15rem;}
+.sec-nav ul a:hover {background: var(--light); padding: 15px 5px 15px 20px;}
+.sec-nav ul .current_page_item > a {font-weight: 700; text-decoration: none;background: var(--light); padding: 15px 5px 15px 15px;}
+.sec-nav-title {position: relative; padding-top: 5.5rem;}
+.sec-nav-title h4 {background: var(--blue); color: #fff; text-align: center; margin: 0; padding: 1.5rem 2rem; position: absolute; left: 0; top: 0; width: 100%; border-radius: 5px 5px 0 0;}

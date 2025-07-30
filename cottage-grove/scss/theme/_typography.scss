@@ -1,0 +1,31 @@
+/* TYPOGRAPHY */
+html {font-size: 100%;}
+body {font-family: var(--text); font-weight: 400; font-size: 1rem; background: var(--bkg); color: var(--text-color); padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
+
+h1, h2, h3, h4, h5 {font-family: var(--header); line-height: 1.1; margin-top: 0; margin-bottom: 1.5rem;}
+h1 {font-size: 2.75rem;}
+h2 {font-size: 2.25rem; font-weight: 500; text-wrap: balance;}
+h3 {font-size: 1.75rem; font-weight: 600;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.25rem;}
+p, ul, ol {margin-bottom: 1.25rem;}
+
+/* Links */
+a {transition: var(--transition); color: var(--blue);}
+p a {font-weight: 700; text-decoration: underline;}
+a:hover {text-decoration: none;}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {   
+    h1 {font-size: 3.5rem;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+    h2 {font-size: 2.5rem;}
+}

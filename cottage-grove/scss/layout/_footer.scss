@@ -1,0 +1,48 @@
+.footer {position: relative; z-index: 5; background: var(--blue); color: var(--text-color-inverse); padding: 1px 0;}
+.footer ul {padding: 00; list-style: none;}
+.footer ul a {color: var(--text-color-inverse); display: block; padding: 5px 0; text-decoration: none;}
+.footer ul a:hover {text-decoration: underline;}
+.footer ul li::marker {color: var(--green);}
+.footer h4 {color: #fff;}
+.footer p a {color: var(--text-color-inverse); text-decoration: none;}
+.footer p strong {color: #fff;font-weight: 500; font-size: 1.25rem;}
+.ftr-cols {margin: var(--spacer-vert) 0;}
+.ftr-cols .col {flex: 1;}
+
+.footer .inline-feature {grid-template-columns: 50px auto;}
+.footer .inline-feature + .inline-feature {margin-top: 1.5rem;}
+.footer .inline-feature a {font-weight: 300;}
+.footer .inline-feature .fa {color: var(--green); text-align: center; font-size: 1.5rem;}
+.footer .inline-feature p {margin: 0;}
+
+.copy {border-top: 1px solid rgba(255,255,255,.25); padding: 2rem; text-align: center; margin: 0; font-size: .85rem;}
+
+.nav-ftr {display: flex; gap: 2rem;}
+.nav-ftr li {flex: 1;}
+.bkg-footer {position: absolute; opacity: .25; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0; z-index: -1; mix-blend-mode: multiply;}
+
+.ftr-special {margin: var(--spacer-vert) 0; border-bottom: 1px solid rgba(255,255,255,.25); padding-bottom: var(--spacer-vert);}
+
+
+.nav-ftr {padding: 0; margin: 0;}
+.nav-ftr a {font-weight: 500; font-size: 1.25rem;}
+.nav-ftr ul {padding: 0 0 0 1rem; list-style: square;}
+.nav-ftr ul a {font-weight: 400; font-size: 1rem;}
+
+
+.bkg-ftr figure {position: absolute; inset: 0; z-index: -1;}
+.bkg-ftr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .2;}
+
+.fine-print {font-size: .75rem;}
+.footer ul li a svg {color: #fff !important;}
+
+.footer .wp-block-social-links a {display: flex; align-items: center;}
+.footer .wp-block-social-links a span {color: #fff; font-size: 1.25rem;}
+.footer .wp-block-social-links {display: grid !important; gap: 0;}
+.footer .wp-block-social-links a {transition: none !important;}
+.wp-block-social-links .wp-block-social-link.wp-social-link {transition: none; transform: none;}
+.footer .wp-block-social-links a:hover {text-decoration: underline; text-decoration-color: #fff;}
+
+@media (min-width: 992px) {
+.ftr-cols {display: grid; grid-template-columns: 1fr 3fr; gap: 100px}
+}

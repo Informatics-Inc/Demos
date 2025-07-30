@@ -115,6 +115,7 @@ ol li::marker {font-weight: 700; color: var(--blue);}
 :root {
   --spacer: 3rem;
 }
+.nav-main a {font-size: 1.15rem;}
   .hero {padding-top: 30vh;}
 .hero h1 {font-size: 6rem;}
 .feature-list li {font-size: 1.35rem;}
@@ -126,4 +127,4 @@ ol li::marker {font-weight: 700; color: var(--blue);}
   will-change: clip-path;
 }
 
-.bkg-texture {width: 100%; position: absolute; top: 0; opacity: .75; z-index: -1; mix-blend-mode: soft-light;}
+.bkg-texture {width: 100%; position: absolute; top: 0; opacity: .05; z-index: -1; mix-blend-mode: normal; display: none;}

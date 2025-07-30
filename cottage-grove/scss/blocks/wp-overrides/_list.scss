@@ -1,0 +1,14 @@
+/* Checkmark List */
+.is-style-checklist {list-style-type:none;padding-left:0;}
+.is-style-checklist li {list-style-type:none;position:relative;padding-left:24px;margin-bottom:15px;line-height:1.4}
+.is-style-checklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--primary)}
+
+.is-style-linklist {list-style-type:none;padding-left:0; max-width: 300px;}
+.is-style-linklist li {border-bottom: 1px dotted #ccc;}
+.is-style-linklist li a {text-decoration: none; display: flex; justify-content: space-between; padding: 10px 0; font-size: 1.05rem;}
+.is-style-linklist li a:after {content: "\f061";font-family: FontAwesome; color: var(--green); margin-right: 5px; transition: var(--transition);}
+.is-style-linklist li a:hover:after {margin-right: 0;}
+.wp-block-cover .is-style-linklist li a:hover {color: var(--green);}
+.is-style-linklist li a:hover {text-decoration: underline;}
+
+.is-style-linklist-twocol {display: grid; grid-template-columns: 1fr 1fr; column-gap: 1rem; max-width: none;}

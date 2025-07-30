@@ -1,0 +1,53 @@
+/* CSS Document
+Client: Cottage Grove Place
+Company: Informatics, Inc
+Author: Jeff S
+Date: Jul 29 2025
+*/
+
+// Core
+@use "core/reset" as *;
+@use "core/animations" as *;
+
+// WP Layouts
+@use "core/wpcols-for-demo" as *; // WordPress CSS for column layouts - can remove in final project
+@use "core/wp-layout-overrides" as *; // WordPress CSS overrides to emulate a Page Builder - do not remove
+
+// Theme
+@use "theme/variables" as *;
+@use "theme/typography" as *;
+@use "theme/layout" as *;
+
+// Layout
+@use "layout/header" as *;
+@use "layout/footer" as *;
+@use "layout/blog" as *;
+@use "layout/contact-form" as *;
+
+
+// Update WordPress Blocks to Match Theme
+@use "blocks/wp-overrides/buttons" as *;
+@use "blocks/wp-overrides/columns" as *;
+@use "blocks/wp-overrides/cover" as *;
+// @use "blocks/wp-overrides/file" as *;
+@use "blocks/wp-overrides/group" as *;
+@use "blocks/wp-overrides/list" as *;
+@use "blocks/wp-overrides/paragraph" as *;
+// @use "blocks/wp-overrides/search" as *;
+// @use "blocks/wp-overrides/separator" as *;
+// @use "blocks/wp-overrides/social-links" as *;
+// @use "blocks/wp-overrides/image" as *;
+
+// Standard Theme Blocks
+@use "blocks/standard/theme-cta" as *;
+@use "blocks/standard/theme-cards" as *;
+@use "blocks/standard/theme-image" as *;
+@use "blocks/standard/page-header" as *;
+@use "blocks/standard/sidebar-nav" as *;
+@use "blocks/standard/accordion" as *;
+@use "blocks/standard/testimonials" as *;
+@use "blocks/standard/post-list" as *;
+
+// Custom Theme Blocks
+@use "blocks/custom/home-hero" as *;
+@use "blocks/custom/video-modal" as *;
