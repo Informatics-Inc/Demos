@@ -1,13 +1,14 @@
 /* Page Headers */
-.page-hdr {position: relative; z-index: 5; overflow: hidden;}
-.page-hdr figure {position: absolute; inset: 0; background: var(--blue); margin: 0;}
-.page-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .2; mix-blend-mode: multiply;}
-.page-hdr .content {padding: var(--spacer-vert) var(--spacer); text-align: center; position: relative; z-index: 5;}
+.page-hdr {position: relative; z-index: 5; overflow: hidden; height: 65vh; min-height: 500px;}
+.page-hdr figure {position: absolute; inset: 0; background: var(--dark); margin: 0;}
+.page-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .35; }
+.page-hdr .content {padding: var(--side-padding); text-align: center; position: relative; z-index: 5; display: flex; justify-content: center; flex-direction: column; height: 100%; margin: 0;}
 .page-hdr .content h1 {color: #fff; margin: 0;}
+.page-hdr:after {position: absolute; bottom: 0; left: 0; width: 100%; height: 20px; background: url(../img/hero-btm.svg) center bottom repeat-x; content: ""; background-size: contain;}
 
 /* Breadcrumb */
-.page-hdr .breadcrumb-nav {display: flex; flex-wrap: wrap; justify-content: center; padding: 0; margin: 0 0 .5rem 0; font-size:0.75rem;letter-spacing:0px; text-transform: uppercase; list-style: none; gap: 20px; font-family: var(--header); letter-spacing: 1px; color: var(--text-color-inverse);}
-.page-hdr .breadcrumb-nav a {color: var(--text-color-inverse);}
+.page-hdr .breadcrumb-nav {display: flex; flex-wrap: wrap; justify-content: center; padding: 0; margin: 0 0 .5rem 0; font-size:0.75rem;letter-spacing:0px; text-transform: uppercase; list-style: none; gap: 20px; font-family: var(--body); letter-spacing: 1px; color: var(--text-color-inverse);}
+.page-hdr .breadcrumb-nav a {color: var(--green);}
 .page-hdr .breadcrumb-nav li {position: relative;}
 .page-hdr .breadcrumb-nav li:after {content:"";width: 4px; height: 4px; background: var(--accent-2); position: absolute; right: -12px; top: 8px; margin: 0 0 0 .5rem; display: block; border-radius: 50%;}
 .page-hdr .breadcrumb-nav li:last-of-type:after {display: none;}

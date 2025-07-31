@@ -8,7 +8,7 @@
       $("#hdr-site").removeClass("scroll");
     }
     var x = $(this).scrollTop();
-    $(".hero figure img").css(
+    $(".hero figure img, .page-hdr figure img").css(
       "-webkit-transform",
       "translateY(" + x / 6 + "px)"
     );
@@ -17,6 +17,22 @@
       "translateY(" + x / 8 + "px)"
     );
   });
+
+  $('.accordion-item h3').on('click', function () {
+      const $header = $(this);
+      const $collapse = $header.next('.accordion-collapse');
+
+      // Toggle icon rotation and collapse state
+      $header.toggleClass('collapsed');
+      $collapse.toggleClass('show collapsed');
+
+      // Optional: close others (accordion behavior)
+      // Uncomment below if only one should be open at a time
+     
+      $('.accordion-item h3').not($header).removeClass('collapsed');
+      $('.accordion-collapse').not($collapse).removeClass('show').addClass('collapsed');
+ 
+    });
 
   // -- ANIMATE IN TO VIEW -- //
   var $animation_elements = $(".animate-in, .btn-text, .fade-in");
@@ -46,3 +62,17 @@
   }
   $window.on("scroll resize", check_if_in_view);
   $window.trigger("scroll");
+
+$(document).ready(function () {
+    $('#menu-toggle').on('click', function () {
+      // Toggle the hamburger/X icon
+      $(this).toggleClass('collapsed');
+
+      // Toggle the main nav menu
+      $('#menu').toggleClass('collapsed').toggleClass('show');
+
+      // Optional: Update ARIA attribute for accessibility
+      const expanded = $(this).attr('aria-expanded') === 'true';
+      $(this).attr('aria-expanded', !expanded);
+    });
+  });

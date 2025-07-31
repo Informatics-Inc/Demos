@@ -5,7 +5,8 @@
     padding: 0 var(--side-padding);
 }
 
-.content {margin: var(--spacer-vert) auto;}
+.content {margin: var(--spacer-vert) auto; position: relative;}
+.swoop-line {position: absolute; top: 10%; width: 100%; margin-left: 0;}
 .is-vertically-aligned-center {align-items: center;}
 
 figure {margin: 0;}
@@ -13,6 +14,7 @@ figure {margin: 0;}
 .inline-feature {display: grid; grid-template-columns: 100px auto; gap: 1rem; align-items: center;}
 .inline-feature p {font-size: 1.25rem; font-weight: 300; text-wrap: balance; line-height: 1.2; border-left: 1px dotted #ccc; padding-left: 1rem;}
 .inline-feature + .inline-feature {margin-top: 1rem;}
+
 /* TABLET */
 @media (min-width: 768px) {
 

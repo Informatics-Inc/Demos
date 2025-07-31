@@ -1,16 +1,16 @@
 
 .cards-4 .col {grid-column: span 2;}
-.card {position: relative;}
+.card {position: relative;text-decoration: none;}
 .card figure {aspect-ratio: 1 / 1.35; margin: 0; overflow: hidden;transition: var(--transition);}
 .card figure img {width: 100%; height: 100%; object-fit: cover; transition: var(--transition); transition-duration: .7s;}
-.card h3 {position: absolute; bottom: 0; left: 0; font-family: var(--body); color: #fff; background: rgba(25,65,80,.85); width: 100%; padding: 1.35rem; font-size: 1.25rem; margin: 0; font-weight: 400; transition: var(--transition);
+
+.card-box .card h3 {position: absolute; bottom: 0; left: 0; font-family: var(--body); color: #fff; background: rgba(25,65,80,.85); width: 100%; padding: 1.25rem; font-size: 1.25rem; margin: 0; font-weight: 400; transition: var(--transition);
 background: rgba(25, 65, 80, 0.85) url('../img/green-arrow-right.svg') no-repeat right 1rem center;
-  background-size: 15px; /* adjust as needed */
-}
+  background-size: 15px; /* adjust as needed */}
+  
 .card:hover figure {box-shadow: 0 0 25px rgba(0,0,0,.2);}
 .card:hover figure img {scale: 1.1;}
-.card:hover h3 {padding: 1.65rem 1.35rem; text-decoration: underline;}
-
+.card-box .card:hover h3 {padding: 1.65rem 1.35rem; text-decoration: underline;}
 
 .card-quote {background: var(--blue); padding: 75px 50px 50px 50px; color: #fff; text-align: center; position: relative; margin: 25px 0; box-shadow: 10px 10px 15px rgba(0,0,0,.15);}
 .card-quote h3 {font-family: var(--body); font-size: 1.5rem;}
@@ -18,13 +18,21 @@ background: rgba(25, 65, 80, 0.85) url('../img/green-arrow-right.svg') no-repeat
 .card-quote figure img {width: 100%; height: 100%; object-fit: cover;}
 .card-quote .text img {height: 20px; margin: 0 auto;}
 
+/* Text Cards */
+
+.text-cards .card h3 {position: relative; font-family: var(--header); font-size: 2rem; padding-right: 100px; text-wrap: balance;}
+.text-cards figure {margin: 0 0 1rem 0;}
+.text-cards p, .text-cards .wp-block-button__link {font-size: .9rem;}
+
+
+
 /* Base Styles */
 .theme-cards {max-width: var(--max-width); margin: var(--spacer) auto; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; position: relative; z-index: 5; padding-left: var(--side-padding); padding-right: var(--side-padding);}
-.theme-card {position: relative; box-shadow: 0 10px 25px rgba(0,0,0,.1); border-radius: var(--border-radius-sm); overflow: hidden; background: #fff; flex: 215px 0 1; margin: 0 !important;}
+.theme-card {position: relative; box-shadow: 0px 0px 25px rgba(0,0,0,.05);overflow: hidden; background: #fff; flex: 215px 0 1; margin: 0 !important;}
 .theme-card figure {overflow: hidden; margin: 0; aspect-ratio: 1.75 / 1;}
 .theme-card figure img {width: 100%; height: 100%; max-width: none; object-fit: cover;}
 .theme-card .card-body {padding: 2rem; font-size: .9rem;}
-.theme-card .card-body h3 {font-size: 1.35rem;}
+.theme-card .card-body h3 {font-size: 1.45rem; font-family: var(--body);}
 .theme-card .fa {background: var(--accent-1); transition: var(--transition); color: #fff; width: 50px; height: 50px; border-radius: 5px; text-align: center; display: grid; align-items: center; font-size: 1.5rem; margin: 2rem 0 0 2rem;}
 .theme-card:hover .fa {transform: scale(1.1);}
 
