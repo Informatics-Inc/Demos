@@ -19,12 +19,9 @@ background: rgba(25, 65, 80, 0.85) url('../img/green-arrow-right.svg') no-repeat
 .card-quote .text img {height: 20px; margin: 0 auto;}
 
 /* Text Cards */
-
-.text-cards .card h3 {position: relative; font-family: var(--header); font-size: 2rem; padding-right: 100px; text-wrap: balance;}
+.text-cards .card h3 {position: relative; font-family: var(--header); font-size: 2rem; padding-right: 60px; text-wrap: balance;}
 .text-cards figure {margin: 0 0 1rem 0;}
 .text-cards p, .text-cards .wp-block-button__link {font-size: .9rem;}
-
-
 
 /* Base Styles */
 .theme-cards {max-width: var(--max-width); margin: var(--spacer) auto; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; position: relative; z-index: 5; padding-left: var(--side-padding); padding-right: var(--side-padding);}
@@ -77,3 +74,7 @@ background: rgba(25, 65, 80, 0.85) url('../img/green-arrow-right.svg') no-repeat
 @media (min-width: 1200px) {
   .grid-2 {display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;}  /* Add desktop-specific styles here */
 }
+
+
+.card {display: flex; justify-content: flex-start; flex-direction: column; justify-items: flex-start; height: 100%;}
+.card .wp-block-buttons {margin: auto 0 0 0;}

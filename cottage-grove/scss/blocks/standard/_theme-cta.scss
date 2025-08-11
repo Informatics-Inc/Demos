@@ -4,6 +4,8 @@
 .cta-vertical {display: flex; justify-content: center; flex-direction: column; padding: var(--spacer);}
 
 .theme-cta p a {color: #fff; font-weight: 700;}
+
+.guide-cover {box-shadow: 5px 5px 15px rgba(0,0,0,.1); rotate: -5deg;}
 /* TABLET */
 @media (min-width:768px) {
 .theme-cta {grid-template-columns: auto 150px;}

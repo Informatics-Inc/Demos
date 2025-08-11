@@ -29,6 +29,7 @@
 #menu-toggle .open {opacity: 1; visibility: visible; top: 0;}
 #menu-toggle .closed {opacity: 0; visibility: hidden; top: 5px;}
 
+
 #menu .wp-block-buttons > .wp-block-button {display: block; width: 100%; margin: 1rem 0;}
 
 /* Menu Collapse */
@@ -71,7 +72,7 @@
 #hdr-site {box-shadow: none; position: fixed; top: 0; width: 100%; transition: var(--transition);}
 #hdr-site.scroll, #hdr-site.scrolled { box-shadow: var(--box-shadow-sm);}
 // #content {margin-top: var(--fixed-header-height); padding: 1px 0;}
-
+#menu .wp-block-buttons {margin: 0 0 0 1rem;}
 /* Dropdown */
 .nav-main .btn-expand {display: none;}
 .nav-main li {position: relative;}

@@ -10,7 +10,7 @@
 }
 
 .accordion-collapse.show {
-    height: calc-size(auto);
+    height: auto;
 }
 
 .accordion-item h3 {
@@ -31,7 +31,7 @@
 .accordion-item h3 .fa {
     color: var(--green);
     font-size: 20px;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     transition: var(--transition)
 }
 
@@ -54,5 +54,5 @@
 }
 
 .accordion-item h3.collapsed .fa {
-    transform: rotate(0deg)
+    transform: rotate(180deg)
 }

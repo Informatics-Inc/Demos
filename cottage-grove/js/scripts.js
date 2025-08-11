@@ -18,21 +18,22 @@
     );
   });
 
-  $('.accordion-item h3').on('click', function () {
-      const $header = $(this);
-      const $collapse = $header.next('.accordion-collapse');
+$('.accordion-item h3').on('click', function () {
+    const $header = $(this);
+    const $item = $header.closest('.accordion-item'); // scope to clicked item
+    const $collapse = $header.next('.accordion-collapse');
 
-      // Toggle icon rotation and collapse state
-      $header.toggleClass('collapsed');
-      $collapse.toggleClass('show collapsed');
+    // Toggle clicked item
+    $header.toggleClass('collapsed');
+    $collapse.toggleClass('show collapsed');
 
-      // Optional: close others (accordion behavior)
-      // Uncomment below if only one should be open at a time
-     
-      $('.accordion-item h3').not($header).removeClass('collapsed');
-      $('.accordion-collapse').not($collapse).removeClass('show').addClass('collapsed');
- 
+    // Close other items in the same accordion
+    $item.siblings('.accordion-item').each(function () {
+        $(this).find('h3').addClass('collapsed');
+        $(this).find('.accordion-collapse').removeClass('show').addClass('collapsed');
     });
+});
+
 
   // -- ANIMATE IN TO VIEW -- //
   var $animation_elements = $(".animate-in, .btn-text, .fade-in");

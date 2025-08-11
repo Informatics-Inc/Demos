@@ -1,5 +1,5 @@
 /* Page Headers */
-.page-hdr {position: relative; z-index: 5; overflow: hidden; height: 65vh; min-height: 500px;}
+.page-hdr {position: relative; z-index: 5; overflow: hidden; height: 60vh; min-height: 500px;}
 .page-hdr figure {position: absolute; inset: 0; background: var(--dark); margin: 0;}
 .page-hdr figure img {width: 100%; height: 100%; object-fit: cover; opacity: .35; }
 .page-hdr .content {padding: var(--side-padding); text-align: center; position: relative; z-index: 5; display: flex; justify-content: center; flex-direction: column; height: 100%; margin: 0;}

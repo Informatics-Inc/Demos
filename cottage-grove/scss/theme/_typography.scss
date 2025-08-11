@@ -15,6 +15,7 @@ a {transition: var(--transition); color: var(--blue);}
 p a {font-weight: 700; text-decoration: underline;}
 a:hover {text-decoration: none;}
 
+.no-balance {text-wrap: wrap !important;}
 /* TABLET */
 @media (min-width: 768px) {
 
