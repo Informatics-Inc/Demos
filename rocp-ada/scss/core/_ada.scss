@@ -1,0 +1,108 @@
+/* =========================
+   ADA / Accessibility Utilities
+   ========================= */
+
+/* Always Include Skip Nav */
+.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+.screenreader-text:focus {
+  background: var(--darkblue);
+  color: #fff;
+  display: block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+}
+/* Visually hide, but keep for screen readers */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Only reveal when focused (e.g., skip links) */
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+}
+
+/* Ensure visible focus outline */
+:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none; /* keeps outline only for keyboard users */
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-color, #1a73e8);
+  outline-offset: 3px;
+}
+
+/* High contrast utility (for testing / optional toggle) */
+.high-contrast * {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+/* Skip link base */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 0;
+}
+
+/* Live region utility (for async status messages) */
+[role="status"],
+[role="alert"] {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Pointer target size (touch friendly) */
+.touch-target {
+  min-height: 44px; /* Apple HIG / WCAG 2.5.5 */
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide purely decorative icons from assistive tech */
+.icon[aria-hidden="true"] {
+  pointer-events: none; /* don’t trap focus */
+}

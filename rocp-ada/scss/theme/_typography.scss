@@ -1,0 +1,168 @@
+/* TYPOGRAPHY */
+html {font-size: 100%;}
+body {font-family: var(--body); font-weight: 400; font-size: 1rem; background: #fff; color: var(--text-color); padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background: var(--gray);}
+
+h1, h2, h3, h4, h5 {font-family: var(--body); line-height: 1.1; margin-top: 0; margin-bottom: .5rem; color: var(--darkerblue);}
+h1 {font-size: 2.35rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1rem;}
+h6 { font-size: 0.875rem; line-height: 1.25; margin: 0 0 .5rem; letter-spacing: -0.25px; }
+
+p, ul, ol {margin-bottom: 1.25rem;}
+blockquote {border-left: 5px solid var(--orange); padding: .5rem 1rem; font-size: 1.25rem; font-weight: 300; background: var(--light);}
+
+hr {margin: 2rem auto; border: none; border-bottom: 1px solid #ccc;}
+
+/* Links */
+/* ——— Links (user-focused, non-brand) ——— */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .15em;
+  transition: var(--transition); 
+}
+a:hover { text-decoration-thickness: .12em; }
+a:visited { color: var(--link-visited); }
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ——— Small text & inline emphasis ——— */
+small { font-size: 0.875rem; color: var(--muted); }
+strong { font-weight: 700; color: inherit; }
+em { font-style: italic; color: inherit; }
+mark {
+  background: var(--warning-bg);    /* warm, readable */
+  color: var(--text-color);
+  padding: 0 .15em;
+  border-radius: .125rem;
+}
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+/* Sup/Sub sizing & vertical rhythm */
+sup, sub { font-size: 0.75em; line-height: 0; position: relative; }
+sup { top: -0.4em; }
+sub { bottom: -0.2em; }
+
+/* ——— Code / Pre / Kbd ——— */
+code, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95rem;
+}
+code {
+  background: var(--code-bg);
+  color: #111827;
+  padding: .1rem .3rem;
+  border-radius: .25rem;
+  border: 1px solid var(--border);
+}
+pre {
+  background: var(--code-bg);
+  color: #111827;
+  padding: 1rem;
+  border-radius: .375rem;
+  border: 1px solid var(--border);
+  overflow: auto;
+  line-height: 1.45;
+}
+pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+kbd {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: .25rem;
+  padding: .1rem .35rem;
+  box-shadow: 0 1px 0 rgba(0,0,0,.04);
+}
+
+/* ——— Figures / Images ——— */
+img { max-width: 100%; height: auto; }
+figure { margin: 0 0 1.25rem; }
+figcaption {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: .5rem;
+}
+
+/* ——— Lists (extras) ——— */
+ul, ol { padding-left: 1.25rem; }
+// li + li { margin-top: .25rem; }
+dl { margin: 0 0 1.25rem; }
+dt { font-weight: 600; color: var(--text-color); }
+dd { margin: 0 0 .5rem 0; color: var(--muted); }
+
+/* ——— Tables ——— */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+}
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: .5rem;
+}
+thead th {
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  color: var(--text-color);
+  font-weight: 700;
+  padding: .75rem;
+}
+tbody th { text-align: left; font-weight: 600; }
+th, td {
+  padding: .75rem;
+  border-bottom: 1px solid var(--border);
+}
+tbody tr:nth-child(even) { background: #FAFAFA; } /* subtle zebra, keeps contrast */
+
+/* ——— Details / Summary ——— */
+details { margin: 0 0 1.25rem; }
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+}
+summary:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ——— Address ——— */
+address { font-style: normal; color: var(--muted); }
+
+/* ——— Selection (nice-to-have; maintains contrast) ——— */
+::selection {
+  background: rgba(26,115,232,.25); /* uses ADA blue tint */
+  color: inherit;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {   
+// h1 {font-size: 3.5rem;}
+// h2 {font-size: 2.65rem;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+
+}

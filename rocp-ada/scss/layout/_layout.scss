@@ -1,0 +1,52 @@
+/* GLOBAL */
+.page-hdr {background: var(--darkerblue); padding: var(--spacer);}
+.page-hdr h1 {color: #fff; font-size: 2rem; font-weight: 500; margin: 0 0 .5rem 0;}
+.breadcrumb {padding: 0; margin: 0; color: var(--text-color-inverse); list-style: none; display: flex; gap: 8px; font-size: .85rem;}
+
+.breadcrumb a {color: var(--text-color-inverse);}
+.breadcrumb a:hover {color: #fff;}
+.breadcrumb .active {opacity: .65;}
+.breadcrumb li + li:before {content: "|"; margin-right: 8px; opacity: .5;}
+
+.panel-wrapper {padding: var(--spacer); display: grid; gap: var(--spacer);}
+.panel {background: #fff; padding: var(--spacer); border-radius: 4px; font-size: .9rem;}
+.panel-title {border-bottom: 1px solid var(--border); padding: 0 0 var(--spacer); margin: 0 0 var(--spacer) 0;}
+.panel-title h2 {font-size: 1.35rem; letter-spacing: 0; margin: 0;}
+.panel-info {color: var(--ada-gray); font-size: .85rem; display: flex; flex-wrap: wrap; align-items: center;}
+.panel-info > * + *:before {content: "|"; margin: 0 7px; opacity: .35;}
+.panel h3 {font-size: 1rem;}
+.panel ul {list-style: square; padding: 0 0 0 14px;}
+.panel hr {border: none; border-bottom: 1px solid var(--border); margin: var(--spacer) auto;}
+
+.user-info {font-size: .85rem; display: grid; grid-template-columns: 65px auto; gap: 16px;}
+.user-info figure {aspect-ratio: 1 / 1.25; overflow: hidden; border: 2px solid var(--border); margin: 0;}
+.user-info figure img {width: 100%; height: 100%; object-fit: cover;}
+.user-info h3 {margin: 0 0 0 0;}
+.user-info p {margin: 0 0 10px 0;}
+.user-text > *:last-child {margin: 0;}
+
+.sub-title {color: var(--ada-gray); text-transform: uppercase; font-weight: 700; letter-spacing: 1px;}
+
+.todo-list {display: grid; gap: calc(var(--spacer)/1.5);}
+.todo-list-item {padding: calc(var(--spacer)/1.5); display: grid; grid-template-columns: auto 85px; gap:calc(var(--spacer)/1.5);  justify-content: space-between; background: var(--light); border-radius: 4px; align-items: center;}
+.todo-list-item h4 {font-size: 1.25rem; font-weight: 400; margin: 0 0 5px 0;}
+.todo-list-item p {font-size: .85rem; margin: 0 0 1rem 0; margin: 0;}
+
+/* TABLET */
+@media (min-width: 768px) {
+.page-hdr {display: flex; align-items: center; justify-content: space-between;}
+}
+
+@media (min-width: 992px) {
+.panel-dashboard {grid-template-columns: 300px 1fr;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+.panel-title {display: flex; justify-content: space-between; align-items: center;}
+.grid-2-col {display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacer);}
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}

@@ -1,0 +1,123 @@
+/* =========================
+   Accessible Button System
+   ========================= */
+
+/* Visually hidden helper (for icon-only buttons) */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important;
+  overflow: hidden !important; clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important; border: 0 !important;
+}
+
+/* ---- Theme tokens (AA/AAA contrast) ---- */
+$btn-radius: 4px;
+$btn-padding-y: .525rem;
+$btn-padding-x: 1rem;
+$btn-gap: .5rem;
+$btn-font: 0.85rem;
+
+$color-text-on-dark: #FFFFFF;
+$color-text-on-light: #1F2937; // slate-800
+$focus-ring: #1A73E8;          // ADA blue (AA)
+$focus-outline: 3px;
+
+$primary:   #1565C0; // AAA vs white
+$primary-600:#0D47A1; // hover/active darker
+$secondary: #374151; // slate-700 (white text AA)
+$secondary-600:#111827;
+
+$success:   #2E7D32; // green AA on white
+$danger:    #D32F2F; // red AA on white
+$warning:   #F59E0B; // amber AA on dark text
+$neutral:   #E5E7EB; // gray-200 for ghost/outline bg
+
+/* ---- Base button ---- */
+.btn {
+  -webkit-appearance: none; appearance: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: $btn-gap;
+  font: inherit; font-size: $btn-font; line-height: 1.2;
+  border: 2px solid transparent; border-radius: $btn-radius;
+  padding: $btn-padding-y $btn-padding-x;
+  min-height: 40px; min-width: 44px; /* target size */
+  cursor: pointer; text-decoration: none; user-select: none;
+
+  /* visible focus for keyboard users */
+  &:focus { outline: none; }
+  &:focus-visible {
+    outline: $focus-outline solid $focus-ring;
+    outline-offset: 2px;
+  }
+
+  /* reduced motion */
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+
+  /* disabled */
+  &:disabled, &[aria-disabled="true"] {
+    opacity: .6; cursor: not-allowed;
+  }
+}
+
+/* ---- Variants ---- */
+.btn--primary {
+  background: $primary; color: $color-text-on-dark; border-color: $primary;
+  &:hover, &:active { background: $primary-600; border-color: $primary-600; }
+}
+
+.btn--secondary {
+  background: $secondary; color: $color-text-on-dark; border-color: $secondary;
+  &:hover, &:active { background: $secondary-600; border-color: $secondary-600; }
+}
+
+.btn--success {
+  background: $success; color: $color-text-on-dark; border-color: $success;
+  &:hover, &:active { filter: brightness(.9); }
+}
+
+.btn--danger {
+  background: $danger; color: $color-text-on-dark; border-color: $danger;
+  &:hover, &:active { filter: brightness(.9); }
+}
+
+/* Outline buttons (still AA) */
+.btn--outline {
+  background: transparent; color: $primary; border-color: $primary;
+  &:hover, &:active { background: rgba(21,101,192,.12); } /* keeps 4.5:1 with text */
+}
+.btn--outline-secondary {
+  background: transparent; color: $secondary; border-color: $secondary;
+  &:hover, &:active { background: rgba(17,24,39,.12); }
+}
+
+/* Ghost (subtle) – ensure text contrast meets AA against page bg */
+.btn--ghost {
+  background: transparent; color: $color-text-on-light; border-color: transparent;
+  &:hover, &:active { background: $neutral; } /* on white bg, still AA with dark text */
+}
+
+/* Sizes */
+.btn--sm { padding: .5rem .75rem; font-size: .9rem; min-height: 40px; min-width: 40px; }
+.btn--lg { padding: .8rem 1.2rem; font-size: 1.05rem; }
+
+/* Block / full width */
+.btn--block { display: inline-flex; width: 100%; }
+
+/* Icon placement */
+.btn__icon { line-height: 0; display: inline-flex; }
+
+/* Icon-only buttons (must have aria-label) */
+.btn--icon {
+  padding: .5rem; width: 44px; height: 44px;
+  .btn__text { @extend .visually-hidden; }
+}
+
+/* Loading state (aria-live handled outside) */
+.btn[aria-busy="true"] {
+  position: relative;
+  pointer-events: none;
+}
