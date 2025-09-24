@@ -159,9 +159,9 @@
           <span class="title-status"><a href="reqs.html">View Requirements</a></span>
         </div>
       </div>
-      <div class="grid-2-col">
+      <div class="grid grid-2-col">
         <div class="col">
-          <h3>Things You Can Do</h3>
+          <h3 class="sub-title">Things You Can Do</h3>
           <div class="todo-list">
             <div class="todo-list-item">
               <div class="text">
@@ -182,19 +182,63 @@
                 <h4>Demo OSCE</h4>
                 <p>Register By: Dec 31, 2026 12:00 AM</p>
               </div>
-              <button class="btn btn--success">Registered</button>
+              <button class="btn btn--success" aria-disabled="true">Registered</button>
             </div>
             <div class="todo-list-item">
               <div class="text">
                 <h4>Demo Practical Exam</h4>
                 <p>Session Date: Aug 19, 2025 Session 1 - AM <br>Register By: Dec 31, 2025 12:00 AM</p>
               </div>
-              <button class="btn btn--success">Registered</button>
+              <button class="btn btn--success" aria-disabled="true">Registered</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <h3>Current Requirements</h3>
+        <div class="col border-left">
+          <h3 class="sub-title">Current Requirements</h3>
+          <div class="req-wrap">
+            <div class="req-item">
+              
+              <div class="text">
+              <h4>Certification Exam</h4>
+              <ul>
+                <li>Demo Certification Exam</li>
+                <li>Demo Certification Exam - No Integration</li>
+              </ul>
+              </div>
+              <span class="label label--not-started"><span class="icon-clock" aria-hidden="true"></span>Unstarted</span>
+            </div>
+            <div class="req-item">
+              <div class="text">
+              <h4>Common Core Math Quiz</h4>
+              <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+              </div>
+              <span class="label label--in-progress"><span class="icon-refresh" aria-hidden="true"></span>In Progress</span>
+            </div>
+            <div class="req-item">
+              
+              <div class="text">
+              <h4>OSCE</h4>
+              <ul>
+                <li>No Requirements Available</li>
+              </ul>
+              </div>
+              <span class="label label--complete"><span class="icon-check" aria-hidden="true"></span>Complete</span>
+            </div>
+
+            <div class="req-item">
+              <div class="text">
+              <h4>LMS Module #5</h4>
+              <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+              </div>
+              <span class="label label--complete"><span class="icon-check" aria-hidden="true"></span>Complete</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
