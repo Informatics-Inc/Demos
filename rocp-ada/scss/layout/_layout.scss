@@ -2,6 +2,7 @@
 .page-hdr {background: var(--darkerblue); padding: var(--spacer);}
 .page-hdr h1 {color: #fff; font-size: 2rem; font-weight: 500; margin: 0 0 .5rem 0;}
 .breadcrumb {padding: 0; margin: 0; color: var(--text-color-inverse); list-style: none; display: flex; gap: 8px; font-size: .85rem;}
+.page-hdr .btn {min-height: auto; padding: 3px 10px;}
 
 .breadcrumb a {color: var(--text-color-inverse);}
 .breadcrumb a:hover {color: #fff;}
@@ -44,13 +45,21 @@
 .req-item .label {margin: 0 0 5px 0;}
 .req-item ul {margin: 0;}
 
+/* Mobile Expand */
+// .mobile-expand .submenu {height: 0; overflow: hidden;}
+// .mobile-expand:focus-within .submenu, .mobile-expand .submenu.open {height: auto;}
+
+
+
 /* TABLET */
 @media (min-width: 768px) {
-.page-hdr {display: flex; align-items: center; justify-content: space-between;}
+
 }
 
 @media (min-width: 992px) {
 .panel-dashboard {grid-template-columns: 275px 1fr;}
+.page-hdr {display: flex; align-items: center; justify-content: space-between;}
+.mobile-expand .submenu {height: auto;}
 }
 
 /* WIDE DESKTOP */

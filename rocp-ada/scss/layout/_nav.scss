@@ -3,15 +3,16 @@
 .nav-mobile-header {display: flex; justify-content: space-between; align-items: center; padding-left: var(--spacer);}
 
 .nav-menu ul {list-style: none;}
-.nav-menu a, .nav-menu li > button {color: var(--text-color-inverse); text-decoration: none; display: block; padding: .65rem 0;border: none; width: 100%; text-align: left; border-top: 1px dotted rgba(255,255,255,.15); background: none;}
+.nav-menu a, .nav-menu li > button {color: var(--text-color-inverse); text-decoration: none; display: flex; justify-content: space-between; align-items: center; padding: .65rem 0;border: none; width: 100%; text-align: left; border-top: 1px dotted rgba(255,255,255,.15); background: none;}
+.nav-menu li > button span {font-size: .65rem; margin: 0 0 0 5px;}
 .nav-menu li {color: var(--text-color-inverse);}
 .nav-main {margin: 1rem 0; padding: 0 var(--spacer);}
 .nav-menu a:hover {color: #fff;}
-.nav-menu ul ul {padding: 0 0 0 1rem; margin: 0 0 .5rem 0;}
+.nav-menu ul ul {padding: 0 0 0 1rem; margin: 0 0 0 0;}
 .nav-menu ul ul a {font-size: .85rem; border: none; border-radius: 4px;}
 
 .nav-user {position: relative; border-top: var(--border-light); margin-top: 1rem;}
-.nav-menu a.nav-user-title {display: flex; align-items: center; gap: 8px;}
+.nav-menu .nav-user-title {display: flex !important; align-items: center; gap: 8px;}
 .badge {background: var(--ada-blue-aa); color: #fff; border-radius: 10px; padding: 3px 5px; display: flex; align-items: center; gap: 2px; margin-left: auto; font-size: .85rem; font-weight: 700;}
 .nav-menu .nav-user-menu {display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin: 0 0 1rem 0; padding: 0;}
 .nav-user-menu a {font-size: .85rem; padding: 5px 10px; background: rgba(255,255,255,.15); border-radius: 4px;}
@@ -22,37 +23,50 @@
 .active a {font-weight: 700; color: #fff;}
 
 // Menu Toggle 
-.menu-toggle {background: rgba(0,0,0,.25); color: #fff; border: none; padding: var(--spacer);}
-.nav-menu {height: 0; overflow: hidden; interpolate-size: allow-keywords; transition: var(--transition);}
-.nav-menu.open {height: auto;}
+.menu-toggle {background: rgba(0,0,0,.4); color: #fff; border: none; padding: var(--spacer);}
+
 
 @media (min-width: 992px) {
 #menu-toggle {display: none;}
+/* override the submenu for the primary nav */
+#primary-nav.nav-menu {display: flex; height: auto; overflow: visible; margin: 0; position: relative; opacity: 1; visibility: visible; transform: none; min-width: auto; pointer-events: all;}
+
 .nav-header {display: flex; justify-content: space-between; box-shadow: 0 10px 25px rgba(0,0,0,.15);}
-.nav-menu {display: flex; height: auto; overflow: visible; margin: 0;}
 .nav-main {display: flex; margin: 0;}
 .nav-main a, .nav-main li > button {padding: 19px 15px; font-size: .9rem;}
-.nav-main li:hover > a, .nav-main li:hover > button {background: rgba(0,0,0,.25); color: #fff;}
+.nav-main li:hover > a, .nav-main li:hover > button {background: rgba(0,0,0,.25); color: #fff; cursor: pointer;}
 .nav-menu ul ul a:hover {color: #000; text-decoration: underline;background: rgba(0,0,0,.05);}
 
+.nav-main li > ul {background: #fff; width: 200px; left: calc(50% - 100px); padding: 1rem;}
+.nav-main li > ul a {color: var(--text-color); padding: 10px;}
+
+// User Nav
 .nav-user {margin: 0; border: none; border-left: var(--border-light); margin-left: 15px; display: flex;}
 .nav-user-title {display: flex !important; align-items: center; gap: 10px;}
-.nav-user a { padding-left: 15px;}
-.badge {padding: 0 5px;}
-.nav-user-menu-dropdown {position: absolute; width: 250px; background: #fff; box-shadow: 0 0 15px rgba(0,0,0,.15); padding: 0; margin: 0; top: 105%; right: 0; padding: 1rem;visibility: hidden; opacity: 0; transition: var(--transition);}
+.nav-user-menu-dropdown {position: absolute; width: 250px; background: #fff; box-shadow: 0 0 15px rgba(0,0,0,.15); padding: 0; margin: 0; top: 105%; left: auto; right: 0; padding: 1rem;visibility: hidden; opacity: 0; transition: var(--transition);}
 .nav-menu .nav-user-menu-dropdown ul {display: block;}
-.nav-menu .nav-user-menu-dropdown ul a {padding: 5px 1rem;}
+.nav-menu .nav-user-menu-dropdown ul a {padding: 5px .5rem; color: var(--text-color);}
 .nav-user .last-login {color: var(--text-color);}
 
+// User Nav
+// .nav-user {margin: 0; border: none; border-left: var(--border-light); margin-left: 15px; display: flex;}
+// .nav-user-title {display: flex !important; align-items: center; gap: 10px;}
+// .nav-user a { padding-left: 15px;}
+// .badge {padding: 0 5px;}
+// .nav-user-menu-dropdown {position: absolute; width: 250px; background: #fff; box-shadow: 0 0 15px rgba(0,0,0,.15); padding: 0; margin: 0; top: 105%; right: 0; padding: 1rem;visibility: hidden; opacity: 0; transition: var(--transition);}
+
+// 
+
 // Dropdown
-.nav-main li {position: relative;}
-.nav-main li > ul {position: absolute; width: 200px; background: #fff; box-shadow: 0 0 15px rgba(0,0,0,.15); padding: 0; margin: 0; top: 105%; left: calc(50% - 100px); padding: 1rem; visibility: hidden; opacity: 0; transition: var(--transition);}
-.nav-main li ul a {color: var(--text-color); border: none; padding: 10px;}
-.nav-main li:hover > ul {visibility: visible; opacity: 1; top: 100%;}
+// .nav-main li {position: relative;}
+
+// .nav-main li ul a {color: var(--text-color); border: none; padding: 10px;}
+// .nav-main li:hover > ul {visibility: visible; opacity: 1; top: 100%;}
 
 /* Progressive CSS reveal for keyboard/hover users */
-.has-submenu:hover .submenu,
-.has-submenu:focus-within .submenu, .has-submenu:focus-within .nav-user-menu-dropdown {visibility: visible; opacity: 1;}
+// .submenu {z-index: 25; height: auto;}
+// .has-submenu:hover .submenu,
+// .has-submenu:focus-within .submenu, .has-submenu:focus-within .nav-user-menu-dropdown {visibility: visible; opacity: 1;}
 
-.nav-user:hover .nav-user-menu-dropdown {visibility: visible; opacity: 1; top: 100%;}
+// .nav-user:hover .nav-user-menu-dropdown {visibility: visible; opacity: 1; top: 100%;}
 }
