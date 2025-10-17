@@ -22,9 +22,10 @@ Date: Sep 2025
 @use "layout/layout";
 @use "layout/submenu-toggle";
 @use "layout/nav";
-@use "layout/labels";
-@use "layout/forms";
-@use "layout/table";
+@use "layout/login";
 
-
+// Components
+@use "components/forms";
+@use "components/table";
+@use "components/labels";
  

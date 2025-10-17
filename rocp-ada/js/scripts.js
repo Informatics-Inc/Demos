@@ -1,5 +1,5 @@
 // Global disclosure: works for any .js-disclosure with an aria-controls panel
-$(function () {
+jQuery(function ($) {
   const TOGGLE = '.js-disclosure';
 
   function getPanel($btn) {
@@ -75,5 +75,5 @@ $(function () {
     setExpanded(btn, false);
     btn.focus();
   });
-})();
+})
 

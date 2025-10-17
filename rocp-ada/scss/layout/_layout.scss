@@ -19,8 +19,9 @@
 /* Panels */
 .panel-wrapper {padding: var(--spacer); display: grid; gap: var(--spacer);}
 .panel {background: #fff; padding: var(--spacer); border-radius: 4px; font-size: .9rem; box-shadow: 2px 2px 4px rgba(0,0,0,.05);}
-.panel-title {border-bottom: 1px solid var(--border); padding: 0 0 var(--spacer); margin: 0 0 var(--spacer) 0;}
+.panel-title {border-bottom: 1px solid var(--border); padding: 0 0 var(--spacer); margin: var(--spacer) 0;}
 .panel-title h2 {font-size: 1.35rem; letter-spacing: 0; margin: 0;}
+.panel-title:first-of-type {margin-top: 0rem;}
 .panel-info {color: var(--ada-gray); font-size: .85rem; display: flex; flex-wrap: wrap; align-items: center;}
 .panel-info > * + *:before {content: "|"; margin: 0 7px; opacity: .35;}
 .panel h3 {font-size: 1rem;}
@@ -53,7 +54,7 @@
 
 /* TABLET */
 @media (min-width: 768px) {
-
+.grid-md-2 {grid-template-columns: 1fr 1fr; gap: 16px;}
 }
 
 @media (min-width: 992px) {
@@ -64,6 +65,8 @@
 /* GRID Desktops */
 .grid-sidebar-left {display: grid; grid-template-columns: 275px auto; gap: 1.5rem;}
 .grid-sidebar-left > *:first-child {border-right: 1px solid var(--border); padding-right: 1.5rem;}
+
+.grid-2 {grid-template-columns: 1fr 1fr;}
 }
 
 /* WIDE DESKTOP */
@@ -71,6 +74,7 @@
 .panel-title {display: flex; justify-content: space-between; align-items: center;}
 .grid-2-col {display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacer);}
 .border-left {border-left: 1px solid var(--border); padding-left: var(--spacer);}
+.grid-sidebar {grid-template-columns: 300px auto;}
 // .req-wrap {display: grid; grid-template-columns: repeat( auto-fit, minmax(225px, 1fr) );}
 }
 

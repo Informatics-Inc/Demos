@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>ROC-P User Dashboard</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+<main id="content" tabindex="-1" class="login">
+  <div class="panel-wrapper panel-login">
+
+    <img src="img/ROC-P-FakeLogo-PIFCP.png" class="login-logo" alt="Application Logo" />
+    <div class="panel">
+      <div class="grid grid-2">
+
+        <div class="col">
+          <div class="panel-title">
+            <h2>Login to Your Account</h2>
+          </div>
+          <form action="/login" method="post" aria-describedby="login-help">
+            <p id="login-help" class="visually-hidden">Log in with your username and password. All fields are required.</p>
+            <!-- Username / Email -->
+            <div class="form-group">
+              <label for="login-username">Username or email <span aria-hidden="true">*</span><span class="visually-hidden"> required</span></label>
+              <input
+                id="login-username"
+                name="username"
+                type="text"
+                class="form-control"
+                required
+                autocomplete="username"
+                inputmode="email"
+                aria-describedby="login-username-error"
+                aria-invalid="false">
+              <p id="login-username-error" role="alert" hidden>Enter your username or email.</p>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+              <label for="login-password">Password <span aria-hidden="true">*</span><span class="visually-hidden"> required</span></label>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                class="form-control"
+                required
+                autocomplete="current-password"
+                aria-describedby="login-password-error"
+                aria-invalid="false">
+              <p id="login-password-error" role="alert" hidden>Enter your password.</p>
+            </div>
+
+            <!-- Actions -->
+            <div class="form-group border-top">
+              <button type="submit" class="btn btn--primary">Log in</button>
+              <a href="/forgot-password" class="btn btn--outline" role="button">Forgot password?</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="col">
+          
+          <h3>Credential Verification</h3>
+          <p>Need to check and confirm credential status?</p>
+          <button class="btn btn--outline"><span class="icon-check"></span> Submit Verification Requests</button>
+          <hr>
+          <h3>Need an Account</h3>
+          <p>Not yet certified? Apply today using our online system.</p>
+          <button class="btn btn--outline"><span class="icon-star"></span> Apply For Account</button>
+        </div>
+      </div>
+  </div>
+</main>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>

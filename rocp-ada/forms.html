@@ -213,36 +213,51 @@
 
       <!-- RADIO GROUP -->
       <div class="form-group">
-        <label>Preferred contact method <span aria-hidden="true">*</span><span class="visually-hidden"> required</span></label>
+        <fieldset aria-describedby="contact-error">
+          <legend class="label-like">
+            Preferred contact method 
+            <span aria-hidden="true">*</span>
+            <span class="visually-hidden"> required</span>
+          </legend>
 
-        <div>
-          <input id="contact-email" name="contact_method" type="radio" value="email" required>
-          <label for="contact-email">Email</label>
-        </div>
-        <div>
-          <input id="contact-phone" name="contact_method" type="radio" value="phone">
-          <label for="contact-phone">Phone</label>
-        </div>
+          <div>
+            <input id="contact-email" name="contact_method" type="radio" value="email" required>
+            <label for="contact-email">Email</label>
+          </div>
+
+          <div>
+            <input id="contact-phone" name="contact_method" type="radio" value="phone">
+            <label for="contact-phone">Phone</label>
+          </div>
+        </fieldset>
 
         <p id="contact-error" role="alert" hidden>Select a contact method.</p>
       </div>
 
       <!-- CHECKBOX GROUP -->
       <div class="form-group">
-        <label>Topics of interest</label>
-        <div>
-          <input id="topic-news" name="topics" type="checkbox" value="news">
-          <label for="topic-news">News & updates</label>
-        </div>
-        <div>
-          <input id="topic-events" name="topics" type="checkbox" value="events">
-          <label for="topic-events">Events</label>
-        </div>
-        <div>
-          <input id="topic-offers" name="topics" type="checkbox" value="offers">
-          <label for="topic-offers">Special offers</label>
-        </div>
+        <fieldset aria-describedby="topics-error">
+          <legend class="label-like">Topics of interest</legend>
+
+          <div>
+            <input id="topic-news" name="topics" type="checkbox" value="news">
+            <label for="topic-news">News &amp; updates</label>
+          </div>
+
+          <div>
+            <input id="topic-events" name="topics" type="checkbox" value="events">
+            <label for="topic-events">Events</label>
+          </div>
+
+          <div>
+            <input id="topic-offers" name="topics" type="checkbox" value="offers">
+            <label for="topic-offers">Special offers</label>
+          </div>
+        </fieldset>
+
+        <p id="topics-error" role="alert" hidden>Please select at least one topic.</p>
       </div>
+
 
       <!-- TEXTAREA -->
       <div class="form-group">
