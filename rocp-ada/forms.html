@@ -4,343 +4,433 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Informatics, Inc">
-    <title>NSCA</title>
+    <title>ROC-P User Dashboard</title>
 
     <!-- FONTS -->
-    <link href='css/icons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
     <!-- CSS -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="css/app.min.css" rel="stylesheet">
   </head>
   <body>
   
   <!-- Skip Nav Link-->
-  <a id="skip-nav" class="screenreader-text" href="#content">
-    Skip to Content
-  </a>
+  <a id="skip-nav" class="screenreader-text" href="#content">Skip to Content</a>
+  
+<header class="nav-header">
+  <div class="nav-mobile-header">
+    <a class="nav-logo" href="/" aria-label="ROC-P home">
+      <img src="img/logo.png" alt="ROC-P Logo" />
+    </a>
 
-  <header id="hdr-site">
+    <!-- Mobile menu toggle -->
+    <button
+      id="menu-toggle"
+      class="menu-toggle js-disclosure"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+    >
+      <span class="icon-menu" aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </div>
 
-    <!-- LOGO AND MOBILE -->
-    
-      <div class="hdr-top">
-        <div class="container">
-          <a href="#.html" id="logo">
-            <img src="img/logo.png" alt="Logo" />
-          </a>
-          <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
-              <div class="closed">
-                  Menu
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </div>
-              <div class="open">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </div>
-          </button>
-        </div>
-      </div>
+  <nav id="primary-nav" class="nav-menu submenu" aria-label="Primary">
+    <ul class="nav-main">
+      <li class="active"><a href="/dashboard" aria-current="page">Dashboard</a></li>
+      <li><a href="/exams">Exams</a></li>
+      <li><a href="/ce">CE</a></li>
 
-      <!-- MAIN NAVIGATION -->
-      <nav id="menu" class="collapsed">
-        <div class="container">
-          <ul class="nav-main">
-              <li><a href="#.html">Our Impact</a>
-              <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
-                <ul id="menu-1" class="collapsed">
-                  <li><a href="#.html">Dropdown Link</a></li>
-                  <li><a href="#.html">Dropdown Link</a></li>
-                  <li><a href="#.html">Dropdown Link</a></li>
-                </ul>
-              </li>
-              <li><a href="#.html">Membership</a>
-                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2" aria-expanded="false" aria-controls="menu-2"><i class="fa fa-chevron-down"></i></button>
-                  <ul id="menu-2" class="collapsed">
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                  </ul>
-              </li>
-              <li class="current-menu-item"><a href="#.html">Resources</a>
-                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-3" aria-expanded="false" aria-controls="menu-3"><i class="fa fa-chevron-down"></i></button>
-                  <ul id="menu-3" class="collapsed">
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                  </ul>
-              </li>
-              <li><a href="#.html">Training Solutions</a>
-                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4" aria-expanded="false" aria-controls="menu-4"><i class="fa fa-chevron-down"></i></button>
-                  <ul id="menu-4" class="collapsed">
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                  </ul>
-              </li>
-              <li><a href="#.html">Events</a>
-                <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-5" aria-expanded="false" aria-controls="menu-5"><i class="fa fa-chevron-down"></i></button>
-                  <ul id="menu-5" class="collapsed">
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                    <li><a href="#.html">Dropdown Link</a></li>
-                  </ul>
-              </li>
-              <li><a href="#.html">Advocacy</a></li>
+      <!-- Note: for sub-menus parent is a BUTTON, not a link -->
+      <li class="has-submenu">
+        <button
+          class="nav-trigger js-disclosure"
+          type="button"
+          aria-expanded="false"
+          aria-controls="submenu-lms"
+        >
+          LMS
+          <span class="icon-arrow-down"></span>
+        </button>
+        <ul class="submenu" id="submenu-lms">
+          <li><a href="#.html">Demo LMS Test</a></li>
+          <li><a href="#.html">LMS Modules for 02/12</a></li>
+          <li><a href="#.html">My Transcript</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/resources">Resources</a></li>
+      <li><a href="/history">History</a></li>
+
+      <!-- User menu: trigger is a BUTTON -->
+      <li class="nav-user has-submenu">
+        <button
+          id="user-toggle"
+          class="nav-user-title js-disclosure"
+          type="button"
+          aria-expanded="false"
+          aria-controls="user-menu"
+        >
+          <span class="icon-user" aria-hidden="true"></span>
+          User
+          <span class="badge" aria-live="polite">
+            <span aria-hidden="true">1</span>
+            <span class="visually-hidden">1 notification</span>
+            <span class="icon-bell" aria-hidden="true"></span>
+          </span>
+        </button>
+
+        <div id="user-menu" class="nav-user-menu-dropdown submenu" role="group" aria-label="User options">
+          <ul class="nav-user-menu" role="list">
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="/notifications">Notifications</a></li>
+            <li><a href="/account">My Account</a></li>
+            <li><a href="/badges">Badges</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/store">Product Store</a></li>
+            <li><a href="/discounts">Discount Codes</a></li>
           </ul>
-          <div class="hdr-tools">
-            <ul class="nav-social">
-              <li><a href="#.html"><i class="fa-brands fa-facebook"></i></a></li>
-              <li><a href="#.html"><i class="fa-brands fa-linkedin"></i></a></li>
-              <li><a href="#.html"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-            <ul class="nav-mini">
-              <li><a href="#.html">Member Login</a></li>
-              <li><a href="#.html">Integrate Magazine</a></li>
-              <li><a href="#.html">Industry Insights</a></li>
-              <li><a href="#.html">Contact Us</a></li>
-            </ul>
-          </div>
-          <a href="#.html" class="btn-theme wp-block-button__link ">Become a Member</a>
+
+          <!-- Logout as an action (button or form submit) -->
+          <form action="/logout" method="POST">
+            <button type="submit" class="btn btn--primary">Logout</button>
+          </form>
+
+          <span class="last-login">
+            Last Login:
+            <time datetime="2025-09-16">Sep 16, 2025</time>
+          </span>
         </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<main id="content" tabindex="-1">
+  <header class="page-hdr">
+    <h1>Forms</h1>
+    <div class="hdr-tools">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Forms</li>
+        </ol>
       </nav>
-   
+    </div>
   </header>
 
-  <main id="content">
-    <section class="page-hdr">
+  <div class="panel-wrapper grid auto-grid-3">
+    <div class="panel">
+      <div class="panel-title">
+        <h2>Basic Form</h2>
+      </div>
+      <form action="/submit" method="post" aria-describedby="form-help">
+        <!-- Optional: server token -->
+        <input type="hidden" name="csrf_token" value="">
+
+        <p id="form-help">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden"> required</span> are required.</p>
+
+        <!-- First name -->
+        <div class="form-group">
+          <label for="first-name">First name <span aria-hidden="true">*</span></label>
+          <input id="first-name" name="first_name" type="text" class="form-control"
+                required autocomplete="given-name"
+                aria-describedby="first-name-error"
+                aria-invalid="false">
+          <!-- On error: set aria-invalid="true" and remove hidden -->
+          <p id="first-name-error" role="alert" hidden>Enter your first name.</p>
+        </div>
+
+        <!-- Last name -->
+        <div class="form-group">
+          <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+          <input id="last-name" name="last_name" type="text" class="form-control"
+                required autocomplete="family-name"
+                aria-describedby="last-name-error"
+                aria-invalid="false">
+          <p id="last-name-error" role="alert" hidden>Enter your last name.</p>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" class="form-control"
+                inputmode="email" required autocomplete="email"
+                aria-describedby="email-error"
+                aria-invalid="false">
+          <p id="email-error" role="alert" hidden>Enter a valid email address.</p>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password <span aria-hidden="true">*</span></label>
+          <input id="password" name="password" type="password" class="form-control"
+                required autocomplete="new-password"
+                aria-describedby="password-error"
+                aria-invalid="false">
+          <p id="password-error" role="alert" hidden>Password must meet the requirements.</p>
+        </div>
+
+        <!-- Actions -->
+        <div class="form-group border-top">
+          <button type="submit" class="btn btn--primary">Submit</button>
+          <!-- If “Cancel” navigates away, use a link (preferred a11y) -->
+          <a href="/" role="button" class="btn btn--outline">Cancel</a>
+          <!-- If “Cancel” should just clear fields, use a reset button instead:
+          <button type="reset">Cancel</button>
+          -->
+        </div>
+      </form>
+
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">
+        <h2>More Form Items</h2>
+      </div>
+      <form action="/submit" method="post" aria-describedby="form-help">
+      <p id="form-help">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden"> required</span> are required.</p>
+
+      <!-- SELECT -->
+      <div class="form-group">
+        <label for="region">Select your region <span aria-hidden="true">*</span><span class="visually-hidden"> required</span></label>
+        <select id="region" name="region" class="form-control"
+                required aria-describedby="region-error" aria-invalid="false">
+          <option value="">Please select</option>
+          <option value="ne">Northeast</option>
+          <option value="mw">Midwest</option>
+          <option value="so">South</option>
+          <option value="we">West</option>
+        </select>
+        <p id="region-error" role="alert" hidden>Select a region.</p>
+      </div>
+
+      <!-- RADIO GROUP -->
+      <div class="form-group">
+        <label>Preferred contact method <span aria-hidden="true">*</span><span class="visually-hidden"> required</span></label>
+
+        <div>
+          <input id="contact-email" name="contact_method" type="radio" value="email" required>
+          <label for="contact-email">Email</label>
+        </div>
+        <div>
+          <input id="contact-phone" name="contact_method" type="radio" value="phone">
+          <label for="contact-phone">Phone</label>
+        </div>
+
+        <p id="contact-error" role="alert" hidden>Select a contact method.</p>
+      </div>
+
+      <!-- CHECKBOX GROUP -->
+      <div class="form-group">
+        <label>Topics of interest</label>
+        <div>
+          <input id="topic-news" name="topics" type="checkbox" value="news">
+          <label for="topic-news">News & updates</label>
+        </div>
+        <div>
+          <input id="topic-events" name="topics" type="checkbox" value="events">
+          <label for="topic-events">Events</label>
+        </div>
+        <div>
+          <input id="topic-offers" name="topics" type="checkbox" value="offers">
+          <label for="topic-offers">Special offers</label>
+        </div>
+      </div>
+
+      <!-- TEXTAREA -->
+      <div class="form-group">
+        <label for="message">Your message</label>
+        <p id="message-hint">Please be brief and avoid personal data.</p>
+        <textarea id="message" name="message" rows="5" class="form-control"
+                  aria-describedby="message-hint message-error" aria-invalid="false"></textarea>
+        <p id="message-error" role="alert" hidden>Enter a message.</p>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="form-group border-top">
+        <button type="submit" class="btn btn--primary">Submit</button>
+        <button type="reset" class="btn btn--outline">Reset</button>
+      </div>
+    </form>
+
+
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">
+        <h2>Even More Forms</h2>
+      </div>
+
+      <form action="/submit" method="post">
+
+        <!-- NUMBER -->
+        <div class="form-group">
+          <label for="qty">Quantity <span aria-hidden="true">*</span><span class="visually-hidden"> required</span></label>
+          <p id="qty-hint">Enter a whole number between 1 and 100.</p>
+          <input id="qty" name="qty" type="number" class="form-control"
+                inputmode="numeric" min="1" max="100" step="1" required
+                aria-describedby="qty-hint qty-error" aria-invalid="false">
+          <p id="qty-error" role="alert" hidden>Quantity must be 1–100.</p>
+        </div>
+
+        <!-- URL -->
+        <div class="form-group">
+          <label for="website">Website</label>
+          <p id="website-hint">Example: https://example.com</p>
+          <input id="website" name="website" type="url" class="form-control"
+                inputmode="url" autocomplete="url" placeholder="https://example.com"
+                aria-describedby="website-hint website-error" aria-invalid="false">
+          <p id="website-error" role="alert" hidden>Enter a valid URL (e.g., https://example.com).</p>
+        </div>
+
+        <!-- TEL -->
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <p id="phone-hint">Numbers only; include area code.</p>
+          <input id="phone" name="phone" type="tel" class="form-control"
+                inputmode="tel" autocomplete="tel"
+                aria-describedby="phone-hint phone-error" aria-invalid="false">
+          <p id="phone-error" role="alert" hidden>Enter a valid phone number.</p>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="form-group">
+          <label for="site-search">Search the site</label>
+          <input id="site-search" name="q" type="search" class="form-control"
+                placeholder="Search"
+                aria-describedby="search-error" aria-invalid="false">
+          <p id="search-error" role="alert" hidden>Refine your search term.</p>
+        </div>
+
+        <!-- DATE -->
+      <div class="form-group">
+        <label for="start-date">Start date</label>
+        <p id="start-date-hint">Format: YYYY-MM-DD (you can type or use the picker).</p>
+        <input id="start-date" name="start_date" type="date" class="form-control"
+              aria-describedby="start-date-hint start-date-error" aria-invalid="false">
+        <p id="start-date-error" role="alert" hidden>Please enter a valid date.</p>
+      </div>
+
+      <!-- TIME -->
+      <div class="form-group">
+        <label for="start-time">Start time</label>
+        <p id="start-time-hint">24-hour or AM/PM depending on your system.</p>
+        <input id="start-time" name="start_time" type="time" class="form-control"
+              aria-describedby="start-time-hint start-time-error" aria-invalid="false">
+        <p id="start-time-error" role="alert" hidden>Please enter a valid time.</p>
+      </div>
+
+      <!-- DATETIME-LOCAL -->
+      <div class="form-group">
+        <label for="appointment">Appointment (local date & time)</label>
+        <input id="appointment" name="appointment" type="datetime-local" class="form-control"
+              aria-describedby="appointment-error" aria-invalid="false">
+        <p id="appointment-error" role="alert" hidden>Please enter a valid date and time.</p>
+      </div>
+       <!-- BUTTONS -->
+      <div class="form-group border-top">
+        <button type="submit" class="btn btn--primary">Submit</button>
+        <button type="reset" class="btn btn--outline">Reset</button>
+      </div>
+
+      </form>
+
+
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">
+        <h2>Still More Forms</h2>
+      </div>
+
+      <form action="/submit" method="post">
+
       
-        <figure>
-          <img src="img/hero-1.jpg" />
-        </figure>
-        <div class="content">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb-nav">
-              <li><a href="#.html">Home</a></li>
-              <li><a href="#.html">Resources</a></li>
-              <li>Essentials Library</li>
-            </ol>
-          </nav>
-          <h1>Essentials Library</h1>
-        </div>
-      
-    </section>
 
-    <div class="wp-block-columns is-layout-flex is-style-large-gap">
-      <div class="wp-block-column" style="flex-basis: 66%">
-        <h2>Your #1 Resource for System Integration Docs</h2>
-        <p>NSCA is proud to offer this members-only database of 650+ business forms, templates and standards designed specifically for the commercial integration industry. Accelerate and protect your business with our comprehensive library.</p>
+      <!-- RANGE (slider) -->
+      <div class="form-group">
+        <label for="satisfaction">Satisfaction level</label>
+        <p id="satisfaction-hint">0 (low) to 10 (high). Current: 5 of 10.</p>
+        <input id="satisfaction" name="satisfaction" type="range" class="form-control"
+              min="0" max="10" step="1" value="5"
+              aria-describedby="satisfaction-hint satisfaction-error" aria-invalid="false">
+        <p id="satisfaction-error" role="alert" hidden>Select a value between 0 and 10.</p>
+        <!-- Note: without JS, the "Current: 5 of 10" text won't live-update; that's okay for no-JS.
+            If you want live updates later, we can progressively enhance with a tiny script. -->
       </div>
-      <div class="wp-block-column">
-        <div class="sidebar box">
-          <h4>Resources</h4>
-          <nav class="sec-nav">
-            <ul>
-              <li><a href="#.html">Secondary Page Link</a></li>    
-              <li class="current_page_item"><a href="#.html">Secondary Page Link</a></li>    
-              <li><a href="#.html">Secondary Page Link</a></li>    
-            </ul>
-          </nav>
+
+      <!-- FILE (single) -->
+      <div class="form-group">
+        <label for="resume">Upload resume</label>
+        <p id="resume-hint">PDF only. Max 5 MB.</p>
+        <input id="resume" name="resume" type="file" class="form-control"
+              accept=".pdf,application/pdf"
+              aria-describedby="resume-hint resume-error" aria-invalid="false">
+        <p id="resume-error" role="alert" hidden>Upload a PDF file up to 5 MB.</p>
       </div>
+
+      <!-- FILE (multiple) -->
+      <div class="form-group">
+        <label for="attachments">Additional attachments</label>
+        <p id="attachments-hint">You may select multiple files. Allowed: JPG, PNG, PDF.</p>
+        <input id="attachments" name="attachments" type="file" class="form-control"
+              multiple accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"
+              aria-describedby="attachments-hint attachments-error" aria-invalid="false">
+        <p id="attachments-error" role="alert" hidden>Invalid file type or size.</p>
       </div>
+
+      <!-- COLOR with text alternative (optional but helpful) -->
+      <div class="form-group">
+        <label for="brand-color">Brand color</label>
+        <p id="brand-color-hint">Choose a color or type a hex value below.</p>
+        <input id="brand-color" name="brand_color" type="color" class="form-control"
+              aria-describedby="brand-color-hint brand-color-error" aria-invalid="false" value="#002e4a">
+        <p id="brand-color-error" role="alert" hidden>Please pick a valid color.</p>
+      </div>
+
+      <div class="form-group">
+        <label for="brand-color-hex">Brand color (hex)</label>
+        <p id="brand-color-hex-hint">Example: #002E4A</p>
+        <input id="brand-color-hex" name="brand_color_hex" type="text" class="form-control"
+              inputmode="text" placeholder="#002E4A"
+              aria-describedby="brand-color-hex-hint brand-color-hex-error" aria-invalid="false">
+        <p id="brand-color-hex-error" role="alert" hidden>Enter a valid hex color (e.g., #002E4A).</p>
+      </div>
+
+      <!-- DATALIST (suggestions) -->
+      <div class="form-group">
+        <label for="role">Role</label>
+        <p id="role-hint">Start typing; choose a suggestion or enter your own.</p>
+        <input id="role" name="role" list="role-options" class="form-control"
+              aria-describedby="role-hint role-error" aria-invalid="false" autocomplete="on">
+        <datalist id="role-options">
+          <option value="Designer"></option>
+          <option value="Developer"></option>
+          <option value="Product Manager"></option>
+          <option value="Marketing"></option>
+          <option value="Support"></option>
+        </datalist>
+        <p id="role-error" role="alert" hidden>Please choose or enter a role.</p>
+      </div>
+
+       <!-- BUTTONS -->
+      <div class="form-group border-top">
+        <button type="submit" class="btn btn--primary">Submit</button>
+        <button type="reset" class="btn btn--outline">Reset</button>
+      </div>
+    </form>
     </div>
-    
-    <div class="wp-block-group alignfull is-style-bkg-left">
-      <div class="wp-block-columns">
-        <div class="wp-block-column">
-          <div class="call-to-action">
-            <div class="col">
-              <h2>Help us fight for the next generation of integrators</h2>
-            </div>
-            <div class="col">
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Button Text</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
-      
-      <div class="wp-block-column">
-        <h2>Our 2024 Association Agenda</h2>
-        <p>Whether you are an integrator, a supplier or a product manufacturer, you can count on NSCA to <strong>advocate for the best business climate possible</strong> for your company. That’s why the NSCA board has set the following policy and program focuses for 2024:</p>
-        <div class="accordion-item">
-          <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
-          </h3>
-          <div id="collapseOne" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
-          </h3>
-          <div id="collapseTwo" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-            This is an expandable container item<i class="fa fa-chevron-circle-down"></i>
-          </h3>
-          <div id="collapseThree" class="accordion-collapse collapsed" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p>These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-          <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.crsaviors.org/about-us/history/">See Our History</a></div>
-        </div>
-      </div>
-
-      <div class="wp-block-column">
-        <figure class="theme-img two-images dots">
-          <img src="img/tall-2.jpg" />
-          <img src="img/tall-3.jpg" />
-        </figure>
-      </div>
-    </div>
-
-    <div class="wp-block-columns is-layout-flex wp-block-columns-is-layout-flex">
-      <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-        <h2 class="wp-block-heading has-text-align-center">Track Legislation Impacting <br>the
-          Integration Industry</h2>      
-        <p class="has-text-align-center is-style-max-width">ENSCA monitors legislation and regulations that impact the commercial integration industry at all levels of government, from licensure laws to code conflicts, all on behalf of our members. You can find specific information on proposed legislation in your city, county or state, and help us take action by contacting your local officials and representatives.</p>
-      </div>
-    </div>
-
-    <div class="wp-block-group alignfull is-style-bkg-blue">
-      <div class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
-        <div class="wp-block-column" style="flex-basis: 45%;">
-          <figure class="theme-img dots">
-            <img src="img/story-1.jpg" />
-          </figure>
-        </div>
-        <div class="wp-block-column">
-          <p class="is-style-lead">We take great pride in earning the right to be the
-            voice for integrators. This means that we speak with
-            authority on your behalf regarding many issues
-            impacting your livelihood and business success. It is
-            our pleasure to represent you nationally on issues of
-            concern for this industry, and to promote us collectively
-            as we define an even greater future for ourselves.</p>
-          <p class="is-style-callout"><strong>Chuck Wilson</strong><br>CEO (Chief Excecutive Officer)</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="wp-block-group alignfull is-style-bkg-left">
-      <div class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
-        <div class="wp-block-column" style="flex-basis: 50%;">
-          <h2>Codes & Compliance FAQ</h2>
-          <p>As a leading authority on compliance in the built environment, NSCA’s Codes & Compliance Committee provides a forum to ask questions and find answers to the toughest compliance issues. <strong>Members can ask the committee a question and get an answer from a subject-matter expert on topics including:</strong></p>
-          <ul>
-            <li>List item themed for client</li>
-            <li>List item themed for client</li>
-            <li>List item themed for client</li>
-            <li>List item themed for client</li>
-            <li>List item themed for client</li>
-            <li>List item themed for client</li>
-          </ul>
-          <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.crsaviors.org/about-us/history/">Learn More</a></div>
-          </div>
-        </div>
-        <div class="wp-block-column">
-          <div class="wp-block-columns is-layout-flex">
-            <figure class="theme-img two-images dots">
-              <img src="img/tall-2.jpg" />
-              <img src="img/tall-3.jpg" />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="wp-block-columns is-layout-flex wp-block-columns-is-layout-flex">
-      <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-        <h2 class="wp-block-heading has-text-align-center">Track Legislation Impacting <br>the
-          Integration Industry</h2>      
-        <p class="has-text-align-center is-style-max-width">ENSCA monitors legislation and regulations that impact the commercial integration industry at all levels of government, from licensure laws to code conflicts, all on behalf of our members. You can find specific information on proposed legislation in your city, county or state, and help us take action by contacting your local officials and representatives.</p>
-        <div class="ico-btn-group three-col">
-          <a class="ico-btn" href="#.html"><i class="fa fa-link"></i>Partner Alliance for Safer Schools (PASS)</a>
-          <a class="ico-btn" href="#.html"><i class="fa fa-book"></i>The National Fire Protection Association (NFPA)</a>
-          <a class="ico-btn" href="#.html"><i class="fa fa-user"></i>Connected Technologies Industry Consortium</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- Footer -->
-<footer class="footer">
-  <div class="container">
-
-    <div class="call-to-action">
-      <div class="col">
-        <h2>Help us fight for the next generation of integrators</h2>
-      </div>
-      <div class="col">
-        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Button Text</a></div>
-      </div>
-    </div>
-
-    <div class="ftr-cols">
-      <div class="col">
-        <img src="img/logo-inverse.png" />
-        <ul>
-          <li><a href="#.html">Footer Link</a></li>
-          <li><a href="#.html">Footer Link</a></li>
-          <li><a href="#.html">Footer Link</a></li>
-          <li><a href="#.html">Footer Link</a></li>
-          <li><a href="#.html">Footer Link</a></li>
-          <li><a href="#.html">Footer Link</a></li>
-          <li><a href="#.html">Footer Link</a></li>
-          <li><a href="#.html">Footer Link</a></li>
-        </ul>
-      </div>
-      <div class="col ftr-ico-content">
-        <div class="location">
-          <i class="fa fa-map-marker-alt"></i>
-          <p>National Systems Contractors Association (NSCA)<br> 3950 River Ridge DR NE,<br>Cedar Rapids, IA 52402</p>
-        </div>
-        <div class="phone">
-          <i class="fa fa-phone"></i>
-          <p><a href="#.html">(800) 446-6722</a><br><a href="#.html">(319) 446-6722</a></p>
-          <!-- in WordPress Use the Same Social PHP as Header -->
-          <ul class="nav-social">
-            <li><a href="#.html"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#.html"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#.html"><i class="fa-brands fa-twitter"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col">
-        <div class="ico-btn-group">
-          <a class="ico-btn" href="#.html"><i class="fa fa-link"></i>Join NSCA</a>
-          <a class="ico-btn" href="#.html"><i class="fa fa-book"></i>Contact Us</a>
-        </div>
-      </div>
-    </div>
-    <p class="footer-copy">© 2024 NSCA. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
   </div>
-</footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/flickity.js"></script>
-  <script src="js/scripts.js"></script>
 </main>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>

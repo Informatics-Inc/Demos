@@ -62,7 +62,7 @@ $neutral:   #E5E7EB; // gray-200 for ghost/outline bg
     opacity: .6; cursor: not-allowed;
   }
 }
-
+table .btn {padding: 5px; min-height: auto;}
 /* ---- Variants ---- */
 .btn--primary {
   background: $primary; color: $color-text-on-dark; border-color: $primary;

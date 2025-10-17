@@ -10,7 +10,11 @@
 .breadcrumb li + li:before {content: "|"; margin-right: 8px; opacity: .5;}
 
 /* Grids */
-.grid {display: grid; gap: var(--spacer);}
+.grid {display: grid;}
+.auto-grid-3 {grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+.align-top {align-items: flex-start;}
+.grid-span-2 {grid-column: span 2;}
+
 
 /* Panels */
 .panel-wrapper {padding: var(--spacer); display: grid; gap: var(--spacer);}
@@ -45,10 +49,6 @@
 .req-item .label {margin: 0 0 5px 0;}
 .req-item ul {margin: 0;}
 
-/* Mobile Expand */
-// .mobile-expand .submenu {height: 0; overflow: hidden;}
-// .mobile-expand:focus-within .submenu, .mobile-expand .submenu.open {height: auto;}
-
 
 
 /* TABLET */
@@ -60,6 +60,10 @@
 .panel-dashboard {grid-template-columns: 275px 1fr;}
 .page-hdr {display: flex; align-items: center; justify-content: space-between;}
 .mobile-expand .submenu {height: auto;}
+
+/* GRID Desktops */
+.grid-sidebar-left {display: grid; grid-template-columns: 275px auto; gap: 1.5rem;}
+.grid-sidebar-left > *:first-child {border-right: 1px solid var(--border); padding-right: 1.5rem;}
 }
 
 /* WIDE DESKTOP */

@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>ROC-P User Dashboard</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">Skip to Content</a>
+  
+<header class="nav-header">
+  <div class="nav-mobile-header">
+    <a class="nav-logo" href="/" aria-label="ROC-P home">
+      <img src="img/logo.png" alt="ROC-P Logo" />
+    </a>
+
+    <!-- Mobile menu toggle -->
+    <button
+      id="menu-toggle"
+      class="menu-toggle js-disclosure"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+    >
+      <span class="icon-menu" aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </div>
+
+  <nav id="primary-nav" class="nav-menu submenu" aria-label="Primary">
+    <ul class="nav-main">
+      <li class="active"><a href="/dashboard" aria-current="page">Dashboard</a></li>
+      <li><a href="/exams">Exams</a></li>
+      <li><a href="/ce">CE</a></li>
+
+      <!-- Note: for sub-menus parent is a BUTTON, not a link -->
+      <li class="has-submenu">
+        <button
+          class="nav-trigger js-disclosure"
+          type="button"
+          aria-expanded="false"
+          aria-controls="submenu-lms"
+        >
+          LMS
+          <span class="icon-arrow-down"></span>
+        </button>
+        <ul class="submenu" id="submenu-lms">
+          <li><a href="#.html">Demo LMS Test</a></li>
+          <li><a href="#.html">LMS Modules for 02/12</a></li>
+          <li><a href="#.html">My Transcript</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/resources">Resources</a></li>
+      <li><a href="/history">History</a></li>
+
+      <!-- User menu: trigger is a BUTTON -->
+      <li class="nav-user has-submenu">
+        <button
+          id="user-toggle"
+          class="nav-user-title js-disclosure"
+          type="button"
+          aria-expanded="false"
+          aria-controls="user-menu"
+        >
+          <span class="icon-user" aria-hidden="true"></span>
+          User
+          <span class="badge" aria-live="polite">
+            <span aria-hidden="true">1</span>
+            <span class="visually-hidden">1 notification</span>
+            <span class="icon-bell" aria-hidden="true"></span>
+          </span>
+        </button>
+
+        <div id="user-menu" class="nav-user-menu-dropdown submenu" role="group" aria-label="User options">
+          <ul class="nav-user-menu" role="list">
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="/notifications">Notifications</a></li>
+            <li><a href="/account">My Account</a></li>
+            <li><a href="/badges">Badges</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/store">Product Store</a></li>
+            <li><a href="/discounts">Discount Codes</a></li>
+          </ul>
+
+          <!-- Logout as an action (button or form submit) -->
+          <form action="/logout" method="POST">
+            <button type="submit" class="btn btn--primary">Logout</button>
+          </form>
+
+          <span class="last-login">
+            Last Login:
+            <time datetime="2025-09-16">Sep 16, 2025</time>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<main id="content" tabindex="-1">
+  <header class="page-hdr">
+    <h1>Search Table</h1>
+    <div class="hdr-tools">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Search Table</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <div class="panel-wrapper grid auto-grid-3">
+    <div class="panel grid-sidebar-left align-top">
+      <div class="search-filter sticky-top">
+        <!-- Filters for results table -->
+
+          <!-- Keyword -->
+          <h2 class="sidebar-title">Filter Results:</h3>
+          <div class="form-group">
+            <label for="filter-q">Keyword</label>
+            <input id="filter-q" name="q" type="search" class="form-control" placeholder="Search…">
+          </div>
+
+          <!-- Certificate (multi-select) -->
+          <div class="form-group">
+            <label for="filter-certificates">Certificate</label>
+            <select id="filter-certificates" name="certificates" class="form-control" multiple size="1">
+              <option value="cna">CNA</option>
+              <option value="pt">Physical Therapy</option>
+              <option value="ot">Occupational Therapy</option>
+              <option value="rn">Registered Nurse</option>
+              <option value="lpn">Licensed Practical Nurse</option>
+              <option value="med_aide">Medication Aide</option>
+              <!-- add/remove as needed -->
+            </select>
+          </div>
+
+          <!-- Status (single select) -->
+          <div class="form-group">
+            <label for="filter-status">Status</label>
+            <select id="filter-status" name="status" class="form-control">
+              <option value="">Any status</option>
+              <option value="active">Active</option>
+              <option value="pending">Pending</option>
+              <option value="inactive">Inactive</option>
+              <option value="archived">Archived</option>
+            </select>
+          </div>
+
+          <!-- Payment Status (single select) -->
+          <div class="form-group">
+            <label for="filter-payment">Payment status</label>
+            <select id="filter-payment" name="payment_status" class="form-control">
+              <option value="">Any payment status</option>
+              <option value="paid">Paid</option>
+              <option value="unpaid">Unpaid</option>
+              <option value="refunded">Refunded</option>
+              <option value="partial">Partial</option>
+            </select>
+          </div>
+
+          <!-- Practice Exam (single select) -->
+          <div class="form-group">
+            <label for="filter-practice-exam">Practice exam</label>
+            <select id="filter-practice-exam" name="practice_exam" class="form-control">
+              <option value="">Any</option>
+              <option value="required">Required</option>
+              <option value="optional">Optional</option>
+              <option value="not_applicable">Not applicable</option>
+            </select>
+          </div>
+
+          <!-- Actions -->
+          <div class="form-group">
+            <button type="submit" class="btn btn--primary">Apply Filters</button>
+            <button type="reset" class="btn btn--outline">Clear</button>
+          </div>
+      </div>
+
+      <!-- Table -->
+       <table id="results-table">
+        <caption class="visually-hidden">
+          Exam results — columns: Exam Name, Certificate Name, Payment Status, Status
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Exam Name</th>
+            <th scope="col">Certificate Name</th>
+            <th scope="col">Payment Status</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>ROC-P Certification Exam - WEBINAR (10/14/25 - 10/17/25)</td>
+            <td>ROC-P Certification</td>
+            <td>Paid</td>
+            <td>PASS</td>
+            <td><button class="btn btn--primary"><span class="icon-cloud-download" aria-hidden="true"></span> Download</button></td>
+          </tr>
+          <tr>
+            <td>test exam 2 (10/11/25 - 10/12/25)</td>
+            <td>Test Credential</td>
+            <td>Paid</td>
+            <td>Fail</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>test exam (10/09/25 - 10/10/25)</td>
+            <td>Test Credential</td>
+            <td>Paid</td>
+            <td>Fail</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>test exam (10/09/25 - 10/10/25)</td>
+            <td>Test Credential</td>
+            <td>Paid</td>
+            <td>Pass</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Exam for testing (10/09/25 - 10/10/25)</td>
+            <td>One status Cert</td>
+            <td>Paid</td>
+            <td>Pass</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Exam for testing (10/09/25 - 10/10/25)</td>
+            <td>One status Cert</td>
+            <td>Paid</td>
+            <td>Fail</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Exam for testing 2 (10/09/25 - 10/10/25)</td>
+            <td>One status Cert</td>
+            <td>Paid</td>
+            <td>Fail</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Exam for testing 2 (10/09/25 - 10/10/25)</td>
+            <td>One status Cert</td>
+            <td>Paid</td>
+            <td>Pass</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Test Comms Results (10/03/25 - 12/31/25)</td>
+            <td>Demo Certification - Exams</td>
+            <td>Paid</td>
+            <td>Pass</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Demo Practical Exam (08/18/25 - 12/31/25)</td>
+            <td>Demo Certification - Exams</td>
+            <td>Paid</td>
+            <td>Pass</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ABTS Oral Exam (07/22/25 - 07/22/25)</td>
+            <td>Demo Certification - Exams</td>
+            <td>Paid</td>
+            <td>Registered</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</main>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+  <!-- CHOICES -->
+   <script src="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/scripts/choices.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Choices('#filter-certificates', {
+        removeItemButton: true,      // Adds an “x” to remove selections
+        searchEnabled: true,         // Lets users search options
+        placeholderValue: 'Select items...',
+        searchPlaceholderValue: 'Type to search...'
+      });
+    });
+  </script>
+
+</body>
