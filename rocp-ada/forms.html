@@ -111,7 +111,6 @@
   </nav>
 </header>
 
-
 <main id="content" tabindex="-1">
   <header class="page-hdr">
     <h1>Forms</h1>
@@ -135,7 +134,10 @@
         <input type="hidden" name="csrf_token" value="">
 
         <p id="form-help">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden"> required</span> are required.</p>
-
+        
+        <div class="alert alert--error" role="alert">
+          <strong>Error:</strong> We couldn’t process your request. Please try again.
+        </div>
         <!-- First name -->
         <div class="form-group">
           <label for="first-name">First name <span aria-hidden="true">*</span></label>
