@@ -1,0 +1,14 @@
+/* ------------------------------------------
+   Breakpoint Tokens
+------------------------------------------- */
+
+$bp-sm: 640px;   // mobile → small tablet
+$bp-md: 768px;   // small tablet → tablet
+$bp-lg: 1024px;  // tablet → laptop
+$bp-xl: 1280px;  // laptop → desktop
+
+// Convenience mixins
+@mixin respond-sm { @media (min-width: $bp-sm) { @content; } }
+@mixin respond-md { @media (min-width: $bp-md) { @content; } }
+@mixin respond-lg { @media (min-width: $bp-lg) { @content; } }
+@mixin respond-xl { @media (min-width: $bp-xl) { @content; } }

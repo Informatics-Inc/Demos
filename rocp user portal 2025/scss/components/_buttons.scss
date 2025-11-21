@@ -1,0 +1,177 @@
+@use "../tokens" as *;
+
+/* =========================
+   Button System
+   ========================= */
+
+$btn-radius: 4px;
+$btn-padding-y: 0.6rem;
+$btn-padding-x: 1rem;
+$btn-gap: 0.5rem;
+$btn-font-size: 0.9rem;
+$btn-border-width: 1px;
+
+/* Base button */
+.btn {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $btn-gap;
+
+  font: inherit;
+  font-size: $btn-font-size;
+  line-height: 1.3;
+  font-weight: $font-weight-semibold;
+
+  padding: $btn-padding-y $btn-padding-x;
+  border-radius: $btn-radius;
+  border: $btn-border-width solid transparent;
+
+  background-color: $color-bg-surface;
+  color: #ffffff;
+
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+
+  transition:
+    background-color .15s ease,
+    color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+
+  // Let global :focus-visible in _ada.scss handle outlines
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+/* Primary */
+.btn--primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: #fff;
+
+  &:hover,
+  &:active {
+    background-color: $color-primary-strong;
+    border-color: $color-primary-strong;
+  }
+}
+
+/* Secondary (neutral strong) */
+.btn--secondary {
+  background-color: $brand-blue-200;
+  border-color: $brand-blue-500;
+  color: $brand-blue-800;
+
+  &:hover,
+  &:active {
+    background-color: $brand-blue-100;
+    border-color: $brand-blue-500;
+  }
+}
+
+/* Success */
+.btn--success {
+  background-color: $color-success-border;
+  border-color: $color-success-border;
+  color: $color-text-inverse;
+
+  &:hover,
+  &:active {
+    background-color: darken($color-success-border, 5%);
+    border-color: darken($color-success-border, 5%);
+  }
+}
+
+/* Danger */
+.btn--danger {
+  background-color: $color-error-border;
+  border-color: $color-error-border;
+  color: $color-text-inverse;
+
+  &:hover,
+  &:active {
+    background-color: darken($color-error-border, 5%);
+    border-color: darken($color-error-border, 5%);
+  }
+}
+
+/* Outline (primary) */
+.btn--outline {
+  background-color: transparent;
+  color: $color-primary;
+  border-color: $color-primary;
+
+  &:hover,
+  &:active {
+    background-color: rgba($color-primary, 0.08);
+  }
+}
+
+/* Ghost (very subtle, no border) */
+.btn--ghost {
+  background-color: transparent;
+  color: $color-text-main;
+  border-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: $color-bg-subtle;
+  }
+}
+
+/* Text button (link-style, no padding on sides) */
+.btn--text {
+  background-color: transparent;
+  border-color: transparent;
+  color: $color-primary;
+  padding-inline: 0;
+  gap: 0.35rem;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.15em;
+  }
+}
+
+/* Sizes */
+.btn--sm {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.btn--lg {
+  padding: 0.8rem 1.25rem;
+  font-size: 1rem;
+}
+
+/* Block / full width */
+.btn--block {
+  display: inline-flex;
+  width: 100%;
+}
+
+/* Icon span */
+.btn__icon {
+  display: inline-flex;
+  line-height: 0;
+}
+
+/* Icon-only (use .sr-only text in markup for label) */
+.btn--icon {
+  padding: 0.5rem;
+  border-radius: 999px;
+}

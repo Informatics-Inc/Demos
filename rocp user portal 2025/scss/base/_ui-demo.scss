@@ -1,0 +1,119 @@
+@use "../tokens" as *;
+
+/* ============================
+   UI Kit — Color Swatches Demo
+   ============================ */
+
+.color-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 640px) {
+  .color-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .color-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.color-swatch {
+  display: flex;
+  gap: 1rem;
+}
+
+.color-swatch__chip {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0,0,0,.08);
+  flex-shrink: 0;
+}
+
+.color-swatch__meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-swatch__name {
+  font-weight: 600;
+  margin: 0;
+}
+
+.color-swatch__role {
+  margin: 0.15rem 0;
+  font-size: 0.85rem;
+}
+
+.color-swatch__value code {
+  font-size: 0.85rem;
+}
+
+/* ------------------------------------------
+   UI Kit — Swatch Token Mapping 
+   (Demo ONLY — not used in production)
+------------------------------------------- */
+
+/* Base Palette */
+.color-swatch--brand-blue-50   { background: $brand-blue-50; }
+.color-swatch--brand-blue-100   { background: $brand-blue-100; }
+.color-swatch--brand-blue-200   { background: $brand-blue-200; }
+.color-swatch--brand-blue-400   { background: $brand-blue-400; }
+.color-swatch--brand-blue-500   { background: $brand-blue-500; }
+.color-swatch--brand-blue-600   { background: $brand-blue-600; }
+.color-swatch--brand-navy-700   { background: $brand-navy-700; }
+.color-swatch--brand-dark-800   { background: $brand-dark-800; }
+
+.color-swatch--gray-0           { background: $gray-0; }
+.color-swatch--gray-50          { background: $gray-50; }
+.color-swatch--gray-100         { background: $gray-100; }
+.color-swatch--gray-200         { background: $gray-200; }
+.color-swatch--gray-400         { background: $gray-400; }
+.color-swatch--gray-500         { background: $gray-500; }
+.color-swatch--gray-700         { background: $gray-700; }
+.color-swatch--gray-900         { background: $gray-900; }
+
+/* Semantic Roles */
+.color-swatch--bg-body          { background: $color-bg-body; }
+.color-swatch--bg-surface       { background: $color-bg-surface; }
+.color-swatch--bg-subtle        { background: $color-bg-subtle; }
+
+.color-swatch--text-main        { background: $color-text-main; }
+.color-swatch--text-muted       { background: $color-text-muted; }
+.color-swatch--text-inverse     { background: $color-text-inverse; }
+
+.color-swatch--border-subtle    { background: $color-border-subtle; }
+.color-swatch--border-strong    { background: $color-border-strong; }
+
+.color-swatch--primary          { background: $color-primary; }
+.color-swatch--primary-strong   { background: $color-primary-strong; }
+.color-swatch--link             { background: $color-link; }
+.color-swatch--link-visited     { background: $color-link-visited; }
+.color-swatch--focus-ring       { background: $color-focus-ring; }
+
+/* Code / neutral special */
+.color-swatch--code-bg          { background: $color-code-bg; }
+
+/* Status Colors */
+.color-swatch--info-bg          { background: $color-info-bg; }
+.color-swatch--info-border      { background: $color-info-border; }
+.color-swatch--info-text        { background: $color-info-text; }
+
+.color-swatch--success-bg       { background: $color-success-bg; }
+.color-swatch--success-border   { background: $color-success-border; }
+.color-swatch--success-text     { background: $color-success-text; }
+
+.color-swatch--warning-bg       { background: $color-warning-bg; }
+.color-swatch--warning-border   { background: $color-warning-border; }
+.color-swatch--warning-text     { background: $color-warning-text; }
+
+.color-swatch--error-bg         { background: $color-error-bg; }
+.color-swatch--error-border     { background: $color-error-border; }
+.color-swatch--error-text       { background: $color-error-text; }
+

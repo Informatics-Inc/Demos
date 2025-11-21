@@ -1,0 +1,93 @@
+@use "../tokens" as *;
+
+/* Base container */
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding: $space-12 $layout-page-padding;;
+}
+
+/* Named max-width containers */
+.container-sm {max-width: $container-sm;}
+.container-md {max-width: $container-md;}
+.container-lg {max-width: $container-lg;}
+.container-xl {max-width: $container-xl;}
+
+/* Full width */
+.container-full {max-width: 100%;}
+ 
+/* Page Content Layout */
+.section-header {
+  padding-block: $section-spacing-sm;
+}
+section + section .section-header {
+  margin-top: $space-12;
+  border-top: 1px solid $gray-200;
+  padding-top: $space-12;
+}
+
+.section-header h1 {font-size: $font-size-4xl;}
+.section-title {
+  margin-top: $space-12;
+  margin-bottom: $space-6;
+  font-weight: 600;
+  font-size: $font-size-lg;
+}
+
+/* Page wrapper (can be used app-wide) */
+.page {
+  padding-block: $section-spacing-md;
+}
+
+/* Generic section */
+.page-section {
+  padding-block: $section-spacing-md;
+  border-bottom: 1px solid $gray-200;
+}
+
+.page-section:last-child {
+  border-bottom: 0;
+}
+
+/* Section header */
+.page-section__header {
+  margin-bottom: $space-4;
+}
+
+/* Section description / intro text */
+.page-section__description {
+  color: $color-text-muted;
+  font-size: $font-size-sm;
+  max-width: 70ch;
+}
+
+/* Subheading inside a section */
+.section-heading {
+  margin-top: $space-6;
+  margin-bottom: $space-3;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-main;
+}
+.page-subheading {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $color-text-main;
+}
+
+/* Tablet */
+@include respond-md {
+  
+}
+
+/* Desktop */
+@include respond-lg {
+ 
+}
+
+/* Desktop Large */
+@include respond-xl {
+  
+}

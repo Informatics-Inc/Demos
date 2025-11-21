@@ -1,0 +1,259 @@
+@use "../tokens" as *;
+
+/* ------------------------------------------
+   Base Typography
+   (Element-level styles only)
+------------------------------------------- */
+
+/* Body text */
+body {
+  font-family: $font-body;
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+  color: $color-text-main;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $space-3;
+  font-family: $font-body;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+  color: $color-text-main;
+}
+
+h1 {
+  font-size: $font-size-3xl;
+}
+
+h2 {
+  font-size: $font-size-2xl;
+}
+
+h3 {
+  font-size: $font-size-xl;
+}
+
+h4 {
+  font-size: $font-size-lg;
+}
+
+h5 {
+  font-size: $font-size-md;
+}
+
+h6 {
+  font-size: $font-size-sm;
+  line-height: 1.25;
+  margin-bottom: $space-2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Paragraphs & Lists */
+
+p,
+ul,
+ol {
+  margin: 0 0 $space-5;
+}
+
+ul,
+ol {
+  padding-left: $space-5;
+}
+
+
+/* Blockquotes */
+
+blockquote {
+  margin: 0 0 $space-5;
+  padding: $space-2 $space-4;
+  border-left: 4px solid $brand-blue-500;
+  background: $color-bg-subtle;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+}
+
+/* Horizontal rule */
+
+hr {
+  margin: $space-4 auto;
+  border: 0;
+  border-bottom: 1px solid $color-line;
+  width: 100%;
+}
+
+/* Links */
+
+a {
+  color: $color-link;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+  // @include transition-base(color, text-decoration-thickness);
+}
+
+a:hover {
+  text-decoration-thickness: 0.12em;
+}
+
+a:visited {
+  color: $color-link-visited;
+}
+
+a:focus-visible {
+  outline: 3px solid $color-focus-ring;
+  outline-offset: 2px;
+}
+
+/* Small text & inline emphasis */
+
+small,
+.small {
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+  color: inherit;
+}
+
+em {
+  font-style: italic;
+  color: inherit;
+}
+
+mark {
+  background: $color-warning-bg;
+  color: $color-text-main;
+  padding: 0 0.15em;
+  border-radius: $radius-sm;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+/* Superscript & subscript */
+
+sup,
+sub {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.4em;
+}
+
+sub {
+  bottom: -0.2em;
+}
+
+/* Code / Pre / Kbd */
+
+code,
+kbd,
+samp {
+  font-family: $font-mono;
+  font-size: 0.95rem;
+}
+
+code {
+  background: $color-code-bg;
+  color: $gray-900;
+  padding: 0.1rem 0.3rem;
+  border-radius: $radius-sm;
+  border: 1px solid $color-border-subtle;
+}
+
+pre {
+  background: $color-code-bg;
+  color: $gray-900;
+  padding: $space-4;
+  border-radius: $radius-md;
+  border: 1px solid $color-border-subtle;
+  overflow: auto;
+  line-height: 1.45;
+}
+
+pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+kbd {
+  background: $gray-0;
+  border: 1px solid $color-border-subtle;
+  border-bottom-width: 2px;
+  border-radius: $radius-sm;
+  padding: 0.1rem 0.35rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* Definition lists */
+
+dl {
+  margin: 0 0 $space-5;
+}
+
+dt {
+  font-weight: $font-weight-semibold;
+  color: $color-text-main;
+}
+
+dd {
+  margin: 0 0 $space-2;
+  color: $color-text-muted;
+}
+
+/* Details / Summary */
+
+details {
+  margin: 0 0 $space-5;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: $font-weight-semibold;
+  outline: none;
+}
+
+summary:focus-visible {
+  outline: 3px solid $color-focus-ring;
+  outline-offset: 2px;
+}
+
+/* Address */
+
+address {
+  font-style: normal;
+  color: $color-text-muted;
+}
+
+/* Text selection */
+
+::selection {
+  background: rgba($color-primary, 0.25);
+  color: inherit;
+}
+
+/* Text Utilities */
+.text-muted {color: $color-text-muted;}
+.text-inverse  { color: $color-text-inverse; }
+.text-primary  { color: $color-primary; }
+.text-eyebrow {font-family: $font-mono; font-size: $font-size-sm; color: $gray-500; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 $space-2 0;}
+.text-lead {font-size: $font-size-lg;}
+.text-reset {margin: inherit !important;}
