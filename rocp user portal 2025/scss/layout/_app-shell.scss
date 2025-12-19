@@ -18,9 +18,14 @@
 #menu-toggle .icon-menu {font-size: 1.25rem;}
 
 /* Menu Expand */
-.submenu {height: 0; overflow: hidden; interpolate-size: allow-keywords; transition: $transition-base;}
-.submenu.open {height: auto; margin: $space-4 0;}
+.submenu {height: 0; overflow-y: hidden; interpolate-size: allow-keywords; transition: $transition-base; display: none;}
+.submenu.open {height: auto; margin: 0; display: block;}
 .has-submenu {position: relative;}
+.submenu.is-animating,
+.submenu.open {
+  height: auto;
+    display: block;
+}
 
 .sidebar-logo img {height: 50px;}
 .app-sidebar hr {border-color: $color-line-inverse;}
@@ -42,6 +47,9 @@
 .app-menu ul li:last-of-type {margin-bottom: $space-2;}
 }
 
+.app-menu .submenu li:first-of-type {margin-top: $space-4;}
+.app-menu .submenu li:last-of-type {margin-bottom: $space-4;}
+
 .sidebar-header {padding: 0 1rem; font-weight: $font-weight-bold; margin-bottom: $space-2; display: block;}
 .sidebar-links a {padding: 2px 1rem; text-decoration: none; font-size: $font-size-sm; display: block;}
 .sidebar-links a:hover {text-decoration: underline; color: #fff;}
@@ -57,6 +65,7 @@
   .app-sidebar {display: grid; align-content: flex-start; gap: $space-3;}
   .app-sidebar-fixed {position: fixed; width: 220px; display: grid; gap: $space-4;}
   .app-main {order: 2;}
+  .nav-menu {display: block;}
 }
 
 /* Desktop */

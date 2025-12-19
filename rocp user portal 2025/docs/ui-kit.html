@@ -31,7 +31,7 @@
                     <div class="sidebar-logo">
                         <img src="../img/hpe-logo.svg" alt="Program Logo" />
                     </div>
-                    <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-haspopup="true">
+                    <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-haspopup="true" data-disclosure="mobile">
                         <span class="icon-menu" aria-hidden="true"></span>
                         <span class="visually-hidden">Menu</span>
                     </button>
@@ -66,16 +66,20 @@
                         <li><a href="#" class="">Events</a></li>
                         <li><a href="#" class="">Resources</a></li>
                         <li><a href="#" class="">History</a></li>
-                        <li class="menu-active"><a href="docs/ui-kit.html" class="">UI Kit</a></li>
+                        <li class="menu-active"><a href="/docs/ui-kit.html">UI Kit</a></li>
+                        <li><a href="/docs/app-shell.html">App Shell</a></li>
+          
                     </ul>
                     <hr />
                     <span class="sidebar-header">Quick Links</span>
                     <ul class="sidebar-links">
                         <li><a href="#typography">Typography</a></li>
                         <li><a href="#colors">Colors</a></li>
-                        <li><a href="#buttons">Buttons &amp; Badges</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
                         <li><a href="#forms">Forms</a></li>
-                        <li><a href="#components">Components</a></li>
+                        <li><a href="#alerts">Alerts</a></li>
+                        <li><a href="#badges">Badges</a></li>
+                        <li><a href="#panels">Panels</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,12 +88,12 @@
             <h1>UI Kit</h1>
             <div class="breadcrumb">
                 <ol>
-                    <li><a href="docs/app-shell.html">App Shell</a></li>
+                    <li><a href="/docs/">Documentation</a></li>
                     <li>UI Kit</li>
                 </ol>
             </div>
         </header>
-        <section class="app-main" id="main">
+        <section class="app-main" id="main-content">
             <div class="container container-md">
                 
                 <!-- Typography -->
@@ -101,8 +105,9 @@
                         Base typography styles using the ROC-P design system tokens. These are the foundational text elements used across the portal.
                         </p>
                     </header>
-
+                    <div class="panel">
                     <!-- Headings -->
+ 
                     <h2 class="section-title">Headings</h2>
                     <h1>Heading 1 – Page Title</h1>
                     <h2>Heading 2 – Section Title</h2>
@@ -119,7 +124,7 @@
 
                     <!-- Small & Inline -->
                     <h2 class="section-title">Small Text & Inline Elements</h2>
-                    <small>This is small text, often used for captions or metadata.</small>
+                    <p><small>This is small text, often used for captions or metadata.</small></p>
                     <p>Inline code example: <code>npm install rocp-ui</code></p>
                     <pre><code>.example-class {
                     color: $color-primary;
@@ -145,6 +150,7 @@
                     <blockquote>
                         “This is an example blockquote. Use this to call out important information or highlight explanatory content.”
                     </blockquote>
+                </div>
                 </section>
                 
                 <!-- Colors -->
@@ -157,7 +163,7 @@
                             Swatches are driven by design tokens, not hard-coded values.
                         </p>
                     </header>
-                
+                    <div class="panel">
                     <!-- Base Palette -->
                     <h2 class="section-title">Base Palette</h2>
                     <div class="color-grid">
@@ -476,7 +482,7 @@
                             <div class="color-swatch__chip color-swatch--success-border"></div>
                             <div class="color-swatch__meta">
                                 <p class="color-swatch__name">$color-success-border</p>
-                                <p class="color-swatch__role text-muted">Success border</< /p>
+                                <p class="color-swatch__role text-muted">Success border</p>
                                 <p class="color-swatch__value"><code>#2E7D32</code></p>
                             </div>
                         </article>
@@ -539,6 +545,7 @@
                             </div>
                         </article>
                     </div>
+                </div>
                 </section>
 
                 <!-- Buttons -->
@@ -551,7 +558,8 @@
                         keyboard-friendly, and AA contrast compliant.
                       </p>
                     </header>
-                  
+                    
+                    <div class="panel">
                     <!-- Primary Buttons -->
                     <h2 class="section-title">Primary</h2>
                     <div class="demo-row">
@@ -600,16 +608,507 @@
                     <!-- Icon-Only Buttons -->
                     <h2 class="section-title">Icon Buttons</h2>
                     <div class="demo-row">
-                      <button class="btn btn--icon btn--primary" aria-label="Add">
+                      <button class="btn btn--icon-only btn--primary" aria-label="Add">
                         <span class="btn__icon"><i class="icon-plus"></i></span>
                       </button>
                   
-                      <button class="btn btn--icon btn--secondary" aria-label="Settings">
+                      <button class="btn btn--icon-only btn--secondary" aria-label="Settings">
                         <span class="btn__icon"><i class="icon-settings"></i></span>
                       </button>
                     </div>
+                </div>
                 </section>
+                
+                <!-- Forms -->
+                <section id="forms" class="prose">
+                    <header class="section-header">
+                        <p class="text-eyebrow">Design System</p>
+                        <h1>Forms</h1>
+                        <p class="text-lead">
+                            Base typography styles using the ROC-P design system tokens. These are the foundational text elements used across the portal.
+                        </p>
+                    </header>
+                
+                    
+                    <div class="panel">
+                        <h2 class="section-title">Basic Form</h2>
+                       
+                    
+                    <form action="/submit" method="post" aria-describedby="form-help">
+                        <!-- Optional: server token -->
+                        <input type="hidden" name="csrf_token" value="">
+                    
+                        <p id="basic-form-help">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden"> required</span> are
+                            required.</p>
+                    
+                        <div class="alert alert--error" role="alert">
+                            <strong>Error:</strong> We couldn’t process your request. Please try again.
+                        </div>
+                        <!-- First name -->
+                        <div class="form-group">
+                            <label for="first-name">First name <span aria-hidden="true">*</span></label>
+                            <input id="first-name" name="first_name" type="text" class="form-control" required autocomplete="given-name"
+                                aria-describedby="first-name-error" aria-invalid="false">
+                            <!-- On error: set aria-invalid="true" and remove hidden -->
+                            <p id="first-name-error" role="alert" hidden>Enter your first name.</p>
+                        </div>
+                    
+                        <!-- Last name -->
+                        <div class="form-group">
+                            <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+                            <input id="last-name" name="last_name" type="text" class="form-control" required autocomplete="family-name"
+                                aria-describedby="last-name-error" aria-invalid="false">
+                            <p id="last-name-error" role="alert" hidden>Enter your last name.</p>
+                        </div>
+                    
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email <span aria-hidden="true">*</span></label>
+                            <input id="email" name="email" type="email" class="form-control" inputmode="email" required autocomplete="email"
+                                aria-describedby="email-error" aria-invalid="false">
+                            <p id="email-error" role="alert" hidden>Enter a valid email address.</p>
+                        </div>
+                    
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="password">Password <span aria-hidden="true">*</span></label>
+                            <input id="password" name="password" type="password" class="form-control" required autocomplete="new-password"
+                                aria-describedby="password-error" aria-invalid="false">
+                            <p id="password-error" role="alert" hidden>Password must meet the requirements.</p>
+                        </div>
+                    
+                        <!-- Actions -->
+                        <div class="form-group border-top">
+                            <button type="submit" class="btn btn--primary">Submit</button>
+                            <!-- If “Cancel” navigates away, use a link (preferred a11y) -->
+                            <a href="/" role="button" class="btn btn--outline">Cancel</a>
+                            <!-- If “Cancel” should just clear fields, use a reset button instead:
+                                              <button type="reset">Cancel</button>
+                                              -->
+                        </div>
+                    </form>
+                    </div>
+                    <div class="panel">
+                    <h2 class="section-title">More Form Items</h2>
+                        
+                        <form action="/submit" method="post" aria-describedby="form-help">
+                            <p id="form-help">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden"> required</span>
+                                are required.</p>
+                    
+                            <!-- SELECT -->
+                            <div class="form-group">
+                                <label for="region">Select your region <span aria-hidden="true">*</span><span class="visually-hidden">
+                                        required</span></label>
+                                <select id="region" name="region" class="form-control" required aria-describedby="region-error"
+                                    aria-invalid="false">
+                                    <option value="">Please select</option>
+                                    <option value="ne">Northeast</option>
+                                    <option value="mw">Midwest</option>
+                                    <option value="so">South</option>
+                                    <option value="we">West</option>
+                                </select>
+                                <p id="region-error" role="alert" hidden>Select a region.</p>
+                            </div>
+                    
+                            <!-- RADIO GROUP -->
+                            <div class="form-group">
+                                <fieldset aria-describedby="contact-error">
+                                    <legend class="label-like">
+                                        Preferred contact method
+                                        <span aria-hidden="true">*</span>
+                                        <span class="visually-hidden"> required</span>
+                                    </legend>
+                    
+                                    <div class="form-group">
+                                        <input id="contact-email" name="contact_method" type="radio" value="email" required>
+                                        <label for="contact-email">Email</label>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <input id="contact-phone" name="contact_method" type="radio" value="phone">
+                                        <label for="contact-phone">Phone</label>
+                                    </div>
+                                </fieldset>
+                    
+                                <p id="contact-error" role="alert" hidden>Select a contact method.</p>
+                            </div>
+                    
+                            <!-- CHECKBOX GROUP -->
+                            <div class="form-group">
+                                <fieldset aria-describedby="topics-error">
+                                    <legend class="label-like">Topics of interest</legend>
+                    
+                                    <div class="form-group">
+                                        <input id="topic-news" name="topics" type="checkbox" value="news">
+                                        <label for="topic-news">News &amp; updates</label>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <input id="topic-events" name="topics" type="checkbox" value="events">
+                                        <label for="topic-events">Events</label>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <input id="topic-offers" name="topics" type="checkbox" value="offers">
+                                        <label for="topic-offers">Special offers</label>
+                                    </div>
+                                </fieldset>
+                    
+                                <p id="topics-error" role="alert" hidden>Please select at least one topic.</p>
+                            </div>
+                    
+                    
+                            <!-- TEXTAREA -->
+                            <div class="form-group">
+                                <label for="message">Your message</label>
+                                <p id="message-hint">Please be brief and avoid personal data.</p>
+                                <textarea id="message" name="message" rows="5" class="form-control"
+                                    aria-describedby="message-hint message-error" aria-invalid="false"></textarea>
+                                <p id="message-error" role="alert" hidden>Enter a message.</p>
+                            </div>
+                    
+                            <!-- BUTTONS -->
+                            <div class="form-group border-top">
+                                <button type="submit" class="btn btn--primary">Submit</button>
+                                <button type="reset" class="btn btn--outline">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        
+                        <h2 class="section-title">Even More Forms</h2>
+                        <form action="/submit" method="post">
+                    
+                            <!-- NUMBER -->
+                            <div class="form-group">
+                                <label for="qty">Quantity <span aria-hidden="true">*</span><span class="visually-hidden">
+                                        required</span></label>
+                                <p id="qty-hint">Enter a whole number between 1 and 100.</p>
+                                <input id="qty" name="qty" type="number" class="form-control" inputmode="numeric" min="1" max="100" step="1"
+                                    required aria-describedby="qty-hint qty-error" aria-invalid="false">
+                                <p id="qty-error" role="alert" hidden>Quantity must be 1–100.</p>
+                            </div>
+                    
+                            <!-- URL -->
+                            <div class="form-group">
+                                <label for="website">Website</label>
+                                <p id="website-hint">Example: https://example.com</p>
+                                <input id="website" name="website" type="url" class="form-control" inputmode="url" autocomplete="url"
+                                    placeholder="https://example.com" aria-describedby="website-hint website-error" aria-invalid="false">
+                                <p id="website-error" role="alert" hidden>Enter a valid URL (e.g., https://example.com).</p>
+                            </div>
+                    
+                            <!-- TEL -->
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <p id="phone-hint">Numbers only; include area code.</p>
+                                <input id="phone" name="phone" type="tel" class="form-control" inputmode="tel" autocomplete="tel"
+                                    aria-describedby="phone-hint phone-error" aria-invalid="false">
+                                <p id="phone-error" role="alert" hidden>Enter a valid phone number.</p>
+                            </div>
+                    
+                            <!-- SEARCH -->
+                            <div class="form-group">
+                                <label for="site-search">Search the site</label>
+                                <input id="site-search" name="q" type="search" class="form-control" placeholder="Search"
+                                    aria-describedby="search-error" aria-invalid="false">
+                                <p id="search-error" role="alert" hidden>Refine your search term.</p>
+                            </div>
+                    
+                            <!-- DATE -->
+                            <div class="form-group">
+                                <label for="start-date">Start date</label>
+                                <p id="start-date-hint">Format: YYYY-MM-DD (you can type or use the picker).</p>
+                                <input id="start-date" name="start_date" type="date" class="form-control"
+                                    aria-describedby="start-date-hint start-date-error" aria-invalid="false">
+                                <p id="start-date-error" role="alert" hidden>Please enter a valid date.</p>
+                            </div>
+                    
+                            <!-- TIME -->
+                            <div class="form-group">
+                                <label for="start-time">Start time</label>
+                                <p id="start-time-hint">24-hour or AM/PM depending on your system.</p>
+                                <input id="start-time" name="start_time" type="time" class="form-control"
+                                    aria-describedby="start-time-hint start-time-error" aria-invalid="false">
+                                <p id="start-time-error" role="alert" hidden>Please enter a valid time.</p>
+                            </div>
+                    
+                            <!-- DATETIME-LOCAL -->
+                            <div class="form-group">
+                                <label for="appointment">Appointment (local date & time)</label>
+                                <input id="appointment" name="appointment" type="datetime-local" class="form-control"
+                                    aria-describedby="appointment-error" aria-invalid="false">
+                                <p id="appointment-error" role="alert" hidden>Please enter a valid date and time.</p>
+                            </div>
+                            <!-- BUTTONS -->
+                            <div class="form-group border-top">
+                                <button type="submit" class="btn btn--primary">Submit</button>
+                                <button type="reset" class="btn btn--outline">Reset</button>
+                            </div>
+                    
+                        </form>
+                    
+                    
+                    </div>
+                    
+                    <div class="panel">
+                        <h2 class="section-title">Still More Forms</h2>
+                    
+                        <form action="/submit" method="post">
+                    
+                    
+                    
+                            <!-- RANGE (slider) -->
+                            <div class="form-group">
+                                <label for="satisfaction">Satisfaction level</label>
+                                <p id="satisfaction-hint">0 (low) to 10 (high). Current: 5 of 10.</p>
+                                <input id="satisfaction" name="satisfaction" type="range" class="form-control" min="0" max="10" step="1"
+                                    value="5" aria-describedby="satisfaction-hint satisfaction-error" aria-invalid="false">
+                                <p id="satisfaction-error" role="alert" hidden>Select a value between 0 and 10.</p>
+                            </div>
+                    
+                            <!-- FILE (single) -->
+                            <div class="form-group">
+                                <label for="resume">Upload resume</label>
+                                <p id="resume-hint">PDF only. Max 5 MB.</p>
+                                <input id="resume" name="resume" type="file" class="form-control" accept=".pdf,application/pdf"
+                                    aria-describedby="resume-hint resume-error" aria-invalid="false">
+                                <p id="resume-error" role="alert" hidden>Upload a PDF file up to 5 MB.</p>
+                            </div>
+                    
+                            <!-- FILE (multiple) -->
+                            <div class="form-group">
+                                <label for="attachments">Additional attachments</label>
+                                <p id="attachments-hint">You may select multiple files. Allowed: JPG, PNG, PDF.</p>
+                                <input id="attachments" name="attachments" type="file" class="form-control" multiple
+                                    accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"
+                                    aria-describedby="attachments-hint attachments-error" aria-invalid="false">
+                                <p id="attachments-error" role="alert" hidden>Invalid file type or size.</p>
+                            </div>
+                    
+                            <!-- COLOR with text alternative -->
+                            <div class="form-group">
+                                <label for="brand-color">Brand color</label>
+                                <p id="brand-color-hint">Choose a color or type a hex value below.</p>
+                                <input id="brand-color" name="brand_color" type="color" class="form-control"
+                                    aria-describedby="brand-color-hint brand-color-error" aria-invalid="false" value="#002e4a">
+                                <p id="brand-color-error" role="alert" hidden>Please pick a valid color.</p>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="brand-color-hex">Brand color (hex)</label>
+                                <p id="brand-color-hex-hint">Example: #002E4A</p>
+                                <input id="brand-color-hex" name="brand_color_hex" type="text" class="form-control" inputmode="text"
+                                    placeholder="#002E4A" aria-describedby="brand-color-hex-hint brand-color-hex-error"
+                                    aria-invalid="false">
+                                <p id="brand-color-hex-error" role="alert" hidden>Enter a valid hex color (e.g., #002E4A).</p>
+                            </div>
+                    
+                            <!-- DATALIST -->
+                            <div class="form-group">
+                                <label for="role">Role</label>
+                                <p id="role-hint">Start typing; choose a suggestion or enter your own.</p>
+                                <input id="role" name="role" list="role-options" class="form-control"
+                                    aria-describedby="role-hint role-error" aria-invalid="false" autocomplete="on">
+                                <datalist id="role-options">
+                                    <option value="Designer"></option>
+                                    <option value="Developer"></option>
+                                    <option value="Product Manager"></option>
+                                    <option value="Marketing"></option>
+                                    <option value="Support"></option>
+                                </datalist>
+                                <p id="role-error" role="alert" hidden>Please choose or enter a role.</p>
+                            </div>
+                    
+                            <!-- BUTTONS -->
+                            <div class="form-group border-top">
+                                <button type="submit" class="btn btn--primary">Submit</button>
+                                <button type="reset" class="btn btn--outline">Reset</button>
+                            </div>
+                        </form>            </div>
+                </section>
+
+                <!-- Alerts -->
+                <section id="alerts" class="prose">
+                    <header class="section-header">
+                        <p class="text-eyebrow">Design System</p>
+                        <h1>Alerts</h1>
+                        <p class="text-lead">
+                            HEY! Alerts communicate system feedback and important messages.
+                            All alerts meet WCAG 2.1 AA colorcontrast requirements.
+                        </p>
+                    </header>
+                    <div class="panel">
+                        <h2 class="section-title">Block Alerts</h2>
+                        <div class="alert alert--info">
+                            <strong>Info:</strong> This is an informational message.
+                        </div>
+                        
+                        <div class="alert alert--success">
+                            <strong>Success:</strong> Your changes have been saved.
+                        </div>
+                        
+                        <div class="alert alert--warning">
+                            <strong>Warning:</strong> This action may have unintended effects.
+                        </div>
+                        
+                        <div class="alert alert--error">
+                            <strong>Error:</strong> Something went wrong. Please try again.
+                        </div>
+                        <h2 class="section-title">Inline / Field-Level Alerts</h2>
+                        
+                        <form>
+                            <div class="form-group">
+                                <label for="email-2">Email address <span aria-hidden="true">*</span></label>
+                                <input id="email-2" type="email" class="form-control" aria-invalid="true" aria-describedby="email-error" />
+                                <p id="email-error-2" class="alert-inline">
+                                    Please enter a valid email address.
+                                </p>
+                            </div>
+                        </form>
+
+                        <h2 class="section-title">Live Alerts (Async)</h2>
+                        
+                        <div class="alert alert--success" role="status" aria-live="polite">
+                            Your profile was updated successfully.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Badges -->
+                <section id="badges" class="prose">
+                    <header class="section-header">
+                      <p class="text-eyebrow">Design System</p>
+                      <h1>Badges</h1>
+                      <p class="text-lead">
+                        Badges are used for statuses, counts, and small bits of metadata.
+                        Keep them short and meaningful.
+                      </p>
+                    </header>
+                  <div class="panel">
+                    <h2 class="section-title">Standard</h2>
+                    <div class="inline-group">
+                      <span class="badge badge--neutral">Neutral</span>
+                      <span class="badge badge--info">Info</span>
+                      <span class="badge badge--success">Success</span>
+                      <span class="badge badge--warning">Warning</span>
+                      <span class="badge badge--error">Error</span>
+                    </div>
                   
+                    <h2 class="section-title">Pills</h2>
+                    <div class="inline-group">
+                      <span class="badge badge--pill badge--neutral">Draft</span>
+                      <span class="badge badge--pill badge--info">In review</span>
+                      <span class="badge badge--pill badge--success">Approved</span>
+                      <span class="badge badge--pill badge--warning">Expiring</span>
+                      <span class="badge badge--pill badge--error">Overdue</span>
+                    </div>
+                  
+                    <h2 class="section-title">Examples</h2>
+                    <div class="inline-group">
+                      <span class="badge badge--pill badge--success">Paid</span>
+                      <span class="badge badge--pill badge--warning">Due in 7 days</span>
+                      <span class="badge badge--pill badge--error">Past due</span>
+                      <span class="badge badge--pill badge--info">New</span>
+                    </div>
+
+                    <h2 class="section-title">Badge vs Pill</h2>
+                    <p>Badges and pills use the same base component (<code>.badge</code>) but communicate different intent. Use them consistently so scanning tables and dashboards feels predictable.</p>
+                    <h3>Badges</h3>
+                    <p>
+                        Use a <strong>badge</strong> to communicate <strong>status/state</strong>.
+                        Badges answer: <em>“What state is this in?”</em> They’re ideal for tables and workflow indicators.
+                    </p>
+                    <div class="inline-group" aria-label="Badge examples">
+                        <span class="badge badge--success">Approved</span>
+                        <span class="badge badge--warning">Expiring</span>
+                        <span class="badge badge--error">Overdue</span>
+                        <span class="badge badge--info">New</span>
+                    </div>
+                    <h3>Pill</h3>
+                    <p>
+                        Use a <strong>pill</strong> for <strong>categorization/attributes</strong>.
+                        Pills answer: <em>“What is this related to?”</em> They’re often grouped and read like tags.
+                    </p>
+                    <div class="inline-group" aria-label="Pill examples">
+                        <span class="badge badge--pill badge--neutral">CE</span>
+                        <span class="badge badge--pill badge--info">Online</span>
+                        <span class="badge badge--pill badge--success">Paid</span>
+                        <span class="badge badge--pill badge--warning">Due in 7 days</span>
+                    </div>
+
+                </section>
+
+                <!-- Panels -->
+                <section id="panels" class="prose">
+                    <header class="section-header">
+                        <p class="text-eyebrow">Design System</p>
+                        <h1>Panels</h1>
+                        <p class="text-lead">
+                            Panels provide a surface for grouped content. Use panel headers for title + meta + actions.
+                        </p>
+                    </header>
+                
+                    <!-- Basic Panel -->
+                    <div class="panel">
+                        <header class="panel__header">
+                            <div class="panel__heading">
+                                <h2 class="panel__title">Basic Panel</h2>
+                            </div>
+                        </header>
+                        
+                        <p>This is a standard panel surface for grouping content.</p>
+                        <div class="inline-group">
+                            <button class="btn btn--primary">Primary</button>
+                            <button class="btn btn--secondary">Secondary</button>
+                            <button class="btn btn--ghost">Ghost</button>
+                        </div>
+                    </div>
+
+                    <!-- Panel Header Pattern (matches portal screens) -->
+                    <div class="panel">
+                    
+                        <header class="panel__header">
+                            <div class="panel__heading">
+                                <h2 class="panel__title">Panel Title & Subtitle</h2>
+                                <p class="panel__subtitle">Panel Subtitle Goes Here</p>
+                            </div>
+                    
+                            <div class="panel__meta">
+                                <span class="panel__count">1/2</span>
+                            </div>
+                        </header>
+                    
+                        <div class="panel__body">
+                            <p>
+                                Panel body content starts here. Use the header for title/meta; use the body for lists,
+                                tables, forms, etc.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel with Actions -->
+                    <div class="panel">
+                        <header class="panel__header">
+                            <div class="panel__heading">
+                                <h2 class="panel__title">Requirements</h2>
+                                <p class="panel__subtitle">Complete items to maintain your certification.</p>
+                            </div>
+                    
+                            <div class="panel__meta">
+                                <span class="badge badge--pill badge--info">In progress</span>
+                                <button class="btn btn--icon-only btn--ghost" type="button" aria-label="More actions">
+                                    <span class="btn__icon" aria-hidden="true"><i class="icon-options"></i></span>
+                                </button>
+                            </div>
+                        </header>
+                    
+                        <div class="panel__body">
+                            <p class="text-muted">Example: list rows or a table would go here.</p>
+                        </div>
+                    </div>
+                </section>    
             </div>
         </section>
       </div>

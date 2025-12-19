@@ -1,0 +1,59 @@
+@use "../tokens" as *;
+
+/* =========================
+   Badges
+   ========================= */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.2rem 0.5rem;
+    border-radius: $radius-sm;
+    border: 1px solid $color-border-subtle;
+
+    background: $color-bg-subtle;
+    color: $color-text-main;
+
+    font-size: 0.75rem;
+    font-weight: $font-weight-semibold;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.badge--pill {
+    border-radius: 999px;
+    padding-inline: 0.6rem;
+}
+
+/* Status variants (use your alert/status tokens) */
+.badge--neutral {
+    background: $color-bg-subtle;
+    border-color: $color-border-subtle;
+    color: $color-text-main;
+}
+
+.badge--info {
+    background: $color-info-bg;
+    border-color: $color-info-border;
+    color: $color-info-text;
+}
+
+.badge--success {
+    background: $color-success-bg;
+    border-color: $color-success-border;
+    color: $color-success-text;
+}
+
+.badge--warning {
+    background: $color-warning-bg;
+    border-color: $color-warning-border;
+    color: $color-warning-text;
+}
+
+.badge--error {
+    background: $color-error-bg;
+    border-color: $color-error-border;
+    color: $color-error-text;
+}

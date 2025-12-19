@@ -1,0 +1,40 @@
+@use "../tokens" as *;
+
+/* Prose-only layout rhythm */
+.prose {
+
+    /* Content pages: section header has larger rhythm + dividers */
+    .section-header {
+        padding-block: $section-spacing-sm;
+        display: block;
+    }
+
+    /* Only in prose do we add this "next section divider" behavior */
+    section+section .section-header {
+        margin-top: $space-12;
+        border-top: 1px solid $gray-200;
+        padding-top: $space-12;
+    }
+
+    /* Content (docs) display sizing */
+    .section-header h1 {
+        font-size: $font-size-4xl;
+    }
+
+    .section-title {
+        margin-top: $space-12;
+        margin-bottom: $space-6;
+        font-weight: 600;
+        font-size: $font-size-lg;
+    }
+
+    /* If inline-group is intended only for prose/docs rhythm, keep its margin here */
+    .inline-group {
+        margin-block: $space-6;
+    }
+}
+.container .prose:first-of-type {margin-top: $space-12;}
+.prose+.prose .section-header {
+    margin-top: $space-12;
+    border-top: 1px solid $gray-200;
+    padding-top: $space-12; }

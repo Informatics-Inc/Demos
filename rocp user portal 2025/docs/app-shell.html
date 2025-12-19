@@ -1,295 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Informatics, Inc">
-    <title>ROC-P User Dashboard</title>
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    
-    <!-- Line Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
-    <!-- CSS -->
-    <link href="css/app.min.css" rel="stylesheet">
-  </head>
-  <body>
-  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Informatics, Inc">
+  <title>ROC-P User Dashboard – UI Kit</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Line Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+
+  <!-- CSS -->
+  <link href="../css/app.min.css" rel="stylesheet">
+</head>
+
+<body class="pagebody">
+
   <!-- Skip Nav Link-->
-  <a id="skip-nav" class="screenreader-text" href="#content">Skip to Content</a>
-  
-<header class="nav-header">
-  <div class="nav-mobile-header">
-    <a class="nav-logo" href="/" aria-label="ROC-P home">
-      <img src="img/logo.png" alt="ROC-P Logo" />
-    </a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Mobile menu toggle -->
-    <button
-      id="menu-toggle"
-      class="menu-toggle js-disclosure"
-      type="button"
-      aria-expanded="false"
-      aria-controls="primary-nav"
-    >
-      <span class="icon-menu" aria-hidden="true"></span>
-      <span class="visually-hidden">Menu</span>
-    </button>
-  </div>
-
-  <nav id="primary-nav" class="nav-menu submenu" aria-label="Primary">
-    <ul class="nav-main">
-      <li class="active"><a href="/dashboard" aria-current="page">Dashboard</a></li>
-      <li><a href="/exams">Exams</a></li>
-      <li><a href="/ce">CE</a></li>
-
-      <!-- Note: for sub-menus parent is a BUTTON, not a link -->
-      <li class="has-submenu">
-        <button
-          class="nav-trigger js-disclosure"
-          type="button"
-          aria-expanded="false"
-          aria-controls="submenu-lms"
-        >
-          LMS
-          <span class="icon-arrow-down"></span>
-        </button>
-        <ul class="submenu" id="submenu-lms">
-          <li><a href="#.html">Demo LMS Test</a></li>
-          <li><a href="#.html">LMS Modules for 02/12</a></li>
-          <li><a href="#.html">My Transcript</a></li>
-        </ul>
-      </li>
-
-      <li><a href="/resources">Resources</a></li>
-      <li><a href="/history">History</a></li>
-
-      <!-- User menu: trigger is a BUTTON -->
-      <li class="nav-user has-submenu">
-        <button
-          id="user-toggle"
-          class="nav-user-title js-disclosure"
-          type="button"
-          aria-expanded="false"
-          aria-controls="user-menu"
-        >
-          <span class="icon-user" aria-hidden="true"></span>
-          User
-          <span class="badge" aria-live="polite">
-            <span aria-hidden="true">1</span>
-            <span class="visually-hidden">1 notification</span>
-            <span class="icon-bell" aria-hidden="true"></span>
-          </span>
-        </button>
-
-        <div id="user-menu" class="nav-user-menu-dropdown submenu" role="group" aria-label="User options">
-          <ul class="nav-user-menu" role="list">
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="/notifications">Notifications</a></li>
-            <li><a href="/account">My Account</a></li>
-            <li><a href="/badges">Badges</a></li>
-            <li><a href="/cart">Cart</a></li>
-            <li><a href="/store">Product Store</a></li>
-            <li><a href="/discounts">Discount Codes</a></li>
-          </ul>
-
-          <!-- Logout as an action (button or form submit) -->
-          <form action="/logout" method="POST">
-            <button type="submit" class="btn btn--primary">Logout</button>
-          </form>
-
-          <span class="last-login">
-            Last Login:
-            <time datetime="2025-09-16">Sep 16, 2025</time>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-<main id="content" tabindex="-1">
-  <header class="page-hdr">
-    <h1>Dashboard</h1>
-    <div class="hdr-tools">
-      <div class="filter-dropdown mobile-expand has-submenu nav-filter">
-        <button
-          id="filter-toggle"
-          class="btn js-disclosure"
-          type="button"
-          aria-expanded="false"
-          aria-controls="filter-panel"
-        >
-          <span class="icon-options" aria-hidden="true"></span>
-          <span class="filter-current" aria-live="polite">Filter Dashboard</span>
-        </button>
-
-        <div id="filter-panel" class="submenu filter-panel" role="group" aria-label="Certificate filters">
-          <form id="cert-filter-form">
-            <fieldset>
-              <legend class="visually-hidden">Choose one or more certificates</legend>
-              <div class="filter-option">
-                <label>
-                  <input type="checkbox" id="cert-all" checked>
-                  Select all
-                </label>
-              </div>
-              <div class="filter-option">
-                <label>
-                  <input type="checkbox" name="cert" value="ce" >
-                  Filter Option #1
-                </label>
-              </div>
-              <div class="filter-option">
-                <label>
-                  <input type="checkbox" name="cert" value="lms" >
-                  Filter Option #2
-                </label>
-              </div>
-              <div class="filter-option">
-                <label>
-                  <input type="checkbox" name="cert" value="exams" >
-                  Filter Option #3
-                </label>
-              </div>
-              <div class="filter-actions">
-                <button type="submit" class="btn btn--primary btn--sm">Apply</button>
-                <button type="button" class="btn btn--outline btn--sm" id="filter-clear">Clear</button>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </header>
-  <div class="panel-wrapper panel-dashboard">
-    <div class="panel">
-      <div class="panel-title">
-        <h2>Alex Applicant</h2>
-      </div>
-      <div class="user-info">
-        <figure>
-          <img src="img/user.png" alt="User Image" />
-        </figure>
-        <div class="user-text">
-          <h3>PID#</h3>
-          <p>100164A</p>
-          <h3>Last Login</h3>
-          <p>09/19/2025 10:33 AM</p>
-        </div>
-      </div>
-       <hr />
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="new.html">Update Profile</a></li>
-        <li><a href="newhtml">View My Past Payments</a></li>
-        <li><a href="new.html">Badges</a></li>
-        <li><a href="new.html">Store</a></li>
-        <li><a href="new.html">Available Discount Codes</a></li>
-        <li><a href="new.html">Apply For New Certification</a></li>
-      </ul>
-    </div>
-    <div class="panel">
-      <div class="panel-title">
-        <h2>Demo Certification - Exams: Candidate</h2>
-        <div class="panel-info">
-          <span class="title-status"><span class="icon-ban" aria-hidden="true"></span> Not Certified</span>
-          <span class="title-status">Expiration Date: 06/27/2026</span>
-          <span class="title-status"><a href="reqs.html">View Requirements</a></span>
-        </div>
-      </div>
-      <div class="grid grid-2-col">
-        <div class="col">
-          <h3 class="sub-title">Things You Can Do</h3>
-          <div class="todo-list">
-            <div class="todo-list-item">
-              <div class="text">
-                <h4>Demo Certification Exam</h4>
-                <p>Register By: Dec 31, 2025 12:00 AM</p>
-              </div>
-              <button class="btn btn--primary">Register</button>
+  <!-- Main -->
+  <main role="main">
+    <div class="app-shell">
+      <nav class="app-sidebar">
+        <div class="app-sidebar-fixed">
+          <div class="app-mobile-header">
+            <div class="sidebar-logo">
+              <img src="../img/hpe-logo.svg" alt="Program Logo" />
             </div>
-            <div class="todo-list-item">
-              <div class="text">
-                <h4>Demo Certification Exam - No Integration</h4>
-                <p>Register By: Apr 03, 2026 12:00 AM</p>
+            <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false"
+              aria-controls="mobile-nav" aria-haspopup="true">
+              <span class="icon-menu" aria-hidden="true"></span>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+          <div id="mobile-nav" class="nav-menu submenu">
+            <div class="sidebar-user-info">
+              <figure><img src="../img/user.png" alt="User Image" /></figure>
+              <div class="sidebar-user-content">
+                <span class="user-name">Clark Markson</span>
+                <ul>
+                  <li>PID# 12345A</li>
+                  <li><a href="#.html">Logout</a></li>
+                </ul>
               </div>
-              <button class="btn btn--primary">Continue</button>
             </div>
-            <div class="todo-list-item">
-              <div class="text">
-                <h4>Demo OSCE</h4>
-                <p>Register By: Dec 31, 2026 12:00 AM</p>
-              </div>
-              <button class="btn btn--success" aria-disabled="true">Registered</button>
-            </div>
-            <div class="todo-list-item">
-              <div class="text">
-                <h4>Demo Practical Exam</h4>
-                <p>Session Date: Aug 19, 2025 Session 1 - AM <br>Register By: Dec 31, 2025 12:00 AM</p>
-              </div>
-              <button class="btn btn--success" aria-disabled="true">Registered</button>
-            </div>
+            <hr />
+            <ul class="app-menu">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="exams.html" class="">Exams</a></li>
+              <li><a href="ce.html" class="">CE</a></li>
+              <li class="has-submenu">
+                <button class="nav-trigger js-disclosure" type="button" aria-expanded="false"
+                  aria-controls="submenu-lms" aria-haspopup="true">
+                  LMS
+                  <span class="icon-arrow-down"></span>
+                </button>
+                <ul class="submenu" id="submenu-lms">
+                  <li><a href="#.html">Demo LMS Test</a></li>
+                  <li><a href="#.html">LMS Modules for 02/12</a></li>
+                  <li><a href="#.html">My Transcript</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="">Events</a></li>
+              <li><a href="#" class="">Resources</a></li>
+              <li><a href="#" class="">History</a></li>
+              <li><a href="/docs/ui-kit.html" >UI Kit</a></li>
+              <li class="menu-active"><a href="/docs/app-shell.html">App Shell</a></li>
+            </ul>
+            <hr />
+            <span class="sidebar-header">Quick Links</span>
+            <ul class="sidebar-links">
+              <li><a href="#typography">Typography</a></li>
+              <li><a href="#colors">Colors</a></li>
+              <li><a href="#buttons">Buttons</a></li>
+              <li><a href="#forms">Forms</a></li>
+              <li><a href="#alerts">Alerts</a></li>
+              <li><a href="#badges">Badges</a></li>
+            </ul>
           </div>
         </div>
-        <div class="col border-left">
-          <h3 class="sub-title">Current Requirements</h3>
-          <div class="req-wrap">
-            <div class="req-item">
-              
-              <div class="text">
-              <h4>Certification Exam</h4>
-              <ul>
-                <li>Demo Certification Exam</li>
-                <li>Demo Certification Exam - No Integration</li>
-              </ul>
-              </div>
-              <span class="label label--not-started"><span class="icon-clock" aria-hidden="true"></span>Unstarted</span>
-            </div>
-            <div class="req-item">
-              <div class="text">
-              <h4>Common Core Math Quiz</h4>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-              </ul>
-              </div>
-              <span class="label label--in-progress"><span class="icon-refresh" aria-hidden="true"></span>In Progress</span>
-            </div>
-            <div class="req-item">
-              
-              <div class="text">
-              <h4>OSCE</h4>
-              <ul>
-                <li>No Requirements Available</li>
-              </ul>
-              </div>
-              <span class="label label--complete"><span class="icon-check" aria-hidden="true"></span>Complete</span>
-            </div>
-
-            <div class="req-item">
-              <div class="text">
-              <h4>LMS Module #5</h4>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-              </ul>
-              </div>
-              <span class="label label--complete"><span class="icon-check" aria-hidden="true"></span>Complete</span>
-            </div>
-          </div>
+      </nav>
+      <header class="app-header">
+        <h1>App Shell</h1>
+        <div class="breadcrumb">
+          <ol>
+            <li><a href="/docs/">Documentation</a></li>
+            <li>App Shell</li>
+          </ol>
         </div>
-      </div>
+      </header>
+      <section class="app-main" id="main">
+        <div class="container container-md">
+
+        </div>
     </div>
-  </div>
-</main>
+    </section>
+    </div>
+  </main>
+
 
   <!-- SCRIPTS -->
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="../js/scripts.js"></script>
+
 </body>

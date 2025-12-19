@@ -32,7 +32,7 @@
   overflow: visible !important;
   clip: auto !important;
   white-space: normal !important;
-  background: $navy-800;
+  background: $brand-blue-800;
   color: $gray-0;
   padding: $space-2 $space-3;
   text-align: center;
@@ -52,7 +52,9 @@
   outline: 3px solid $color-focus-ring;
   outline-offset: 3px;
 }
-
+.app-sidebar :focus-visible {
+  outline-offset: -3px;
+}
 /* High-contrast utility (optional toggle) */
 .high-contrast * {
   background: #fff !important;

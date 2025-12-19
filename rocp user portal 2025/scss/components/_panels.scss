@@ -1,0 +1,99 @@
+@use "../tokens" as *;
+
+
+.panel {
+    background: $color-bg-surface;
+    border: 1px solid $color-border-subtle;
+    border-radius: $radius-sm;
+    padding: $space-6;
+    box-shadow: $shadow-xs;
+    font-size: .9rem;
+}
+.panel+.panel {
+    margin-top: $space-6;
+}
+
+/* =========================
+   Panel Header
+   ========================= */
+
+.panel__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-6;
+    padding-bottom: $space-6;
+    border-bottom: 1px solid $color-border-subtle;
+    margin-bottom: $space-6;
+}
+
+.panel__heading {
+    min-width: 0;
+    /* prevents text overflow in flex */
+}
+
+.panel__title {
+    margin: 0;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $color-text-main;
+}
+
+.panel__subtitle {
+    margin: 0px $space-2 0 0;
+    font-size: 0.9rem;
+    color: $color-text-muted;
+    font-size: $font-size-xs;
+}
+
+/* Right-side meta/actions */
+.panel__meta {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    flex-shrink: 0;
+}
+
+.panel__count {
+    font-size: 0.9rem;
+    font-weight: $font-weight-semibold;
+    color: $color-text-muted;
+}
+
+
+.panel-title:first-of-type {
+    margin-top: 0rem
+}
+
+.panel-info {
+    color: var(--ada-gray);
+    font-size: .85rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.panel-info>*+*:before {
+    content: "|";
+    margin: 0 7px;
+    opacity: .35
+}
+
+
+.panel ul {
+    list-style: square;
+    padding: 0 0 0 14px
+}
+
+.panel hr {
+    border: none;
+    border-bottom: 1px solid var(--border);
+    margin: var(--spacer) auto
+}
+
+.panel .section-title:first-of-type {
+    margin-top: 0;
+}
+
+.panel *:last-child {margin-bottom: 0;}
+

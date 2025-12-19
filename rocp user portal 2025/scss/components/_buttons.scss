@@ -9,7 +9,7 @@ $btn-padding-y: 0.6rem;
 $btn-padding-x: 1rem;
 $btn-gap: 0.5rem;
 $btn-font-size: 0.9rem;
-$btn-border-width: 1px;
+$btn-border-width: 2px;
 
 /* Base button */
 .btn {
@@ -30,7 +30,7 @@ $btn-border-width: 1px;
   border: $btn-border-width solid transparent;
 
   background-color: $color-bg-surface;
-  color: #ffffff;
+  color: $color-text-main;
 
   cursor: pointer;
   text-decoration: none;
@@ -38,16 +38,13 @@ $btn-border-width: 1px;
   white-space: nowrap;
 
   transition:
-    background-color .15s ease,
-    color .15s ease,
-    border-color .15s ease,
-    box-shadow .15s ease;
+  background-color .15s ease,
+  color .15s ease,
+  border-color .15s ease,
+  box-shadow .15s ease;
 
   // Let global :focus-visible in _ada.scss handle outlines
-  &:focus {
-    outline: none;
-  }
-
+ 
   &:disabled,
   &[aria-disabled="true"] {
     opacity: 0.6;
@@ -60,23 +57,25 @@ $btn-border-width: 1px;
   background-color: $color-primary;
   border-color: $color-primary;
   color: #fff;
+  box-shadow: $shadow-sm;
 
   &:hover,
   &:active {
     background-color: $color-primary-strong;
     border-color: $color-primary-strong;
+    color: #fff;
   }
 }
 
 /* Secondary (neutral strong) */
 .btn--secondary {
-  background-color: $brand-blue-200;
+  background-color: $brand-blue-100;
   border-color: $brand-blue-500;
-  color: $brand-blue-800;
+  color: $brand-blue-600;
 
   &:hover,
   &:active {
-    background-color: $brand-blue-100;
+    background-color: $brand-blue-200;
     border-color: $brand-blue-500;
   }
 }
@@ -85,7 +84,7 @@ $btn-border-width: 1px;
 .btn--success {
   background-color: $color-success-border;
   border-color: $color-success-border;
-  color: $color-text-inverse;
+  color: #fff;
 
   &:hover,
   &:active {
@@ -98,7 +97,7 @@ $btn-border-width: 1px;
 .btn--danger {
   background-color: $color-error-border;
   border-color: $color-error-border;
-  color: $color-text-inverse;
+  color: #fff;
 
   &:hover,
   &:active {
@@ -121,13 +120,13 @@ $btn-border-width: 1px;
 
 /* Ghost (very subtle, no border) */
 .btn--ghost {
-  background-color: transparent;
+  background-color: $gray-100;
   color: $color-text-main;
   border-color: transparent;
 
   &:hover,
   &:active {
-    background-color: $color-bg-subtle;
+    background-color: $gray-200;
   }
 }
 
@@ -171,7 +170,7 @@ $btn-border-width: 1px;
 }
 
 /* Icon-only (use .sr-only text in markup for label) */
-.btn--icon {
+.btn--icon-only {
   padding: 0.5rem;
   border-radius: 999px;
 }

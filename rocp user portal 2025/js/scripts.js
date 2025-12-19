@@ -1,79 +1,177 @@
-// Global disclosure: works for any .js-disclosure with an aria-controls panel
-jQuery(function ($) {
-  const TOGGLE = '.js-disclosure';
+(function () {
+  const DURATION_MS = 300;
 
-  function getPanel($btn) {
-    // If aria-controls is present, use it
-    const id = $btn.attr('aria-controls');
-    if (id) {
-      const $p = $('#' + id);
-      if ($p.length) return $p;
-    }
-    // Else: first next sibling with .submenu
-    const $next = $btn.nextAll('.submenu').first();
-    if ($next.length) {
-      // auto-wire aria-controls
-      if (!$next.attr('id')) $next.attr('id', 'dd-' + Math.random().toString(36).slice(2));
-      $btn.attr('aria-controls', $next.attr('id'));
-      return $next;
-    }
-    return $(); // empty
+  /* ======================================================
+     DISCLOSURE PANELS (mobile menu, submenus, accordions)
+     ====================================================== */
+
+  function openPanel(btn, panel) {
+    btn.setAttribute("aria-expanded", "true");
+    panel.classList.add("open");
+
+    panel.style.display = "block";
+    panel.style.height = "0px";
+
+    const target = panel.scrollHeight;
+    panel.offsetHeight; // force reflow
+    panel.style.height = target + "px";
+
+    setTimeout(() => {
+      if (panel.classList.contains("open")) {
+        panel.style.height = "";
+      }
+    }, DURATION_MS);
   }
 
-  // Click/tap toggles
-  $(document).on('click', TOGGLE, function (e) {
+  function closePanel(btn, panel) {
+    btn.setAttribute("aria-expanded", "false");
+
+    const current = panel.scrollHeight;
+    panel.style.height = current + "px";
+    panel.offsetHeight; // force reflow
+    panel.style.height = "0px";
+
+    setTimeout(() => {
+      panel.classList.remove("open");
+      panel.style.display = "";
+      panel.style.height = "";
+    }, DURATION_MS);
+  }
+
+  function togglePanel(btn) {
+    const id = btn.getAttribute("aria-controls");
+    if (!id) return;
+
+    const panel = document.getElementById(id);
+    if (!panel) return;
+
+    const isOpen = btn.getAttribute("aria-expanded") === "true";
+    isOpen ? closePanel(btn, panel) : openPanel(btn, panel);
+  }
+
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".js-disclosure");
+    if (!btn) return;
+
     e.preventDefault();
     e.stopPropagation();
-    e.stopImmediatePropagation(); 
-    const $btn = $(this);
-    const $panel = getPanel($btn);
-    if (!$panel.length) return;
-
-    // Ensure base ARIA
-    if (!$btn.attr('aria-haspopup')) $btn.attr('aria-haspopup', 'true');
-    if (!$btn.attr('aria-expanded')) $btn.attr('aria-expanded', 'false');
-
-    const open = $btn.attr('aria-expanded') === 'true';
-    $btn.attr('aria-expanded', String(!open));
-    $panel.toggleClass('open', !open);
+    togglePanel(btn);
   });
 
-  // Optional: Esc inside a panel closes and returns focus to its trigger
-  $(document).on('keydown', '.submenu', function (e) {
-    if (e.key === 'Escape') {
-      const $panel = $(this);
-      const $btn = $('[aria-controls="' + $panel.attr('id') + '"]').first();
-      if ($btn.length) {
-        $btn.attr('aria-expanded', 'false');
-        $panel.removeClass('open');
-        $btn.trigger('focus');
-      }
+  document.addEventListener("click", (e) => {
+    if (e.target.closest(".js-disclosure, .submenu")) return;
+
+    document
+      .querySelectorAll('.js-disclosure[aria-expanded="true"]')
+      .forEach((btn) => {
+        const panel = document.getElementById(btn.getAttribute("aria-controls"));
+        if (panel) closePanel(btn, panel);
+      });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+
+    const panel = document.activeElement.closest(".submenu");
+    if (!panel) return;
+
+    const btn = document.querySelector(
+      `.js-disclosure[aria-controls="${panel.id}"]`
+    );
+    if (!btn) return;
+
+    closePanel(btn, panel);
+    btn.focus();
+  });
+
+  document.querySelectorAll(".js-disclosure").forEach((btn) => {
+    if (!btn.hasAttribute("aria-expanded")) {
+      btn.setAttribute("aria-expanded", "false");
     }
   });
 
-  // Optional: click outside closes all open panels
-  $(document).on('click', function (e) {
-    if ($(e.target).closest('.js-disclosure, .submenu, .js-disclosure *').length) return;
-    $('.submenu.open').each(function () {
-      const id = this.id;
-      $('[aria-controls="' + id + '"]').attr('aria-expanded', 'false');
-      $(this).removeClass('open');
+  /* ======================================================
+  DROPDOWNS (menus, action tools)
+  ====================================================== */
+
+  (function () {
+    const OPEN_CLASS = "is-open";
+
+    function getMenu($trigger) {
+      const id = $trigger.attr("aria-controls");
+      return id ? $("#" + id) : $();
+    }
+
+    function closeOne($trigger) {
+      const $menu = getMenu($trigger);
+      $trigger.attr("aria-expanded", "false");
+      $menu.removeClass(OPEN_CLASS);
+    }
+
+    function closeAll(exceptTrigger) {
+      $(".js-dropdown[aria-expanded='true']").each(function () {
+        if (exceptTrigger && this === exceptTrigger) return;
+        closeOne($(this));
+      });
+    }
+
+    function openOne($trigger) {
+      const $menu = getMenu($trigger);
+      $trigger.attr("aria-expanded", "true");
+      $menu.addClass(OPEN_CLASS);
+
+      // Optional: focus first menuitem (comment out if you don’t want this yet)
+      const $first = $menu.find("[role='menuitem']").first();
+      if ($first.length) $first.focus();
+    }
+
+    // Toggle dropdown
+    $(document).on("click", ".js-dropdown", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const $trigger = $(this);
+      const isOpen = $trigger.attr("aria-expanded") === "true";
+
+      if (isOpen) {
+        // Close THIS one
+        closeOne($trigger);
+        return;
+      }
+
+      // Otherwise: close others, then open this one
+      closeAll();
+      openOne($trigger);
     });
-  });
+    
 
+    // Click inside menu should not close it
+    $(document).on("click", ".dropdown__menu", function (e) {
+      e.stopPropagation();
+    });
 
-  // Esc inside submenu closes and returns focus to trigger
-  document.addEventListener('keydown', (e) => {
-    if (e.key !== 'Escape') return;
-    const panel = e.target.closest(PANEL);
-    if (!panel) return;
-    const li = panel.closest('.has-submenu');
-    const btn = li && li.querySelector(TRIGGER);
-    if (!btn) return;
+    // Click-away closes all
+    $(document).on("click", function () {
+      closeAll();
+    });
 
-    // Let CSS hide it (focus leaves -> :focus-within off), but sync ARIA now
-    setExpanded(btn, false);
-    btn.focus();
-  });
-})
+    // Escape closes whichever is open and restores focus
+    $(document).on("keydown", function (e) {
+      if (e.key !== "Escape") return;
 
+      $(".js-dropdown[aria-expanded='true']").each(function () {
+        const $trigger = $(this);
+        closeOne($trigger);
+        $trigger.focus();
+      });
+    });
+
+    // Init: ensure aria-expanded exists
+    $(".js-dropdown").each(function () {
+      const $t = $(this);
+      if (!$t.attr("aria-expanded")) $t.attr("aria-expanded", "false");
+    });
+  })();
+  
+
+})();
