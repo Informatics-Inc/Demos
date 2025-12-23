@@ -35,7 +35,7 @@
                     <div class="app-sidebar-scroll">
                         <div class="app-mobile-header">
                             <div class="sidebar-logo">
-                                <img src="../img/logo-demo.png" alt="Program Logo" />
+                                <img src="img/logo-demo.png" alt="Program Logo" />
                             </div>
                             <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false"
                                 aria-controls="mobile-nav" aria-haspopup="menu">
@@ -45,7 +45,7 @@
                         </div>
                         <div id="mobile-nav" class="nav-menu submenu">
                             <div class="sidebar-user-info">
-                                <figure><img src="../img/user.png" alt="User Image" /></figure>
+                                <figure><img src="img/user.png" alt="User Image" /></figure>
                                 <div class="sidebar-user-content">
                                     <span class="user-name">Clark Markson</span>
                                     <ul>
@@ -341,12 +341,19 @@
     <script src="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/scripts/choices.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            new Choices('#filter-certificates', {
-                removeItemButton: true,      // Adds an “x” to remove selections
-                searchEnabled: true,         // Lets users search options
-                placeholderValue: 'Select items...',
-                searchPlaceholderValue: 'Type to search...',
-                itemSelectText: ""
+            document.querySelectorAll('select[multiple]').forEach(function (el) {
+                // Prevent double-initialization
+                if (el.dataset.choicesInitialized) return;
+
+                new Choices(el, {
+                    removeItemButton: true,
+                    searchEnabled: true,
+                    placeholderValue: 'Select items…',
+                    searchPlaceholderValue: 'Type to search…',
+                    itemSelectText: ''
+                });
+
+                el.dataset.choicesInitialized = 'true';
             });
         });
     </script>
