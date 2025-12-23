@@ -10,7 +10,7 @@
     color: $color-text-inverse;
     
 }
-.app-sidebar-fixed {padding: $space-3 $space-4;}
+.app-sidebar-fixed {padding: $space-3 $space-4; background: $brand-dark-800;} 
 .app-mobile-header {display: flex; justify-content: space-between; align-items: center;}
 
 /* Menu Toggle */
@@ -24,14 +24,31 @@
 .submenu.is-animating,
 .submenu.open {
   height: auto;
-    display: block;
+  display: block;
+}
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: $space-3 $space-4;
 }
 
-.sidebar-logo img {height: 50px;}
+.sidebar-logo img {
+  display: block;
+
+  max-width: 100%;
+  max-height: 30px;
+  /* key control */
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
 .app-sidebar hr {border-color: $color-line-inverse;}
 
 .app-sidebar ul {list-style: none; padding: 0; margin: 0;}
-.app-sidebar ul a {color: $color-text-inverse;}
+.app-sidebar ul a, .app-sidebar ul a:visited {color: $color-text-inverse;}
 .sidebar-user-info {display: grid; grid-template-columns: 40px auto; gap: $space-4; font-size: $font-size-md; align-items: center;}
 .sidebar-user-info figure {aspect-ratio: 1 / 1; overflow: hidden; border-radius: 100%; border: 3px solid $gray-200;}
 .sidebar-user-info figure img {object-fit: cover; width: 100%; height: 100%;}
@@ -39,20 +56,35 @@
 .sidebar-user-info ul li + li {border-left: 1px solid $gray-500; padding-left: 5px;}
 
 .app-sidebar {
-.app-menu .menu-active > a {background: rgba(255,255,255,.15); color: #fff; font-weight: $font-weight-bold; box-shadow: $shadow-sm;}
+.app-menu .menu-active > a,
+.app-menu .menu-active > button
+ {background: rgba(255,255,255,.15); color: #fff; font-weight: $font-weight-bold; box-shadow: $shadow-sm;}
 .app-menu a, .app-menu button {font-size: $font-size-md; text-decoration: none; display: block; padding: .5rem 1rem; font-weight: $font-weight-medium;border-radius: $radius-sm; background: none; border: none; color: $color-text-inverse; display: flex; justify-content: space-between; align-items: center; width: 100%; transition: $transition-base;}
 .app-menu a span, .app-menu button span {font-size: 12px;}
 .app-menu a:hover, .app-menu button:hover {color: #fff;background: rgba(255,255,255,.1);}
 .app-menu ul a {font-size: $font-size-sm; font-weight: $font-weight-regular; padding: .25rem 1rem .25rem 1.5rem;}
-.app-menu ul li:last-of-type {margin-bottom: $space-2;}
+.app-menu ul li:last-of-type {margin-bottom: $space-4;}
+.app-menu ul li:first-of-type {margin-top: $space-2;}
+
+.app-menu .submenu-active > a {font-weight: $font-weight-bold; color: #fff; opacity: 1;}
 }
 
 .app-menu .submenu li:first-of-type {margin-top: $space-4;}
 .app-menu .submenu li:last-of-type {margin-bottom: $space-4;}
 
 .sidebar-header {padding: 0 1rem; font-weight: $font-weight-bold; margin-bottom: $space-2; display: block;}
+.app-sidebar .sidebar-links {margin-bottom: 2rem;}
 .sidebar-links a {padding: 2px 1rem; text-decoration: none; font-size: $font-size-sm; display: block;}
 .sidebar-links a:hover {text-decoration: underline; color: #fff;}
+
+.app-sidebar-scroll {display: grid; gap: 1rem;}
+
+.copy-info {display: none;}
+.copy-info {
+  font-size: $font-size-xs;
+  text-align: center;
+  ul {display: flex; gap: 8px; padding: 0; margin: 5px 0 1rem 0;}
+}
 
 /* Tablet */
 @include respond-lg {
@@ -63,9 +95,16 @@
     #mobile-nav {height: auto; visibility: visible; opacity: 1; position: relative; top: 0;}
   }
   .app-sidebar {display: grid; align-content: flex-start; gap: $space-3;}
-  .app-sidebar-fixed {position: fixed; width: 220px; display: grid; gap: $space-4;}
+  .app-sidebar-fixed {position: fixed; width: 220px; display: flex; gap: $space-4; flex-direction: column; 
+    top: 0; bottom: 0; left: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .app-main {order: 2;}
   .nav-menu {display: block;}
+
 }
 
 /* Desktop */
@@ -74,18 +113,20 @@
     grid-template-columns: 260px 1fr;
   }
   .app-sidebar-fixed {position: fixed; width: 260px;}
-
+  .copy-info {display: block; margin-top: auto;}
 }
 
 /* Main Page Header */
-.app-header {padding: $space-3 $space-4; background: #fff; border-bottom: 1px solid $gray-200; display: flex; justify-content: space-between; align-items: center;}
-.app-header h1 {margin: 0; font-size: $font-size-lg;}
+.app-header {padding: $space-3 $space-4; background: #fff; border-bottom: 1px solid $gray-200; ;}
+.app-header h1 {margin: 0 0 5px 0; font-size: $font-size-lg;}
 /* Breadcrumb */
-.breadcrumb ol {list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; font-size: $font-size-sm;}
+.breadcrumb ol {list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; font-size: $font-size-xs;}
 .breadcrumb ol li + li:before {content: "|"; margin-right: 10px; color: $gray-400;}
 /* Tablet */
 @include respond-lg {
-  .app-header {position: fixed; top: 0; left: 220px; right: 0;}
+  .app-header {position: fixed; top: 0; left: 220px; right: 0;display: flex;
+    justify-content: space-between;
+    align-items: center}
   .app-header + #main {margin-top: 50px;}
 }
 @include respond-xl {

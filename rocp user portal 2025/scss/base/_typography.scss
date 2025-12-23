@@ -105,7 +105,7 @@ a:hover {
   text-decoration-thickness: 0.12em;
 }
 
-a:visited {
+a:visited:not([class]) {
   color: $color-link-visited;
 }
 
@@ -113,7 +113,14 @@ a:focus-visible {
   outline: 3px solid $color-focus-ring;
   outline-offset: 2px;
 }
+.text-link {
+  font-weight: $font-weight-medium;
+  text-decoration: none;
 
+}
+.text-link:hover {
+  text-decoration: underline;
+}
 /* Small text & inline emphasis */
 
 small,

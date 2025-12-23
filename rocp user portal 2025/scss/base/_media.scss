@@ -1,0 +1,36 @@
+@use "../tokens" as *;
+
+figure {
+    margin: 0;
+}
+
+figure>img,
+figure>video,
+figure>picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.media {
+    display: block;
+    overflow: hidden;
+    border-radius: $radius-sm;
+    background: $color-bg-subtle;
+    margin-block: $space-4;
+}
+
+.media img,
+.media video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+
+    font-size: $font-size-sm;
+    line-height: 1.3;
+    color: $color-text-muted;
+    padding: $space-4;
+}

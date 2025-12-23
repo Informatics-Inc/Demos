@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>ROC-P User Dashboard – UI Kit</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="css/icons.min.css">
+
+    <!-- CSS -->
+    <link href="../css/app.min.css" rel="stylesheet">
+</head>
+
+<body class="pagebody">
+
+    <!-- Skip Nav Link-->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Main -->
+    <main role="main">
+        <div class="app-shell">
+            <nav class="app-sidebar">
+                <div class="app-sidebar-fixed">
+                    <div class="app-sidebar-scroll">
+                        <div class="app-mobile-header">
+                            <div class="sidebar-logo">
+                                <img src="../img/logo-demo.png" alt="Program Logo" />
+                            </div>
+                            <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false"
+                                aria-controls="mobile-nav" aria-haspopup="menu">
+                                <span class="icon-menu" aria-hidden="true"></span>
+                                <span class="visually-hidden">Menu</span>
+                            </button>
+                        </div>
+                        <div id="mobile-nav" class="nav-menu submenu">
+                            <div class="sidebar-user-info">
+                                <figure><img src="../img/user.png" alt="User Image" /></figure>
+                                <div class="sidebar-user-content">
+                                    <span class="user-name">Clark Markson</span>
+                                    <ul>
+                                        <li>PID# 12345A</li>
+                                        <li><a href="#.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr />
+                            <ul class="app-menu">
+                                <li><a href="/dashboard.html">Dashboard</a></li>
+                                <li><a href="/exams.html" class="">Exams</a></li>
+                                <li class="has-submenu menu-active">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false" aria-controls="submenu-ce"
+                                        aria-haspopup="menu">
+                                        CE
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-ce">
+                                        <li><a href="/ce.html">CE Certifications</a></li>
+                                        <li class="submenu-active" aria-current="page"><a href="/ce-history.html">CE History</a></li>
+                                        <li><a href="/ce-approved.html">Approved Activities</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false"
+                                        aria-controls="submenu-lms" aria-haspopup="menu">
+                                        LMS
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-lms">
+                                        <li><a href="/lms-demo.html">Demo LMS Test</a></li>
+                                        <li><a href="/lms-transcript.html">My Transcript</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/events" class="">Events</a></li>
+                                <li><a href="/resources" class="">Resources</a></li>
+                                <li class="has-submenu">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false" aria-controls="submenu-history"
+                                        aria-haspopup="menu">
+                                        History
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-history">
+                                        <li><a href="/history-payments.html">Past Payments</a></li>
+                                        <li><a href="/history-exam.html">Exam History and Results</a></li>
+                                        <li><a href="/history-application.html">Application History</a></li>
+                                        <li><a href="/history-verifications.html">Verifications</a></li>
+                                        <li><a href="/history-activity.html">Activity Log</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="">History</a></li>
+                                <li><a href="/docs/ui-kit.html">UI Kit</a></li>
+                                <li><a href="/docs/app-shell.html">App Shell</a></li>
+                            </ul>
+                            <hr />
+                            <span class="sidebar-header">Quick Links</span>
+                            <ul class="sidebar-links">
+                                <li><a href="#">Update Profiles</a></li>
+                                <li><a href="#">View My Past Payments</a></li>
+                                <li><a href="#">Badges</a></li>
+                                <li><a href="#">Available Discount Codes</a></li>
+                                <li><a href="#">Apply For New Certification</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copy-info">
+                        <div class="nav-footer-rocp">
+                            Powered by <strong>ROC-P</strong>
+                        </div>
+                        <ul>
+                            <li><a href="#.html">Privacy.</a></li>
+                            <li><a href="#.html">Terms & Conditions.</a></li>
+                            <li><a href="#.html">Cookies.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <header class="app-header">
+                <h1>CE History</h1>
+                <div class="breadcrumb">
+                    <ol>
+                        <li><a href="/dashboard.html">Dashboard</a></li>
+                        <li><a href="/ce.html">CE Certificats</a></li>
+                        <li>Continuing Education</li>
+                    </ol>
+                </div>
+            </header>
+            <section class="app-main" id="main-content">
+                <div class="container container-full">
+
+                    <div class="panel">
+                        <!-- Panel Header -->
+                        <header class="panel__header">
+                            <div class="panel__heading">
+                                <h2 class="panel__title">Quality Improvement Essentials</h2>
+                            </div>
+                            <div class="panel__meta">
+                                <p class="panel__subtitle">Current Credits: <span class="badge badge--pill badge--success">55</span></p>
+                                <button class="btn btn--primary btn--small"><i class="fa fa-plus"></i>Add New</button>
+                            </div>
+                        </header>
+                        <div class="table-panel">
+                            <table class="table">
+                                <caption class="visually-hidden">
+                                    Continuing education credits — columns: Name, Completion Date, Credit Amount, View
+                                </caption>
+                            
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Completion Date</th>
+                                        <th scope="col">Credit Amount</th>
+                                        <th scope="col">View</th>
+                                    </tr>
+                                </thead>
+                            
+                                <tbody>
+                                    <tr>
+                                        <td>Advanced Clinical Review</td>
+                                        <td>03/12/2025</td>
+                                        <td>10</td>
+                                        <td>
+                                            <!-- Trigger (anywhere) -->
+                                            <button class="btn btn--text btn--sm js-modal-open" type="button" data-modal="modal-example">
+                                                Open modal
+                                            </button>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Ethics and Professional Practice</td>
+                                        <td>02/28/2025</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Patient Safety and Risk Management</td>
+                                        <td>01/15/2025</td>
+                                        <td>15</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Regulatory Updates and Compliance</td>
+                                        <td>12/10/2024</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Foundations of Credential Maintenance</td>
+                                        <td>11/30/2024</td>
+                                        <td>20</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Quality Improvement Essentials</td>
+                                        <td>10/22/2024</td>
+                                        <td>10</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Emerging Topics in Professional Practice</td>
+                                        <td>09/18/2024</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                              
+                                
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <!-- Panel Header -->
+                        <header class="panel__header">
+                            <div class="panel__heading">
+                                <h2 class="panel__title">Patient Safety and Risk Management</h2>
+                            </div>
+                            <div class="panel__meta">
+                                <p class="panel__subtitle">Current Credits: <span class="badge badge--pill badge--warning">25</span></p>
+                                <button class="btn btn--primary btn--small"><i class="fa fa-plus"></i>Add New</button>
+                            </div>
+                        </header>
+                        <div class="table-panel">
+                            <table class="table">
+                                <caption class="visually-hidden">
+                                    Continuing education credits for Patient Safety and Risk Management — columns: Name, Completion Date, Credit
+                                    Amount, View
+                                </caption>
+                            
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Completion Date</th>
+                                        <th scope="col">Credit Amount</th>
+                                        <th scope="col">View</th>
+                                    </tr>
+                                </thead>
+                            
+                                <tbody>
+                                    <tr>
+                                        <td>Core Principles of Patient Safety</td>
+                                        <td>02/14/2025</td>
+                                        <td>10</td>
+                                        <td>
+                                            <!-- Trigger (anywhere) -->
+                                            <button class="btn btn--text btn--sm js-modal-open" type="button" data-modal="modal-example">
+                                                Open modal
+                                            </button>
+                                        </td>                                    </tr>
+                            
+                                    <tr>
+                                        <td>Incident Reporting and Root Cause Analysis</td>
+                                        <td>01/22/2025</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Medication Safety and Error Prevention</td>
+                                        <td>12/05/2024</td>
+                                        <td>15</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Effective Communication in High-Risk Settings</td>
+                                        <td>11/18/2024</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Preventing Falls and Hospital-Acquired Injuries</td>
+                                        <td>10/30/2024</td>
+                                        <td>10</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>Human Factors and System Safety</td>
+                                        <td>09/12/2024</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="#" class="btn btn--text btn--sm">View</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- Modal -->
+        <dialog id="modal-example" class="modal" aria-labelledby="modal-example-title">
+            <div class="modal__surface" role="document">
+                <header class="panel__header">
+                    <div class="panel__heading">
+                        <h2 class="panel__title" id="ce-edit-title">Edit CE Entry</h2>
+                    </div>
+                    <div class="panel__meta">
+                        <button class="btn btn--text btn--icon-only js-modal-close" type="button" aria-label="Close dialog">
+                            ✕
+                        </button>
+                    </div>
+                </header>
+        
+                <div class="modal__body">
+                    <!-- Certificate (read-only in this example) -->
+                    <div class="form-group">
+                        <label for="ce-certificate">Certificate <span aria-hidden="true">*</span></label>
+                        <input id="ce-certificate" class="form-control" type="text" value="Test Credential" readonly
+                            aria-readonly="true">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="ce-type">CE Type <span aria-hidden="true">*</span></label>
+                        <select id="ce-type" class="form-control" required>
+                            <option>Continuing Education</option>
+                            <option>Professional Development</option>
+                            <option>Training</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="ce-activity">Activity/Course <span aria-hidden="true">*</span></label>
+                        <input id="ce-activity" class="form-control" type="text" required value="TEST5">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="ce-description">Description</label>
+                        <textarea id="ce-description" class="form-control" rows="3"
+                            placeholder="Optional notes about this activity"></textarea>
+                    </div>
+                
+                    <!-- Two-up row (desktop) -->
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="ce-date">Date Completed <span aria-hidden="true">*</span></label>
+                            <input id="ce-date" class="form-control" type="date" required value="2025-10-30">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="ce-credits">Credit Amount <span aria-hidden="true">*</span></label>
+                            <input id="ce-credits" class="form-control" type="number" inputmode="numeric" min="0" step="5" required
+                                value="10">
+                            <p>Enter credits in increments of 5.</p>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="ce-format">Learning Format <span aria-hidden="true">*</span></label>
+                        <select id="ce-format" class="form-control" required>
+                            <option>Course</option>
+                            <option>Webinar</option>
+                            <option>Workshop</option>
+                            <option>Conference</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="ce-classification">CE Classification <span aria-hidden="true">*</span></label>
+                        <select id="ce-classification" class="form-control" required>
+                            <option>Classification 1</option>
+                            <option selected>Classification 2</option>
+                            <option>Classification 3</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="ce-provider">Accreditation Provider</label>
+                        <input id="ce-provider" class="form-control" type="text" placeholder="Optional">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="ce-file">Supporting Documentation</label>
+                        <input id="ce-file" class="form-control" type="file" accept=".pdf,.jpg,.jpeg,.png,.gif">
+                        <p>Accepted: PDF, JPG, PNG, GIF.</p>
+                    </div>
+                
+                    <fieldset class="form-group">
+                        <legend class="label-like">Attestation <span aria-hidden="true">*</span></legend>
+
+                        <div class="form-group">
+                            <input id="ce-attest" name="topics" type="checkbox" value="ce-attest">
+                            <label for="ce-attest">I attest that the information entered is accurate and truthful. I acknowledge that submitted credit may be subject to
+                            audit. I attest that the information uploaded is true and accurate.</label>
+                        </div>
+                    </fieldset>
+                </div>
+        
+                <footer class="modal__footer">
+                    <button class="btn btn--danger align-left" type="button">Delete</button>
+                    <button class="btn btn--secondary js-modal-close" type="button">Cancel</button>
+                    <button class="btn btn--primary" type="button">Update</button>
+                </footer>
+            </div>
+        </dialog>
+    </main>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/modal.js"></script>
+    <!-- CHOICES -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/scripts/choices.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Choices('#filter-certificates', {
+                removeItemButton: true,      // Adds an “x” to remove selections
+                searchEnabled: true,         // Lets users search options
+                placeholderValue: 'Select items...',
+                searchPlaceholderValue: 'Type to search...',
+                itemSelectText: ""
+            });
+        });
+    </script>
+
+</body>

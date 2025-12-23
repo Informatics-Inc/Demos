@@ -32,73 +32,108 @@
         <div class="app-shell">
             <nav class="app-sidebar">
                 <div class="app-sidebar-fixed">
-                    <div class="app-mobile-header">
-                        <div class="sidebar-logo">
-                            <img src="../img/hpe-logo.svg" alt="Program Logo" />
-                        </div>
-                        <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false"
-                            aria-controls="mobile-nav" aria-haspopup="true">
-                            <span class="icon-menu" aria-hidden="true"></span>
-                            <span class="visually-hidden">Menu</span>
-                        </button>
-                    </div>
-                    <div id="mobile-nav" class="nav-menu submenu">
-                        <div class="sidebar-user-info">
-                            <figure><img src="../img/user.png" alt="User Image" /></figure>
-                            <div class="sidebar-user-content">
-                                <span class="user-name">Clark Markson</span>
-                                <ul>
-                                    <li>PID# 12345A</li>
-                                    <li><a href="#.html">Logout</a></li>
-                                </ul>
+                    <div class="app-sidebar-scroll">
+                        <div class="app-mobile-header">
+                            <div class="sidebar-logo">
+                                <img src="../img/logo-demo.png" alt="Program Logo" />
                             </div>
+                            <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false"
+                                aria-controls="mobile-nav" aria-haspopup="menu">
+                                <span class="icon-menu" aria-hidden="true"></span>
+                                <span class="visually-hidden">Menu</span>
+                            </button>
                         </div>
-                        <hr />
-                        <ul class="app-menu">
-                            <li class="menu-active"><a href="dashboard.html">Dashboard</a></li>
-                            <li><a href="exams.html" class="">Exams</a></li>
-                            <li><a href="ce.html" class="">CE</a></li>
-                            <li class="has-submenu">
-                                <button class="nav-trigger js-disclosure" type="button" aria-expanded="false"
-                                    aria-controls="submenu-lms" aria-haspopup="true">
-                                    LMS
-                                    <span class="icon-arrow-down"></span>
-                                </button>
-                                <ul class="submenu" id="submenu-lms">
-                                    <li><a href="#.html">Demo LMS Test</a></li>
-                                    <li><a href="#.html">LMS Modules for 02/12</a></li>
-                                    <li><a href="#.html">My Transcript</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="">Events</a></li>
-                            <li><a href="#" class="">Resources</a></li>
-                            <li><a href="#" class="">History</a></li>
-                            <li><a href="/docs/ui-kit.html">UI Kit</a></li>
-                            <li><a href="/docs/app-shell.html">App Shell</a></li>
-                        </ul>
-                        <hr />
-                        <span class="sidebar-header">Quick Links</span>
-                        <ul class="sidebar-links">
-                            <li><a href="#typography">Typography</a></li>
-                            <li><a href="#colors">Colors</a></li>
-                            <li><a href="#buttons">Buttons</a></li>
-                            <li><a href="#forms">Forms</a></li>
-                            <li><a href="#alerts">Alerts</a></li>
-                            <li><a href="#badges">Badges</a></li>
+                        <div id="mobile-nav" class="nav-menu submenu">
+                            <div class="sidebar-user-info">
+                                <figure><img src="../img/user.png" alt="User Image" /></figure>
+                                <div class="sidebar-user-content">
+                                    <span class="user-name">Clark Markson</span>
+                                    <ul>
+                                        <li>PID# 12345A</li>
+                                        <li><a href="#.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr />
+                            <ul class="app-menu">
+                                <li class="menu-active"><a href="/dashboard.html">Dashboard</a></li>
+                                <li><a href="/exams.html" class="">Exams</a></li>
+                                <li class="has-submenu">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false" aria-controls="submenu-ce"
+                                        aria-haspopup="menu">
+                                        CE
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-ce">
+                                        <li aria-current="page"><a href="/ce.html">CE Certifications</a></li>
+                                        <li><a href="/ce-history.html">CE History</a></li>
+                                        <li><a href="/ce-approved.html">Approved Activities</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false"
+                                        aria-controls="submenu-lms" aria-haspopup="menu">
+                                        LMS
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-lms">
+                                        <li><a href="/lms-demo.html">Demo LMS Test</a></li>
+                                        <li><a href="/lms-transcript.html">My Transcript</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/events" class="">Events</a></li>
+                                <li><a href="/resources" class="">Resources</a></li>
+                                <li class="has-submenu">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false" aria-controls="submenu-history"
+                                        aria-haspopup="menu">
+                                        History
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-history">
+                                        <li><a href="/history-payments.html">Past Payments</a></li>
+                                        <li><a href="/history-exam.html">Exam History and Results</a></li>
+                                        <li><a href="/history-application.html">Application History</a></li>
+                                        <li><a href="/history-verifications.html">Verifications</a></li>
+                                        <li><a href="/history-activity.html">Activity Log</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="">History</a></li>
+                                <li><a href="/docs/ui-kit.html">UI Kit</a></li>
+                                <li><a href="/docs/app-shell.html">App Shell</a></li>
+                            </ul>
+                            <hr />
+                            <span class="sidebar-header">Quick Links</span>
+                            <ul class="sidebar-links">
+                                <li><a href="#">Update Profiles</a></li>
+                                <li><a href="#">View My Past Payments</a></li>
+                                <li><a href="#">Badges</a></li>
+                                <li><a href="#">Available Discount Codes</a></li>
+                                <li><a href="#">Apply For New Certification</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copy-info">
+                        <div class="nav-footer-rocp">
+                            Powered by <strong>ROC-P</strong>
+                        </div>
+                        <ul>
+                            <li><a href="#.html">Privacy.</a></li>
+                            <li><a href="#.html">Terms & Conditions.</a></li>
+                            <li><a href="#.html">Cookies.</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <header class="app-header">
                 <h1>Dashboard</h1>
-                <!--
-                <div class="breadcrumb">
+                
+                <!-- <div class="breadcrumb">
                     <ol>
-                        <li><a href="/docs/">Documentation</a></li>
+                        <li><a href="/dashboard.html">Dashboard</a></li>
                         <li>App Shell</li>
                     </ol>
-                </div>
-                -->
+                </div> -->
+               
             </header>
             <section class="app-main" id="main-content">
                 <div class="container grid grid--66-33 container-xxl gap-xl">
@@ -149,7 +184,7 @@
                                     <p class="panel__subtitle">HPE Master ASE - Edge-to-Cloud Architect</p>
                                 </div>
                                 <div class="panel__meta">
-                                    <span class="badge badge--pill badge--warning">In Progress</span>
+                                    <span class="badge badge--pill badge--success">Ready to Begin!</span>
                                 </div>
                             </header>
 
@@ -214,11 +249,11 @@
                                         </div>
                                     </div>
                                     <div class="data-row__meta">
-                                        <button class="btn btn--text btn--sm" href="#">View Requirements</button>
-                                        <button class="btn btn--secondary btn--sm" type="button" disabled>
-                                            Not ready
-                                        </button>
-                                        <span class="visually-hidden">Not ready yet.</span>
+                                        <button class="btn btn--text btn--sm" href="#">View Results</button>
+                                        <span class="btn btn--sm status-complete" aria-label="Completed">
+                                            Completed
+                                        </span>
+                                        <span class="visually-hidden">Item Completed.</span>
                                     </div>
                                 </div>
                         
@@ -233,8 +268,10 @@
                                         </div>
                                     </div>
                                     <div class="data-row__meta">
-                                        <button class="btn btn--text btn--sm" href="#">View Requirements</button>
-                                        <button class="btn btn--primary btn--sm" href="#">Begin</button>
+                                        <button class="btn btn--text btn--sm" href="#">View Results</button>
+                                        <span class="btn btn--sm status-complete" aria-label="Completed">
+                                            Completed
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="data-row">
@@ -286,27 +323,120 @@
                                         <span class="visually-hidden">Not ready yet.</span>
                                     </div>
                                 </div>
-                        
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <header class="section-header">
                             <h2 class="section-header__title">My Credentials</h2>
-                            <div class="section-header__tools">...</div>
+                            <div class="section-header__tools">
+                                <div class="dropdown">
+                                    <button class="dropdown__toggle js-dropdown" type="button" aria-haspopup="menu" aria-expanded="false"
+                                        aria-controls="dd-3">
+                                        View as: <strong>List</strong> <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div id="dd-3" class="dropdown__menu" role="menu">
+                                        <div class="drodown__header">
+                                            <div class="drodown__title">Sort By</div>
+                                            <button class="btn btn--text btn--small">Reset</button>
+                                        </div>
+                                        <button class="dropdown__item dropdown__item-selected" role="menuitem" type="button">List</button>
+                                        <button class="dropdown__item" role="menuitem" type="button">Blocks</button>
+                                        <button class="dropdown__item" role="menuitem" type="button">Table</button>
+                                    </div>
+                                </div>
+                            </div>
                         </header>
                         
-                        <!-- Basic Panel -->
+                        <!-- Credential -->
                         <div class="panel">
-                            <header class="panel__header">
-                                <div class="panel__heading">
-                                    <h2 class="panel__title">Basic Panel</h2>
+                            <div class="media-object">
+                                    <figure>
+                                        <img src="img/badge-1.jpg" alt="Badge Description" />
+                                    </figure>
+                                    <div class="media__body">
+                                        <h4 class="media__title">
+                                            Mechanical Systems Engineer – Core Infrastructure
+                                        </h4>
+                                        <div class="media__meta">
+                                            <span class="badge badge--success">Certified</span>
+                                            <span class="media__separator" aria-hidden="true">|</span>
+                                            <span class="text-muted">Expires on 12/12/2026</span>
+                                        </div>
+                                    
+                                        <a class="text-link" href="link.html">
+                                            View Requirements
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- Credential -->
+                        <div class="panel">
+                            <div class="media-object">
+                                <figure>
+                                    <img src="img/badge-2.jpg" alt="Badge Description" />
+                                </figure>
+                                <div class="media__body">
+                                    <h4 class="media__title">
+                                        Security Architecture Architect – Zero Trust
+                                    </h4>
+                                    <div class="media__meta">
+                                        <span class="badge badge--success">Certified</span>
+                                        <span class="media__separator" aria-hidden="true">|</span>
+                                        <span class="text-muted">Expires on 12/12/2026</span>
+                                    </div>
+                                
+                                    <a class="text-link" href="url.html">
+                                        View Requirements
+                                    </a>
                                 </div>
-                            </header>
-                            <div class="inline-group">
-                                <button class="btn btn--primary">Primary</button>
-                                <button class="btn btn--secondary">Secondary</button>
-                                <button class="btn btn--ghost">Ghost</button>
+                            </div>
+                        </div>
+
+                        <!-- Credential -->
+                        <div class="panel">
+                            <div class="media-object">
+                                <figure>
+                                    <img src="img/badge-3.jpg" alt="Badge Description" />
+                                </figure>
+                                <div class="media__body">
+                                    <h4 class="media__title">
+                                        Machine Learning Engineer – Applied Systems
+                                    </h4>
+                                    <div class="media__meta">
+                                        <span class="badge badge--success">Certified</span>
+                                        <span class="media__separator" aria-hidden="true">|</span>
+                                        <span class="text-muted">Expires on 12/12/2026</span>
+                                    </div>
+                        
+                                    <a class="text-link" href="url.html">
+                                        View Requirements
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Credential -->
+                        <div class="panel">
+                            <div class="media-object">
+                                <figure>
+                                    <img src="img/badge-4.jpg" alt="Badge Description" />
+                                </figure>
+                                <div class="media__body">
+                                    <h4 class="media__title">
+                                        Specialist of Synergy Upflow - Business Cluster
+                                    </h4>
+                                    <div class="media__meta">
+                                        <span class="badge badge--info">In Progress</span>
+                                        <span class="media__separator" aria-hidden="true">|</span>
+                                        <span class="text-muted">Expires on 12/12/2026</span>
+                                    </div>
+                        
+                                    <a class="text-link" href="url.html">
+                                        View Requirements
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -318,8 +448,20 @@
 
 
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="../js/scripts.js"></script>
+
+    <!-- CHOICES -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/scripts/choices.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Choices('#filter-certificates', {
+                removeItemButton: true,      // Adds an “x” to remove selections
+                searchEnabled: true,         // Lets users search options
+                placeholderValue: 'Select items...',
+                searchPlaceholderValue: 'Type to search...'
+            });
+        });
+    </script>
 
 </body>

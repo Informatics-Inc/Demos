@@ -20,7 +20,11 @@
             10px 0 0 $gray-50,
             -10px 0 0 $gray-50;
 }
-
+.data-row:hover {
+    .data-row__title {
+        color: #000;
+    }
+}
 .data-row__main {
     display: flex;
     align-items: center;
@@ -52,7 +56,7 @@
     color: $color-text-muted;
 }
 .data-row__meta .btn {
-    min-width: 6.5rem;
+    min-width: 7rem;
     font-size: .8rem;
 }
 .data-row__meta {
@@ -62,6 +66,17 @@
     display: flex;
     gap: $space-2;
     align-items: center;
+}
+.status-complete {
+    // border: 1px solid $color-success-border;
+    background: $color-success-bg;
+    color: $color-success-text;
+    gap: 5px;
+}
+.status-complete:before {   
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    display: inline-block;
 }
 
 /* Mobile: stack meta/actions under title */
@@ -79,4 +94,23 @@
     .data-row__meta {
         white-space: normal;
     }
+}
+
+/* Media Object */
+.media-object {
+    display: grid;
+    grid-template-columns: 1.45fr 3fr;
+    gap: $space-6;
+}
+.media__title {
+    font-weight: $font-weight-bold;
+    margin: 0;
+}
+.media__body {
+    display: grid;
+    gap: $space-3;
+    align-content: flex-start;
+}
+.media__meta {
+    font-size: $font-size-xs;
 }

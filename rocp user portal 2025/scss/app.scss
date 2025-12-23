@@ -2,7 +2,7 @@
 Client: ROC-P
 Company: Informatics, Inc
 Author: Jeff S
-Date: Nov 2025
+Date: Nov-Dec 2025
 */
 
 // 1. Tokens (design language)
@@ -14,27 +14,13 @@ Date: Nov 2025
 @use 'base/typography';
 @use 'base/prose';
 @use 'base/ui-demo';
+@use 'base/media';
 @use 'base/ada';
-
-// @use 'base/base';
-// @use 'base/links';
-// @use 'base/ada';
-// @use 'base/animations';
-
-// 3. Utilities (mixins/functions used by layout/components)
-// @use 'utilities/functions';
-// @use 'utilities/mixins';
-// @use 'utilities/helpers';
 
 // 4. Layout
 @use 'layout/app-shell';
 @use 'layout/layout';
 @use 'layout/grid';
-// @use 'layout/submenu-toggle';
-// @use 'layout/header';
-// @use 'layout/sidebar';
-// @use 'layout/nav';
-// @use 'layout/login';
 
 // 5. Components
 @use 'components/buttons';
@@ -45,30 +31,12 @@ Date: Nov 2025
 @use 'components/section-header';
 @use 'components/data';
 @use 'components/dropdown';
+@use 'components/modal';
+@use 'components/tables';
+@use 'components/cards';
+@use 'components/pagination';
 
-
-// @use 'components/forms/selects';
-// @use 'components/forms/checkbox-radio';
-// @use 'components/forms/file-upload';
-// @use 'components/forms/validation';
-
-// @use 'components/navigation/tabs';
-// @use 'components/navigation/pagination';
-
-// @use 'components/feedback/alerts';
-// @use 'components/feedback/badges';
-// @use 'components/feedback/toasts';
-
-// @use 'components/data-display/cards';
-// @use 'components/data-display/table';
-// @use 'components/data-display/empty-states';
-
-// @use 'components/overlays/modal';
 
 // 6. Vendors
-// @use 'vendors/choices';
+@use 'vendors/choices';
 
-// 7. Themes (override last)
-// @use 'themes/default';
-// @use 'themes/dark' with (...); // if you go that route 
- 

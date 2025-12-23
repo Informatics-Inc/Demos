@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>ROC-P User Dashboard – UI Kit</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="css/icons.min.css">
+
+    <!-- CSS -->
+    <link href="../css/app.min.css" rel="stylesheet">
+</head>
+
+<body class="pagebody">
+
+    <!-- Skip Nav Link-->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Main -->
+    <main role="main">
+        <div class="app-shell">
+            <nav class="app-sidebar">
+                <div class="app-sidebar-fixed">
+                    <div class="app-sidebar-scroll">
+                        <div class="app-mobile-header">
+                            <div class="sidebar-logo">
+                                <img src="../img/logo-demo.png" alt="Program Logo" />
+                            </div>
+                            <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false"
+                                aria-controls="mobile-nav" aria-haspopup="menu">
+                                <span class="icon-menu" aria-hidden="true"></span>
+                                <span class="visually-hidden">Menu</span>
+                            </button>
+                        </div>
+                        <div id="mobile-nav" class="nav-menu submenu">
+                            <div class="sidebar-user-info">
+                                <figure><img src="../img/user.png" alt="User Image" /></figure>
+                                <div class="sidebar-user-content">
+                                    <span class="user-name">Clark Markson</span>
+                                    <ul>
+                                        <li>PID# 12345A</li>
+                                        <li><a href="#.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr />
+                            <ul class="app-menu">
+                                <li><a href="/dashboard.html">Dashboard</a></li>
+                                <li><a href="/exams.html" class="">Exams</a></li>
+                                <li class="has-submenu menu-active">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false" aria-controls="submenu-ce"
+                                        aria-haspopup="menu">
+                                        CE
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-ce">
+                                        <li class="submenu-active" aria-current="page"><a href="/ce.html">CE Certifications</a></li>
+                                        <li><a href="/ce-history.html">CE History</a></li>
+                                        <li><a href="/ce-approved.html">Approved Activities</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false"
+                                        aria-controls="submenu-lms" aria-haspopup="menu">
+                                        LMS
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-lms">
+                                        <li><a href="/lms-demo.html">Demo LMS Test</a></li>
+                                        <li><a href="/lms-transcript.html">My Transcript</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/events" class="">Events</a></li>
+                                <li><a href="/resources" class="">Resources</a></li>
+                                <li class="has-submenu">
+                                    <button class="nav-trigger js-disclosure" type="button" aria-expanded="false" aria-controls="submenu-history"
+                                        aria-haspopup="menu">
+                                        History
+                                        <span class="icon-arrow-down"></span>
+                                    </button>
+                                    <ul class="submenu" id="submenu-history">
+                                        <li><a href="/history-payments.html">Past Payments</a></li>
+                                        <li><a href="/history-exam.html">Exam History and Results</a></li>
+                                        <li><a href="/history-application.html">Application History</a></li>
+                                        <li><a href="/history-verifications.html">Verifications</a></li>
+                                        <li><a href="/history-activity.html">Activity Log</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="">History</a></li>
+                                <li><a href="/docs/ui-kit.html">UI Kit</a></li>
+                                <li><a href="/docs/app-shell.html">App Shell</a></li>
+                            </ul>
+                            <hr />
+                            <span class="sidebar-header">Quick Links</span>
+                            <ul class="sidebar-links">
+                                <li><a href="#">Update Profiles</a></li>
+                                <li><a href="#">View My Past Payments</a></li>
+                                <li><a href="#">Badges</a></li>
+                                <li><a href="#">Available Discount Codes</a></li>
+                                <li><a href="#">Apply For New Certification</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copy-info">
+                        <div class="nav-footer-rocp">
+                            Powered by <strong>ROC-P</strong>
+                        </div>
+                        <ul>
+                            <li><a href="#.html">Privacy.</a></li>
+                            <li><a href="#.html">Terms & Conditions.</a></li>
+                            <li><a href="#.html">Cookies.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <header class="app-header">
+                <h1>CE Certifications</h1>
+                <div class="breadcrumb">
+                    <ol>
+                        <li><a href="/dashboard.html">Dashboard</a></li>
+                        <li>CE Certifications</li>
+                    </ol>
+                </div>
+            </header>
+            <section class="app-main" id="main-content">
+                <div class="container container-full">
+                    <div class="panel">
+                        <!-- Panel Header -->
+                        <header class="panel__header">
+                            <div class="panel__heading">
+                                <h2 class="panel__title">Available Continuing Education</h2>
+                                <p class="panel__subtitle">Browse approved CE opportunities that apply toward your active credentials..</p>
+                            </div>
+                        </header>
+                        <div class="grid grid--auto-md">
+                            <article class="card">
+                                <figure class="card__media">
+                                    <img src="img/CE-01.jpeg" alt="Continuing education program cover image">
+                                </figure>
+                                <div class="card__body">
+                                    <h3 class="card__title">Advanced Clinical Review</h3>
+                                    <p class="card__blurb">
+                                        Earn continuing education credit toward maintaining or renewing your credential through this approved
+                                        program.
+                                    </p>
+                                    <a href="#" class="btn btn--primary btn--sm">View Program</a>
+                                </div>
+                            </article>
+                            
+                            <article class="card">
+                                <figure class="card__media">
+                                    <img src="img/CE-02.jpeg" alt="Continuing education program cover image">
+                                </figure>
+                                <div class="card__body">
+                                    <h3 class="card__title">Ethics and Professional Practice</h3>
+                                    <p class="card__blurb">
+                                        Review ethical standards, compliance expectations, and best practices required for ongoing certification.
+                                    </p>
+                                    <a href="#" class="btn btn--primary btn--sm">View Program</a>
+                                </div>
+                            </article>
+                            
+                            <article class="card">
+                                <figure class="card__media">
+                                    <img src="img/CE-03.jpeg" alt="Continuing education program cover image">
+                                </figure>
+                                <div class="card__body">
+                                    <h3 class="card__title">Patient Safety and Risk Management</h3>
+                                    <p class="card__blurb">
+                                        Learn strategies to reduce risk, improve outcomes, and meet continuing education requirements.
+                                    </p>
+                                    <a href="#" class="btn btn--primary btn--sm">View Program</a>
+                                </div>
+                            </article>
+                            
+                            <article class="card">
+                                <figure class="card__media">
+                                    <img src="img/CE-04.jpeg" alt="Continuing education program cover image">
+                                </figure>
+                                <div class="card__body">
+                                    <h3 class="card__title">Regulatory Updates and Compliance</h3>
+                                    <p class="card__blurb">
+                                        Stay current on regulatory changes that impact certification and continuing education standards.
+                                    </p>
+                                    <a href="#" class="btn btn--primary btn--sm">View Program</a>
+                                </div>
+                            </article>
+                            
+                            <article class="card">
+                                <figure class="card__media">
+                                    <img src="img/CE-05.jpeg" alt="Continuing education program cover image">
+                                </figure>
+                                <div class="card__body">
+                                    <h3 class="card__title">Foundations of Credential Maintenance</h3>
+                                    <p class="card__blurb">
+                                        A core continuing education program designed to support long-term credential renewal and compliance.
+                                    </p>
+                                    <a href="#" class="btn btn--primary btn--sm">View Program</a>
+                                </div>
+                            </article>
+                            
+                            <article class="card">
+                                <figure class="card__media">
+                                    <img src="img/CE-06.jpeg" alt="Continuing education program cover image">
+                                </figure>
+                                <div class="card__body">
+                                    <h3 class="card__title">Emerging Topics in Professional Practice</h3>
+                                    <p class="card__blurb">
+                                        Explore new developments and standards relevant to continuing education and certification.
+                                    </p>
+                                    <a href="#" class="btn btn--primary btn--sm">View Program</a>
+                                </div>
+                            </article>
+                            
+                            <article class="card">
+                                <figure class="card__media">
+                                    <img src="img/CE-07.jpeg" alt="Continuing education program cover image">
+                                </figure>
+                                <div class="card__body">
+                                    <h3 class="card__title">Quality Improvement Essentials</h3>
+                                    <p class="card__blurb">
+                                        Build knowledge around quality improvement principles that support credentialing requirements.
+                                    </p>
+                                    <a href="#" class="btn btn--primary btn--sm">View Program</a>
+                                </div>
+                            </article>
+                            
+                            <article class="card">
+                                <figure class="card__media">
+                                    <img src="img/CE-03.jpeg" alt="Continuing education program cover image">
+                                </figure>
+                                <div class="card__body">
+                                    <h3 class="card__title">Patient Safety and Risk Management</h3>
+                                    <p class="card__blurb">
+                                        Learn strategies to reduce risk, improve outcomes, and meet continuing education requirements.
+                                    </p>
+                                    <a href="#" class="btn btn--primary btn--sm">View Program</a>
+                                </div>
+                            </article>
+                              
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/scripts.js"></script>
+
+    <!-- CHOICES -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/scripts/choices.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Choices('#filter-certificates', {
+                removeItemButton: true,      // Adds an “x” to remove selections
+                searchEnabled: true,         // Lets users search options
+                placeholderValue: 'Select items...',
+                searchPlaceholderValue: 'Type to search...',
+                itemSelectText: ""
+            });
+        });
+    </script>
+
+</body>

@@ -1,0 +1,95 @@
+@use "../tokens" as *;
+/* Modal frame fills viewport */
+.modal {
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  height: 100dvh;
+  /* modern viewport unit */
+  margin: 0;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  overflow: auto;
+}
+html.is-modal-open,
+body.is-modal-open {
+  overflow: hidden;
+}
+/* Keep the surface constrained */
+.modal__surface {
+  width: clamp(20rem, 92vw, 42rem);
+  margin-block: $space-8 !important;
+  
+}
+/* Ensure hidden dialogs aren't displayed */
+.modal:not([open]) {
+  display: none;
+}
+
+/* Backdrop */
+.modal::backdrop {
+  opacity: 0;
+  transition: opacity 150ms ease;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Surface */
+.modal__surface {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 150ms ease, transform 150ms ease;
+
+  background: $color-bg-surface;
+  border: none;
+  border-radius: $radius-sm;
+  box-shadow: $shadow-lg;
+  padding: $space-6;
+}
+.modal__footer {
+  border-top: 1px solid $color-border-subtle;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.align-left {
+  margin-right: auto;
+}
+/* When open and activated */
+.modal[open].is-opening::backdrop,
+.modal[open].is-open::backdrop {
+  opacity: 1;
+}
+
+.modal[open].is-opening .modal__surface,
+.modal[open].is-open .modal__surface {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Closing state */
+.modal.is-closing::backdrop {
+  opacity: 0;
+}
+
+.modal.is-closing .modal__surface {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .modal::backdrop,
+  .modal__surface {
+    transition: none;
+  }
+}

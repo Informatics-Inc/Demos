@@ -58,17 +58,6 @@
     togglePanel(btn);
   });
 
-  document.addEventListener("click", (e) => {
-    if (e.target.closest(".js-disclosure, .submenu")) return;
-
-    document
-      .querySelectorAll('.js-disclosure[aria-expanded="true"]')
-      .forEach((btn) => {
-        const panel = document.getElementById(btn.getAttribute("aria-controls"));
-        if (panel) closePanel(btn, panel);
-      });
-  });
-
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
 
@@ -89,6 +78,33 @@
       btn.setAttribute("aria-expanded", "false");
     }
   });
+
+  /* ======================================================
+   INIT: OPEN ACTIVE SUBMENUS
+   ====================================================== */
+
+  document.querySelectorAll(".js-disclosure").forEach((btn) => {
+    const id = btn.getAttribute("aria-controls");
+    if (!id) return;
+
+    const panel = document.getElementById(id);
+    if (!panel) return;
+
+    const li = btn.closest(".has-submenu");
+
+    const shouldBeOpen =
+      (li && li.classList.contains("menu-active")) ||
+      panel.querySelector("a[aria-current='page'], .submenu-active");
+
+    if (shouldBeOpen) {
+      btn.setAttribute("aria-expanded", "true");
+
+      panel.classList.add("open");
+      panel.style.display = "block";
+      panel.style.height = ""; // allow natural height (no animation on load)
+    }
+  });
+
 
   /* ======================================================
   DROPDOWNS (menus, action tools)

@@ -1,6 +1,9 @@
+@use "../tokens" as *;
+
 .choices {
     position: relative;
     overflow: hidden;
+
 }
 
 // .choices:focus {
@@ -41,7 +44,7 @@
 .choices[data-type*=select-one] .choices__input {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 110px;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
     margin: 0
@@ -119,7 +122,8 @@
     width: 8px;
     line-height: 1;
     opacity: .75;
-    border-radius: 0
+    border-radius: 3px;
+    background-color: $color-info-text;
 }
 
 .choices[data-type*=select-multiple] .choices__button:focus,.choices[data-type*=select-multiple] .choices__button:hover,.choices[data-type*=text] .choices__button:focus,.choices[data-type*=text] .choices__button:hover {
@@ -129,9 +133,9 @@
 .choices__inner {
     vertical-align: top;
     width: 100%;
-    border: 1px solid #bbb; background: #f9f9f9;
+    border: 1px solid $gray-300; background: $gray-50;
     overflow: hidden;
-    
+    border-radius: 5px;
 }
 
 .is-focused .choices__inner,.is-open .choices__inner {
@@ -170,9 +174,9 @@
     padding: 4px 10px;
     font-size: 12px;
     font-weight: 500;
-    background-color: var(--ada-blue-aa);
-    border: 1px solid var(--ada-blue-aaa);
-    color: #fff;
+    background-color: $color-info-bg;
+    border: 1px solid $color-info-border;
+    color: $color-info-text;
     word-break: break-all;
     box-sizing: border-box;
     margin: 5px 5px 0 5px;
@@ -248,7 +252,7 @@
 
 @media (min-width: 640px) {
     .choices__list--dropdown .choices__item--selectable[data-select-text],.choices__list[aria-expanded] .choices__item--selectable[data-select-text] {
-        padding-right:100px
+        padding-right:50px
     }
 
     .choices__list--dropdown .choices__item--selectable[data-select-text]::after,.choices__list[aria-expanded] .choices__item--selectable[data-select-text]::after {

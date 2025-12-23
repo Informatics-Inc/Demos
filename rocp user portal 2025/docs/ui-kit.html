@@ -29,7 +29,7 @@
             <div class="app-sidebar-fixed">
                 <div class="app-mobile-header">
                     <div class="sidebar-logo">
-                        <img src="../img/hpe-logo.svg" alt="Program Logo" />
+                        <img src="../img/logo-demo.png" alt="Program Logo" />
                     </div>
                     <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-haspopup="true" data-disclosure="mobile">
                         <span class="icon-menu" aria-hidden="true"></span>
@@ -49,7 +49,7 @@
                     </div>
                     <hr />
                     <ul class="app-menu">
-                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="/dashboard.html">Dashboard</a></li>
                         <li><a href="exams.html" class="">Exams</a></li>
                         <li><a href="ce.html" class="">CE</a></li>
                         <li class="has-submenu">
@@ -80,6 +80,8 @@
                         <li><a href="#alerts">Alerts</a></li>
                         <li><a href="#badges">Badges</a></li>
                         <li><a href="#panels">Panels</a></li>
+                        <li><a href="#modal">Modal</a></li>
+                        <li><a href="#tables">Tables</a></li>
                     </ul>
                 </div>
             </div>
@@ -1108,7 +1110,170 @@
                             <p class="text-muted">Example: list rows or a table would go here.</p>
                         </div>
                     </div>
-                </section>    
+                </section>
+
+                <!-- Modal -->
+                <section id="modal" class="prose">
+                    <header class="section-header">
+                        <p class="text-eyebrow">Design System</p>
+                        <h1>Modal</h1>
+                        <p class="text-lead">
+                            Modals temporarily surface critical content or actions while blocking background interactionand preserving user context.
+                    </header>
+                    <div class="panel">
+                        <h2 class="section-title">Modal Trigger</h2>
+
+                        <!-- Trigger (anywhere) -->
+                        <button class="btn btn--primary js-modal-open" type="button" data-modal="modal-example">
+                            Open modal
+                        </button>
+                        
+                        <!-- Modal -->
+                        <dialog id="modal-example" class="modal" aria-labelledby="modal-example-title">
+                            <div class="modal__surface" role="document">
+                                <header class="panel__header">
+                                    <div class="panel__heading">
+                                        <h2 class="panel__title">Modal Dialog Title</h2>
+                                        <p class="panel__subtitle">Use some explainer text to help the user.</p>
+                                    </div>
+                                    <div class="panel__meta">
+                                        <button class="btn btn--text btn--icon-only js-modal-close" type="button" aria-label="Close dialog">
+                                         ✕
+                                        </button>
+                                    </div>
+                                </header>
+                               
+                                <div class="modal__body">
+                                    <p>Modal content goes here.</p>
+                                    <p><a href="#">Focusable link</a></p>
+                                </div>
+                        
+                                <footer class="modal__footer inline-group">
+                                    <button class="btn btn--secondary js-modal-close" type="button">Cancel</button>
+                                    <button class="btn btn--primary" type="button">Confirm</button>
+                                </footer>
+                            </div>
+                        </dialog>
+
+                    </div>
+                </section>
+
+                <!-- Tables -->
+                <section id="tables" class="prose">
+                    <header class="section-header">
+                        <p class="text-eyebrow">Design System</p>
+                        <h1>Tables</h1>
+                        <p class="text-lead">
+                            These tables are how I buy my house. They keep my house hot.
+                    </header>
+                    <div class="panel">
+                        <h2 class="section-title">Overflow Tables</h2>
+                        <div class="table-scroll">
+                            <table id="results-table" class="data-table--wide">
+                                <caption class="visually-hidden">
+                                    Exam results — columns: Exam Name, Certificate Name, Payment Status, Status
+                                </caption>
+                        
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Exam Name</th>
+                                        <th scope="col">Certificate Name</th>
+                                        <th scope="col">Payment Status</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                        
+                                <tbody>
+                                    <tr>
+                                        <td>ROC-P Certification Exam - WEBINAR (10/14/25 - 10/17/25)</td>
+                                        <td>ROC-P Certification</td>
+                                        <td>Paid</td>
+                                        <td>Pass</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>test exam 2 (10/11/25 - 10/12/25)</td>
+                                        <td>Test Credential</td>
+                                        <td>Paid</td>
+                                        <td>Fail</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>test exam (10/09/25 - 10/10/25)</td>
+                                        <td>Test Credential</td>
+                                        <td>Paid</td>
+                                        <td>Fail</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>test exam (10/09/25 - 10/10/25)</td>
+                                        <td>Test Credential</td>
+                                        <td>Paid</td>
+                                        <td>Pass</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exam for testing (10/09/25 - 10/10/25)</td>
+                                        <td>One status Cert</td>
+                                        <td>Paid</td>
+                                        <td>Pass</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exam for testing (10/09/25 - 10/10/25)</td>
+                                        <td>One status Cert</td>
+                                        <td>Paid</td>
+                                        <td>Fail</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exam for testing 2 (10/09/25 - 10/10/25)</td>
+                                        <td>One status Cert</td>
+                                        <td>Paid</td>
+                                        <td>Fail</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exam for testing 2 (10/09/25 - 10/10/25)</td>
+                                        <td>One status Cert</td>
+                                        <td>Paid</td>
+                                        <td>Pass</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Test Comms Results (10/03/25 - 12/31/25)</td>
+                                        <td>Demo Certification - Exams</td>
+                                        <td>Paid</td>
+                                        <td>Pass</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Demo Practical Exam (08/18/25 - 12/31/25)</td>
+                                        <td>Demo Certification - Exams</td>
+                                        <td>Paid</td>
+                                        <td>Pass</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ABTS Oral Exam (07/22/25 - 07/22/25)</td>
+                                        <td>Demo Certification - Exams</td>
+                                        <td>Paid</td>
+                                        <td>Registered</td>
+                                        <td><button class="btn btn--text btn-sm"><i class="fa-solid fa-download"></i>Download</button></td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                        <figure class="media">
+                            <img src="/img/tables.avif" />
+                            <figcaption>
+                                Now, these videos are a little old. They look a little dated. I don't want to hear any jokes about them, and don't let the style distract you. <em>And I don't want any questions about the tables!</em>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
             </div>
         </section>
       </div>
@@ -1117,6 +1282,7 @@
 
 <!-- SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="../js/modal.js"></script>
 <script src="../js/scripts.js"></script>
 
 </body>

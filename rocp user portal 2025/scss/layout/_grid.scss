@@ -41,6 +41,23 @@
   .grid--75-25 {
     grid-template-columns: 3fr 1fr;
   }
+  .grid--sidebar {
+    grid-template-columns: 240px auto;
+  }
+  .grid--auto-md {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: start;
+    align-items: start;
+  }
+  .filter-panel {
+    border-right: 1px solid $gray-200;
+    padding-right: $space-6;
+    height: 100%;
+  }
+  .table-panel {
+    min-width: 0;
+  }
 }
 
 .gap-default {gap: $space-6;}
@@ -48,3 +65,6 @@
 .gap-md {gap: $space-6;}
 .gap-lg {gap: $space-8;}
 .gap-xl {gap: $space-10;}
+
+
+// .filter-panel {background: $gray-100; padding: 1rem; border-radius: 3px; height: 100%;}

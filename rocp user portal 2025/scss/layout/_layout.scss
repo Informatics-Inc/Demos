@@ -4,7 +4,7 @@
 .container {
   width: 100%;
   margin-inline: auto;
-  padding: $space-12 $layout-page-padding;;
+  padding: $layout-page-padding; 
 }
 
 /* Named max-width containers */
@@ -27,7 +27,9 @@
   /* Vertical rhythm in docs / content */
   margin-block: $space-6;
 }
-
+.justify-left {
+  justify-content: flex-start;
+}
 /* Tablet */
 @include respond-md {
   
@@ -35,7 +37,9 @@
 
 /* Desktop */
 @include respond-lg {
- 
+ .container {
+  padding: calc(45px + 1.5rem) $layout-page-padding $space-12 $layout-page-padding;
+ }
 }
 
 /* Desktop Large */
