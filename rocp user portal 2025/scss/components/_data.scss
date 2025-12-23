@@ -110,6 +110,7 @@
     display: grid;
     gap: $space-3;
     align-content: flex-start;
+    justify-items: flex-start;
 }
 .media__meta {
     font-size: $font-size-xs;

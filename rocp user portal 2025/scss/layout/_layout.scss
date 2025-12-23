@@ -30,6 +30,10 @@
 .justify-left {
   justify-content: flex-start;
 }
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
 /* Tablet */
 @include respond-md {
   

@@ -34,3 +34,10 @@ figcaption {
     color: $color-text-muted;
     padding: $space-4;
 }
+
+.img-cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;;
+}
