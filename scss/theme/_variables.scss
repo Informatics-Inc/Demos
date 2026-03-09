@@ -1,0 +1,70 @@
+:root {
+
+  /* Colors */
+  --green-100: #BACB5C;
+  --green: #a2b245;
+  --darkgreen: #89973B;
+  --green-ada: #89973B;
+  --blue: #00304d;
+  --darkblue: #022338;
+  --tan: #F2EAD3;
+  --tan-100: #F8F6EF;
+  --tan-400: #E8DFC9;
+  --bkg: #f9f9f9;
+
+  --light: #FFFFFF;
+  --lightgray: #g;
+  --gray-200: #f6f6f6;
+  --gray-400: #ccc;
+  --gray-600: #CCD5DC;
+  --dark: #001F33;
+  --gray: #ccc;
+
+  /* Typography */
+  --display: 'Hubot Sans';
+  --header: 'Owners', georgia;
+  --body: -apple-system, BlinkMacSystemFont, Roboto, roboto slab, droid serif, segoe ui, system-ui, Arial, sans-serif;
+  --serif: "elena-basic", "Times New Roman", Georgia, serif;
+
+  --text-color: rgba(0, 0, 0, .85);
+  --text-color-inverse: rgba(255, 255, 255, .85);
+
+  --mono: monospace;
+  --font-sm: .85rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+
+  /* Spacing */
+  --spacer: 4rem;
+  --spacer-sm: 2rem;
+  --grid-gap: 2rem;
+
+  /* UI */
+  --border-radius: 24px;
+  --gap-sm: 16px;
+  --transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --box-shadow-lg: 50px 50px 65px rgba(0,0,0,.15);
+
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  :root {
+  --spacer-vert: 4rem;
+  --spacer: 4rem;
+  }
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+  :root {
+  --spacer-vert: 5rem;
+  --spacer: 8rem;
+  }  
+}
