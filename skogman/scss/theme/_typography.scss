@@ -1,0 +1,40 @@
+/* TYPOGRAPHY */
+html {font-size: 100%;}
+body {font-family: var(--body); font-weight: 400; font-size: .9rem; background: var(--bkg); color: var(--text-color); padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
+
+h1, h2, h3, h4, h5 {font-family: var(--header); line-height: 1; margin-top: 0; margin-bottom: 1rem; font-weight: 400; letter-spacing: -3px;}
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2.25rem;}
+h3 {font-size: 2rem; letter-spacing: -1.25px;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.25rem;}
+p, ul, ol {margin-bottom: 1.25rem;}
+
+h2 {position: relative; padding-bottom: 1.25rem; margin-bottom: 1.25rem;}
+h2::after {width: 75px; height: 3px; background: var(--primary); content: ""; position: absolute; left: 0; bottom: 0;}
+h2.has-text-align-center::after {left: calc(50% - 37px);}
+.small-h2 {font-size: 1.75rem; letter-spacing: -1px;}
+
+/* Links */
+a {transition: var(--transition); color: var(--primary);}
+p a {font-weight: 700; text-decoration: underline;}
+a:hover {text-decoration: none;}
+
+.header-signpost {color: #fff; padding: 10px 15px; font-size: 1.35rem; position: relative;}
+.header-signpost:after {position: absolute; left: 0; top: 0; background: var(--primary);clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%); height: 100%; width: 300px; content: ""; z-index: -1;}
+/* TABLET */
+@media (min-width: 768px) {
+    h1 {font-size: 3rem;}
+    h2 {font-size: 2.5rem;}
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {   
+    h1 {font-size: 3.5rem;}
+    h2 {font-size: 2.75rem;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+
+}

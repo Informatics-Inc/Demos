@@ -1,0 +1,16 @@
+/* WP File Block Styles */
+.wp-block-file:not(.wp-element-button) {
+    font-size: .85em;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+}
+.wp-block-file * + .wp-block-file__button {
+    margin-left: .75em;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+}

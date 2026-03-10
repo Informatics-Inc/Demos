@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Shive-Hattery</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id='skip-nav' class='screenreader-text' href='#main-content'>
+    Skip to Content
+  </a>
+
+<header id="site-header" class="light">
+  <div class="mobile-header">
+    <a href="index.html" id="logo">
+      <img src="img/logo-color.svg" alt="SHIVE-HATTERY Logo" />
+    </a>
+    <button id="menu-toggle" class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+      <div class="closed">
+        Menu
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="open">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </button>
+  </div>
+
+  <!-- MENU -->
+  <nav id="menu" class="menu collapse">
+    <div class="desktop-header">
+      <a href="index.html" id="logo">
+        <img src="img/logo-color.svg" alt="SHIVE-HATTERY Logo" />
+      </a>
+      <div id="hdr-search">
+        <div class="search-close-wrapper">
+          <button id="search-close" class="search-toggle"><img src="img/search-close.svg"/>Close</button>
+        </div>
+        <form role="search" method="get" id="searchform" class="searchform">
+          <div>
+            <input type="text" value="" name="s" id="s" placeholder="SEARCH">
+            <input type="submit" id="searchsubmit" value="Search">
+          </div>
+        </form>
+      </div>
+
+      <ul id="menu-main">
+        <li><a href="block-heavy.html">Approach</a></li>
+        <li><a href="portfolio.html">Work</a>
+          <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+          <ul id="menu-1" class="collapse">
+            <li><a href="portfolio.html">Civic + Justice</a></li>
+            <li><a href="portfolio.html">Commercial Development</a></li>
+            <li><a href="portfolio.html">Government</a></li>
+            <li><a href="portfolio.html">Healthcare</a></li>
+            <li><a href="portfolio.html">Higher Education</a></li>
+            <li><a href="portfolio.html">Hospitality + Entertainment</a></li>
+            <li><a href="portfolio.html">Industrial</a></li>
+            <li><a href="portfolio.html">K-12</a></li>
+            <li><a href="portfolio.html">Multi-Family Housing</a></li>
+            <li><a href="portfolio.html">Senior Living</a></li>
+            <li><a href="portfolio.html">Sports</a></li>
+            <li><a href="portfolio.html">Workplace</a></li>
+          </ul>
+        </li>
+        <li><a href="block-heavy.html">Services</a>
+          <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+          <ul id="menu-2" class="collapse">
+            <li><a href="block-heavy.html">3D Visualization</a></li>
+            <li><a href="block-heavy.html">Building Information Modeling</a></li>
+            <li><a href="block-heavy.html">Branded Environments</a></li>
+            <li><a href="block-heavy.html">Building Envelope</a></li>
+            <li><a href="block-heavy.html">Civic Engineering</a></li>
+            <li><a href="block-heavy.html">Construction Services</a></li>
+            <li><a href="block-heavy.html">District Energy Systems</a></li>
+            <li><a href="block-heavy.html">Electrical Engingeering</a></li>
+            <li><a href="block-heavy.html">Environmental Services</a></li>
+            <li><a href="block-heavy.html">Interior Design</a></li>
+            <li><a href="block-heavy.html">Landscape Architecture</a></li>
+            <li><a href="block-heavy.html">Mechancial Engineering</a></li>
+            <li><a href="block-heavy.html">Interior Design</a></li>
+            <li><a href="block-heavy.html">Landscape Architecture</a></li>
+            <li><a href="block-heavy.html">Mechanical Engineering</a></li>
+            <li><a href="block-heavy.html">Land Surveying</a></li>
+            <li><a href="block-heavy.html">Water & Wastewater</a></li>
+            <li><a href="block-heavy.html">Water Resources</a></li>
+          </ul>
+        </li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="block-heavy.html">Culture</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <ul id="menu-utility">
+      <li><a href="block-heavy.html">Architecture</a></li>
+      <li><a href="block-heavy.html">Engineering</a></li>
+      <li><a href="block-heavy.html">Markets</a>
+        <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-3" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+        <ul id="menu-3" class="collapse">
+          <li><a href="portfolio.html">Civic + Justice</a></li>
+          <li><a href="portfolio.html">Commercial Development</a></li>
+          <li><a href="portfolio.html">Government</a></li>
+          <li><a href="portfolio.html">Healthcare</a></li>
+          <li><a href="portfolio.html">Higher Education</a></li>
+          <li><a href="portfolio.html">Hospitality + Entertainment</a></li>
+          <li><a href="portfolio.html">Industrial</a></li>
+          <li><a href="portfolio.html">K-12</a></li>
+          <li><a href="portfolio.html">Multi-Family Housing</a></li>
+          <li><a href="portfolio.html">Senior Living</a></li>
+          <li><a href="portfolio.html">Sports</a></li>
+          <li><a href="portfolio.html">Workplace</a></li>
+        </ul>
+      </li>
+      <li><a href="locations.html">Locations</a>
+        <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+        <ul id="menu-4" class="collapse locations">
+          <li><a href="location-detail.html">Iowa (HQ)</a></li>
+          <li><a href="location-detail.html">Arizona</a></li>
+          <li><a href="location-detail.html">Illinois</a></li>
+          <li><a href="location-detail.html">Indiana</a></li>
+          <li><a href="location-detail.html">Missouri</a></li>
+          <li><a href="location-detail.html">Nebraska</a></li>
+          <li><a href="location-detail.html">Ohio</a></li>
+          <li><a href="location-detail.html">Wisconsin</a></li>
+        </ul>
+      </li>
+      <li class="hidden-lg"><a href="block-heavy.html">About</a>
+        <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-5" aria-expanded="false" aria-controls="menu-1"><span class="bar"></span><span class="bar"></span></button>
+        <ul id="menu-5" class="collapse">
+          <li><a href="block-heavy.html">Relationship Driven</a></li>
+          <li><a href="block-heavy.html">Giving Back</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="leadership.html">People</a></li>
+          <li><a href="insights.html">Award</a></li>
+        </ul>
+      </li>
+      <li><a href="#.html" class="search-toggle"><img src="img/mobile-search.svg">Search</a></li>
+    </ul>
+
+    <button class="menu-close-btm" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+      <p><img src="img/close-menu.svg"> Close Menu <img src="img/close-menu.svg"> </p>
+    </button>
+  </nav>
+</header>
+
+<main id="main-content">
+  <section class="slider-header">
+      <div class="swiper detail-slider" id="detail-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure>
+              <img src="img/project-1.jpg" />
+              <figcaption>This is the caption for the slides and can pull from the image description</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="img/project-2.jpg" />
+              <figcaption>This is the caption for the slides and can pull from the image description</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="img/project-3.jpg" />
+              <figcaption>This is the caption for the slides and can pull from the image description</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="img/project-4.jpg" />
+              <figcaption>This is the caption for the slides and can pull from the image description</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="img/project-5.jpg" />
+              <figcaption>This is the caption for the slides and can pull from the image description</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    <div class="text">
+      <div class="contain grid-md">
+          <div class="text-group">
+            <h1><strong>HealthLinc Sturdy Road Medical Office Building Renovations</strong></h1>
+            <p class="lead">Located in Marion, IA</p>
+          </div>
+          <div class="contributors hidden-lg">
+            <p class="preheader">contributors</p>
+            <a href="#.html" class="person-link">
+              <img src="img/profile-1.jpg" />
+              <div><span class="name">First Lastname</span> <span class="title">Director of Greatness, Shive-Hattery</span></div>
+            </a>
+            <a href="#.html" class="person-link">
+              <img src="img/profile-2.jpg" />
+              <div><span class="name">First Lastname</span> <span class="title">Senior Engineer, Shive-Hattery</span></div>
+            </a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section class="wp-vert-class">
+  <div class="contain">
+    <div class="grid">
+      <div class="col-lg-5">
+        <h2><strong>Increased Functionality + More Appealing To Visitors</strong></h2>
+        <p class="lead">Red Cedar Lodge increased in actual usable space. It now meets current building codes + ADA requirements. The lodge gained a fresh new look while maintaining its natural beauty.</p>
+        <p>After analyzing what was required by current codes and the improvements wanted by Linn County Conservation, the design team found that a renovation would not leave much of the old building and would cost about the same as constructing a new building. It was decided to tear down the lodge and build a new one in the same location.</p>
+        <p>ADA-equipped restrooms are located near the front, where a larger entry vestibule is able to greet visitors more easily than the previous cramped entry. In-floor heat and air conditioning were added, as well as more updated finishes throughout.</p>
+      </div>
+      <div class="col-lg-3">
+        <div class="related-sidebar">
+          <p class="quote">“I love how the high clerestory windows were incorporated into the design to emit natural lighting + ground-level windows included to create panoramic views of the surrounding park.”</p>
+          <p class="preheader">Related Work</p>
+          <ul>
+            <li><a href="#.html">Education</a></li>
+            <li><a href="#.html">Civil Engineering</a></li>
+            <li><a href="#.html">Architecture</a></li>
+            <li><a href="#.html">Land Surveying</a></li>
+            <li><a href="#.html">Electrical Engineering</a></li>
+            <li><a href="#.html">Mechanical Engineering</a></li>
+          </ul>
+          <p class="preheader">Share</p>
+          <div class="social">
+            <a href="#.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#.html"><i class="fab fa-twitter"></i></a>
+            <a href="#.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="#.html"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 grid header-overlap">
+        <div class="contributors hidden-sm">
+          <p class="preheader">contributors</p>
+          <a href="#.html" class="person-link">
+            <img src="img/profile-1.jpg" />
+            <div><span class="name">First Lastname</span> <span class="title">Director of Greatness, Shive-Hattery</span></div>
+          </a>
+          <a href="#.html" class="person-link">
+            <img src="img/profile-2.jpg" />
+            <div><span class="name">First Lastname</span> <span class="title">Senior Engineer, Shive-Hattery</span></div>
+          </a>
+        </div>
+        <div class="box">
+            <p class="lead">Stay in Touch for Monthly Shive-Hattery Industry Insights</p>
+            <div class="email-subscribe">
+              <form>
+                  <div>
+                      <input type="email" value="" name="s" id="s" placeholder="email address">
+                      <input type="submit" id="emailsubmit" value="Search">
+                  </div>
+              </form>
+          </div>
+        </div>
+        <a href="#.html" class="hover-card">
+          <figure>
+              <img src="img/feature-2.jpg" />
+          </figure>
+          <div class="text">
+            <h3>The Shive-Hattery Team Designed Their Very Own Quad-Cities Offices ›</h3>
+            <p><span>Inside Shive-Hattery</span></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+ </section>
+
+   <!-- Quote With Image -->
+   <section class="quote-with-img">
+    <div class="contain">
+      <div class="grid">
+        <div class="quote">
+          <img src="img/quote.svg" class="quote-img" />
+          <p>
+            “The people of Shive-Hattery inspire me every day. With a spirit of service, sense of humor + humility, they help clients and communities tackle tough challenges to make the world a better place.”  
+          </p>
+          <div class="author">
+            <img src="img/profile-4.jpg" />
+            <p><strong>- Greg S. Kanz, APR, CPSM</strong>, Director of Marketing</p>
+          </div>
+        </div>
+        <figure>
+          <img src="img/feature-5.jpg" />
+          <a href="#.html" class="btn-theme">See University of Illinois Hospitals + Clinics</a>
+        </figure>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Content Columns -->
+  <section class="wp-vert-class bkg-light">
+    <div class="contain">
+      <div class="text-center">
+        <h2>More <strong>Government</strong> Projects</h2>
+        <div class="text">
+          <p class="lead">Creating the foundations that support community growth.</p>
+          <div class="wp-block-button is-style-btn_text">
+            <a class="wp-block-button__link wp-element-button" href="#.html">Explore All Projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="grid-md">
+        <div class="col-md-4">
+          <a href="#.html" class="hover-card">
+            <figure>
+                <img src="img/feature-2.jpg" />
+            </figure>
+            <div class="text">
+              <h3>Project Title</h3>
+              <p><span>Governemnt</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#.html" class="hover-card">
+            <figure>
+              <img src="img/feature-3.jpg" />
+            </figure>
+            <div class="text">
+              <h3>Project Title</h3>
+              <p><span>Governemnt</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#.html" class="hover-card">
+            <figure>
+              <img src="img/feature-4.jpg" />
+            </figure>
+            <div class="text">
+              <h3>Project Title</h3>
+              <p><span>Governemnt</span></p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights Post Listing -->
+  <section class="insights-listing wp-vert-class">
+    <div class="contain">
+      <div class="grid">
+        <div class="text">
+          <h2><strong>We're Learning, Growing + Sharing</strong></h2>
+          <p class="lead">Stay on top of the latest industry trends as we share how we are staying ahead of them.</p>
+          <div class="wp-block-button is-style-btn_text">
+            <a class="wp-block-button__link wp-element-button" href="#.html">See All Insights</a>
+          </div>
+        </div>
+        <a href="#.html" class="hover-card">
+          <figure>
+              <img src="img/feature-5.jpg" />
+          </figure>
+          <div class="text">
+            <h3>3 Property Styling Investments to Attract + Retain Industrial Market Employees</h3>
+            <p><span>Healthcare, Publications</span> | by Michelle Jones</p>
+          </div>
+        </a>
+        <a href="#.html" class="hover-card">
+          <figure>
+              <img src="img/feature-4.jpg" />
+          </figure>
+          <div class="text">
+            <h3>Our Shive-Hattery Madison, WI Design Office has Moved</h3>
+            <p><span>Recent News</span> | Sept 1, 2022</p>
+          </div>
+        </a>
+        <a href="#.html" class="hover-card">
+          <figure>
+              <img src="img/feature-1.jpg" />
+          </figure>
+          <div class="text">
+            <h3>Glen Ellyn Wins Best All-Precast Concrete Parking Structure</h3>
+            <p><span>Recent Awards</span></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+    
+</main>
+  
+<footer class="footer">
+  <div class="footer-cta">
+    <div class="container">
+      <h2>You're Looking To Build Something Great. <br><strong>So Are We.</strong></h2>
+      <div class="text">
+        <p class="lead">Partner with well-rounded experts who can bring any idea you have to life.</p>
+        <div class="wp-block-button">
+          <a class="wp-block-button__link wp-element-button" href="#.html">Let's Talk</a>
+        </div>
+      </div>
+      <figure>
+          <img src="img/ftr-cta-1.jpg" />
+          <img src="img/ftr-cta-2.jpg" />
+      </figure>
+    </div>
+  </div>
+  <div class="footer-cols">
+    <div class="col">
+        <img src="img/logo-color.svg" />
+        <div class="wp-block-button is-style-btn_white">
+            <a class="wp-block-button__link wp-element-button" href="#.html">Contact</a>
+            <a class="wp-block-button__link wp-element-button" href="#.html">Locations</a>
+        </div>
+        <hr>
+        <p>Stay in Touch for Expert Insights, New Projects + Career Opportunities</p>
+        <div class="email-subscribe">
+            <form>
+                <div>
+                    <input type="email" value="" name="s" id="s" placeholder="email address">
+                    <input type="submit" id="emailsubmit" value="Search">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col">
+        <h4><a href="#.html">Work</a></h4>
+        <ul>
+            <li><a href="portfolio.html">Civic + Justice</a></li>
+            <li><a href="portfolio.html">Commercial Development</a></li>
+            <li><a href="portfolio.html">Government</a></li>
+            <li><a href="portfolio.html">Healthcare</a></li>
+            <li><a href="portfolio.html">Higher Education</a></li>
+            <li><a href="portfolio.html">Hospitality + Entertainment</a></li>
+            <li><a href="portfolio.html">Industrial</a></li>
+            <li><a href="portfolio.html">K-12</a></li>
+            <li><a href="portfolio.html">Multi-Family Housing</a></li>
+            <li><a href="portfolio.html">Senior Living</a></li>
+            <li><a href="portfolio.html">Sports</a></li>
+            <li><a href="portfolio.html">Workplace</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <h4><a href="#.html">Insights</a></h4>
+        <ul>
+            <li><a href="portfolio.html">Publications</a></li>
+            <li><a href="portfolio.html">Firm News</a></li>
+            <li><a href="portfolio.html">Awards</a></li>
+            <li><a href="portfolio.html">Interviews</a></li>
+            <li><a href="portfolio.html">Inside Shive-Hattery</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <h4><a href="#.html">Careers</a></h4>
+        <ul>
+            <li><a href="portfolio.html">Careers Development</a></li>
+            <li><a href="portfolio.html">Job Openings</a></li>
+            <li><a href="portfolio.html">Internships</a></li>
+            <li><a href="portfolio.html">Employee Benefits</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <h4><a href="#.html">About</a></h4>
+        <ul>
+            <li><a href="portfolio.html">Approach</a></li>
+            <li><a href="portfolio.html">Markets</a></li>
+            <li><a href="portfolio.html">Locations</a></li>
+            <li><a href="portfolio.html">Our Culture</a></li>
+            <li><a href="portfolio.html">Leadership Team</a></li>
+            <li><a href="portfolio.html">Philanthropy</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="container">
+  <div class="footer-tools">
+      <ul>
+        <li><a href="#.html">Bidding Docs</a></li>
+        <li><a href="#.html">Newforma</a></li>
+        <li><a href="#.html">Privacy Policy</a></li>
+      </ul>
+      <p>Copyright 2023 Shive-Hattery</p>
+      <div class="social">
+        <a href="#.html"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#.html"><i class="fab fa-twitter"></i></a>
+        <a href="#.html"><i class="fab fa-facebook-f"></i></a>
+        <a href="#.html"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+</body>
+</html>

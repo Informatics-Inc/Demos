@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Santa Clara Portal</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ccm.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<main id="main">
+  <div class="tools">
+    <div class="language">
+      <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#lang-options" aria-expanded="false" aria-controls="lang-options"><img src="img/flag-us.jpg" /><span>Language: English <i class="fa fa-caret-down"></i></span></button>
+      <ul id="lang-options" class="collapse">
+        <li><a href="#.html"><img src="img/flag-us.jpg" /> English</a></li>
+        <li><a href="#.html"><img src="img/flag-viet.jpg" /> Vietnamese</a></li>
+      </ul>
+    </div>
+    <div class="user-details">
+      <p>Logged in as <a href="#.html">Lisa Vazquez</a> | <a href="#.html">Logout<i class="fa-solid fa-arrow-right-from-bracket"></i></a></p>
+    </div>
+  </div>
+
+  <div class="admin-wrapper">
+    <nav class="menu">
+      <div class="menu-wrapper">
+        <div class="menu-hdr">
+          <div class="brand">
+            <img src="img/logo.jpg" />
+            <p>Child Care Portal</p>
+          </div>
+          <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#menu-expand" aria-expanded="false" aria-controls="menu-expand"><i class="fa fa-bars"></i></span></button>
+        </div>
+        <div id="menu-expand" class="collapse">
+          <ul class="menu-links">
+            <li><a href="index.html"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="referrals.html"><i class="fa fa-check"></i>Approve/Deny Referrals</a>
+            </li>
+            <li class="active"><a href="details.html"><i class="fa fa-building"></i>Your Facilities</a>
+              <ul>
+                <li><a href="#.html">Location #1</a></li>
+                <li class="active"><a href="#.html">Location #2</a>
+                  <ul>
+                    <li><a href="details-detail.html">Manage Admins</a></li>
+                    <li><a href="details-detail.html">Referral & Vacancies</a></li>
+                    <li><a href="details-detail.html">License Information</a></li>
+                    <li><a href="details-detail.html">Public Information</a></li>
+                    <li><a href="details-detail.html">Contact Information</a></li>
+                    <li><a href="details-detail.html">Workforce Information</a></li>
+                    <li><a href="details-detail.html">Transportation & Meals</a></li>
+                    <li><a href="details-detail.html">Schedule Of Care</a></li>
+                    <li><a href="details-detail.html">Payment & Subsidies</a></li>
+                    <li><a href="details-detail.html">Qualifications</a></li>
+                    <li><a href="details-detail.html">Program Information</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="settings.html"><i class="fa fa-cog"></i>Settings</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="portal-content fadein">
+      <div class="portal-content-hdr">
+        <ol class="breadcrumb">
+          <li><a href="details.html">Your Faciliities</a></li>
+          <li>Location #2</li>
+        </ol>
+        <div class="hdr-wrap">
+          <h1>Location #2</h1>
+          <div class="hdr-buttons">
+            <a href="#.html" class="btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-file-export"></i> Export To Excel</a>
+          </div>
+        </div>
+        <p>Manage your license information here.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="box">
+          <figure>
+            <img src="img/feature-4.jpg" />
+          </figure>
+          <div class="text">
+            <h3>Public Infomration</h3>
+            <p>Update the information that is displayed to users when they search for child care providers.</p>
+            <a href="#.html" class="btn-theme">Update Your Public Information</a>
+          </div>
+        </div>
+        <div class="box">
+          <figure>
+            <img src="img/feature-5.jpg" />
+          </figure>
+          <div class="text">
+            <h3>Contact Information</h3>
+            <p>Be sure your contact information is up to date so so users can get in contact with you.</p>
+            <a href="#.html" class="btn-theme">Update Your Information</a>
+          </div>
+        </div>
+        <div class="box">
+          <figure>
+            <img src="img/feature-6.jpg" />
+          </figure>
+          <div class="text">
+            <h3>Qualifications</h3>
+            <p>Update you qualifications so visitors know the skills and care you can provide.</p>
+            <a href="#.html" class="btn-theme">Update Qualifications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<script>
+$('#regulation').attr("disabled", true); 
+document.getElementById("regional_office").disabled = true;
+</script>                        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  </body>
+</html>

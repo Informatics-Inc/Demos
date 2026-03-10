@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>My County Parks</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id='skip-nav' class='screenreader-text' href='#main-content'>
+    Skip to Content
+  </a>
+
+  <nav id="site-header" class="fadein">
+    <div class="hdr-top">
+      <div class="container">
+        <ul class="menu-utlity">
+          <li><a href="news.html">News</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="explore.html">Explore Iowa</a></li>
+        </ul>
+        <p class="menu-blurb">Book cabins, shelters, and lodges in Iowa.</p>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <a href="index.html" id="logo">
+          <img src="img/logo.svg" alt="My County Parks Logo" />
+        </a>
+        
+        <div class="menu-user">
+          <a href="#.html" id="user-menu-toggle">
+            <span class="menu-alert">1</span>
+            <i class="fa-regular fa-cart-shopping"></i>
+            <!-- Login -->
+            <i class="fa-solid fa-bars"></i>
+          </a>
+
+          <ul id="user-menu-list">
+            <li><a href="account-info.html"><i class="fa fa-cart-shopping"></i> View My Cart</a></li>
+            <li><a href="account-info.html"><i class="fa fa-check-circle"></i> Checkout Now</a></li>
+            <li><a href="account-info.html">My Account</a></li>
+            <li><a href="account-reservations.html">Reservations</a></li>
+            <li><a href="account-events.html">Event Registrations</a></li>
+            <li><a href="account-history.html">Order History</a></li>
+            <li><a href="login.html">Log out</a></li>
+          </ul>
+        </div>
+        <ul class="menu-main">
+          <li><a href="book-now.html">Book Now</a></li>
+          <li class="active"><a href="counties.html">Counties</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main id="main-content">
+  <header class="page-header fadeinup delay-1">
+    <figure>
+      <img src="img/hero-1.jpg" />
+    </figure>
+    <div class="text">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Counties</a></li>
+        <li>Polk County</li>
+      </ol>
+      <h1>Polk County</h1>
+      <p>Book cabins, shelters, and lodges in Polk County, Iowa.</p>
+    </div>
+  </header>
+
+  <!-- SEC NAV -->
+  <div id="sec-nav">
+  <div class="container">
+    <div class="county-hdr fadeinup delay-2">
+      <div class="profile-info">
+        <figure>
+          <img src="img/polk-profile.jpg" />
+        </figure>
+        <div class="text">
+          <p class="title">Polk County Conservation</p>
+          <p><a href="https://www.polkcountyiowa.gov/conservation/" target="_blank"><i class="fa fa-laptop"></i> Website</a> | <a href="mailto:contact@email.com"><i class="fa fa-mobile"></i> Contact Us</a></p>
+        </div>
+      </div>
+      <ul class="sec-nav" data-spy="affix" data-offset-top="150">
+        <li class="active"><a href="county.html">Discover</a></li>
+        <li><a href="book-now-filtered.html">Facilities</a></li>
+        <li><a href="parks.html">Parks</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="county-activities.html">Activities</a></li>
+        <li><a href="county-faq.html">FAQ</a></li>
+      </ul>
+      </div>
+  </div>
+  </div>
+  <!-- CONTENT -->
+  <div class="content-sections">
+  
+  <section>
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="col">
+          <div id="image-gallery">
+            <img id="current-image" src="img/gallery1.jpg" alt="Image 1">
+            <div id="image-thumbs"></div>
+          </div>
+        </div>
+        <div class="col">
+          <p class="preheader">Welcome to Polk County!</p>
+          <h2>Explore the Great Outdoors with Polk County Conservation!</h2>
+          <p>Dubuque County Conservation is located in far east-central Iowa along the Mississippi River and manages 20 individual parks, preserves and recreation areas encompassing some 2,673 acres. Home to the Swiss Valley Nature Center and Whitewater Canyon Wildlife Area, the Dubuque CCB provides many diverse opportunities for all interests. For additional information about the programs, areas and activities offered by the Dubuque CCB. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="animate-in delay-1">
+    <div class="container">
+      <div class="full-hdr">
+        <h3>Featured Facilities</h3>
+        <hr />
+        <a href="book-now.html">View All Facilities</a>
+      </div>
+
+      <div class="scroll-item-wrapper">
+        <div class="swiper scroll-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-1.jpg" />
+                </figure>
+                <h3>Chichaqua Longhouse</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-2.jpg" />
+                </figure>
+                <h3>Easter Lake Shelter 1</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-3.jpg" />
+                </figure>
+                <h3>Fort Des Moines Shelter</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-4.jpg" />
+                </figure>
+                <h3>Jester Cabin 1</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-5.jpg" />
+                </figure>
+                <h3>Thomas Mitchell Shelter</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-6.jpg" />
+                </figure>
+                <h3>Morgan Creek Shelter</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-7.jpg" />
+                </figure>
+                <h3>Birxshire Cabin</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Facility</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="book-now.html">
+                <figure>
+                  <img src="img/feature-tall-last.jpg" />
+                </figure>
+                <h3>Still Can't Find What You Want?</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
+                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="animate-in delay-1">
+    <div class="container">
+      <div class="full-hdr">
+        <h3>Popular Parks</h3>
+        <hr />
+        <a href="parks.html">View All Parks</a>
+      </div>
+      <div class="scroll-item-wrapper">
+        <div class="swiper scroll-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-8.jpg" />
+                </figure>
+                <h3>Beaver Creek Greenbelt</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-9.jpg" />
+                </figure>
+                <h3>Carney Marsh</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-10.jpg" />
+                </figure>
+                <h3>Fort Des Moines Park</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-11.jpg" />
+                </figure>
+                <h3>Jester Park</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-12.jpg" />
+                </figure>
+                <h3>High Trestle Park</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-13.jpg" />
+                </figure>
+                <h3>Krogan Overlook Park</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="facility.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Park</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="facility.html">
+                <figure>
+                  <img src="img/feature-tall-last.jpg" />
+                </figure>
+                <h3>Still Can't Find What You Want?</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
+                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="animate-in delay-1">
+    <div class="container">
+      <div class="full-hdr">
+        <h3>Nearby Amenities</h3>
+        <hr />
+        <!-- <a href="listing.html">View All Amenities</a> -->
+      </div>
+
+      <div class="scroll-item-wrapper">
+        <div class="swiper scroll-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide scroll-item">
+              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+                <figure>
+                  <img src="img/feature-tall-14.jpg" />
+                </figure>
+                <h3>Iowa State Capitol</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+                <figure>
+                  <img src="img/feature-tall-15.jpg" />
+                </figure>
+                <h3>Adventureland Park</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+                <figure>
+                  <img src="img/feature-tall-16.jpg" />
+                </figure>
+                <h3>Science Center of Iowa</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+                <figure>
+                  <img src="img/feature-tall-17.jpg" />
+                </figure>
+                <h3>Greater Des Moines Botanical Garden</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+                <figure>
+                  <img src="img/feature-tall-18.jpg" />
+                </figure>
+                <h3>Des Moines Art Center</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="https://www.traveliowa.com/places/lost-island-themepark/8994/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Amenity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="https://www.traveliowa.com/places/lost-island-themepark/8994/">
+                <figure>
+                  <img src="img/feature-tall-last.jpg" />
+                </figure>
+                <h3>Still Can't Find What You Want?</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Expand Your Search</a></li>
+                  <li><a href="explore.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="content-cta animate-in delay-3">
+        <figure><img src="img/hero-2.jpg"></figure>
+        <div class="text">
+          <h2>Leading You Outdoors</h2>
+          <p>Polk County Conservation - Family of parks and trails. Learn more at the link below!</p>
+          <a href="https://www.polkcountyiowa.gov/conservation/" class="btn-theme">Polk County Conservation </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  </section>
+</main>
+  
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+        <div class="ftr-cols">
+          <div class="col">
+            <img src="img/logo.svg" />
+            <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
+          </div>
+          <div class="col">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="#.html">Offers</a></li>
+              <li><a href="#.html">News</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#.html">Careers</a></li>
+              <li><a href="#.html">Contact Us</a></li>
+              <a href="#.html">MCP on Facebook</a>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#.html">Book a Facility</a></li>
+              <li><a href="#.html">Explore Events</a></li>
+              <li><a href="#.html">Discover Our Counties</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      
+      <h4 class="text-center">Explore Iowa's 99 Counties</h4>
+      <ul class="county-list">
+        <li><a href="county.html">Adair</a></li>
+        <li><a href="county.html">Adams</a></li>
+        <li><a href="county.html">Allamakee</a></li>
+        <li><a href="county.html">Appanoose</a></li>
+        <li><a href="county.html">Audubon</a></li>
+        <li><a href="county.html">Benton</a></li>
+        <li><a href="county.html">Black Hawk</a></li>
+        <li><a href="county.html">Boone</a></li>
+        <li><a href="county.html">Bremer</a></li>
+        <li><a href="county.html">Buchanon</a></li>
+        <li><a href="county.html">Buena Vista</a></li>
+        <li><a href="county.html">Butler</a></li>
+        <li><a href="county.html">Calhoun</a></li>
+        <li><a href="county.html">Carroll</a></li>
+        <li><a href="county.html">Cass</a></li>
+        <li><a href="county.html">Cedar</a></li>
+        <li><a href="county.html">Cerro Gordo</a></li>
+        <li><a href="county.html">Cherokee</a></li>
+        <li><a href="county.html">Chickasaw</a></li>
+        <li><a href="county.html">Clarke</a></li>
+        <li><a href="county.html">Clay</a></li>
+        <li><a href="county.html">Clayton</a></li>
+        <li><a href="county.html">Clinton</a></li>
+        <li><a href="county.html">Crawford</a></li>
+        <li><a href="county.html">Dallas</a></li>
+        <li><a href="county.html">Davis</a></li>
+        <li><a href="county.html">Decatur</a></li>
+        <li><a href="county.html">Delaware</a></li>
+        <li><a href="county.html">Des Moines</a></li>
+        <li><a href="county.html">Dickinson</a></li>
+        <li><a href="county.html">Dubuque</a></li>
+        <li><a href="county.html">Emmet</a></li>
+        <li><a href="county.html">Fayette</a></li>
+        <li><a href="county.html">Floyd</a></li>
+        <li><a href="county.html">Franklin</a></li>
+        <li><a href="county.html">Fremont</a></li>
+        <li><a href="county.html">Greene</a></li>
+        <li><a href="county.html">Grundy</a></li>
+        <li><a href="county.html">Guthrie</a></li>
+        <li><a href="county.html">Hamilton</a></li>
+        <li><a href="county.html">Hancock</a></li>
+        <li><a href="county.html">Hardin</a></li>
+        <li><a href="county.html">Harrison</a></li>
+        <li><a href="county.html">Henry</a></li>
+        <li><a href="county.html">Howard</a></li>
+        <li><a href="county.html">Humboldt</a></li>
+        <li><a href="county.html">Ida</a></li>
+        <li><a href="county.html">Iowa</a></li>
+        <li><a href="county.html">Jackson</a></li>
+        <li><a href="county.html">Jasper</a></li>
+        <li><a href="county.html">Jefferson</a></li>
+        <li><a href="county.html">Johnson</a></li>
+        <li><a href="county.html">Jones</a></li>
+        <li><a href="county.html">Keokuk</a></li>
+        <li><a href="county.html">Kossuth</a></li>
+        <li><a href="county.html">Lee</a></li>
+        <li><a href="county.html">Linn</a></li>
+        <li><a href="county.html">Louisa</a></li>
+        <li><a href="county.html">Lucas</a></li>
+        <li><a href="county.html">Lyon</a></li>
+        <li><a href="county.html">Madison</a></li>
+        <li><a href="county.html">Mahaska</a></li>
+        <li><a href="county.html">Marion</a></li>
+        <li><a href="county.html">Marshall</a></li>
+        <li><a href="county.html">Mills</a></li>
+        <li><a href="county.html">Mitchell</a></li>
+        <li><a href="county.html">Monona</a></li>
+        <li><a href="county.html">Monroe</a></li>
+        <li><a href="county.html">Montgomery</a></li>
+        <li><a href="county.html">Muscatine</a></li>
+        <li><a href="county.html">O'Brien</a></li>
+        <li><a href="county.html">Osceola</a></li>
+        <li><a href="county.html">Page</a></li>
+        <li><a href="county.html">Palo Alto</a></li>
+        <li><a href="county.html">Plymouth</a></li>
+        <li><a href="county.html">Pocahantas</a></li>
+        <li><a href="county.html">Polk</a></li>
+        <li><a href="county.html">Pottawattamie</a></li>
+        <li><a href="county.html">Poweshiek</a></li>
+        <li><a href="county.html">Ringgold</a></li>
+        <li><a href="county.html">Sac</a></li>
+        <li><a href="county.html">Scott</a></li>
+        <li><a href="county.html">Shelby</a></li>
+        <li><a href="county.html">Sioux</a></li>
+        <li><a href="county.html">Story</a></li>
+        <li><a href="county.html">Tama</a></li>
+        <li><a href="county.html">Taylor</a></li>
+        <li><a href="county.html">Union</a></li>
+        <li><a href="county.html">Van Buren</a></li>
+        <li><a href="county.html">Wapello</a></li>
+        <li><a href="county.html">Warren</a></li>
+        <li><a href="county.html">Washington</a></li>
+        <li><a href="county.html">Wayne</a></li>
+        <li><a href="county.html">Webster</a></li>
+        <li><a href="county.html">Winnebago</a></li>
+        <li><a href="county.html">Winneshiek</a></li>
+        <li><a href="county.html">Woodbury</a></li>
+        <li><a href="county.html">Worth</a></li>
+        <li><a href="county.html">Wright</a></li>
+      </ul>
+      <hr />
+      <div class="copy">
+        <p>© 2023 My County Parks | All Rights Reserved | Web Application by <a href="#.html">Informatics, Inc</a></p>
+        <ul>
+          <li><a href="#.html">Terms and Conditions</a></li>
+          <li><a href="#.html">Cookie Statement</a></li>
+          <li><a href="#.html">Privacy Policy</a></li>
+        </ul>
+        
+      </p>
+  </div>
+</footer>
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    // -- SIMPLE GALLERY -- //
+    var imageThumbs = document.getElementById("image-thumbs");
+    var currentImage = document.getElementById("current-image");
+
+    for (var i = 1; i <= 5; i++) {
+      var thumb = document.createElement("img");
+      thumb.src = "img/gallery" + i + ".jpg";
+      thumb.alt = "Image " + i;
+      thumb.classList.add("thumb");
+      imageThumbs.appendChild(thumb);
+      thumb.addEventListener(
+        "click", function() {
+          currentImage.src = this.src;
+        }
+      );
+    }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+@use "../tokens" as *;
+
+/* Base container */
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding: $layout-page-padding; 
+}
+
+/* Named max-width containers */
+.container-sm {max-width: $container-sm;}
+.container-md {max-width: $container-md;}
+.container-lg {max-width: $container-lg;}
+.container-xl {max-width: $container-xl;}
+.container-xxl {max-width: $container-xxl;}
+
+/* Full width */
+.container-full {max-width: 100%;}
+ 
+
+.inline-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+
+  /* Vertical rhythm in docs / content */
+  margin-block: $space-6;
+}
+.justify-left {
+  justify-content: flex-start;
+}
+.justify-right {
+  justify-content: flex-end;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+/* Tablet */
+@include respond-md {
+  
+}
+
+/* Desktop */
+@include respond-lg {
+ .container {
+  padding: calc(45px + 1.5rem) $layout-page-padding $space-12 $layout-page-padding;
+ }
+}
+
+/* Desktop Large */
+@include respond-xl {
+  
+}

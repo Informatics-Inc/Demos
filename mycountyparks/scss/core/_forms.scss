@@ -1,0 +1,178 @@
+.mcp-form {
+display: grid; gap: 10px;
+label {display: block; font-weight: 600; font-size: .9rem;}
+input, select, textarea {border: 1px solid rgba(0,0,0,.1); padding: 10px; background: #fff; width: 100%; border-radius: 4px;}
+h2 {font-size: 1.15rem; border-top: 1px solid rgb(0 0 0 / .1); padding-top: 2rem;}
+.flex {display: flex; gap: 10px;}
+.flex > * {flex: 1;}
+.btn-full {width :100%;}
+.helper {font-size: .75rem; margin: 0; padding: 0px 10px 5px 10px; font-style: italic; margin-top: -5px;}
+label:has(input[type='checkbox']) {text-align: left; text-transform: none; font-weight: 400; padding-left: 25px; position: relative; font-size: .85rem;}
+input[type='checkbox'] {position: absolute; left: -2px; top: 2px;}
+.check-list {display: grid; grid-template-columns: repeat( auto-fit, minmax(165px, 1fr) ); gap: 5px;}
+}
+
+.form-action {display: flex; justify-content: flex-start; border-top: 1px solid #ccc; padding: 2rem 0 0 0; margin: 2rem 0 0 0; width: 100%; gap: 10px;}
+.form-action .btn-theme {font-size: .8rem; line-height: 1.1; text-align: center; padding: 1rem .6rem}
+.form-action > *:last-child {margin-left: auto;}
+input[type='checkbox'] {width: auto; text-align: left;}
+
+.mcp-form > * {margin: 0;}
+.mcp-form hr {margin: 1rem 0;}
+.mcp-form > * + hr {margin-top: 2rem;}
+.mcp-form h3, .mcp-form h2 {margin: 1rem 0 !important;}
+.mcp-form h3 {font-size: 1.15rem !important; margin: 1rem 0 .25rem 0 !important;}
+.mcp-form .form-action {margin-top: 2rem;}
+
+/* Fixed Labels */
+.fixed-label {display: grid; grid-template-columns: 125px auto; background: #fff; border: 1px solid rgba(0,0,0,.1); border-radius: 4px;}
+.fixed-label label {height: 100%; display: flex; padding: 10px 15px; border-right: 1px solid var(--light); text-align: left; font-size: .75rem;}
+.fixed-label {
+  input, select, textarea {border: none;}
+}
+.fixed-labels-xl .fixed-label {grid-template-columns: 165px auto;}
+
+/* Login */
+.login figure {display: none;} 
+.login .promo {margin: 4rem 0 1rem 0;}
+
+/* Form Pages */
+.form-page .mcp-form {
+    input, select {background: #fff;}
+}
+.form-page {
+    .content {padding: 25px; text-align: center;;}
+    #logo {margin: 1rem auto; width: 225px; max-width: none;}
+    #logo img {width: 225px; margin: 0 auto;}
+    header {margin: 0 0 2rem 0;}
+    .content h1 {margin: 0 0 1rem 0; font-size: 1.5rem;}
+    p {font-size: .85rem; margin: .5rem 0 0 0;}
+    .back-link {margin: 0 0 2rem 0;}
+    .content p + p {margin: 0;}
+    h2:has(+ p) {margin-bottom: 0;}
+    h2 + p {margin: 0 0 2rem 0;}
+    .lead {font-size: 1rem !important;}
+    .promo {margin-top: 2rem;}
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .form-page {
+    .content {padding: 50px;}
+    .lead {font-size: 1.25rem !important;}
+  }
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {
+.login {display: grid; grid-template-columns: 1.5fr 2fr; min-height: 100vh;}
+.login .content {padding: 100px 100px 250px 100px; display: flex; justify-content: center; flex-direction: column;}
+.login figure {display: block; height: 100%;}
+.login figure img {width: 100%; height: 100%; object-fit: cover;}
+}
+
+
+
+/* Multi Select */
+.multiselect-dropdown{
+    display: flex; align-items: center;
+    padding: 0 22px 0 40px; min-height: 40px;
+    height: 100%;
+    position: relative;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+    background-size: 14px 10px;
+  }
+  .multiselect-dropdown span.optext {
+    margin-right:0.5em; 
+    margin-bottom:2px;
+    padding:1px 0; 
+    border-radius: 4px; 
+    display:inline-block;
+  }
+  .multiselect-dropdown span.optext{
+    padding: 4px 6px; background: var(--light); margin: 0 4px 0 0; font-size: .85rem;
+  }
+  .multiselect-dropdown span.optext .optdel {
+    float: right;
+    margin: 0 -6px 1px 5px;
+    font-size: 0.7em;
+    margin-top: 2px;
+    cursor: pointer;
+    color: #666;
+    display: none;
+  }
+  .multiselect-dropdown span.optext .optdel:hover { color: #c66;}
+
+  .multiselect-dropdown span.placeholder{
+    color: rgba(0,0,0,.55);
+  }
+  .multiselect-dropdown-list-wrapper{
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    z-index: 100;
+    padding: 1rem;
+    border-radius: 4px;
+    display: none;
+    margin: -1px;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    background: #fff;
+  }
+  .multiselect-dropdown-list-wrapper .multiselect-dropdown-search{
+    margin-bottom:5px;
+  }
+  .multiselect-dropdown-list{
+    padding:2px;
+    height: auto;
+    max-height: 300px;
+    overflow-y:auto;
+    overflow-x: hidden;
+  }
+  .multiselect-dropdown-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  .multiselect-dropdown-list::-webkit-scrollbar-thumb {
+    background-color: #bec4ca;
+    border-radius:3px;
+  }
+  
+  .multiselect-dropdown-list div{
+    position: relative;
+    padding: 5px 5px 5px 10px; border-radius: 3px;
+    display: flex; justify-content: flex-start; text-align: left;
+    font-size: .85rem;
+  }
+  .multiselect-dropdown-list input{
+    height: 1.15em;
+    width: 1.15em;
+    margin-right: 0.35em;
+    position: relative;
+    width: 15px;
+  }
+  .multiselect-dropdown .close-btn {
+    border: none;
+    background: var(--light);
+    width: 100%;
+    font-size: .75rem;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+}
+
+  .multiselect-dropdown-list input[type=checkbox] {width: 12px; margin: 0 5px 0 0; position: relative; top: 1px;}
+  .multiselect-dropdown-list div:hover{
+    background-color: var(--light);
+  }
+  .multiselect-dropdown span.maxselected {width:100%;}
+  .multiselect-dropdown-all-selector {border-bottom:solid 1px #999;}
+  .search.grid.sidebar-search.promo-form {margin-top:20px}
+  .search.grid.sidebar-search.promo-form {display:block;input,select,textarea{padding:10px;background:none;border:solid var(--light) 1px;}
+}
+.search.grid.sidebar-search.promo-form label{display:block;margin-bottom:15px}
+.search.grid.sidebar-search.promo-form .btn-theme{margin-top:10px;}
+
+

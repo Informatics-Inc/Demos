@@ -1,0 +1,22 @@
+/* Accordian */
+.accordion {margin: var(--spacer-vert) 0;border-radius: 15px; box-shadow:var(--shadow);}
+.accordion-item {background:var(--accent-1);text-align: center;margin-top:20px}
+.accordion-collapse.collapsed {height: 0;overflow: hidden;-webkit-transition-delay: 0.2s;transition-delay: 0.2s;transition: height 0.2s ease;}
+.accordion-collapse.show {height: auto;}
+
+.accordion-item h3 {position:relative;color:#fff;padding: 1.75rem 1rem 1.75rem 1rem;letter-spacing:0.5px; font-size: 1.65rem;align-items: center;margin: 0; font-weight: 700; font-family:var(--main);line-height: 1.4;}
+.accordion-item h3 .fa {margin-top:auto;position:absolute;right:25px;color:#fff; font-size:1.35rem;transform: rotate(180deg); transition: var(--transition);line-height: 1.4;}
+.accordion-item h3:hover {cursor: pointer;}
+.accordion-item .accordion-body {background: var(--light); padding: 2rem; border-bottom: 1px dotted #ccc;}
+.accordion-item .accordion-body p:last-of-type {margin: 0;}
+.accordion-item h3.collapsed .fa {transform: rotate(0deg);}
+
+@media (max-width: 991px) {
+    .accordion-item .collapsed {
+      height: 0;
+      overflow: hidden;
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+      transition: height .2s ease;
+    }
+  }

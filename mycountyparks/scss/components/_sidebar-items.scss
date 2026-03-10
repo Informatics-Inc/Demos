@@ -1,0 +1,44 @@
+
+.item-details {display: flex; justify-content: space-between; align-items: center;}
+.item-details p {font-size: .825rem; margin: 0;}
+.item-details p strong {font-size: 1.15rem;}
+.item-details a {font-weight: 400;}
+.search.sidebar-search {gap: 5px;}
+.search.sidebar-search .item-details {margin: 0;}
+.search.sidebar-search input {background: var(--light); font-size: .85rem;}
+.search.sidebar-search hr {margin: 1rem 0;}
+.search.sidebar-search .btn-text {text-align: center; font-size: .85rem; font-weight: 400;}
+.search.sidebar-search .btn-text i {margin-right: 5px;}
+.search.sidebar-search .btn-theme {margin-bottom: .75rem;}
+.search.sidebar-search ul {padding: 0 0 0 1rem;}
+.search.sidebar-search ul strong {font-size: .85rem; display: inline;}
+.search.sidebar-search .icon-text p strong:first-of-type {display: block;}
+.search.sidebar-search h4 {font-size: .9rem;}
+.search.sidebar-search + .search.sidebar-search {margin-top: 2rem;}
+
+#sidebar-affix {z-index: 3500;}
+@media (max-width: 992px) {
+    .bottom-affix {position: fixed; bottom: 10px; right: 10px; left: 10px; padding: .75rem; box-shadow: 0 0 25px rgba(0,0,0,.2);}
+    .bottom-affix + .additional-links {padding: 0;}
+    /* fix footer spacing on mobile*/
+    .fixed-calendar footer.footer {padding-bottom: 150px;}
+}
+
+/* Just Mobile */
+@media (max-width: 992px) {
+    .search.sidebar-search input {padding: 5px 5px 5px 40px; min-height: 40px;}
+    .search.sidebar-search .btn-theme {padding: 7px;}
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,55 @@
+.theme-carousel {padding-bottom: 10px;}
+.theme-carousel .gallery {padding: 0 50px; margin: 0 0 1rem 0;}
+.theme-carousel .gallery-cell {width: 100%; padding: 15px 10px;}
+
+.flickity-button {
+    background: #fff;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    transition: var(--transition);
+    z-index: 5;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+}
+
+.flickity-prev-next-button.previous {
+    left: 0px
+}
+
+.flickity-prev-next-button.next {
+    right: 0px
+}
+
+.flickity-button:hover {
+    background: var(--gray)
+}
+
+.flickity-page-dots {
+    bottom: -35px; left: 0;
+}
+
+.flickity-page-dots .dot {
+    background: #999;
+    margin: 0 4px;
+    width: 7px;
+    height: 7px
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: var(--primary)
+}
+
+@media (min-width:768px) {
+    .theme-carousel .gallery-cell {width: 50%;}
+}
+
+@media (min-width:992px){
+    .theme-carousel .gallery-cell {width: 33.33%;}
+    .theme-carousel .gallery {padding: 0 100px;}
+
+    .flickity-prev-next-button.next {
+        right: 40px
+    }
+    .flickity-prev-next-button.previous {
+        left: 40px
+    }
+}

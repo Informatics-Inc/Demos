@@ -1,0 +1,75 @@
+/* ------------------------------------------
+   Imports: token modules (local to this file)
+------------------------------------------- */
+@use "../tokens" as *;
+
+/* ------------------------------------------
+   Base / Global Defaults
+------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px; // accessible baseline
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $gray-50;       // lightweight app background
+  color: $color-text-main;          // semantic text token
+  font-family: $font-body;          // from typography tokens
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ------------------------------------------
+   Links
+------------------------------------------- */
+
+a {
+  color: $color-link;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: $color-link-visited;
+}
+
+a:focus {
+  outline: 2px solid $color-focus-ring;
+  outline-offset: 2px;
+}
+
+/* Global scroll offset for anchored content
+   Ensures skip links and in-page nav don't hide headings behind the fixed header */
+:where(h1, h2, h3, h4, h5, h6, section, [id]) {
+  scroll-margin-top: var(--fixed-header-height, 2.5rem);
+}
+
+/* ------------------------------------------
+   Skip Link (Accessibility)
+------------------------------------------- */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: $color-primary;
+  color: $gray-0;
+  border-radius: $radius-sm;
+  transition: top 0.2s ease;
+  z-index: $z-sticky;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}

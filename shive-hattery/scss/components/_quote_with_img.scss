@@ -1,0 +1,35 @@
+/* Quote With Image */
+.quote-with-img {background: url(../img/bkg-lines.svg) repeat-x; text-align: right; margin-top: 80px; margin-bottom: 80px;}
+.quote-with-img .grid {justify-items: end; background: #fff; gap: 25px;}
+.quote-with-img .grid > * {padding: 0 var(--spacer);}
+.quote-with-img .quote {font-size: 1.5rem; color: var(--text-gray); display: grid; justify-items: end;}
+.quote-with-img .quote img {margin: 0 0 25px 0;}
+.quote-with-img .author {display: grid; gap: 0; justify-items: end; font-size: .9rem;}
+.quote-with-img .author > * {margin: 0;}
+.quote-with-img .author img {width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin: 0 0 .5rem 0;}
+.quote-with-img .author a {font-style: italic; text-decoration: underline; text-decoration-color: var(--secondary);}
+
+.quote-with-img figure {position: relative;}
+.quote-with-img figure img {border-radius: 5px; @include box-shadow-small; width: 100%; height: 100%; object-fit: cover;}
+.quote-with-img figure a {position: absolute; bottom: 25px; right: 50px; width: calc(100% - 100px); text-align: center;}
+
+@media (min-width: 768px) {
+.quote-with-img .grid {grid-template-columns: 1fr 1fr;}
+.quote-with-img .grid > * {padding: 0;}
+.quote-with-img .quote {padding: 0 25px;}
+.quote-with-img figure {margin-right: -50px;}
+.quote-with-img figure img {border-radius: 5px 0 0 5px;}
+.quote-with-img figure a {right: 25px;}
+}
+
+@media (min-width: 992px) {
+.quote-with-img {background-position: 0 50px; margin: 150px auto;}
+.quote-with-img .grid {grid-template-columns: repeat(12, 1fr); gap: 0; position: relative; background: none; align-items: start;}
+.quote-with-img .grid .quote {grid-column: span 7; align-content: first baseline; font-size: 2.25rem; font-weight: 300; background: #fff; padding: 0 50px 50px 50px;}
+.quote-with-img .grid figure {grid-column: span 4; margin: 0;}
+.quote-with-img figure img {border-radius: 5px;}
+.quote-with-img .author {font-weight: 400; display: flex; align-items: center;}
+.quote-with-img .author img {order: 3; margin: 0;}
+.quote-with-img .author > * {margin: 0 10px 0 0;}
+.quote-with-img .quote-img {position: absolute; right: 0; top: 0;}
+}

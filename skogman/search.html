@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>WP Starter Template v1</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
+
+  <header id="hdr-site">
+    <!-- HEADER TOP -->
+    <div id="hdr-top">
+        <div class="container">
+            <!-- <div class="hdr-top-left">
+                <p>This is the top info header</p>
+            </div> -->
+            <div class="hdr-top-right">
+                <div class="hdr-phone"><a href="#.html">319-363-8286</a></div>
+                <div class="hdr-social">
+                  Follow Us!
+                  <ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex">
+                    <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+                      <a href="#.html"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+                      <a href="#.html"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div id="hdr-main">
+            <a href="#.html" id="logo">
+                <img src="img/logo.svg" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+                <div class="closed">
+                    Menu
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <nav id="menu" class="collapsed">
+            <ul class="nav-main">
+                <li class="current-menu-item"><a href="#.html">Search Properties</a>
+                  <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                    <ul id="menu-1" class="collapsed">
+                      <li><a href="#.html">For Lease</a></li>
+                      <li><a href="#.html">For Sale</a></li>
+                    </ul>
+                </li>
+                <li><a href="#.html">About Skogman</a>
+                    <button class="btn-expand collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-1" aria-expanded="false" aria-controls="menu-1"><i class="fa fa-chevron-down"></i></button>
+                      <ul id="menu-1" class="collapsed">
+                        <li><a href="#.html">Services</a></li>
+                        <li><a href="#.html">Offices</a></li>
+                        <li><a href="#.html">CCIM/SIOR</a></li>
+                      </ul>
+                </li>
+                <li><a href="#.html">Our Agents</a></li>
+            </ul>
+            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#">Contact Us</a></div>
+              </div>
+        </nav>
+        </div>
+    </div>
+  </header>
+
+  <main id="content">
+  
+  <!-- Page Header
+  <section class="page-hdr">
+    <figure>
+      <img src="img/hero-city.jpg" />
+    </figure>
+    <div class="content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb-nav">
+          <li><a href="#.html">Home</a></li>
+          <li>Search Properties</li>
+        </ol>
+      </nav>
+      <h1>Search Properties</h1>
+    </div>
+  </section> -->
+  <section class="search-layout">
+
+    <div class="theme-form-filter">
+      <form class="theme-form input-medium">
+        <div class="mobile-filter-header hidden-lg">
+          <h3>Search Filter</h3>
+          <button type="button" class="mobile-filter-close" id="mobile-filter-close">Close Menu <i class="fa fa-close"></i></button>
+        </div>
+        
+        <!-- Search Input -->
+        <div class="filter-item">
+          <label for="propertyKeyword" class="sr-only">Search</label>
+          <input type="search" id="propertyKeyword" placeholder="Search: Address, MLS#, City...">
+        </div>
+
+        <!-- Property Type -->
+        <div class="filter-item filter-item-collapse">
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#search-type" aria-expanded="false" aria-controls="menu-1">Property Type</button>
+          <div class="input-collapse-content collapsed " id="search-type">
+            <div class="form-group form-flex form-checkbox">
+              <input type="checkbox" id="check-business" name="propertyType" value="business">
+              <label for="check-business">Business</label>
+            </div>
+            <div class="form-group form-flex form-checkbox">
+              <input type="checkbox" id="check-warehouse" name="propertyType" value="warehouse">
+              <label for="check-warehouse">Warehouse</label>
+            </div>
+            <div class="form-group form-flex form-checkbox">
+              <input type="checkbox" id="check-industrial" name="propertyType" value="industrial">
+              <label for="check-industrial">Industrial</label>
+            </div>
+            <div class="form-group form-flex form-checkbox">
+              <input type="checkbox" id="check-manufacturing" name="propertyType" value="manufacturing">
+              <label for="check-manufacturing">Manufacturing</label>
+            </div>
+            <div class="form-group form-flex form-checkbox">
+              <input type="checkbox" id="check-office" name="propertyType" value="office">
+              <label for="check-office">Office</label>
+            </div>
+            <div class="form-group form-flex form-checkbox">
+              <input type="checkbox" id="check-investment" name="propertyType" value="investment">
+              <label for="check-investment">Investment</label>
+            </div>
+            <div class="form-group form-flex form-checkbox">
+              <input type="checkbox" id="check-retail" name="propertyType" value="retail">
+              <label for="check-retail">Retail</label>
+            </div>
+            <div class="filter-menu-actions">
+              <a href="#.html" class="wp-block-button__link wp-element-button"><i class="fa fa-check"></i> Apply</a>
+              <a href="#.html"><i class="fa fa-close"></i> Clear</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price -->
+        <div class="filter-item filter-item-collapse">
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#search-price" aria-expanded="false" aria-controls="menu-1">Price</button>
+          <div class="input-collapse-content collapsed " id="search-price">
+            <div class="form-group">
+              <label>Max Price</label>
+              <input type="text">
+            </div>
+            <div class="form-group">
+              <label>Min Price</label>
+              <input type="text">
+            </div>
+            <div class="filter-menu-actions">
+              <a href="#.html" class="wp-block-button__link wp-element-button"><i class="fa fa-check"></i> Apply</a>
+              <a href="#.html"><i class="fa fa-close"></i> Clear</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Filters -->
+        <div class="filter-item filter-item-collapse">
+          <button type="button"  data-bs-toggle="collapse" data-bs-target="#search-more" aria-expanded="false" aria-controls="search-more">More Filters</button>
+          <div class="input-collapse-content collapsed" id="search-more">
+            
+            <div class="form-group">
+              <label>Listing Type</label>
+              <div class="form-group form-flex form-checkbox">
+                <input type="checkbox" id="type-sale" name="listingType" value="sale" checked>
+                <label for="check-sale">For Sale</label>
+              </div>
+              <div class="form-group form-flex form-checkbox">
+                <input type="checkbox" id="type-lease" name="listingType" value="lease" checked>
+                <label for="check-lease">For Lease</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Listing Status</label>
+              <div class="form-group form-flex form-checkbox">
+                <input type="checkbox" id="check-active" name="propertyStatus" value="active" checked>
+                <label for="check-active">Active</label>
+              </div>
+              <div class="form-group form-flex form-checkbox">
+                <input type="checkbox" id="check-pending" name="propertyStatus" value="pending">
+                <label for="check-pending">Pending</label>
+              </div>
+              <div class="form-group form-flex form-checkbox">
+                <input type="checkbox" id="check-sold" name="propertyStatus" value="sold">
+                <label for="check-sold">Recently Sold</label>
+              </div>
+            </div>
+            <div class="filter-menu-actions">
+              <a href="#.html" class="wp-block-button__link wp-element-button"><i class="fa fa-check"></i> Apply</a>
+              <a href="#.html"><i class="fa fa-close"></i> Clear</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sort By -->
+        <div class="filter-item filter-item-collapse">
+          <button type="button"  data-bs-toggle="collapse" data-bs-target="#search-sort" aria-expanded="false" aria-controls="search-sort">Sort By</button>
+          <div class="input-collapse-content collapsed " id="search-sort">
+            <div class="form-group form-flex form-checkbox">
+              <input type="radio" id="sort1" name="sortType" value="sort1">
+              <label for="sort1">A — Z</label>
+            </div>
+            <div class="form-group form-flex form-checkbox">
+              <input type="radio" id="sort2" name="sortType" value="sort2">
+              <label for="sort2">Cost low to high</label>
+            </div>
+            <div class="form-group form-flex form-checkbox">
+              <input type="radio" id="sort3" name="sortType" value="sort3">
+              <label for="sort3">Cost high to low</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Display -->
+        <div class="filter-item">
+          <div class="flex">
+            <div class="flex">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+              <div>
+                Show Map
+              </div>
+            </div>
+            |
+            <a href="#.html"><i class="fa fa-arrow-rotate-right"></i> Reset</a>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <header class="hidden-lg">
+      <div class="flex">
+        <div>
+        <h1>Commercial Properties in Cedar Rapids, IA</h1>
+        <p class="info">Showing 352 properties</p>
+      </div>
+      <div>
+        <button class="mobile-filter-toggle"><i class="fa fa-sliders"></i> Filters</button>
+      </div>
+      </div>
+    </header>
+    <div class="map-and-list show-map">
+      <div class="search-map">
+        <!-- PUT MAP HERE -->
+        <img src="img/map-filler.jpeg" />
+      </div>
+      <div class="search-list">
+          <header class="hidden-sm">
+            <h1>Commercial Properties in Cedar Rapids, IA</h1>
+            <p class="info">Showing 352 properties</p>
+          </header>
+          <div class="search-list-grid">
+            <div class="theme-card">
+              <figure>
+                <div class="label">Office</div>
+                <img src="img/property-1.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>730 West Main Rd.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label property-color-2">Retail</div>
+                <img src="img/property-2.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>430 West Main Rd.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label property-color-3">Warehouse</div>
+                <img src="img/property-3.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>730 North St.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label">Office</div>
+                <img src="img/property-4.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>1020 1 Ave SE.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="theme-card">
+              <figure>
+                <div class="label">Office</div>
+                <img src="img/property-1.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>730 West Main Rd.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label property-color-2">Retail</div>
+                <img src="img/property-2.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>430 West Main Rd.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label property-color-3">Warehouse</div>
+                <img src="img/property-3.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>730 North St.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label">Office</div>
+                <img src="img/property-4.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>1020 1 Ave SE.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-card">
+              <figure>
+                <div class="label">Office</div>
+                <img src="img/property-1.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>730 West Main Rd.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label property-color-2">Retail</div>
+                <img src="img/property-2.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>430 West Main Rd.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label property-color-3">Warehouse</div>
+                <img src="img/property-3.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>730 North St.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme-card">
+              <figure>
+                <div class="label">Office</div>
+                <img src="img/property-4.jpeg" />
+              </figure>
+              <div class="card-body">
+                <p>1020 1 Ave SE.,<br>Cedar Rapids, IA</p>
+                <p>Price<br><strong>$42.00 / SF</strong></p>
+                <div class="wp-block-buttons is-layout-flex">
+                  <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#.html">Property Details</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-pagination">
+            <p>Viewing page 1 of 5</p>
+            <ul>
+              <li class="pagination-active">1</li>
+              <li><a href="#.html">2</a></li>
+              <li><a href="#.html">3</a></li>
+              <li><a href="#.html">4</a></li>
+              <li><a href="#.html">5</a></li>
+            </ul>
+            <p>Not finding it? <a href="#.html">Contact Us!</a></p>
+          </div>
+      </div>
+      
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="ftr-bkg">
+    <img src="img/bkg-footer.jpg" alt="Design Element" />
+  </div>
+  <div class="container">
+
+    <div class="ftr-cols">
+      <div class="col">
+        <img src="img/logo-inverse.svg" />
+      </div>
+      <div class="col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+          <li><a href="#.html">Footer Link</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Our Locations</h3>
+        <p><strong>Skogman Commercial</strong><br>123 Address Street<br>Cedar Rapids, IA 52402</p>
+        <p><strong>Iowa City Area Commercial</strong><br>123 Address Street<br>Cedar Rapids, IA 52402</p>
+      </div>
+      <div class="col">
+        <h3>Connect</h3>
+        <ul class="wp-block-social-links is-layout-flex wp-block-social-links-is-layout-flex">
+          <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+            <a href="#.html"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
+            <a href="#.html"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="footer-copy">
+      <div class="container">
+      <div class="col">
+        <ul>
+          <li><a href="#.html">Agents Only</a></li>
+          <li><a href="#.html">Disclaimer</a></li>
+          <li><a href="#.html">Terms of Use</a></li>
+        </ul>
+        <p>Copyright © 2024 Skogman Commercial. All Rights Reserved. Web Application by <a target="_blank" href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
+      </div>
+      <div class="col">
+        <div class="flex">
+          Pending
+          <img src="img/ftr-icons.svg" />
+        </div>
+      </div>
+    </div>
+    </div>
+  
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

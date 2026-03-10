@@ -1,0 +1,12 @@
+.img-feature {position: relative; border-radius: 5px; overflow: hidden; margin: 2rem 0; z-index: 5; background: var(--dark);}
+.img-feature > img {position: absolute; inset: 0; z-index: -1; opacity: .35;}
+.img-feature .content {padding: 100px 25px 25px 25px; color: var(--text-color-inverse);}
+
+/* TABLET */
+@media (min-width:768px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

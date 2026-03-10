@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>My County Parks</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    
+    <!-- CSS -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id='skip-nav' class='screenreader-text' href='#main-content'>
+    Skip to Content
+  </a>
+
+  <nav id="site-header" class="fadein">
+    <div class="hdr-top">
+      <div class="container">
+        <ul class="menu-utlity">
+          <li><a href="news.html">News</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="explore.html">Explore Iowa</a></li>
+        </ul>
+        <p class="menu-blurb">Book cabins, shelters, and lodges in Iowa.</p>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <a href="index.html" id="logo">
+          <img src="img/logo.svg" alt="My County Parks Logo" />
+        </a>
+        
+        <div class="menu-user">
+          <a href="#.html" id="user-menu-toggle">
+            <span class="menu-alert">2</span>
+            <i class="fa-regular fa-circle-user"></i>
+            <i class="fa-solid fa-bars"></i>
+          </a>
+
+          <ul id="user-menu-list">
+            <li><a href="#.html">My Account</a></li>
+            <li><a href="#.html"><span class="menu-alert">2</span> Messages</a></li>
+            <li><a href="#.html">Reservations</a></li>
+            <li><a href="#.html">Event Registrations</a></li>
+            <li><a href="#.html">Order History</a></li>
+            <li><a href="#.html">Log out</a></li>
+          </ul>
+        </div>
+        <ul class="menu-main">
+          <li><a href="book-now.html">Book Now</a></li>
+          <li><a href="counties.html">Counties</a></li>
+          <li class="active"><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <header class="page-header fadeinup delay-1">
+      <figure>
+        <img src="img/hero-2.jpg" />
+      </figure>
+      <div class="text">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Events</li>
+          </ol>
+          <h1>Upcoming Events</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="filter">
+        <button type="button" class="filter-toggle">
+          Configure Your Search... <i class="fa-solid fa-sliders"></i>
+        </button>
+        <div id="filters">
+          <div class="filter-mobile-header">
+            Filter Your Search <button class="filter-toggle"><i class="fa fa-close"></i></button>
+          </div>
+          <div class="results">
+            <ul>
+              <li><a href="#.html">Lodge</a></li>
+              <li><a href="#.html">Buchanan</a></li>
+              <li><a href="#.html">Keywords: Swimming</a></li>
+              <li><a href="#.html">Dates: 8/12/2024 - 8/15/2024</a></li>
+            </ul>
+            <span>Showing 75 results</span>
+          </div>
+          <form action="/Event/Event" class="grid-events" id="eventSearchForm" method="post">
+            <div class="form-group">
+            <div class="icon-input">
+                <i class="fa fa-magnifying-glass" aria-true="true"></i>
+                <input class="form-control" id="Keyword" maxlength="100" name="EventSearchModel.Keyword" placeholder="Keyword Search" type="search" value="">
+            </div>
+        </div>
+        <div class="form-group">
+          <div class="icon-input">
+              <i class="fa fa-calendar" aria-true="true"></i>
+              <label for="daterange" class="sr-only">Check Out</label>
+              <input id="daterange" type="text" name="daterange" placeholder="Choose Your Dates" value="">
+          </div>
+      </div>
+        <div class="form-group">
+            <div class="icon-input custom-select">
+                <i class="fa fa-tent" aria-true="true"></i>
+                <select class="form-select" id="ddlCategory" name="EventSearchModel.Category"><option value="">Category</option>
+<option value="Other Location">Other Location</option>
+<option value="Programs">Programs</option>
+<option value="Special Events">Special Events</option>
+<option value="Trips">Trips</option>
+<option value="Youth Camps">Youth Camps</option>
+</select>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="icon-input custom-select">
+                <i class="fa fa-map" aria-true="true"></i>
+                <select class="form-select" id="ddlCounty" name="EventSearchModel.CountyName"><option value="">County</option>
+<option value="Adair">Adair</option>
+<option value="Adams">Adams</option>
+<option value="Allamakee">Allamakee</option>
+<option value="Appanoose">Appanoose</option>
+<option value="Audubon">Audubon</option>
+<option value="Benton">Benton</option>
+<option value="Black Hawk">Black Hawk</option>
+<option value="Boone">Boone</option>
+<option value="Bremer">Bremer</option>
+<option value="Buchanan">Buchanan</option>
+<option value="Buena Vista">Buena Vista</option>
+<option value="Butler">Butler</option>
+<option value="Calhoun">Calhoun</option>
+<option value="Carroll">Carroll</option>
+<option value="Cass">Cass</option>
+<option value="Cedar">Cedar</option>
+<option value="Cerro Gordo">Cerro Gordo</option>
+<option value="Cherokee">Cherokee</option>
+<option value="Chickasaw">Chickasaw</option>
+<option value="Clarke">Clarke</option>
+<option value="Clay">Clay</option>
+<option value="Clayton">Clayton</option>
+<option value="Clinton">Clinton</option>
+<option value="Crawford">Crawford</option>
+<option value="Dallas">Dallas</option>
+<option value="Davis">Davis</option>
+<option value="Decatur">Decatur</option>
+<option value="Delaware">Delaware</option>
+<option value="Des Moines">Des Moines</option>
+<option value="Dickinson">Dickinson</option>
+<option value="Dubuque">Dubuque</option>
+<option value="Emmet">Emmet</option>
+<option value="Fayette">Fayette</option>
+<option value="Floyd">Floyd</option>
+<option value="Franklin">Franklin</option>
+<option value="Fremont">Fremont</option>
+<option value="Greene">Greene</option>
+<option value="Grundy">Grundy</option>
+<option value="Guthrie">Guthrie</option>
+<option value="Hamilton">Hamilton</option>
+<option value="Hancock">Hancock</option>
+<option value="Hardin">Hardin</option>
+<option value="Harrison">Harrison</option>
+<option value="Henry">Henry</option>
+<option value="Howard">Howard</option>
+<option value="Humboldt">Humboldt</option>
+<option value="Ida">Ida</option>
+<option value="Iowa">Iowa</option>
+<option value="Jackson">Jackson</option>
+<option value="Jasper">Jasper</option>
+<option value="Jefferson">Jefferson</option>
+<option value="Johnson">Johnson</option>
+<option value="Jones">Jones</option>
+<option value="Keokuk">Keokuk</option>
+<option value="Kossuth">Kossuth</option>
+<option value="Lee">Lee</option>
+<option value="Linn">Linn</option>
+<option value="Louisa">Louisa</option>
+<option value="Lucas">Lucas</option>
+<option value="Lyon">Lyon</option>
+<option value="Madison">Madison</option>
+<option value="Mahaska">Mahaska</option>
+<option value="Marion">Marion</option>
+<option value="Marshall">Marshall</option>
+<option value="Mills">Mills</option>
+<option value="Mitchell">Mitchell</option>
+<option value="Monona">Monona</option>
+<option value="Monroe">Monroe</option>
+<option value="Montgomery">Montgomery</option>
+<option value="Muscatine">Muscatine</option>
+<option value="O'Brien">O'Brien</option>
+<option value="Osceola">Osceola</option>
+<option value="Page">Page</option>
+<option value="Palo Alto">Palo Alto</option>
+<option value="Plymouth">Plymouth</option>
+<option value="Pocahontas">Pocahontas</option>
+<option value="Polk">Polk</option>
+<option value="Pottawattamie">Pottawattamie</option>
+<option value="Poweshiek">Poweshiek</option>
+<option value="Ringgold">Ringgold</option>
+<option value="Sac">Sac</option>
+<option value="Scott">Scott</option>
+<option value="Shelby">Shelby</option>
+<option value="Sioux">Sioux</option>
+<option value="Story">Story</option>
+<option value="Tama">Tama</option>
+<option value="Taylor">Taylor</option>
+<option value="Union">Union</option>
+<option value="Van Buren">Van Buren</option>
+<option value="Wapello">Wapello</option>
+<option value="Warren">Warren</option>
+<option value="Washington">Washington</option>
+<option value="Wayne">Wayne</option>
+<option value="Webster">Webster</option>
+<option value="Winnebago">Winnebago</option>
+<option value="Winneshiek">Winneshiek</option>
+<option value="Woodbury">Woodbury</option>
+<option value="Worth">Worth</option>
+<option value="Wright">Wright</option>
+</select>
+            </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="icon-input custom-select">
+              <i class="fa fa-tree" aria-true="true"></i>
+              <select class="form-select" id="ddlActivity" name="EventSearchModel.ActivtyIcon"><option value="">Park</option>
+              <option value="Biking">Biking</option>
+              <option value="Boating">Boating</option>
+              <option value="Cabins">Cabins</option>
+              <option value="Camping">Camping</option>
+              <option value="Canoeing &amp; Kayaking">Canoeing &amp; Kayaking</option>
+              <option value="Disc Golf">Disc Golf</option>
+              <option value="Education">Education</option>
+              <option value="Electric Vehicle Charging Station">Electric Vehicle Charging Station</option>
+              <option value="Equestrian Activities">Equestrian Activities</option>
+              <option value="Facility Rentals">Facility Rentals</option>
+              <option value="FALL COLORS">FALL COLORS</option>
+              <option value="Fishing">Fishing</option>
+              <option value="Geocaching">Geocaching</option>
+              <option value="Historic Visits">Historic Visits</option>
+              <option value="Hunting">Hunting</option>
+              <option value="Other Activities">Other Activities</option>
+              <option value="Para Gliding">Para Gliding</option>
+              <option value="Picnicking">Picnicking</option>
+              <option value="Swimming">Swimming</option>
+              <option value="Trails &amp; Hiking">Trails &amp; Hiking</option>
+              <option value="Winter Activities">Winter Activities</option>
+              </select>
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="icon-input custom-select">
+            <i class="fa fa-hiking" aria-true="true"></i>
+            <select class="form-select" id="ddlActivity" name="EventSearchModel.ActivtyIcon"><option value="">Activity</option>
+            <option value="Biking">Biking</option>
+            <option value="Boating">Boating</option>
+            <option value="Cabins">Cabins</option>
+            <option value="Camping">Camping</option>
+            <option value="Canoeing &amp; Kayaking">Canoeing &amp; Kayaking</option>
+            <option value="Disc Golf">Disc Golf</option>
+            <option value="Education">Education</option>
+            <option value="Electric Vehicle Charging Station">Electric Vehicle Charging Station</option>
+            <option value="Equestrian Activities">Equestrian Activities</option>
+            <option value="Facility Rentals">Facility Rentals</option>
+            <option value="FALL COLORS">FALL COLORS</option>
+            <option value="Fishing">Fishing</option>
+            <option value="Geocaching">Geocaching</option>
+            <option value="Historic Visits">Historic Visits</option>
+            <option value="Hunting">Hunting</option>
+            <option value="Other Activities">Other Activities</option>
+            <option value="Para Gliding">Para Gliding</option>
+            <option value="Picnicking">Picnicking</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Trails &amp; Hiking">Trails &amp; Hiking</option>
+            <option value="Winter Activities">Winter Activities</option>
+            </select>
+        </div>
+    </div>
+        <div class="form-actions">
+            <button type="button" class="btn-simple" id="clearEventFilter">Clear</button>
+            <button type="submit" class="btn-theme" id="searchButton">Search</button>
+        </div>
+<input id="hiddenParkId" name="EventSearchModel.ParkId" type="hidden" value="0"><input id="ActivtyIcon" name="EventSearchModel.ActivtyIcon" type="hidden" value=""><input data-val="true" data-val-required="The ActivtyIconId field is required." id="ActivtyIconId" name="EventSearchModel.ActivtyIconId" type="hidden" value="0"><input id="hiddenParkName" name="EventSearchModel.ParkName" type="hidden" value=""><input id="hiddenLatitude" name="EventSearchModel.Latitude" type="hidden" value=""><input id="hiddenLongitude" name="EventSearchModel.Longitude" type="hidden" value=""><input id="hdnStartDate" name="EventSearchModel.StartDate" type="hidden" value="2024-09-10"><input id="hdnEndDate" name="EventSearchModel.EndDate" type="hidden" value="2024-12-10"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8PbEUzs7ifdCnsB8iVvf63i3H_6P7k4MfDz-lQI_NOTh7IZTBllowhg80K7TTQ0MHoWgff16Jl71fXLqw-KU0dDrvLlSQWp94aVMxusZ_sskaax5jqJ4WwLW1f5AGcPpHof2lA0baOblxdHn9QWo8SM"></form>
+        </div>
+      </div>
+
+      <div class="results">
+        <ul>
+          <li class="filters-title">Filters:</li>
+          <li><a href="#.html">Buchanan</a></li>
+          <li><a href="#.html">Category: Youth Camps</a></li>
+        </ul>
+        <span>Showing 75 results</span>
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="content-sections">
+
+
+      <!-- RESULTS LIST -->
+      <section class="animate-in delay-3">
+        <div class="container">
+          <div class="auto-grid-4 grid-gap-sm horizontal-items">
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/event-1.jpg" />
+                </figure>
+                <p class="date">May 12 <i class="fa-solid fa-circle"></i> 4:30 PM</p>
+                <h3>Spring Ephemeral Hike</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Johnson County</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/event-5.jpg" />
+                </figure>
+                <p class="date">May 12 <i class="fa-solid fa-circle"></i> 7:30 - 9:30 PM</p>
+                <h3>Central Park Frog and Toad Survey</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Jones County</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/event-2.jpg" />
+                </figure>
+                <p class="date">May 13 <i class="fa-solid fa-circle"></i> 8:00 AM</p>
+                <h3>Bird Watching at Big Sioux Recreation Area</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Sioux County</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/event-4.jpg" />
+                </figure>
+                <p class="date">May 13 <i class="fa-solid fa-circle"></i> 9:00 AM</p>
+                <h3>Bird Hike</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Cerro Gordo County</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/event-3.jpg" />
+                </figure>
+                <p class="date">May 13 <i class="fa-solid fa-circle"></i> 9:00 AM</p>
+                <h3>Spring Hike</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Johnson County</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/event-6.jpg" />
+                </figure>
+                <p class="date">May 13 <i class="fa-solid fa-circle"></i> 9:30 AM</p>
+                <h3>Spring Bird Banding</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Linn County</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/activity-hike.jpg" />
+                </figure>
+                <p class="date">May 13 <i class="fa-solid fa-circle"></i> 8:00 AM</p>
+                <h3>Women in the Wilderness - Spring Hike at Nine Eagles</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Decatur County</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/event-7.jpg" />
+                </figure>
+                <p class="date">May 13 <i class="fa-solid fa-circle"></i> 10:00 AM</p>
+                <h3>Garlic Mustard Pick-nic</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Johnson</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/activity-bike.jpg" />
+                </figure>
+                <p class="date">May 13 <i class="fa-solid fa-circle"></i> 9:00 AM</p>
+                <h3>Bike and Look Travel Fun</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Johnson</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/feature-discount.jpg" />
+                </figure>
+                <p class="date">May 14 <i class="fa-solid fa-circle"></i> 10:00 AM</p>
+                <h3>Cold Water Kayak Race</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Johnson</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/feature-careers.jpg" />
+                </figure>
+                <p class="date">May 14 <i class="fa-solid fa-circle"></i> 9:30 AM</p>
+                <h3>Landscaping for Wildlife</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Johnson</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide scroll-item">
+              <a href="event.html">
+                <figure>
+                  <img src="img/activity-hike.jpg" />
+                </figure>
+                <p class="date">May 14 <i class="fa-solid fa-circle"></i> 8:00 AM</p>
+                <h3>Women in the Wilderness - Spring Hike at Nine Eagles</h3>
+              </a>
+              <div class="text">
+                <ul>
+                  <li><a href="county.html"><i class="fa-solid fa-map-location-dot"></i> Johnson</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOAD MORE -->
+      <section>
+        <div class="container">
+          <div class="load-more animate-in delay-2">
+            <a href="counties.html" class="btn-theme">Load More Results</a>
+          </div>
+        </div>
+      </section>
+       <!-- CTA -->
+       <section>
+        <div class="container">
+          <div class="content-cta animate-in delay-3">
+            <figure><img src="img/hero-location-couple.jpg"></figure>
+            <div class="text">
+              <h2>Search Near You!</h2>
+              <p>Turn on location services and get results within miles of your current location!</p>
+              <a href="book-now.html" class="btn-theme">Turn On Location Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR SEARCHES-->
+      <section class="animate-in delay-1">
+        <div class="container">
+          <div class="full-hdr">
+            <h3>Popular Events</h3>
+            <hr />
+          </div>
+    
+          <div class="scroll-item-wrapper">
+            <div class="swiper scroll-list">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide scroll-item">
+                  <a href="event.html">
+                    <figure>
+                      <img src="img/feature-tall-14.jpg" />
+                    </figure>
+                    <h3>Landmarks of Iowa</h3>
+                  </a>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="event.html">
+                    <figure>
+                      <img src="img/feature-hike.jpg" />
+                    </figure>
+                    <h3>Parks with hiking trails in Black Hawk County</h3>
+                  </a>
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="event.html">
+                    <figure>
+                      <img src="img/feature-tall-15.jpg" />
+                    </figure>
+                    <h3>Am I close to Adventureland?</h3>
+                  </a>
+                  
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="event.html">
+                    <figure>
+                      <img src="img/feature-tall-6.jpg" />
+                    </figure>
+                    <h3>Facilities with a grill in Polk County</h3>
+                  </a>
+                  
+                </div>
+                <div class="swiper-slide scroll-item">
+                  <a href="event.html">
+                    <figure>
+                      <img src="img/feature-higwayhike.jpg" />
+                    </figure>
+                    <h3>Hiking Near Highways</h3>
+                  </a>
+                  
+                </div>
+                
+                <div class="swiper-slide scroll-item">
+                  <a href="event.html">
+                    <figure>
+                      <img src="img/feature-tall-last.jpg" />
+                    </figure>
+                    <h3>Still Can't Find What You Want?</h3>
+                  </a>
+                  <div class="text">
+                    <ul>
+                      <li><a href="book-now.html"><i class="fa-regular fa-calendar-check"></i> Advanced Search</a></li>
+                      <li><a href="#.html"><i class="fa-regular fa-calendar-check"></i> Explore Iowa</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+    
+  </main>
+
+<footer class="footer">
+  <div class="container">
+    
+      <div class="row">
+        <div class="ftr-cols">
+          <div class="col">
+            <img src="img/logo.svg" />
+            <p>We are a one-stop-shop for outdoor enthusiasts, offering a wide range of recreational activities and rentals for planning your next adventure.</p>
+            
+          </div>
+          <div class="col">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="#.html">Offers</a></li>
+              <li><a href="#.html">News</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#.html">Careers</a></li>
+              <li><a href="#.html">Contact Us</a></li>
+              <a href="#.html">MCP on Facebook</a>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#.html">Book a Facility</a></li>
+              <li><a href="#.html">Explore Events</a></li>
+              <li><a href="#.html">Discover Our Counties</a></li>
+              <li><a href="#.html">Activities</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      
+      <h4 class="text-center">Explore Iowa's 99 Counties</h4>
+      <ul class="county-list">
+        <li><a href="county.html">Adair</a></li>
+        <li><a href="county.html">Adams</a></li>
+        <li><a href="county.html">Allamakee</a></li>
+        <li><a href="county.html">Appanoose</a></li>
+        <li><a href="county.html">Audubon</a></li>
+        <li><a href="county.html">Benton</a></li>
+        <li><a href="county.html">Black Hawk</a></li>
+        <li><a href="county.html">Boone</a></li>
+        <li><a href="county.html">Bremer</a></li>
+        <li><a href="county.html">Buchanon</a></li>
+        <li><a href="county.html">Buena Vista</a></li>
+        <li><a href="county.html">Butler</a></li>
+        <li><a href="county.html">Calhoun</a></li>
+        <li><a href="county.html">Carroll</a></li>
+        <li><a href="county.html">Cass</a></li>
+        <li><a href="county.html">Cedar</a></li>
+        <li><a href="county.html">Cerro Gordo</a></li>
+        <li><a href="county.html">Cherokee</a></li>
+        <li><a href="county.html">Chickasaw</a></li>
+        <li><a href="county.html">Clarke</a></li>
+        <li><a href="county.html">Clay</a></li>
+        <li><a href="county.html">Clayton</a></li>
+        <li><a href="county.html">Clinton</a></li>
+        <li><a href="county.html">Crawford</a></li>
+        <li><a href="county.html">Dallas</a></li>
+        <li><a href="county.html">Davis</a></li>
+        <li><a href="county.html">Decatur</a></li>
+        <li><a href="county.html">Delaware</a></li>
+        <li><a href="county.html">Des Moines</a></li>
+        <li><a href="county.html">Dickinson</a></li>
+        <li><a href="county.html">Dubuque</a></li>
+        <li><a href="county.html">Emmet</a></li>
+        <li><a href="county.html">Fayette</a></li>
+        <li><a href="county.html">Floyd</a></li>
+        <li><a href="county.html">Franklin</a></li>
+        <li><a href="county.html">Fremont</a></li>
+        <li><a href="county.html">Greene</a></li>
+        <li><a href="county.html">Grundy</a></li>
+        <li><a href="county.html">Hamilton</a></li>
+        <li><a href="county.html">Hancock</a></li>
+        <li><a href="county.html">Hardin</a></li>
+        <li><a href="county.html">Harrison</a></li>
+        <li><a href="county.html">Henry</a></li>
+        <li><a href="county.html">Howard</a></li>
+        <li><a href="county.html">Humboldt</a></li>
+        <li><a href="county.html">Ida</a></li>
+        <li><a href="county.html">Iowa</a></li>
+        <li><a href="county.html">Jackson</a></li>
+        <li><a href="county.html">Jasper</a></li>
+        <li><a href="county.html">Jefferson</a></li>
+        <li><a href="county.html">Johnson</a></li>
+        <li><a href="county.html">Jones</a></li>
+        <li><a href="county.html">Keokuk</a></li>
+        <li><a href="county.html">Kossuth</a></li>
+        <li><a href="county.html">Lee</a></li>
+        <li><a href="county.html">Linn</a></li>
+        <li><a href="county.html">Louisa</a></li>
+        <li><a href="county.html">Lucas</a></li>
+        <li><a href="county.html">Lyon</a></li>
+        <li><a href="county.html">Madison</a></li>
+        <li><a href="county.html">Mahaska</a></li>
+        <li><a href="county.html">Marion</a></li>
+        <li><a href="county.html">Marshall</a></li>
+        <li><a href="county.html">Mills</a></li>
+        <li><a href="county.html">Mitchell</a></li>
+        <li><a href="county.html">Monona</a></li>
+        <li><a href="county.html">Monroe</a></li>
+        <li><a href="county.html">Montgomery</a></li>
+        <li><a href="county.html">Muscatine</a></li>
+        <li><a href="county.html">O'Brien</a></li>
+        <li><a href="county.html">Osceola</a></li>
+        <li><a href="county.html">Page</a></li>
+        <li><a href="county.html">Palo Alto</a></li>
+        <li><a href="county.html">Plymouth</a></li>
+        <li><a href="county.html">Pocahantas</a></li>
+        <li><a href="county.html">Polk</a></li>
+        <li><a href="county.html">Pottawattamie</a></li>
+        <li><a href="county.html">Poweshiek</a></li>
+        <li><a href="county.html">Ringgold</a></li>
+        <li><a href="county.html">Sac</a></li>
+        <li><a href="county.html">Scott</a></li>
+        <li><a href="county.html">Shelby</a></li>
+        <li><a href="county.html">Sioux</a></li>
+        <li><a href="county.html">Story</a></li>
+        <li><a href="county.html">Tama</a></li>
+        <li><a href="county.html">Taylor</a></li>
+        <li><a href="county.html">Union</a></li>
+        <li><a href="county.html">Van Buren</a></li>
+        <li><a href="county.html">Wapello</a></li>
+        <li><a href="county.html">Warren</a></li>
+        <li><a href="county.html">Washington</a></li>
+        <li><a href="county.html">Wayne</a></li>
+        <li><a href="county.html">Webster</a></li>
+        <li><a href="county.html">Winnebago</a></li>
+        <li><a href="county.html">Winneshiek</a></li>
+        <li><a href="county.html">Woodbury</a></li>
+        <li><a href="county.html">Worth</a></li>
+        <li><a href="county.html">Wright</a></li>
+      </ul>
+      <hr />
+      <div class="copy">
+        <p>© 2023 My County Parks | All Rights Reserved | Web Application by <a href="#.html">Informatics, Inc</a></p>
+        <ul>
+          <li><a href="#.html">Terms and Conditions</a></li>
+          <li><a href="#.html">Cookie Statement</a></li>
+          <li><a href="#.html">Privacy Policy</a></li>
+        </ul>
+        
+      </p>
+  </div>
+</footer>
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <!-- NEW DATE PICKER -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script src="js/scripts.js"></script>
+
+  </body>
+</html>

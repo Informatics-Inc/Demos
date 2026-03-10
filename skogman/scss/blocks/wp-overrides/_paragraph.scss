@@ -1,0 +1,5 @@
+/* WP Paragraph Styles */
+.is-style-eyebrow {text-transform: uppercase; color: var(--dark); letter-spacing: 2px; margin-bottom: .5rem; font-weight: 400;}
+.is-style-lead {font-size: 1.15rem; font-weight: 700; line-height: 1.2;}
+.is-style-callout {font-size: 1.25rem; border-left: 5px solid var(--accent-1); padding-left: 1.25rem;}
+.is-style-max-width {max-width: var(--max-width) !important; @include margin-auto;}

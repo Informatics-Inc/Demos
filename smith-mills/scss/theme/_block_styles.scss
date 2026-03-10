@@ -1,0 +1,61 @@
+/* WP Paragraph Styles */
+.is-style-eyebrow {font-size:0.9rem;font-weight:500;text-transform: uppercase; color: var(--primary-dark); letter-spacing: 3px; margin: 0 0 1.2rem 0;}
+.is-style-eyebrow:before {content:"";display:inline-block;width:13px;height:13px;margin-bottom:-1px;margin-right:12px;background-color:var(--secondary)}
+.is-style-lead {font-size: 1.15rem;line-height:1.5; font-weight: 400;}
+.is-style-callout {font-size: 1.25rem; border-left: 4px solid var(--primary-light); padding-left: 1.25rem;}
+.is-style-max-width {max-width: 800px; @include margin-auto;}
+
+/* WP Column Section Colors */
+/* Light background */
+.is-style-bkg-left, .is-style-bkg-right {padding: 1px 0; position: relative; z-index: 5; overflow: hidden;}
+.is-style-bkg-left:after, .is-style-bkg-right:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--primary-dark); border-radius: 0px; content:""; z-index: -1; border-radius: 0 }
+.is-style-bkg-right:after {left: auto; right: 0;border-radius: 0 }
+
+.is-style-linklist {list-style-type:none;padding-left:0;}
+.is-style-linklist li {list-style-type:none;position:relative;padding-left:24px;margin-bottom:15px;line-height:1.4}
+.is-style-linklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--primary)}
+
+/* WP Block Separator */
+.wp-block-separator, hr {margin:40px auto; border: none; border-bottom: 1px solid #ccc; max-width: var(--max-width);} 
+
+/* WP File Block Styles */
+.wp-block-file:not(.wp-element-button) {
+    font-size: .85em;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+}
+.wp-block-file * + .wp-block-file__button {
+    margin-left: .75em;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.is-style-bkg-light {background:var(--white); background-size: 600px auto; background-position: 5% center; padding: 1px 0}
+
+/* WP Block Cover */
+.wp-block-cover .wp-block-cover__background {opacity: .7;}
+.wp-block-cover .has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image .has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
+.wp-block-cover.has-background-dim:not([class*=-background-color]) {
+  background-color:var(--primary-dark)
+}
+
+/* Columns */
+.is-style-small-margin {margin-top: -2rem !important;}
+.is-style-large-gap {gap: 4rem !important;}
+.is-style-small-margin + .is-style-small-margin {margin-bottom: 3rem !important;}
+/* Social Media Links */
+.wp-block-social-links .wp-social-link {color: #fff;}
+.wp-block-social-links .wp-social-link a {color: #fff !important;}
+
+
+@media (min-width: 768px) {
+.wp-block-image .alignleft, .wp-block[data-align="left"] > .wp-block-image {float:left; margin: 0 2rem 2rem 0; max-width: 50%;}
+.wp-block-image .alignright, .wp-block[data-align="right"] > .wp-block-image {float:right; margin: 0 0 2rem 2rem; max-width: 50%;}
+}

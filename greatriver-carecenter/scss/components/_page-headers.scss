@@ -1,0 +1,15 @@
+/* Subpage Headers */
+.page-hdr{position:relative;z-index:5;text-align:center; }
+.page-hdr .container{padding:75px 25px 55px 25px;}
+.page-hdr h1{margin-top:10px;margin-bottom:0px;color:#fff}
+.page-hdr .breadcrumb{font-size:1.1rem;background:none;padding:0;margin:0;color:var(--light-color);opacity:1;font-weight:700;letter-spacing: 0.5px;}
+.page-hdr .breadcrumb a{color:#fff;}
+.page-hdr .breadcrumb a:hover{color:var(--primary-color);}
+.breadcrumb{padding:8px 15px;list-style:none;}
+.breadcrumb>li{display:inline-block}
+.breadcrumb>li+li:before{padding:0 5px;color:#fff;content:"• "}
+.breadcrumb>.active{font-weight:600;color:var(--primary-color);}
+
+@media (min-width:992px){
+.page-hdr .container{padding:125px 25px 105px 25px;}
+    }

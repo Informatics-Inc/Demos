@@ -1,0 +1,17 @@
+.subpage .hero-image{display:flex;justify-content:center;align-items:center;position:relative;}
+.subpage .hero-content h1{font-size:1.5rem;line-height:1.8rem}
+.subpage .hero-content h1::before{content:'';position:absolute;top:45px;left:50%;transform:translateX(-22px);width:45px;height:1px;background-color:var(--primary);}
+.subpage .hero-content {position:relative;padding:60px 0px 20px 0px;}
+
+.breadcrumb{font-size:0.65rem;text-transform: uppercase;letter-spacing:1px}
+.breadcrumb-item.active{color:var(--primary)}
+.breadcrumb-item a{color:#fff}
+.breadcrumb-item a:hover{color:var(--primary)}
+
+/* WIDE DESKTOP */
+@media (min-width:992px){
+.subpage .hero-content{position:relative;padding:80px 0px 50px 0px;margin-top:160px}
+.subpage .hero-content h1::before{top:65px;width:65px;}
+.subpage .hero-content h1{font-size:2.375rem;line-height:2.75rem}
+.breadcrumb{font-size:0.85rem;letter-spacing:0px}
+}

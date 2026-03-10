@@ -1,0 +1,17 @@
+.footer {background: var(--dark); color: var(--text-inverse); margin-top: 3rem; padding: 1rem; text-align: center;}
+.footer .container > * {margin: 0; color: var(--text-inverse); padding: 0;}
+.footer p {margin: 0; font-size: .8rem;}
+.footer a {color: var(--text-inverse); font-weight: 400;}
+/* TABLET */
+@media (min-width: 768px) {
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+.footer .container {display: flex; justify-content: space-between;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}

@@ -1,0 +1,24 @@
+.hero .content h1 {font-size: 2.75rem; margin-bottom: 2rem;}
+.hero .content p {color: rgba(255,255,255,.85); font-size: 1.25rem;}
+.hero .content .button {background: rgba(0,0,0,.2); border-color: rgba(255,255,255,.2); color: var(--primary); font-size: 1.1rem;}
+.hero .content .button:hover {background: rgba(0,0,0,.5);border-color: inherit;}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+.hero .content {text-align: left; @include container; padding: 5rem var(--spacer) 5rem var(--spacer); display: grid; grid-template-columns: 55% auto; justify-items: flex-start;}
+.hero .content > * {grid-column: 1;}
+.hero .content h1 {font-size: 3.5rem;}
+.hero .content h1:after {left: 0;}
+.hero figure {background: linear-gradient(90deg, rgba(25,25,25,1) 6%, rgba(96,92,92,1) 33%, rgba(255,255,255,1) 59%);}
+.hero figure img {opacity: 1; mix-blend-mode: multiply;}
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+.hero .content {padding: 7rem var(--spacer) 7rem var(--spacer);}
+.hero .content h1 {font-size: 4.5rem;}
+.hero .content p {font-size: 1.5rem; width: 80%; font-weight: 300;}
+}
+
+

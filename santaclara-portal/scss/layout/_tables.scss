@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.table-responsive {box-shadow: 0 5px 15px rgba(0,0,0,.1);}
+.portal-table {font-size: .85rem; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,.1); border: 1px solid #ccc; width: 100%;}
+.portal-table th {padding: 10px 15px; border-bottom: 1px solid #ccc; background: #f4f4f4;}
+.portal-table th a {color: var(--text);}
+.portal-table td {padding: 10px 15px;}
+.portal-table tr {border-bottom: 1px dotted #ccc;}
+
+.portal-table .success {color: #38844B; font-weight: 700; background: #ECF7EF;}
+.portal-table .success:before {content: "\f00c";font-family: FontAwesome; margin: 0 5px 0 0;}
+.portal-table .error {color: #8D2B1E; font-weight: 700; background: #F7EDEC;}
+.portal-table .error:before {content: "\f05e";font-family: FontAwesome; margin: 0 5px 0 0;}
+.portal-table .ready {color: #555; font-weight: 700; background: #E8F4FA;}
+.portal-table .ready:before {content: "\f017";font-family: FontAwesome; margin: 0 5px 0 0;}
+
+.table-dropdown {position: relative;}
+.table-dropdown button {position: relative; color: var(--primary); font-size: .8rem; color: var(--primary); font-size: .9rem; padding: 0;}
+.table-dropdown button:before {content: "\f044";font-family: FontAwesome; margin: 0 2px 0 0;}
+.table-dropdown ul {position: absolute; background: #fff; box-shadow: 5px 5px 15px rgba(0,0,0,.1); list-style: none; padding: 0; margin: 0; width: 100px; top: 100%; right: 0; border: 2px solid #ccc; z-index: 15; visibility: hidden; opacity: 1;}
+.table-dropdown ul a {padding: 5px 10px; display: block; color: var(--text);}
+.table-dropdown button.open + ul {opacity: 1; visibility: visible;}
+/* TABLET */
+@media (min-width: 768px) {
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1450px) {
+}

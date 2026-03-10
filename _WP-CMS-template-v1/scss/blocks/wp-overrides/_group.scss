@@ -1,0 +1,10 @@
+/* Background Block Left / Right Side */
+.is-style-bkg-left, .is-style-bkg-right {padding: 1px 0; position: relative; z-index: 5; overflow: hidden; max-width: none;}
+.is-style-bkg-left:after, .is-style-bkg-right:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100% - ( (60% - var(--max-width)/2)));background: var(--light); border-radius: 0 10px 10px 0; content:""; z-index: -1; border-radius: 0 var(--border-radius-xl) var(--border-radius-xl) 0;}
+.is-style-bkg-right:after {left: auto; right: 0; border-radius: var(--border-radius-xl) 0 0 var(--border-radius-xl);}
+
+/* Background Dark */
+.is-style-bkg-dark {background: var(--primary-dark); padding: 1px 0; color: var(--text-color-inverse);}
+
+/* Background Light */
+.is-style-bkg-light {background: var(--light); padding: 1px 0;}

@@ -1,0 +1,4 @@
+.file-list {display: grid; grid-template-columns: repeat( auto-fit, minmax(175px, 1fr) ); gap: 15px; align-items: center;}
+.file-list a {background: #fff; padding: 10px; border-radius: 5px; color: var(--text-color); text-decoration: none; font-weight: 600; font-size: .85rem;}
+.file-list a .fa {font-size: 1.25rem; margin: 0 5px 0 0; color: var(--primary);}
+.file-list a:hover {text-decoration: underline;}

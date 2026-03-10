@@ -1,0 +1,16 @@
+.mbd-images img {border-radius: 5px;}
+.mbd-images {display: grid; gap: 1.5rem;}
+
+.mdb-images-stack {position: absolute; height: 100%; grid-template-rows: 1fr 1fr;}
+.mdb-images-stack img {width: 100%; height: 100%; object-fit: cover;}
+
+.mbd-images-combo {display: grid; grid-template-columns: 1fr 1fr; height: calc(100% + 50px);}
+.mbd-images-combo img {width: 100%; height: 100%; object-fit: cover;}
+.mbd-images-combo img:first-of-type {height: 60%; margin-top: 20%;}
+
+/* TABLET */
+@media (min-width: 768px) {
+} 
+
+@media (min-width: 1200px) {
+}

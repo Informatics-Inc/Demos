@@ -1,0 +1,14 @@
+.footer {position: relative; z-index: 5; background: var(--primary); color: var(--text-color-inverse); padding: 1px 0;}
+.footer ul {padding: 00; list-style: none;}
+.footer ul a {color: var(--text-color-inverse); display: block; padding: 5px;}
+.footer h4 {color: #fff;}
+.ftr-cols {display: flex; flex-wrap: wrap; gap: var(--column-gap); margin: var(--spacer-vert) 0;}
+.ftr-cols .col {flex: 1 1 25%; max-width: 300px;}
+
+.ftr-copy {text-align: center; background: var(--primary-dark); padding: 15px; margin: 0; font-size: .85rem; color: var(--text-color-inverse);}
+.ftr-copy a {color: var(--text-color-inverse);}
+.ftr-copy a:hover {color: #fff;}
+
+@media (min-width: 992px) {
+.ftr-cols {flex-wrap: nowrap;}
+}

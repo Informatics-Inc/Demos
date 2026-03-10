@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Santa Clara Portal</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ccm.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<main id="main">
+  <div class="tools">
+    <div class="language">
+      <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#lang-options" aria-expanded="false" aria-controls="lang-options"><img src="img/flag-us.jpg" /><span>Language: English <i class="fa fa-caret-down"></i></span></button>
+      <ul id="lang-options" class="collapse">
+        <li><a href="#.html"><img src="img/flag-us.jpg" /> English</a></li>
+        <li><a href="#.html"><img src="img/flag-viet.jpg" /> Vietnamese</a></li>
+      </ul>
+    </div>
+    <div class="user-details">
+      <p>Logged in as <a href="#.html">Lisa Vazquez</a> | <a href="#.html">Logout<i class="fa-solid fa-arrow-right-from-bracket"></i></a></p>
+    </div>
+  </div>
+
+  <div class="admin-wrapper">
+    <nav class="menu">
+      <div class="menu-wrapper">
+        <div class="menu-hdr">
+          <div class="brand">
+            <img src="img/logo.jpg" />
+            <p>Child Care Portal</p>
+          </div>
+          <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#menu-expand" aria-expanded="false" aria-controls="menu-expand"><i class="fa fa-bars"></i></span></button>
+        </div>
+        <div id="menu-expand" class="collapse">
+          <ul class="menu-links">
+            <li><a href="index.html"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="referrals.html"><i class="fa fa-check"></i>Approve/Deny Referrals</a>
+            </li>
+            <li class="active"><a href="details.html"><i class="fa fa-building"></i>Your Facilities</a>
+              <ul>
+                <li><a href="#.html">Location #1</a></li>
+                <li class="active"><a href="#.html">Location #2</a>
+                  <ul>
+                    <li><a href="details-detail.html">Manage Admins</a></li>
+                    <li><a href="details-detail.html">Referral & Vacancies</a></li>
+                    <li><a href="details-detail.html">License Information</a></li>
+                    <li class="active"><a href="details-detail.html">Public Information</a></li>
+                    <li><a href="details-detail.html">Contact Information</a></li>
+                    <li><a href="details-detail.html">Workforce Information</a></li>
+                    <li><a href="details-detail.html">Transportation & Meals</a></li>
+                    <li><a href="details-detail.html">Schedule Of Care</a></li>
+                    <li><a href="details-detail.html">Payment & Subsidies</a></li>
+                    <li><a href="details-detail.html">Qualifications</a></li>
+                    <li><a href="details-detail.html">Program Information</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="family.html"><i class="fa fa-users"></i>Family Information</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="portal-content fadein">
+      <div class="portal-content-hdr">
+        <ol class="breadcrumb">
+          <li><a href="details.html">Your Faciliities</a></li>
+          <li>Location #2</li>
+        </ol>
+        <div class="hdr-wrap">
+          <h1>Facility #2</h1>
+          <div class="hdr-buttons">
+            <a href="#.html" class="btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-file-export"></i> Export To Excel</a>
+          </div>
+        </div>
+        <p>Manage your license information here.</p>
+      </div>
+      <div class="ccm-ui">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="ccm-pane-body">
+<form method="post" action="https://www.childcarescc.org/index.php/dashboard/portal/providers/save_licensing">
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="type_of_care_license" class="required control-label">Type of Care</label>                    <select id="type_of_care_license" name="type_of_care_license" class="disable-provider-admin disable-site-super-admin form-control" ccm-passed-value="36" disabled="disabled"><option value="">-- Select Care Type --</option><option value="36" selected="selected">Licensed Center</option><option value="37">License Exempt</option><option value="35">Licensed Family Childcare</option></select>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="provisional_license_expires" class="control-label">Provisional License Expires On</label>                    <input type="text" id="provisional_license_expires" name="provisional_license_expires" value="" class="margin-bottom datepicker disable-provider-admin disable-site-super-admin form-control ccm-input-text hasDatepicker" placeholder="Provisional License Expires On" disabled="disabled">                </div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="preschool_or_family_license_number" class="required control-label">License Number - Preschool or Family Home</label>                    <input type="text" id="preschool_or_family_license_number" name="preschool_or_family_license_number" value="457976564" class="disable-provider-admin disable-site-super-admin form-control ccm-input-text" maxlength="255" placeholder="License Number - Preschool or Family Home" disabled="disabled">                </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="infant_license_number" class="required control-label">License Number - Infant (Centers Only)</label>                    <input type="text" id="infant_license_number" name="infant_license_number" value="0" class="disable-provider-admin disable-site-super-admin form-control ccm-input-text" maxlength="255" placeholder="License Number - Infant (Centers Only)" disabled="disabled">                </div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="school_age_license_number" class="required control-label">License Number - School Age (Centers Only)</label>                    <input type="text" id="school_age_license_number" name="school_age_license_number" value="0" class="disable-provider-admin disable-site-super-admin form-control ccm-input-text" maxlength="255" placeholder="License Number - School Age (Centers Only)" disabled="disabled">                </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="regulation" class="required control-label">Regulation</label>                    <select id="regulation" name="regulation" class="disable-provider-admin disable-site-super-admin form-control" ccm-passed-value="65" disabled="disabled"><option value="">-- Select Regulation --</option><option value="65" selected="selected">CCL Licensed</option><option value="66">Exempt</option></select>                </div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+    <div class="col-sm-12">
+        <label for="ages" class="required disable-provider-admin disable-site-super-admin control-label" disabled="disabled">Age Served (Check All That Apply)</label>                    </div>
+                                            
+    <input type="checkbox" id="ages_10" name="ages[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="10" checked="checked" disabled="disabled">                    <label for="ages_10" class="control-label">0-23 months</label><br>
+                        
+    <input type="checkbox" id="ages_11" name="ages[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="11" checked="checked" disabled="disabled">                    <label for="ages_11" class="control-label">2-5 years</label><br>
+                        
+    <input type="checkbox" id="ages_12" name="ages[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="12" checked="checked" disabled="disabled">                    <label for="ages_12" class="control-label">6 years and older</label><br>
+                                        </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="licensee_full_name" class="required control-label">Licensee Full Name</label>                    <input type="text" id="licensee_full_name" name="licensee_full_name" value="TBD" class="required disable-provider-admin disable-site-super-admin form-control ccm-input-text" maxlength="255" placeholder="Licensee Full Name" disabled="disabled">                </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="facility_licensee_first_name" class="control-label">Facility Licensee's First Name</label>                    <input type="text" id="facility_licensee_first_name" name="facility_licensee_first_name" value="" class="disable-provider-admin disable-site-super-admin form-control ccm-input-text" maxlength="255" placeholder="Facility Licensee's First Name" disabled="disabled">                </div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="facility_licensee_middle_name" class="control-label">Facility Licensee's Middle Name</label>                    <input type="text" id="facility_licensee_middle_name" name="facility_licensee_middle_name" value="" class="disable-provider-admin disable-site-super-admin form-control ccm-input-text" maxlength="255" placeholder="Facility Licensee's Middle Name" disabled="disabled">                </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="facility_licensee_last_name" class="control-label">Facility Licensee's Last Name</label>                    <input type="text" id="facility_licensee_last_name" name="facility_licensee_last_name" value="" class="disable-provider-admin disable-site-super-admin form-control ccm-input-text" maxlength="255" placeholder="Facility Licensee's Last Name" disabled="disabled">                </div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="facility_type_code" class="control-label">Facility Type Code</label>                    <select id="facility_type_code" name="facility_type_code" class="disable-provider-admin disable-site-super-admin form-control" disabled="disabled"><option value="" selected="selected">-- Select Facility Type Code --</option><option value="67">Adoption Agency</option><option value="83">Adult Day Care</option><option value="84">Adult Day Support Center</option><option value="79">Adult Residential</option><option value="76">Community Treatment Facility</option><option value="89">Day Care Center</option><option value="88">Day Care Center/Ill Center</option><option value="85">Family Day Care Home (Data for capacity 1-8 is confidential)</option><option value="69">Foster Family Agency Sub-Office</option><option value="68">Foster Family Agency</option><option value="72">Foster Family Home</option><option value="77">Group Home</option><option value="86">Infant Center</option><option value="78">Out of State Group Home</option><option value="81">Residential Care/Elderly</option><option value="80">Residential Facility Chronically</option><option value="87">School-Aged Day Care Center</option><option value="71">Small Family Home</option><option value="82">Social Rehabilitation Facility</option><option value="70">Substitute Employment Registry</option><option value="73">Temporary Shelter Care Facility</option><option value="75">Transitional Housing Placement</option><option value="74">Transitional Shelter Care</option></select>                </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="facility_license_effective_date" class="control-label">Facility License Effective Date</label>                    <input type="text" id="facility_license_effective_date" name="facility_license_effective_date" value="" class="margin-bottom datepicker disable-provider-admin disable-site-super-admin form-control ccm-input-text hasDatepicker" placeholder="Facility License Effective Date" disabled="disabled">                </div>
+</div>
+</div>
+<div class="row hide-provider-admin hide-site-super-admin" style="display: none;">
+<div class="col-sm-12">
+<div class="form-group">
+    <label for="sccoe_admin_notes" class="control-label">SCCOE Admin Notes</label>                    <textarea id="sccoe_admin_notes" name="sccoe_admin_notes" placeholder="SCCOE Admin Notes" class="form-control"></textarea>                </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="original_application_recieve_date" class="control-label">Original License Receive Date</label>                    <input type="text" id="original_application_recieve_date" name="original_application_recieve_date" value="" class="margin-bottom datepicker disable-provider-admin disable-site-super-admin form-control ccm-input-text hasDatepicker" placeholder="Original License Receive Date" disabled="disabled">                </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group">
+    <label for="facility_status_code" class="disable-provider-admin disable-site-super-admin control-label" disabled="disabled">Facility Status Code</label>                    <div class="checkbox row">
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_332" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="332" disabled="disabled">                                    Certified                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_320" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="320" disabled="disabled">                                    Change Location (in county)                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_319" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="319" disabled="disabled">                                    Change Location (out of county)                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_351" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="351" disabled="disabled">                                    Change Owner                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_323" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="323" disabled="disabled">                                    Closed - Agency initiated                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_322" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="322" disabled="disabled">                                    Closed - Licensee Initiated                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_324" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="324" disabled="disabled">                                    Closed- No payment                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_325" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="325" disabled="disabled">                                    Closed - Unlicensed facility                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_352" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="352" disabled="disabled">                                    Does not want to be referred by R&amp;R                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_330" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="330" checked="checked" disabled="disabled">                                    Licensed                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_331" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="331" disabled="disabled">                                    Licensed/Pending increase                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_327" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="327" disabled="disabled">                                    Probationary                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_328" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="328" disabled="disabled">                                    Provisional                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_326" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="326" disabled="disabled">                                    Temporarily Closed                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_353" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="353" disabled="disabled">                                    TSO/Revocation                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_321" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="321" disabled="disabled">                                    Unclear If moved in or out of county                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_354" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="354" disabled="disabled">                                    Unknown                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_status_code_329" name="facility_status_code[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="329" disabled="disabled">                                    Unlicensed                                </label>
+            </div>
+                            </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group">
+    <label for="facility_closed_reason" class="disable-provider-admin disable-site-super-admin control-label" disabled="disabled">Facility Closed Reason</label>                    <div class="checkbox row">
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_93" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="93" disabled="disabled">                                    Burnout                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_90" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="90" disabled="disabled">                                    CPS child abuse check has not been completed                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_94" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="94" disabled="disabled">                                    Financial Reasons                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_95" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="95" disabled="disabled">                                    Insufficient Enrollment                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_383" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="383" disabled="disabled">                                    Licensee has abandoned the facility                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_386" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="386" disabled="disabled">                                    Licensee has not paid the annual fees                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_384" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="384" disabled="disabled">                                    The license is convicted of an offense or crime specified in regulations                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_382" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="382" disabled="disabled">                                    Licensee is deceased                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_381" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="381" disabled="disabled">                                    Licensee has moved from the facility                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_387" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="387" disabled="disabled">                                    Licensee is no longer interested is maintaining the license                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_380" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="380" disabled="disabled">                                    Licensee is selling the Facility                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_385" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="385" disabled="disabled">                                    Licensee has surrendered the license to the Department                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_91" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="91" disabled="disabled">                                    No longer providing child care                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_96" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="96" disabled="disabled">                                    Personal/Family Reasons                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_98" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="98" disabled="disabled">                                    Retiring                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_92" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="92" disabled="disabled">                                    Unable To Contact                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_97" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="97" disabled="disabled">                                    Working outside of Home                                </label>
+            </div>
+                                    <div class="col-sm-6">
+                <label>
+                    <input type="checkbox" id="facility_closed_reason_99" name="facility_closed_reason[]" class="disable-provider-admin disable-site-super-admin ccm-input-checkbox" value="99" disabled="disabled">                                    Other                                </label>
+            </div>
+                            </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="date_license_status_changed" class="control-label">Date License Status Changed</label>                    <input type="text" id="date_license_status_changed" name="date_license_status_changed" value="" class="margin-bottom datepicker disable-provider-admin disable-site-super-admin form-control ccm-input-text hasDatepicker" placeholder="Date License Status Changed" disabled="disabled">                </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+    <label for="regional_office" 0="disabled" class="control-label">Regional Office</label>                    <select id="regional_office" name="regional_office" class="disabled form-control" ccm-passed-value="104" disabled=""><option value="">-- Select Regional Office --</option><option value="103">Oakland</option><option value="104" selected="selected">San Jose</option></select>                </div>
+</div>
+</div>
+<hr>
+<div class="form-group">
+<input name="provider_id" type="hidden" value="2329">
+<a href="https://www.childcarescc.org/index.php/dashboard/portal/providers" class="btn btn-default btn-default btn-xs-block">Back to listing</a>    <button type="submit" class="btn btn-primary pull-right btn-xs-block">Save</button>
+</div>    </form>
+</div>
+<script>
+$('#regulation').attr("disabled", true); 
+document.getElementById("regional_office").disabled = true;
+</script>                        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  </body>
+</html>

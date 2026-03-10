@@ -1,0 +1,56 @@
+.blog-grid {display: grid; gap: 2rem; margin-top: var(--spacer-vert);}
+.blog-grid a {display: block;}
+.blog-item .blog-item-content {box-shadow: 0 0 15px rgba(0,0,0,.1); padding: 2rem; border-radius: 10px; width: 90%; margin: -25px 0 0 5%; position: relative; z-index: 5; background: #fff; font-size: .9rem;}
+.blog-item .blog-item-content h3 a {color: var(--text-color); font-weight: 700; text-decoration: none; font-size: 1.5rem; line-height: 1.3;}
+.btn-text {text-transform: uppercase; font-weight: 600;}
+.btn-text:after {content: "\f061";font-family: FontAwesome; padding: 0 0 0 10px; text-decoration: none;}
+.blog-grid img {border-radius: 10px; aspect-ratio: 1.5 / 1; object-fit: cover;}
+
+.blog-list-item {display: grid; gap: var(--column-gap); border-bottom: 1px solid #ccc; padding: 0 0 2rem 0; margin: 0 0 2rem 0;}
+.blog-list-item h2 {font-size: 1.75rem; line-height: 1.2; padding: 0; margin: 0 0 10px 0;}
+.blog-list-item h2:after {display: none;}
+.blog-list-item h2 a {text-decoration: none;}
+.blog-list-item .date {color: #999; font-size: .85rem;}
+.blog-hdr {border-bottom: 1px solid var(--gray); padding: 0 0 var(--spacer); margin-bottom: var(--spacer);}
+.blog-share {border-top: 1px solid var(--gray); padding: var(--spacer) 0; text-align: center;}
+.blog-share h3 {font-size: 1.25rem;}
+.social-share {
+  margin: 0 0 3rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  gap: 10px
+}
+.social-share a {
+  font-size: 2.5rem;
+  margin: auto 2px
+}
+
+.social-share a:hover {
+  color: var(--accent-1)
+}
+
+
+.sidebar-grid {margin: var(--spacer-vert) 0;}
+// .sidebar-grid, .blog-item {display: grid; gap: var(--column-gap);}
+.post-detail .container {max-width: 800px;}
+.post-header {border-bottom: 1px solid #ccc; padding: 3rem 0; margin: 0 0 3rem 0; text-align: center;}
+
+.tag-list ul {list-style:none; padding:0; display: flex; flex-wrap: wrap; gap: 5px;}
+.tag-list li a {font-size: .85rem; padding: 3px 6px; background: var(--light); display: block;}
+.tag-list li a:hover {background: var(--none);}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+.blog-grid {display: grid; grid-template-columns: repeat( auto-fit, minmax(325px, 1fr) );}
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+.sidebar-grid {display: grid; grid-template-columns: 3fr 1fr;}
+.post-header {margin-top: var(--fixed-header-height);}
+}

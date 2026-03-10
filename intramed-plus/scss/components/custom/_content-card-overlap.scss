@@ -1,0 +1,22 @@
+.content-card-overlap {position: relative; margin: var(--spacer-vert) auto;}
+.content-card-overlap:after {position: absolute; left: 0; top: 0; bottom: 100px;  background: var(--light); width: 100%; z-index: -5; content: "";}
+
+.content-card-overlap .header {text-align: center; padding: var(--spacer-vert) var(--spacer);}
+.grid-4 {display: grid; grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) ); gap: 25px;}
+.content-card-overlap .header h2 {background-position: center bottom;}
+.content-card-overlap .header p {max-width: 800px; margin-inline: auto;}
+
+/* TABLET */
+@media (min-width:768px) {
+.content-card-overlap .header {padding: 50px;}
+}
+
+@media (min-width: 1200px) {
+.content-card-overlap .header {padding: 75px 75px 25px 75px;}
+.content-card-overlap .ico-btn-group {margin-top: -2rem;}
+.content-card-overlap .ico-btn-group a {font-size: 1.5rem; letter-spacing: -1px; padding: 35px;}
+.content-card-overlap .ico-btn-group a span {font-size: 1rem; letter-spacing: normal;}
+
+.content-card-overlap .card {position: relative;}
+.content-card-overlap .grid-4 .card:first-of-type:after {background: url(../img/plus.svg);width: 150px;height: 160px;position: absolute;left: -55px;top: -55px;content: "";background-size: cover; z-index: -2; mix-blend-mode: multiply;}
+}

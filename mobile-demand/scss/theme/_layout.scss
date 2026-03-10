@@ -1,0 +1,8 @@
+.mbd-section {width: 100%;}
+.mbd-section > .row-fluid {max-width: var(--max-width); margin: calc(var(--spacer-vert) / 2) auto; position: relative; padding: 0 var(--side-padding);}
+.mbd-section > .row-fluid:first-of-type {margin-top: var(--spacer-vert);}
+.mbd-section > .row-fluid:last-of-type {margin-bottom: var(--spacer-vert);}
+
+/* Background Sections */
+.mbd-section-gray {background: var(--light); padding: 1px 0;}
+.mbd-section-gradient {background: url(../../img/gradient.jpg) repeat-x; background-size: 900px auto; background-position: bottom left; padding: 1px 0;}

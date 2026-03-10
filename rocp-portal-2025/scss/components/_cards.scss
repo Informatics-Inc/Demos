@@ -1,0 +1,70 @@
+@use "../tokens" as *;
+
+.card {
+    background: $color-bg-surface;
+    border: 1px solid $color-border-subtle;
+    border-radius: $radius-sm;
+    overflow: hidden;
+    transition: $transition-base;
+}
+
+.card__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1.25;
+    object-fit: cover;
+}
+
+.card__body {
+    padding: $space-6;
+}
+.panel {
+    .card__body {
+        background: $gray-50;
+    }
+}
+.card__title {
+    margin: 0 0 $space-2 0;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $color-text-main;
+}
+
+.card__blurb {
+    margin: 0 0 $space-4 0;
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+}
+
+/* Hover (mouse) */
+@media (hover: hover) {
+    .card:hover {
+        border-color: $gray-300;
+        box-shadow: $shadow-md;
+        transform: translateY(-1px);
+    }
+}
+
+/* Focus within (keyboard): highlight the whole card when CTA/link is focused */
+.card:focus-within {
+    border-color: $color-primary;
+    box-shadow: 0 0 0 3px rgba($color-focus-ring, 0.35);
+}
+
+/* Optional: if a link wraps the whole card in the future */
+.card--link:focus-visible {
+    outline: 3px solid $color-focus-ring;
+    outline-offset: 3px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}

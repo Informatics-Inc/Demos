@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <title>ROC-P User Portal</title>
+  </head>
+
+  <body>
+  
+<nav class="navbar navbar-expand-xl fadein" id="header">
+  <a class="navbar-brand" href="page-index.html"><img src="img/logo.png" alt="Logo" /></a>
+  <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navMain">
+    <ul class="navbar-nav mr-auto" id="nav-main">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="#" class="disabled">Applications</a>
+        <ul>
+          <li><a href="review-applications.html">Review Applications</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="disabled">Exams</a>
+        <ul>
+          <li><a href="examiner-conflicts.html">Examiner Conflicts</a></li>
+          <li><a href="vignette-list.html">Vignette List</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="disabled">Question Bank</a>
+        <ul>
+          <li><a href="question-bank.html">Question Group #1</a></li>
+          <li><a href="question-bank.html">Question Group #2</a></li>
+        </ul>
+      </li>
+      <li class="active"><a href="#" class="disabled">CM</a>
+        <ul>
+          <li><a href="cqi.html">CQI</a></li>
+          <li><a href="continuing-education.html">Continuing Education</a></li>
+          <li><a href="my-transcript.html">My Transcript</a></li>
+          <li class="active"><a href="lms-development.html">LMS Development</a></li>
+        </ul>
+      </li>
+      <li><a href="committee-dash.html">Board/Committee</a>
+        <ul>
+          <li><a href="committee-dash.html">Committee Dash</a></li>
+          <li><a href="action-items.html">Action Items</a></li>
+        </ul>
+      </li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="#" class="disabled">History</a>
+        <ul>
+          <li><a href="past-payments.html">Past Payments</a></li>
+          <li><a href="exam-history.html">Exam History & Results</a></li>
+          <li><a href="verifications.html">Verifications</a></li>
+          <li><a href="activity-log.html">Activity Log</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="user-dropdown">
+        <a class="dropdown-toggle" href="#" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="img/profile-2.jpg" alt="user-image" />User
+        </a>
+        <div class="dropdown-menu" aria-labelledby="user-menu">
+        <ul>
+          <li><a href="my-account.html">My Account</a></li>
+          <li><a href="cart.html">Cart <span class="badge badge-secondary">2</span></a></li>
+          <li><a href="store.html">Product Store</a></li>
+        </ul>
+        <a href="login.html" class="btn btn-theme">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-hdr fadein delay-1">
+  <div class="page-hdr-wrap">
+    <h1>LMS Development Detail</h1>
+      <nav aria-label="breadcrumb">
+        <nav class="page-tabs">
+          <a href="lms-development-detail.html" class="active">Detail</a>
+          <a href="lms-development-detail-activity-log.html">Activity Log</a>
+        </nav>
+      </nav>
+  </div>
+</header>
+
+<main class="page-content fadeinup delay-2">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="panel">
+        <h2 class="panel-title">Detail</h2>
+        <form class="rocp-form">
+          <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Case Number</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Name</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Certification</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" disabled placeholder="Board Certification" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Teaser</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Thumbnail</label>
+            <div class="col-sm-9">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
+              <small class="form-text text-muted">Optimal Dimensions: 200px x 350px; Try to keep image size below 40kb</small>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Domain</label>
+            <div class="col-sm-9">
+                <select class="form-control">
+                  <option>Choice One</option>
+                  <option>Choice Two</option>
+                  <option>Option Three</option>
+                  <option>Item Four</option>
+                  <option>Five</option>
+                </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Type</label>
+            <div class="col-sm-9">
+                <select class="form-control">
+                  <option>Choice One</option>
+                  <option>Choice Two</option>
+                  <option>Option Three</option>
+                  <option>Item Four</option>
+                  <option>Five</option>
+                </select>
+              <small class="form-text text-muted">You cannot edit once you have created the CQI</small>
+            </div>
+          </div>       
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">LMS Type</label>
+            <div class="col-sm-9">
+                <select class="form-control">
+                  <option>Choice One</option>
+                  <option>Choice Two</option>
+                  <option>Option Three</option>
+                  <option>Item Four</option>
+                  <option>Five</option>
+                </select>
+            </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Review Status</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" disabled placeholder="Subcommittee Review" />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Dates</label>
+            <div class="col-sm-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Release Date">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <small class="form-text text-muted">Original Release Date</small>
+            </div>
+            <div class="col-sm-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Revision Date">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <small class="form-text text-muted">Last Revision Date</small>
+            </div>
+            <div class="col-sm-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Expiration">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <small class="form-text text-muted">Expiration Date</small>
+            </div>
+          
+          </div>
+
+          <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Method</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+
+          <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Survey Link</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Retake</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" placeholder="2" disabled>
+              <small class="form-text text-muted">0 indicates unlimited</small>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" placeholder="2" disabled>
+              <small class="form-text text-muted">Span</small>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" placeholder="Yearly" disabled>
+              <small class="form-text text-muted">Frequency</small>
+            </div>
+          </div>
+          
+          <div class="options">
+            <a href="lms-development.html" class="btn btn-light"><i class="fa fa-arrow-circle-left"></i> Back to Listing</a>
+            <button class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
+            <button class="btn btn-success float-right"><i class="fa fa-save"></i> Update CQI</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel">
+        <h2 class="panel-title">Review Status</h2>
+        <div class="panel-section">
+          <p>02/02/2020 - Created by <strong>William Frenty</strong></p>
+        </div>
+        <div class="panel-section">
+          <p>02/02/2020 - Moved to the thing for the others to look at by <strong>Faleal Proof</strong></p>
+        </div>
+        <div class="panel-section">
+          <p>02/02/2020 - Moved to the other review area by <strong>Martha Nuez</strong></p>
+        </div>
+        <a href="#.html" class="btn btn-primary">Move to Part Leader Review</a>
+      </div>
+
+      <div class="panel">
+        <h2 class="panel-title">Comments</h2>
+        <form class="rocp-form">
+          <div class="form-group">
+          <textarea class="form-control" rows="3"></textarea>
+          <small class="form-text text-muted">Max 5000 characters allowed</small>
+          </div>
+          <a href="#.html" class="btn btn-primary">Add Comment</a> 
+        </form>
+
+        <div class="panel-section">
+          <h4>Mark Snorkez - 1234 <small class="float-right text-muted">02/02/2020</small></h4>
+          <p>This is a really sharp update to the user portal. I am happy it's so easy to use.</p>
+        </div>
+        <div class="panel-section">
+            <h4>Jork Morkez - 1234 <small class="float-right text-muted">03/02/2020</small></h4>
+            <p>You can say that again Mark. What a joy to use!</p>
+        </div>
+        <div class="panel-section">
+            <h4>Sandy Wandy - 1234 <small class="float-right text-muted">04/02/2020</small></h4>
+            <p>Personally I like the old UI but that's cus I'm a huge luddite</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="panel">
+        <h2 class="panel-title">Generic Template</h2>
+        <h3>Introduction <a href="#.html" class="btn btn-light float-right"><i class="fa fa-edit"></i> Edit</a></h3>
+        <p>Seems like a decent point to post what I have on the season for drops. I don't want to start a argument so I'm just going to throw out this disclaimer. I call a drop if it hits both hands even if the ball isn't perfectly thrown.</p>
+        <hr />
+        <h3>Scenario <a href="#.html" class="btn btn-light float-right"><i class="fa fa-edit"></i> Edit</a></h3>
+        <p>If I'm not mistaken he is the starter for the Y. May not be listed in the Depth Chart, and in the past similar to the cash, but he is the first out there for the Y, I'm ok with being wrong if that is the case. </p>
+        <hr />
+        <h3>Images <a href="#.html" class="btn btn-light float-right"><i class="fa fa-plus-circle"></i> Add New</a></h3>
+        <table class="table rocp-table table-striped">
+          <thead>
+            <tr>
+              <td>Number</td>
+              <td>Thumbnila/Embed URL</td>
+              <td>Caption</td>
+              <td>Actions</td>
+            </tr>
+          </thead>
+          <tr>
+            <td>1</td>
+            <td><img src="img/feature-1.jpg" /></td>
+            <td>Here we see business happening in a very bright area</td>
+            <td><a href="#.html" class="btn btn-link"><i class="fa fa-edit"></i> Edit</a> <a href="#.html" class="btn btn-link text-danger"><i class="fa fa-trash"></i> Delete</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="img/feature-2.jpg" /></td>
+            <td>This is a generic "business" image and is great for mockup and layout designs</td>
+            <td><a href="#.html" class="btn btn-link"><i class="fa fa-edit"></i> Edit</a> <a href="#.html" class="btn btn-link text-danger"><i class="fa fa-trash"></i> Delete</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>image.url/com</td>
+            <td>This is a generic "business" image and is great for mockup and layout designs</td>
+            <td><a href="#.html" class="btn btn-link"><i class="fa fa-edit"></i> Edit</a> <a href="#.html" class="btn btn-link text-danger"><i class="fa fa-trash"></i> Delete</a></td>
+          </tr>  
+        </table>
+        <hr />
+        <h3>Questions <a href="#.html" class="btn btn-light float-right"><i class="fa fa-plus-circle"></i> Add New</a></h3>
+        <table class="table rocp-table table-striped">
+          <thead>
+            <tr>
+              <td>Number</td>
+              <td>Question</td>
+              <td>Distractors</td>
+              <td>Actions</td>
+            </tr>
+          </thead>
+          <tr>
+            <td>1</td>
+            <td>If a woodchuck runs a bar and he orders three cases of wine, what season would they arrive?</td>
+            <td>
+              <ol type="A" class="ul-normal">
+                <li>Winter season before the rains come</li>
+                <li>Fall season after the leaves fall</li>
+                <li>Summer time early about when the pools open</li>
+                <li>Spring time at exactly the moment the snow melts</li>
+              </ol>
+            </td>
+            <td><a href="#.html" class="btn btn-link"><i class="fa fa-edit"></i> Edit</a> <a href="#.html" class="btn btn-link text-danger"><i class="fa fa-trash"></i> Delete</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>This is a question and there are options and answers to choose from.</td>
+            <td>
+              <ol type="A" class="ul-normal">
+                <li>Just by myself, I am William Frenty after all</li>
+                <li>I'll probably take one extra just in case</li>
+                <li>All hands on deck - especially that guy really good at business</li>
+                <li>This may be the right answer but don't focus too much on these letters</li>
+              </ol>
+            </td>
+            <td><a href="#.html" class="btn btn-link"><i class="fa fa-edit"></i> Edit</a> <a href="#.html" class="btn btn-link text-danger"><i class="fa fa-trash"></i> Delete</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>To create ordered list in HTML, use the tag. Ordered list starts with the tag. The list item starts with thetag and will be marked as numbers, lowercase letters uppercase letters, roman letters, etc. The default numbers for list items.</td>
+            <td>
+              <ol type="A" class="ul-normal">
+                <li>Winter season before the rains come</li>
+                <li>Fall season after the leaves fall</li>
+                <li>Summer time early about when the pools open</li>
+                <li>If you have a really long answer you can put it here and see how it helps the layout of the table flow</li>
+              </ol>
+            </td>
+            <td><a href="#.html" class="btn btn-link"><i class="fa fa-edit"></i> Edit</a> <a href="#.html" class="btn btn-link text-danger"><i class="fa fa-trash"></i> Delete</a></td>
+          </tr>  
+        </table>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel">
+        <h2 class="panel-title">Template Comments</h2>
+        <form class="rocp-form">
+          <div class="form-group">
+          <textarea class="form-control" rows="3"></textarea>
+          <small class="form-text text-muted">Max 5000 characters allowed</small>
+          </div>
+          <a href="#.html" class="btn btn-primary">Add Comment</a> 
+        </form>
+        <div class="panel-section">
+          <h4>Mark Snorkez - 1234 <small class="float-right text-muted">02/02/2020</small></h4>
+          <p>These comments are about the template.</p>
+        </div>
+        <div class="panel-section">
+            <h4>Jork Morkez - 1234 <small class="float-right text-muted">03/02/2020</small></h4>
+            <p>Yup I figured that out because of the header.</p>
+        </div>
+        <div class="panel-section">
+            <h4>Sandy Wandy - 1234 <small class="float-right text-muted">04/02/2020</small></h4>
+            <p>Let's just say that these LMS thingy's get pretty darn complicated. Thank goodness there's a great UX layout.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</main>
+
+<footer class="footer">
+      <h3>American Board of Art Directors</h3>
+      <p>123 Design Avenue<br/>
+        Suite 456<br/>
+        Willmingham, ZR 60611<br/>
+        123-456-7890</p>
+      <p><a href="#.html">Privacy</a><br/><a href="#.html">Terms</a><br/><a href="#.html">Cookies</a></p>
+      <p>Powered by <br /><img src="img/ROCP-logo.png" alt="ROCP Logo" /></p>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

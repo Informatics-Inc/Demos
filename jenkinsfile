@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Check Docker') {
+            steps {
+                sh "bash /var/lib/jenkins/dev-pipeline-scripts/${params.APPTYPE}/checkdocker.sh ${params.SITENAME} ${params.IMAGE}"
+            }
+        }
+        stage('Run SQL'){
+            steps{
+                sh "bash /var/lib/jenkins/dev-pipeline-scripts/runsql.sh ${params.SITENAME} ${params.RUNSQL}"
+            }
+        }
+        stage('Install Code') {
+            steps {
+                sh "bash /var/lib/jenkins/dev-pipeline-scripts/${params.APPTYPE}/install.sh ${params.SITENAME} ${params.ALLFILES}"
+            }
+        }
+    }
+    post {
+        cleanup {
+            cleanWs()
+        }
+    }
+}

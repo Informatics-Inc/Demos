@@ -1,0 +1,15 @@
+.buy-online {gap: 2rem; grid-template-columns: 1fr 1fr;}
+.buy-online a {display: block; box-shadow: 0px 0px 15px rgba(0,0,0,.1); padding: 2rem 1rem; text-decoration: none; border-radius: 10px;}
+.buy-online img {width: 80%; height: 50px; margin: 0 0 10px 10%; object-fit: contain; transition: var(--transition);}
+.buy-online span {display: block; padding: 10px; text-decoration: underline; text-underline-offset: 5px; font-size: .85rem; text-transform: uppercase; font-weight: 700; text-align: center;}
+.buy-online a:hover img {transform: scale(1.1);}
+
+@media(min-width:768px){
+  .icon-feature {padding: 4rem; gap: 4rem;}
+  .buy-online {grid-template-columns: 1fr 1fr 1fr;}
+  .buy-online a {padding: 2rem;}
+  .buy-online img {height: 75px;}
+}
+/* WIDE DESKTOP */
+@media (min-width:992px){
+}

@@ -1,0 +1,195 @@
+@use "../tokens" as *;
+
+/* =========================
+   Table Pagination (RadGrid)
+   ========================= */
+
+.rgPagerCell {
+    padding: $space-4 0;
+    border-top: 1px solid $color-border-subtle;
+}
+
+.NextPrevAndNumeric {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $space-3;
+}
+
+/* groups: left arrows, numbers, right arrows, pagesize, info */
+.rgWrap {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+}
+
+/* push info to the far right on larger widths */
+.rgInfoPart {
+    margin-left: auto;
+    color: $color-text-muted;
+    font-size: $font-size-sm;
+}
+
+/* Buttons: map to your button baseline (without requiring .btn markup) */
+.rgActionButton {
+    appearance: none;
+    border: 1px solid $color-border-subtle;
+    background: $color-bg-surface;
+    color: $color-text-main;
+
+    border-radius: $radius-sm;
+    padding: 0.35rem 0.55rem;
+    min-height: 35px;
+    min-width: 35px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+/* hover */
+@media (hover: hover) {
+    .rgActionButton:hover {
+        border-color: $gray-300;
+        background: $gray-50;
+    }
+}
+
+/* focus */
+.rgActionButton:focus {
+    outline: none;
+}
+
+.rgActionButton:focus-visible {
+    border-color: $color-primary;
+    box-shadow: 0 0 3px 0 rgba($color-focus-ring, 0.5);
+}
+
+/* disabled */
+.rgActionButton[disabled],
+.rgActionButton[aria-disabled="true"] {
+    background: $color-bg-subtle;
+    color: $color-text-muted;
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+/* current page number link */
+.rgNumPart a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 35px;
+    min-width: 35px;
+    padding: 0.35rem 0.55rem;
+
+    border-radius: $radius-sm;
+    border: 1px solid $color-border-subtle;
+    color: $color-text-main;
+}
+
+.rgNumPart a.rgCurrentPage {
+    border-color: $color-primary;
+    background: $brand-blue-100;
+    color: $color-text-main;
+    font-weight: $font-weight-semibold;
+}
+
+.rgNumPart a:focus {
+    outline: none;
+}
+
+.rgNumPart a:focus-visible {
+    border-color: $color-primary;
+    box-shadow: 0 0 3px 0 rgba($color-focus-ring, 0.5);
+}
+
+/* Page size label */
+.rgPagerLabel {
+    color: $color-text-muted;
+    font-size: $font-size-sm;
+}
+
+/* Make the 3rd-party dropdown visually align with your .form-control */
+.RadDropDownList {
+    font-size: $font-size-sm;
+}
+
+/* This inner element is what users see */
+.RadDropDownList .rddlInner {
+    border: 1px solid $gray-300;
+    border-radius: $radius-sm;
+    background: $gray-50;
+    color: $color-text-main;
+    min-height: 35px;
+    padding: 0.35rem 0.55rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-2;
+}
+
+/* Focus ring when the dropdown is focused */
+.RadDropDownList:focus {
+    outline: none;
+}
+
+.RadDropDownList:focus-visible .rddlInner {
+    border-color: $color-primary;
+    box-shadow: 0 0 3px 0 rgba($color-focus-ring, 0.5);
+}
+
+/* dropdown list */
+.rddlPopup {
+    border: 1px solid $color-border-subtle;
+    border-radius: $radius-sm;
+    background: $color-bg-surface;
+    box-shadow: $shadow-lg;
+    overflow: hidden;
+}
+
+.rddlList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rddlItem {
+    padding: 0.5rem 0.65rem;
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .rddlItem:hover {
+        background: $gray-50;
+    }
+}
+
+.rddlItemSelected {
+    background: $brand-blue-100;
+    font-weight: $font-weight-semibold;
+}
+
+/* Mobile: stack chunks cleanly */
+@media (max-width: 640px) {
+    .NextPrevAndNumeric {
+        gap: $space-2;
+    }
+
+    .rgInfoPart {
+        margin-left: 0;
+        width: 100%;
+        order: 10;
+    }
+
+    .rgAdvPart {
+        width: 100%;
+        order: 9;
+    }
+}

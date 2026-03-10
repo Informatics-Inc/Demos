@@ -1,0 +1,17 @@
+.grid {display: grid; gap: var(--column-gap);}
+
+/* TABLET */
+@media (min-width: 768px) {
+.grid-4 {grid-template-columns: 1fr 1fr;}
+.grid-2 {grid-template-columns: 1fr 2fr;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+.grid-4 {grid-template-columns: 1fr 1fr 1fr 1fr;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}

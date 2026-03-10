@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Limolink Reservations</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Roboto+Condensed:300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- Skip Nav Link-->
+  <a id="skip-nav" class="screenreader-text" href="#content">
+    Skip to Content
+  </a>
+
+  <header id="hdr-site">
+
+    <!-- LOGO AND MOBILE -->
+    <div class="container">
+        <div class="hdr-desktop">
+        <div id="hdr-main">
+            <a href="login.html" id="logo">
+                <img src="img/logo.png" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+                <div class="closed">
+                    Menu
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <nav id="menu" class="collapsed">
+          <ul class="menu-main">
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+            <li><a href="book-01.html">Book Reservation</a></li>
+            <li><a href="profiles.html">Profiles</a></li>
+            <li><a href="receipts.html">Receipts</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+            <li class="user-menu">
+              <a href="#.html">
+                <i class="fa-regular fa-circle-user"></i>
+                <span>Edit My Proflie</span>
+              </a>
+              <div class="form-group ll-form">
+                <div class="flex">
+                  <label>Account</label>
+                  <div class="custom-select">
+                    <select>
+                      <option>All Accounts</option>
+                      <option>NCAA Board of Regents</option>
+                      <option>Carolina Panthers Football</option>
+                      <option>Miami Dolphins Football</option>
+                      <option>Rebel Alliance</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>    
+        </ul>
+
+        </nav>
+        </div>
+    </div>
+  </header>
+  
+  <main id="content">
+  
+  <div class="container">
+    <div class="col panel">
+      <div class="toggle-header">
+        <h1>Popover Example</h1>
+      </div>
+      <p>Trigger a default popover <a href="#" data-target="new-payment" class="modal-toggle">by clicking here</a></p>
+      <!-- MODAL -->
+      
+      <div class="modal" id="new-payment">
+        <div class="modal-item">
+          <header class="toggle-header"><h2>Message Title</h2> <a href="#" class="modal-toggle"><i class="fa fa-close"></i></a></header>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus alias cum quos ratione illo perspiciatis fugiat ut maxime, officia, consequatur similique incidunt! Quas, maiores maxime?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus alias cum quos ratione illo perspiciatis fugiat ut maxime, officia, consequatur similique incidunt! Quas, maiores maxime?</p>
+          <p><strong>Be sure you do this now!</strong></p>
+          <div class="form-actions">
+            <button class="modal-toggle btn-theme btn-secondary">Cancel</button>
+            <button type="submit" class="modal-toggle btn-theme">Proceed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </main>
+  
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2024 LimoLink | <a href="#.html">Privacy Policy</a> | <a href="#.html">Terms & Conditions</a><a href="#.html">Privacy Policy</a> | <a href="#.html">To Book Reservations : (877) 798-5466</a> | <a href="mailto:reservations@limolink.com">reservations@limolink.com</a> | <a href="mailto:customersupport@limolink.com">CustomerSupport@limolink.com</a></p>
+  <p>Version 0.0.1 | Updated 02-28-2024</p>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Informatics, Inc">
+  <title>ROC-P User Dashboard – UI Kit</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Line Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+
+  <!-- CSS -->
+  <link href="../css/app.min.css" rel="stylesheet">
+</head>
+
+<body class="pagebody">
+
+  <!-- Skip Nav Link-->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Main -->
+  <main role="main">
+    <div class="app-shell">
+      <nav class="app-sidebar">
+        <div class="app-sidebar-fixed">
+          <div class="app-mobile-header">
+            <div class="sidebar-logo">
+              <img src="../img/logo-demo.png" alt="Program Logo" />
+            </div>
+            <button id="menu-toggle" class="menu-toggle js-disclosure" type="button" aria-expanded="false"
+              aria-controls="mobile-nav" aria-haspopup="true">
+              <span class="icon-menu" aria-hidden="true"></span>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+          <div id="mobile-nav" class="nav-menu submenu">
+            <div class="sidebar-user-info">
+              <figure><img src="../img/user.png" alt="User Image" /></figure>
+              <div class="sidebar-user-content">
+                <span class="user-name">Clark Markson</span>
+                <ul>
+                  <li>PID# 12345A</li>
+                  <li><a href="#.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <ul class="app-menu">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="exams.html" class="">Exams</a></li>
+              <li><a href="ce.html" class="">CE</a></li>
+              <li class="has-submenu">
+                <button class="nav-trigger js-disclosure" type="button" aria-expanded="false"
+                  aria-controls="submenu-lms" aria-haspopup="true">
+                  LMS
+                  <span class="icon-arrow-down"></span>
+                </button>
+                <ul class="submenu" id="submenu-lms">
+                  <li><a href="#.html">Demo LMS Test</a></li>
+                  <li><a href="#.html">LMS Modules for 02/12</a></li>
+                  <li><a href="#.html">My Transcript</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="">Events</a></li>
+              <li><a href="#" class="">Resources</a></li>
+              <li><a href="#" class="">History</a></li>
+              <li><a href="../docs/ui-kit.html" >UI Kit</a></li>
+              <li class="menu-active"><a href="../docs/app-shell.html">App Shell</a></li>
+            </ul>
+            <hr />
+            <span class="sidebar-header">Quick Links</span>
+            <ul class="sidebar-links">
+              <li><a href="#typography">Typography</a></li>
+              <li><a href="#colors">Colors</a></li>
+              <li><a href="#buttons">Buttons</a></li>
+              <li><a href="#forms">Forms</a></li>
+              <li><a href="#alerts">Alerts</a></li>
+              <li><a href="#badges">Badges</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="app-header">
+        <h1>App Shell</h1>
+        <div class="breadcrumb">
+          <ol>
+            <li><a href="docs/">Documentation</a></li>
+            <li>App Shell</li>
+          </ol>
+        </div>
+      </header>
+      <section class="app-main" id="main">
+        <div class="container container-md">
+
+        </div>
+    </div>
+    </section>
+    </div>
+  </main>
+
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="../js/scripts.js"></script>
+
+</body>

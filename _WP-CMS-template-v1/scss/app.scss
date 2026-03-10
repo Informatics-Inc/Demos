@@ -1,0 +1,51 @@
+/* CSS Document
+Client: Informatics Starter Theme v3
+Company: Informatics, Inc
+Author: Jeff S
+Date: Mar 2024
+*/
+
+// Core
+@import "core/reset";
+@import "core/animations";
+@import "core/mixins";
+@import "core/utility";
+
+// WP Layouts
+@import "core/wpcols-for-demo"; // WordPress CSS for column layouts - can remove in final project
+@import "core/wp-layout-overrides"; // WordPress CSS overrides to emulate a Page Builder - do not remove
+
+// Theme
+@import "theme/variables";
+@import "theme/typography";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/blog";
+@import "layout/contact-form";
+
+// Update WordPress Blocks to Match Theme
+@import "blocks/wp-overrides/buttons";
+@import "blocks/wp-overrides/columns";
+@import "blocks/wp-overrides/cover";
+@import "blocks/wp-overrides/file";
+@import "blocks/wp-overrides/group";
+@import "blocks/wp-overrides/list";
+@import "blocks/wp-overrides/paragraph";
+@import "blocks/wp-overrides/search";
+@import "blocks/wp-overrides/separator";
+@import "blocks/wp-overrides/social-links";
+
+// Standard Theme Blocks
+@import "blocks/standard/theme-cta";
+@import "blocks/standard/theme-cards";
+@import "blocks/standard/theme-image";
+@import "blocks/standard/page-header";
+@import "blocks/standard/sidebar-nav";
+@import "blocks/standard/accordion";
+@import "blocks/standard/testimonials";
+@import "blocks/standard/post-list";
+
+// Custom Theme Blocks
+@import "blocks/custom/home-hero";

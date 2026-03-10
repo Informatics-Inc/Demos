@@ -1,0 +1,109 @@
+/* Overlap */
+.is-style-overlap{margin-top:-80px;position: relative;z-index: 1;}
+
+/* WP Paragraph Styles */
+.is-style-eyebrow{padding-left:65px;position:relative;text-transform:uppercase;color:var(--primary);letter-spacing:2px;margin:0 0 1rem 0;font-size:0.9rem;font-family:var(--main);font-weight:700;}
+.is-style-eyebrow::before{content:"";position:absolute;top:50%;left:0;width:50px;height:1px;background-color:var(--primary);/* Adjust line color as needed */
+ z-index:0;}
+ .is-style-bkg-color .wp-block-heading.has-text-align-center {padding:0 25px}
+ .has-text-align-center.is-style-eyebrow::before{display:none}
+ .has-text-align-center.is-style-eyebrow{padding-left:0;}
+ .is-style-bkg-color .is-style-eyebrow{color:#fff}
+ .is-style-bkg-color {padding-left:25px;
+ padding-right: var(--side-padding);}
+.is-style-lead {font-family:var(--main);font-size: 1.25rem; line-height:1.4;font-weight: 400;text-transform: uppercase;}
+.is-style-callout {font-size: 1.25rem; border-left: 5px solid var(--accent-2); padding-left: 1.25rem;}
+.is-style-max-width {max-width: 600px; @include margin-auto;}
+.is-style-special{font-family:var(--special);font-size:1.85rem;margin-bottom:25px;color:var(--accent-1)}
+.is-style-special + .is-style-eyebrow {
+   margin-top:50px
+  }
+  .is-style-special + .is-style-lead {
+    margin-bottom:40px
+   }
+.is-style-overlap .is-style-white{color:var(--accent-1);font-size:1.7rem}
+.is-style-overlap .is-style-special{margin-bottom:40px}
+
+/* WP Column Section Colors */
+/* Light background */
+.is-style-bkg-left, .is-style-bkg-right {padding: 1px 0; position: relative; z-index: 5; overflow: hidden;}
+.is-style-bkg-left:after, .is-style-bkg-right:after {position: absolute; top: 0; left: 0; height: 100%;width: calc( 100vw - ( (60vw - var(--max-width)/2)));background: var(--light); border-radius: 0 10px 10px 0; content:""; z-index: -1; border-radius: 0 var(--border-radius-xl) var(--border-radius-xl) 0;}
+.is-style-bkg-right:after {left: auto; right: 0; border-radius: var(--border-radius-xl) 0 0 var(--border-radius-xl);}
+.is-style-bkg-right:after{content:"";background-image:url("../img/shapes/shape-right.svg");background-position:top right;background-repeat:no-repeat;background-size:250px auto;}
+.is-style-bkg-left:after{content:"";background-image:url("../img/shapes/white-shape-lines-left.svg");background-position:top left;background-repeat:no-repeat;background-size:250px auto;}
+
+.is-style-bkg-color {background: var(--primary) url("../img/shapes/shape-right-green.svg");position: relative;background-position:bottom right;background-repeat:no-repeat;background-size:250px auto; padding: 1px 0;  padding: 1px 0; color: var(--text-color-inverse);}
+.is-style-bkg-light {background: var(--light) url("../img/shapes/white-shape-lines-left.svg");position: relative;background-position:top left;background-repeat:no-repeat;background-size:250px auto; padding: 1px 0; }
+.is-style-background-color {background: var(--light) url("../img/shapes/white-shape-lines-left.svg");position: relative;background-position:top left;background-repeat:no-repeat;background-size:250px auto; padding: 1px 0;}
+
+.is-style-linklist {list-style-type:none;padding-left:0;}
+.is-style-linklist li {list-style-type:none;position:relative;padding-left:24px;margin-bottom:15px;line-height:1.4}
+.is-style-linklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--primary)}
+
+/* WP Block Separator */
+.wp-block-separator, hr {margin:40px auto; border: none; border-bottom: 1px solid #ccc; max-width: var(--max-width);} 
+
+/* WP File Block Styles */
+.wp-block-file:not(.wp-element-button) {
+    font-size: .85em;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+}
+.wp-block-file * + .wp-block-file__button {
+    margin-left: .75em;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+}
+
+/* WP Block Cover */
+.wp-block-cover .wp-block-cover__background {opacity: .65;}
+.wp-block-cover p.is-style-eyebrow, .wp-block-cover p.is-style-loud {color: var(--secondary);}
+.wp-block-cover + .wp-block-group {margin-top: calc(var(--spacer-vert) * -1);}
+.wp-block-cover .wp-block-button__link{border:solid #a2aea6 1px;margin-top:20px }
+
+.wp-block-cover .wp-block-cover__inner-container,.wp-block-cover-image .wp-block-cover__inner-container,.wp-block-cover .wp-block-columns{width:100%;z-index:1;}
+
+.wp-block-cover .has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image .has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
+.wp-block-cover.has-background-dim:not([class*=-background-color]) {
+  background-color:#063B31
+}
+.wp-block-cover.has-background-dim:before {
+    content:"";background-image:url("../img/shapes/shapre-left-greenbg.svg") ;background-position:top left;background-repeat:no-repeat;background-size:180px auto;
+}
+.wp-block-cover .wp-block-columns{padding:15px}
+
+/* Columns */
+.is-style-small-margin {margin-top: -2rem !important;}
+.is-style-large-gap {gap: 3rem !important;}
+.is-style-small-margin + .is-style-small-margin {margin-bottom: 3rem !important;}
+
+/* Social Media Links */
+.wp-block-social-links .wp-social-link {color: #fff;}
+.wp-block-social-links .wp-social-link a {color: #fff !important;}
+.wp-block-social-links .wp-social-link a:hover {color: var(--primary) !important;} 
+
+
+@media (min-width: 768px) {
+.is-style-overlap .is-style-white{color:#fff;font-size:1.8rem}
+.is-style-overlap{margin-top:-90px;position: relative;z-index: 1;}
+.wp-block-image .alignleft, .wp-block[data-align="left"] > .wp-block-image {float:left; margin: 0 2rem 2rem 0; max-width: 50%;}
+.wp-block-image .alignright, .wp-block[data-align="right"] > .wp-block-image {float:right; margin: 0 0 2rem 2rem; max-width: 50%;}
+.is-style-large-gap {gap: 7rem !important;}
+.wp-block-cover.has-background-dim:before {background-size:190px auto;}
+.wp-block-cover .wp-block-columns{padding:20px}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+    .is-style-overlap .is-style-white{color:#fff;font-size:2rem}
+    .is-style-overlap{margin-top:-110px;position: relative;z-index: 1;}
+    .wp-block-cover.has-background-dim:before {background-size:250px auto;}
+
+    }

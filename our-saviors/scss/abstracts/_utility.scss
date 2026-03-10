@@ -1,0 +1,35 @@
+/* Layouts  & Containers */
+#content {overflow-x: hidden;}
+.container {max-width: var(--max-width); margin: 0 auto; padding-left: var(--spacer);padding-right: var(--spacer);}
+.skinny {max-width: 850px;}
+.box {padding: var(--spacer); background: var(--light);}
+.box + .box {margin-top: var(--spacer);}
+.grid {display: grid; gap: var(--spacer);}
+.is-layout-flex {display: flex; gap: .5rem;}
+
+/* Utility Classes */
+.hidden-sm {display: none;}
+
+/* TABLET */
+@media (min-width: 768px) {
+.hidden-sm {display: inline;}
+.grid-2 {grid-template-columns: 1fr 1fr; gap: var(--spacer);}
+.grid-3 {grid-template-columns: 1fr 1fr 1fr; gap: var(--spacer);}
+.grid-2x2-md {grid-template-columns: 1fr 1fr;}
+.grid + .grid {margin-top: 2rem;}
+}
+
+@media (min-width: 992px) {
+.grid-3-lg {grid-template-columns: 1fr 1fr 1fr; gap: var(--spacer);}
+   
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+.grid-4-lg {grid-template-columns: 1fr 1fr 1fr 1fr; gap: var(--spacer);}
+
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+}

@@ -1,0 +1,257 @@
+@media (prefers-reduced-motion: no-preference) {
+
+/* Split Word */
+.split-text .word {
+  transform: translateY(130px);
+  transition: transform .5s;
+  opacity: 0;
+  
+}
+.split-text .line {clip-path: polygon(0 0, 100% 0, 100% 120%, 0% 120%);}
+
+/* ANIMATIONS */
+/* ----------- TIMELINE SCROLL ----------- */
+.scroll-in,.scroll-in-children>* {
+  animation: scroll-in ease-in forwards;
+  animation-timeline: view();
+  animation-range: 50px 150px;
+  opacity: 0;
+  translate: 0 15px
+}
+
+@keyframes scroll-in {
+  to {
+      opacity: 1;
+      translate: 0
+  }
+}
+/* Reveal Image on Scroll */
+@keyframes reveal {
+  from {
+      clip-path: inset(0 100% 0 0); /* Fully hidden (right side fully clipped) */
+      opacity: .5;
+    }
+  to {
+      clip-path: inset(0 0 0 0); /* Fully revealed */
+      opacity: 1;
+  }
+}
+.revealing-image {
+  animation: reveal ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 70% cover 45%;
+  clip-path: inset(0 100% 0 0);
+  opacity: .5;
+} 
+
+/* Parallax Effect on Scroll */
+  .parallax-scroll {
+    position: relative;
+    z-index: 1;
+  }
+
+  .parallax-scroll > * {
+    width: 100%;
+    height: 120%;
+    top: -20%;
+    position: relative;
+    object-fit: cover;
+    opacity: 0.4;
+    animation: parallax-scroll 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: 0 100%; /* Adjust the scroll range for desired effect */
+    transform: translateY(0); /* Initial position */
+  }
+
+  /* Parallax Animation */
+  @keyframes parallax-scroll {
+    from {
+      transform: translateY(00%);
+    }
+    to {
+      transform: translateY(20%); /* Adjust the amount of parallax movement */
+    }
+  }
+}
+
+/* Curious Wiggle */
+@keyframes curious-wiggle {
+  0% { transform: scale(1); opacity: 1; }
+  5% { transform: rotate(1deg) scale(1.05); opacity: 0.9; color: var(--theme-primary); }
+  10% { transform: rotate(-1deg) scale(1.05); opacity: 1; }
+  15% { transform: rotate(0deg) scale(1); }
+}
+.curious-wiggle {
+  display: inline-block; /* Ensures transform works properly */
+  animation: curious-wiggle 2s ease-in-out infinite;
+  animation-delay: 7s;
+}
+
+/* ON LOAD FADE UP AND INS */
+/* Fade In - Simple Opacity Animation */
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* Fade In - Low Opacity Animation */
+@keyframes fadein25 {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: .2;
+  }
+}
+/* Fade In Up - Opacity + Translate */
+@keyframes fadeinup {
+  from {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Base animation classes */
+.fadein {
+  opacity: 0;
+  animation: fadein 0.8s ease-out forwards;
+}
+
+.fadeinup {
+  opacity: 0;
+  animation: fadeinup 0.8s ease-out forwards;
+}
+.fadein-25 {
+  opacity: 0;
+  animation: fadein25 3s ease-out forwards;
+}
+/* Delay classes for staggered effects */
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.6s; }
+.delay-6 { animation-delay: .75s;}
+.delay-7 { animation-delay: 3s;}
+.delay-8 { animation-delay: 3s;}
+.delay-9 { animation-delay: 3s;}
+.delay-10 { animation-delay: 3s;}
+
+/* Animate Highlight */
+.hero .text h1 em, .ani-highlight {
+  position: relative;
+  font-style: normal;
+  display: inline-block;
+  z-index: 5;
+}
+
+.hero .text h1 em::after, .ani-highlight:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px; /* Moves underline slightly behind the text */
+  width: 0;
+  height: 50px; /* Adjust thickness here */
+  background: var(--theme-accent-2); /* Matches text color */
+  z-index: 5; /* Puts underline behind text */
+  opacity: 1;
+  mix-blend-mode: overlay;
+  /* Animation */
+  animation: underline-animation 0.8s ease-in-out forwards;
+  display: none;
+}
+
+/* Stagger the animation delay on the ::after pseudo-element */
+.hero .text h1 em:nth-of-type(1)::after { animation-delay: 1.25s; }
+.hero .text h1 em:nth-of-type(2)::after { animation-delay: 2s; }
+.hero .text h1 em:nth-of-type(3)::after { animation-delay: 2.75s; }
+
+
+
+// /* ----------- FADE IN ----------- */
+// @keyframes fadeInUp1 {
+//   0% {opacity: 0;transform: translate3d(0, 50px, 0) scale(1);}
+//   100% {opacity: 1;transform: translate3d(0, 50px, 0) scale(1);}
+// }
+// .fadeinup1 {
+// opacity: 0;
+// animation-name: fadeInUp1;
+// animation-delay: none;
+// animation-timing-function: ease-in-out;
+// animation-duration: 1.45s;
+// animation-fill-mode: forwards;
+// }
+
+// /* ANIMATE IN CONTENT WHILE SCROLLING */
+// .animate-in {opacity: 0; transform: translate(0, 50px); transition-delay: .25s;}
+// .animate-in.visible {opacity: 1; transform: translate(0, 0); transition-duration: .75s; transition-timing-function: ease-out;}
+
+// .fade-in {opacity: 0;transition-delay: .25s;}
+// .fade-in.visible {opacity: 1; transition-timing-function: ease-out;}
+
+// /* DELAY */
+// .delay-1 {animation-delay: .15s; transition-delay: .15s;}
+// .delay-2 {animation-delay: .3s; transition-delay: .3s;}
+// .delay-3 {animation-delay: .45s; transition-delay: .45s;}
+// .delay-4 {animation-delay: .6s; transition-delay: .6s;}
+// .delay-5 {animation-delay: .75s; transition-delay: .75s;}
+// .delay-6 {animation-delay: .90s; transition-delay: .90s;}
+// .delay-7 {animation-delay: 1.05s; transition-delay: 1.05s;}
+// .delay-8 {animation-delay: 1.20s; transition-delay: 1.20s;}
+// .delay-9 {animation-delay: 1.35s; transition-delay: 1.35s;}
+
+// .animation-delay-1 {animation-delay: .15s;}
+// .animation-delay-2 {animation-delay: .3s;}
+// .animation-delay-3 {animation-delay: .45s;}
+// .animation-delay-4 {animation-delay: .6s;}
+// .animation-delay-5 {animation-delay: .75s;}
+// .animation-delay-6 {animation-delay: .90s;}
+// .animation-delay-7 {animation-delay: 1.05s;}
+// .animation-delay-8 {animation-delay: 1.20s;}
+// .animation-delay-9 {animation-delay: 1.35s;}
+
+// /* Timeline Scroll Animations */
+
+// @keyframes fadein {
+//   from {}
+//   to {opacity: 1; translate: 0 0 ;}
+// }
+
+// .icon-text > *, .fadin-items > * {
+//   animation: fadein ease-in forwards;
+//   animation-timeline: view();
+//   animation-range: 100px 250px;
+//   opacity: 0;
+//   translate: 0 15px;
+
+//   // view-timeline-name: --fadein;
+//   // view-timeline-axis: block;
+//   // animation: linear fadein both;
+//   // animation-timeline: --fadein;
+//   // animation-range: entry 30% cover 25%;
+// }
+
+
+
+// @keyframes cliptwist {
+//   from {
+//     clip-path: inset(0 0, 100% 1%, 100% 100%, 0 100%);
+//   }
+//   to {
+//     clip-path: inset(0 0, 100% 1%, 100% 90%, 0 100%);
+//   }
+// }
+
+// .clip-twist, .hero-bkg {
+//   view-timeline-name: --cliptwist;
+//   view-timeline-axis: block;
+//   animation: linear cliptwist both;
+//   animation-timeline: --cliptwist;
+//   animation-range: entry 100% cover 100%;
+// }

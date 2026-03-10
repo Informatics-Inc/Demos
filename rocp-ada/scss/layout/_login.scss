@@ -1,0 +1,24 @@
+.login {background: var(--darkblue); min-height: 100vh; min-width: 100vw; display: grid; place-content: center; padding-bottom: 100px;}
+.login .panel {max-width: 700px; margin: auto; padding: 0;}
+.login-logo {max-width: 300px; margin: 2rem auto 2rem auto;}
+.login .grid-2 .col {padding: 2rem; border-radius: 4px 0 0 4px;}
+.login .grid-2 .col:nth-of-type(2) {background: var(--lightblue); padding: 2rem; border-radius: 0 4px 4px 0 ;}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+
+}
+
+/* SUPER WIDE DESKTOP */
+@media (min-width: 1500px) {
+
+}

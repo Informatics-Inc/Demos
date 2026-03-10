@@ -1,0 +1,46 @@
+.hero {padding: 0 var(--side-padding); position: relative; z-index: 5; margin-bottom: var(--spacer-vert); min-height: 100vh; display: flex; justify-content: center; flex-direction: column;}
+.hero .text {margin-top: auto; max-width: 1000px; color: var(--text-color-inverse); padding-top: 300px;}
+.h1-topper {max-width: 125px; margin: 1rem 0;}
+.hero .text h1 {color: #fff; font-size: 2.5rem; line-height: 1.1;}
+.hero .text p.lead {justify-self: flex-start; font-weight: 300; margin: 2rem 0; font-size: 1.25rem;}
+
+.hero-bkg {position: absolute; inset: 0; z-index: -1; background: var(--dark); overflow: hidden; height: 100%;}
+.hero-bkg > * {width: 100%; height: 100%; object-fit: cover; opacity: .3; position: absolute;}
+.hero video {width: 100%;}
+
+.up-next {color: var(--text-color-inverse); display: grid; justify-content: flex-start; border-top: 1px solid rgba(255,255,255,.25); padding: 2rem 0; align-items: last baseline; gap: 1rem; margin: 3rem 0;}
+.up-next h3 {Font-size: 1.75rem; margin: 0; color: #fff;}
+.up-next .is-style-label {margin: 0 0 10px 0; font-size: .6rem;}
+.up-next h4 {font-family: var(--body); letter-spacing: normal; margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 500; color: #fff;}
+.up-next .col + .col {border-left: 1px solid rgba(255,255,255,.15); padding: 1rem 1.5rem;}
+.detail-list {display: flex; gap: 5px; align-items: flex-start; font-size: .75rem;}
+.detail-list p .fa {color: var(--theme-accent-2); margin: 0 5px 0 0;}
+.detail-list p { padding-right: 8px; margin-right: 8px; margin: 0; opacity: .7;}
+.detail-list a {text-decoration: underline; color: var(--text-color-inverse); color: var(--theme-accent-2); padding-left: 4px;}
+
+
+@keyframes underline-animation {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .hero .text h1 {font-size: 3.5rem;}
+  .up-next {display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;}
+  .up-next .col:nth-of-type(1) {grid-column: 1 / 2; grid-row: 1 / 2;}
+  .up-next .col:nth-of-type(2) {grid-column: 1 / 2; grid-row: 2 / 3;}
+  .up-next .col:nth-of-type(3) {grid-column: 2 / 3; grid-row: 2 / 3;}
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+  .up-next {display: flex; gap: 3rem;}
+  .up-next .col + .col {padding: 1rem 0 1rem 2rem;}
+  .hero .text h1 {font-size: 4.5rem;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}

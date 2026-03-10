@@ -1,0 +1,95 @@
+
+/* Blurb and Links */
+.link-boxes {list-style: none; padding: 0; margin: 1rem 0; display: grid; grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) ); gap: 25px}
+.link-boxes li {height: 100%;}
+.link-boxes a {font-family: var(--header); font-size: 18px; color: #333; background: #EDF1F4; padding: 2rem 1.5rem; display: grid; grid-template-columns: 30px auto auto; font-weight: 700; gap: 10px; position: relative; height: 100%; align-items: center; border-radius: 5px; line-height: 1.1; transition: all 1200ms cubic-bezier(0.075, 0.82, 0.165, 1);}
+.link-boxes a:after {content: "\f061";font-family: FontAwesome; font-size: 12px; opacity: .4;}
+.link-boxes a:before {content: "\f00c";font-family: FontAwesome; width: 25px; height: 25px; background: #73C9EE; color: #fff; display: grid; align-items: center; text-align: center; border-radius: 3px; font-size: 12px;}
+.link-boxes a:hover {text-decoration: none; background: none;}
+.link-boxes a:hover:before {background: #FF981E;}
+.hgroup {max-width: 850px; margin: 0 auto 45px auto;}
+
+@media (min-width: 1001px) {
+.two-col-info {display: grid; grid-template-columns: 1.25fr 2fr; gap: 25px;}
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/* Two Column Content */
+.bkg-light {background: #EDF1F4; position: relative;}
+.bkg-img > img {position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .75; mix-blend-mode: overlay;}
+.two-col-content ul {padding: 0 0 0 1.25rem; list-style: square;}
+.two-col-content ul li::marker {color: #FF981E;}
+.two-col-content ul li {font-size: 16px; font-weight: 700; line-height: 1.4; margin: 0 0 10px 0;}
+@media (min-width: 1001px) {
+  .two-col-content {display: grid; grid-template-columns: 1.25fr 1fr; gap: 25px; align-items: center;}
+}
+
+/* Two Col Boxes */
+.two-col-boxes {display: grid; gap: 25px;}
+.two-col-boxes .flex {flex-wrap: wrap; gap: 25px;}
+.col-box {text-align: left; padding: 2rem; background: #fff; border-radius: 5px;}
+.col-box ul {padding: 0 0 0 1.25rem; list-style: square;}
+.col-box ul li::marker {color: #FF981E;}
+.col-box ul li {font-size: 16px; font-weight: 700; line-height: 1.4; margin: 0 0 10px 0;}
+
+@media (min-width: 1001px) {
+.two-col-boxes {grid-template-columns: .75fr 1.5fr; gap: 50px;}
+}
+
+
+.page-platform > * {margin: 50px auto;}
+
+.platform-1-callout ul {list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 15px;}
+.platform-1-callout ul li {padding: 25px 25px 25px 20px; background: #f9f9f9; border-radius: 10px; border: 1px solid #ccc; font-size: 1.95rem; color: #222; display: grid; grid-template-columns: 25px auto; gap: 25px; align-items: center;}
+.platform-1-callout ul li:before {
+  align-items: center;
+  background: #73c9ee;
+  border-radius: 3px;
+  color: #fff;
+  content: "\f00c";
+  display: grid;
+  font-family: FontAwesome;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px;
+}
+/* Grid Two */
+.grid-2 {display: grid; gap: 25px;}
+@media (min-width: 1001px) {
+.grid-2 {grid-template-columns: 1.35fr 1fr; gap: 50px; align-items: center;}
+  .two-col-info {display: grid; grid-template-columns: 1.25fr 2fr; gap: 25px;}
+}
+
+@media (min-width: 1200px) {
+
+}
+
+.platform-2 .feature-list ul {list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); gap: 25px;}
+.platform-2 .feature-list ul li {font-size: 14px; line-height: 1.4; border-left: 3px solid #f4f4f4; padding: 20px 15px 25px 25px; background: #f4f4f4; border-radius: 5px;}
+.platform-2 .feature-list ul li strong {display: block; color: #222; font-size: 18px; margin: 0 0 10px 0; position: relative; left: -18px; padding: 00; display: grid; grid-template-columns: 15px auto; gap: 25px;position: relative; left: -40px; line-height: 1.2;}
+.platform-2 .feature-list ul li strong:before {
+  align-items: center;
+  background: #73c9ee;
+  border-radius: 3px;
+  color: #fff;
+  content: "\f00c";
+  display: grid;
+  font-family: FontAwesome;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+
+// .platform-2 {display: grid; grid-template-columns: 1.25fr 3fr; gap: 50px;}
+
+@media (min-width: 1001px) {
+  .platform-2 .col {text-align: center; margin: 0 0 50px 0;}
+  .platform-2 .col h2:after {left: calc(50% - 25px);}
+  .platform-2 .col p {max-width: 850px; margin: 0 auto 25px auto;}
+}

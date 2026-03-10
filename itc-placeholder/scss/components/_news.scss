@@ -1,0 +1,12 @@
+.news-story {background: #f4f4f4;}
+.news-story .text {padding: 20px;}
+.news-story .text h3 {margin: 0 0 .5rem 0;}
+.news-story .text p {font-size: .825rem; color: var(--text-color);}
+.news-story .text p.learn-more {text-transform: uppercase; color: var(--primary); text-decoration: underline; font-weight: bold; margin: 0;}
+.news-story .text p.learn-more:hover {text-decoration: none;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+
+}

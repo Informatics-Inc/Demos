@@ -1,0 +1,55 @@
+/* Compare NoDoz*/
+.compare {background: var(--primary); border-radius: 10px; padding: 2rem 0; position: relative; box-shadow: 0 0 25px rgba(0,0,0,.15); margin: 100px auto;}
+.compare:after {background: var(--primary); height: 60px; content: ""; width: 150vw; left: calc((150vw - var(--max-width) + 2 * var(--side-padding)) / -2);; top: calc(50% - 30px); position: absolute; border-top: 20px solid var(--accent-1); border-bottom: 20px solid var(--accent-3); z-index: -1; transform: rotate(-12deg);}
+
+#compare-controls {color: #fff; text-align: center; padding: 2rem;}
+#compare-controls h3 {color: #fff;}
+#compare-controls ul {display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; padding: 0;}
+#compare-controls ul li {background: #fff; color: var(--primary); transform: skew(-12deg); box-shadow: 5px 5px 0 var(--accent-1); display: block;}
+#compare-controls ul a {display: block; padding: 10px 25px; transform: skew(12deg); text-decoration: none; font-weight: 700;}
+#compare-controls ul li.active {background: var(--accent-3);}
+#compare-controls ul li.active a {color: #fff;}
+
+#compare-content {display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; padding: 0 1rem;}
+#compare-content .col-beta, #compare-content .col-alpha {border-radius: 10px; overflow: hidden; background: #fff;}
+#compare-content header {background: var(--accent-3); padding: 1rem; font-size: .85rem; position: relative; color: #fff; text-align: center;}
+#compare-content header h2 {color: #fff; font-weight: 700; margin: 0 0 5px 0; font-size: 1.5rem;}
+#compare-content header p {margin: 0;}
+#compare-content header img {width: 50px; height: 50px; object-fit: contain; margin: 0 auto 10px auto;}
+
+.compare-item {position: relative; color: var(--primary); font-weight: 700; margin: 1rem 0;}
+.compare-item p {margin: 0 0 10px 0; text-align: center; font-size: .9rem;}
+.compare-item .data { width: 85px; height: 85px; border: 3px solid var(--primary); border-radius: 50%; display: grid; place-content: center; margin: 0 auto; font-size: 1.1rem; line-height: 1;}
+
+.compare-item:last-of-type .data {text-align: center; width: 125px; height: 125px; font-size: 2rem;}
+.compare-item:last-of-type .data span {font-size: .85rem; color: #777; font-weight: 400;}
+.compare-item:last-of-type p:last-of-type {font-size: .8rem; color: var(--text-color); font-weight: 400;}
+.mobile-only {display: none;}
+
+.mobile-only {color: #fff; text-align: center; margin: 1rem auto; display: block; width: 100%; grid-column: span 2; font-weight: 500; text-underline-offset: 4px;}
+
+.tab-pane {display: none;}
+.tab-pane.in {display: block;}
+
+@media(min-width:768px){
+.compare {padding: 0;}
+#compare-controls {padding: 3rem 0 1rem 0}
+#compare-content {padding: 2rem; gap: 2rem;}
+#compare-content header {padding: 2rem; text-align: left;}
+#compare-content header h2 {font-size: 2rem;}
+#compare-content header img {position: absolute; right: 15px; top: calc(50% - 37.5px); width: 75px; height: 75px; object-fit: contain;}
+.compare-item {width: 33.3%; float: left; padding: 1rem 0rem;}
+.compare-item:last-of-type {width: 90%; position: relative; border-top: 1px solid #ccc; margin-top: 1rem; margin-left: 5%; text-align: left; padding-left: 150px; margin-bottom: 4rem; padding-top: 2rem;}
+.compare-item:last-of-type p {text-align: left;}
+.compare-item:last-of-type .data {text-align: center; width: 125px; height: 125px; position: absolute; left: 0; top: 25px; font-size: 2rem;}
+.compare-item:last-of-type .data span {font-size: .85rem; color: #777; font-weight: 400;}
+.compare-item:last-of-type .data + p {font-size: 1rem; margin: 1rem 0 10px 0;}
+.compare-item:last-of-type p:last-of-type {font-size: .8rem; color: var(--text-color); font-weight: 400;}
+.mobile-only {display: none;}
+
+
+}
+/* WIDE DESKTOP */
+@media (min-width:992px){
+
+}

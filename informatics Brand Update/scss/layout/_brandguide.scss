@@ -1,0 +1,15 @@
+.inf-brand {background: var(--tan);}
+
+#brand-menu {width: 200px; position: absolute; left: 15px; top: 15px; background: var(--tan); padding: 15px; display: none;}
+
+.title {min-height: 100vh; width: 100%; background: var(--blue); align-items: center;}
+.title h1 {color: #fff; font-size: clamp(3rem, -0.875rem + 8.333vw, 8.5rem);}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .blog-list-item {grid-template-columns: 1.5fr 3fr; gap: 2rem;}
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+}

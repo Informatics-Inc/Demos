@@ -1,0 +1,17 @@
+/* ALERTS */
+
+/* Globals */
+.alert {padding: 15px; background: var(--light); border-radius: 5px; margin: 0 0 1.25rem 0; font-size: .85rem;}
+.alert:before {color: var(--primary);}
+.alert-check:before {content: "\f058";font-family: FontAwesome; margin: 0 5px 0 0;}
+
+/* ONLY MOBILE */
+@media (max-width: 991px) {
+}
+/* DESKTOP */
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1500px) {
+
+}

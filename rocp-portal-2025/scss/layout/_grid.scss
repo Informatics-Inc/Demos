@@ -1,0 +1,70 @@
+@use "../tokens" as *;
+
+.grid {
+  display: grid;
+  gap: $space-6;
+  grid-template-columns: 1fr; // default stack
+  align-items: start;
+}
+
+/* column count variants */
+@media (min-width: 48rem) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* ratio variants */
+  .grid--50-50 {
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  .grid--33-66 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .grid--66-33 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .grid--25-75 {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .grid--75-25 {
+    grid-template-columns: 3fr 1fr;
+  }
+  .grid--sidebar {
+    grid-template-columns: 240px auto;
+  }
+  .grid--auto-md {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: start;
+    align-items: start;
+  }
+  .filter-panel {
+    border-right: 1px solid $gray-200;
+    padding-right: $space-6;
+    height: 100%;
+  }
+  .table-panel {
+    min-width: 0;
+  }
+}
+
+.gap-default {gap: $space-6;}
+.gap-sm {gap: $space-4;}
+.gap-md {gap: $space-6;}
+.gap-lg {gap: $space-8;}
+.gap-xl {gap: $space-10;}
+
+
+// .filter-panel {background: $gray-100; padding: 1rem; border-radius: 3px; height: 100%;}

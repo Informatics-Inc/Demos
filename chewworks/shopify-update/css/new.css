@@ -1,0 +1,51 @@
+/* GLOBAL UPDATES */
+.site-header__logo {margin: 0;}
+.site-header__logo-image {max-width: 125px !important;}
+.site-header__logo-image img {max-width: none !important;}
+.main-content {padding-top: 0;}
+
+#SiteNav li a.btn-theme, .btn-theme {background: #f05c5a; color: #fff; padding: 10px 15px; border-radius: 5px; display: block; font-weight: 700; text-align: center;}
+#SiteNav li a.btn-theme:hover, .btn-theme:hover {background: #DB4442;}
+
+#new-hero {position: relative; overflow: hidden;}
+#new-hero figure {margin: 0; padding: 0; line-height: 1; position: absolute; inset: 0; width: 100%; height: 100%;}
+#new-hero figure img {width: 100%; height: 100%; object-fit: cover;}
+#new-hero .text {position: relative; z-index: 5; margin: 25px; max-width: 55%; background: #fff; padding: 15px; box-shadow: 5px 5px 15px rgba(0,0,0,.15); border-radius: 4px;}
+#new-hero .text .preheader {text-transform: uppercase; font-size: .9rem; letter-spacing: 1px; margin: 0 0 .5rem 0; color: #EAB33D;}
+
+#new-hero:after {position: absolute; left: 0; bottom: -50px; width: 100%; height: 100px; background: #EAB33D; content: "";
+    --mask: conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/60.00px 100%;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+.shopify-section {margin: 25px 0;}
+#shopify-section-header {margin: 0;}
+h2 {font-size: 2.25rem; text-transform: none; letter-spacing: normal;}
+.product-feature {padding: 25px; border-radius: 10px; background: #f4f4f4;}
+.product-feature img {border: 15px solid #fff;}
+.product-feature .btn-theme {padding: 15px 25px; display: inline-block;}
+
+@media (min-width: 768px) {
+    #new-hero .text {width: 45%; margin: 50px;padding: 25px;}
+}
+
+@media (min-width: 1024px) {
+    .site-header {max-width: 1170px; margin: 0 auto;}
+    .grid--table {display: flex; align-items: center;}
+    .grid--table > * {flex-grow: 1; width: auto; max-width: none;}
+    .site-nav {text-align: right;}
+    .site-header__icons {flex-grow: 0; padding-left: 50px;}
+    .site-header__icons-wrapper {padding-left: 20px;}
+
+    #SiteNav li a, #SiteNav li button {font-weight: 500; font-size: 1.05rem;}
+    #SiteNav li a.btn-theme {margin-left: 20px;}
+
+    #new-hero .text-wrap {max-width: 1160px; margin: 0 auto;}
+    #new-hero .text {padding: 40px; width: 42%; margin: 100px 50px;}
+    #new-hero .text h1 {font-size: 3rem; letter-spacing: -1px; line-height: 1;}
+    #new-hero .text p {font-size: 1.1rem;}
+    #new-hero .text .btn-theme {display: inline-block; padding: 15px 25px; font-size: 1.1rem; box-shadow: 5px 5px 10px rgba(0,0,0,.1);}
+
+    .grid-two-col {display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 0;}
+    .grid-two-col > * {width: 100%;}
+}

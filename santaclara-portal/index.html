@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Santa Clara Portal</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e52fe1252e.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ccm.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<main id="main">
+  <div class="tools">
+    <div class="language">
+      <button id="lang-btn" aria-controls="lang-options"><img src="img/flag-us.jpg" /><span>Language: English <i class="fa fa-caret-down"></i></span></button>
+      <ul id="lang-options">
+        <li><a href="#.html"><img src="img/flag-us.jpg" /> English</a></li>
+        <li><a href="#.html"><img src="img/flag-viet.jpg" /> Vietnamese</a></li>
+      </ul>
+    </div>
+    <div class="user-details">
+      <p>Logged in as <a href="#.html">Lisa Vazquez</a> | <a href="#.html">Logout<i class="fa-solid fa-arrow-right-from-bracket"></i></a></p>
+    </div>
+  </div>
+
+  <div class="admin-wrapper">
+    <nav class="menu">
+      <div class="menu-wrapper">
+        <div class="menu-hdr">
+          <div class="brand">
+            <img src="img/logo.jpg" />
+            <p>Child Care Portal</p>
+          </div>
+          <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#menu-expand" aria-expanded="false" aria-controls="menu-expand"><i class="fa fa-bars"></i></span></button>
+        </div>
+        <div id="menu-expand" class="collapse">
+          <ul class="menu-links">
+            <li class="active"><a href="index.html"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="referrals.html"><i class="fa fa-check"></i>Approve/Deny Referrals</a>
+            </li>
+            <li><a href="details.html"><i class="fa fa-building"></i>Your Details</a>
+              <!-- <ul>
+                <li><a href="details-detail.html">Manage Admins</a></li>
+                <li><a href="details-detail.html">Referral & Vacancies</a></li>
+                <li><a href="details-detail.html">License Information</a></li>
+                <li><a href="details-detail.html">Public Information</a></li>
+                <li><a href="details-detail.html">Contact Information</a></li>
+                <li class="active"><a href="details-detail.html">Workforce Information</a></li>
+                <li><a href="details-detail.html">Transportation & Meals</a></li>
+                <li><a href="details-detail.html">Schedule Of Care</a></li>
+                <li><a href="details-detail.html">Payment & Subsidies</a></li>
+                <li><a href="details-detail.html">Qualifications</a></li>
+                <li><a href="details-detail.html">Program Information</a></li>
+              </ul> -->
+            </li>
+            <li><a href="family.html"><i class="fa fa-users"></i>Family Information</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+      <div class="portal-content fadein">
+        <div class="portal-content-wrap">
+        <div class="portal-content-hdr">
+          <h1>Welcome to Your New Dashboard!</h1>
+          <p>Connect with referrals and manage your business information effortlessly in our user-friendly portal, designed exclusively for day care providers like you.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="box">
+            <figure>
+              <img src="img/feature-1.jpg" />
+            </figure>
+            <div class="text">
+              <h3>Review Referrals</h3>
+              <p>View your referrals and approve<br/> or deny potential clients.</p>
+              <a href="#.html" class="btn-theme">View Referrals</a>
+            </div>
+          </div>
+          <div class="box">
+            <figure>
+              <img src="img/feature-2.jpg" />
+            </figure>
+            <div class="text">
+              <h3>Your Details</h3>
+              <p>Manage your business hours <br/>and other details here.</p>
+              <a href="#.html" class="btn-theme">Your Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <figure>
+              <img src="img/feature-3.jpg" />
+            </figure>
+            <div class="text">
+              <h3>Family Information</h3>
+              <p>View family and child details<br/> in this section of the portal.</p>
+              <a href="#.html" class="btn-theme">Family Information</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+</main>
+
+  
+  <!-- FOOTER SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  </body>
+</html>

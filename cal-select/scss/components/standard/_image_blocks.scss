@@ -1,0 +1,76 @@
+figure.theme-img.stats figcaption{text-align:center;width:80%;box-shadow:var(--box-shadow-lg);border-radius:var(--border-radius-sm);background:var(--secondary);color:var(--dark);box-shadow:var(--box-shadow-lg);padding:30px 25px;margin:-70px 10% -20px 10%;position:relative;z-index:5}
+figure.theme-img.stats figcaption h3{color:#000;font-family:var(--body);font-size:4.5rem;margin-bottom:0;font-weight:700;}
+.theme-img.stats figcaption p{font-size:1.3rem;line-height:1.2}
+.theme-img.stats figcaption p:last-child {margin-bottom:0}
+
+.theme-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    position: relative;
+    margin: 0 0 2rem 0;
+    position: relative;
+    z-index: 5;
+    margin-left:auto;margin-right:auto;
+  }
+   
+  .theme-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius-sm);
+  }
+  
+  .theme-img.two-images {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 0;
+    min-height:240px;
+  }
+  .theme-img.two-images img{height:100%}
+
+
+  .theme-img.dots:after {
+    background: url(../img/dots2.svg);
+    background-size: auto;
+     width: 30px;
+     height: 110px;
+     position: absolute;
+     left: -40px;
+     top: 4px;
+     content: "";
+     background-size: cover;
+     z-index: -1;
+     }
+  
+  .theme-img.lines:after {
+    background: url(../img/wave-green.svg);
+    width: 150px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-size: cover;
+  }
+  .theme-img.two-images.lines img:nth-child(2){height:calc(100% - 50px)}
+
+  
+/* TABLET */
+@media (min-width: 768px) {
+  .theme-img.two-images{min-height:350px;}
+  figure.theme-img.stats figcaption{position:absolute;z-index:2;width:225px;background-size:auto;padding:20px 18px 30px 18px;bottom:-80px;right:0px;margin:0 }
+
+} 
+
+/* DESKTOP */
+@media (min-width: 992px) {
+.theme-img{padding-right:4.5rem;}
+.theme-img.two-images{min-height:400px;}
+.theme-img.dots:after{width:40px;height:160px;left:-60px;top:0px;}
+
+}
+
+@media (min-width: 1200px) {
+  .theme-img.two-images{min-height:430px;}
+
+}

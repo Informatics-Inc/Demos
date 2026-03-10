@@ -1,0 +1,85 @@
+@use "../tokens" as *;
+
+/* =========================
+   Alert Component
+   ========================= */
+
+.alert {
+  display: block;
+  padding: 1rem 1.25rem;
+  margin-block: 1rem;
+
+  border-radius: $radius-sm;
+  border: 1px solid $color-border-subtle;
+
+  background-color: $color-bg-surface;
+  color: $color-text-main;
+
+  line-height: 1.4;
+  box-shadow: $shadow-xs;
+
+  transition:
+    background-color .15s ease,
+    border-color .15s ease,
+    color .15s ease;
+}
+
+/* Headings / emphasis inside alerts */
+.alert strong {
+  font-weight: $font-weight-semibold;
+}
+
+/* ------------------------------------------
+   Visual Variants
+------------------------------------------- */
+
+.alert--info {
+  background-color: $color-info-bg;
+  border-color: $color-info-border;
+  color: $color-info-text;
+}
+
+.alert--success {
+  background-color: $color-success-bg;
+  border-color: $color-success-border;
+  color: $color-success-text;
+}
+
+.alert--warning {
+  background-color: $color-warning-bg;
+  border-color: $color-warning-border;
+  color: $color-warning-text;
+}
+
+.alert--error {
+  background-color: $color-error-bg;
+  border-color: $color-error-border;
+  color: $color-error-text;
+}
+
+/* ------------------------------------------
+   Inline / Field-Level Alerts
+------------------------------------------- */
+
+.alert-inline {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: $color-error-text;
+}
+
+/* ------------------------------------------
+   Links & Interactive Elements
+------------------------------------------- */
+
+.alert a {
+  color: currentColor;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+.alert a:focus-visible,
+.alert button:focus-visible {
+  outline: 3px solid $color-focus-ring;
+  outline-offset: 2px;
+}

@@ -1,0 +1,11 @@
+.theme-image {display: grid; gap: 3rem;}
+.theme-image .pill-clip {position: relative; aspect-ratio: 3 / 1; border-radius: 250px; overflow: hidden; transform: rotate(-12deg);}
+.theme-image .pill-clip img {position: relative; width: 100%; height: calc(100% + 100px); object-fit: cover; transform: rotate(12deg); top: -50px;}
+
+  /* TABLET */
+@media (min-width: 768px) {
+} 
+
+@media (min-width: 1200px) {
+
+}

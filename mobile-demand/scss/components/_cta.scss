@@ -1,0 +1,12 @@
+.cta {padding: 2rem; background: var(--light); border-radius: 5px; display: grid; gap: 1rem; position: relative; overflow: hidden; z-index: 5;}
+.cta img {max-width: 150px; border-radius: 50%; aspect-ratio: 1 / 1; border: 10px solid var(--primary); object-fit: cover;}
+.cta h2 {font-size: 2rem;}
+.footer-cta:after {display:  none;}
+.footer-cta { top: -75px; background: #fff;}
+@media (min-width: 992px) {
+.cta {grid-template-columns: 150px auto auto; align-items: center; gap: 2rem;}
+.footer-cta { top: -125px;}
+.cta:after {width: 50px; height: 100%; background: var(--dark); content: ""; position: absolute; right: 0; top: 0; z-index: -1;}
+
+
+}    

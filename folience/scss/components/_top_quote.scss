@@ -1,0 +1,9 @@
+h5.quote{font-size:2rem;line-height:2.35rem}
+.quote em{color:var(--primary);font-style:normal;}
+p.topquote {line-height:1.875rem;}
+p.topquote::after {content:"";display:block;width:45px;height:2px;background-color:var(--primary);margin-top:30px;}
+
+/* TABLET */
+@media (min-width: 768px) {
+h5.quote{font-size:2.375rem;line-height:2.75rem}
+} 

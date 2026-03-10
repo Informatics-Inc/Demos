@@ -1,0 +1,5 @@
+.contact-form{padding-top:50px}
+.wpcf7-form-control.wpcf7-submit:hover {background: #06a3e6;border: solid 1px #06a3e6}
+.wpcf7-form-control.wpcf7-submit {transition: var(--transition);color: #fff;text-transform: uppercase;font-size: 0.85rem;padding: 10px 30px;background: var(--primary);letter-spacing: 1px;border-radius: 0px;border: solid 1px var(--primary)}
+.wpcf7-form label {width: 100% !important;font-size: 0.75rem;margin:20px auto;}
+.wpcf7-form input[type="text"],input[type="email"],textarea {width: 100% !important;font-size: 1rem;border:none;border-bottom:1px solid #ccc;padding:5px 0px;}

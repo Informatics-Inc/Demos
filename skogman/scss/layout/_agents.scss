@@ -1,0 +1,46 @@
+.agent-grid {display: grid; grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) ); gap: 15px;}
+.wp-block-column .search-layout header {padding: 0; margin: 0 0 1rem 0;}
+
+.theme-card.bio-card {text-align: center;}
+.theme-card.bio-card figure {aspect-ratio: 1 / 1.25;}
+.theme-card.bio-card h3 a {text-decoration: none;}
+.theme-card.bio-card h3 a:hover {text-decoration: underline;}
+.theme-card.bio-card .is-layout-flex {display: flex; gap: 10px; flex-wrap: nowrap;}
+.theme-card.bio-card .card-body .wp-block-button {width: auto; flex-grow: 1;}
+.theme-card.bio-card .card-body .wp-block-button a { border: 2px solid var(--primary); padding: 5px;}
+.theme-card.bio-card .card-body .wp-block-button:first-of-type a {background: none; color: var(--text-color);}
+
+.agent-bio .page-hdr {margin: 0 0 1rem 0;}
+.agent-bio .realtor {grid-template-columns: 1fr;}
+.agent-bio .realtor figure {width: calc(100% + 3rem); position: relative; left: -1.5rem; top: -1.5rem; margin-bottom: -1.5rem;}
+.agent-bio .realtor figure img {width: 100%; height: 100%; object-fit: cover;}
+
+.tab-container .tab-btns {display: flex; border: 7px solid var(--light); border-bottom: 0; border-radius: 10px 10px 0 0; overflow: hidden; background: var(--light); margin: 0 0 2rem 0;}
+.tab-container .tab-btns .tab-btn {flex: 1; border: none; border-radius: 10px 10px 0 0; padding: 15px;}
+.tab-container .tab-btns .tab-btn.active {background: #fff; color: var(--primary); font-weight: 600;}
+
+.sidebar-left {display: grid; gap: var(--spacer-vert); margin-bottom: 2rem; align-items: flex-start;}
+
+.agent-bio .box-sidebar {box-shadow: 0 0 25px rgba(0,0,0,.15);}
+.agent-bio .search-list-grid {padding: 0;}
+
+@media (min-width:768px) {
+.sidebar-left {display: grid; grid-template-columns: 225px 1fr; gap: var(--column-gap);}
+.agent-bio .page-hdr figure {position: relative; height: 100px;}
+.agent-bio .page-hdr .content {text-align: left; padding-left: calc(225px + var(--column-gap)); padding-bottom: 25px;}
+.agent-bio .page-hdr .content .breadcrumb-nav {justify-content: flex-start;}
+.agent-bio .realtor {margin-top: -200px; position: relative; z-index: 10;}
+
+}
+
+/* WIDE DESKTOP */
+@media (min-width:992px){
+
+}
+@media (min-width:1200px){
+  .sidebar-left {grid-template-columns: 300px 1fr; gap: var(--column-gap-lg);}
+  .agent-bio .realtor {margin-top: -240px;}
+  .agent-bio .page-hdr .content {text-align: left; padding-left: calc(300px + var(--column-gap-lg)); padding-bottom: 25px;}
+}
+@media (min-width:1400px){
+}

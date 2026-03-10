@@ -1,0 +1,9 @@
+.listings{border-bottom:1px solid #dfdfdf;margin-bottom:50px;padding-bottom:25px}
+.listings:last-child {border-bottom:none}
+.share .social a{font-size:2.5rem;margin:auto 2px}
+.share .social a:hover {color:#000}
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+    .p-top{padding-top:120px}
+  }

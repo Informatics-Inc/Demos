@@ -1,0 +1,16 @@
+/* Global */
+.mbd-card {background: #fff; border-radius: 5px; overflow: hidden; box-shadow: var(--box-shadow-sm);}
+.mbd-card figure {aspect-ratio: 5 / 3; overflow: hidden;}
+.mbd-card figure img {width: 100%; height: 100%; object-fit: cover;}
+.mbd-card .content {padding: 2rem; min-height: 280px; display: flex; flex-direction: column; align-items: flex-start;}
+.mbd-card .content .eyebrow {font-size: .95rem;}
+.mbd-card .content .title {font-size: 1.25rem;}
+.mbd-card .content .button {margin-top: auto;}
+/* TABLET */
+@media (min-width:768px){
+
+}
+
+@media (min-width: 1200px) {
+
+}

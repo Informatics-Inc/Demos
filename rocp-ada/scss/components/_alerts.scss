@@ -1,0 +1,70 @@
+/* Base alert wrapper */
+.alert {
+  display: block;
+  padding: 1rem 1.25rem;
+  margin-block: 1rem;
+  border-radius: var(--border-radius-sm, 5px);
+  border: 1px solid var(--border, #ccc);
+  font-family: var(--body);
+  line-height: 1.4;
+  box-shadow: var(--box-shadow-sm);
+}
+
+/* Headings or strong text inside alerts */
+.alert strong {
+  font-weight: 600;
+  font-family: var(--header);
+}
+
+/* VISUAL VARIANTS ----------------------------- */
+.alert--info {
+  background-color: var(--info-bg);
+  border-color: var(--info-border);
+  color: var(--info-text);
+}
+
+.alert--success {
+  background-color: var(--success-bg);
+  border-color: var(--success-border);
+  color: var(--success-text);
+}
+
+.alert--warning {
+  background-color: var(--warning-bg);
+  border-color: var(--warning-border);
+  color: var(--warning-text);
+}
+
+.alert--error {
+  background-color: var(--error-bg);
+  border-color: var(--error-border);
+  color: var(--error-text);
+}
+
+/* INLINE ALERTS (field-level errors) */
+.alert-inline {
+  color: var(--error-text);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* LINKS inside alerts */
+.alert a {
+  color: currentColor;
+  text-decoration: underline;
+}
+.alert a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Optional: focus-visible for dismiss buttons or summaries */
+.alert button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Motion and transitions */
+.alert {
+  transition: var(--transition);
+}

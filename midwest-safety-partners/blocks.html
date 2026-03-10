@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Informatics, Inc">
+    <title>Blocks</title>
+
+    <!-- FONTS -->
+    <link href='css/icons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.typekit.net/iir5ssz.css">
+    <!-- CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Skip Nav Link-->
+    <a id="skip-nav" class="screenreader-text" href="#content">
+      Skip to Content
+    </a>
+
+    <header id="hdr-site">
+
+      <!-- HEADER TOP -->
+      <div id="hdr-top">
+        <div class="container">
+          <div class="hdr-top-left">
+            <p>This is the top info header</p>
+          </div>
+          <div class="hdr-top-right hidden-sm">
+            <ul>
+              <li><a href="#.html">News & Events</a></li>
+              <li><a href="#.html">Careers</a></li>
+              <li><a href="#.html">Utility Nav</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOGO AND MOBILE -->
+      <div class="container">
+        <div class="hdr-desktop">
+          <div id="hdr-main">
+            <a href="#.html" id="logo">
+              <img src="img/logo.svg" alt="Logo" />
+            </a>
+            <button id="menu-toggle" class="collapsed " type="button"
+              data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-expanded="false" aria-controls="menu">
+              <div class="closed">
+                Menu
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <div class="open">
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </button>
+          </div>
+
+          <!-- MAIN NAVIGATION -->
+          <nav id="menu" class="collapsed">
+            <ul>
+              <li><a href="#.html">Main Nav Link</a></li>
+              <li><a href="#.html">Main Nav Link</a></li>
+              <li><a href="#.html">Main Nav Link</a>
+                <button class="btn-expand collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#menu-1"
+                  aria-expanded="false" aria-controls="menu-1"><i
+                    class="fa fa-chevron-down"></i></button>
+                <ul id="menu-1" class="collapsed">
+                  <li><a href="#.html">Dropdown Link</a></li>
+                  <li><a href="#.html">Dropdown Link</a></li>
+                  <li><a href="#.html">Dropdown Link</a></li>
+                </ul>
+              </li>
+              <li><a href="#.html">Main Nav Link</a></li>
+              <li><a href="#.html">Main Nav Link</a></li>
+            </ul>
+            <a href="#.html" class="btn-theme wp-block-button__link ">Call To
+              Action</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="page-hdr">
+
+        <figure>
+          <img src="img/hero-1.jpg" />
+        </figure>
+        <div class="content">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb-nav">
+              <li><a href="#.html">Home</a></li>
+              <li>Blocks</li>
+            </ol>
+          </nav>
+          <h1>Page Header Block</h1>
+        </div>
+
+      </section>
+
+      <div
+        class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+        <div class="wp-block-column">
+          <figure class="theme-img two-images dots">
+            <img src="img/placeholders/placeholder-2.jpg" />
+            <img src="img/placeholders/placeholder-2.jpg" />
+          </figure>
+        </div>
+        <div class="wp-block-column">
+          <p class="is-style-eyebrow">Cedar Memorial</p>
+          <h2>Title Example of
+            Two Lines <em>Sample</em></h2>
+          <p class="is-style-lead">This is the lead style for paragraph text</p>
+          <p class="is-style-callout">This is the callout style for paragraph
+            text</p>
+          <p>This is the theme image block and it has many variations.</p>
+        </div>
+      </div>
+
+      <div class="wp-block-group alignfull is-style-bkg-left">
+        <div class="wp-block-columns">
+          <div class="wp-block-column">
+            <div class="call-to-action">
+              <div class="col">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+              </div>
+              <div class="col">
+                <div class="wp-block-button"><a
+                    class="wp-block-button__link wp-element-button"
+                    href="#">Button Text</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="wp-block-columns is-layout-flex are-vertically-aligned-center is-style-large-gap">
+
+        <div class="wp-block-column">
+          <h2>Our 2024 Association Agenda</h2>
+          <p>Whether you are an integrator, a supplier or a product
+            manufacturer, you can count on NSCA to <strong>advocate for the best
+              business climate possible</strong> for your company. That’s why
+            the NSCA board has set the following policy and program focuses for
+            2024:</p>
+          <div class="accordion-item">
+            <h3 class="collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              This is an expandable container item<i
+                class="fa fa-chevron-circle-down"></i>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapsed"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>These classes control the overall appearance, as well as the
+                  showing and hiding via CSS transitions. You can modify any of
+                  this with custom CSS or overriding our.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="true"
+              aria-controls="collapseTwo">
+              This is an expandable container item<i
+                class="fa fa-chevron-circle-down"></i>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapsed"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>These classes control the overall appearance, as well as the
+                  showing and hiding via CSS transitions. It's
+                  also worth noting that just about any HTML can go within the,
+                  though the transition does limit overflow.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="true"
+              aria-controls="collapseThree">
+              This is an expandable container item<i
+                class="fa fa-chevron-circle-down"></i>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapsed"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>These classes control the overall appearance, as well as the
+                  showing and hiding via CSS transitions. You can modify any of
+                  this with custom CSS or overriding our default variables. It's
+                  also worth noting that just about any HTML can go within the,
+                  though the transition does limit overflow.</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button"><a
+                class="wp-block-button__link wp-element-button"
+                href="https://www.crsaviors.org/about-us/history/">See Our
+                History</a></div>
+            <div class="wp-block-button is-style-btn-secondary"><a
+                class="wp-block-button__link wp-element-button"
+                href="https://www.crsaviors.org/about-us/history/">Secondary
+                Button
+                History</a></div>
+            <div class="wp-block-button is-style-btn-text">
+              <a class="wp-block-button__link wp-element-button" href="/">Get
+                Resources</a></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wp-block-column">
+        <figure class="theme-img two-images dots">
+          <img src="img/placeholders/placeholder-4.jpg" />
+          <img src="img/placeholders/placeholder-5.jpg" />
+        </figure>
+      </div>
+    </div>
+
+    <div
+      class="wp-block-columns is-layout-flex wp-block-columns-is-layout-flex">
+      <div
+        class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+        <h2 class="wp-block-heading has-text-align-center">Track Legislation
+          Impacting <br>the
+          Integration Industry</h2>
+        <p class="has-text-align-center is-style-max-width">ENSCA monitors
+          legislation and regulations that impact the commercial integration
+          industry at all levels of government, from licensure laws to code
+          conflicts, all on behalf of our members. You can find specific
+          information on proposed legislation in your city, county or state,
+          and help us take action by contacting your local officials and
+          representatives.</p>
+      </div>
+    </div>
+
+    <div class="wp-block-group alignfull is-style-bkg-dark">
+      <div
+        class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
+        <div class="wp-block-column" style="flex-basis: 45%;">
+          <div class="theme-cards large">
+            <div class="card">
+              <figure>
+                <img decoding="async" src="img/placeholders/placeholder-1.jpg"
+                  alt="Icon Grant Writing">
+              </figure>
+              <div class="content">
+                <h3 class="wp-block-heading">Insights Title Two Lines Going
+                  Right
+                  Here</h3>
+                <p>Lorem ipsum consectetur adipiscing elit, abore et dolore
+                  magna
+                  aliqabore et dolore magna aliqabore et dolore magna aliqabore
+                  et
+                  dolore ma veniam</p>
+                <div
+                  class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+                  <div class="wp-block-button is-style-btn-text">
+                    <a class="wp-block-button__link wp-element-button" href>Read
+                      More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card icon-card">
+              <figure>
+                <img decoding="async" src="img/icons/icons-ambulance.png"
+                  alt="Icon Grant Writing">
+              </figure>
+              <div class="content">
+                <h3 class="wp-block-heading">Insights Title Two Lines Going
+                  Right
+                  Here</h3>
+                <p>Lorem ipsmagna aliqab magna aliqsed do eiusmod tempor iscing
+                  elit, sed do eiusmod tempor incididunt ut laborut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div
+                  class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+                  <div class="wp-block-button is-style-btn-text">
+                    <a class="wp-block-button__link wp-element-button" href>Read
+                      More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card icon-card">
+              <figure>
+                <img decoding="async" src="img/icons/icons-bed.png"
+                  alt="Icon Grant Writing">
+              </figure>
+              <div class="content">
+                <h3 class="wp-block-heading">Insights Title Two Lines Going
+                  Right
+                  Here</h3>
+                <p>Lorem ore et dolore magna aliqabore et dolore magna aliqse
+                  incididunt ut laborut labore et dolore magna aliqua. Ut enim
+                  ad
+                  minim veniam</p>
+                <div
+                  class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+                  <div class="wp-block-button is-style-btn-text">
+                    <a class="wp-block-button__link wp-element-button" href>Read
+                      More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wp-block-column">
+          <p class="is-style-lead">We take great pride in earning the right to
+            be the
+            voice for integrators. This means that we speak with
+            authority on your behalf regarding many issues
+            impacting your livelihood and business success. It is
+            our pleasure to represent you nationally on issues of
+            concern for this industry, and to promote us collectively
+            as we define an even greater future for ourselves.</p>
+          <p class="is-style-callout"><strong>Chuck Wilson</strong><br>CEO
+            (Chief Excecutive Officer)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wp-block-columns">
+      <div class="wp-block-column">
+
+        <div class="theme-cards large">
+          <div class="card">
+            <figure>
+              <img decoding="async" src="img/placeholders/placeholder-1.jpg"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading">Insights Title Two Lines Going Right
+                Here</h3>
+              <p>Lorem ipsum consectetur adipiscing elit, abore et dolore magna
+                aliqabore et dolore magna aliqabore et dolore magna aliqabore et
+                dolore ma veniam</p>
+            </div>
+
+            <div class="wp-block-button is-style-btn-text">
+              <a class="wp-block-button__link wp-element-button" href>
+                <span>Read More</span></a>
+            </div>
+          </div>
+          <div class="card icon-card">
+            <figure>
+              <img decoding="async" src="img/icons/icons-ambulance.png"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading">Insights Title Two Lines Going Right
+                Here</h3>
+              <p>Lorem ipsmagna aliqab magna aliqsed do eiusmod tempor iscing
+                elit, sed do eiusmod tempor incididunt ut laborut labore et
+                dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+            <div class="wp-block-button is-style-btn-text">
+              <a class="wp-block-button__link wp-element-button" href>Read
+                More</a>
+            </div>
+          </div>
+          <div class="card icon-card">
+            <figure>
+              <img decoding="async" src="img/icons/icons-bed.png"
+                alt="Icon Grant Writing">
+            </figure>
+            <div class="content">
+              <h3 class="wp-block-heading">Insights Title Two Lines Going Right
+                Here</h3>
+              <p>Lorem ore et dolore magna aliqabore et dolore magna aliqse
+                incididunt ut laborut labore et dolore magna aliqua. Ut enim ad
+                minim veniam</p>
+            </div>
+            <div class="wp-block-button is-style-btn-text">
+              <a class="wp-block-button__link wp-element-button" href>Read
+                More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!---------------------------------  Lists and Horizontal Cards  ---------------------------------------->
+    <div class="wp-block-group alignfull is-style-bkg-left">
+      <div
+        class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
+        <div class="wp-block-column" style="flex-basis: 50%;">
+          <h2>Codes & Compliance FAQ</h2>
+          <p>As a leading
+            <strong>Members can ask the committee a question and get an answer
+              from a subject-matter expert on topics including:</strong></p>
+
+          <ul class="is-style-linklist">
+            <li>List item themed for client</li>
+            <li>List item themed for client List item themed for client List
+              item themed for client</li>
+          </ul>
+          <ul>
+            <li>List item themed for client List item themed for client List
+              item themed for client List item themed for client</li>
+            <li>List item themed for client</li>
+          </ul>
+          <div
+            class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button"><a
+                class="wp-block-button__link wp-element-button"
+                href="https://www.crsaviors.org/about-us/history/">Learn
+                More</a></div>
+          </div>
+
+          <div class="stats-block">
+            <div class="col">
+              <h4><span class="counter" data-target="20">0</span> +</h4>
+              <p>Years of Experience</p>
+            </div>
+            <div class="col">
+              <h4><span class="counter" data-target="50">0</span> +</h4>
+              <p>Happy Clients</p>
+            </div>
+            <div class="col">
+              <h4><span class="counter" data-target="986">0</span> +</h4>
+              <p>Projects Completed</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="wp-block-column">
+          <div class="card icon-card icon-card-horizontal">
+            <div class="content">
+              <figure>
+                <img
+                  src="img/icons/icons-emergency-time.png"
+                  alt="Icon Research" />
+              </figure>
+              <div class="text">
+                <h3 class="wp-block-heading">
+                  Basic Title Here</h3>
+                <p>
+                  Discover our cutting-edge training center,explore student
+                  FAQs,scheduling information,forms,and more.tting-edtting-ed
+                </p>
+                <div
+                  class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card icon-card icon-card-horizontal">
+            <div class="content">
+              <figure>
+                <img
+                  src="img/icons/icons-fireout.png"
+                  alt="Icon Research" />
+              </figure>
+              <div class="text">
+                <h3 class="wp-block-heading">
+                  List Title Here</h3>
+                <p>
+                  Discover our cutting-edge training center,explore
+                  FAQs,schQs,scheduling Qs,scheduling Qs,scheduling
+                  Qs,scheduling Qs,scheduling Qs,scheduling eduling
+                  information,forms,and more.tting-edtting-ed
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card icon-card icon-card-horizontal">
+            <div class="content">
+              <figure>
+                <img
+                  src="img/icons/icons-finger-press.png"
+                  alt="Icon Research" />
+              </figure>
+              <div class="text">
+                <h3 class="wp-block-heading">
+                  Another Title Here</h3>
+                <p>
+                  Discover our cutting-edge training center,explore
+                  studentiscover our cutting-edge training center,explore
+                  student FAQs,scheduling iniscover our cutting-edge training
+                  center,explore student FAQs,scheduling in FAQs,scheduling
+                  information,forms,and more.tting-edtting-ed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------  Stat Block  ---------------------------------------->
+    <div class="wp-block-group alignfull is-style-bkg-dark">
+      <div
+        class="wp-block-columns">
+        <div class="wp-block-column">
+
+          <div class="stats-block">
+            <div class="col">
+              <h4><span class="counter" data-target="20">0</span> +</h4>
+              <p>Years of Experience</p>
+            </div>
+            <div class="col">
+              <h4><span class="counter" data-target="50">0</span> +</h4>
+              <p>Happy Clients</p>
+            </div>
+            <div class="col">
+              <h4><span class="counter" data-target="986">0</span> +</h4>
+              <p>Projects Completed</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.counter');
+      const counterObserver = new IntersectionObserver(
+       (entries, observer) => {
+         entries.forEach(entry => {
+           if (entry.isIntersecting) {
+             const counter = entry.target;
+             const updateCounter = () => {
+               const target = +counter.getAttribute('data-target'); // Get target number
+               const current = +counter.innerText; // Get current number
+               const increment = Math.ceil(target / 100); // Set increment value
+               if (current < target) {
+                 counter.innerText = current + increment; // Increment counter
+                 setTimeout(updateCounter, 20); // Call again after delay
+               } else {
+                 counter.innerText = target; // Ensure final value is exact
+                 observer.unobserve(counter); // Stop observing once done
+               }
+             };
+             counter.classList.add('active'); // Optional: Add an "active" class
+             updateCounter(); // Start the counter animation
+           }
+         });
+       },
+       {
+         threshold: 0.5, // Trigger when 50% of the element is in view
+       }
+      );
+      
+      counters.forEach(counter => counterObserver.observe(counter)); // Observe each counter
+      });
+               </script>
+
+    <!---------------------------------  Side Backgrounds  ---------------------------------------->
+    <div class="wp-block-group alignfull is-style-bkg-left left-dark">
+      <div
+        class="wp-block-columns are-vertically-aligned-center is-layout-flex is-style-large-gap">
+        <div class="wp-block-column">
+          <h2>Our Staff</h2>
+          <p class="is-style-lead">The staff at Cedar Memorial is dedicated to
+            providing
+            compassionate care and unwavering support to every family we
+            serve. </p>
+          <p>
+            From our certified counselors to our groundskeepers, each
+            member of our team is committed to upholding our tradition of
+            excellence</p>
+          <div
+            class="wp-block-buttons is-layout-flex">
+            <div class="wp-block-button"><a
+                class="wp-block-button__link wp-element-button"
+                href="#">Learn More</a></div>
+          </div>
+        </div>
+        <div class="wp-block-column">
+          <div class="wp-block-columns is-layout-flex">
+            <figure class="theme-img dots">
+              <img src="img/placeholders/placeholder-team.webp" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="wp-block-columns is-layout-flex wp-block-columns-is-layout-flex">
+      <div
+        class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+        <h2 class="wp-block-heading has-text-align-center">Track Legislation
+          Impacting <br>the
+          Integration Industry</h2>
+        <p class="has-text-align-center is-style-max-width">ENSCA monitors
+          legislation and regulations that impact the commercial integration
+          industry at all levels of government, from licensure laws to code
+          conflicts, all on behalf of our members. You can find specific
+          information on proposed legislation in your city, county or state,
+          and help us take action by contacting your local officials and
+          representatives.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="call-to-action">
+        <div class="col">
+          <h2>Call To Action!</h2>
+        </div>
+        <div class="col">
+          <div class="wp-block-button"><a
+              class="wp-block-button__link wp-element-button" href="#">Button
+              Text</a></div>
+        </div>
+      </div>
+
+      <div class="ftr-cols">
+        <div class="col">
+          <h3>Column Title</h3>
+          <ul>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Column Title</h3>
+          <ul>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Column Title</h3>
+          <ul>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+            <li><a href="#.html">Footer Link</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Column Title</h3>
+          <div class=" ftr-ico-content">
+            <div class="location">
+              <i class="fa fa-map-marker-alt"></i>
+              <p>123 Address Street<br>Cedar Rapids, IA 52402</p>
+            </div>
+            <div class="phone">
+              <i class="fa fa-phone"></i>
+              <p><a href="#.html">(800) 446-6722</a><br><a href="#.html">(319)
+                  446-6722</a></p>
+              <!-- in WordPress Use the Same Social PHP as Header -->
+              <ul class="flex">
+                <li><a href="#.html"><i
+                      class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#.html"><i
+                      class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#.html"><i
+                      class="fa-brands fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="footer-copy">© 2024 NSCA. All Rights Reserved. Web Application
+        by <a target="_blank"
+          href="https://www.informaticsinc.com/">Informatics, Inc</a></p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.js"></script>
+  <script src="js/scripts.js"></script>
+</main>

@@ -1,0 +1,54 @@
+.card .wp-block-buttons{margin-top:auto;margin-bottom:0}
+.card {position: relative;transition: box-shadow .7s;  overflow: hidden;display: flex;flex-direction:column;}
+.card figure {overflow: hidden; margin: 0; aspect-ratio: 1 / 1;}
+.card figure img {width: 100%; height: 100%; object-fit: cover;}
+.card .content {text-align:center;padding: var(--spacer);display:flex;flex-direction:column;flex-grow:1}
+.card .content p:last-of-type {margin: 0;}
+.card .content p.date:last-of-type {margin-bottom:20px}
+.card h3 a,.card h3{position: relative;font-family:var(--main);font-weight:700;color:var(--text);text-decoration: none;}
+
+/* Bio Cards - Hovers */
+.card.bio-cards{min-height:480px;width:100%;max-width:300px;margin:0 auto;border-radius:400px 400px 0 0}
+.card.bio-cards figure{position:relative;overflow:hidden;margin:0;width:100%;height:100%;position:absolute;top:0;bottom:0;right:0;left:0;}
+.card.bio-cards figure::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(0,0,0,0.7) 100%);z-index:1;opacity:0;transition:opacity 0.5s;}
+.card.bio-cards:hover figure::before{opacity:1;}
+.card.bio-cards .content{transform:translateY(100%);opacity:0;transition:transform 0.5s,opacity 0.5s;position:absolute;bottom:0;width:100%;z-index:1;}
+.card.bio-cards:hover .content{transform:translateY(0%);opacity:1;}
+.card.bio-cards p{font-family:var(--special);color:var(--accent-2);font-size:1.65rem;}
+.card.bio-cards h3 a{margin:15px 0 0 0;font-family:var(--main);color:var(--accent-3);font-size:1rem;text-transform: uppercase;font-weight:400;letter-spacing:1px;font-weight:700}
+.card.bio-cards .is-style-btn-text .wp-block-button__link {color: var(--accent-2);}
+
+/* Icon Cards */
+.card.icon-card{min-height:480px;max-width:300px;margin:0 auto;transition:.3s;position:relative;background:var(--light);display:grid;grid-template-columns:1fr;gap:10px;border-radius:400px 400px 0 0;padding-top:50px;z-index:0;}
+.icon-holder{width:88px;height:88px;;display:flex;align-items:center;align-content:center;padding:10px;}
+.card.icon-card .content{gap:10px;text-align:left;}
+
+h2 strong::before,h1 strong::before{content:"";position:absolute;bottom:calc(-75% + 1.6rem);left:0;width:100%;height:100%;background-image:url("../img/shapes/underline.svg");background-repeat:no-repeat;background-size:100% 100%;z-index:0;}
+.wp-block-column h2 strong,.wp-block-column h1 strong{position:relative;z-index:0;font-style: italic;}
+
+/* Hovers */
+.card.bio-cards:hover h3 a{color:var(--accent-3)}
+.card.icon-card:hover h3::after{content:"";position:absolute;bottom:-20px;left:0;width:100px;margin:0 auto;height:100%;background-image:url("../img/shapes/underline.svg");background-repeat:no-repeat;background-size:100% 100%;z-index:-1;}
+.card.icon-card:hover{background:var(--primary);color:#fff;}
+.card.icon-card:hover .is-style-btn-text .wp-block-button__link {color:#FAA73D}
+.card.icon-card:hover .icon-holder{filter:brightness(100)}
+.card:hover{box-shadow:var(--box-shadow-lg)}
+.card:hover h3 a{color:var(--primary)}
+.card img{ transition:var(--transition)}
+.card:hover figure img{transition:var(--transition);transform:scale(1.08)}
+
+/* TABLET */
+@media (min-width:768px){
+.card-body{padding:30px}
+.card{height:100%;}
+}
+
+@media (min-width: 1200px) {
+.card{height:100%;}
+}
+
+
+
+
+
+

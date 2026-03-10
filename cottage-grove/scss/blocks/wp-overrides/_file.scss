@@ -1,0 +1,21 @@
+/* WP File Block Styles */
+.wp-block-file:not(.wp-element-button) {
+    font-size: .85em;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+    color: #333 !important;
+    border: 1px solid #ccc;
+}
+.wp-block-file a { color: #333 !important;}
+.wp-block-file * + .wp-block-file__button {
+    margin-left: .75em;
+    background: var(--blue);
+    color: #fff !important;
+    font-weight: 700;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}

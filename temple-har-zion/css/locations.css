@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document
+*/
+
+#search-location {display: flex; gap: 25px; flex-wrap: wrap; background: var(--light); padding: 15px; border: 1px solid var(--light-border); border-radius: 15px; margin: 0 0 2rem 0;}
+#search-location .form-group {flex: 1; min-width: 100px;}
+.search-filters {display: flex; align-items: flex-end; gap: 15px;}
+.btn-simple {padding: 15px; background: #fff; border: 1px solid #ccc; border-radius: 5px;}
+
+#locations .col-beta {display: none;}
+.location-list {display: block; margin: 0 0 20px 0; border-top: 1px solid #ddd; font-size: 14px; padding: 15px 15px 15px 0;}
+.location-list a {text-decoration: none;}
+.location-list a:hover {text-decoration: underline;}
+.location-list h2 a {color: var(--text); font-size: 1.5rem; line-height: 1.2; text-decoration: underline; margin: 0 0 1rem 0;}
+.col-sm-6 .location-list h2 {font-size: 1.75rem;}
+.location-list p {margin: 0 0 10px 0;}
+.location-list ul {list-style: none; padding: 0; margin: 0;}
+.location-list ul li {display: inline-block;}
+.location-list ul a {margin: 0 10px 0 0; position: relative;}
+.location-list ul a:before {content: ""; width: 1px; height: 15px; display: block; background: #999; position: absolute; left: -8px; top: 2px;}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #locations {height: 700px; width: 100%; overflow: hidden; display: block; margin: 0 0 50px 0;}
+#locations .col-alpha {width: 30%; float: left;height: 700px; overflow-y: scroll; position: relative; z-index: 10; background: #fff;}
+#locations .col-beta {display: block; width: 70%; height: 700px; float: right; overflow: hidden; position: relative;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

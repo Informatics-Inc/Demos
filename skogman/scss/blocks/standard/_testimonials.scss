@@ -1,0 +1,13 @@
+.testimonials {overflow: hidden; position: relative; padding: 1rem 2rem; text-align: center; margin: var(--spacer-vert) 0;}
+.testimonials .quote {font-size: 1.5rem; max-width: 900px; margin: 0 auto 1rem auto;}
+.testimonials .author {font-weight: 700; color: var(--accent-1);}
+.testimonials .title {font-style: italic;}
+.testimonials .swiper-button-prev {left: 0; color: var(--primary);}
+.testimonials .swiper-button-next {right: 0; color: var(--primary);}
+.testimonials .swiper-pagination {bottom: 0; left: 0; width: 100%;}
+.testimonials .swiper-pagination-bullet-active {background: var(--primary);}
+.testimonials .swiper-pagination-bullet {margin: 0 3px;}
+
+@media (min-width: 992px) {
+    .testimonials .quote {font-size: 2rem;}
+}

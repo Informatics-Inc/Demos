@@ -1,0 +1,103 @@
+/* Global */
+.td-section {max-width: 1140px; margin: 2rem auto;}
+.td-section h2 {font-size: 2.75rem; line-height: 1.1;}
+.td-section h3 {font-size: 1.5rem;}
+.td-section p {line-height: 1.4;}
+.td-section ul {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 400; line-height: 1.3; margin: 0 0 2rem 0;}
+.td-section ul li {margin: 0; font-weight: 400;}
+.td-section ul li a {font-weight: 400; color: #DA2A1D; text-decoration: underline;}
+
+/* Hero */
+.td-hero {position: relative; background: #222;}
+.td-hero > img {object-fit: cover; width: 100%; height: 100%; position: absolute; inset: 0; opacity: .25;}
+.td-hero .td-hero-text {position: relative; z-index: 5; padding: 4rem 2rem; text-align: center; display: grid; place-content: center;color: #fff; justify-content: center; align-items: center; align-content: center; gap: 15px;}
+.td-hero .td-hero-text h1 {color: #fff; margin: 0; line-height: 1;}
+.td-hero .td-hero-text p {margin: 0;}
+.td-hero .td-hero-text p.preheader {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-transform: uppercase; font-weight: 700;}
+.td-hero .td-hero-text .td-btn {justify-self: center;}
+
+/* Button */
+.td-btn {display: inline-block; padding: 10px 25px; background: #DA2A1D; font-family: "Syne", Sans-serif; color: #fff !important; border-radius: 5px;}
+.td-btn:hover {background: #CC281C;}
+.td-btn-group {display: grid; justify-items: flex-start; align-items: start; grid-auto-flow: row; gap: 5px; margin: 0 0 2rem 0;}
+.td-btn-text {background: none; color: #DA2A1D !important; padding: 0 30px 0 0; font-size: 1.5rem; background: url(img/arrow.png) center right no-repeat;}
+.td-btn-text:hover {text-decoration: underline; background-position: center right -2px;}
+.td-btn-group-inline {display: flex; justify-content: center;}
+.td-btn-outline {background: none; color: #DA2A1D !important; border: 2px solid #DA2A1D; padding: 8px 23px;}
+.td-btn-outline:hover {background: #FCF1F0;}
+
+/* Two Col Content */
+.td-content-2col {display: grid; gap: 2rem;}
+.td-lead {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.5rem; border-left: 5px solid #DA2A1D; padding: 0 0 0 2rem;}
+.td-content-2col img {width: 100%;}
+.td-content-2col + .td-content-2col {border-top: 1px solid #ccc; padding-top: 4rem;}
+
+/* Background Cover */
+.td-bkg-cover {position: relative; background: #222; color: #fff; overflow: hidden; z-index: 5;}
+.td-bkg-cover > img {object-fit: cover; width: 100%; height: 100%; position: absolute; inset: 0; opacity: .25; z-index: -1;}
+.td-section-container {max-width: 1140px; margin: 2rem auto;}
+.td-bkg-cover .td-header h2 {color: #fff; margin: 0;}
+.td-bkg-cover h3 {color: #fff; font-size: 1.5rem;}
+.td-bkg-cover .td-card h3 {color: #222;}
+/* Header */
+.td-header {text-align: center; margin: 0 0 3rem 0;}
+.td-header p {max-width: 975px; margin: 0 auto; line-height: 1.3;}
+
+/* Cards */
+.td-cards {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; row-gap: 2.5rem;}
+.td-card {background: #fff; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,.1); position: relative; padding: 2rem 1rem 1rem 1rem;}
+.td-card-icon {background: #DA2A1D; padding: 5px; width: 60px; height: 60px; border-radius: 50%; display: grid; place-content: center; position: absolute; top: -30px; left: calc(50% - 30px);}
+.td-card-icon img {max-width: 25px;}
+.td-card-text {text-align: center; color: #222; line-height: 1.4; font-size: .9rem; height: 100%; display: flex; flex-direction: column;}
+.td-card-text h3 {font-size: 1.5rem; line-height: 1.2;}
+.td-card-text .td-btn-group {margin: auto 0 0 0;}
+.td-card-text .td-btn-text {display: block; text-align: center; width: 100%; font-size: 1.25rem; margin: auto 0 0 0;}
+
+/* TD Box */
+.td-box {padding: 1.25rem; background:#f4f4f4; border: 1px solid #ccc; border-radius: 5px; box-shadow: 5px 5px 10px rgba(0,0,0,.1);}
+.td-box + .td-box {margin-top: 2rem;}
+.td-box ul {padding: 0 0 0 1rem; list-style-type: square;}
+.td-box ul a {display: block; margin: 5px 0;}
+
+/* Sidebar */
+.td-content-sidebar .td-content-2col h2 {font-size: 2rem;}
+.td-content-sidebar .td-content-2col p {font-size: .9rem;}
+.td-content-sidebar .td-content-2col .td-btn {font-size: 1.25rem;}
+.td-content-sidebar .td-content-2col + .td-content-2col {border-top: 1px dotted #ccc; padding-top: 2rem; margin-top: 2rem;}
+ul.sidebar-links {list-style: none; padding: 0; margin: 0;}
+ul.sidebar-links a {display: block; padding: 10px 5px; color: #333 !important; text-decoration: none !important; position: relative;}
+ul.sidebar-links a:hover {text-decoration: underline !important;}
+ul.sidebar-links .active {font-weight: 700;}
+ul.sidebar-links .active:before {
+    content: ""; position: absolute; left: -30px; top: 15px; rotate: -90deg;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #DA2A1D;
+}
+
+/* Check List */
+.list-columns-3 {display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); justify-items: start; align-items: start; gap: 2rem;}
+.list-columns ul, .td-checklist {padding: 0 !important; list-style: none !important;}
+.list-columns ul li, .td-checklist li {background: url(img/check-red.png) left center no-repeat; padding: 5px 0 5px 25px;}
+.list-columns ul li + li, .td-checklist li + li {border-top: 1px dotted #aaa;}
+
+/* Donor List */
+.donor-list {list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); justify-items: start; align-items: start; column-gap: 1rem;}
+.donor-list li {padding: 5px 0; border-bottom: 1px dotted #ccc; display: block; width: 100%;}
+
+@media screen and (min-width: 1024px) {
+.td-hero .td-hero-text {padding: 6rem 4rem;}
+.td-hero .td-hero-text p {font-size: 1.35rem;}
+
+.td-section {margin: 4rem auto;}
+
+.td-content-2col {display: grid; grid-template-columns: 1fr 1fr; gap: 50px;}
+.td-content-2dcol-alt {grid-template-columns: 1.5fr 1fr;}
+
+.td-section-container {max-width: 1140px; margin: 4rem auto;}
+
+.td-content-sidebar {display: grid; grid-template-columns: 3fr 1fr; gap: 2rem;}
+.sticky-top {position: sticky; top: 115px;}
+}

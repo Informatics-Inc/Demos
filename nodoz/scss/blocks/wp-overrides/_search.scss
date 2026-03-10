@@ -1,0 +1,27 @@
+/* Search */
+#searchform>div {
+    display: grid;
+    padding: 15px;
+    background: var(--light);
+    gap: 1rem;
+    grid-template-columns: auto 100px
+}
+
+#searchform>div input {
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px
+}
+
+#searchsubmit {
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    background: var(--primary);
+    border-radius: 5px;
+    flex-basis: 150px
+}
+
+#searchsubmit:hover {
+    background: var(--primary-dark)
+}

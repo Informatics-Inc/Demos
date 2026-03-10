@@ -1,0 +1,13 @@
+/* Theme Buttons */
+.wp-block-button,.wp-block-button__link.btn-theme {display: inline-block;}
+.wp-block-button__link.btn-theme, #submit.btn-abp,.btn.btn-default{font-family:var(--body);font-size:1.1rem;font-weight:500;padding:10px 30px;transition:var(--transition);background:var(--secondary-light);color:#fff;border:none;border-radius:24px;}
+.wp-block-button__link:hover.btn-theme:hover,.wp-block-button__link:focus,#submit.btn-abp:hover{text-decoration: none;cursor:pointer;background:var(--secondary-dark);}
+
+/* Text Only Buttons */
+.wp-block-button__link.btn-text{font-family:var(--header);letter-spacing: 0.5px;font-size:1.1rem;font-weight:300;color:var(--secondary-light);}
+.wp-block-button__link.btn-text i{transition: padding-left 0.5s ease;padding-left:6px;color:var(--secondary-light);}
+.wp-block-button__link.btn-text:hover i{padding-left:10px}
+.wp-block-button__link.btn-text:hover{text-decoration: none;color:var(--primary)}
+.wp-block-button__link.btn-text.left-icon i{margin-top:25px;margin-right:5px;padding-left:0px;}
+.wp-block-button__link.btn-text.left-icon:hover i{padding-left:0px}
+

@@ -1,0 +1,20 @@
+.showcase img {border-radius: var(--border-radius-sm);}
+.showcase figure {position: relative;}
+.showcase figure figcaption {width: 80%; border-radius: var(--border-radius-sm); background: #fff; box-shadow: var(--box-shadow-lg); padding: 25px; margin: -25px 0 0 10%; position: relative; z-index: 5;}
+.showcase figcaption ul {padding: 0 0 0 1rem; margin: 1rem 0;}
+.showcase figcaption li {border-top: 1px dotted #ccc; font-size: .85rem; padding: 5px 0;}
+.showcase figcaption li::marker {color: var(--accent-2);}
+
+/* TABLET */
+@media (min-width:768px){.card-body{padding:30px}
+.showcase {display: grid; grid-template-columns: 1fr 1fr; gap: 25px; column-gap: 75px;}
+.showcase .content-2 {align-self: flex-end;}
+.showcase .content-2 p:last-of-type {margin: 0;}
+.showcase figure {grid-column: span 2;}
+.showcase figure {display: grid; grid-template-columns: 1fr 300px; align-items: center;}
+.showcase figure figcaption {margin: 0 0 0 -50px; width: calc(100% + 50px);}
+}
+
+ @media (min-width: 992px) {
+
+ }

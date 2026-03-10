@@ -1,0 +1,4 @@
+/* Checkmark List */
+.is-style-linklist {list-style-type:none;padding-left:0;}
+.is-style-linklist li {list-style-type:none;position:relative;padding-left:24px; margin: 5px 0; font-weight: 700; color: var(--primary);}
+.is-style-linklist li::before{content:"\f058";font-family:FontAwesome;position:absolute;left:0px;color:var(--primary); color: var(--accent-1);}

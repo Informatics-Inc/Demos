@@ -1,0 +1,29 @@
+
+.testimonial h5:after{background:url(../img/shapes/quotes-circle.svg);width:100px;height:100px;position:absolute;left:0;top:90px;content:"";background-size:cover;z-index:0;}
+.testimonial h5.has-text-align-center:after{left:calc(50% - 50px);top:90px;}
+.testimonial .wp-block-cover {padding-top:220px;padding-bottom:50px}
+.testimonial h5{
+line-height: 1.5;font-weight: 500;font-size:1.65rem}
+.testimonial  .wp-block-cover strong{color:#fff}
+
+.sidebar.box.testimonial  { box-shadow:none; border-radius: 0;}
+.sidebar.box.testimonial h5  {font-size:1.5rem;position: relative;padding-top:50px;}
+.sidebar.box.testimonial h5:after{background:url(../img/shapes/quotes.svg);width:65px;height:40px;position:absolute;left:0;top:0px;content:"";background-size:cover;z-index:33333;}
+
+.testimonial.stories h5:after{display:none}
+.testimonial.stories strong{color:#fff}
+
+
+
+/* TABLET */
+@media (min-width: 768px) {
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}

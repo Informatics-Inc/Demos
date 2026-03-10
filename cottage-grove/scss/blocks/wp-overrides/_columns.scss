@@ -1,0 +1,28 @@
+/* Default Styling */
+:where(.wp-block) {margin-top: 0; margin-bottom: 0;}
+.wp-block-columns {margin: var(--spacer-vert) auto; max-width: var(--max-width) !important; padding-left: var(--side-padding); padding-right: var(--side-padding); gap: 1.5rem;}
+.wp-block-columns .wp-block-columns {margin-top: 0; margin-bottom: 0;}
+
+/* Custom Margins & Gaps */
+.is-style-no-top-margin {margin-top: 1rem !important;}
+.is-style-no-bottom-margin {margin-bottom: 1rem !important;}
+.is-style-large-gap {gap: 5rem !important;}
+
+.is-style-text-space, .text-space {padding: 0 65px;}
+.is-style-text-space-left, .text-space-left {padding: 0 65px 0 0;}
+
+
+/* Full-Width Styling */
+.wp-block-columns.alignfull,
+:where(.wp-block)[data-align="full"],
+:where(.wp-block)[data-align="full"] > div {max-width: none; width: 100%; margin-left: 0 !important; margin-right: 0 !important;}
+
+/* Layout Flex Variants */
+.wp-block-columns.is-layout-flex {gap: var(--column-gap);}
+.wp-block-columns + .wp-block-columns {margin: var(--spacer-vert) auto var(--spacer-vert) auto;}
+
+/* Nested Columns and Padding */
+.wp-block-columns .wp-block-columns {padding-left: 0; padding-right: 0;}
+.wp-block-columns.alignfull > .wp-block-columns,
+.wp-block-columns.alignfull > .wp-block-column,
+.wp-block-columns.alignfull > .wp-block-column > .wp-block-columns {padding-left: var(--spacer); padding-right: var(--spacer);}

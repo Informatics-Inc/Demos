@@ -1,0 +1,24 @@
+.full-image-side {padding:50px 0}
+.full-image-side::before{content:"";position:absolute;background:url("../img/itc-grid.svg") no-repeat;z-index:-1;pointer-events:none;width:100%;height:100%;background-size:auto 200px;z-index:-1;top:0;left:0;opacity:35%;}
+
+.is-style-bkg-left.full-image-side:after{background: var(--accent-1); border-radius:0px;z-index:-2}
+.is-style-bkg-left.full-image-side h2,.is-style-bkg-left.full-image-side p{color:#fff;}
+.full-image-side .theme-img img{width:100%;height:100%;top:0;border-radius:0px;border:none;box-shadow: none;position: absolute;border-radius:12px;}
+.full-image-side .theme-img{position: relative;left:0;bottom:0;width:100%;min-height:350px;z-index: 0;margin:0;}
+
+/* TABLET */
+@media (min-width: 768px) {
+.full-image-side .theme-img img{border-radius:0;}
+.full-image-side .theme-img{position: absolute;left:auto;bottom:0;width:50%;height:100%;z-index: 0;margin:0;right:0}
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+    .full-image-side::before{background-size:auto 350px;}
+    .full-image-side .wp-block-column {padding-right:50px}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1120px) {
+    
+}
