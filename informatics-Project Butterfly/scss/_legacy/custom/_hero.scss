@@ -1,0 +1,147 @@
+
+.hero {padding: 8rem var(--side-padding) 0 var(--side-padding); background: var(--light); background: linear-gradient(to bottom, white calc(100% - 65px), var(--tan) 0);}
+.hero h1 {font-size: clamp(3rem, 5.15vw, 6.5rem); line-height: .95;}
+.hero figure img, .hero figure video {border-radius: 0;}
+
+.hero p {text-wrap: balance;}
+/* TABLET */
+@media (min-width: 768px) {
+} 
+
+/* WIDE DESKTOP */
+@media (min-width: 992px) {
+// .hero {display: grid; grid-template-columns: 1fr 1fr; gap: var(--col-gap); height: 93vh; align-items: center;}
+// .hero figure {height: 100%; margin: 0;}
+// .hero figure img, .hero figure video {width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;}
+// .hero .text {padding-bottom: 50px;}
+}
+
+/* WIDE DESKTOP */
+@media (min-width: 1200px) {
+
+}
+
+.hero1 { height: 100vh; min-height: 800px; padding-bottom: 4rem; position: relative; background: var(--darkblue);}
+.hero1 .bkg {position: absolute; inset: 0; background: var(--darkblue);}
+.hero1 .bkg video {position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: .35; display: none;}
+.hero1 .text {position: relative; z-index: 10; padding: 5rem var(--side-padding) 0 var(--side-padding); height: 100%; display: flex; justify-content: flex-end; flex-direction: column;
+    
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-content: flex-end;
+    
+
+}
+
+.hero1 .text h1 {color: #fff; font-size: 5.25rem; line-height: 1; letter-spacing: -2px; margin: 0; font-weight: 300; font-family: var(--display); text-shadow: 15px 15px 20px rgba(0,0,0,.25);}
+.hero1 .text h1 .highlight {color: var(--green);}
+.hero1 .text p {font-size: 1rem; color: rgba(255,255,255,.75); font-weight: 300; margin: 0 0; opacity: .9; margin-top: 2rem; padding: 0 2rem; border-left: 5px solid var(--green); max-width: 550px;}
+.hero1 .text .cta-links {display: flex; gap: 2rem;}
+.hero1 .text a {color: #fff; text-decoration-color: var(--green); text-decoration-thickness: 2px; text-shadow: 3px 3px 5px rgba(0,0,0,.25);}
+.hero1 .text a:hover {opacity: 1;}
+
+.hero-wide {padding: 0 var(--side-padding); aspect-ratio: 3 / 1; margin-top: -4rem; position: relative; z-index: 5; text-align: right;}
+
+.hero1 .bkg-media {position: absolute; inset: 0; left: 0; top: 0; bottom: 0; background: var(--dark); opacity: 1;}
+.hero1 .bkg-media video {width: 100%; height: 100%; object-fit: cover; opacity: .25;}
+.hero1 .bkg-media img {width: 100%; height: 100%; object-fit: cover; opacity: .4;}
+
+.hero-cta {position: absolute; z-index: 15; padding: 1.5rem 1.5rem; background: rgba(0,0,0,.5); color: #fff; right: 0; bottom: 0; max-width: 25vw; text-decoration: none; opacity: .85; display: none;}
+
+.label {background: var(--green); text-transform: uppercase; padding: 5px; font-size: 11px; width: 80px; text-align: center; display: flex; margin: 0 0 10px 0; color: var(--dark);}
+
+// .hero-wide img, .hero-wide video {width: 100%; height: 100%; object-fit: cover; }
+
+// .hero1 .bkg {position: absolute; inset: 0; z-index: 2;}
+// .hero1 .bkg video {width: 100%; height: 100%; object-fit: cover;}
+// .hero1 .bkg img {width: 100%; height: 100%; object-fit: cover; opacity: .15;}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center center;
+  opacity: 0;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cta-wrap {display: flex; gap: 2rem; align-items: center;}
+.hero1 .text .btn-primary {background: var(--green);}
+
+
+.hero {
+ height: 100vh;
+ &__inner {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+ }
+
+ &__image-cont {
+  position: relative;
+  overflow: hidden;
+  &:not(:last-child):after {
+   content: "";
+   position: absolute;
+   right: 0px;
+   background-color: #111111;
+   height: 100%;
+   top: 0;
+   width: 2.5px;
+   z-index: 999;
+  }
+
+  img,
+  .anim-swipe {
+   position: absolute;
+   width: 700%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+  }
+ }
+
+ .anim-swipe {
+  width: 100%;
+  background-color: #111111;
+ }
+
+ &__image-cont:nth-child(1) img {
+  left: -100%;
+ }
+ &__image-cont:nth-child(2) img {
+  left: -200%;
+ }
+ &__image-cont:nth-child(3) img {
+  left: -300%;
+ }
+ &__image-cont:nth-child(4) img {
+  left: -400%;
+ }
+ &__image-cont:nth-child(5) img {
+  left: -500%;
+ }
+ &__image-cont:nth-child(6) img {
+  left: -600%;
+ }
+}
+
+.spacer {
+ height: 300vh;
+}
+
+.scroll {
+ position: fixed;
+ bottom: 1rem;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 999;
+}
