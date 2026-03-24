@@ -1,0 +1,27 @@
+.logo-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: max-content;
+}
+
+.logo-list li {
+    flex: 0 0 auto;
+    list-style: none;
+}
+
+.logo-list img {
+    height: 75px;
+    width: auto;
+    display: block;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.logo-list img:hover {
+    opacity: 1; }

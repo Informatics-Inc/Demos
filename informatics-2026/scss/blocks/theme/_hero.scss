@@ -1,0 +1,42 @@
+.hero .wp-block-button__link {
+    padding: 16px 16px 16px 24px;
+    font-size: var(--font-md);
+}
+.hero-home {
+    text-align: center;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-home h1 {
+    font-size: 5rem;
+}
+.hero-text {
+    display: flex;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+.hero-text p {
+    flex: 0 1 auto;
+    margin: 0;
+    text-align: left;
+}
+
+.hero-text .wp-block-buttons {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+@media (min-width: 1500px) {
+.hero-home {
+    height: 45vh;
+    min-height: 400px;
+}
+    .hero h1 {
+    font-size: 5.75rem;
+}
+}

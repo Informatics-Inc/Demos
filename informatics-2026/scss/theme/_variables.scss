@@ -1,0 +1,116 @@
+:root {
+   
+  /* ======================
+     COLORS
+  ====================== */
+
+  --green-100: #C0DA34;
+  --green-200: #B5CC3A;
+  --green-300: #a2b245;
+  --green-400: #89973B;
+  --green-ada: #89973B;
+
+  --blue-500: #04314C;
+  --blue-700: #022338;
+  
+  --purple-500: #AA6CA8;
+  
+  --tan-100: #F8F6EF;
+  --tan-150: #F5F2EC;
+  --tan-200: #F1EDE3;
+  --tan-300: #F2EAD3;
+  --tan-400: #E8DFC9;
+  --tan-gradient: linear-gradient(180deg, rgba(245, 242, 236, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  
+  --light: #FFFFFF;
+//   --dark: #001F33;
+
+  --gray-200: #f6f6f6;
+  --gray-400: #ccc;
+  --gray-600: #CCD5DC;
+
+  --gray: var(--gray-400);
+  --bkg: var(--light);
+
+
+  /* ======================
+     TYPOGRAPHY
+  ====================== */
+
+  --display: 'Hubot Sans';
+  --header: 'Owners', Georgia;
+  --body: -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
+  --serif: "elena-basic", "Times New Roman", Georgia, serif;
+  --mono: monospace;
+
+  --text-color: rgba(0, 0, 0, .85);
+  --text-color-inverse: rgba(255, 255, 255, .85);
+
+  --font-sm: .85rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+
+
+  /* ======================
+     SPACING SCALE
+  ====================== */
+
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.5rem; /* 24px */
+  --space-6: 2rem; /* 32px */
+  --space-7: 3rem; /* 48px */
+  --space-8: 4rem; /* 64px */
+  --space-9: 6rem; /* 96px */
+  --space-10: 8rem; /* 128px */
+
+  /* ======================
+   FONT SCALE
+====================== */
+
+  --font-xs: 0.75rem;   /* 12px */
+  --font-sm: 0.875rem;  /* 14px */
+  --font-md: 1rem;      /* 16px */
+  --font-lg: 1.25rem;   /* 20px */
+  --font-xl: 1.5rem;    /* 24px */
+  --font-2xl: 1.75rem;     /* 32px */
+
+  /* ======================
+     LAYOUT
+  ====================== */
+
+  --space-vertical: var(--space-8);
+  --section-space: var(--space-8);
+  --section-space-lg: var(--space-10);
+  --grid-gap: var(--space-5);
+  --side-padding: var(--space-4);
+  --max-width: 1300px;
+  --fixed-header-height: 92.8px;
+  --fixed-footer-height: 400px;
+
+  /* ======================
+     UI
+  ====================== */
+
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 200px;
+
+  --transition: all .3s cubic-bezier(.455, .03, .515, .955);
+  --box-shadow-sm: 5px 5px 8px rgba(0, 0, 0, .15);
+  --box-shadow-md: 15px 15px 25px rgba(0, 0, 0, .15);
+  --box-shadow-lg: 50px 50px 65px rgba(0, 0, 0, .15);
+  
+  --anim-duration: .8s;
+  --anim-ease: cubic-bezier(.22,.61,.36,1);
+  --anim-ease-smooth: cubic-bezier(.16,1,.3,1);
+
+}
+@media (min-width: 1400px) {
+:root {
+   --section-space: var(--space-9);
+}
+}

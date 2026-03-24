@@ -1,0 +1,28 @@
+.stat-item {
+    padding: 0 var(--space-5);
+    border-left: 1px solid var(--tan-300);
+}
+.stat-number {
+    font-family: var(--header);
+    color: var(--blue-500);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+    background: var(--tan-200);
+    display: inline-block;
+    border-radius: var(--border-radius-md);
+    padding: var(--space-2) var(--space-3);
+}
+.stat-number em {
+    font-style: normal;
+    color: var(--green-300);
+}
+.stat-client {
+    text-transform: uppercase;
+    font-size: var(--font-xs);
+    letter-spacing: 2px;
+    font-weight: 700;
+    opacity: .5;
+    margin: 0;
+}

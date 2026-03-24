@@ -1,0 +1,31 @@
+.is-style-checklist-inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--grid-gap);
+        li {
+            font-size: var(--font-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            background: var(--tan-200);
+            border-radius: var(--border-radius-full);
+            padding: var(--space-3) var(--space-5) var(--space-3) var(--space-3);
+        }
+        .ph-bold {
+            background: var(--blue-500);
+            color: var(--green-100);
+            border-radius: 50%;
+            padding: 5px;;
+    
+    }
+}
+
+@media (min-width: 1510px) {
+    .is-style-checklist-inline li {
+        font-size: var(--font-md);
+    }
+}

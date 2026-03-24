@@ -1,0 +1,99 @@
+
+.bkg-splash {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--bkg);
+  overflow: hidden;
+  border-radius: 50px;
+  height: 80%;
+  top: 20%;
+}
+.blob {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  filter: blur(80px);
+  opacity: .75;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* purple */
+.blob-purple {
+  background: radial-gradient(circle, #8c7bff 0%, transparent 50%);
+  animation: blobFloat1 18s ease-in-out infinite;
+  right: -50px;
+  top: 100px;
+}
+
+/* olive */
+.blob-green {
+  background: radial-gradient(circle, #a2b245 0%, transparent 70%);
+  animation: blobFloat2 16s ease-in-out infinite;
+  right: -300px;
+  top: -100px;
+  width: 850px;
+  height: 800px;
+}
+.blog-green-2 {
+  top: 60%;
+  right: auto;
+  left: -300px;
+}
+/* tan */
+.blob-tan {
+  background: radial-gradient(circle, #F2EAD3 0%, transparent 70%);
+  animation: blobFloat3 20s ease-in-out infinite;
+}
+
+@keyframes blobFloat1 {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(100px, -50px) scale(1.25);
+  }
+}
+
+@keyframes blobFloat2 {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-50px, 40px) scale(1.5);
+  }
+}
+
+@keyframes blobFloat3 {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(40px, 60px) scale(1.65);
+  }
+}
+
+
+.bkg-lines {
+  position: absolute;
+  top: -10vh;
+  left: -10vw;
+  max-width: none;
+  width: 120vw;
+  height: 110vh;
+  background: var(--blue);
+  pointer-events: none;
+  z-index: -1;
+  background-size: cover;
+  
+}

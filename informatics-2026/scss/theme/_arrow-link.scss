@@ -1,0 +1,82 @@
+/* ============================= */
+/* PREMIUM ARROW COMPONENT */
+/* ============================= */
+
+.arrow-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+/* SHAFT */
+
+.arrow-link::before {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 2px;
+
+  background: var(--green-100);
+
+  right: 2px;
+  top: 50%;
+
+  transform: translateY(-50%) scaleX(.65);
+  transform-origin: left center;
+
+  opacity: .8;
+
+  transition:
+    transform .35s cubic-bezier(.22, .65, .3, 1),
+    opacity .25s ease;
+}
+
+/* HEAD */
+
+.arrow-link::after {
+  content: "";
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  border-top: 2px solid var(--green-100);
+  border-right: 2px solid var(--green-100);
+
+  right: 8px;
+  top: 50%;
+
+  transform: translateY(-50%) rotate(45deg);
+
+  opacity: .8;
+
+  transition:
+    transform .35s cubic-bezier(.22, .65, .3, 1),
+    opacity .25s ease;
+}
+
+/* HOVER (parent-driven) */
+.theme-card:hover .arrow-link::before,
+.button:hover .arrow-link::before,
+a:hover .arrow-link::before {
+  transform: translateY(-50%) scaleX(1);
+  opacity: 1;
+}
+
+.theme-card:hover .arrow-link::after,
+.button:hover .arrow-link::after,
+a:hover .arrow-link::after {
+  transform: translate(5px, -50%) rotate(45deg);
+  opacity: 1;
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+
+  .arrow-link::before,
+  .arrow-link::after {
+    transition: none;
+  }
+}

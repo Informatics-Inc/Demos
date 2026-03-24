@@ -1,0 +1,18 @@
+.img-scroll-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-track {
+    display: flex;
+    gap: 1rem;
+    will-change: transform;
+}
+
+.img-scroll {
+    width: 500px;
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-md); }

@@ -1,0 +1,54 @@
+.testimonials {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    background: var(--tan-200);
+    border-radius: var(--border-radius-md);
+}
+.testimonial-item {
+    padding: var(--space-8);
+    
+    min-height: 300px;
+}
+.testimonial-phrase {
+    font-size: var(--font-2xl);
+    font-weight: 300;
+    padding-right: 15%;
+}
+.testimonial-author {
+    display: grid;
+    grid-template-columns: var(--space-8) auto;
+    gap: var(--grid-gap);
+    margin-top: var(--space-8);
+    align-items: center;
+}
+.testimonial-author figure {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--green-200);
+}
+.testimonial-author figure img {
+    object-fit: cover;
+    width: 100%; height: 100%;
+}
+.testimonial-author p {
+    font-size: var(--font-sm);
+    margin: 0;
+}
+.testimonial-author p strong {
+    display: block;
+    font-size: var(--font-md);
+}
+
+/* GSAP HELP */
+.testimonial-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimonial-item.active {
+    opacity: 1;
+    pointer-events: auto; }

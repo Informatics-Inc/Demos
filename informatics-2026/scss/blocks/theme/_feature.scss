@@ -1,0 +1,97 @@
+.feature {
+    position: relative;
+    z-index: 5;
+}
+.feature .col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.feature-content {
+    
+    border-radius: var(--border-radius-lg);
+    // corner-shape: squircle;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10vw;
+    position: relative;
+    align-items: flex-start;
+}
+.feature-content-green {
+    background: var(--green-200);
+    padding: var(--space-7) 10vw var(--space-7) var(--space-7);
+}
+.feature-content-tan {
+    background: var(--tan-200);
+    padding: var(--space-8);
+}
+.margin-bottom-auto {
+    margin-bottom: auto;
+}
+.margin-top-auto {
+    margin-top: auto;
+}
+.feature-content .ph-light {
+    width: var(--space-7);
+    height: var(--space-7);
+    background: var(--blue-500);
+    color: var(--green-100);
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 5;
+}
+.feature-content-icon .ph-light {
+    position: absolute;
+    inset: var(--space-7) var(--space-7) auto auto;
+
+    width: var(--space-7);
+    height: var(--space-7);
+    background: var(--blue-500);
+    color: var(--green-100);
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 5;
+}
+.feature-content p:last-of-type {
+    margin: 0;
+}
+.feature-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-lg);
+    text-decoration: none;
+    color: var(--blue-500);
+}
+.feature-link:hover {
+    text-decoration: underline;
+}
+.cta-links {
+    display: grid;
+    gap: var(--space-2);
+}
+.feature .feature-img {
+    height: 100%;
+}
+.feature-overlap {
+    .col:nth-of-type(2) {
+        grid-column-start: 5;
+        grid-row: 1;
+        grid-column-end: 13;
+        }
+    .col:nth-of-type(1) {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row: 1;
+        z-index: 5;
+    }
+    }

@@ -1,0 +1,85 @@
+/* ==========================
+   ANIMATIONS
+========================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+/* --------------------------
+   SCROLL REVEAL
+-------------------------- */
+
+.scroll-in,
+.scroll-in-children > * {
+  animation: scroll-in var(--anim-duration) var(--anim-ease) forwards;
+  animation-timeline: view();
+  animation-range: 50px 150px;
+
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+@keyframes scroll-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* --------------------------
+   HERO LOAD (GUIDED FLOW)
+-------------------------- */
+
+.hero-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+
+  animation: hero-reveal 4s var(--anim-ease-smooth) forwards;
+}
+
+@keyframes hero-reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* --------------------------
+   FADE IN
+-------------------------- */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity .6s var(--anim-ease);
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+
+/* --------------------------
+   DELAY SYSTEM
+-------------------------- */
+
+.delay-1 { animation-delay: .15s; }
+.delay-2 { animation-delay: .3s; }
+.delay-3 { animation-delay: .45s; }
+.delay-4 { animation-delay: .6s; }
+.delay-5 { animation-delay: .75s; }
+.delay-6 { animation-delay: .9s; }
+.delay-7 { animation-delay: 1.05s; }
+.delay-8 { animation-delay: 1.2s; }
+.delay-9 { animation-delay: 1.35s; }
+.delay-10 { animation-delay: 1.5s; }
+
+}
+
+/* delay utilities */
+
+.flow-delay-1 {}
+.flow-delay-2 {}
+.flow-delay-3 {}
+.flow-delay-4 {}
+.flow-delay-5 {}

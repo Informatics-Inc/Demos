@@ -1,0 +1,59 @@
+/* CSS Document
+Client: Informatics Starter Theme
+Company: Informatics, Inc
+Author: Jeff S
+Date: March 2026 - Project Butterfly
+*/
+
+
+/* ======================
+   CORE
+====================== */
+
+@import "core/reset";
+@import "core/animations";
+
+/* ======================
+   TOKENS / THEME
+====================== */
+
+@import "theme/variables";
+@import "theme/typography";
+@import "theme/bkg-effect";
+@import "theme/components";
+@import "theme/arrow-link";
+
+/* ======================
+   LAYOUT
+====================== */
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+
+
+/* ======================
+   WORDPRESS OVERRIDES
+====================== */
+
+@import "blocks/wordpress/buttons";
+@import "blocks/wordpress/group";
+@import "blocks/wordpress/paragraph";
+@import "blocks/wordpress/list";
+
+
+/* ======================
+   THEME BLOCKS
+====================== */
+
+@import "blocks/theme/hero";
+@import "blocks/theme/cta";
+@import "blocks/theme/cards";
+// @import "blocks/theme/cards-2";
+@import "blocks/theme/scroll-row";
+@import "blocks/theme/feature-image";
+@import "blocks/theme/feature";
+@import "blocks/theme/stat";
+@import "blocks/theme/testimonials";
+@import "blocks/theme/logo-list";
+@import "blocks/theme/form";

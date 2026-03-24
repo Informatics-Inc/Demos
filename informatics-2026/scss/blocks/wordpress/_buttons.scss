@@ -1,0 +1,92 @@
+.wp-block-button__link {
+    position: relative;
+    padding: var(--space-4) 1rem var(--space-4) var(--space-5);
+    background: var(--blue-500);
+    color: #fff;
+    border-radius: var(--border-radius-full);
+    // corner-shape: squircle;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--font-sm);
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+.wp-block-button__link:hover {
+    color: #fff;
+}
+.is-style-btn-secondary .wp-block-button__link {
+    background: var(--green-100);
+    color: var(--blue-500);
+}
+.is-style-btn-secondary .arrow-link::after,
+.is-style-btn-color .arrow-link:after {
+    border-color: var(--blue-500);
+}
+.is-style-btn-secondary .arrow-link::before,
+.is-style-btn-color .arrow-link:before {
+    background: var(--blue-500);
+}
+
+.is-style-btn-color .wp-block-button__link {
+    background: url(../img/gradient-texture.jpg);
+    background-size: calc(100% + 50px) auto;
+    background-position: -50px -50px;
+    color: var(--blue-500);
+}
+.is-style-btn-color .wp-block-button__link:hover {
+    background-position: -50px -100px;
+}
+// .wp-block-button__link.arrow-link:after,
+// .wp-block-button__link.arrow-link:before {
+//     background: var(--green-100);
+//     border-color: var(--green-100);
+
+// }
+/* ARROW SHAFT 
+.wp-block-button__link::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background: var(--dark);
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--transition);
+    transition-delay: 100ms;
+}
+
+/* ARROW HEAD
+.wp-block-button__link::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid var(--dark);
+    border-right: 2px solid var(--dark);
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: var(--transition);
+}
+
+/* HOVER 
+.wp-block-button__link:hover {
+    color: #fff;
+}
+.wp-block-button__link:hover::before {
+    transform: translate(4px, -50%);
+}
+.wp-block-button__link:hover::after {
+    transform: translate(4px, -50%) rotate(45deg); }
+
+/* Secondary 
+.wp-block-button.is-style-text .wp-block-button__link {
+    background: transparent;
+    border: 2px solid currentColor;
+    padding: var(--space-2) 38px var(--space-2) 0;
+    border: none;
+    box-shadow: none;
+    text-decoration: underline;
+} */

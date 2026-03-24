@@ -1,0 +1,17 @@
+.theme-form input,
+.theme-form select {
+  background: rgba(255,255,255,.75);
+  border: 1px solid var(--tan-400);
+  color: var(--text-color);
+  padding: var(--space-2) var(--space-3);
+  display: block;
+  width: 100%;
+}
+.theme-form {
+  display: grid;
+  gap: var(--space-3);
+  width: 100%;
+}
+.theme-form .wp-block-button__link {
+  margin-top: var(--space-2);
+}

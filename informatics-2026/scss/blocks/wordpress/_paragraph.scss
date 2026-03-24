@@ -1,0 +1,52 @@
+.is-style-mono, .mono {
+    font-size: var(--font-xs);
+    font-family: var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mono:before {
+    content: "[ ";
+}
+
+.mono:after {
+    content: " ]";
+}
+.is-style-text-lg {
+    font-size: var(--font-lg);
+
+}
+.is-style-eyebrow {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: .85rem;
+    display: inline-block;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.is-style-eyebrow>* {
+    margin: 0 5px 0 0;
+}
+
+.lead,
+.is-style-lead {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 400;
+    border-left: 4px solid var(--green);
+    padding-left: 1.5rem;
+    // margin: 2.5rem 0;
+}
+
+.is-style-balance {
+    text-wrap: balance;
+    max-width: 95%;
+}
+
+.long-phrase,
+.is-style-longphrase {
+    font-weight: 300;
+    font-size: 3.75rem;
+    font-family: var(--display); }

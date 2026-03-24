@@ -1,0 +1,127 @@
+/* TYPOGRAPHY */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3;
+  background: var(--bkg);
+  color: var(--text-color);
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2, .h2-like,
+h3,
+h4,
+h5 {
+  font-family: var(--header);
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--blue);
+  text-wrap: balance;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+h2, .h2-like {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: var(--body);
+  font-weight: 500;
+  letter-spacing: -.5px;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+h1 em, h2 em {
+  color: var(--green-300);
+  font-style: normal;
+}
+p,
+ul,
+ol {
+  margin-bottom: 1.25rem;
+}
+p {
+  text-wrap: pretty;
+}
+p strong {
+  color: #222;
+}
+
+ol, ul {
+  padding: 0 0 0 15px;
+}
+
+ul li::marker,
+ol li::marker {
+  color: var(--green-400);
+}
+
+.small {
+  font-size: var(--font-xs);
+  word-wrap: pretty;
+  opacity: .85;
+}
+
+
+
+blockquote {
+  font-size: 150%;
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+.loud-text {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.green-text {
+  color: var(--green);
+  font-style: normal;
+}
+/* Links */
+a {
+  transition: var(--transition);
+  color: var(--green-ada);
+  text-underline-offset: 4px;
+  text-decoration-color: var(--green);
+}
+
+p a {
+  text-decoration: underline;
+  color: var(--darkgreen);
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+p a:hover {
+  text-decoration: none;
+}
+
+/* MEDIUM SIZE */
+@media (min-width: 1600px) {
+  
+}
