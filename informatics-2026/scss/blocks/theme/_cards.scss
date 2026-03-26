@@ -43,6 +43,7 @@
     grid-template-columns: auto 35px;
     gap: 1rem;
     align-items: flex-end;
+    line-height: 1.1;
 }
 .card-text p {
     color: var(--text-color-inverse);
@@ -162,6 +163,40 @@
         }
         .arrow-link::before {
             background: var(--green-100);
+        }
+    }
+}
+
+.theme-cards-article {
+    .theme-card {
+        background: var(--tan-100);
+    }
+    figure {
+        -webkit-mask-image: none;
+        mask-image: none;
+        aspect-ratio: 2 / 1.25;
+        left: 0;
+        overflow: hidden;
+        border: solid var(--space-4) var(--tan-100);
+        border-radius: 22px
+    }
+    .card-text {
+        bottom: auto;
+        padding: var(--space-3) var(--space-6) var(--space-6) var(--space-4);
+        
+        p {
+            opacity: 1;
+        }
+        h3 {
+            align-items: flex-start;
+        }
+        .arrow-link-circle {
+            background: var(--green-100);
+        }
+    }
+    .theme-card:hover {
+        .arrow-link-circle {
+            background: var(--blue-500);
         }
     }
 }

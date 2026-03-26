@@ -4,6 +4,9 @@
   margin: 0 auto;
   position: relative;
 }
+.wp-block-group {
+  position: relative;
+}
 // .wp-block-columns {
 //   margin-block: var(--space-vertical);
 // }
@@ -89,6 +92,8 @@
 .col-start-3 { grid-column-start: 3; }
 .col-start-4 { grid-column-start: 4; }
 .col-start-5 { grid-column-start: 5; }
+.col-start-6 { grid-column-start: 6; }
+.col-start-7 { grid-column-start: 7; }
 
 
 /* etc */

@@ -1,7 +1,7 @@
 .site-footer {
-    padding-bottom: 450px;
+    padding-bottom: 475px;
     position: relative;
-    z-index: 4;
+    z-index: 15;
     margin-bottom: var(--side-padding);
 }
 .footer-reveal {
@@ -60,4 +60,9 @@
 }
 .footer-utility .social-links a {
     font-size: 2rem !important;
+    opacity: 1;
+}
+.footer-utility .social-links a:hover {
+    text-decoration: none;
+    color: var(--green-400);
 }

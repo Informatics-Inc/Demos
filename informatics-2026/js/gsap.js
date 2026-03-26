@@ -124,52 +124,31 @@ function initFlow() {
 /* -------------------------
 CUSTOM CURSOR CTA
 ------------------------- */
+const wrapper = document.querySelector('.img-scroll-wrapper');
+const cursor = document.querySelector('.cursor-cta');
 
-function initCursor() {
+// quick setters (better performance too)
+const xTo = gsap.quickTo(cursor, "x", { duration: 0.2, ease: "power3" });
+const yTo = gsap.quickTo(cursor, "y", { duration: 0.2, ease: "power3" });
 
-  if (!window.matchMedia("(pointer: fine)").matches) return;
-
-  const cursor = document.querySelector(".cursor-cta");
-
-  if (!cursor) return;
-
-  const xTo = gsap.quickTo(cursor, "x", {
-    duration: 0.35,
-    ease: "power3.out"
+wrapper.addEventListener('mouseenter', (e) => {
+  // set position instantly so no jump
+  gsap.set(cursor, {
+    x: e.clientX,
+    y: e.clientY
   });
 
-  const yTo = gsap.quickTo(cursor, "y", {
-    duration: 0.35,
-    ease: "power3.out"
-  });
+  gsap.to(cursor, { opacity: 1, scale: 1, duration: 0.2 });
+});
 
-  window.addEventListener("mousemove", (e) => {
-    xTo(e.clientX);
-    yTo(e.clientY);
-  });
+wrapper.addEventListener('mouseleave', () => {
+  gsap.to(cursor, { opacity: 0, scale: 0.8, duration: 0.2 });
+});
 
-  document.querySelectorAll(".hover-cta").forEach(el => {
-
-    el.addEventListener("mouseenter", () => {
-      gsap.to(cursor, {
-        scale: 1,
-        duration: 0.25,
-        ease: "power3.out"
-      });
-    });
-
-    el.addEventListener("mouseleave", () => {
-      gsap.to(cursor, {
-        scale: 0,
-        duration: 0.25,
-        ease: "power3.out"
-      });
-    });
-
-  });
-
-}
-
+wrapper.addEventListener('mousemove', (e) => {
+  xTo(e.clientX);
+  yTo(e.clientY);
+});
 
 /* -------------------------
 BACKGROUND MOUSE REACTION
@@ -248,8 +227,6 @@ initLogoMarquee();
 /* -------------------------
 SCROLL WORK
 ------------------------- */
-
-
 const track = document.querySelector(".img-track");
 
 gsap.registerPlugin(ScrollTrigger);
@@ -318,14 +295,13 @@ function initTestimonials() {
 initTestimonials();
 
 /* SITE FOOTER */
-
 window.addEventListener("load", () => {
 
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".site-footer",   // 👈 parent trigger
       start: "top 30%",          // when footer container hits mid-ish viewport
-      end: "top -15%",
+      end: "top -45%",
       scrub: true
     }
   });
@@ -366,4 +342,36 @@ window.addEventListener("load", () => {
     ease: "power2.out"
   }, 0.25);
 
+});
+
+/* Accordion */
+const items = document.querySelectorAll(".accordion-item");
+
+items.forEach(item => {
+  const header = item.querySelector(".accordion-header");
+  const content = item.querySelector(".accordion-content");
+
+  header.addEventListener("click", () => {
+    const isOpen = item.classList.contains("active");
+
+    // close all
+    items.forEach(i => {
+      i.classList.remove("active");
+      gsap.to(i.querySelector(".accordion-content"), {
+        height: 0,
+        duration: 0.3,
+        ease: "power2.out"
+      });
+    });
+
+    // open clicked
+    if (!isOpen) {
+      item.classList.add("active");
+      gsap.to(content, {
+        height: content.scrollHeight,
+        duration: 0.3,
+        ease: "power2.out"
+      });
+    }
+  });
 });

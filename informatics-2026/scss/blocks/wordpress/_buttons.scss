@@ -37,6 +37,11 @@
 .is-style-btn-color .wp-block-button__link:hover {
     background-position: -50px -100px;
 }
+.wp-block-button__link strong {
+    color: var(--green-100);
+    margin: 0 4px;
+    font-weight: 600;
+}
 // .wp-block-button__link.arrow-link:after,
 // .wp-block-button__link.arrow-link:before {
 //     background: var(--green-100);

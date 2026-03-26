@@ -39,3 +39,19 @@
         padding-top: 0;
     }
 }
+
+.is-style-texture {
+    background: url(../img/hero-texture.jpg) repeat-x var(--bkg);
+    background-size: 100% 75%;
+    // animation: textureScroll 20s linear infinite;
+}
+
+/* left → right loop */
+@keyframes textureScroll {
+    from {
+        background-position: 0% 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    } }

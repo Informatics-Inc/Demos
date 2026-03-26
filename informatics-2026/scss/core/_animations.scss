@@ -76,10 +76,21 @@
 
 }
 
-/* delay utilities */
+/* START HIDDEN GSAP */
+/* Headlines */
+.js .type-chars .char {
+  opacity: 0;
+  transform: translateY(20px);
+}
 
-.flow-delay-1 {}
-.flow-delay-2 {}
-.flow-delay-3 {}
-.flow-delay-4 {}
-.flow-delay-5 {}
+/* Paragraphs */
+.js .type-words .word {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Flow items (only ones that fire immediately) */
+.js .flow-now>* {
+  opacity: 0;
+  transform: translateY(40px);
+}

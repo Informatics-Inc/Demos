@@ -25,39 +25,7 @@
   right: auto;
   left: -48px;
 }
-.cursor-cta {
-  position: fixed;
-  top: 0;
-  left: 0;
 
-  width: 150px;
-  height: 150px;
-
-  border-radius: 50%;
-  background: rgba(2, 49, 77, .95);;
-  color: white;
-  font-weight: 800;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  pointer-events: none;
-  z-index: 9999;
-
-  transform: translate(-50%, -50%) scale(0);
-  border: 5px solid var(--green);
-  box-shadow: var(--box-shadow-md);
-}
-
-.cursor-cta span {
-  text-align: center;
-  line-height: 1.1;
-}
-
-.hover-cta {
-  cursor: none;
-}
 
 /* Large Callout */
 .large-callout .large-number {

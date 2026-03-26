@@ -1,3 +1,17 @@
+.hero {
+    min-height: 30vh;
+    margin-bottom: var(--space-vertical);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.hero .is-style-text-lg {
+    text-wrap: balance;
+}
+.hero h1 {
+    margin: 0;
+}
 .hero .wp-block-button__link {
     padding: 16px 16px 16px 24px;
     font-size: var(--font-md);
@@ -36,7 +50,7 @@
     height: 45vh;
     min-height: 400px;
 }
-    .hero h1 {
+    .hero-home h1 {
     font-size: 5.75rem;
 }
 }
