@@ -314,13 +314,11 @@ window.addEventListener("load", () => {
       y: 100,
       scale: 0.97,
       opacity: 0,
-      visibility: "hidden"
     },
     {
       y: 0,
       scale: 1,
       opacity: 1,
-      visibility: "visible",
       ease: "none"
     }
   );
@@ -328,7 +326,7 @@ window.addEventListener("load", () => {
   // =========================
   // COLUMN STAGGER
   // =========================
-  tl.from(".footer-reveal .grid .col", {
+  tl.from(".footer-reveal .col", {
     y: 30,
     opacity: 0,
     stagger: 0.06,
